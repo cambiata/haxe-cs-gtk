@@ -11,6 +11,7 @@
 /reference:bin/gdk-sharp.dll
 /reference:bin/gtk-sharp.dll
 /reference:bin/glib-sharp.dll
+/reference:bin/gtk-dotnet.dll
 /reference:bin/Mono.Cairo.dll
 src\Std.cs
 src\cs\internal\Function.cs

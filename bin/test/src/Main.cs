@@ -7,18 +7,9 @@ public class EntryPoint__Main {
 	}
 }
 
-public class Main : global::haxe.lang.HxObject {
-	
-	public Main(global::haxe.lang.EmptyObject empty) {
-	}
-	
+public class Main {
 	
 	public Main() {
-		global::Main.__hx_ctor__Main(this);
-	}
-	
-	
-	public static void __hx_ctor__Main(global::Main __temp_me7) {
 	}
 	
 	
@@ -35,41 +26,25 @@ public class Main : global::haxe.lang.HxObject {
 			}
 			
 			( win as global::Gtk.Widget ).DeleteEvent += ((global::Gtk.DeleteEventHandler) (__temp_stmt1) );
-			global::Gtk.DrawingArea drawing = new global::Gtk.DrawingArea();
-			( win as global::Gtk.Container ).Add(((global::Gtk.Widget) (drawing) ));
-			( drawing as global::Gtk.Widget ).Show();
-			global::Gtk.ExposeEventHandler __temp_stmt2 = null;
-			{
-				global::Gtk.ExposeEventHandler this2 = null;
-				this2 = ((global::Gtk.ExposeEventHandler) (new global::Main_main_31__Fun(drawing).Delegate) );
-				__temp_stmt2 = ((global::Gtk.ExposeEventHandler) (this2) );
-			}
-			
-			( drawing as global::Gtk.Widget ).ExposeEvent += ((global::Gtk.ExposeEventHandler) (__temp_stmt2) );
 			global::Gtk.Button btn = new global::Gtk.Button();
 			btn.Label = ((string) ("Press me") );
-			global::System.EventHandler __temp_stmt3 = null;
+			global::System.EventHandler __temp_stmt2 = null;
 			{
-				global::System.EventHandler this3 = null;
-				this3 = ((global::System.EventHandler) (( (( global::Main_main_50__Fun.__hx_current != null )) ? (global::Main_main_50__Fun.__hx_current) : (global::Main_main_50__Fun.__hx_current = ((global::Main_main_50__Fun) (new global::Main_main_50__Fun()) )) ).Delegate) );
-				__temp_stmt3 = ((global::System.EventHandler) (this3) );
+				global::System.EventHandler this2 = null;
+				this2 = ((global::System.EventHandler) (( (( global::Main_main_49__Fun.__hx_current != null )) ? (global::Main_main_49__Fun.__hx_current) : (global::Main_main_49__Fun.__hx_current = ((global::Main_main_49__Fun) (new global::Main_main_49__Fun()) )) ).Delegate) );
+				__temp_stmt2 = ((global::System.EventHandler) (this2) );
 			}
 			
-			btn.Clicked += ((global::System.EventHandler) (__temp_stmt3) );
-			global::haxe.Log.trace.__hx_invoke2_o(default(double), "line", default(double), new global::haxe.lang.DynamicObject(new int[]{302979532, 1547539107, 1648581351}, new object[]{"main", "Main", "Main.hx"}, new int[]{1981972957}, new double[]{((double) (54) )}));
+			btn.Clicked += ((global::System.EventHandler) (__temp_stmt2) );
+			global::PrettyDrawing a = new global::PrettyDrawing();
+			global::Gtk.HBox box = new global::Gtk.HBox(true, 0);
+			( box as global::Gtk.Container ).Add(((global::Gtk.Widget) (a) ));
+			( box as global::Gtk.Container ).Add(((global::Gtk.Widget) (btn) ));
+			( win as global::Gtk.Container ).Add(((global::Gtk.Widget) (box) ));
+			global::haxe.Log.trace.__hx_invoke2_o(default(double), "line", default(double), new global::haxe.lang.DynamicObject(new int[]{302979532, 1547539107, 1648581351}, new object[]{"main", "Main", "Main.hx"}, new int[]{1981972957}, new double[]{((double) (64) )}));
 			( win as global::Gtk.Widget ).ShowAll();
 			global::Gtk.Application.Run();
 		}
-	}
-	
-	
-	public static new object __hx_createEmpty() {
-		return new global::Main(global::haxe.lang.EmptyObject.EMPTY);
-	}
-	
-	
-	public static new object __hx_create(global::Array arr) {
-		return new global::Main();
 	}
 	
 	
@@ -105,64 +80,50 @@ public class Main_main_22__Fun : global::haxe.lang.Function {
 
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
-public class Main_main_31__Fun : global::haxe.lang.Function {
+public class Main_main_49__Fun : global::haxe.lang.Function {
 	
-	public Main_main_31__Fun(global::Gtk.DrawingArea drawing) : base(2, 0) {
-		this.drawing = drawing;
+	public Main_main_49__Fun() : base(2, 0) {
 	}
 	
 	
+	public static global::Main_main_49__Fun __hx_current;
+	
 	public override object __hx_invoke2_o(double __fn_float1, object __fn_dyn1, double __fn_float2, object __fn_dyn2) {
-		global::Gtk.ExposeEventArgs e1 = ( (( __fn_dyn2 == global::haxe.lang.Runtime.undefined )) ? (((global::Gtk.ExposeEventArgs) (((object) (__fn_float2) )) )) : (((global::Gtk.ExposeEventArgs) (__fn_dyn2) )) );
-		object t1 = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((object) (__fn_float1) )) : (((object) (__fn_dyn1) )) );
-		this.Delegate(t1, e1);
+		global::System.EventArgs e1 = ( (( __fn_dyn2 == global::haxe.lang.Runtime.undefined )) ? (((global::System.EventArgs) (((object) (__fn_float2) )) )) : (((global::System.EventArgs) (__fn_dyn2) )) );
+		object obj = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((object) (__fn_float1) )) : (((object) (__fn_dyn1) )) );
+		this.Delegate(obj, e1);
 		return null;
 	}
 	
 	
-	public void Delegate(object t1, global::Gtk.ExposeEventArgs e1) {
+	public void Delegate(object obj, global::System.EventArgs e1) {
 		unchecked {
-			global::Cairo.Context context = global::Gdk.CairoHelper.Create(((global::Gdk.Drawable) (( this.drawing as global::Gtk.Widget ).GdkWindow) ));
-			context.MoveTo(((double) (10) ), ((double) (10) ));
-			context.LineTo(((double) (100) ), ((double) (10) ));
-			context.LineTo(((double) (100) ), ((double) (100) ));
-			context.LineTo(((double) (10) ), ((double) (100) ));
-			context.LineTo(((double) (10) ), ((double) (100) ));
-			context.ClosePath();
-			context.Color = ((global::Cairo.Color) (new global::Cairo.Color(((double) (0) ), ((double) (0) ), ((double) (0) ))) );
-			context.FillPreserve();
-			context.Color = ((global::Cairo.Color) (new global::Cairo.Color(((double) (1) ), ((double) (0) ), ((double) (0) ))) );
-			context.Stroke();
+			global::haxe.Log.trace.__hx_invoke2_o(default(double), "Thanks!", default(double), new global::haxe.lang.DynamicObject(new int[]{302979532, 1547539107, 1648581351}, new object[]{"main", "Main", "Main.hx"}, new int[]{1981972957}, new double[]{((double) (50) )}));
 		}
 	}
 	
-	
-	public global::Gtk.DrawingArea drawing;
 	
 }
 
 
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
-public class Main_main_50__Fun : global::haxe.lang.Function {
+public class PrettyDrawing : global::Gtk.DrawingArea {
 	
-	public Main_main_50__Fun() : base(2, 0) {
-	}
-	
-	
-	public static global::Main_main_50__Fun __hx_current;
-	
-	public override object __hx_invoke2_o(double __fn_float1, object __fn_dyn1, double __fn_float2, object __fn_dyn2) {
-		global::System.EventArgs e2 = ( (( __fn_dyn2 == global::haxe.lang.Runtime.undefined )) ? (((global::System.EventArgs) (((object) (__fn_float2) )) )) : (((global::System.EventArgs) (__fn_dyn2) )) );
-		object obj = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((object) (__fn_float1) )) : (((object) (__fn_dyn1) )) );
-		this.Delegate(obj, e2);
-		return null;
-	}
-	
-	
-	public void Delegate(object obj, global::System.EventArgs e2) {
+	public PrettyDrawing() : base() {
 		unchecked {
-			global::haxe.Log.trace.__hx_invoke2_o(default(double), "Thanks!", default(double), new global::haxe.lang.DynamicObject(new int[]{302979532, 1547539107, 1648581351}, new object[]{"main", "Main", "Main.hx"}, new int[]{1981972957}, new double[]{((double) (51) )}));
+			( this as global::Gtk.Widget ).SetSizeRequest(((int) (200) ), ((int) (200) ));
+		}
+	}
+	
+	
+	protected override bool OnExposeEvent(global::Gdk.EventExpose e) {
+		unchecked {
+			global::haxe.Log.trace.__hx_invoke2_o(default(double), "hee", default(double), new global::haxe.lang.DynamicObject(new int[]{302979532, 1547539107, 1648581351}, new object[]{"OnExposeEvent", "PrettyDrawing", "Main.hx"}, new int[]{1981972957}, new double[]{((double) (80) )}));
+			global::System.Drawing.Pen pen = new global::System.Drawing.Pen(((global::System.Drawing.Color) (global::System.Drawing.Color.Blue) ));
+			global::System.Drawing.Graphics g = global::Gtk.DotNet.Graphics.FromDrawable(((global::Gdk.Drawable) (( e as global::Gdk.Event ).Window) ));
+			g.DrawLine(((global::System.Drawing.Pen) (pen) ), ((int) (0) ), ((int) (0) ), ((int) (100) ), ((int) (100) ));
+			return true;
 		}
 	}
 	
