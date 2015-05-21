@@ -1,0 +1,12 @@
+-lib hxcs 
+-cp src 
+-cp lib 
+-cs F:/haxe-cs-gtk/bin/test 
+-D net-ver=40 
+-main Main 
+-net-lib pango-sharp.dll 
+-net-lib atk-sharp.dll 
+-net-lib gdk-sharp.dll 
+-net-lib gtk-sharp.dll 
+-net-lib glib-sharp.dll 
+-net-lib Mono.Cairo.dll
