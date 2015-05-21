@@ -20,7 +20,4 @@ Global
 		{C9FBC94F-85D7-4D96-BEA0-CA185DCC1271}.Release|x86.ActiveCfg = Release|x86
 		{C9FBC94F-85D7-4D96-BEA0-CA185DCC1271}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Main.csproj
-	EndGlobalSection
 EndGlobal

@@ -25,7 +25,7 @@
     <option noInlineOnDebug="False" />
     <option mainClass="Main" />
     <option enabledebug="False" />
-    <option additional="-net-lib pango-sharp.dll&#xA;-net-lib atk-sharp.dll&#xA;-net-lib gdk-sharp.dll&#xA;-net-lib gtk-sharp.dll&#xA;-net-lib glib-sharp.dll&#xA;-net-lib Mono.Cairo.dll" />
+    <option additional="-net-lib pango-sharp.dll&#xA;-net-lib atk-sharp.dll&#xA;-net-lib gdk-sharp.dll&#xA;-net-lib gtk-sharp.dll&#xA;-net-lib glib-sharp.dll&#xA;-net-lib Mono.Cairo.dll&#xA;-net-lib System.Drawing.dll@std" />
   </build>
   <!-- haxelib libraries -->
   <haxelib>

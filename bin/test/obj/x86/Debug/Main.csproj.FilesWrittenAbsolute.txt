@@ -1,5 +1,0 @@
-/home/jonas/Documents/Haxe/haxe-cs-gtk/bin/test/obj/x86/Debug/.NETFramework,Version=v4.0,Profile=Client.AssemblyAttribute.cs
-/home/jonas/Documents/Haxe/haxe-cs-gtk/bin/test/bin/Debug/Main.exe.mdb
-/home/jonas/Documents/Haxe/haxe-cs-gtk/bin/test/bin/Debug/Main.exe
-/home/jonas/Documents/Haxe/haxe-cs-gtk/bin/test/obj/x86/Debug/Main.exe
-/home/jonas/Documents/Haxe/haxe-cs-gtk/bin/test/obj/x86/Debug/Main.exe.mdb
