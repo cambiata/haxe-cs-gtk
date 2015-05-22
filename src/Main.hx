@@ -65,6 +65,23 @@ import cairo.Context;
 		
 		win.ShowAll();
 		
+		var bitmap:cs.system.drawing.Bitmap = new cs.system.drawing.Bitmap(300, 300);
+		var gr:cs.system.drawing.Graphics = cs.system.drawing.Graphics.FromImage(bitmap);
+		gr.FillEllipse(cs.system.drawing.Brushes.Red, new cs.system.drawing.RectangleF(0, 0, 100, 100));
+		var svg:svg.SvgDocument = svg.SvgDocument.Open('F:\\tiger.svg');
+		svg.Draw(gr);
+		
+		gr.Save();
+		bitmap.Save('test.png');
+		
+		/*
+			Svg.SvgDocument svg = Svg.SvgDocument.FromSvg("F:\\tiger.svg");
+			svg.Draw (gr);
+
+			gr.Save ();
+			bitmap.Save ("test.png", System.Drawing.Imaging.ImageFormat.Png);		
+		*/
+		
 		Application.Run();
 	}	
 }
@@ -73,16 +90,16 @@ import cairo.Context;
 	public function new() {
 		super();
 		this.SetSizeRequest(200, 200);
-		
 	}
 	
 	@:overload @:protected override function OnExposeEvent(e: gdk.EventExpose):Bool {
-		trace('hee');
-		
+		trace('PrettyDrawing redraw');
 		var pen:cs.system.drawing.Pen = new cs.system.drawing.Pen(cs.system.drawing.Color.Blue);
 		var g:cs.system.drawing.Graphics = gtk.dotnet.Graphics.FromDrawable(e.Window);
-		
 		g.DrawLine(pen, 0, 0, 100, 100);
+		
+		
+		
 		
 		return true;
 	}

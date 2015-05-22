@@ -7,7 +7,6 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Main</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
     <ProjectGuid>{C9FBC94F-85D7-4D96-BEA0-CA185DCC1271}</ProjectGuid>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -54,6 +53,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
     <Reference Include="pango-sharp">
       <HintPath>pango-sharp.dll</HintPath>
     </Reference>
@@ -75,7 +76,9 @@
     <Reference Include="Mono.Cairo">
       <HintPath>Mono.Cairo.dll</HintPath>
     </Reference>
-    <Reference Include="System.Drawing" />
+    <Reference Include="Svg">
+      <HintPath>Svg.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="src\Std.cs" />

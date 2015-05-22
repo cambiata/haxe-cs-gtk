@@ -43,6 +43,13 @@ public class Main {
 			( win as global::Gtk.Container ).Add(((global::Gtk.Widget) (box) ));
 			global::haxe.Log.trace.__hx_invoke2_o(default(double), "line", default(double), new global::haxe.lang.DynamicObject(new int[]{302979532, 1547539107, 1648581351}, new object[]{"main", "Main", "Main.hx"}, new int[]{1981972957}, new double[]{((double) (64) )}));
 			( win as global::Gtk.Widget ).ShowAll();
+			global::System.Drawing.Bitmap bitmap = new global::System.Drawing.Bitmap(((int) (300) ), ((int) (300) ));
+			global::System.Drawing.Graphics gr = global::System.Drawing.Graphics.FromImage(((global::System.Drawing.Image) (bitmap) ));
+			gr.FillEllipse(((global::System.Drawing.Brush) (global::System.Drawing.Brushes.Red) ), ((global::System.Drawing.RectangleF) (new global::System.Drawing.RectangleF(((float) (0) ), ((float) (0) ), ((float) (100) ), ((float) (100) ))) ));
+			global::Svg.SvgDocument svg1 = global::Svg.SvgDocument.Open<global::Svg.SvgDocument>(((string) ("F:\\tiger.svg") ));
+			svg1.Draw(((global::System.Drawing.Graphics) (gr) ));
+			gr.Save();
+			( bitmap as global::System.Drawing.Image ).Save(((string) ("test.png") ));
 			global::Gtk.Application.Run();
 		}
 	}
@@ -119,7 +126,7 @@ public class PrettyDrawing : global::Gtk.DrawingArea {
 	
 	protected override bool OnExposeEvent(global::Gdk.EventExpose e) {
 		unchecked {
-			global::haxe.Log.trace.__hx_invoke2_o(default(double), "hee", default(double), new global::haxe.lang.DynamicObject(new int[]{302979532, 1547539107, 1648581351}, new object[]{"OnExposeEvent", "PrettyDrawing", "Main.hx"}, new int[]{1981972957}, new double[]{((double) (80) )}));
+			global::haxe.Log.trace.__hx_invoke2_o(default(double), "PrettyDrawing redraw", default(double), new global::haxe.lang.DynamicObject(new int[]{302979532, 1547539107, 1648581351}, new object[]{"OnExposeEvent", "PrettyDrawing", "Main.hx"}, new int[]{1981972957}, new double[]{((double) (96) )}));
 			global::System.Drawing.Pen pen = new global::System.Drawing.Pen(((global::System.Drawing.Color) (global::System.Drawing.Color.Blue) ));
 			global::System.Drawing.Graphics g = global::Gtk.DotNet.Graphics.FromDrawable(((global::Gdk.Drawable) (( e as global::Gdk.Event ).Window) ));
 			g.DrawLine(((global::System.Drawing.Pen) (pen) ), ((int) (0) ), ((int) (0) ), ((int) (100) ), ((int) (100) ));

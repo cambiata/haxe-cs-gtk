@@ -13,6 +13,7 @@
 /reference:bin/glib-sharp.dll
 /reference:bin/gtk-dotnet.dll
 /reference:bin/Mono.Cairo.dll
+/reference:bin/Svg.dll
 src\Std.cs
 src\cs\internal\Function.cs
 src\Type.cs

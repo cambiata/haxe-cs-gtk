@@ -5,3 +5,5 @@ F:\haxe-gtk\bin\test\obj\x86\Debug\Main.csprojResolveAssemblyReference.cache
 F:\haxe-gtk\bin\test\obj\x86\Debug\Main.csproj.Main.exe.config
 F:\haxe-gtk\bin\test\obj\x86\Debug\Main.exe
 F:\haxe-gtk\bin\test\obj\x86\Debug\Main.pdb
+F:\haxe-gtk\bin\test\bin\Debug\Svg.pdb
+F:\haxe-gtk\bin\test\bin\Debug\Svg.xml
