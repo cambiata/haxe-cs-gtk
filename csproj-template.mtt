@@ -8,10 +8,12 @@
     <RootNamespace></RootNamespace>
     <AssemblyName>::name::</AssemblyName>
     <TargetFrameworkVersion>v::targetFramework::</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <!--TargetFrameworkProfile>Client</TargetFrameworkProfile-->
     <FileAlignment>512</FileAlignment>
 	<ProjectGuid>{C9FBC94F-85D7-4D96-BEA0-CA185DCC1271}</ProjectGuid>
 	<AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+	
+	
 	::if unsafe::
 	<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 	::end::
@@ -53,6 +55,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.XML" />
   ::foreach refs::
   ::if (hint != null)::
     <Reference Include="::name::">

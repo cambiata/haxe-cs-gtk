@@ -1,15 +1,1 @@
-﻿<Properties StartupItem="Main.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="f:\haxe-gtk\bin\test\src\Main.cs">
-    <Files>
-      <File FileName="f:\haxe-gtk\bin\test\src\Main.cs" Line="1" Column="1" />
-      <File FileName="src\cs\Boot.cs" Line="5" Column="3" />
-      <File FileName="src\cs\Lib.cs" Line="1" Column="1" />
-      <File FileName="packages.config" Line="2" Column="11" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-</Properties>
+﻿<Properties StartupItem="Main.csproj" />
