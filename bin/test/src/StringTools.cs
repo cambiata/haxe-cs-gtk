@@ -11,7 +11,7 @@ public class StringTools : global::haxe.lang.HxObject {
 	}
 	
 	
-	public static void __hx_ctor__StringTools(global::StringTools __temp_me8) {
+	public static void __hx_ctor__StringTools(global::StringTools __temp_me9) {
 	}
 	
 	

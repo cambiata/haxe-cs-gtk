@@ -298,7 +298,6 @@ M System.Security.HostSecurityManager
 M Gtk.ScrollEventArgs
 M System.IFormatProvider
 M glib.ListBase
-M cs.system.ConsoleModifiers
 M Reflect
 C Reflect
 M System.ComponentModel.IComponent
@@ -362,7 +361,6 @@ M gtk.SelectionNotifyEventHandler
 M gtk.ParentSetHandler
 M System.Xml.XmlNode
 M System.Drawing.Size
-M haxe.PosInfos
 M cs.Flags
 M System.Drawing.Imaging.Encoder
 M cs.types.Int8
@@ -392,7 +390,6 @@ M pango.CoverageLevel
 M System.Runtime.InteropServices._Type
 M cs.system.io.FileMode
 M gdk.Colorspace
-M System.ConsoleCancelEventArgs
 M GLib.Value
 M gtk.ExposeEventHandler
 M System.Xml.XmlAttributeCollection
@@ -431,7 +428,6 @@ M gdk.PixbufSaveFunc
 M Pango.Rectangle
 M cs.Out
 M System.Reflection.Module
-M cs.system.ConsoleKey
 M cs.system.reflection.emit.ILGenerator
 M Gdk.EventSelection
 M gtk.FocusInEventHandler
@@ -540,7 +536,6 @@ M Gtk.ConnectProxyArgs
 M pango.Stretch
 M pango.AttrFilterFunc
 M System.Runtime.InteropServices._MethodInfo
-M System.ConsoleKeyInfo
 M gtk.SetFocusHandler
 M atk.ActiveDescendantChangedHandler
 M System.Security.SecurityState
@@ -549,7 +544,8 @@ M Main
 C Main
 C Main_main_22__Fun
 C Main_main_49__Fun
-C PrettyDrawing
+C SvgDrawing
+C ExSvg
 M Gtk.MoveFocusArgs
 M pango.Direction
 M cs.system.CrossAppDomainDelegate
@@ -577,7 +573,6 @@ M System.ComponentModel.PropertyDescriptor
 M Gdk.Font
 M Atk.Implementor
 M Gdk.Device
-M cs.system.Console
 M cs.system.security.SecurityElement
 M svg.UnitRenderingType
 M System.IntPtr
@@ -664,9 +659,6 @@ M System.Reflection.InterfaceMapping
 M cs.system.xml.XmlNamespaceScope
 M gtk.Widget
 M pango.WrapMode
-M haxe.Log
-C haxe.Log
-C haxe.Log_Anon_45__Fun
 M cs.system.drawing.RotateFlipType
 M cs.system.xml.XmlOutputMethod
 M cs.system.xml.XmlNodeType
@@ -750,7 +742,6 @@ M Gtk.PixbufInsertedArgs
 M System.Xml.XmlNamedNodeMap
 M System.RuntimeMethodHandle
 M cs.system.drawing.FontStyle
-M cs.system.ConsoleCancelEventHandler
 M cs.system.collections.Hashtable
 M gtk.ProximityInEventHandler
 M cs.system.text.Encoding
@@ -948,7 +939,6 @@ M atk.ChildrenChangedHandler
 M System.Collections.IStructuralEquatable
 M System.Xml.Schema.XmlSchemaObject
 M cs.system.drawing.imaging.EmfPlusRecordType
-M cs.system.ConsoleColor
 M gtk.DragDataDeleteHandler
 M cs.system.drawing.drawing2d.CompositingMode
 M cs.system.globalization.CompareOptions
@@ -992,6 +982,7 @@ M gdk.ImageType
 M System.Threading.CompressedStack
 M gtk.AccelGroupFindFunc
 M Gtk.RemovedArgs
+M Gtk.VBox
 M Gtk.Tooltip
 M cs.system.xml.xpath.XPathNamespaceScope
 M Gtk.DragLeaveArgs
@@ -1152,7 +1143,6 @@ M Svg.MouseArg
 M cs.system.drawing.drawing2d.WrapMode
 M gtk.IconSet
 M System.EventArgs
-M cs.system.ConsoleSpecialKey
 M System.Xml.XmlAttribute
 M cs.system.configuration.assemblies.AssemblyVersionCompatibility
 M System.Xml.IXmlNamespaceResolver

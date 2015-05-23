@@ -26,7 +26,6 @@ src\haxe\lang\FieldLookup.cs
 src\Main.cs
 src\cs\Boot.cs
 src\cs\internal\Null.cs
-src\haxe\Log.cs
 src\Array.cs
 src\cs\Lib.cs
 src\cs\internal\HxObject.cs

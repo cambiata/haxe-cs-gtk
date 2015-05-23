@@ -57,7 +57,7 @@ public class Type : global::haxe.lang.HxObject {
 	}
 	
 	
-	public static void __hx_ctor__Type(global::Type __temp_me9) {
+	public static void __hx_ctor__Type(global::Type __temp_me10) {
 	}
 	
 	

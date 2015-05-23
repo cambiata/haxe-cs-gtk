@@ -12,7 +12,7 @@ namespace cs {
 		}
 		
 		
-		public static void __hx_ctor_cs_Boot(global::cs.Boot __temp_me10) {
+		public static void __hx_ctor_cs_Boot(global::cs.Boot __temp_me11) {
 		}
 		
 		

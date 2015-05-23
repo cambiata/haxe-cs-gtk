@@ -13,9 +13,9 @@ namespace haxe.lang {
 		}
 		
 		
-		protected static int[] fieldIds = new int[]{105, 4745537, 4849249, 5393365, 5442204, 5594513, 76061764, 87367608, 302979532, 328878574, 359333139, 407283053, 452737314, 501039929, 520590566, 946786476, 1067353468, 1103412149, 1181037546, 1204816148, 1224901875, 1247875546, 1280845662, 1282943179, 1352786672, 1532710347, 1547539107, 1620824029, 1621420777, 1623148745, 1648581351, 1705629508, 1781145963, 1830310359, 1915412854, 1916009602, 1981972957, 2025055113, 2082663554, 2084789794, 2127021138};
+		protected static int[] fieldIds = new int[]{105, 4745537, 4849249, 5393365, 5442204, 5594513, 76061764, 87367608, 328878574, 359333139, 407283053, 452737314, 501039929, 520590566, 946786476, 1067353468, 1103412149, 1181037546, 1204816148, 1224901875, 1247875546, 1280845662, 1282943179, 1352786672, 1532710347, 1620824029, 1621420777, 1623148745, 1705629508, 1781145963, 1915412854, 1916009602, 2025055113, 2082663554, 2084789794, 2127021138};
 		
-		protected static string[] fields = new string[]{"i", "__a", "arr", "len", "map", "pop", "remove", "filter", "methodName", "iterator", "lastIndexOf", "hasNext", "reverse", "insert", "length", "toString", "splice", "copy", "join", "concat", "next", "push", "sort", "quicksort", "spliceVoid", "concatNative", "className", "__unsafe_get", "__unsafe_set", "indexOf", "fileName", "toDynamic", "__hx_constructs", "customParams", "__get", "__set", "lineNumber", "unshift", "shift", "__hx_createEmpty", "slice"};
+		protected static string[] fields = new string[]{"i", "__a", "arr", "len", "map", "pop", "remove", "filter", "iterator", "lastIndexOf", "hasNext", "reverse", "insert", "length", "toString", "splice", "copy", "join", "concat", "next", "push", "sort", "quicksort", "spliceVoid", "concatNative", "__unsafe_get", "__unsafe_set", "indexOf", "toDynamic", "__hx_constructs", "__get", "__set", "unshift", "shift", "__hx_createEmpty", "slice"};
 		
 		protected static int length;
 		
