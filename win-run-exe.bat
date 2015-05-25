@@ -1,1 +1,0 @@
-bin\test\bin\Debug\Main.exe

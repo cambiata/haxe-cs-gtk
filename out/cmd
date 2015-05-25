@@ -1,4 +1,5 @@
 /nologo
+/platform:x86
 /optimize+
 /debug-
 /unsafe-

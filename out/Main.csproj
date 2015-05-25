@@ -8,12 +8,8 @@
     <RootNamespace></RootNamespace>
     <AssemblyName>Main</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <!--TargetFrameworkProfile>Client</TargetFrameworkProfile-->
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
-	<ProjectGuid>{C9FBC94F-85D7-4D96-BEA0-CA185DCC1271}</ProjectGuid>
-	<AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-	
-	
 	
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -53,8 +49,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.XML" />
   
   
     <Reference Include="pango-sharp">

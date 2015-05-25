@@ -1,7 +1,7 @@
 -lib hxcs 
 -cp src 
 -cp lib 
--cs bin/test
+-cs out
 -D net-ver=40 
 -main Main 
 -net-lib pango-sharp.dll

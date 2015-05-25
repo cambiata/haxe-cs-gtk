@@ -4,7 +4,7 @@
   <output>
     <movie outputType="Application" />
     <movie input="" />
-    <movie path="bin\test" />
+    <movie path="out" />
     <movie fps="30" />
     <movie width="800" />
     <movie height="600" />
@@ -47,7 +47,7 @@
   <options>
     <option showHiddenPaths="False" />
     <option testMovie="Custom" />
-    <option testMovieCommand="" />
+    <option testMovieCommand="run.cmd" />
   </options>
   <!-- Plugin storage -->
   <storage />
