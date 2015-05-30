@@ -1,4 +1,4 @@
 @echo off
-cd bin/test/bin
+cd out-cs/bin
 Main.exe
 pause

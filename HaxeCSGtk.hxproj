@@ -4,7 +4,7 @@
   <output>
     <movie outputType="Application" />
     <movie input="" />
-    <movie path="out" />
+    <movie path="out-cs" />
     <movie fps="30" />
     <movie width="800" />
     <movie height="600" />
@@ -17,19 +17,20 @@
   <classpaths>
     <class path="src" />
     <class path="lib" />
+    <class path="..\_dev\haxe-cs-svg" />
   </classpaths>
   <!-- Build options -->
   <build>
-    <option directives="net-ver=40" />
+    <option directives="net-ver=40&#xA;verbose" />
     <option flashStrict="False" />
     <option noInlineOnDebug="False" />
     <option mainClass="Main" />
     <option enabledebug="False" />
-    <option additional="-net-lib pango-sharp.dll&#xA;-net-lib atk-sharp.dll&#xA;-net-lib gdk-sharp.dll&#xA;-net-lib gtk-sharp.dll&#xA;-net-lib glib-sharp.dll&#xA;-net-lib gtk-dotnet.dll&#xA;-net-lib Mono.Cairo.dll&#xA;-net-lib Svg.dll&#xA;-net-lib System.Drawing.dll@std&#xA;-net-lib System.Xml.dll@std" />
+    <option additional="-net-lib pango-sharp.dll&#xA;-net-lib atk-sharp.dll&#xA;-net-lib gdk-sharp.dll&#xA;-net-lib gtk-sharp.dll&#xA;-net-lib glib-sharp.dll&#xA;-net-lib gtk-dotnet.dll&#xA;-net-lib Mono.Cairo.dll&#xA;-net-lib System.Drawing.dll@std" />
   </build>
   <!-- haxelib libraries -->
   <haxelib>
-    <library name="hxcs" />
+    <!-- example: <library name="..." /> -->
   </haxelib>
   <!-- Class files to compile (other referenced classes will automatically be included) -->
   <compileTargets>
