@@ -1,0 +1,82 @@
+class cs.Lib{
+	static decimalSeparator(var) : String
+
+	static public applyCultureChanges(method) : Void -> Void
+
+	 = [Function:Void -> Void]
+		[Block:System.Globalization.CultureInfo]
+			[Var ci(1309):System.Globalization.CultureInfo]
+				[New:System.Globalization.CultureInfo]
+					System.Globalization.CultureInfo
+					[Call:String]
+						[Field:Void -> String]
+							[Call:System.Globalization.CultureInfo]
+								[Field:Void -> System.Globalization.CultureInfo]
+									[Call:System.Threading.Thread]
+										[Field:Void -> System.Threading.Thread]
+											[TypeExpr System.Threading.Thread:Class<cs.system.threading.Thread>]
+											[FStatic:Void -> System.Threading.Thread]
+												System.Threading.Thread
+												get_CurrentThread
+									[FInstance:Void -> System.Globalization.CultureInfo]
+										System.Threading.Thread
+										get_CurrentCulture
+							[FInstance:Void -> String]
+								System.Globalization.CultureInfo
+								get_Name
+					[Const true:Bool]
+			[Binop:String]
+				[Field:String]
+					[TypeExpr cs.Lib:Class<cs.Lib>]
+					[FStatic:String]
+						cs.Lib
+						decimalSeparator
+				=
+				[Call:String]
+					[Field:Void -> String]
+						[Call:System.Globalization.NumberFormatInfo]
+							[Field:Void -> System.Globalization.NumberFormatInfo]
+								[Local ci(1309):System.Globalization.CultureInfo]
+								[FInstance:Void -> System.Globalization.NumberFormatInfo]
+									System.Globalization.CultureInfo
+									get_NumberFormat
+						[FInstance:Void -> String]
+							System.Globalization.NumberFormatInfo
+							get_NumberDecimalSeparator
+			[Call:String]
+				[Field:String -> String]
+					[Call:System.Globalization.NumberFormatInfo]
+						[Field:Void -> System.Globalization.NumberFormatInfo]
+							[Local ci(1309):System.Globalization.CultureInfo]
+							[FInstance:Void -> System.Globalization.NumberFormatInfo]
+								System.Globalization.CultureInfo
+								get_NumberFormat
+					[FInstance:String -> String]
+						System.Globalization.NumberFormatInfo
+						set_NumberDecimalSeparator
+				[Const ".":String]
+			[Call:System.Globalization.CultureInfo]
+				[Field:System.Globalization.CultureInfo -> System.Globalization.CultureInfo]
+					[Call:System.Threading.Thread]
+						[Field:Void -> System.Threading.Thread]
+							[TypeExpr System.Threading.Thread:Class<cs.system.threading.Thread>]
+							[FStatic:Void -> System.Threading.Thread]
+								System.Threading.Thread
+								get_CurrentThread
+					[FInstance:System.Globalization.CultureInfo -> System.Globalization.CultureInfo]
+						System.Threading.Thread
+						set_CurrentCulture
+				[Local ci(1309):System.Globalization.CultureInfo]
+
+	static public getNativeType(method) : obj : Dynamic -> System.Type
+
+	 = [Function:obj : Dynamic -> System.Type]
+		[Arg:Dynamic] [Local obj(94):Dynamic]
+		[Block:Dynamic]
+			[Return:Dynamic]
+				[Call:System.Type]
+					[Field:Dynamic]
+						[Local obj(94):Dynamic]
+						[FDynamic:Dynamic] GetType
+
+}

@@ -1,0 +1,8 @@
+extern class System.Security.AccessControl.AccessRule extends System.Security.AccessControl.AuthorizationRule{
+	new(method) : identity : System.Security.Principal.IdentityReference -> accessMask : Int -> isInherited : Bool -> inheritanceFlags : System.Security.AccessControl.InheritanceFlags -> propagationFlags : System.Security.AccessControl.PropagationFlags -> type : System.Security.AccessControl.AccessControlType -> Void
+
+	public AccessControlType((get,never)) : System.Security.AccessControl.AccessControlType
+
+	get_AccessControlType(method) : Void -> System.Security.AccessControl.AccessControlType
+
+}

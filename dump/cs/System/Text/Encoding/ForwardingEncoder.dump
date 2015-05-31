@@ -1,0 +1,8 @@
+extern class System.Text.Encoding.ForwardingEncoder extends System.Text.Encoder{
+	public new(method) : enc : System.Text.Encoding -> Void
+
+	public GetByteCount(method) : chars : cs.NativeArray<cs.types.Char16> -> index : Int -> count : Int -> flush : Bool -> Int
+
+	public GetBytes(method) : chars : cs.NativeArray<cs.types.Char16> -> charIndex : Int -> charCount : Int -> bytes : cs.NativeArray<cs.types.UInt8> -> byteCount : Int -> flush : Bool -> Int
+
+}

@@ -1,0 +1,30 @@
+extern class System.Reflection.Emit.UnmanagedMarshal{
+	public IIDGuid((get,never)) : System.Guid
+
+	public GetUnmanagedType((get,never)) : System.Runtime.InteropServices.UnmanagedType
+
+	public ElementCount((get,never)) : Int
+
+	public BaseType((get,never)) : System.Runtime.InteropServices.UnmanagedType
+
+	get_BaseType(method) : Void -> System.Runtime.InteropServices.UnmanagedType
+
+	get_ElementCount(method) : Void -> Int
+
+	get_GetUnmanagedType(method) : Void -> System.Runtime.InteropServices.UnmanagedType
+
+	get_IIDGuid(method) : Void -> System.Guid
+
+	static public DefineByValArray(method) : elemCount : Int -> System.Reflection.Emit.UnmanagedMarshal
+
+	static public DefineByValTStr(method) : elemCount : Int -> System.Reflection.Emit.UnmanagedMarshal
+
+	static public DefineLPArray(method) : elemType : System.Runtime.InteropServices.UnmanagedType -> System.Reflection.Emit.UnmanagedMarshal
+
+	static public DefineSafeArray(method) : elemType : System.Runtime.InteropServices.UnmanagedType -> System.Reflection.Emit.UnmanagedMarshal
+
+	static public DefineUnmanagedMarshal(method) : unmanagedType : System.Runtime.InteropServices.UnmanagedType -> System.Reflection.Emit.UnmanagedMarshal
+
+	static public DefineCustom(method) : typeref : System.Type -> cookie : String -> mtype : String -> id : System.Guid -> System.Reflection.Emit.UnmanagedMarshal
+
+}

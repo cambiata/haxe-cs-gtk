@@ -1,0 +1,32 @@
+extern class Gdk.Point extends System.ValueType{
+	public new(method) : x : Int -> y : Int -> Void
+
+	public new(method) : sz : Gdk.Size -> Void
+
+	public IsEmpty((get,never)) : Bool
+
+	public Y(var) : Int
+
+	public X(var) : Int
+
+	public ToString(method) : Void -> String
+
+	public Offset(method) : dx : Int -> dy : Int -> Void
+
+	get_IsEmpty(method) : Void -> Bool
+
+	static public Zero(var) : Gdk.Point
+
+	static public New(method) : raw : System.IntPtr -> Gdk.Point
+
+	static public op_Explicit(method) : pt : Gdk.Point -> Gdk.Size
+
+	static public op_Addition(method) : pt : Gdk.Point -> sz : Gdk.Size -> Gdk.Point
+
+	static public op_Subtraction(method) : pt : Gdk.Point -> sz : Gdk.Size -> Gdk.Point
+
+	static public op_Equality(method) : pt_a : Gdk.Point -> pt_b : Gdk.Point -> Bool
+
+	static public op_Inequality(method) : pt_a : Gdk.Point -> pt_b : Gdk.Point -> Bool
+
+}

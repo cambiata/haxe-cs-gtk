@@ -1,0 +1,8 @@
+extern class System.Security.AccessControl.AuditRule extends System.Security.AccessControl.AuthorizationRule{
+	new(method) : identity : System.Security.Principal.IdentityReference -> accessMask : Int -> isInherited : Bool -> inheritanceFlags : System.Security.AccessControl.InheritanceFlags -> propagationFlags : System.Security.AccessControl.PropagationFlags -> auditFlags : System.Security.AccessControl.AuditFlags -> Void
+
+	public AuditFlags((get,never)) : System.Security.AccessControl.AuditFlags
+
+	get_AuditFlags(method) : Void -> System.Security.AccessControl.AuditFlags
+
+}

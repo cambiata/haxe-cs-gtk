@@ -1,0 +1,1 @@
+abstract gtk.Adjustment_ValueChangedVMDelegate {}

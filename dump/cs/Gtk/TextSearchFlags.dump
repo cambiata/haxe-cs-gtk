@@ -1,0 +1,4 @@
+extern enum Gtk.TextSearchFlags {
+	VisibleOnly : Gtk.TextSearchFlags;
+	TextOnly : Gtk.TextSearchFlags;
+}

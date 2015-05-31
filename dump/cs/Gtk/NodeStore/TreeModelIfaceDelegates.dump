@@ -1,0 +1,26 @@
+extern class Gtk.NodeStore.TreeModelIfaceDelegates extends System.ValueType{
+	public parent(var) : gtk.NodeStore_ParentDelegate
+
+	public nth_child(var) : gtk.NodeStore_NthChildDelegate
+
+	public n_children(var) : gtk.NodeStore_NChildrenDelegate
+
+	public has_child(var) : gtk.NodeStore_HasChildDelegate
+
+	public children(var) : gtk.NodeStore_ChildrenDelegate
+
+	public next(var) : gtk.NodeStore_NextDelegate
+
+	public get_value(var) : gtk.NodeStore_GetValueDelegate
+
+	public get_path(var) : gtk.NodeStore_GetPathDelegate
+
+	public get_node(var) : gtk.NodeStore_GetNodeDelegate
+
+	public get_column_type(var) : gtk.NodeStore_GetColumnTypeDelegate
+
+	public get_n_columns(var) : gtk.NodeStore_GetNColumnsDelegate
+
+	public get_flags(var) : gtk.NodeStore_GetFlagsDelegate
+
+}

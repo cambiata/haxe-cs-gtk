@@ -1,0 +1,14 @@
+extern class System.Array.Swapper extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : i : Int -> j : Int -> Void
+
+	public BeginInvoke(method) : i : Int -> j : Int -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Void
+
+	static public op_Addition(method) : arg1 : cs.system.Array_Swapper -> arg2 : cs.system.Array_Swapper -> cs.system.Array_Swapper
+
+	static public op_Subtraction(method) : arg1 : cs.system.Array_Swapper -> arg2 : cs.system.Array_Swapper -> cs.system.Array_Swapper
+
+}

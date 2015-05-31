@@ -1,0 +1,34 @@
+extern class Gtk.Box.BoxChild extends Gtk.Container.ContainerChild{
+	new(method) : parent : Gtk.Container -> child : Gtk.Widget -> Void
+
+	public Padding((get,set)) : UInt
+
+	public Expand((get,set)) : Bool
+
+	public Fill((get,set)) : Bool
+
+	public PackType((get,set)) : Gtk.PackType
+
+	public Position((get,set)) : Int
+
+	get_Position(method) : Void -> Int
+
+	set_Position(method) : value : Int -> Int
+
+	get_PackType(method) : Void -> Gtk.PackType
+
+	set_PackType(method) : value : Gtk.PackType -> Gtk.PackType
+
+	get_Fill(method) : Void -> Bool
+
+	set_Fill(method) : value : Bool -> Bool
+
+	get_Expand(method) : Void -> Bool
+
+	set_Expand(method) : value : Bool -> Bool
+
+	get_Padding(method) : Void -> UInt
+
+	set_Padding(method) : value : UInt -> UInt
+
+}

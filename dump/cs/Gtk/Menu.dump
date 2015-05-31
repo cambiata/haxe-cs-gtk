@@ -1,0 +1,82 @@
+extern class Gtk.Menu extends Gtk.MenuShell implements ArrayAccess<Gtk.Container.ContainerChild>{
+	new(method) : gtype : GLib.GType -> Void
+
+	public new(method) : Void -> Void
+
+	public new(method) : raw : System.IntPtr -> Void
+
+	public Screen((get,set)) : Gdk.Screen
+
+	public Active((get,never)) : Gtk.Widget
+
+	public AttachWidget((get,never)) : Gtk.Widget
+
+	public Monitor((never,set)) : Int
+
+	public Title((get,set)) : String
+
+	public AccelPath((never,set)) : String
+
+	public AccelGroup((get,set)) : Gtk.AccelGroup
+
+	public TearoffState((get,set)) : Bool
+
+	public TearoffTitle((get,set)) : String
+
+	get_TearoffTitle(method) : Void -> String
+
+	set_TearoffTitle(method) : value : String -> String
+
+	get_TearoffState(method) : Void -> Bool
+
+	set_TearoffState(method) : value : Bool -> Bool
+
+	get_AccelGroup(method) : Void -> Gtk.AccelGroup
+
+	set_AccelGroup(method) : value : Gtk.AccelGroup -> Gtk.AccelGroup
+
+	set_AccelPath(method) : value : String -> String
+
+	get_Item(method) : child : Gtk.Widget -> Gtk.Container.ContainerChild
+
+	get_Title(method) : Void -> String
+
+	set_Title(method) : value : String -> String
+
+	public Attach(method) : child : Gtk.Widget -> left_attach : UInt -> right_attach : UInt -> top_attach : UInt -> bottom_attach : UInt -> Void
+
+	set_Monitor(method) : value : Int -> Int
+
+	get_AttachWidget(method) : Void -> Gtk.Widget
+
+	public Popdown(method) : Void -> Void
+
+	public AttachToWidget(method) : attach_widget : Gtk.Widget -> detacher : gtk.MenuDetachFunc -> Void
+
+	get_Active(method) : Void -> Gtk.Widget
+
+	public Popup(method) : parent_menu_shell : Gtk.Widget -> parent_menu_item : Gtk.Widget -> func : gtk.MenuPositionFunc -> button : UInt -> activate_time : UInt -> Void
+
+	public Popup(method) : Void -> Void
+
+	public Popup(method) : parent_menu_shell : Gtk.Widget -> parent_menu_item : Gtk.Widget -> func : gtk.MenuPositionFunc -> data : System.IntPtr -> button : UInt -> activate_time : UInt -> Void
+
+	public SetActive(method) : index_ : UInt -> Void
+
+	public Reposition(method) : Void -> Void
+
+	public ReorderChild(method) : child : Gtk.Widget -> position : Int -> Void
+
+	public Detach(method) : Void -> Void
+
+	get_Screen(method) : Void -> Gdk.Screen
+
+	set_Screen(method) : value : Gdk.Screen -> Gdk.Screen
+
+	static public GType((get,never)) : GLib.GType
+
+	static get_GType(method) : Void -> GLib.GType
+
+	static public GetForAttachWidget(method) : widget : Gtk.Widget -> GLib.List
+
+}

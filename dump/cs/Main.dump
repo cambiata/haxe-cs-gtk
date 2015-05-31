@@ -1,0 +1,612 @@
+class Main{
+	static public main(method) : Void -> Void
+
+	 = [Function:Void -> Void]
+		[Block:Void]
+			[Call:Void]
+				[Field:Void -> Void]
+					[TypeExpr Gtk.Application:Class<gtk.Application>]
+					[FStatic:Void -> Void]
+						Gtk.Application
+						Init
+			[Var win(5948):Gtk.Window]
+				[New:Gtk.Window]
+					Gtk.Window
+					[Const "Haxe, C# and GTK":String]
+			[Call:Void]
+				[Field:width : Int -> height : Int -> Void]
+					[Local win(5948):Gtk.Window]
+					[FInstance:width : Int -> height : Int -> Void]
+						Gtk.Window
+						Resize
+				[Const 300:Int]
+				[Const 400:Int]
+			[Call:Void]
+				[Field:value : gtk.DeleteEventHandler -> Void]
+					[Local win(5948):Gtk.Window]
+					[FInstance:value : gtk.DeleteEventHandler -> Void]
+						Gtk.Widget
+						add_DeleteEvent
+				[Block:gtk.DeleteEventHandler]
+					[Var this1(5954):Gtk.DeleteEventHandler]
+					[Binop:Gtk.DeleteEventHandler]
+						[Local this1(5954):Gtk.DeleteEventHandler]
+						=
+						[Cast:Gtk.DeleteEventHandler]
+							[Call:Unknown<1>]
+								[Local __delegate__(5955):(Dynamic -> Gtk.DeleteEventArgs -> Void) -> Unknown<0>]
+								[Function:t : Dynamic -> e : Gtk.DeleteEventArgs -> Void]
+									[Arg:Dynamic] [Local t(5949):Dynamic]
+									[Arg:Gtk.DeleteEventArgs] [Local e(5950):Gtk.DeleteEventArgs]
+									[Block:Dynamic]
+										[Call:Void]
+											[Field:Void -> Void]
+												[TypeExpr Gtk.Application:Class<gtk.Application>]
+												[FStatic:Void -> Void]
+													Gtk.Application
+													Quit
+										[Call:Dynamic]
+											[Field:value : Dynamic -> Dynamic]
+												[Local e(5950):Gtk.DeleteEventArgs]
+												[FInstance:value : Dynamic -> Dynamic]
+													GLib.SignalArgs
+													set_RetVal
+											[Const true:Bool]
+					[Cast:gtk.DeleteEventHandler] [Local this1(5954):Gtk.DeleteEventHandler]
+			[Var btn(5963):Gtk.Button] [New:Gtk.Button] Gtk.Button
+			[Call:String]
+				[Field:String -> String]
+					[Local btn(5963):Gtk.Button]
+					[FInstance:String -> String]
+						Gtk.Button
+						set_Label
+				[Const "Create test.png":String]
+			[Call:Void]
+				[Field:value : cs.system.EventHandler -> Void]
+					[Local btn(5963):Gtk.Button]
+					[FInstance:value : cs.system.EventHandler -> Void]
+						Gtk.Button
+						add_Clicked
+				[Block:cs.system.EventHandler]
+					[Var this2(5971):System.EventHandler]
+					[Binop:System.EventHandler]
+						[Local this2(5971):System.EventHandler]
+						=
+						[Cast:System.EventHandler]
+							[Call:Unknown<3>]
+								[Local __delegate__(5972):(Dynamic -> System.EventArgs -> Void) -> Unknown<2>]
+								[Function:obj : Dynamic -> e : System.EventArgs -> Void]
+									[Arg:Dynamic] [Local obj(5964):Dynamic]
+									[Arg:System.EventArgs] [Local e1(5965):System.EventArgs]
+									[Block:Void]
+										[Var bitmap(5966):System.Drawing.Bitmap]
+											[New:System.Drawing.Bitmap]
+												System.Drawing.Bitmap
+												[Const 200:Int]
+												[Const 200:Int]
+										[Var gr(5967):System.Drawing.Graphics]
+											[Call:System.Drawing.Graphics]
+												[Field:image : System.Drawing.Image -> System.Drawing.Graphics]
+													[TypeExpr System.Drawing.Graphics:Class<cs.system.drawing.Graphics>]
+													[FStatic:image : System.Drawing.Image -> System.Drawing.Graphics]
+														System.Drawing.Graphics
+														FromImage
+												[Local bitmap(5966):System.Drawing.Bitmap]
+										[Call:Void]
+											[Field:brush : System.Drawing.Brush -> rect : System.Drawing.RectangleF -> Void]
+												[Local gr(5967):System.Drawing.Graphics]
+												[FInstance:brush : System.Drawing.Brush -> rect : System.Drawing.RectangleF -> Void]
+													System.Drawing.Graphics
+													FillEllipse
+											[Call:System.Drawing.Brush]
+												[Field:Void -> System.Drawing.Brush]
+													[TypeExpr System.Drawing.Brushes:Class<cs.system.drawing.Brushes>]
+													[FStatic:Void -> System.Drawing.Brush]
+														System.Drawing.Brushes
+														get_Red
+											[New:System.Drawing.RectangleF]
+												System.Drawing.RectangleF
+												[Const 0:Int]
+												[Const 0:Int]
+												[Const 100:Int]
+												[Const 100:Int]
+										[Call:System.Drawing.Drawing2D.GraphicsState]
+											[Field:Void -> System.Drawing.Drawing2D.GraphicsState]
+												[Local gr(5967):System.Drawing.Graphics]
+												[FInstance:Void -> System.Drawing.Drawing2D.GraphicsState]
+													System.Drawing.Graphics
+													Save
+										[Call:Void]
+											[Field:filename : String -> Void]
+												[Local bitmap(5966):System.Drawing.Bitmap]
+												[FInstance:filename : String -> Void]
+													System.Drawing.Image
+													Save
+											[Const "test.png":String]
+					[Cast:cs.system.EventHandler] [Local this2(5971):System.EventHandler]
+			[Var list(5982):Gtk.TreeView] [New:Gtk.TreeView] Gtk.TreeView
+			[Var columnA(5983):Gtk.TreeViewColumn] [New:Gtk.TreeViewColumn] Gtk.TreeViewColumn
+			[Call:String]
+				[Field:String -> String]
+					[Local columnA(5983):Gtk.TreeViewColumn]
+					[FInstance:String -> String]
+						Gtk.TreeViewColumn
+						set_Title
+				[Const "Column A":String]
+			[Var cellA(5984):Gtk.CellRendererText] [New:Gtk.CellRendererText] Gtk.CellRendererText
+			[Call:Void]
+				[Field:cell : Gtk.CellRenderer -> expand : Bool -> Void]
+					[Local columnA(5983):Gtk.TreeViewColumn]
+					[FInstance:cell : Gtk.CellRenderer -> expand : Bool -> Void]
+						Gtk.TreeViewColumn
+						PackStart
+				[Local cellA(5984):Gtk.CellRendererText]
+				[Const true:Bool]
+			[Var columnB(5985):Gtk.TreeViewColumn] [New:Gtk.TreeViewColumn] Gtk.TreeViewColumn
+			[Call:String]
+				[Field:String -> String]
+					[Local columnB(5985):Gtk.TreeViewColumn]
+					[FInstance:String -> String]
+						Gtk.TreeViewColumn
+						set_Title
+				[Const "Column B":String]
+			[Var cellB(5986):Gtk.CellRendererText] [New:Gtk.CellRendererText] Gtk.CellRendererText
+			[Call:Void]
+				[Field:cell : Gtk.CellRenderer -> expand : Bool -> Void]
+					[Local columnB(5985):Gtk.TreeViewColumn]
+					[FInstance:cell : Gtk.CellRenderer -> expand : Bool -> Void]
+						Gtk.TreeViewColumn
+						PackStart
+				[Local cellB(5986):Gtk.CellRendererText]
+				[Const true:Bool]
+			[Call:Int]
+				[Field:column : Gtk.TreeViewColumn -> Int]
+					[Local list(5982):Gtk.TreeView]
+					[FInstance:column : Gtk.TreeViewColumn -> Int]
+						Gtk.TreeView
+						AppendColumn
+				[Local columnA(5983):Gtk.TreeViewColumn]
+			[Call:Int]
+				[Field:column : Gtk.TreeViewColumn -> Int]
+					[Local list(5982):Gtk.TreeView]
+					[FInstance:column : Gtk.TreeViewColumn -> Int]
+						Gtk.TreeView
+						AppendColumn
+				[Local columnB(5985):Gtk.TreeViewColumn]
+			[Call:Void]
+				[Field:cell : Gtk.CellRenderer -> attribute : String -> column : Int -> Void]
+					[Local columnA(5983):Gtk.TreeViewColumn]
+					[FInstance:cell : Gtk.CellRenderer -> attribute : String -> column : Int -> Void]
+						Gtk.TreeViewColumn
+						AddAttribute
+				[Local cellA(5984):Gtk.CellRendererText]
+				[Const "text":String]
+				[Const 0:Int]
+			[Call:Void]
+				[Field:cell : Gtk.CellRenderer -> attribute : String -> column : Int -> Void]
+					[Local columnB(5985):Gtk.TreeViewColumn]
+					[FInstance:cell : Gtk.CellRenderer -> attribute : String -> column : Int -> Void]
+						Gtk.TreeViewColumn
+						AddAttribute
+				[Local cellB(5986):Gtk.CellRendererText]
+				[Const "text":String]
+				[Const 0:Int]
+			[Var store(6011):Gtk.ListStore]
+				[New:Gtk.ListStore]
+					Gtk.ListStore
+					[Call:cs.NativeArray<System.Type>]
+						[Field:elements : haxe.extern.Rest<System.Type> -> cs.NativeArray<System.Type>]
+							[TypeExpr cs.NativeArray:Class<cs.NativeArray>]
+							[FStatic:elements : haxe.extern.Rest<System.Type> -> cs.NativeArray<System.Type>]
+								cs.NativeArray
+								make
+						[Cast:System.Type] [TypeExpr String:Class<String>]
+						[Cast:System.Type] [TypeExpr String:Class<String>]
+			[Call:Gtk.TreeIter]
+				[Field:values : cs.NativeArray<Dynamic> -> Gtk.TreeIter]
+					[Local store(6011):Gtk.ListStore]
+					[FInstance:values : cs.NativeArray<Dynamic> -> Gtk.TreeIter]
+						Gtk.ListStore
+						AppendValues
+				[Call:cs.NativeArray<String>]
+					[Field:elements : haxe.extern.Rest<String> -> cs.NativeArray<String>]
+						[TypeExpr cs.NativeArray:Class<cs.NativeArray>]
+						[FStatic:elements : haxe.extern.Rest<String> -> cs.NativeArray<String>]
+							cs.NativeArray
+							make
+					[Const "Item1":String]
+					[Const "ItemA":String]
+			[Call:Gtk.TreeModel]
+				[Field:Gtk.TreeModel -> Gtk.TreeModel]
+					[Local list(5982):Gtk.TreeView]
+					[FInstance:Gtk.TreeModel -> Gtk.TreeModel]
+						Gtk.TreeView
+						set_Model
+				[Local store(6011):Gtk.ListStore]
+			[Var hbox(6012):Gtk.HBox]
+				[New:Gtk.HBox]
+					Gtk.HBox
+					[Const true:Bool]
+					[Const 0:Int]
+			[Var vbox(6013):Gtk.VBox] [New:Gtk.VBox] Gtk.VBox
+			[Call:Void]
+				[Field:child : Gtk.Widget -> expand : Bool -> fill : Bool -> padding : UInt -> Void]
+					[Local vbox(6013):Gtk.VBox]
+					[FInstance:child : Gtk.Widget -> expand : Bool -> fill : Bool -> padding : UInt -> Void]
+						Gtk.Box
+						PackStart
+				[Local btn(5963):Gtk.Button]
+				[Const false:Bool]
+				[Const false:Bool]
+				[Const 8:Int]
+			[Call:Void]
+				[Field:child : Gtk.Widget -> expand : Bool -> fill : Bool -> padding : UInt -> Void]
+					[Local vbox(6013):Gtk.VBox]
+					[FInstance:child : Gtk.Widget -> expand : Bool -> fill : Bool -> padding : UInt -> Void]
+						Gtk.Box
+						PackStart
+				[Local list(5982):Gtk.TreeView]
+				[Const true:Bool]
+				[Const true:Bool]
+				[Const 8:Int]
+			[Var textEntry(6014):Gtk.Entry] [New:Gtk.Entry] Gtk.Entry
+			[Call:String]
+				[Field:String -> String]
+					[Local textEntry(6014):Gtk.Entry]
+					[FInstance:String -> String]
+						Gtk.Entry
+						set_Text
+				[Const "Hello world":String]
+			[Call:Void]
+				[Field:value : cs.system.EventHandler -> Void]
+					[Local textEntry(6014):Gtk.Entry]
+					[FInstance:value : cs.system.EventHandler -> Void]
+						Gtk.Entry
+						add_Changed
+				[Block:cs.system.EventHandler]
+					[Var this3(6023):System.EventHandler]
+					[Binop:System.EventHandler]
+						[Local this3(6023):System.EventHandler]
+						=
+						[Cast:System.EventHandler]
+							[Call:Unknown<3>]
+								[Local __delegate__(6024):(Dynamic -> System.EventArgs -> Void) -> Unknown<2>]
+								[Function:obj : Dynamic -> e : System.EventArgs -> Void]
+									[Arg:Dynamic] [Local obj1(6015):Dynamic]
+									[Arg:System.EventArgs] [Local e2(6016):System.EventArgs]
+									[Block:Void]
+										[Call:Void]
+											[Field:v : Dynamic -> ?infos : Null<haxe.PosInfos> -> Void]
+												[TypeExpr haxe.Log:Class<haxe.Log>]
+												[FStatic:v : Dynamic -> ?infos : Null<haxe.PosInfos> -> Void]
+													haxe.Log
+													trace
+											[Call:String]
+												[Field:Void -> String]
+													[Local textEntry(6014):Gtk.Entry]
+													[FInstance:Void -> String]
+														Gtk.Entry
+														get_Text
+											[ObjectDecl:{ methodName : String, lineNumber : Int, fileName : String, className : String }]
+												fileName: [Const "Main.hx":String]
+												lineNumber: [Const 71:Int]
+												className: [Const "Main":String]
+												methodName: [Const "main":String]
+					[Cast:cs.system.EventHandler] [Local this3(6023):System.EventHandler]
+			[Call:Void]
+				[Field:child : Gtk.Widget -> expand : Bool -> fill : Bool -> padding : UInt -> Void]
+					[Local vbox(6013):Gtk.VBox]
+					[FInstance:child : Gtk.Widget -> expand : Bool -> fill : Bool -> padding : UInt -> Void]
+						Gtk.Box
+						PackStart
+				[Local textEntry(6014):Gtk.Entry]
+				[Const false:Bool]
+				[Const false:Bool]
+				[Const 2:Int]
+			[Var btnListAdd(6032):Gtk.Button] [New:Gtk.Button] Gtk.Button
+			[Call:String]
+				[Field:String -> String]
+					[Local btnListAdd(6032):Gtk.Button]
+					[FInstance:String -> String]
+						Gtk.Button
+						set_Label
+				[Const "Add":String]
+			[Call:Void]
+				[Field:value : cs.system.EventHandler -> Void]
+					[Local btnListAdd(6032):Gtk.Button]
+					[FInstance:value : cs.system.EventHandler -> Void]
+						Gtk.Button
+						add_Clicked
+				[Block:cs.system.EventHandler]
+					[Var this4(6039):System.EventHandler]
+					[Binop:System.EventHandler]
+						[Local this4(6039):System.EventHandler]
+						=
+						[Cast:System.EventHandler]
+							[Call:Unknown<3>]
+								[Local __delegate__(6040):(Dynamic -> System.EventArgs -> Void) -> Unknown<2>]
+								[Function:obj : Dynamic -> e : System.EventArgs -> Void]
+									[Arg:Dynamic] [Local obj2(6033):Dynamic]
+									[Arg:System.EventArgs] [Local e3(6034):System.EventArgs]
+									[Block:Void]
+										[Var text(6035):String]
+											[Call:String]
+												[Field:Void -> String]
+													[Local textEntry(6014):Gtk.Entry]
+													[FInstance:Void -> String]
+														Gtk.Entry
+														get_Text
+										[If:Void]
+											[Parenthesis:Bool]
+												[Binop:Bool]
+													[Binop:Bool]
+														[Local text(6035):String]
+														!=
+														[Const null:String]
+													&&
+													[Binop:Bool]
+														[Field:Int]
+															[Local text(6035):String]
+															[FInstance:Int]
+																String
+																length
+														>
+														[Const 0:Int]
+											[Then:Gtk.TreeIter] [Call:Gtk.TreeIter]
+												[Field:values : cs.NativeArray<Dynamic> -> Gtk.TreeIter]
+													[Local store(6011):Gtk.ListStore]
+													[FInstance:values : cs.NativeArray<Dynamic> -> Gtk.TreeIter]
+														Gtk.ListStore
+														AppendValues
+												[Call:cs.NativeArray<String>]
+													[Field:elements : haxe.extern.Rest<String> -> cs.NativeArray<String>]
+														[TypeExpr cs.NativeArray:Class<cs.NativeArray>]
+														[FStatic:elements : haxe.extern.Rest<String> -> cs.NativeArray<String>]
+															cs.NativeArray
+															make
+													[Local text(6035):String]
+													[Call:String]
+														[Field:Void -> String]
+															[Local text(6035):String]
+															[FInstance:Void -> String]
+																String
+																toUpperCase
+					[Cast:cs.system.EventHandler] [Local this4(6039):System.EventHandler]
+			[Call:Void]
+				[Field:child : Gtk.Widget -> expand : Bool -> fill : Bool -> padding : UInt -> Void]
+					[Local vbox(6013):Gtk.VBox]
+					[FInstance:child : Gtk.Widget -> expand : Bool -> fill : Bool -> padding : UInt -> Void]
+						Gtk.Box
+						PackStart
+				[Local btnListAdd(6032):Gtk.Button]
+				[Const false:Bool]
+				[Const false:Bool]
+				[Const 8:Int]
+			[Var btnListDelete(6049):Gtk.Button] [New:Gtk.Button] Gtk.Button
+			[Call:String]
+				[Field:String -> String]
+					[Local btnListDelete(6049):Gtk.Button]
+					[FInstance:String -> String]
+						Gtk.Button
+						set_Label
+				[Const "Delete":String]
+			[Call:Void]
+				[Field:value : cs.system.EventHandler -> Void]
+					[Local btnListDelete(6049):Gtk.Button]
+					[FInstance:value : cs.system.EventHandler -> Void]
+						Gtk.Button
+						add_Clicked
+				[Block:cs.system.EventHandler]
+					[Var this5(6062):System.EventHandler]
+					[Binop:System.EventHandler]
+						[Local this5(6062):System.EventHandler]
+						=
+						[Cast:System.EventHandler]
+							[Call:Unknown<3>]
+								[Local __delegate__(6063):(Dynamic -> System.EventArgs -> Void) -> Unknown<2>]
+								[Function:obj : Dynamic -> e : System.EventArgs -> Void]
+									[Arg:Dynamic] [Local obj3(6050):Dynamic]
+									[Arg:System.EventArgs] [Local e4(6051):System.EventArgs]
+									[Block:Void]
+										[Var selection(6052):Gtk.TreeSelection]
+											[Call:Gtk.TreeSelection]
+												[Field:Void -> Gtk.TreeSelection]
+													[Local list(5982):Gtk.TreeView]
+													[FInstance:Void -> Gtk.TreeSelection]
+														Gtk.TreeView
+														get_Selection
+										[Var rows(6053):cs.NativeArray<Gtk.TreePath>]
+											[Call:cs.NativeArray<Gtk.TreePath>]
+												[Field:Void -> cs.NativeArray<Gtk.TreePath>]
+													[Local selection(6052):Gtk.TreeSelection]
+													[FInstance:Void -> cs.NativeArray<Gtk.TreePath>]
+														Gtk.TreeSelection
+														GetSelectedRows
+										[Block:Void]
+											[Var _g1(6055):Int] [Const 0:Int]
+											[Var _g(6054):Int]
+												[Call:Int]
+													[Field:Void -> Int]
+														[Local rows(6053):cs.NativeArray<Gtk.TreePath>]
+														[FInstance:Void -> Int]
+															System.Array
+															get_Length
+											[While:Void]
+												[Parenthesis:Bool]
+													[Binop:Bool]
+														[Local _g1(6055):Int]
+														<
+														[Local _g(6054):Int]
+												[Block:Void]
+													[Var i(6056):Int]
+														[Unop:Int]
+															++
+															Postfix
+															[Local _g1(6055):Int]
+													[Var iter(6057):Gtk.TreeIter] [Const null:Gtk.TreeIter]
+													[Call:Bool]
+														[Field:iter : cs.Out<Gtk.TreeIter> -> path : Gtk.TreePath -> Bool]
+															[Local store(6011):Gtk.ListStore]
+															[FInstance:iter : cs.Out<Gtk.TreeIter> -> path : Gtk.TreePath -> Bool]
+																Gtk.ListStore
+																GetIter
+														[Local iter(6057):Gtk.TreeIter]
+														[Array:Gtk.TreePath]
+															[Local rows(6053):cs.NativeArray<Gtk.TreePath>]
+															[Local i(6056):Int]
+													[Var label(6058):String]
+														[Call:Dynamic]
+															[Field:iter : Gtk.TreeIter -> column : Int -> Dynamic]
+																[Local store(6011):Gtk.ListStore]
+																[FInstance:iter : Gtk.TreeIter -> column : Int -> Dynamic]
+																	Gtk.ListStore
+																	GetValue
+															[Local iter(6057):Gtk.TreeIter]
+															[Const 0:Int]
+													[Call:Bool]
+														[Field:iter : cs.Ref<Gtk.TreeIter> -> Bool]
+															[Local store(6011):Gtk.ListStore]
+															[FInstance:iter : cs.Ref<Gtk.TreeIter> -> Bool]
+																Gtk.ListStore
+																Remove
+														[Local iter(6057):Gtk.TreeIter]
+					[Cast:cs.system.EventHandler] [Local this5(6062):System.EventHandler]
+			[Call:Void]
+				[Field:child : Gtk.Widget -> expand : Bool -> fill : Bool -> padding : UInt -> Void]
+					[Local vbox(6013):Gtk.VBox]
+					[FInstance:child : Gtk.Widget -> expand : Bool -> fill : Bool -> padding : UInt -> Void]
+						Gtk.Box
+						PackStart
+				[Local btnListDelete(6049):Gtk.Button]
+				[Const false:Bool]
+				[Const false:Bool]
+				[Const 2:Int]
+			[Var btnMessageDialog(6078):Gtk.Button] [New:Gtk.Button] Gtk.Button
+			[Call:String]
+				[Field:String -> String]
+					[Local btnMessageDialog(6078):Gtk.Button]
+					[FInstance:String -> String]
+						Gtk.Button
+						set_Label
+				[Const "Message dialog":String]
+			[Call:Void]
+				[Field:value : cs.system.EventHandler -> Void]
+					[Local btnMessageDialog(6078):Gtk.Button]
+					[FInstance:value : cs.system.EventHandler -> Void]
+						Gtk.Button
+						add_Clicked
+				[Block:cs.system.EventHandler]
+					[Var this6(6086):System.EventHandler]
+					[Binop:System.EventHandler]
+						[Local this6(6086):System.EventHandler]
+						=
+						[Cast:System.EventHandler]
+							[Call:Unknown<3>]
+								[Local __delegate__(6087):(Dynamic -> System.EventArgs -> Void) -> Unknown<2>]
+								[Function:obj : Dynamic -> e : System.EventArgs -> Void]
+									[Arg:Dynamic] [Local obj4(6079):Dynamic]
+									[Arg:System.EventArgs] [Local e5(6080):System.EventArgs]
+									[Block:Void]
+										[Var dialog(6081):Gtk.MessageDialog]
+											[New:Gtk.MessageDialog]
+												Gtk.MessageDialog
+												[Local win(5948):Gtk.Window]
+												[Field:Gtk.DialogFlags]
+													[TypeExpr Gtk.DialogFlags:Enum<gtk.DialogFlags>]
+													[FEnum:Gtk.DialogFlags]
+														Gtk.DialogFlags
+														Modal
+												[Field:Gtk.MessageType]
+													[TypeExpr Gtk.MessageType:Enum<gtk.MessageType>]
+													[FEnum:Gtk.MessageType]
+														Gtk.MessageType
+														Error
+												[Field:Gtk.ButtonsType]
+													[TypeExpr Gtk.ButtonsType:Enum<gtk.ButtonsType>]
+													[FEnum:Gtk.ButtonsType]
+														Gtk.ButtonsType
+														Close
+												[Const "Hey":String]
+												[New:cs.NativeArray<Unknown<4>>]
+													cs.NativeArray<Unknown<4>>
+													[Const 0:Int]
+										[Call:String]
+											[Field:String -> String]
+												[Local dialog(6081):Gtk.MessageDialog]
+												[FInstance:String -> String]
+													Gtk.Window
+													set_Title
+											[Const "Hello Message!":String]
+										[Var response(6082):Gtk.ResponseType]
+											[Cast:Gtk.ResponseType]
+												[Call:Int]
+													[Field:Void -> Int]
+														[Local dialog(6081):Gtk.MessageDialog]
+														[FInstance:Void -> Int]
+															Gtk.Dialog
+															Run
+										[If:Void]
+											[Parenthesis:Bool]
+												[Binop:Bool]
+													[Binop:Bool]
+														[Local response(6082):Gtk.ResponseType]
+														==
+														[Field:Gtk.ResponseType]
+															[TypeExpr Gtk.ResponseType:Enum<gtk.ResponseType>]
+															[FEnum:Gtk.ResponseType]
+																Gtk.ResponseType
+																Close
+													||
+													[Binop:Bool]
+														[Local response(6082):Gtk.ResponseType]
+														==
+														[Field:Gtk.ResponseType]
+															[TypeExpr Gtk.ResponseType:Enum<gtk.ResponseType>]
+															[FEnum:Gtk.ResponseType]
+																Gtk.ResponseType
+																DeleteEvent
+											[Then:Void] [Call:Void]
+												[Field:Void -> Void]
+													[Local dialog(6081):Gtk.MessageDialog]
+													[FInstance:Void -> Void]
+														Gtk.Widget
+														Destroy
+					[Cast:cs.system.EventHandler] [Local this6(6086):System.EventHandler]
+			[Call:Void]
+				[Field:child : Gtk.Widget -> expand : Bool -> fill : Bool -> padding : UInt -> Void]
+					[Local vbox(6013):Gtk.VBox]
+					[FInstance:child : Gtk.Widget -> expand : Bool -> fill : Bool -> padding : UInt -> Void]
+						Gtk.Box
+						PackStart
+				[Local btnMessageDialog(6078):Gtk.Button]
+				[Const false:Bool]
+				[Const false:Bool]
+				[Const 2:Int]
+			[Call:Void]
+				[Field:widget : Gtk.Widget -> Void]
+					[Local hbox(6012):Gtk.HBox]
+					[FInstance:widget : Gtk.Widget -> Void]
+						Gtk.Container
+						Add
+				[Local vbox(6013):Gtk.VBox]
+			[Call:Void]
+				[Field:widget : Gtk.Widget -> Void]
+					[Local win(5948):Gtk.Window]
+					[FInstance:widget : Gtk.Widget -> Void]
+						Gtk.Container
+						Add
+				[Local hbox(6012):Gtk.HBox]
+			[Call:Void]
+				[Field:Void -> Void]
+					[Local win(5948):Gtk.Window]
+					[FInstance:Void -> Void]
+						Gtk.Widget
+						ShowAll
+			[Call:Void]
+				[Field:Void -> Void]
+					[TypeExpr Gtk.Application:Class<gtk.Application>]
+					[FStatic:Void -> Void]
+						Gtk.Application
+						Run
+
+}

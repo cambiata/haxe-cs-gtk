@@ -1,0 +1,14 @@
+extern class Gtk.ActionGroup.ConnectProxyVMDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : action_group : System.IntPtr -> action : System.IntPtr -> proxy : System.IntPtr -> Void
+
+	public BeginInvoke(method) : action_group : System.IntPtr -> action : System.IntPtr -> proxy : System.IntPtr -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Void
+
+	static public op_Addition(method) : arg1 : gtk.ActionGroup_ConnectProxyVMDelegate -> arg2 : gtk.ActionGroup_ConnectProxyVMDelegate -> gtk.ActionGroup_ConnectProxyVMDelegate
+
+	static public op_Subtraction(method) : arg1 : gtk.ActionGroup_ConnectProxyVMDelegate -> arg2 : gtk.ActionGroup_ConnectProxyVMDelegate -> gtk.ActionGroup_ConnectProxyVMDelegate
+
+}

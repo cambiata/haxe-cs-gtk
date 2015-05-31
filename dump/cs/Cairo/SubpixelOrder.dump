@@ -1,0 +1,7 @@
+extern enum Cairo.SubpixelOrder {
+	Default : Cairo.SubpixelOrder;
+	Rgb : Cairo.SubpixelOrder;
+	Bgr : Cairo.SubpixelOrder;
+	Vrgb : Cairo.SubpixelOrder;
+	Vbgr : Cairo.SubpixelOrder;
+}

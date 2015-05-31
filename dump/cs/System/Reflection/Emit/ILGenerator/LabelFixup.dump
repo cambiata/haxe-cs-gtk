@@ -1,0 +1,8 @@
+extern class System.Reflection.Emit.ILGenerator.LabelFixup extends System.ValueType{
+	public label_idx(var) : Int
+
+	public pos(var) : Int
+
+	public offset(var) : Int
+
+}

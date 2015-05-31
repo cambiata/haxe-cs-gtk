@@ -1,0 +1,36 @@
+extern class System.Reflection.Emit.ParameterBuilder implements System.Runtime.InteropServices._ParameterBuilder{
+	public Position((get,never)) : Int
+
+	public Name((get,never)) : String
+
+	public IsOptional((get,never)) : Bool
+
+	public IsOut((get,never)) : Bool
+
+	public IsIn((get,never)) : Bool
+
+	public Attributes((get,never)) : Int
+
+	get_Attributes(method) : Void -> Int
+
+	get_IsIn(method) : Void -> Bool
+
+	get_IsOut(method) : Void -> Bool
+
+	get_IsOptional(method) : Void -> Bool
+
+	get_Name(method) : Void -> String
+
+	get_Position(method) : Void -> Int
+
+	public GetToken(method) : Void -> System.Reflection.Emit.ParameterToken
+
+	public SetConstant(method) : defaultValue : Dynamic -> Void
+
+	public SetCustomAttribute(method) : customBuilder : System.Reflection.Emit.CustomAttributeBuilder -> Void
+
+	public SetCustomAttribute(method) : con : System.Reflection.ConstructorInfo -> binaryAttribute : cs.NativeArray<cs.types.UInt8> -> Void
+
+	public SetMarshal(method) : unmanagedMarshal : System.Reflection.Emit.UnmanagedMarshal -> Void
+
+}

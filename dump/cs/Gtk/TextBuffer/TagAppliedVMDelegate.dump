@@ -1,0 +1,14 @@
+extern class Gtk.TextBuffer.TagAppliedVMDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : buffer : System.IntPtr -> tag : System.IntPtr -> start_char : System.IntPtr -> end_char : System.IntPtr -> Void
+
+	public BeginInvoke(method) : buffer : System.IntPtr -> tag : System.IntPtr -> start_char : System.IntPtr -> end_char : System.IntPtr -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Void
+
+	static public op_Addition(method) : arg1 : gtk.TextBuffer_TagAppliedVMDelegate -> arg2 : gtk.TextBuffer_TagAppliedVMDelegate -> gtk.TextBuffer_TagAppliedVMDelegate
+
+	static public op_Subtraction(method) : arg1 : gtk.TextBuffer_TagAppliedVMDelegate -> arg2 : gtk.TextBuffer_TagAppliedVMDelegate -> gtk.TextBuffer_TagAppliedVMDelegate
+
+}

@@ -1,0 +1,40 @@
+extern class Gtk.Box extends Gtk.Container implements ArrayAccess<Gtk.Container.ContainerChild>{
+	new(method) : gtype : GLib.GType -> Void
+
+	new(method) : Void -> Void
+
+	public new(method) : raw : System.IntPtr -> Void
+
+	public Spacing((get,set)) : Int
+
+	public Homogeneous((get,set)) : Bool
+
+	get_Homogeneous(method) : Void -> Bool
+
+	set_Homogeneous(method) : value : Bool -> Bool
+
+	get_Spacing(method) : Void -> Int
+
+	set_Spacing(method) : value : Int -> Int
+
+	get_Item(method) : child : Gtk.Widget -> Gtk.Container.ContainerChild
+
+	public PackEnd(method) : child : Gtk.Widget -> expand : Bool -> fill : Bool -> padding : UInt -> Void
+
+	public PackEnd(method) : widget : Gtk.Widget -> Void
+
+	public QueryChildPacking(method) : child : Gtk.Widget -> expand : cs.Out<Bool> -> fill : cs.Out<Bool> -> padding : cs.Out<UInt> -> pack_type : cs.Out<Gtk.PackType> -> Void
+
+	public PackStart(method) : child : Gtk.Widget -> expand : Bool -> fill : Bool -> padding : UInt -> Void
+
+	public PackStart(method) : widget : Gtk.Widget -> Void
+
+	public ReorderChild(method) : child : Gtk.Widget -> position : Int -> Void
+
+	public SetChildPacking(method) : child : Gtk.Widget -> expand : Bool -> fill : Bool -> padding : UInt -> pack_type : Gtk.PackType -> Void
+
+	static public GType((get,never)) : GLib.GType
+
+	static get_GType(method) : Void -> GLib.GType
+
+}

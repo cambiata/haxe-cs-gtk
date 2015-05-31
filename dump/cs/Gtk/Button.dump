@@ -1,0 +1,144 @@
+extern class Gtk.Button extends Gtk.Bin{
+	new(method) : gtype : GLib.GType -> Void
+
+	public new(method) : widget : Gtk.Widget -> Void
+
+	public new(method) : stock_id : String -> Void
+
+	public new(method) : Void -> Void
+
+	public new(method) : raw : System.IntPtr -> Void
+
+	Clicked(var) : cs.system.EventHandler
+
+	Left(var) : cs.system.EventHandler
+
+	Activated(var) : cs.system.EventHandler
+
+	Entered(var) : cs.system.EventHandler
+
+	Pressed(var) : cs.system.EventHandler
+
+	Released(var) : cs.system.EventHandler
+
+	public InButton((get,set)) : Bool
+
+	public Image((get,set)) : Gtk.Widget
+
+	public Label((get,set)) : String
+
+	public ImagePosition((get,set)) : Gtk.PositionType
+
+	public Relief((get,set)) : Gtk.ReliefStyle
+
+	public Xalign((get,set)) : Single
+
+	public FocusOnClick((get,set)) : Bool
+
+	public UseStock((get,set)) : Bool
+
+	public UseUnderline((get,set)) : Bool
+
+	public Yalign((get,set)) : Single
+
+	get_Yalign(method) : Void -> Single
+
+	set_Yalign(method) : value : Single -> Single
+
+	get_UseUnderline(method) : Void -> Bool
+
+	set_UseUnderline(method) : value : Bool -> Bool
+
+	get_UseStock(method) : Void -> Bool
+
+	set_UseStock(method) : value : Bool -> Bool
+
+	get_FocusOnClick(method) : Void -> Bool
+
+	set_FocusOnClick(method) : value : Bool -> Bool
+
+	get_Xalign(method) : Void -> Single
+
+	set_Xalign(method) : value : Single -> Single
+
+	get_Relief(method) : Void -> Gtk.ReliefStyle
+
+	set_Relief(method) : value : Gtk.ReliefStyle -> Gtk.ReliefStyle
+
+	get_ImagePosition(method) : Void -> Gtk.PositionType
+
+	set_ImagePosition(method) : value : Gtk.PositionType -> Gtk.PositionType
+
+	get_Label(method) : Void -> String
+
+	set_Label(method) : value : String -> String
+
+	get_Image(method) : Void -> Gtk.Widget
+
+	set_Image(method) : value : Gtk.Widget -> Gtk.Widget
+
+	get_InButton(method) : Void -> Bool
+
+	set_InButton(method) : value : Bool -> Bool
+
+	OnReleased(method) : Void -> Void
+
+	public add_Released(method) : value : cs.system.EventHandler -> Void
+
+	public remove_Released(method) : value : cs.system.EventHandler -> Void
+
+	OnPressed(method) : Void -> Void
+
+	public add_Pressed(method) : value : cs.system.EventHandler -> Void
+
+	public remove_Pressed(method) : value : cs.system.EventHandler -> Void
+
+	OnEntered(method) : Void -> Void
+
+	public add_Entered(method) : value : cs.system.EventHandler -> Void
+
+	public remove_Entered(method) : value : cs.system.EventHandler -> Void
+
+	OnActivated(method) : Void -> Void
+
+	public add_Activated(method) : value : cs.system.EventHandler -> Void
+
+	public remove_Activated(method) : value : cs.system.EventHandler -> Void
+
+	OnLeft(method) : Void -> Void
+
+	public add_Left(method) : value : cs.system.EventHandler -> Void
+
+	public remove_Left(method) : value : cs.system.EventHandler -> Void
+
+	OnClicked(method) : Void -> Void
+
+	public add_Clicked(method) : value : cs.system.EventHandler -> Void
+
+	public remove_Clicked(method) : value : cs.system.EventHandler -> Void
+
+	public SetAlignment(method) : xalign : Single -> yalign : Single -> Void
+
+	public GetAlignment(method) : xalign : cs.Out<Single> -> yalign : cs.Out<Single> -> Void
+
+	public Leave(method) : Void -> Void
+
+	public Release(method) : Void -> Void
+
+	public Press(method) : Void -> Void
+
+	public Enter(method) : Void -> Void
+
+	public Click(method) : Void -> Void
+
+	static public GType((get,never)) : GLib.GType
+
+	static public NewWithLabel(method) : label : String -> Gtk.Button
+
+	static public NewWithMnemonic(method) : label : String -> Gtk.Button
+
+	static get_GType(method) : Void -> GLib.GType
+
+	static public ActionGetType(method) : Void -> GLib.GType
+
+}

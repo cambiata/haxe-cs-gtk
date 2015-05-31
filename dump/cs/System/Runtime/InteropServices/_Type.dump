@@ -1,0 +1,312 @@
+extern interface System.Runtime.InteropServices._Type{
+	public UnderlyingSystemType((get,never)) : System.Type
+
+	public TypeInitializer((get,never)) : System.Reflection.ConstructorInfo
+
+	public TypeHandle((get,never)) : System.RuntimeTypeHandle
+
+	public ReflectedType((get,never)) : System.Type
+
+	public Namespace((get,never)) : String
+
+	public Name((get,never)) : String
+
+	public Module((get,never)) : System.Reflection.Module
+
+	public MemberType((get,never)) : System.Reflection.MemberTypes
+
+	public IsValueType((get,never)) : Bool
+
+	public IsUnicodeClass((get,never)) : Bool
+
+	public IsSpecialName((get,never)) : Bool
+
+	public IsSerializable((get,never)) : Bool
+
+	public IsSealed((get,never)) : Bool
+
+	public IsPublic((get,never)) : Bool
+
+	public IsPrimitive((get,never)) : Bool
+
+	public IsPointer((get,never)) : Bool
+
+	public IsNotPublic((get,never)) : Bool
+
+	public IsNestedPublic((get,never)) : Bool
+
+	public IsNestedPrivate((get,never)) : Bool
+
+	public IsNestedFamORAssem((get,never)) : Bool
+
+	public IsNestedFamily((get,never)) : Bool
+
+	public IsNestedFamANDAssem((get,never)) : Bool
+
+	public IsNestedAssembly((get,never)) : Bool
+
+	public IsMarshalByRef((get,never)) : Bool
+
+	public IsLayoutSequential((get,never)) : Bool
+
+	public IsInterface((get,never)) : Bool
+
+	public IsImport((get,never)) : Bool
+
+	public IsExplicitLayout((get,never)) : Bool
+
+	public IsEnum((get,never)) : Bool
+
+	public IsContextful((get,never)) : Bool
+
+	public IsCOMObject((get,never)) : Bool
+
+	public IsClass((get,never)) : Bool
+
+	public IsByRef((get,never)) : Bool
+
+	public IsAutoLayout((get,never)) : Bool
+
+	public IsAutoClass((get,never)) : Bool
+
+	public IsArray((get,never)) : Bool
+
+	public IsAnsiClass((get,never)) : Bool
+
+	public IsAbstract((get,never)) : Bool
+
+	public HasElementType((get,never)) : Bool
+
+	public GUID((get,never)) : System.Guid
+
+	public FullName((get,never)) : String
+
+	public DeclaringType((get,never)) : System.Type
+
+	public BaseType((get,never)) : System.Type
+
+	public Attributes((get,never)) : System.Reflection.TypeAttributes
+
+	public AssemblyQualifiedName((get,never)) : String
+
+	public Assembly((get,never)) : System.Reflection.Assembly
+
+	public FindInterfaces(method) : filter : cs.system.reflection.TypeFilter -> filterCriteria : Dynamic -> cs.NativeArray<System.Type>
+
+	public FindMembers(method) : memberType : System.Reflection.MemberTypes -> bindingAttr : System.Reflection.BindingFlags -> filter : cs.system.reflection.MemberFilter -> filterCriteria : Dynamic -> cs.NativeArray<System.Reflection.MemberInfo>
+
+	public GetArrayRank(method) : Void -> Int
+
+	public GetConstructor(method) : types : cs.NativeArray<System.Type> -> System.Reflection.ConstructorInfo
+
+	public GetConstructor(method) : bindingAttr : System.Reflection.BindingFlags -> binder : System.Reflection.Binder -> callConvention : System.Reflection.CallingConventions -> types : cs.NativeArray<System.Type> -> modifiers : cs.NativeArray<System.Reflection.ParameterModifier> -> System.Reflection.ConstructorInfo
+
+	public GetConstructor(method) : bindingAttr : System.Reflection.BindingFlags -> binder : System.Reflection.Binder -> types : cs.NativeArray<System.Type> -> modifiers : cs.NativeArray<System.Reflection.ParameterModifier> -> System.Reflection.ConstructorInfo
+
+	public GetConstructors(method) : Void -> cs.NativeArray<System.Reflection.ConstructorInfo>
+
+	public GetConstructors(method) : bindingAttr : System.Reflection.BindingFlags -> cs.NativeArray<System.Reflection.ConstructorInfo>
+
+	public GetCustomAttributes(method) : inherit : Bool -> cs.NativeArray<Dynamic>
+
+	public GetCustomAttributes(method) : attributeType : System.Type -> inherit : Bool -> cs.NativeArray<Dynamic>
+
+	public GetDefaultMembers(method) : Void -> cs.NativeArray<System.Reflection.MemberInfo>
+
+	public GetElementType(method) : Void -> System.Type
+
+	public GetEvent(method) : name : String -> System.Reflection.EventInfo
+
+	public GetEvent(method) : name : String -> bindingAttr : System.Reflection.BindingFlags -> System.Reflection.EventInfo
+
+	public GetEvents(method) : Void -> cs.NativeArray<System.Reflection.EventInfo>
+
+	public GetEvents(method) : bindingAttr : System.Reflection.BindingFlags -> cs.NativeArray<System.Reflection.EventInfo>
+
+	public GetField(method) : name : String -> System.Reflection.FieldInfo
+
+	public GetField(method) : name : String -> bindingAttr : System.Reflection.BindingFlags -> System.Reflection.FieldInfo
+
+	public GetFields(method) : Void -> cs.NativeArray<System.Reflection.FieldInfo>
+
+	public GetFields(method) : bindingAttr : System.Reflection.BindingFlags -> cs.NativeArray<System.Reflection.FieldInfo>
+
+	public GetIDsOfNames(method) : riid : cs.Ref<System.Guid> -> rgszNames : System.IntPtr -> cNames : UInt -> lcid : UInt -> rgDispId : System.IntPtr -> Void
+
+	public GetTypeInfo(method) : iTInfo : UInt -> lcid : UInt -> ppTInfo : System.IntPtr -> Void
+
+	public GetTypeInfoCount(method) : pcTInfo : cs.Out<UInt> -> Void
+
+	public Invoke(method) : dispIdMember : UInt -> riid : cs.Ref<System.Guid> -> lcid : UInt -> wFlags : cs.types.Int16 -> pDispParams : System.IntPtr -> pVarResult : System.IntPtr -> pExcepInfo : System.IntPtr -> puArgErr : System.IntPtr -> Void
+
+	public GetInterface(method) : name : String -> System.Type
+
+	public GetInterface(method) : name : String -> ignoreCase : Bool -> System.Type
+
+	public GetInterfaceMap(method) : interfaceType : System.Type -> System.Reflection.InterfaceMapping
+
+	public GetInterfaces(method) : Void -> cs.NativeArray<System.Type>
+
+	public GetMember(method) : name : String -> cs.NativeArray<System.Reflection.MemberInfo>
+
+	public GetMember(method) : name : String -> bindingAttr : System.Reflection.BindingFlags -> cs.NativeArray<System.Reflection.MemberInfo>
+
+	public GetMember(method) : name : String -> type : System.Reflection.MemberTypes -> bindingAttr : System.Reflection.BindingFlags -> cs.NativeArray<System.Reflection.MemberInfo>
+
+	public GetMembers(method) : Void -> cs.NativeArray<System.Reflection.MemberInfo>
+
+	public GetMembers(method) : bindingAttr : System.Reflection.BindingFlags -> cs.NativeArray<System.Reflection.MemberInfo>
+
+	public GetMethod(method) : name : String -> System.Reflection.MethodInfo
+
+	public GetMethod(method) : name : String -> bindingAttr : System.Reflection.BindingFlags -> binder : System.Reflection.Binder -> callConvention : System.Reflection.CallingConventions -> types : cs.NativeArray<System.Type> -> modifiers : cs.NativeArray<System.Reflection.ParameterModifier> -> System.Reflection.MethodInfo
+
+	public GetMethod(method) : name : String -> bindingAttr : System.Reflection.BindingFlags -> binder : System.Reflection.Binder -> types : cs.NativeArray<System.Type> -> modifiers : cs.NativeArray<System.Reflection.ParameterModifier> -> System.Reflection.MethodInfo
+
+	public GetMethod(method) : name : String -> types : cs.NativeArray<System.Type> -> modifiers : cs.NativeArray<System.Reflection.ParameterModifier> -> System.Reflection.MethodInfo
+
+	public GetMethod(method) : name : String -> types : cs.NativeArray<System.Type> -> System.Reflection.MethodInfo
+
+	public GetMethod(method) : name : String -> bindingAttr : System.Reflection.BindingFlags -> System.Reflection.MethodInfo
+
+	public GetMethods(method) : Void -> cs.NativeArray<System.Reflection.MethodInfo>
+
+	public GetMethods(method) : bindingAttr : System.Reflection.BindingFlags -> cs.NativeArray<System.Reflection.MethodInfo>
+
+	public GetNestedType(method) : name : String -> System.Type
+
+	public GetNestedType(method) : name : String -> bindingAttr : System.Reflection.BindingFlags -> System.Type
+
+	public GetNestedTypes(method) : Void -> cs.NativeArray<System.Type>
+
+	public GetNestedTypes(method) : bindingAttr : System.Reflection.BindingFlags -> cs.NativeArray<System.Type>
+
+	public GetProperties(method) : Void -> cs.NativeArray<System.Reflection.PropertyInfo>
+
+	public GetProperties(method) : bindingAttr : System.Reflection.BindingFlags -> cs.NativeArray<System.Reflection.PropertyInfo>
+
+	public GetProperty(method) : name : String -> System.Reflection.PropertyInfo
+
+	public GetProperty(method) : name : String -> bindingAttr : System.Reflection.BindingFlags -> binder : System.Reflection.Binder -> returnType : System.Type -> types : cs.NativeArray<System.Type> -> modifiers : cs.NativeArray<System.Reflection.ParameterModifier> -> System.Reflection.PropertyInfo
+
+	public GetProperty(method) : name : String -> returnType : System.Type -> types : cs.NativeArray<System.Type> -> modifiers : cs.NativeArray<System.Reflection.ParameterModifier> -> System.Reflection.PropertyInfo
+
+	public GetProperty(method) : name : String -> returnType : System.Type -> types : cs.NativeArray<System.Type> -> System.Reflection.PropertyInfo
+
+	public GetProperty(method) : name : String -> types : cs.NativeArray<System.Type> -> System.Reflection.PropertyInfo
+
+	public GetProperty(method) : name : String -> returnType : System.Type -> System.Reflection.PropertyInfo
+
+	public GetProperty(method) : name : String -> bindingAttr : System.Reflection.BindingFlags -> System.Reflection.PropertyInfo
+
+	public GetType(method) : Void -> System.Type
+
+	public InvokeMember(method) : name : String -> invokeAttr : System.Reflection.BindingFlags -> binder : System.Reflection.Binder -> target : Dynamic -> args : cs.NativeArray<Dynamic> -> Dynamic
+
+	public InvokeMember(method) : name : String -> invokeAttr : System.Reflection.BindingFlags -> binder : System.Reflection.Binder -> target : Dynamic -> args : cs.NativeArray<Dynamic> -> modifiers : cs.NativeArray<System.Reflection.ParameterModifier> -> culture : System.Globalization.CultureInfo -> namedParameters : cs.NativeArray<String> -> Dynamic
+
+	public InvokeMember(method) : name : String -> invokeAttr : System.Reflection.BindingFlags -> binder : System.Reflection.Binder -> target : Dynamic -> args : cs.NativeArray<Dynamic> -> culture : System.Globalization.CultureInfo -> Dynamic
+
+	public IsAssignableFrom(method) : c : System.Type -> Bool
+
+	public IsDefined(method) : attributeType : System.Type -> inherit : Bool -> Bool
+
+	public IsInstanceOfType(method) : o : Dynamic -> Bool
+
+	public IsSubclassOf(method) : c : System.Type -> Bool
+
+	public ToString(method) : Void -> String
+
+	get_Assembly(method) : Void -> System.Reflection.Assembly
+
+	get_AssemblyQualifiedName(method) : Void -> String
+
+	get_Attributes(method) : Void -> System.Reflection.TypeAttributes
+
+	get_BaseType(method) : Void -> System.Type
+
+	get_DeclaringType(method) : Void -> System.Type
+
+	get_FullName(method) : Void -> String
+
+	get_GUID(method) : Void -> System.Guid
+
+	get_HasElementType(method) : Void -> Bool
+
+	get_IsAbstract(method) : Void -> Bool
+
+	get_IsAnsiClass(method) : Void -> Bool
+
+	get_IsArray(method) : Void -> Bool
+
+	get_IsAutoClass(method) : Void -> Bool
+
+	get_IsAutoLayout(method) : Void -> Bool
+
+	get_IsByRef(method) : Void -> Bool
+
+	get_IsClass(method) : Void -> Bool
+
+	get_IsCOMObject(method) : Void -> Bool
+
+	get_IsContextful(method) : Void -> Bool
+
+	get_IsEnum(method) : Void -> Bool
+
+	get_IsExplicitLayout(method) : Void -> Bool
+
+	get_IsImport(method) : Void -> Bool
+
+	get_IsInterface(method) : Void -> Bool
+
+	get_IsLayoutSequential(method) : Void -> Bool
+
+	get_IsMarshalByRef(method) : Void -> Bool
+
+	get_IsNestedAssembly(method) : Void -> Bool
+
+	get_IsNestedFamANDAssem(method) : Void -> Bool
+
+	get_IsNestedFamily(method) : Void -> Bool
+
+	get_IsNestedFamORAssem(method) : Void -> Bool
+
+	get_IsNestedPrivate(method) : Void -> Bool
+
+	get_IsNestedPublic(method) : Void -> Bool
+
+	get_IsNotPublic(method) : Void -> Bool
+
+	get_IsPointer(method) : Void -> Bool
+
+	get_IsPrimitive(method) : Void -> Bool
+
+	get_IsPublic(method) : Void -> Bool
+
+	get_IsSealed(method) : Void -> Bool
+
+	get_IsSerializable(method) : Void -> Bool
+
+	get_IsSpecialName(method) : Void -> Bool
+
+	get_IsUnicodeClass(method) : Void -> Bool
+
+	get_IsValueType(method) : Void -> Bool
+
+	get_MemberType(method) : Void -> System.Reflection.MemberTypes
+
+	get_Module(method) : Void -> System.Reflection.Module
+
+	get_Name(method) : Void -> String
+
+	get_Namespace(method) : Void -> String
+
+	get_ReflectedType(method) : Void -> System.Type
+
+	get_TypeHandle(method) : Void -> System.RuntimeTypeHandle
+
+	get_TypeInitializer(method) : Void -> System.Reflection.ConstructorInfo
+
+	get_UnderlyingSystemType(method) : Void -> System.Type
+
+}

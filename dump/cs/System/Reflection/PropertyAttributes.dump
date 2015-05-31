@@ -1,0 +1,10 @@
+extern enum System.Reflection.PropertyAttributes {
+	None : System.Reflection.PropertyAttributes;
+	SpecialName : System.Reflection.PropertyAttributes;
+	RTSpecialName : System.Reflection.PropertyAttributes;
+	HasDefault : System.Reflection.PropertyAttributes;
+	Reserved2 : System.Reflection.PropertyAttributes;
+	Reserved3 : System.Reflection.PropertyAttributes;
+	Reserved4 : System.Reflection.PropertyAttributes;
+	ReservedMask : System.Reflection.PropertyAttributes;
+}

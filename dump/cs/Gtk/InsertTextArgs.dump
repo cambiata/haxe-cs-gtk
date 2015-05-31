@@ -1,0 +1,16 @@
+extern class Gtk.InsertTextArgs extends GLib.SignalArgs{
+	public new(method) : Void -> Void
+
+	public Length((get,never)) : Int
+
+	public Text((get,never)) : String
+
+	public Pos((get,never)) : Gtk.TextIter
+
+	get_Pos(method) : Void -> Gtk.TextIter
+
+	get_Text(method) : Void -> String
+
+	get_Length(method) : Void -> Int
+
+}

@@ -1,0 +1,40 @@
+extern class System.Drawing.Imaging.BitmapData{
+	public new(method) : Void -> Void
+
+	public Reserved((get,set)) : Int
+
+	public Scan0((get,set)) : System.IntPtr
+
+	public PixelFormat((get,set)) : System.Drawing.Imaging.PixelFormat
+
+	public Stride((get,set)) : Int
+
+	public Height((get,set)) : Int
+
+	public Width((get,set)) : Int
+
+	get_Width(method) : Void -> Int
+
+	set_Width(method) : value : Int -> Int
+
+	get_Height(method) : Void -> Int
+
+	set_Height(method) : value : Int -> Int
+
+	get_Stride(method) : Void -> Int
+
+	set_Stride(method) : value : Int -> Int
+
+	get_PixelFormat(method) : Void -> System.Drawing.Imaging.PixelFormat
+
+	set_PixelFormat(method) : value : System.Drawing.Imaging.PixelFormat -> System.Drawing.Imaging.PixelFormat
+
+	get_Scan0(method) : Void -> System.IntPtr
+
+	set_Scan0(method) : value : System.IntPtr -> System.IntPtr
+
+	get_Reserved(method) : Void -> Int
+
+	set_Reserved(method) : value : Int -> Int
+
+}

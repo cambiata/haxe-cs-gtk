@@ -1,0 +1,46 @@
+extern class System.Security.Policy.ApplicationTrust implements System.Security.ISecurityEncodable{
+	public new(method) : Void -> Void
+
+	public new(method) : defaultGrantSet : System.Security.PermissionSet -> fullTrustAssemblies : System.Collections.Generic.IEnumerable`1<System.Security.Policy.StrongName> -> Void
+
+	public new(method) : applicationIdentity : System.ApplicationIdentity -> Void
+
+	public FullTrustAssemblies((get,never)) : System.Collections.Generic.IList`1<System.Security.Policy.StrongName>
+
+	public Persist((get,set)) : Bool
+
+	public IsApplicationTrustedToRun((get,set)) : Bool
+
+	public ExtraInfo((get,set)) : Dynamic
+
+	public DefaultGrantSet((get,set)) : System.Security.Policy.PolicyStatement
+
+	public ApplicationIdentity((get,set)) : System.ApplicationIdentity
+
+	get_ApplicationIdentity(method) : Void -> System.ApplicationIdentity
+
+	set_ApplicationIdentity(method) : value : System.ApplicationIdentity -> System.ApplicationIdentity
+
+	get_DefaultGrantSet(method) : Void -> System.Security.Policy.PolicyStatement
+
+	set_DefaultGrantSet(method) : value : System.Security.Policy.PolicyStatement -> System.Security.Policy.PolicyStatement
+
+	get_ExtraInfo(method) : Void -> Dynamic
+
+	set_ExtraInfo(method) : value : Dynamic -> Dynamic
+
+	get_IsApplicationTrustedToRun(method) : Void -> Bool
+
+	set_IsApplicationTrustedToRun(method) : value : Bool -> Bool
+
+	get_Persist(method) : Void -> Bool
+
+	set_Persist(method) : value : Bool -> Bool
+
+	public FromXml(method) : element : System.Security.SecurityElement -> Void
+
+	public ToXml(method) : Void -> System.Security.SecurityElement
+
+	get_FullTrustAssemblies(method) : Void -> System.Collections.Generic.IList`1<System.Security.Policy.StrongName>
+
+}

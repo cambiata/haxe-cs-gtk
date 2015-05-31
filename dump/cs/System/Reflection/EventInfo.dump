@@ -1,0 +1,48 @@
+extern class System.Reflection.EventInfo extends System.Reflection.MemberInfo implements System.Runtime.InteropServices._EventInfo{
+	new(method) : Void -> Void
+
+	public MemberType((get,never)) : System.Reflection.MemberTypes
+
+	public IsSpecialName((get,never)) : Bool
+
+	public IsMulticast((get,never)) : Bool
+
+	public EventHandlerType((get,never)) : System.Type
+
+	public Attributes((get,never)) : System.Reflection.EventAttributes
+
+	get_Attributes(method) : Void -> System.Reflection.EventAttributes
+
+	get_EventHandlerType(method) : Void -> System.Type
+
+	get_IsMulticast(method) : Void -> Bool
+
+	get_IsSpecialName(method) : Void -> Bool
+
+	get_MemberType(method) : Void -> System.Reflection.MemberTypes
+
+	public AddEventHandler(method) : target : Dynamic -> handler : System.Delegate -> Void
+
+	public GetAddMethod(method) : Void -> System.Reflection.MethodInfo
+
+	public GetAddMethod(method) : nonPublic : Bool -> System.Reflection.MethodInfo
+
+	public GetRaiseMethod(method) : Void -> System.Reflection.MethodInfo
+
+	public GetRaiseMethod(method) : nonPublic : Bool -> System.Reflection.MethodInfo
+
+	public GetRemoveMethod(method) : Void -> System.Reflection.MethodInfo
+
+	public GetRemoveMethod(method) : nonPublic : Bool -> System.Reflection.MethodInfo
+
+	public GetOtherMethods(method) : nonPublic : Bool -> cs.NativeArray<System.Reflection.MethodInfo>
+
+	public GetOtherMethods(method) : Void -> cs.NativeArray<System.Reflection.MethodInfo>
+
+	public RemoveEventHandler(method) : target : Dynamic -> handler : System.Delegate -> Void
+
+	static public op_Equality(method) : left : System.Reflection.EventInfo -> right : System.Reflection.EventInfo -> Bool
+
+	static public op_Inequality(method) : left : System.Reflection.EventInfo -> right : System.Reflection.EventInfo -> Bool
+
+}

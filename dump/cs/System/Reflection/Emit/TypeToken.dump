@@ -1,0 +1,12 @@
+extern class System.Reflection.Emit.TypeToken extends System.ValueType{
+	public Token((get,never)) : Int
+
+	get_Token(method) : Void -> Int
+
+	static public Empty((default,never)) : System.Reflection.Emit.TypeToken
+
+	static public op_Equality(method) : a : System.Reflection.Emit.TypeToken -> b : System.Reflection.Emit.TypeToken -> Bool
+
+	static public op_Inequality(method) : a : System.Reflection.Emit.TypeToken -> b : System.Reflection.Emit.TypeToken -> Bool
+
+}

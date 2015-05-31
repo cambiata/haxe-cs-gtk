@@ -1,0 +1,14 @@
+extern class GLib.Object.GetPropertyDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : GObject : System.IntPtr -> property_id : UInt -> value : cs.Ref<GLib.Value> -> pspec : System.IntPtr -> Void
+
+	public BeginInvoke(method) : GObject : System.IntPtr -> property_id : UInt -> value : cs.Ref<GLib.Value> -> pspec : System.IntPtr -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : value : cs.Ref<GLib.Value> -> result : System.IAsyncResult -> Void
+
+	static public op_Addition(method) : arg1 : glib.Object_GetPropertyDelegate -> arg2 : glib.Object_GetPropertyDelegate -> glib.Object_GetPropertyDelegate
+
+	static public op_Subtraction(method) : arg1 : glib.Object_GetPropertyDelegate -> arg2 : glib.Object_GetPropertyDelegate -> glib.Object_GetPropertyDelegate
+
+}

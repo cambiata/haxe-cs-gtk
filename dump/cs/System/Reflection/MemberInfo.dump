@@ -1,0 +1,42 @@
+extern class System.Reflection.MemberInfo implements System.Reflection.ICustomAttributeProvider implements System.Runtime.InteropServices._MemberInfo{
+	new(method) : Void -> Void
+
+	public MetadataToken((get,never)) : Int
+
+	public Module((get,never)) : System.Reflection.Module
+
+	public ReflectedType((get,never)) : System.Type
+
+	public Name((get,never)) : String
+
+	public MemberType((get,never)) : System.Reflection.MemberTypes
+
+	public DeclaringType((get,never)) : System.Type
+
+	public ToString(method) : Void -> String
+
+	get_DeclaringType(method) : Void -> System.Type
+
+	get_MemberType(method) : Void -> System.Reflection.MemberTypes
+
+	get_Name(method) : Void -> String
+
+	get_ReflectedType(method) : Void -> System.Type
+
+	get_Module(method) : Void -> System.Reflection.Module
+
+	public IsDefined(method) : attributeType : System.Type -> inherit : Bool -> Bool
+
+	public GetCustomAttributes(method) : inherit : Bool -> cs.NativeArray<Dynamic>
+
+	public GetCustomAttributes(method) : attributeType : System.Type -> inherit : Bool -> cs.NativeArray<Dynamic>
+
+	get_MetadataToken(method) : Void -> Int
+
+	public GetCustomAttributesData(method) : Void -> System.Collections.Generic.IList`1<System.Reflection.CustomAttributeData>
+
+	static public op_Equality(method) : left : System.Reflection.MemberInfo -> right : System.Reflection.MemberInfo -> Bool
+
+	static public op_Inequality(method) : left : System.Reflection.MemberInfo -> right : System.Reflection.MemberInfo -> Bool
+
+}

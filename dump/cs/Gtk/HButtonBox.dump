@@ -1,0 +1,24 @@
+extern class Gtk.HButtonBox extends Gtk.ButtonBox{
+	new(method) : gtype : GLib.GType -> Void
+
+	public new(method) : Void -> Void
+
+	public new(method) : raw : System.IntPtr -> Void
+
+	static public GType((get,never)) : GLib.GType
+
+	static public LayoutDefault((get,set)) : Gtk.ButtonBoxStyle
+
+	static public SpacingDefault((get,set)) : Int
+
+	static get_SpacingDefault(method) : Void -> Int
+
+	static set_SpacingDefault(method) : value : Int -> Int
+
+	static get_LayoutDefault(method) : Void -> Gtk.ButtonBoxStyle
+
+	static set_LayoutDefault(method) : value : Gtk.ButtonBoxStyle -> Gtk.ButtonBoxStyle
+
+	static get_GType(method) : Void -> GLib.GType
+
+}

@@ -1,0 +1,20 @@
+extern class Gtk.Requisition extends System.ValueType{
+	public Height(var) : Int
+
+	public Width(var) : Int
+
+	public Copy(method) : Void -> Gtk.Requisition
+
+	static public GType((get,never)) : GLib.GType
+
+	static public Zero(var) : Gtk.Requisition
+
+	static public New(method) : raw : System.IntPtr -> Gtk.Requisition
+
+	static get_GType(method) : Void -> GLib.GType
+
+	static public op_Explicit(method) : boxed : Gtk.Requisition -> GLib.Value
+
+	static public op_Explicit(method) : val : GLib.Value -> Gtk.Requisition
+
+}

@@ -1,0 +1,7 @@
+extern enum System.Reflection.CallingConventions {
+	Standard : System.Reflection.CallingConventions;
+	VarArgs : System.Reflection.CallingConventions;
+	Any : System.Reflection.CallingConventions;
+	HasThis : System.Reflection.CallingConventions;
+	ExplicitThis : System.Reflection.CallingConventions;
+}

@@ -1,0 +1,12 @@
+extern enum System.TimeSpan.FormatElementType {
+	Days : System.TimeSpan.FormatElementType;
+	Hours : System.TimeSpan.FormatElementType;
+	Minutes : System.TimeSpan.FormatElementType;
+	Seconds : System.TimeSpan.FormatElementType;
+	Ticks : System.TimeSpan.FormatElementType;
+	TicksUppercase : System.TimeSpan.FormatElementType;
+	Literal : System.TimeSpan.FormatElementType;
+	EscapedChar : System.TimeSpan.FormatElementType;
+	Error : System.TimeSpan.FormatElementType;
+	End : System.TimeSpan.FormatElementType;
+}

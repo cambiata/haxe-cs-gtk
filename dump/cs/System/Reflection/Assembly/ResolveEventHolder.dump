@@ -1,0 +1,10 @@
+extern class System.Reflection.Assembly.ResolveEventHolder{
+	public new(method) : Void -> Void
+
+	ModuleResolve(var) : cs.system.reflection.ModuleResolveEventHandler
+
+	public add_ModuleResolve(method) : value : cs.system.reflection.ModuleResolveEventHandler -> Void
+
+	public remove_ModuleResolve(method) : value : cs.system.reflection.ModuleResolveEventHandler -> Void
+
+}

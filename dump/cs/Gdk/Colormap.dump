@@ -1,0 +1,46 @@
+extern class Gdk.Colormap extends GLib.Object{
+	new(method) : gtype : GLib.GType -> Void
+
+	public new(method) : visual : Gdk.Visual -> allocate : Bool -> Void
+
+	public new(method) : raw : System.IntPtr -> Void
+
+	public Screen((get,never)) : Gdk.Screen
+
+	public Size((get,never)) : Int
+
+	public Visual((get,never)) : Gdk.Visual
+
+	get_Visual(method) : Void -> Gdk.Visual
+
+	get_Size(method) : Void -> Int
+
+	get_Screen(method) : Void -> Gdk.Screen
+
+	public AllocColor(method) : color : cs.Ref<Gdk.Color> -> writeable : Bool -> best_match : Bool -> Bool
+
+	public Ref(method) : Void -> Gdk.Colormap
+
+	public Change(method) : ncolors : Int -> Void
+
+	public FreeColors(method) : colors : cs.NativeArray<Gdk.Color> -> ncolors : Int -> Void
+
+	public QueryColor(method) : pixel : cs.types.UInt64 -> result : cs.Ref<Gdk.Color> -> Void
+
+	public Unref(method) : Void -> Void
+
+	public AllocColors(method) : colors : cs.NativeArray<Gdk.Color> -> ncolors : Int -> writeable : Bool -> best_match : Bool -> success : cs.NativeArray<Bool> -> Int
+
+	static public GType((get,never)) : GLib.GType
+
+	static public System((get,never)) : Gdk.Colormap
+
+	static public SystemSize((get,never)) : Int
+
+	static get_SystemSize(method) : Void -> Int
+
+	static get_System(method) : Void -> Gdk.Colormap
+
+	static get_GType(method) : Void -> GLib.GType
+
+}

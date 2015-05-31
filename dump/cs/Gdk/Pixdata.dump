@@ -1,0 +1,24 @@
+extern class Gdk.Pixdata extends System.ValueType{
+	public Height(var) : UInt
+
+	public Width(var) : UInt
+
+	public Rowstride(var) : UInt
+
+	public PixdataType(var) : UInt
+
+	public Length(var) : Int
+
+	public Magic(var) : UInt
+
+	public Deserialize(method) : stream_length : UInt -> stream : cs.NativeArray<cs.types.UInt8> -> Bool
+
+	public FromPixbuf(method) : pixbuf : Gdk.Pixbuf -> use_rle : Bool -> System.IntPtr
+
+	public Serialize(method) : Void -> cs.NativeArray<cs.types.UInt8>
+
+	static public Zero(var) : Gdk.Pixdata
+
+	static public New(method) : raw : System.IntPtr -> Gdk.Pixdata
+
+}

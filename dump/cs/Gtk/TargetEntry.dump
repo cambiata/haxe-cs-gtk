@@ -1,0 +1,14 @@
+extern class Gtk.TargetEntry extends System.ValueType{
+	public new(method) : target : String -> flags : Gtk.TargetFlags -> info : UInt -> Void
+
+	public Info(var) : UInt
+
+	public Flags(var) : Gtk.TargetFlags
+
+	public Target(var) : String
+
+	static public Zero(var) : Gtk.TargetEntry
+
+	static public New(method) : raw : System.IntPtr -> Gtk.TargetEntry
+
+}

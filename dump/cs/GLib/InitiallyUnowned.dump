@@ -1,0 +1,10 @@
+extern class GLib.InitiallyUnowned extends GLib.Object{
+	new(method) : raw : System.IntPtr -> Void
+
+	new(method) : gtype : GLib.GType -> Void
+
+	static public GType((get,never)) : GLib.GType
+
+	static get_GType(method) : Void -> GLib.GType
+
+}

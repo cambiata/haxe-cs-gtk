@@ -1,0 +1,10 @@
+extern class Gtk.ButtonBox.ButtonBoxChild extends Gtk.Box.BoxChild{
+	new(method) : parent : Gtk.Container -> child : Gtk.Widget -> Void
+
+	public Secondary((get,set)) : Bool
+
+	get_Secondary(method) : Void -> Bool
+
+	set_Secondary(method) : value : Bool -> Bool
+
+}

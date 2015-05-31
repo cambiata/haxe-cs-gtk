@@ -1,0 +1,4 @@
+extern class System.ContextBoundObject extends System.MarshalByRefObject{
+	new(method) : Void -> Void
+
+}

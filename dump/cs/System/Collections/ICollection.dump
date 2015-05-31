@@ -1,0 +1,18 @@
+extern interface System.Collections.ICollection implements System.Collections.IEnumerable{
+	public SyncRoot((get,never)) : Dynamic
+
+	public IsSynchronized((get,never)) : Bool
+
+	public Count((get,never)) : Int
+
+	public GetEnumerator(method) : Void -> System.Collections.IEnumerator
+
+	get_Count(method) : Void -> Int
+
+	get_IsSynchronized(method) : Void -> Bool
+
+	get_SyncRoot(method) : Void -> Dynamic
+
+	public CopyTo(method) : array : System.Array -> index : Int -> Void
+
+}

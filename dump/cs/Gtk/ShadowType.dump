@@ -1,0 +1,7 @@
+extern enum Gtk.ShadowType {
+	None : Gtk.ShadowType;
+	In : Gtk.ShadowType;
+	Out : Gtk.ShadowType;
+	EtchedIn : Gtk.ShadowType;
+	EtchedOut : Gtk.ShadowType;
+}

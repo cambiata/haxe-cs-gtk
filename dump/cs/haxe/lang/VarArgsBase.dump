@@ -1,0 +1,8 @@
+private class haxe.lang.VarArgsBase extends haxe.lang.Function{
+	public __hx_invokeDynamic(method) : dynArgs : Array<Dynamic> -> Dynamic
+
+	 = [Function:dynArgs : Array<Dynamic> -> Dynamic]
+		[Arg:Array<Dynamic>] [Local dynArgs(1248):Array<Dynamic>]
+		[Block:Unknown<50>] [Throw:Unknown<50>] [Const "Abstract implementation":String]
+
+}

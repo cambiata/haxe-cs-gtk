@@ -1,0 +1,102 @@
+extern class System.Drawing.RectangleF extends System.ValueType{
+	public new(method) : x : Single -> y : Single -> width : Single -> height : Single -> Void
+
+	public new(method) : location : System.Drawing.PointF -> size : System.Drawing.SizeF -> Void
+
+	public IsEmpty((get,never)) : Bool
+
+	public Bottom((get,never)) : Single
+
+	public Right((get,never)) : Single
+
+	public Top((get,never)) : Single
+
+	public Left((get,never)) : Single
+
+	public Height((get,set)) : Single
+
+	public Width((get,set)) : Single
+
+	public Y((get,set)) : Single
+
+	public X((get,set)) : Single
+
+	public Size((get,set)) : System.Drawing.SizeF
+
+	public Location((get,set)) : System.Drawing.PointF
+
+	get_Location(method) : Void -> System.Drawing.PointF
+
+	set_Location(method) : value : System.Drawing.PointF -> System.Drawing.PointF
+
+	get_Size(method) : Void -> System.Drawing.SizeF
+
+	set_Size(method) : value : System.Drawing.SizeF -> System.Drawing.SizeF
+
+	get_X(method) : Void -> Single
+
+	set_X(method) : value : Single -> Single
+
+	get_Y(method) : Void -> Single
+
+	set_Y(method) : value : Single -> Single
+
+	get_Width(method) : Void -> Single
+
+	set_Width(method) : value : Single -> Single
+
+	get_Height(method) : Void -> Single
+
+	set_Height(method) : value : Single -> Single
+
+	get_Left(method) : Void -> Single
+
+	get_Top(method) : Void -> Single
+
+	get_Right(method) : Void -> Single
+
+	get_Bottom(method) : Void -> Single
+
+	get_IsEmpty(method) : Void -> Bool
+
+	public Contains(method) : x : Single -> y : Single -> Bool
+
+	public Contains(method) : rect : System.Drawing.RectangleF -> Bool
+
+	public Contains(method) : pt : System.Drawing.PointF -> Bool
+
+	public Inflate(method) : x : Single -> y : Single -> Void
+
+	public Inflate(method) : size : System.Drawing.SizeF -> Void
+
+	public Intersect(method) : rect : System.Drawing.RectangleF -> Void
+
+	public IntersectsWith(method) : rect : System.Drawing.RectangleF -> Bool
+
+	public Offset(method) : pos : System.Drawing.PointF -> Void
+
+	public Offset(method) : x : Single -> y : Single -> Void
+
+	public ToString(method) : Void -> String
+
+	static public Empty((default,never)) : System.Drawing.RectangleF
+
+	static public FromLTRB(method) : left : Single -> top : Single -> right : Single -> bottom : Single -> System.Drawing.RectangleF
+
+	static public op_Equality(method) : left : System.Drawing.RectangleF -> right : System.Drawing.RectangleF -> Bool
+
+	static public op_Inequality(method) : left : System.Drawing.RectangleF -> right : System.Drawing.RectangleF -> Bool
+
+	static public Inflate(method) : rect : System.Drawing.RectangleF -> x : Single -> y : Single -> System.Drawing.RectangleF
+
+	static public Inflate(method) : rect : System.Drawing.RectangleF -> x : Single -> y : Single -> System.Drawing.RectangleF
+
+	static public Intersect(method) : a : System.Drawing.RectangleF -> b : System.Drawing.RectangleF -> System.Drawing.RectangleF
+
+	static public Intersect(method) : a : System.Drawing.RectangleF -> b : System.Drawing.RectangleF -> System.Drawing.RectangleF
+
+	static public Union(method) : a : System.Drawing.RectangleF -> b : System.Drawing.RectangleF -> System.Drawing.RectangleF
+
+	static public op_Implicit(method) : r : System.Drawing.Rectangle -> System.Drawing.RectangleF
+
+}

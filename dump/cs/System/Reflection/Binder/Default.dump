@@ -1,0 +1,16 @@
+extern class System.Reflection.Binder.Default extends System.Reflection.Binder{
+	public new(method) : Void -> Void
+
+	public BindToField(method) : bindingAttr : System.Reflection.BindingFlags -> match : cs.NativeArray<System.Reflection.FieldInfo> -> value : Dynamic -> culture : System.Globalization.CultureInfo -> System.Reflection.FieldInfo
+
+	public BindToMethod(method) : bindingAttr : System.Reflection.BindingFlags -> match : cs.NativeArray<System.Reflection.MethodBase> -> args : cs.Ref<cs.NativeArray<Dynamic>> -> modifiers : cs.NativeArray<System.Reflection.ParameterModifier> -> culture : System.Globalization.CultureInfo -> names : cs.NativeArray<String> -> state : cs.Out<Dynamic> -> System.Reflection.MethodBase
+
+	public ChangeType(method) : value : Dynamic -> type : System.Type -> culture : System.Globalization.CultureInfo -> Dynamic
+
+	public ReorderArgumentArray(method) : args : cs.Ref<cs.NativeArray<Dynamic>> -> state : Dynamic -> Void
+
+	public SelectMethod(method) : bindingAttr : System.Reflection.BindingFlags -> match : cs.NativeArray<System.Reflection.MethodBase> -> types : cs.NativeArray<System.Type> -> modifiers : cs.NativeArray<System.Reflection.ParameterModifier> -> System.Reflection.MethodBase
+
+	public SelectProperty(method) : bindingAttr : System.Reflection.BindingFlags -> match : cs.NativeArray<System.Reflection.PropertyInfo> -> returnType : System.Type -> indexes : cs.NativeArray<System.Type> -> modifiers : cs.NativeArray<System.Reflection.ParameterModifier> -> System.Reflection.PropertyInfo
+
+}

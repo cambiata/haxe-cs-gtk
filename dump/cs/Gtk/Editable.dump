@@ -1,0 +1,54 @@
+extern interface Gtk.Editable implements GLib.IWrapper{
+	TextInserted(var) : gtk.TextInsertedHandler
+
+	TextDeleted(var) : gtk.TextDeletedHandler
+
+	Changed(var) : cs.system.EventHandler
+
+	public Handle((get,never)) : System.IntPtr
+
+	public Position((get,set)) : Int
+
+	public IsEditable((get,set)) : Bool
+
+	get_Handle(method) : Void -> System.IntPtr
+
+	public add_Changed(method) : value : cs.system.EventHandler -> Void
+
+	public remove_Changed(method) : value : cs.system.EventHandler -> Void
+
+	public add_TextDeleted(method) : value : gtk.TextDeletedHandler -> Void
+
+	public remove_TextDeleted(method) : value : gtk.TextDeletedHandler -> Void
+
+	public add_TextInserted(method) : value : gtk.TextInsertedHandler -> Void
+
+	public remove_TextInserted(method) : value : gtk.TextInsertedHandler -> Void
+
+	public DeleteSelection(method) : Void -> Void
+
+	public GetChars(method) : start_pos : Int -> end_pos : Int -> String
+
+	public InsertText(method) : new_text : String -> position : cs.Ref<Int> -> Void
+
+	public GetSelectionBounds(method) : start : cs.Out<Int> -> end : cs.Out<Int> -> Bool
+
+	public CutClipboard(method) : Void -> Void
+
+	public DeleteText(method) : start_pos : Int -> end_pos : Int -> Void
+
+	get_IsEditable(method) : Void -> Bool
+
+	set_IsEditable(method) : value : Bool -> Bool
+
+	get_Position(method) : Void -> Int
+
+	set_Position(method) : value : Int -> Int
+
+	public SelectRegion(method) : start : Int -> end : Int -> Void
+
+	public CopyClipboard(method) : Void -> Void
+
+	public PasteClipboard(method) : Void -> Void
+
+}

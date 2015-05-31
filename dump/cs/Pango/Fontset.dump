@@ -1,0 +1,20 @@
+extern class Pango.Fontset extends GLib.Object{
+	new(method) : gtype : GLib.GType -> Void
+
+	new(method) : Void -> Void
+
+	public new(method) : raw : System.IntPtr -> Void
+
+	public Metrics((get,never)) : Pango.FontMetrics
+
+	public Foreach(method) : func : pango.FontsetForeachFunc -> Void
+
+	public GetFont(method) : wc : UInt -> Pango.Font
+
+	get_Metrics(method) : Void -> Pango.FontMetrics
+
+	static public GType((get,never)) : GLib.GType
+
+	static get_GType(method) : Void -> GLib.GType
+
+}

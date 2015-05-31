@@ -1,0 +1,142 @@
+extern class System.Text.StringBuilder implements System.Runtime.Serialization.ISerializable implements ArrayAccess<cs.types.Char16>{
+	public new(method) : value : String -> startIndex : Int -> length : Int -> capacity : Int -> Void
+
+	public new(method) : value : String -> capacity : Int -> Void
+
+	public new(method) : value : String -> Void
+
+	public new(method) : capacity : Int -> maxCapacity : Int -> Void
+
+	public new(method) : capacity : Int -> Void
+
+	public new(method) : Void -> Void
+
+	public Length((get,set)) : Int
+
+	public Capacity((get,set)) : Int
+
+	public MaxCapacity((get,never)) : Int
+
+	get_MaxCapacity(method) : Void -> Int
+
+	get_Capacity(method) : Void -> Int
+
+	set_Capacity(method) : value : Int -> Int
+
+	get_Length(method) : Void -> Int
+
+	set_Length(method) : value : Int -> Int
+
+	get_Chars(method) : index : Int -> cs.types.Char16
+
+	set_Chars(method) : index : Int -> value : cs.types.Char16 -> Void
+
+	public ToString(method) : Void -> String
+
+	public ToString(method) : startIndex : Int -> length : Int -> String
+
+	public EnsureCapacity(method) : capacity : Int -> Int
+
+	public Remove(method) : startIndex : Int -> length : Int -> System.Text.StringBuilder
+
+	public Replace(method) : oldChar : cs.types.Char16 -> newChar : cs.types.Char16 -> System.Text.StringBuilder
+
+	public Replace(method) : oldValue : String -> newValue : String -> startIndex : Int -> count : Int -> System.Text.StringBuilder
+
+	public Replace(method) : oldValue : String -> newValue : String -> System.Text.StringBuilder
+
+	public Replace(method) : oldChar : cs.types.Char16 -> newChar : cs.types.Char16 -> startIndex : Int -> count : Int -> System.Text.StringBuilder
+
+	public Append(method) : value : cs.NativeArray<cs.types.Char16> -> System.Text.StringBuilder
+
+	public Append(method) : value : String -> startIndex : Int -> count : Int -> System.Text.StringBuilder
+
+	public Append(method) : value : cs.NativeArray<cs.types.Char16> -> startIndex : Int -> charCount : Int -> System.Text.StringBuilder
+
+	public Append(method) : value : cs.types.Char16 -> repeatCount : Int -> System.Text.StringBuilder
+
+	public Append(method) : value : cs.types.Char16 -> System.Text.StringBuilder
+
+	public Append(method) : value : cs.types.UInt64 -> System.Text.StringBuilder
+
+	public Append(method) : value : UInt -> System.Text.StringBuilder
+
+	public Append(method) : value : cs.types.UInt16 -> System.Text.StringBuilder
+
+	public Append(method) : value : Single -> System.Text.StringBuilder
+
+	public Append(method) : value : cs.types.Int8 -> System.Text.StringBuilder
+
+	public Append(method) : value : Dynamic -> System.Text.StringBuilder
+
+	public Append(method) : value : haxe.Int64 -> System.Text.StringBuilder
+
+	public Append(method) : value : Int -> System.Text.StringBuilder
+
+	public Append(method) : value : cs.types.Int16 -> System.Text.StringBuilder
+
+	public Append(method) : value : Float -> System.Text.StringBuilder
+
+	public Append(method) : value : System.Decimal -> System.Text.StringBuilder
+
+	public Append(method) : value : cs.types.UInt8 -> System.Text.StringBuilder
+
+	public Append(method) : value : Bool -> System.Text.StringBuilder
+
+	public Append(method) : value : String -> System.Text.StringBuilder
+
+	public Clear(method) : Void -> System.Text.StringBuilder
+
+	public AppendLine(method) : Void -> System.Text.StringBuilder
+
+	public AppendLine(method) : value : String -> System.Text.StringBuilder
+
+	public AppendFormat(method) : format : String -> args : cs.NativeArray<Dynamic> -> System.Text.StringBuilder
+
+	public AppendFormat(method) : format : String -> arg0 : Dynamic -> arg1 : Dynamic -> arg2 : Dynamic -> System.Text.StringBuilder
+
+	public AppendFormat(method) : format : String -> arg0 : Dynamic -> arg1 : Dynamic -> System.Text.StringBuilder
+
+	public AppendFormat(method) : format : String -> arg0 : Dynamic -> System.Text.StringBuilder
+
+	public AppendFormat(method) : provider : System.IFormatProvider -> format : String -> args : cs.NativeArray<Dynamic> -> System.Text.StringBuilder
+
+	public Insert(method) : index : Int -> value : cs.NativeArray<cs.types.Char16> -> System.Text.StringBuilder
+
+	public Insert(method) : index : Int -> value : cs.NativeArray<cs.types.Char16> -> startIndex : Int -> charCount : Int -> System.Text.StringBuilder
+
+	public Insert(method) : index : Int -> value : String -> count : Int -> System.Text.StringBuilder
+
+	public Insert(method) : index : Int -> value : cs.types.UInt64 -> System.Text.StringBuilder
+
+	public Insert(method) : index : Int -> value : UInt -> System.Text.StringBuilder
+
+	public Insert(method) : index : Int -> value : cs.types.UInt16 -> System.Text.StringBuilder
+
+	public Insert(method) : index : Int -> value : Single -> System.Text.StringBuilder
+
+	public Insert(method) : index : Int -> value : cs.types.Int8 -> System.Text.StringBuilder
+
+	public Insert(method) : index : Int -> value : Dynamic -> System.Text.StringBuilder
+
+	public Insert(method) : index : Int -> value : haxe.Int64 -> System.Text.StringBuilder
+
+	public Insert(method) : index : Int -> value : Int -> System.Text.StringBuilder
+
+	public Insert(method) : index : Int -> value : cs.types.Int16 -> System.Text.StringBuilder
+
+	public Insert(method) : index : Int -> value : Float -> System.Text.StringBuilder
+
+	public Insert(method) : index : Int -> value : System.Decimal -> System.Text.StringBuilder
+
+	public Insert(method) : index : Int -> value : cs.types.Char16 -> System.Text.StringBuilder
+
+	public Insert(method) : index : Int -> value : cs.types.UInt8 -> System.Text.StringBuilder
+
+	public Insert(method) : index : Int -> value : Bool -> System.Text.StringBuilder
+
+	public Insert(method) : index : Int -> value : String -> System.Text.StringBuilder
+
+	public CopyTo(method) : sourceIndex : Int -> destination : cs.NativeArray<cs.types.Char16> -> destinationIndex : Int -> count : Int -> Void
+
+}

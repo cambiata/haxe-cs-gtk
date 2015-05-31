@@ -1,0 +1,538 @@
+extern class System.Drawing.Graphics extends System.MarshalByRefObject implements System.Drawing.IDeviceContext implements System.IDisposable{
+	public IsVisibleClipEmpty((get,never)) : Bool
+
+	public VisibleClipBounds((get,never)) : System.Drawing.RectangleF
+
+	public IsClipEmpty((get,never)) : Bool
+
+	public ClipBounds((get,never)) : System.Drawing.RectangleF
+
+	public Clip((get,set)) : System.Drawing.Region
+
+	public DpiY((get,never)) : Single
+
+	public DpiX((get,never)) : Single
+
+	public PageScale((get,set)) : Single
+
+	public PageUnit((get,set)) : System.Drawing.GraphicsUnit
+
+	public Transform((get,set)) : System.Drawing.Drawing2D.Matrix
+
+	public InterpolationMode((get,set)) : System.Drawing.Drawing2D.InterpolationMode
+
+	public PixelOffsetMode((get,set)) : System.Drawing.Drawing2D.PixelOffsetMode
+
+	public SmoothingMode((get,set)) : System.Drawing.Drawing2D.SmoothingMode
+
+	public TextContrast((get,set)) : Int
+
+	public TextRenderingHint((get,set)) : System.Drawing.Text.TextRenderingHint
+
+	public CompositingQuality((get,set)) : System.Drawing.Drawing2D.CompositingQuality
+
+	public RenderingOrigin((get,set)) : System.Drawing.Point
+
+	public CompositingMode((get,set)) : System.Drawing.Drawing2D.CompositingMode
+
+	public GetHdc(method) : Void -> System.IntPtr
+
+	public ReleaseHdc(method) : hdc : System.IntPtr -> Void
+
+	public ReleaseHdc(method) : Void -> Void
+
+	public ReleaseHdcInternal(method) : hdc : System.IntPtr -> Void
+
+	public Dispose(method) : Void -> Void
+
+	Finalize(method) : Void -> Void
+
+	public Flush(method) : Void -> Void
+
+	public Flush(method) : intention : System.Drawing.Drawing2D.FlushIntention -> Void
+
+	get_CompositingMode(method) : Void -> System.Drawing.Drawing2D.CompositingMode
+
+	set_CompositingMode(method) : value : System.Drawing.Drawing2D.CompositingMode -> System.Drawing.Drawing2D.CompositingMode
+
+	get_RenderingOrigin(method) : Void -> System.Drawing.Point
+
+	set_RenderingOrigin(method) : value : System.Drawing.Point -> System.Drawing.Point
+
+	get_CompositingQuality(method) : Void -> System.Drawing.Drawing2D.CompositingQuality
+
+	set_CompositingQuality(method) : value : System.Drawing.Drawing2D.CompositingQuality -> System.Drawing.Drawing2D.CompositingQuality
+
+	get_TextRenderingHint(method) : Void -> System.Drawing.Text.TextRenderingHint
+
+	set_TextRenderingHint(method) : value : System.Drawing.Text.TextRenderingHint -> System.Drawing.Text.TextRenderingHint
+
+	get_TextContrast(method) : Void -> Int
+
+	set_TextContrast(method) : value : Int -> Int
+
+	get_SmoothingMode(method) : Void -> System.Drawing.Drawing2D.SmoothingMode
+
+	set_SmoothingMode(method) : value : System.Drawing.Drawing2D.SmoothingMode -> System.Drawing.Drawing2D.SmoothingMode
+
+	get_PixelOffsetMode(method) : Void -> System.Drawing.Drawing2D.PixelOffsetMode
+
+	set_PixelOffsetMode(method) : value : System.Drawing.Drawing2D.PixelOffsetMode -> System.Drawing.Drawing2D.PixelOffsetMode
+
+	get_InterpolationMode(method) : Void -> System.Drawing.Drawing2D.InterpolationMode
+
+	set_InterpolationMode(method) : value : System.Drawing.Drawing2D.InterpolationMode -> System.Drawing.Drawing2D.InterpolationMode
+
+	get_Transform(method) : Void -> System.Drawing.Drawing2D.Matrix
+
+	set_Transform(method) : value : System.Drawing.Drawing2D.Matrix -> System.Drawing.Drawing2D.Matrix
+
+	get_PageUnit(method) : Void -> System.Drawing.GraphicsUnit
+
+	set_PageUnit(method) : value : System.Drawing.GraphicsUnit -> System.Drawing.GraphicsUnit
+
+	get_PageScale(method) : Void -> Single
+
+	set_PageScale(method) : value : Single -> Single
+
+	get_DpiX(method) : Void -> Single
+
+	get_DpiY(method) : Void -> Single
+
+	public CopyFromScreen(method) : upperLeftSource : System.Drawing.Point -> upperLeftDestination : System.Drawing.Point -> blockRegionSize : System.Drawing.Size -> Void
+
+	public CopyFromScreen(method) : sourceX : Int -> sourceY : Int -> destinationX : Int -> destinationY : Int -> blockRegionSize : System.Drawing.Size -> copyPixelOperation : System.Drawing.CopyPixelOperation -> Void
+
+	public CopyFromScreen(method) : upperLeftSource : System.Drawing.Point -> upperLeftDestination : System.Drawing.Point -> blockRegionSize : System.Drawing.Size -> copyPixelOperation : System.Drawing.CopyPixelOperation -> Void
+
+	public CopyFromScreen(method) : sourceX : Int -> sourceY : Int -> destinationX : Int -> destinationY : Int -> blockRegionSize : System.Drawing.Size -> Void
+
+	public ResetTransform(method) : Void -> Void
+
+	public MultiplyTransform(method) : matrix : System.Drawing.Drawing2D.Matrix -> Void
+
+	public MultiplyTransform(method) : matrix : System.Drawing.Drawing2D.Matrix -> order : System.Drawing.Drawing2D.MatrixOrder -> Void
+
+	public TranslateTransform(method) : dx : Single -> dy : Single -> Void
+
+	public TranslateTransform(method) : dx : Single -> dy : Single -> order : System.Drawing.Drawing2D.MatrixOrder -> Void
+
+	public ScaleTransform(method) : sx : Single -> sy : Single -> Void
+
+	public ScaleTransform(method) : sx : Single -> sy : Single -> order : System.Drawing.Drawing2D.MatrixOrder -> Void
+
+	public RotateTransform(method) : angle : Single -> Void
+
+	public RotateTransform(method) : angle : Single -> order : System.Drawing.Drawing2D.MatrixOrder -> Void
+
+	public TransformPoints(method) : destSpace : System.Drawing.Drawing2D.CoordinateSpace -> srcSpace : System.Drawing.Drawing2D.CoordinateSpace -> pts : cs.NativeArray<System.Drawing.PointF> -> Void
+
+	public TransformPoints(method) : destSpace : System.Drawing.Drawing2D.CoordinateSpace -> srcSpace : System.Drawing.Drawing2D.CoordinateSpace -> pts : cs.NativeArray<System.Drawing.Point> -> Void
+
+	public GetNearestColor(method) : color : System.Drawing.Color -> System.Drawing.Color
+
+	public DrawLine(method) : pen : System.Drawing.Pen -> x1 : Single -> y1 : Single -> x2 : Single -> y2 : Single -> Void
+
+	public DrawLine(method) : pen : System.Drawing.Pen -> pt1 : System.Drawing.Point -> pt2 : System.Drawing.Point -> Void
+
+	public DrawLine(method) : pen : System.Drawing.Pen -> x1 : Int -> y1 : Int -> x2 : Int -> y2 : Int -> Void
+
+	public DrawLine(method) : pen : System.Drawing.Pen -> pt1 : System.Drawing.PointF -> pt2 : System.Drawing.PointF -> Void
+
+	public DrawLines(method) : pen : System.Drawing.Pen -> points : cs.NativeArray<System.Drawing.PointF> -> Void
+
+	public DrawLines(method) : pen : System.Drawing.Pen -> points : cs.NativeArray<System.Drawing.Point> -> Void
+
+	public DrawArc(method) : pen : System.Drawing.Pen -> x : Single -> y : Single -> width : Single -> height : Single -> startAngle : Single -> sweepAngle : Single -> Void
+
+	public DrawArc(method) : pen : System.Drawing.Pen -> rect : System.Drawing.Rectangle -> startAngle : Single -> sweepAngle : Single -> Void
+
+	public DrawArc(method) : pen : System.Drawing.Pen -> x : Int -> y : Int -> width : Int -> height : Int -> startAngle : Int -> sweepAngle : Int -> Void
+
+	public DrawArc(method) : pen : System.Drawing.Pen -> rect : System.Drawing.RectangleF -> startAngle : Single -> sweepAngle : Single -> Void
+
+	public DrawBezier(method) : pen : System.Drawing.Pen -> x1 : Single -> y1 : Single -> x2 : Single -> y2 : Single -> x3 : Single -> y3 : Single -> x4 : Single -> y4 : Single -> Void
+
+	public DrawBezier(method) : pen : System.Drawing.Pen -> pt1 : System.Drawing.Point -> pt2 : System.Drawing.Point -> pt3 : System.Drawing.Point -> pt4 : System.Drawing.Point -> Void
+
+	public DrawBezier(method) : pen : System.Drawing.Pen -> pt1 : System.Drawing.PointF -> pt2 : System.Drawing.PointF -> pt3 : System.Drawing.PointF -> pt4 : System.Drawing.PointF -> Void
+
+	public DrawBeziers(method) : pen : System.Drawing.Pen -> points : cs.NativeArray<System.Drawing.PointF> -> Void
+
+	public DrawBeziers(method) : pen : System.Drawing.Pen -> points : cs.NativeArray<System.Drawing.Point> -> Void
+
+	public DrawRectangle(method) : pen : System.Drawing.Pen -> rect : System.Drawing.Rectangle -> Void
+
+	public DrawRectangle(method) : pen : System.Drawing.Pen -> x : Int -> y : Int -> width : Int -> height : Int -> Void
+
+	public DrawRectangle(method) : pen : System.Drawing.Pen -> x : Single -> y : Single -> width : Single -> height : Single -> Void
+
+	public DrawRectangles(method) : pen : System.Drawing.Pen -> rects : cs.NativeArray<System.Drawing.RectangleF> -> Void
+
+	public DrawRectangles(method) : pen : System.Drawing.Pen -> rects : cs.NativeArray<System.Drawing.Rectangle> -> Void
+
+	public DrawEllipse(method) : pen : System.Drawing.Pen -> rect : System.Drawing.RectangleF -> Void
+
+	public DrawEllipse(method) : pen : System.Drawing.Pen -> x : Int -> y : Int -> width : Int -> height : Int -> Void
+
+	public DrawEllipse(method) : pen : System.Drawing.Pen -> rect : System.Drawing.Rectangle -> Void
+
+	public DrawEllipse(method) : pen : System.Drawing.Pen -> x : Single -> y : Single -> width : Single -> height : Single -> Void
+
+	public DrawPie(method) : pen : System.Drawing.Pen -> rect : System.Drawing.RectangleF -> startAngle : Single -> sweepAngle : Single -> Void
+
+	public DrawPie(method) : pen : System.Drawing.Pen -> x : Int -> y : Int -> width : Int -> height : Int -> startAngle : Int -> sweepAngle : Int -> Void
+
+	public DrawPie(method) : pen : System.Drawing.Pen -> rect : System.Drawing.Rectangle -> startAngle : Single -> sweepAngle : Single -> Void
+
+	public DrawPie(method) : pen : System.Drawing.Pen -> x : Single -> y : Single -> width : Single -> height : Single -> startAngle : Single -> sweepAngle : Single -> Void
+
+	public DrawPolygon(method) : pen : System.Drawing.Pen -> points : cs.NativeArray<System.Drawing.PointF> -> Void
+
+	public DrawPolygon(method) : pen : System.Drawing.Pen -> points : cs.NativeArray<System.Drawing.Point> -> Void
+
+	public DrawPath(method) : pen : System.Drawing.Pen -> path : System.Drawing.Drawing2D.GraphicsPath -> Void
+
+	public DrawCurve(method) : pen : System.Drawing.Pen -> points : cs.NativeArray<System.Drawing.PointF> -> Void
+
+	public DrawCurve(method) : pen : System.Drawing.Pen -> points : cs.NativeArray<System.Drawing.Point> -> offset : Int -> numberOfSegments : Int -> tension : Single -> Void
+
+	public DrawCurve(method) : pen : System.Drawing.Pen -> points : cs.NativeArray<System.Drawing.Point> -> tension : Single -> Void
+
+	public DrawCurve(method) : pen : System.Drawing.Pen -> points : cs.NativeArray<System.Drawing.Point> -> Void
+
+	public DrawCurve(method) : pen : System.Drawing.Pen -> points : cs.NativeArray<System.Drawing.PointF> -> offset : Int -> numberOfSegments : Int -> tension : Single -> Void
+
+	public DrawCurve(method) : pen : System.Drawing.Pen -> points : cs.NativeArray<System.Drawing.PointF> -> offset : Int -> numberOfSegments : Int -> Void
+
+	public DrawCurve(method) : pen : System.Drawing.Pen -> points : cs.NativeArray<System.Drawing.PointF> -> tension : Single -> Void
+
+	public DrawClosedCurve(method) : pen : System.Drawing.Pen -> points : cs.NativeArray<System.Drawing.PointF> -> Void
+
+	public DrawClosedCurve(method) : pen : System.Drawing.Pen -> points : cs.NativeArray<System.Drawing.Point> -> tension : Single -> fillmode : System.Drawing.Drawing2D.FillMode -> Void
+
+	public DrawClosedCurve(method) : pen : System.Drawing.Pen -> points : cs.NativeArray<System.Drawing.Point> -> Void
+
+	public DrawClosedCurve(method) : pen : System.Drawing.Pen -> points : cs.NativeArray<System.Drawing.PointF> -> tension : Single -> fillmode : System.Drawing.Drawing2D.FillMode -> Void
+
+	public Clear(method) : color : System.Drawing.Color -> Void
+
+	public FillRectangle(method) : brush : System.Drawing.Brush -> rect : System.Drawing.RectangleF -> Void
+
+	public FillRectangle(method) : brush : System.Drawing.Brush -> x : Int -> y : Int -> width : Int -> height : Int -> Void
+
+	public FillRectangle(method) : brush : System.Drawing.Brush -> rect : System.Drawing.Rectangle -> Void
+
+	public FillRectangle(method) : brush : System.Drawing.Brush -> x : Single -> y : Single -> width : Single -> height : Single -> Void
+
+	public FillRectangles(method) : brush : System.Drawing.Brush -> rects : cs.NativeArray<System.Drawing.RectangleF> -> Void
+
+	public FillRectangles(method) : brush : System.Drawing.Brush -> rects : cs.NativeArray<System.Drawing.Rectangle> -> Void
+
+	public FillPolygon(method) : brush : System.Drawing.Brush -> points : cs.NativeArray<System.Drawing.PointF> -> Void
+
+	public FillPolygon(method) : brush : System.Drawing.Brush -> points : cs.NativeArray<System.Drawing.Point> -> fillMode : System.Drawing.Drawing2D.FillMode -> Void
+
+	public FillPolygon(method) : brush : System.Drawing.Brush -> points : cs.NativeArray<System.Drawing.Point> -> Void
+
+	public FillPolygon(method) : brush : System.Drawing.Brush -> points : cs.NativeArray<System.Drawing.PointF> -> fillMode : System.Drawing.Drawing2D.FillMode -> Void
+
+	public FillEllipse(method) : brush : System.Drawing.Brush -> rect : System.Drawing.RectangleF -> Void
+
+	public FillEllipse(method) : brush : System.Drawing.Brush -> x : Int -> y : Int -> width : Int -> height : Int -> Void
+
+	public FillEllipse(method) : brush : System.Drawing.Brush -> rect : System.Drawing.Rectangle -> Void
+
+	public FillEllipse(method) : brush : System.Drawing.Brush -> x : Single -> y : Single -> width : Single -> height : Single -> Void
+
+	public FillPie(method) : brush : System.Drawing.Brush -> rect : System.Drawing.Rectangle -> startAngle : Single -> sweepAngle : Single -> Void
+
+	public FillPie(method) : brush : System.Drawing.Brush -> x : Int -> y : Int -> width : Int -> height : Int -> startAngle : Int -> sweepAngle : Int -> Void
+
+	public FillPie(method) : brush : System.Drawing.Brush -> x : Single -> y : Single -> width : Single -> height : Single -> startAngle : Single -> sweepAngle : Single -> Void
+
+	public FillPath(method) : brush : System.Drawing.Brush -> path : System.Drawing.Drawing2D.GraphicsPath -> Void
+
+	public FillClosedCurve(method) : brush : System.Drawing.Brush -> points : cs.NativeArray<System.Drawing.PointF> -> Void
+
+	public FillClosedCurve(method) : brush : System.Drawing.Brush -> points : cs.NativeArray<System.Drawing.Point> -> fillmode : System.Drawing.Drawing2D.FillMode -> tension : Single -> Void
+
+	public FillClosedCurve(method) : brush : System.Drawing.Brush -> points : cs.NativeArray<System.Drawing.Point> -> fillmode : System.Drawing.Drawing2D.FillMode -> Void
+
+	public FillClosedCurve(method) : brush : System.Drawing.Brush -> points : cs.NativeArray<System.Drawing.Point> -> Void
+
+	public FillClosedCurve(method) : brush : System.Drawing.Brush -> points : cs.NativeArray<System.Drawing.PointF> -> fillmode : System.Drawing.Drawing2D.FillMode -> tension : Single -> Void
+
+	public FillClosedCurve(method) : brush : System.Drawing.Brush -> points : cs.NativeArray<System.Drawing.PointF> -> fillmode : System.Drawing.Drawing2D.FillMode -> Void
+
+	public FillRegion(method) : brush : System.Drawing.Brush -> region : System.Drawing.Region -> Void
+
+	public DrawString(method) : s : String -> font : System.Drawing.Font -> brush : System.Drawing.Brush -> x : Single -> y : Single -> Void
+
+	public DrawString(method) : s : String -> font : System.Drawing.Font -> brush : System.Drawing.Brush -> layoutRectangle : System.Drawing.RectangleF -> format : System.Drawing.StringFormat -> Void
+
+	public DrawString(method) : s : String -> font : System.Drawing.Font -> brush : System.Drawing.Brush -> layoutRectangle : System.Drawing.RectangleF -> Void
+
+	public DrawString(method) : s : String -> font : System.Drawing.Font -> brush : System.Drawing.Brush -> point : System.Drawing.PointF -> format : System.Drawing.StringFormat -> Void
+
+	public DrawString(method) : s : String -> font : System.Drawing.Font -> brush : System.Drawing.Brush -> x : Single -> y : Single -> format : System.Drawing.StringFormat -> Void
+
+	public DrawString(method) : s : String -> font : System.Drawing.Font -> brush : System.Drawing.Brush -> point : System.Drawing.PointF -> Void
+
+	public MeasureString(method) : text : String -> font : System.Drawing.Font -> layoutArea : System.Drawing.SizeF -> stringFormat : System.Drawing.StringFormat -> charactersFitted : cs.Out<Int> -> linesFilled : cs.Out<Int> -> System.Drawing.SizeF
+
+	public MeasureString(method) : text : String -> font : System.Drawing.Font -> width : Int -> format : System.Drawing.StringFormat -> System.Drawing.SizeF
+
+	public MeasureString(method) : text : String -> font : System.Drawing.Font -> width : Int -> System.Drawing.SizeF
+
+	public MeasureString(method) : text : String -> font : System.Drawing.Font -> System.Drawing.SizeF
+
+	public MeasureString(method) : text : String -> font : System.Drawing.Font -> layoutArea : System.Drawing.SizeF -> stringFormat : System.Drawing.StringFormat -> System.Drawing.SizeF
+
+	public MeasureString(method) : text : String -> font : System.Drawing.Font -> layoutArea : System.Drawing.SizeF -> System.Drawing.SizeF
+
+	public MeasureString(method) : text : String -> font : System.Drawing.Font -> origin : System.Drawing.PointF -> stringFormat : System.Drawing.StringFormat -> System.Drawing.SizeF
+
+	public MeasureCharacterRanges(method) : text : String -> font : System.Drawing.Font -> layoutRect : System.Drawing.RectangleF -> stringFormat : System.Drawing.StringFormat -> cs.NativeArray<System.Drawing.Region>
+
+	public DrawIcon(method) : icon : System.Drawing.Icon -> x : Int -> y : Int -> Void
+
+	public DrawIcon(method) : icon : System.Drawing.Icon -> targetRect : System.Drawing.Rectangle -> Void
+
+	public DrawIconUnstretched(method) : icon : System.Drawing.Icon -> targetRect : System.Drawing.Rectangle -> Void
+
+	public DrawImage(method) : image : System.Drawing.Image -> point : System.Drawing.PointF -> Void
+
+	public DrawImage(method) : image : System.Drawing.Image -> destRect : System.Drawing.Rectangle -> srcX : Int -> srcY : Int -> srcWidth : Int -> srcHeight : Int -> srcUnit : System.Drawing.GraphicsUnit -> imageAttrs : System.Drawing.Imaging.ImageAttributes -> callback : cs.system.drawing.Graphics_DrawImageAbort -> callbackData : System.IntPtr -> Void
+
+	public DrawImage(method) : image : System.Drawing.Image -> destRect : System.Drawing.Rectangle -> srcX : Int -> srcY : Int -> srcWidth : Int -> srcHeight : Int -> srcUnit : System.Drawing.GraphicsUnit -> imageAttr : System.Drawing.Imaging.ImageAttributes -> callback : cs.system.drawing.Graphics_DrawImageAbort -> Void
+
+	public DrawImage(method) : image : System.Drawing.Image -> destRect : System.Drawing.Rectangle -> srcX : Int -> srcY : Int -> srcWidth : Int -> srcHeight : Int -> srcUnit : System.Drawing.GraphicsUnit -> imageAttr : System.Drawing.Imaging.ImageAttributes -> Void
+
+	public DrawImage(method) : image : System.Drawing.Image -> destRect : System.Drawing.Rectangle -> srcX : Int -> srcY : Int -> srcWidth : Int -> srcHeight : Int -> srcUnit : System.Drawing.GraphicsUnit -> Void
+
+	public DrawImage(method) : image : System.Drawing.Image -> destRect : System.Drawing.Rectangle -> srcX : Single -> srcY : Single -> srcWidth : Single -> srcHeight : Single -> srcUnit : System.Drawing.GraphicsUnit -> imageAttrs : System.Drawing.Imaging.ImageAttributes -> callback : cs.system.drawing.Graphics_DrawImageAbort -> callbackData : System.IntPtr -> Void
+
+	public DrawImage(method) : image : System.Drawing.Image -> destRect : System.Drawing.Rectangle -> srcX : Single -> srcY : Single -> srcWidth : Single -> srcHeight : Single -> srcUnit : System.Drawing.GraphicsUnit -> imageAttrs : System.Drawing.Imaging.ImageAttributes -> callback : cs.system.drawing.Graphics_DrawImageAbort -> Void
+
+	public DrawImage(method) : image : System.Drawing.Image -> destRect : System.Drawing.Rectangle -> srcX : Single -> srcY : Single -> srcWidth : Single -> srcHeight : Single -> srcUnit : System.Drawing.GraphicsUnit -> imageAttrs : System.Drawing.Imaging.ImageAttributes -> Void
+
+	public DrawImage(method) : image : System.Drawing.Image -> destRect : System.Drawing.Rectangle -> srcX : Single -> srcY : Single -> srcWidth : Single -> srcHeight : Single -> srcUnit : System.Drawing.GraphicsUnit -> Void
+
+	public DrawImage(method) : image : System.Drawing.Image -> destPoints : cs.NativeArray<System.Drawing.Point> -> srcRect : System.Drawing.Rectangle -> srcUnit : System.Drawing.GraphicsUnit -> imageAttr : System.Drawing.Imaging.ImageAttributes -> callback : cs.system.drawing.Graphics_DrawImageAbort -> callbackData : Int -> Void
+
+	public DrawImage(method) : image : System.Drawing.Image -> destPoints : cs.NativeArray<System.Drawing.Point> -> srcRect : System.Drawing.Rectangle -> srcUnit : System.Drawing.GraphicsUnit -> imageAttr : System.Drawing.Imaging.ImageAttributes -> callback : cs.system.drawing.Graphics_DrawImageAbort -> Void
+
+	public DrawImage(method) : image : System.Drawing.Image -> destPoints : cs.NativeArray<System.Drawing.Point> -> srcRect : System.Drawing.Rectangle -> srcUnit : System.Drawing.GraphicsUnit -> imageAttr : System.Drawing.Imaging.ImageAttributes -> Void
+
+	public DrawImage(method) : image : System.Drawing.Image -> destPoints : cs.NativeArray<System.Drawing.Point> -> srcRect : System.Drawing.Rectangle -> srcUnit : System.Drawing.GraphicsUnit -> Void
+
+	public DrawImage(method) : image : System.Drawing.Image -> destPoints : cs.NativeArray<System.Drawing.PointF> -> srcRect : System.Drawing.RectangleF -> srcUnit : System.Drawing.GraphicsUnit -> imageAttr : System.Drawing.Imaging.ImageAttributes -> callback : cs.system.drawing.Graphics_DrawImageAbort -> callbackData : Int -> Void
+
+	public DrawImage(method) : image : System.Drawing.Image -> destPoints : cs.NativeArray<System.Drawing.PointF> -> srcRect : System.Drawing.RectangleF -> srcUnit : System.Drawing.GraphicsUnit -> imageAttr : System.Drawing.Imaging.ImageAttributes -> callback : cs.system.drawing.Graphics_DrawImageAbort -> Void
+
+	public DrawImage(method) : image : System.Drawing.Image -> destPoints : cs.NativeArray<System.Drawing.PointF> -> srcRect : System.Drawing.RectangleF -> srcUnit : System.Drawing.GraphicsUnit -> imageAttr : System.Drawing.Imaging.ImageAttributes -> Void
+
+	public DrawImage(method) : image : System.Drawing.Image -> destPoints : cs.NativeArray<System.Drawing.PointF> -> srcRect : System.Drawing.RectangleF -> srcUnit : System.Drawing.GraphicsUnit -> Void
+
+	public DrawImage(method) : image : System.Drawing.Image -> destRect : System.Drawing.Rectangle -> srcRect : System.Drawing.Rectangle -> srcUnit : System.Drawing.GraphicsUnit -> Void
+
+	public DrawImage(method) : image : System.Drawing.Image -> destRect : System.Drawing.RectangleF -> srcRect : System.Drawing.RectangleF -> srcUnit : System.Drawing.GraphicsUnit -> Void
+
+	public DrawImage(method) : image : System.Drawing.Image -> x : Int -> y : Int -> srcRect : System.Drawing.Rectangle -> srcUnit : System.Drawing.GraphicsUnit -> Void
+
+	public DrawImage(method) : image : System.Drawing.Image -> x : Single -> y : Single -> srcRect : System.Drawing.RectangleF -> srcUnit : System.Drawing.GraphicsUnit -> Void
+
+	public DrawImage(method) : image : System.Drawing.Image -> destPoints : cs.NativeArray<System.Drawing.Point> -> Void
+
+	public DrawImage(method) : image : System.Drawing.Image -> destPoints : cs.NativeArray<System.Drawing.PointF> -> Void
+
+	public DrawImage(method) : image : System.Drawing.Image -> x : Int -> y : Int -> width : Int -> height : Int -> Void
+
+	public DrawImage(method) : image : System.Drawing.Image -> rect : System.Drawing.Rectangle -> Void
+
+	public DrawImage(method) : image : System.Drawing.Image -> x : Int -> y : Int -> Void
+
+	public DrawImage(method) : image : System.Drawing.Image -> point : System.Drawing.Point -> Void
+
+	public DrawImage(method) : image : System.Drawing.Image -> x : Single -> y : Single -> width : Single -> height : Single -> Void
+
+	public DrawImage(method) : image : System.Drawing.Image -> rect : System.Drawing.RectangleF -> Void
+
+	public DrawImage(method) : image : System.Drawing.Image -> x : Single -> y : Single -> Void
+
+	public DrawImageUnscaled(method) : image : System.Drawing.Image -> point : System.Drawing.Point -> Void
+
+	public DrawImageUnscaled(method) : image : System.Drawing.Image -> x : Int -> y : Int -> width : Int -> height : Int -> Void
+
+	public DrawImageUnscaled(method) : image : System.Drawing.Image -> rect : System.Drawing.Rectangle -> Void
+
+	public DrawImageUnscaled(method) : image : System.Drawing.Image -> x : Int -> y : Int -> Void
+
+	public DrawImageUnscaledAndClipped(method) : image : System.Drawing.Image -> rect : System.Drawing.Rectangle -> Void
+
+	public EnumerateMetafile(method) : metafile : System.Drawing.Imaging.Metafile -> destPoint : System.Drawing.PointF -> callback : cs.system.drawing.Graphics_EnumerateMetafileProc -> Void
+
+	public EnumerateMetafile(method) : metafile : System.Drawing.Imaging.Metafile -> destPoints : cs.NativeArray<System.Drawing.Point> -> srcRect : System.Drawing.Rectangle -> unit : System.Drawing.GraphicsUnit -> callback : cs.system.drawing.Graphics_EnumerateMetafileProc -> callbackData : System.IntPtr -> imageAttr : System.Drawing.Imaging.ImageAttributes -> Void
+
+	public EnumerateMetafile(method) : metafile : System.Drawing.Imaging.Metafile -> destPoints : cs.NativeArray<System.Drawing.Point> -> srcRect : System.Drawing.Rectangle -> srcUnit : System.Drawing.GraphicsUnit -> callback : cs.system.drawing.Graphics_EnumerateMetafileProc -> callbackData : System.IntPtr -> Void
+
+	public EnumerateMetafile(method) : metafile : System.Drawing.Imaging.Metafile -> destPoints : cs.NativeArray<System.Drawing.Point> -> srcRect : System.Drawing.Rectangle -> srcUnit : System.Drawing.GraphicsUnit -> callback : cs.system.drawing.Graphics_EnumerateMetafileProc -> Void
+
+	public EnumerateMetafile(method) : metafile : System.Drawing.Imaging.Metafile -> destPoints : cs.NativeArray<System.Drawing.PointF> -> srcRect : System.Drawing.RectangleF -> unit : System.Drawing.GraphicsUnit -> callback : cs.system.drawing.Graphics_EnumerateMetafileProc -> callbackData : System.IntPtr -> imageAttr : System.Drawing.Imaging.ImageAttributes -> Void
+
+	public EnumerateMetafile(method) : metafile : System.Drawing.Imaging.Metafile -> destPoints : cs.NativeArray<System.Drawing.PointF> -> srcRect : System.Drawing.RectangleF -> srcUnit : System.Drawing.GraphicsUnit -> callback : cs.system.drawing.Graphics_EnumerateMetafileProc -> callbackData : System.IntPtr -> Void
+
+	public EnumerateMetafile(method) : metafile : System.Drawing.Imaging.Metafile -> destPoints : cs.NativeArray<System.Drawing.PointF> -> srcRect : System.Drawing.RectangleF -> srcUnit : System.Drawing.GraphicsUnit -> callback : cs.system.drawing.Graphics_EnumerateMetafileProc -> Void
+
+	public EnumerateMetafile(method) : metafile : System.Drawing.Imaging.Metafile -> destRect : System.Drawing.Rectangle -> srcRect : System.Drawing.Rectangle -> unit : System.Drawing.GraphicsUnit -> callback : cs.system.drawing.Graphics_EnumerateMetafileProc -> callbackData : System.IntPtr -> imageAttr : System.Drawing.Imaging.ImageAttributes -> Void
+
+	public EnumerateMetafile(method) : metafile : System.Drawing.Imaging.Metafile -> destRect : System.Drawing.Rectangle -> srcRect : System.Drawing.Rectangle -> srcUnit : System.Drawing.GraphicsUnit -> callback : cs.system.drawing.Graphics_EnumerateMetafileProc -> callbackData : System.IntPtr -> Void
+
+	public EnumerateMetafile(method) : metafile : System.Drawing.Imaging.Metafile -> destRect : System.Drawing.Rectangle -> srcRect : System.Drawing.Rectangle -> srcUnit : System.Drawing.GraphicsUnit -> callback : cs.system.drawing.Graphics_EnumerateMetafileProc -> Void
+
+	public EnumerateMetafile(method) : metafile : System.Drawing.Imaging.Metafile -> destRect : System.Drawing.RectangleF -> srcRect : System.Drawing.RectangleF -> unit : System.Drawing.GraphicsUnit -> callback : cs.system.drawing.Graphics_EnumerateMetafileProc -> callbackData : System.IntPtr -> imageAttr : System.Drawing.Imaging.ImageAttributes -> Void
+
+	public EnumerateMetafile(method) : metafile : System.Drawing.Imaging.Metafile -> destRect : System.Drawing.RectangleF -> srcRect : System.Drawing.RectangleF -> srcUnit : System.Drawing.GraphicsUnit -> callback : cs.system.drawing.Graphics_EnumerateMetafileProc -> callbackData : System.IntPtr -> Void
+
+	public EnumerateMetafile(method) : metafile : System.Drawing.Imaging.Metafile -> destRect : System.Drawing.RectangleF -> srcRect : System.Drawing.RectangleF -> srcUnit : System.Drawing.GraphicsUnit -> callback : cs.system.drawing.Graphics_EnumerateMetafileProc -> Void
+
+	public EnumerateMetafile(method) : metafile : System.Drawing.Imaging.Metafile -> destPoint : System.Drawing.Point -> srcRect : System.Drawing.Rectangle -> unit : System.Drawing.GraphicsUnit -> callback : cs.system.drawing.Graphics_EnumerateMetafileProc -> callbackData : System.IntPtr -> imageAttr : System.Drawing.Imaging.ImageAttributes -> Void
+
+	public EnumerateMetafile(method) : metafile : System.Drawing.Imaging.Metafile -> destPoint : System.Drawing.Point -> srcRect : System.Drawing.Rectangle -> srcUnit : System.Drawing.GraphicsUnit -> callback : cs.system.drawing.Graphics_EnumerateMetafileProc -> callbackData : System.IntPtr -> Void
+
+	public EnumerateMetafile(method) : metafile : System.Drawing.Imaging.Metafile -> destPoint : System.Drawing.Point -> srcRect : System.Drawing.Rectangle -> srcUnit : System.Drawing.GraphicsUnit -> callback : cs.system.drawing.Graphics_EnumerateMetafileProc -> Void
+
+	public EnumerateMetafile(method) : metafile : System.Drawing.Imaging.Metafile -> destPoint : System.Drawing.PointF -> srcRect : System.Drawing.RectangleF -> unit : System.Drawing.GraphicsUnit -> callback : cs.system.drawing.Graphics_EnumerateMetafileProc -> callbackData : System.IntPtr -> imageAttr : System.Drawing.Imaging.ImageAttributes -> Void
+
+	public EnumerateMetafile(method) : metafile : System.Drawing.Imaging.Metafile -> destPoint : System.Drawing.PointF -> srcRect : System.Drawing.RectangleF -> srcUnit : System.Drawing.GraphicsUnit -> callback : cs.system.drawing.Graphics_EnumerateMetafileProc -> callbackData : System.IntPtr -> Void
+
+	public EnumerateMetafile(method) : metafile : System.Drawing.Imaging.Metafile -> destPoint : System.Drawing.PointF -> srcRect : System.Drawing.RectangleF -> srcUnit : System.Drawing.GraphicsUnit -> callback : cs.system.drawing.Graphics_EnumerateMetafileProc -> Void
+
+	public EnumerateMetafile(method) : metafile : System.Drawing.Imaging.Metafile -> destPoints : cs.NativeArray<System.Drawing.Point> -> callback : cs.system.drawing.Graphics_EnumerateMetafileProc -> callbackData : System.IntPtr -> imageAttr : System.Drawing.Imaging.ImageAttributes -> Void
+
+	public EnumerateMetafile(method) : metafile : System.Drawing.Imaging.Metafile -> destPoints : cs.NativeArray<System.Drawing.Point> -> callback : cs.system.drawing.Graphics_EnumerateMetafileProc -> callbackData : System.IntPtr -> Void
+
+	public EnumerateMetafile(method) : metafile : System.Drawing.Imaging.Metafile -> destPoints : cs.NativeArray<System.Drawing.Point> -> callback : cs.system.drawing.Graphics_EnumerateMetafileProc -> Void
+
+	public EnumerateMetafile(method) : metafile : System.Drawing.Imaging.Metafile -> destPoints : cs.NativeArray<System.Drawing.PointF> -> callback : cs.system.drawing.Graphics_EnumerateMetafileProc -> callbackData : System.IntPtr -> imageAttr : System.Drawing.Imaging.ImageAttributes -> Void
+
+	public EnumerateMetafile(method) : metafile : System.Drawing.Imaging.Metafile -> destPoints : cs.NativeArray<System.Drawing.PointF> -> callback : cs.system.drawing.Graphics_EnumerateMetafileProc -> callbackData : System.IntPtr -> Void
+
+	public EnumerateMetafile(method) : metafile : System.Drawing.Imaging.Metafile -> destPoints : cs.NativeArray<System.Drawing.PointF> -> callback : cs.system.drawing.Graphics_EnumerateMetafileProc -> Void
+
+	public EnumerateMetafile(method) : metafile : System.Drawing.Imaging.Metafile -> destRect : System.Drawing.Rectangle -> callback : cs.system.drawing.Graphics_EnumerateMetafileProc -> callbackData : System.IntPtr -> imageAttr : System.Drawing.Imaging.ImageAttributes -> Void
+
+	public EnumerateMetafile(method) : metafile : System.Drawing.Imaging.Metafile -> destRect : System.Drawing.Rectangle -> callback : cs.system.drawing.Graphics_EnumerateMetafileProc -> callbackData : System.IntPtr -> Void
+
+	public EnumerateMetafile(method) : metafile : System.Drawing.Imaging.Metafile -> destRect : System.Drawing.Rectangle -> callback : cs.system.drawing.Graphics_EnumerateMetafileProc -> Void
+
+	public EnumerateMetafile(method) : metafile : System.Drawing.Imaging.Metafile -> destRect : System.Drawing.RectangleF -> callback : cs.system.drawing.Graphics_EnumerateMetafileProc -> callbackData : System.IntPtr -> imageAttr : System.Drawing.Imaging.ImageAttributes -> Void
+
+	public EnumerateMetafile(method) : metafile : System.Drawing.Imaging.Metafile -> destRect : System.Drawing.RectangleF -> callback : cs.system.drawing.Graphics_EnumerateMetafileProc -> callbackData : System.IntPtr -> Void
+
+	public EnumerateMetafile(method) : metafile : System.Drawing.Imaging.Metafile -> destRect : System.Drawing.RectangleF -> callback : cs.system.drawing.Graphics_EnumerateMetafileProc -> Void
+
+	public EnumerateMetafile(method) : metafile : System.Drawing.Imaging.Metafile -> destPoint : System.Drawing.Point -> callback : cs.system.drawing.Graphics_EnumerateMetafileProc -> callbackData : System.IntPtr -> imageAttr : System.Drawing.Imaging.ImageAttributes -> Void
+
+	public EnumerateMetafile(method) : metafile : System.Drawing.Imaging.Metafile -> destPoint : System.Drawing.Point -> callback : cs.system.drawing.Graphics_EnumerateMetafileProc -> callbackData : System.IntPtr -> Void
+
+	public EnumerateMetafile(method) : metafile : System.Drawing.Imaging.Metafile -> destPoint : System.Drawing.Point -> callback : cs.system.drawing.Graphics_EnumerateMetafileProc -> Void
+
+	public EnumerateMetafile(method) : metafile : System.Drawing.Imaging.Metafile -> destPoint : System.Drawing.PointF -> callback : cs.system.drawing.Graphics_EnumerateMetafileProc -> callbackData : System.IntPtr -> imageAttr : System.Drawing.Imaging.ImageAttributes -> Void
+
+	public EnumerateMetafile(method) : metafile : System.Drawing.Imaging.Metafile -> destPoint : System.Drawing.PointF -> callback : cs.system.drawing.Graphics_EnumerateMetafileProc -> callbackData : System.IntPtr -> Void
+
+	public SetClip(method) : g : System.Drawing.Graphics -> Void
+
+	public SetClip(method) : region : System.Drawing.Region -> combineMode : System.Drawing.Drawing2D.CombineMode -> Void
+
+	public SetClip(method) : path : System.Drawing.Drawing2D.GraphicsPath -> combineMode : System.Drawing.Drawing2D.CombineMode -> Void
+
+	public SetClip(method) : path : System.Drawing.Drawing2D.GraphicsPath -> Void
+
+	public SetClip(method) : rect : System.Drawing.RectangleF -> combineMode : System.Drawing.Drawing2D.CombineMode -> Void
+
+	public SetClip(method) : rect : System.Drawing.RectangleF -> Void
+
+	public SetClip(method) : rect : System.Drawing.Rectangle -> combineMode : System.Drawing.Drawing2D.CombineMode -> Void
+
+	public SetClip(method) : rect : System.Drawing.Rectangle -> Void
+
+	public SetClip(method) : g : System.Drawing.Graphics -> combineMode : System.Drawing.Drawing2D.CombineMode -> Void
+
+	public IntersectClip(method) : rect : System.Drawing.Rectangle -> Void
+
+	public IntersectClip(method) : region : System.Drawing.Region -> Void
+
+	public IntersectClip(method) : rect : System.Drawing.RectangleF -> Void
+
+	public ExcludeClip(method) : rect : System.Drawing.Rectangle -> Void
+
+	public ExcludeClip(method) : region : System.Drawing.Region -> Void
+
+	public ResetClip(method) : Void -> Void
+
+	public TranslateClip(method) : dx : Single -> dy : Single -> Void
+
+	public TranslateClip(method) : dx : Int -> dy : Int -> Void
+
+	public GetContextInfo(method) : Void -> Dynamic
+
+	get_Clip(method) : Void -> System.Drawing.Region
+
+	set_Clip(method) : value : System.Drawing.Region -> System.Drawing.Region
+
+	get_ClipBounds(method) : Void -> System.Drawing.RectangleF
+
+	get_IsClipEmpty(method) : Void -> Bool
+
+	get_VisibleClipBounds(method) : Void -> System.Drawing.RectangleF
+
+	get_IsVisibleClipEmpty(method) : Void -> Bool
+
+	public IsVisible(method) : x : Int -> y : Int -> Bool
+
+	public IsVisible(method) : rect : System.Drawing.RectangleF -> Bool
+
+	public IsVisible(method) : x : Single -> y : Single -> width : Single -> height : Single -> Bool
+
+	public IsVisible(method) : rect : System.Drawing.Rectangle -> Bool
+
+	public IsVisible(method) : x : Int -> y : Int -> width : Int -> height : Int -> Bool
+
+	public IsVisible(method) : point : System.Drawing.PointF -> Bool
+
+	public IsVisible(method) : x : Single -> y : Single -> Bool
+
+	public IsVisible(method) : point : System.Drawing.Point -> Bool
+
+	public Save(method) : Void -> System.Drawing.Drawing2D.GraphicsState
+
+	public Restore(method) : gstate : System.Drawing.Drawing2D.GraphicsState -> Void
+
+	public BeginContainer(method) : dstrect : System.Drawing.RectangleF -> srcrect : System.Drawing.RectangleF -> unit : System.Drawing.GraphicsUnit -> System.Drawing.Drawing2D.GraphicsContainer
+
+	public BeginContainer(method) : dstrect : System.Drawing.Rectangle -> srcrect : System.Drawing.Rectangle -> unit : System.Drawing.GraphicsUnit -> System.Drawing.Drawing2D.GraphicsContainer
+
+	public BeginContainer(method) : Void -> System.Drawing.Drawing2D.GraphicsContainer
+
+	public EndContainer(method) : container : System.Drawing.Drawing2D.GraphicsContainer -> Void
+
+	public AddMetafileComment(method) : data : cs.NativeArray<cs.types.UInt8> -> Void
+
+	static public FromHdc(method) : hdc : System.IntPtr -> System.Drawing.Graphics
+
+	static public FromHdc(method) : hdc : System.IntPtr -> hdevice : System.IntPtr -> System.Drawing.Graphics
+
+	static public FromHdcInternal(method) : hdc : System.IntPtr -> System.Drawing.Graphics
+
+	static public FromHwnd(method) : hwnd : System.IntPtr -> System.Drawing.Graphics
+
+	static public FromHwndInternal(method) : hwnd : System.IntPtr -> System.Drawing.Graphics
+
+	static public FromImage(method) : image : System.Drawing.Image -> System.Drawing.Graphics
+
+	static public GetHalftonePalette(method) : Void -> System.IntPtr
+
+}

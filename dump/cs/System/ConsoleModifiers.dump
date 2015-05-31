@@ -1,0 +1,5 @@
+extern enum System.ConsoleModifiers {
+	Alt : System.ConsoleModifiers;
+	Shift : System.ConsoleModifiers;
+	Control : System.ConsoleModifiers;
+}

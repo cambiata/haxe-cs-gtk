@@ -1,0 +1,14 @@
+extern class Gtk.Window.MoveFocusVMDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : window : System.IntPtr -> direction : Int -> Void
+
+	public BeginInvoke(method) : window : System.IntPtr -> direction : Int -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Void
+
+	static public op_Addition(method) : arg1 : gtk.Window_MoveFocusVMDelegate -> arg2 : gtk.Window_MoveFocusVMDelegate -> gtk.Window_MoveFocusVMDelegate
+
+	static public op_Subtraction(method) : arg1 : gtk.Window_MoveFocusVMDelegate -> arg2 : gtk.Window_MoveFocusVMDelegate -> gtk.Window_MoveFocusVMDelegate
+
+}

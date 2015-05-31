@@ -1,0 +1,56 @@
+extern class System.Drawing.Bitmap extends System.Drawing.Image{
+	public new(method) : filename : String -> Void
+
+	public new(method) : original : System.Drawing.Image -> newSize : System.Drawing.Size -> Void
+
+	public new(method) : original : System.Drawing.Image -> width : Int -> height : Int -> Void
+
+	public new(method) : original : System.Drawing.Image -> Void
+
+	public new(method) : width : Int -> height : Int -> g : System.Drawing.Graphics -> Void
+
+	public new(method) : width : Int -> height : Int -> Void
+
+	public new(method) : width : Int -> height : Int -> format : System.Drawing.Imaging.PixelFormat -> Void
+
+	public new(method) : width : Int -> height : Int -> stride : Int -> format : System.Drawing.Imaging.PixelFormat -> scan0 : System.IntPtr -> Void
+
+	public new(method) : stream : System.IO.Stream -> useIcm : Bool -> Void
+
+	public new(method) : stream : System.IO.Stream -> Void
+
+	public new(method) : type : System.Type -> resource : String -> Void
+
+	public new(method) : filename : String -> useIcm : Bool -> Void
+
+	public GetHbitmap(method) : Void -> System.IntPtr
+
+	public GetHbitmap(method) : background : System.Drawing.Color -> System.IntPtr
+
+	public GetHicon(method) : Void -> System.IntPtr
+
+	public Clone(method) : rect : System.Drawing.Rectangle -> format : System.Drawing.Imaging.PixelFormat -> System.Drawing.Bitmap
+
+	public Clone(method) : rect : System.Drawing.RectangleF -> format : System.Drawing.Imaging.PixelFormat -> System.Drawing.Bitmap
+
+	public MakeTransparent(method) : Void -> Void
+
+	public MakeTransparent(method) : transparentColor : System.Drawing.Color -> Void
+
+	public LockBits(method) : rect : System.Drawing.Rectangle -> flags : System.Drawing.Imaging.ImageLockMode -> format : System.Drawing.Imaging.PixelFormat -> System.Drawing.Imaging.BitmapData
+
+	public LockBits(method) : rect : System.Drawing.Rectangle -> flags : System.Drawing.Imaging.ImageLockMode -> format : System.Drawing.Imaging.PixelFormat -> bitmapData : System.Drawing.Imaging.BitmapData -> System.Drawing.Imaging.BitmapData
+
+	public UnlockBits(method) : bitmapdata : System.Drawing.Imaging.BitmapData -> Void
+
+	public GetPixel(method) : x : Int -> y : Int -> System.Drawing.Color
+
+	public SetPixel(method) : x : Int -> y : Int -> color : System.Drawing.Color -> Void
+
+	public SetResolution(method) : xDpi : Single -> yDpi : Single -> Void
+
+	static public FromHicon(method) : hicon : System.IntPtr -> System.Drawing.Bitmap
+
+	static public FromResource(method) : hinstance : System.IntPtr -> bitmapName : String -> System.Drawing.Bitmap
+
+}

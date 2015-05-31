@@ -1,0 +1,10 @@
+extern enum System.Drawing.Imaging.EncoderParameterValueType {
+	ValueTypeByte : System.Drawing.Imaging.EncoderParameterValueType;
+	ValueTypeAscii : System.Drawing.Imaging.EncoderParameterValueType;
+	ValueTypeShort : System.Drawing.Imaging.EncoderParameterValueType;
+	ValueTypeLong : System.Drawing.Imaging.EncoderParameterValueType;
+	ValueTypeRational : System.Drawing.Imaging.EncoderParameterValueType;
+	ValueTypeLongRange : System.Drawing.Imaging.EncoderParameterValueType;
+	ValueTypeUndefined : System.Drawing.Imaging.EncoderParameterValueType;
+	ValueTypeRationalRange : System.Drawing.Imaging.EncoderParameterValueType;
+}

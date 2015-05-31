@@ -1,0 +1,10 @@
+extern class cs.NativeArray<T : cs.NativeArray.T> extends System.Array implements ArrayAccess<cs.NativeArray.T>{
+	public new(method) : len : Int -> Void
+
+	public length((never,never)) : Int
+
+	static public make<T : make.T>(method) : elements : haxe.extern.Rest<make.T> -> cs.NativeArray<make.T>
+
+	static public Reverse(method) : arr : System.Array -> Void
+
+}

@@ -1,0 +1,14 @@
+extern class System.CharEnumerator implements System.ICloneable implements System.IDisposable implements System.Collections.IEnumerator implements System.Collections.Generic.IEnumerator`1<cs.types.Char16>{
+	public Current((get,never)) : cs.types.Char16
+
+	get_Current(method) : Void -> cs.types.Char16
+
+	public Dispose(method) : Void -> Void
+
+	public Clone(method) : Void -> Dynamic
+
+	public MoveNext(method) : Void -> Bool
+
+	public Reset(method) : Void -> Void
+
+}

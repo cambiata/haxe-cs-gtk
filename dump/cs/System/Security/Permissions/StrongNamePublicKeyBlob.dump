@@ -1,0 +1,6 @@
+extern class System.Security.Permissions.StrongNamePublicKeyBlob{
+	public new(method) : publicKey : cs.NativeArray<cs.types.UInt8> -> Void
+
+	public ToString(method) : Void -> String
+
+}

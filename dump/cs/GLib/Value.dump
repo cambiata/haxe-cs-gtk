@@ -1,0 +1,60 @@
+extern class GLib.Value extends System.ValueType implements System.IDisposable{
+	public new(method) : gtype : GLib.GType -> Void
+
+	public new(method) : val : cs.NativeArray<String> -> Void
+
+	public new(method) : obj : System.IntPtr -> prop_name : String -> val : GLib.Opaque -> Void
+
+	public new(method) : obj : GLib.Object -> prop_name : String -> wrap : GLib.EnumWrapper -> Void
+
+	public new(method) : obj : GLib.Object -> prop_name : String -> Void
+
+	public new(method) : val : GLib.GInterfaceAdapter -> Void
+
+	public new(method) : val : GLib.Object -> Void
+
+	public new(method) : val : GLib.Opaque -> type_name : String -> Void
+
+	public new(method) : val : System.IntPtr -> Void
+
+	public new(method) : val : String -> Void
+
+	public new(method) : val : Float -> Void
+
+	public new(method) : val : Single -> Void
+
+	public new(method) : wrap : GLib.EnumWrapper -> type_name : String -> Void
+
+	public new(method) : val : cs.types.UInt64 -> Void
+
+	public new(method) : val : haxe.Int64 -> Void
+
+	public new(method) : val : cs.types.UInt16 -> Void
+
+	public new(method) : val : UInt -> Void
+
+	public new(method) : val : Int -> Void
+
+	public new(method) : val : cs.types.Int8 -> Void
+
+	public new(method) : val : cs.types.UInt8 -> Void
+
+	public new(method) : val : Bool -> Void
+
+	public new(method) : obj : Dynamic -> Void
+
+	public Val((get,set)) : Dynamic
+
+	public Dispose(method) : Void -> Void
+
+	public Init(method) : gtype : GLib.GType -> Void
+
+	get_Val(method) : Void -> Dynamic
+
+	set_Val(method) : value : Dynamic -> Dynamic
+
+	static public Empty(var) : GLib.Value
+
+	static public op_Explicit(method) : val : GLib.Value -> cs.NativeArray<String>
+
+}

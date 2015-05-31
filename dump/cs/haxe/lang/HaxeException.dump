@@ -1,0 +1,89 @@
+private class haxe.lang.HaxeException extends System.Exception{
+	public new(method) : obj : Dynamic -> Void
+
+	 = [Function:obj : Dynamic -> Void]
+		[Arg:Dynamic] [Local obj(1142):Dynamic]
+		[Block:Dynamic]
+			[Call:Void] [Const super:System.Exception]
+			[If:Void]
+				[Parenthesis:Bool]
+					[Call:Bool]
+						[Field:v : Dynamic -> t : Dynamic -> Bool]
+							[TypeExpr Std:Class<Std>]
+							[FStatic:v : Dynamic -> t : Dynamic -> Bool]
+								Std
+								is
+						[Local obj(1142):Dynamic]
+						[TypeExpr haxe.lang.HaxeException:Class<cs.internal._Exceptions.HaxeException>]
+				[Then:Dynamic] [Block:Dynamic]
+					[Var _obj(1143):haxe.lang.HaxeException] [Cast:haxe.lang.HaxeException] [Local obj(1142):Dynamic]
+					[Binop:Dynamic]
+						[Local obj(1142):Dynamic]
+						=
+						[Call:Dynamic]
+							[Field:Void -> Dynamic]
+								[Local _obj(1143):haxe.lang.HaxeException]
+								[FInstance:Void -> Dynamic]
+									haxe.lang.HaxeException
+									getObject
+			[Binop:Dynamic]
+				[Field:Dynamic]
+					[Const this:haxe.lang.HaxeException]
+					[FInstance:Dynamic]
+						haxe.lang.HaxeException
+						obj
+				=
+				[Local obj(1142):Dynamic]
+
+	obj(var) : Dynamic
+
+	public getObject(method) : Void -> Dynamic
+
+	 = [Function:Void -> Dynamic]
+		[Block:Dynamic]
+			[Return:Dynamic]
+				[Field:Dynamic]
+					[Const this:haxe.lang.HaxeException]
+					[FInstance:Dynamic]
+						haxe.lang.HaxeException
+						obj
+
+	public toString(method) : Void -> String
+
+	 = [Function:Void -> String]
+		[Block:Dynamic]
+			[Return:Dynamic]
+				[Call:String]
+					[Field:s : Dynamic -> String]
+						[TypeExpr Std:Class<Std>]
+						[FStatic:s : Dynamic -> String]
+							Std
+							string
+					[Field:Dynamic]
+						[Const this:haxe.lang.HaxeException]
+						[FInstance:Dynamic]
+							haxe.lang.HaxeException
+							obj
+
+	static public wrap(method) : obj : Dynamic -> System.Exception
+
+	 = [Function:obj : Dynamic -> System.Exception]
+		[Arg:Dynamic] [Local obj(1144):Dynamic]
+		[Block:Dynamic]
+			[If:Void]
+				[Parenthesis:Bool]
+					[Call:Bool]
+						[Field:v : Dynamic -> t : Dynamic -> Bool]
+							[TypeExpr Std:Class<Std>]
+							[FStatic:v : Dynamic -> t : Dynamic -> Bool]
+								Std
+								is
+						[Local obj(1144):Dynamic]
+						[TypeExpr System.Exception:Class<cs.system.Exception>]
+				[Then:Dynamic] [Return:Dynamic] [Local obj(1144):Dynamic]
+			[Return:Dynamic]
+				[New:haxe.lang.HaxeException]
+					haxe.lang.HaxeException
+					[Local obj(1144):Dynamic]
+
+}

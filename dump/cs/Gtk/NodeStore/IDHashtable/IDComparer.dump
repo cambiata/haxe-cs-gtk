@@ -1,0 +1,6 @@
+extern class Gtk.NodeStore.IDHashtable.IDComparer implements System.Collections.IComparer{
+	public new(method) : Void -> Void
+
+	public Compare(method) : x : Dynamic -> y : Dynamic -> Int
+
+}

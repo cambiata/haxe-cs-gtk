@@ -1,0 +1,8 @@
+extern class Gtk.VisibilityNotifyEventArgs extends GLib.SignalArgs{
+	public new(method) : Void -> Void
+
+	public Event((get,never)) : Gdk.EventVisibility
+
+	get_Event(method) : Void -> Gdk.EventVisibility
+
+}

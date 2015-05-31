@@ -1,0 +1,5 @@
+extern enum System.Reflection.ImageFileMachine {
+	I386 : System.Reflection.ImageFileMachine;
+	IA64 : System.Reflection.ImageFileMachine;
+	AMD64 : System.Reflection.ImageFileMachine;
+}

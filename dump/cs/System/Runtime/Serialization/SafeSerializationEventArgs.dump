@@ -1,0 +1,8 @@
+extern class System.Runtime.Serialization.SafeSerializationEventArgs extends System.EventArgs{
+	public StreamingContext((get,never)) : System.Runtime.Serialization.StreamingContext
+
+	get_StreamingContext(method) : Void -> System.Runtime.Serialization.StreamingContext
+
+	public AddSerializedState(method) : serializedState : System.Runtime.Serialization.ISafeSerializationData -> Void
+
+}

@@ -1,0 +1,6 @@
+extern class System.Runtime.Remoting.Contexts.Context.NamedSlots{
+	public new(method) : Void -> Void
+
+	static public namedSlots(var) : System.Collections.Hashtable
+
+}

@@ -1,0 +1,2 @@
+extern class GLib.ListBase.FilenameString{
+}

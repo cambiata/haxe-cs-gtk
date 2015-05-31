@@ -1,0 +1,42 @@
+extern interface System.Diagnostics.SymbolStore.ISymbolWriter{
+	public Close(method) : Void -> Void
+
+	public CloseMethod(method) : Void -> Void
+
+	public CloseNamespace(method) : Void -> Void
+
+	public CloseScope(method) : endOffset : Int -> Void
+
+	public DefineDocument(method) : url : String -> language : System.Guid -> languageVendor : System.Guid -> documentType : System.Guid -> System.Diagnostics.SymbolStore.ISymbolDocumentWriter
+
+	public DefineField(method) : parent : System.Diagnostics.SymbolStore.SymbolToken -> name : String -> attributes : System.Reflection.FieldAttributes -> signature : cs.NativeArray<cs.types.UInt8> -> addrKind : System.Diagnostics.SymbolStore.SymAddressKind -> addr1 : Int -> addr2 : Int -> addr3 : Int -> Void
+
+	public DefineGlobalVariable(method) : name : String -> attributes : System.Reflection.FieldAttributes -> signature : cs.NativeArray<cs.types.UInt8> -> addrKind : System.Diagnostics.SymbolStore.SymAddressKind -> addr1 : Int -> addr2 : Int -> addr3 : Int -> Void
+
+	public DefineLocalVariable(method) : name : String -> attributes : System.Reflection.FieldAttributes -> signature : cs.NativeArray<cs.types.UInt8> -> addrKind : System.Diagnostics.SymbolStore.SymAddressKind -> addr1 : Int -> addr2 : Int -> addr3 : Int -> startOffset : Int -> endOffset : Int -> Void
+
+	public DefineParameter(method) : name : String -> attributes : System.Reflection.ParameterAttributes -> sequence : Int -> addrKind : System.Diagnostics.SymbolStore.SymAddressKind -> addr1 : Int -> addr2 : Int -> addr3 : Int -> Void
+
+	public DefineSequencePoints(method) : document : System.Diagnostics.SymbolStore.ISymbolDocumentWriter -> offsets : cs.NativeArray<Int> -> lines : cs.NativeArray<Int> -> columns : cs.NativeArray<Int> -> endLines : cs.NativeArray<Int> -> endColumns : cs.NativeArray<Int> -> Void
+
+	public Initialize(method) : emitter : System.IntPtr -> filename : String -> fFullBuild : Bool -> Void
+
+	public OpenMethod(method) : method : System.Diagnostics.SymbolStore.SymbolToken -> Void
+
+	public OpenNamespace(method) : name : String -> Void
+
+	public OpenScope(method) : startOffset : Int -> Int
+
+	public SetMethodSourceRange(method) : startDoc : System.Diagnostics.SymbolStore.ISymbolDocumentWriter -> startLine : Int -> startColumn : Int -> endDoc : System.Diagnostics.SymbolStore.ISymbolDocumentWriter -> endLine : Int -> endColumn : Int -> Void
+
+	public SetScopeRange(method) : scopeID : Int -> startOffset : Int -> endOffset : Int -> Void
+
+	public SetSymAttribute(method) : parent : System.Diagnostics.SymbolStore.SymbolToken -> name : String -> data : cs.NativeArray<cs.types.UInt8> -> Void
+
+	public SetUnderlyingWriter(method) : underlyingWriter : System.IntPtr -> Void
+
+	public SetUserEntryPoint(method) : entryMethod : System.Diagnostics.SymbolStore.SymbolToken -> Void
+
+	public UsingNamespace(method) : fullName : String -> Void
+
+}

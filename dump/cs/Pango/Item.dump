@@ -1,0 +1,48 @@
+extern class Pango.Item extends GLib.Opaque{
+	public new(method) : raw : System.IntPtr -> Void
+
+	public new(method) : Void -> Void
+
+	public Length((get,set)) : Int
+
+	public NumChars((get,set)) : Int
+
+	public Analysis((get,set)) : Pango.Analysis
+
+	public Offset((get,set)) : Int
+
+	get_Offset(method) : Void -> Int
+
+	set_Offset(method) : value : Int -> Int
+
+	get_Analysis(method) : Void -> Pango.Analysis
+
+	set_Analysis(method) : value : Pango.Analysis -> Pango.Analysis
+
+	get_NumChars(method) : Void -> Int
+
+	set_NumChars(method) : value : Int -> Int
+
+	get_Length(method) : Void -> Int
+
+	set_Length(method) : value : Int -> Int
+
+	public Copy(method) : Void -> Pango.Item
+
+	public Split(method) : split_index : Int -> split_offset : Int -> Pango.Item
+
+	Free(method) : raw : System.IntPtr -> Void
+
+	Finalize(method) : Void -> Void
+
+	static public GType((get,never)) : GLib.GType
+
+	static public Zero(var) : Pango.Item
+
+	static get_GType(method) : Void -> GLib.GType
+
+	static public New(method) : raw : System.IntPtr -> Pango.Item
+
+	static public New(method) : Void -> Pango.Item
+
+}

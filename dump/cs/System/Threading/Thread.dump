@@ -1,0 +1,198 @@
+extern class System.Threading.Thread extends System.Runtime.ConstrainedExecution.CriticalFinalizerObject implements System.Runtime.InteropServices._Thread{
+	public new(method) : start : cs.system.threading.ThreadStart -> Void
+
+	public new(method) : start : cs.system.threading.ParameterizedThreadStart -> maxStackSize : Int -> Void
+
+	public new(method) : start : cs.system.threading.ParameterizedThreadStart -> Void
+
+	public new(method) : start : cs.system.threading.ThreadStart -> maxStackSize : Int -> Void
+
+	public ManagedThreadId((get,never)) : Int
+
+	public ExecutionContext((get,never)) : System.Threading.ExecutionContext
+
+	public ThreadState((get,never)) : System.Threading.ThreadState
+
+	public Priority((get,set)) : System.Threading.ThreadPriority
+
+	public Name((get,set)) : String
+
+	public IsBackground((get,set)) : Bool
+
+	public IsAlive((get,never)) : Bool
+
+	public IsThreadPoolThread((get,never)) : Bool
+
+	public CurrentUICulture((get,set)) : System.Globalization.CultureInfo
+
+	public CurrentCulture((get,set)) : System.Globalization.CultureInfo
+
+	public ApartmentState((get,set)) : System.Threading.ApartmentState
+
+	get_ApartmentState(method) : Void -> System.Threading.ApartmentState
+
+	set_ApartmentState(method) : value : System.Threading.ApartmentState -> System.Threading.ApartmentState
+
+	get_CurrentCulture(method) : Void -> System.Globalization.CultureInfo
+
+	set_CurrentCulture(method) : value : System.Globalization.CultureInfo -> System.Globalization.CultureInfo
+
+	get_CurrentUICulture(method) : Void -> System.Globalization.CultureInfo
+
+	set_CurrentUICulture(method) : value : System.Globalization.CultureInfo -> System.Globalization.CultureInfo
+
+	get_IsThreadPoolThread(method) : Void -> Bool
+
+	get_IsAlive(method) : Void -> Bool
+
+	get_IsBackground(method) : Void -> Bool
+
+	set_IsBackground(method) : value : Bool -> Bool
+
+	get_Name(method) : Void -> String
+
+	set_Name(method) : value : String -> String
+
+	get_Priority(method) : Void -> System.Threading.ThreadPriority
+
+	set_Priority(method) : value : System.Threading.ThreadPriority -> System.Threading.ThreadPriority
+
+	get_ThreadState(method) : Void -> System.Threading.ThreadState
+
+	public Abort(method) : Void -> Void
+
+	public Abort(method) : stateInfo : Dynamic -> Void
+
+	public Interrupt(method) : Void -> Void
+
+	public Join(method) : Void -> Void
+
+	public Join(method) : timeout : System.TimeSpan -> Bool
+
+	public Join(method) : millisecondsTimeout : Int -> Bool
+
+	public Resume(method) : Void -> Void
+
+	public Start(method) : Void -> Void
+
+	public Start(method) : parameter : Dynamic -> Void
+
+	public Suspend(method) : Void -> Void
+
+	get_ExecutionContext(method) : Void -> System.Threading.ExecutionContext
+
+	get_ManagedThreadId(method) : Void -> Int
+
+	public GetApartmentState(method) : Void -> System.Threading.ApartmentState
+
+	public SetApartmentState(method) : state : System.Threading.ApartmentState -> Void
+
+	public TrySetApartmentState(method) : state : System.Threading.ApartmentState -> Bool
+
+	public GetCompressedStack(method) : Void -> System.Threading.CompressedStack
+
+	public SetCompressedStack(method) : stack : System.Threading.CompressedStack -> Void
+
+	static public CurrentThread((get,never)) : System.Threading.Thread
+
+	static public CurrentPrincipal((get,set)) : System.Security.Principal.IPrincipal
+
+	static public CurrentContext((get,never)) : System.Runtime.Remoting.Contexts.Context
+
+	static get_CurrentContext(method) : Void -> System.Runtime.Remoting.Contexts.Context
+
+	static get_CurrentPrincipal(method) : Void -> System.Security.Principal.IPrincipal
+
+	static set_CurrentPrincipal(method) : value : System.Security.Principal.IPrincipal -> System.Security.Principal.IPrincipal
+
+	static get_CurrentThread(method) : Void -> System.Threading.Thread
+
+	static public AllocateNamedDataSlot(method) : name : String -> System.LocalDataStoreSlot
+
+	static public FreeNamedDataSlot(method) : name : String -> Void
+
+	static public AllocateDataSlot(method) : Void -> System.LocalDataStoreSlot
+
+	static public GetData(method) : slot : System.LocalDataStoreSlot -> Dynamic
+
+	static public SetData(method) : slot : System.LocalDataStoreSlot -> data : Dynamic -> Void
+
+	static public GetNamedDataSlot(method) : name : String -> System.LocalDataStoreSlot
+
+	static public GetDomain(method) : Void -> System.AppDomain
+
+	static public GetDomainID(method) : Void -> Int
+
+	static public ResetAbort(method) : Void -> Void
+
+	static public Yield(method) : Void -> Bool
+
+	static public Sleep(method) : millisecondsTimeout : Int -> Void
+
+	static public Sleep(method) : timeout : System.TimeSpan -> Void
+
+	static public MemoryBarrier(method) : Void -> Void
+
+	static public SpinWait(method) : iterations : Int -> Void
+
+	static public VolatileRead(method) : address : cs.Ref<cs.types.UInt8> -> cs.types.UInt8
+
+	static public VolatileRead(method) : address : cs.Ref<System.UIntPtr> -> System.UIntPtr
+
+	static public VolatileRead(method) : address : cs.Ref<cs.types.UInt64> -> cs.types.UInt64
+
+	static public VolatileRead(method) : address : cs.Ref<UInt> -> UInt
+
+	static public VolatileRead(method) : address : cs.Ref<cs.types.UInt16> -> cs.types.UInt16
+
+	static public VolatileRead(method) : address : cs.Ref<Single> -> Single
+
+	static public VolatileRead(method) : address : cs.Ref<cs.types.Int8> -> cs.types.Int8
+
+	static public VolatileRead(method) : address : cs.Ref<Dynamic> -> Dynamic
+
+	static public VolatileRead(method) : address : cs.Ref<System.IntPtr> -> System.IntPtr
+
+	static public VolatileRead(method) : address : cs.Ref<haxe.Int64> -> haxe.Int64
+
+	static public VolatileRead(method) : address : cs.Ref<Int> -> Int
+
+	static public VolatileRead(method) : address : cs.Ref<cs.types.Int16> -> cs.types.Int16
+
+	static public VolatileRead(method) : address : cs.Ref<Float> -> Float
+
+	static public VolatileWrite(method) : address : cs.Ref<cs.types.UInt8> -> value : cs.types.UInt8 -> Void
+
+	static public VolatileWrite(method) : address : cs.Ref<System.UIntPtr> -> value : System.UIntPtr -> Void
+
+	static public VolatileWrite(method) : address : cs.Ref<cs.types.UInt64> -> value : cs.types.UInt64 -> Void
+
+	static public VolatileWrite(method) : address : cs.Ref<UInt> -> value : UInt -> Void
+
+	static public VolatileWrite(method) : address : cs.Ref<cs.types.UInt16> -> value : cs.types.UInt16 -> Void
+
+	static public VolatileWrite(method) : address : cs.Ref<Single> -> value : Single -> Void
+
+	static public VolatileWrite(method) : address : cs.Ref<cs.types.Int8> -> value : cs.types.Int8 -> Void
+
+	static public VolatileWrite(method) : address : cs.Ref<Dynamic> -> value : Dynamic -> Void
+
+	static public VolatileWrite(method) : address : cs.Ref<System.IntPtr> -> value : System.IntPtr -> Void
+
+	static public VolatileWrite(method) : address : cs.Ref<haxe.Int64> -> value : haxe.Int64 -> Void
+
+	static public VolatileWrite(method) : address : cs.Ref<Int> -> value : Int -> Void
+
+	static public VolatileWrite(method) : address : cs.Ref<cs.types.Int16> -> value : cs.types.Int16 -> Void
+
+	static public VolatileWrite(method) : address : cs.Ref<Float> -> value : Float -> Void
+
+	static public BeginCriticalRegion(method) : Void -> Void
+
+	static public EndCriticalRegion(method) : Void -> Void
+
+	static public BeginThreadAffinity(method) : Void -> Void
+
+	static public EndThreadAffinity(method) : Void -> Void
+
+}

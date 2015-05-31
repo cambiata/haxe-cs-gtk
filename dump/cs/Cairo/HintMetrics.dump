@@ -1,0 +1,5 @@
+extern enum Cairo.HintMetrics {
+	Default : Cairo.HintMetrics;
+	Off : Cairo.HintMetrics;
+	On : Cairo.HintMetrics;
+}

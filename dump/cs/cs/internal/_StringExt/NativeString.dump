@@ -1,0 +1,1 @@
+private type cs.internal._StringExt.NativeString = System.String

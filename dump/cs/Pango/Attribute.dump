@@ -1,0 +1,36 @@
+extern class Pango.Attribute implements GLib.IWrapper implements System.IDisposable{
+	public EndIndex((get,set)) : UInt
+
+	public StartIndex((get,set)) : UInt
+
+	public Type((get,never)) : Pango.AttrType
+
+	public Handle((get,never)) : System.IntPtr
+
+	Finalize(method) : Void -> Void
+
+	public Dispose(method) : Void -> Void
+
+	get_Handle(method) : Void -> System.IntPtr
+
+	get_Type(method) : Void -> Pango.AttrType
+
+	get_StartIndex(method) : Void -> UInt
+
+	set_StartIndex(method) : value : UInt -> UInt
+
+	get_EndIndex(method) : Void -> UInt
+
+	set_EndIndex(method) : value : UInt -> UInt
+
+	public Copy(method) : Void -> Pango.Attribute
+
+	public Equal(method) : attr2 : Pango.Attribute -> Bool
+
+	static public GType((get,never)) : GLib.GType
+
+	static public GetAttribute(method) : raw : System.IntPtr -> Pango.Attribute
+
+	static get_GType(method) : Void -> GLib.GType
+
+}

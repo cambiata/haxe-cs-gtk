@@ -1,0 +1,122 @@
+extern class System.Collections.ArrayList implements System.ICloneable implements System.Collections.ICollection implements System.Collections.IEnumerable implements System.Collections.IList implements ArrayAccess<Dynamic>{
+	public new(method) : Void -> Void
+
+	public new(method) : capacity : Int -> Void
+
+	public new(method) : c : System.Collections.ICollection -> Void
+
+	public SyncRoot((get,never)) : Dynamic
+
+	public IsSynchronized((get,never)) : Bool
+
+	public IsReadOnly((get,never)) : Bool
+
+	public IsFixedSize((get,never)) : Bool
+
+	public Capacity((get,set)) : Int
+
+	public Count((get,never)) : Int
+
+	get_Item(method) : index : Int -> Dynamic
+
+	set_Item(method) : index : Int -> value : Dynamic -> Void
+
+	get_Count(method) : Void -> Int
+
+	get_Capacity(method) : Void -> Int
+
+	set_Capacity(method) : value : Int -> Int
+
+	get_IsFixedSize(method) : Void -> Bool
+
+	get_IsReadOnly(method) : Void -> Bool
+
+	get_IsSynchronized(method) : Void -> Bool
+
+	get_SyncRoot(method) : Void -> Dynamic
+
+	public Add(method) : value : Dynamic -> Int
+
+	public Clear(method) : Void -> Void
+
+	public Contains(method) : item : Dynamic -> Bool
+
+	public IndexOf(method) : value : Dynamic -> Int
+
+	public IndexOf(method) : value : Dynamic -> startIndex : Int -> count : Int -> Int
+
+	public IndexOf(method) : value : Dynamic -> startIndex : Int -> Int
+
+	public LastIndexOf(method) : value : Dynamic -> Int
+
+	public LastIndexOf(method) : value : Dynamic -> startIndex : Int -> count : Int -> Int
+
+	public LastIndexOf(method) : value : Dynamic -> startIndex : Int -> Int
+
+	public Insert(method) : index : Int -> value : Dynamic -> Void
+
+	public InsertRange(method) : index : Int -> c : System.Collections.ICollection -> Void
+
+	public Remove(method) : obj : Dynamic -> Void
+
+	public RemoveAt(method) : index : Int -> Void
+
+	public RemoveRange(method) : index : Int -> count : Int -> Void
+
+	public Reverse(method) : Void -> Void
+
+	public Reverse(method) : index : Int -> count : Int -> Void
+
+	public CopyTo(method) : array : System.Array -> Void
+
+	public CopyTo(method) : index : Int -> array : System.Array -> arrayIndex : Int -> count : Int -> Void
+
+	public CopyTo(method) : array : System.Array -> arrayIndex : Int -> Void
+
+	public GetEnumerator(method) : Void -> System.Collections.IEnumerator
+
+	public GetEnumerator(method) : index : Int -> count : Int -> System.Collections.IEnumerator
+
+	public AddRange(method) : c : System.Collections.ICollection -> Void
+
+	public BinarySearch(method) : value : Dynamic -> Int
+
+	public BinarySearch(method) : index : Int -> count : Int -> value : Dynamic -> comparer : System.Collections.IComparer -> Int
+
+	public BinarySearch(method) : value : Dynamic -> comparer : System.Collections.IComparer -> Int
+
+	public GetRange(method) : index : Int -> count : Int -> System.Collections.ArrayList
+
+	public SetRange(method) : index : Int -> c : System.Collections.ICollection -> Void
+
+	public TrimToSize(method) : Void -> Void
+
+	public Sort(method) : Void -> Void
+
+	public Sort(method) : index : Int -> count : Int -> comparer : System.Collections.IComparer -> Void
+
+	public Sort(method) : comparer : System.Collections.IComparer -> Void
+
+	public ToArray(method) : Void -> cs.NativeArray<Dynamic>
+
+	public ToArray(method) : type : System.Type -> System.Array
+
+	public Clone(method) : Void -> Dynamic
+
+	static public Adapter(method) : list : System.Collections.IList -> System.Collections.ArrayList
+
+	static public Synchronized(method) : list : System.Collections.ArrayList -> System.Collections.ArrayList
+
+	static public Synchronized(method) : list : System.Collections.IList -> System.Collections.IList
+
+	static public ReadOnly(method) : list : System.Collections.ArrayList -> System.Collections.ArrayList
+
+	static public ReadOnly(method) : list : System.Collections.IList -> System.Collections.IList
+
+	static public FixedSize(method) : list : System.Collections.ArrayList -> System.Collections.ArrayList
+
+	static public FixedSize(method) : list : System.Collections.IList -> System.Collections.IList
+
+	static public Repeat(method) : value : Dynamic -> count : Int -> System.Collections.ArrayList
+
+}

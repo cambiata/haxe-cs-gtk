@@ -1,0 +1,12 @@
+extern class System.TimeSpan.FormatElement extends System.ValueType{
+	public new(method) : type : System.TimeSpan.FormatElementType -> Void
+
+	public IntValue(var) : Int
+
+	public StringValue(var) : String
+
+	public CharValue(var) : cs.types.Char16
+
+	public Type(var) : System.TimeSpan.FormatElementType
+
+}

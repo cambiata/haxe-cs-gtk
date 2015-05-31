@@ -1,0 +1,14 @@
+extern class Gtk.Widget.SizeRequestedVMDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : widget : System.IntPtr -> requisition : System.IntPtr -> Void
+
+	public BeginInvoke(method) : widget : System.IntPtr -> requisition : System.IntPtr -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Void
+
+	static public op_Addition(method) : arg1 : gtk.Widget_SizeRequestedVMDelegate -> arg2 : gtk.Widget_SizeRequestedVMDelegate -> gtk.Widget_SizeRequestedVMDelegate
+
+	static public op_Subtraction(method) : arg1 : gtk.Widget_SizeRequestedVMDelegate -> arg2 : gtk.Widget_SizeRequestedVMDelegate -> gtk.Widget_SizeRequestedVMDelegate
+
+}

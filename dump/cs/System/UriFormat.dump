@@ -1,0 +1,5 @@
+extern enum System.UriFormat {
+	UriEscaped : System.UriFormat;
+	Unescaped : System.UriFormat;
+	SafeUnescaped : System.UriFormat;
+}

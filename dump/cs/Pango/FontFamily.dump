@@ -1,0 +1,26 @@
+extern class Pango.FontFamily extends GLib.Object{
+	new(method) : gtype : GLib.GType -> Void
+
+	new(method) : Void -> Void
+
+	public new(method) : raw : System.IntPtr -> Void
+
+	public Faces((get,never)) : cs.NativeArray<Pango.FontFace>
+
+	public Name((get,never)) : String
+
+	public IsMonospace((get,never)) : Bool
+
+	get_IsMonospace(method) : Void -> Bool
+
+	get_Name(method) : Void -> String
+
+	get_Faces(method) : Void -> cs.NativeArray<Pango.FontFace>
+
+	public ListFaces(method) : faces : Pango.FontFace -> Int
+
+	static public GType((get,never)) : GLib.GType
+
+	static get_GType(method) : Void -> GLib.GType
+
+}

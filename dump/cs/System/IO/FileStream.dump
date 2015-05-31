@@ -1,0 +1,106 @@
+extern class System.IO.FileStream extends System.IO.Stream{
+	public new(method) : handle : System.IntPtr -> access : System.IO.FileAccess -> Void
+
+	public new(method) : path : String -> mode : System.IO.FileMode -> rights : System.Security.AccessControl.FileSystemRights -> share : System.IO.FileShare -> bufferSize : Int -> options : System.IO.FileOptions -> fileSecurity : System.Security.AccessControl.FileSecurity -> Void
+
+	public new(method) : path : String -> mode : System.IO.FileMode -> rights : System.Security.AccessControl.FileSystemRights -> share : System.IO.FileShare -> bufferSize : Int -> options : System.IO.FileOptions -> Void
+
+	public new(method) : handle : Microsoft.Win32.SafeHandles.SafeFileHandle -> access : System.IO.FileAccess -> bufferSize : Int -> isAsync : Bool -> Void
+
+	public new(method) : handle : Microsoft.Win32.SafeHandles.SafeFileHandle -> access : System.IO.FileAccess -> bufferSize : Int -> Void
+
+	public new(method) : handle : Microsoft.Win32.SafeHandles.SafeFileHandle -> access : System.IO.FileAccess -> Void
+
+	public new(method) : path : String -> mode : System.IO.FileMode -> access : System.IO.FileAccess -> share : System.IO.FileShare -> bufferSize : Int -> options : System.IO.FileOptions -> Void
+
+	public new(method) : path : String -> mode : System.IO.FileMode -> access : System.IO.FileAccess -> share : System.IO.FileShare -> bufferSize : Int -> useAsync : Bool -> Void
+
+	public new(method) : path : String -> mode : System.IO.FileMode -> access : System.IO.FileAccess -> share : System.IO.FileShare -> bufferSize : Int -> Void
+
+	public new(method) : path : String -> mode : System.IO.FileMode -> access : System.IO.FileAccess -> share : System.IO.FileShare -> Void
+
+	public new(method) : path : String -> mode : System.IO.FileMode -> access : System.IO.FileAccess -> Void
+
+	public new(method) : path : String -> mode : System.IO.FileMode -> Void
+
+	public new(method) : handle : System.IntPtr -> access : System.IO.FileAccess -> ownsHandle : Bool -> bufferSize : Int -> isAsync : Bool -> Void
+
+	public new(method) : handle : System.IntPtr -> access : System.IO.FileAccess -> ownsHandle : Bool -> bufferSize : Int -> Void
+
+	public new(method) : handle : System.IntPtr -> access : System.IO.FileAccess -> ownsHandle : Bool -> Void
+
+	public SafeFileHandle((get,never)) : Microsoft.Win32.SafeHandles.SafeFileHandle
+
+	public Handle((get,never)) : System.IntPtr
+
+	public Position((get,set)) : haxe.Int64
+
+	public Length((get,never)) : haxe.Int64
+
+	public Name((get,never)) : String
+
+	public IsAsync((get,never)) : Bool
+
+	public CanSeek((get,never)) : Bool
+
+	public CanWrite((get,never)) : Bool
+
+	public CanRead((get,never)) : Bool
+
+	get_CanRead(method) : Void -> Bool
+
+	get_CanWrite(method) : Void -> Bool
+
+	get_CanSeek(method) : Void -> Bool
+
+	get_IsAsync(method) : Void -> Bool
+
+	get_Name(method) : Void -> String
+
+	get_Length(method) : Void -> haxe.Int64
+
+	get_Position(method) : Void -> haxe.Int64
+
+	set_Position(method) : value : haxe.Int64 -> haxe.Int64
+
+	get_Handle(method) : Void -> System.IntPtr
+
+	get_SafeFileHandle(method) : Void -> Microsoft.Win32.SafeHandles.SafeFileHandle
+
+	public ReadByte(method) : Void -> Int
+
+	public WriteByte(method) : value : cs.types.UInt8 -> Void
+
+	public Read(method) : array : cs.NativeArray<cs.types.UInt8> -> offset : Int -> count : Int -> Int
+
+	public BeginRead(method) : array : cs.NativeArray<cs.types.UInt8> -> offset : Int -> numBytes : Int -> userCallback : cs.system.AsyncCallback -> stateObject : Dynamic -> System.IAsyncResult
+
+	public EndRead(method) : asyncResult : System.IAsyncResult -> Int
+
+	public Write(method) : array : cs.NativeArray<cs.types.UInt8> -> offset : Int -> count : Int -> Void
+
+	public BeginWrite(method) : array : cs.NativeArray<cs.types.UInt8> -> offset : Int -> numBytes : Int -> userCallback : cs.system.AsyncCallback -> stateObject : Dynamic -> System.IAsyncResult
+
+	public EndWrite(method) : asyncResult : System.IAsyncResult -> Void
+
+	public Seek(method) : offset : haxe.Int64 -> origin : System.IO.SeekOrigin -> haxe.Int64
+
+	public SetLength(method) : value : haxe.Int64 -> Void
+
+	public Flush(method) : Void -> Void
+
+	public Flush(method) : flushToDisk : Bool -> Void
+
+	public Lock(method) : position : haxe.Int64 -> length : haxe.Int64 -> Void
+
+	public Unlock(method) : position : haxe.Int64 -> length : haxe.Int64 -> Void
+
+	Finalize(method) : Void -> Void
+
+	Dispose(method) : disposing : Bool -> Void
+
+	public GetAccessControl(method) : Void -> System.Security.AccessControl.FileSecurity
+
+	public SetAccessControl(method) : fileSecurity : System.Security.AccessControl.FileSecurity -> Void
+
+}

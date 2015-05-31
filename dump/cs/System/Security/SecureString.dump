@@ -1,0 +1,26 @@
+extern class System.Security.SecureString extends System.Runtime.ConstrainedExecution.CriticalFinalizerObject implements System.IDisposable{
+	public new(method) : Void -> Void
+
+	public Length((get,never)) : Int
+
+	get_Length(method) : Void -> Int
+
+	public AppendChar(method) : c : cs.types.Char16 -> Void
+
+	public Clear(method) : Void -> Void
+
+	public Copy(method) : Void -> System.Security.SecureString
+
+	public Dispose(method) : Void -> Void
+
+	public InsertAt(method) : index : Int -> c : cs.types.Char16 -> Void
+
+	public IsReadOnly(method) : Void -> Bool
+
+	public MakeReadOnly(method) : Void -> Void
+
+	public RemoveAt(method) : index : Int -> Void
+
+	public SetAt(method) : index : Int -> c : cs.types.Char16 -> Void
+
+}

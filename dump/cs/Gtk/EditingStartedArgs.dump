@@ -1,0 +1,12 @@
+extern class Gtk.EditingStartedArgs extends GLib.SignalArgs{
+	public new(method) : Void -> Void
+
+	public Path((get,never)) : String
+
+	public Editable((get,never)) : Gtk.CellEditable
+
+	get_Editable(method) : Void -> Gtk.CellEditable
+
+	get_Path(method) : Void -> String
+
+}

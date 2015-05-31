@@ -1,0 +1,10 @@
+extern interface System.Runtime.InteropServices._Thread{
+	public GetIDsOfNames(method) : riid : cs.Ref<System.Guid> -> rgszNames : System.IntPtr -> cNames : UInt -> lcid : UInt -> rgDispId : System.IntPtr -> Void
+
+	public GetTypeInfo(method) : iTInfo : UInt -> lcid : UInt -> ppTInfo : System.IntPtr -> Void
+
+	public GetTypeInfoCount(method) : pcTInfo : cs.Out<UInt> -> Void
+
+	public Invoke(method) : dispIdMember : UInt -> riid : cs.Ref<System.Guid> -> lcid : UInt -> wFlags : cs.types.Int16 -> pDispParams : System.IntPtr -> pVarResult : System.IntPtr -> pExcepInfo : System.IntPtr -> puArgErr : System.IntPtr -> Void
+
+}

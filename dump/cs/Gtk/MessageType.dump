@@ -1,0 +1,7 @@
+extern enum Gtk.MessageType {
+	Info : Gtk.MessageType;
+	Warning : Gtk.MessageType;
+	Question : Gtk.MessageType;
+	Error : Gtk.MessageType;
+	Other : Gtk.MessageType;
+}

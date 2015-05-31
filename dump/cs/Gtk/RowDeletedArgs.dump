@@ -1,0 +1,8 @@
+extern class Gtk.RowDeletedArgs extends GLib.SignalArgs{
+	public new(method) : Void -> Void
+
+	public Path((get,never)) : Gtk.TreePath
+
+	get_Path(method) : Void -> Gtk.TreePath
+
+}

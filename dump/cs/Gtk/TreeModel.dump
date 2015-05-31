@@ -1,0 +1,110 @@
+extern interface Gtk.TreeModel implements GLib.IWrapper{
+	RowsReordered(var) : gtk.RowsReorderedHandler
+
+	RowDeleted(var) : gtk.RowDeletedHandler
+
+	RowChanged(var) : gtk.RowChangedHandler
+
+	RowInserted(var) : gtk.RowInsertedHandler
+
+	RowHasChildToggled(var) : gtk.RowHasChildToggledHandler
+
+	public Handle((get,never)) : System.IntPtr
+
+	public NColumns((get,never)) : Int
+
+	public Flags((get,never)) : Gtk.TreeModelFlags
+
+	get_Handle(method) : Void -> System.IntPtr
+
+	public add_RowHasChildToggled(method) : value : gtk.RowHasChildToggledHandler -> Void
+
+	public remove_RowHasChildToggled(method) : value : gtk.RowHasChildToggledHandler -> Void
+
+	public add_RowInserted(method) : value : gtk.RowInsertedHandler -> Void
+
+	public remove_RowInserted(method) : value : gtk.RowInsertedHandler -> Void
+
+	public add_RowChanged(method) : value : gtk.RowChangedHandler -> Void
+
+	public remove_RowChanged(method) : value : gtk.RowChangedHandler -> Void
+
+	public add_RowDeleted(method) : value : gtk.RowDeletedHandler -> Void
+
+	public remove_RowDeleted(method) : value : gtk.RowDeletedHandler -> Void
+
+	public EmitRowHasChildToggled(method) : path : Gtk.TreePath -> iter : Gtk.TreeIter -> Void
+
+	public RefNode(method) : iter : Gtk.TreeIter -> Void
+
+	public UnrefNode(method) : iter : Gtk.TreeIter -> Void
+
+	public EmitRowChanged(method) : path : Gtk.TreePath -> iter : Gtk.TreeIter -> Void
+
+	get_Flags(method) : Void -> Gtk.TreeModelFlags
+
+	public IterNext(method) : iter : cs.Ref<Gtk.TreeIter> -> Bool
+
+	public EmitRowInserted(method) : path : Gtk.TreePath -> iter : Gtk.TreeIter -> Void
+
+	get_NColumns(method) : Void -> Int
+
+	public IterChildren(method) : iter : cs.Out<Gtk.TreeIter> -> parent : Gtk.TreeIter -> Bool
+
+	public IterChildren(method) : iter : cs.Out<Gtk.TreeIter> -> Bool
+
+	public IterNChildren(method) : iter : Gtk.TreeIter -> Int
+
+	public IterNChildren(method) : Void -> Int
+
+	public EmitRowDeleted(method) : path : Gtk.TreePath -> Void
+
+	public EmitRowsReordered(method) : path : Gtk.TreePath -> iter : Gtk.TreeIter -> new_order : cs.NativeArray<Int> -> Void
+
+	public Foreach(method) : func : gtk.TreeModelForeachFunc -> Void
+
+	public GetIterFirst(method) : iter : cs.Out<Gtk.TreeIter> -> Bool
+
+	public IterParent(method) : iter : cs.Out<Gtk.TreeIter> -> child : Gtk.TreeIter -> Bool
+
+	public GetIterFromString(method) : iter : cs.Out<Gtk.TreeIter> -> path_string : String -> Bool
+
+	public GetIter(method) : iter : cs.Out<Gtk.TreeIter> -> path : Gtk.TreePath -> Bool
+
+	public GetValist(method) : iter : Gtk.TreeIter -> var_args : System.IntPtr -> Void
+
+	public GetColumnType(method) : index_ : Int -> GLib.GType
+
+	public GetStringFromIter(method) : iter : Gtk.TreeIter -> String
+
+	public IterNthChild(method) : iter : cs.Out<Gtk.TreeIter> -> parent : Gtk.TreeIter -> n : Int -> Bool
+
+	public IterNthChild(method) : iter : cs.Out<Gtk.TreeIter> -> n : Int -> Bool
+
+	public GetPath(method) : iter : Gtk.TreeIter -> Gtk.TreePath
+
+	public IterHasChild(method) : iter : Gtk.TreeIter -> Bool
+
+	public GetValue(method) : iter : Gtk.TreeIter -> column : Int -> value : cs.Ref<GLib.Value> -> Void
+
+	public GetValue(method) : iter : Gtk.TreeIter -> column : Int -> Dynamic
+
+	public SetValue(method) : iter : Gtk.TreeIter -> column : Int -> value : Bool -> Void
+
+	public SetValue(method) : iter : Gtk.TreeIter -> column : Int -> value : Dynamic -> Void
+
+	public SetValue(method) : iter : Gtk.TreeIter -> column : Int -> value : UInt -> Void
+
+	public SetValue(method) : iter : Gtk.TreeIter -> column : Int -> value : Single -> Void
+
+	public SetValue(method) : iter : Gtk.TreeIter -> column : Int -> value : String -> Void
+
+	public SetValue(method) : iter : Gtk.TreeIter -> column : Int -> value : Int -> Void
+
+	public SetValue(method) : iter : Gtk.TreeIter -> column : Int -> value : Float -> Void
+
+	public add_RowsReordered(method) : value : gtk.RowsReorderedHandler -> Void
+
+	public remove_RowsReordered(method) : value : gtk.RowsReorderedHandler -> Void
+
+}

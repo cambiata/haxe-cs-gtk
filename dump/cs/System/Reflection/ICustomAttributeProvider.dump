@@ -1,0 +1,8 @@
+extern interface System.Reflection.ICustomAttributeProvider{
+	public GetCustomAttributes(method) : inherit : Bool -> cs.NativeArray<Dynamic>
+
+	public GetCustomAttributes(method) : attributeType : System.Type -> inherit : Bool -> cs.NativeArray<Dynamic>
+
+	public IsDefined(method) : attributeType : System.Type -> inherit : Bool -> Bool
+
+}

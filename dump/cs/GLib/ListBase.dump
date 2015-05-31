@@ -1,0 +1,48 @@
+extern class GLib.ListBase implements System.IDisposable implements System.Collections.ICollection implements System.Collections.IEnumerable implements GLib.IWrapper implements System.ICloneable implements ArrayAccess<Dynamic>{
+	public SyncRoot((get,never)) : Dynamic
+
+	public IsSynchronized((get,never)) : Bool
+
+	public Count((get,never)) : Int
+
+	public Handle((get,never)) : System.IntPtr
+
+	public Managed((never,set)) : Bool
+
+	element_type(var) : System.Type
+
+	Finalize(method) : Void -> Void
+
+	set_Managed(method) : value : Bool -> Bool
+
+	get_Handle(method) : Void -> System.IntPtr
+
+	public Append(method) : raw : System.IntPtr -> Void
+
+	public Append(method) : item : Dynamic -> Void
+
+	public Append(method) : item : String -> Void
+
+	public Prepend(method) : raw : System.IntPtr -> Void
+
+	get_Count(method) : Void -> Int
+
+	get_Item(method) : index : Int -> Dynamic
+
+	get_IsSynchronized(method) : Void -> Bool
+
+	get_SyncRoot(method) : Void -> Dynamic
+
+	public CopyTo(method) : array : System.Array -> index : Int -> Void
+
+	public Empty(method) : Void -> Void
+
+	public GetEnumerator(method) : Void -> System.Collections.IEnumerator
+
+	public Dispose(method) : Void -> Void
+
+	Dispose(method) : disposing : Bool -> Void
+
+	public Clone(method) : Void -> Dynamic
+
+}

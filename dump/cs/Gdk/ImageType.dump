@@ -1,0 +1,5 @@
+extern enum Gdk.ImageType {
+	Normal : Gdk.ImageType;
+	Shared : Gdk.ImageType;
+	Fastest : Gdk.ImageType;
+}

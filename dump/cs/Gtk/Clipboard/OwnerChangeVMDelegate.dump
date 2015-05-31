@@ -1,0 +1,14 @@
+extern class Gtk.Clipboard.OwnerChangeVMDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : clipboard : System.IntPtr -> evnt : System.IntPtr -> Void
+
+	public BeginInvoke(method) : clipboard : System.IntPtr -> evnt : System.IntPtr -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Void
+
+	static public op_Addition(method) : arg1 : gtk.Clipboard_OwnerChangeVMDelegate -> arg2 : gtk.Clipboard_OwnerChangeVMDelegate -> gtk.Clipboard_OwnerChangeVMDelegate
+
+	static public op_Subtraction(method) : arg1 : gtk.Clipboard_OwnerChangeVMDelegate -> arg2 : gtk.Clipboard_OwnerChangeVMDelegate -> gtk.Clipboard_OwnerChangeVMDelegate
+
+}

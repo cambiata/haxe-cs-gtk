@@ -1,0 +1,82 @@
+extern class System.Reflection.Emit.ILGenerator implements System.Runtime.InteropServices._ILGenerator{
+	public ILOffset((get,never)) : Int
+
+	public BeginCatchBlock(method) : exceptionType : System.Type -> Void
+
+	public BeginExceptFilterBlock(method) : Void -> Void
+
+	public BeginExceptionBlock(method) : Void -> System.Reflection.Emit.Label
+
+	public BeginFaultBlock(method) : Void -> Void
+
+	public BeginFinallyBlock(method) : Void -> Void
+
+	public BeginScope(method) : Void -> Void
+
+	public DeclareLocal(method) : localType : System.Type -> System.Reflection.Emit.LocalBuilder
+
+	public DeclareLocal(method) : localType : System.Type -> pinned : Bool -> System.Reflection.Emit.LocalBuilder
+
+	public DefineLabel(method) : Void -> System.Reflection.Emit.Label
+
+	public Emit(method) : opcode : System.Reflection.Emit.OpCode -> Void
+
+	public Emit(method) : opcode : System.Reflection.Emit.OpCode -> cls : System.Type -> Void
+
+	public Emit(method) : opcode : System.Reflection.Emit.OpCode -> str : String -> Void
+
+	public Emit(method) : opcode : System.Reflection.Emit.OpCode -> arg : Single -> Void
+
+	public Emit(method) : opcode : System.Reflection.Emit.OpCode -> signature : System.Reflection.Emit.SignatureHelper -> Void
+
+	public Emit(method) : opcode : System.Reflection.Emit.OpCode -> arg : cs.types.Int8 -> Void
+
+	public Emit(method) : opcode : System.Reflection.Emit.OpCode -> meth : System.Reflection.MethodInfo -> Void
+
+	public Emit(method) : opcode : System.Reflection.Emit.OpCode -> local : System.Reflection.Emit.LocalBuilder -> Void
+
+	public Emit(method) : opcode : System.Reflection.Emit.OpCode -> labels : cs.NativeArray<System.Reflection.Emit.Label> -> Void
+
+	public Emit(method) : opcode : System.Reflection.Emit.OpCode -> label : System.Reflection.Emit.Label -> Void
+
+	public Emit(method) : opcode : System.Reflection.Emit.OpCode -> arg : haxe.Int64 -> Void
+
+	public Emit(method) : opcode : System.Reflection.Emit.OpCode -> arg : Int -> Void
+
+	public Emit(method) : opcode : System.Reflection.Emit.OpCode -> arg : cs.types.Int16 -> Void
+
+	public Emit(method) : opcode : System.Reflection.Emit.OpCode -> field : System.Reflection.FieldInfo -> Void
+
+	public Emit(method) : opcode : System.Reflection.Emit.OpCode -> arg : Float -> Void
+
+	public Emit(method) : opcode : System.Reflection.Emit.OpCode -> con : System.Reflection.ConstructorInfo -> Void
+
+	public Emit(method) : opcode : System.Reflection.Emit.OpCode -> arg : cs.types.UInt8 -> Void
+
+	public EmitCall(method) : opcode : System.Reflection.Emit.OpCode -> methodInfo : System.Reflection.MethodInfo -> optionalParameterTypes : cs.NativeArray<System.Type> -> Void
+
+	public EmitCalli(method) : opcode : System.Reflection.Emit.OpCode -> unmanagedCallConv : System.Runtime.InteropServices.CallingConvention -> returnType : System.Type -> parameterTypes : cs.NativeArray<System.Type> -> Void
+
+	public EmitCalli(method) : opcode : System.Reflection.Emit.OpCode -> callingConvention : System.Reflection.CallingConventions -> returnType : System.Type -> parameterTypes : cs.NativeArray<System.Type> -> optionalParameterTypes : cs.NativeArray<System.Type> -> Void
+
+	public EmitWriteLine(method) : fld : System.Reflection.FieldInfo -> Void
+
+	public EmitWriteLine(method) : value : String -> Void
+
+	public EmitWriteLine(method) : localBuilder : System.Reflection.Emit.LocalBuilder -> Void
+
+	public EndExceptionBlock(method) : Void -> Void
+
+	public EndScope(method) : Void -> Void
+
+	public MarkLabel(method) : loc : System.Reflection.Emit.Label -> Void
+
+	public MarkSequencePoint(method) : document : System.Diagnostics.SymbolStore.ISymbolDocumentWriter -> startLine : Int -> startColumn : Int -> endLine : Int -> endColumn : Int -> Void
+
+	public ThrowException(method) : excType : System.Type -> Void
+
+	public UsingNamespace(method) : usingNamespace : String -> Void
+
+	get_ILOffset(method) : Void -> Int
+
+}

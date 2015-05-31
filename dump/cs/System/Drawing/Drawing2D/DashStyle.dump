@@ -1,0 +1,8 @@
+extern enum System.Drawing.Drawing2D.DashStyle {
+	Solid : System.Drawing.Drawing2D.DashStyle;
+	Dash : System.Drawing.Drawing2D.DashStyle;
+	Dot : System.Drawing.Drawing2D.DashStyle;
+	DashDot : System.Drawing.Drawing2D.DashStyle;
+	DashDotDot : System.Drawing.Drawing2D.DashStyle;
+	Custom : System.Drawing.Drawing2D.DashStyle;
+}

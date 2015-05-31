@@ -1,0 +1,16 @@
+extern class Gtk.SelectionGetArgs extends GLib.SignalArgs{
+	public new(method) : Void -> Void
+
+	public Time((get,never)) : UInt
+
+	public Info((get,never)) : UInt
+
+	public SelectionData((get,never)) : Gtk.SelectionData
+
+	get_SelectionData(method) : Void -> Gtk.SelectionData
+
+	get_Info(method) : Void -> UInt
+
+	get_Time(method) : Void -> UInt
+
+}

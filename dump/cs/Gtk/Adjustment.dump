@@ -1,0 +1,74 @@
+extern class Gtk.Adjustment extends Gtk.Object{
+	new(method) : gtype : GLib.GType -> Void
+
+	public new(method) : value : Float -> lower : Float -> upper : Float -> step_increment : Float -> page_increment : Float -> page_size : Float -> Void
+
+	new(method) : Void -> Void
+
+	public new(method) : raw : System.IntPtr -> Void
+
+	Changed(var) : cs.system.EventHandler
+
+	ValueChanged(var) : cs.system.EventHandler
+
+	public PageSize((get,set)) : Float
+
+	public StepIncrement((get,set)) : Float
+
+	public Value((get,set)) : Float
+
+	public PageIncrement((get,set)) : Float
+
+	public Lower((get,set)) : Float
+
+	public Upper((get,set)) : Float
+
+	get_Upper(method) : Void -> Float
+
+	set_Upper(method) : value : Float -> Float
+
+	get_Lower(method) : Void -> Float
+
+	set_Lower(method) : value : Float -> Float
+
+	get_PageIncrement(method) : Void -> Float
+
+	set_PageIncrement(method) : value : Float -> Float
+
+	get_Value(method) : Void -> Float
+
+	set_Value(method) : value : Float -> Float
+
+	get_StepIncrement(method) : Void -> Float
+
+	set_StepIncrement(method) : value : Float -> Float
+
+	get_PageSize(method) : Void -> Float
+
+	set_PageSize(method) : value : Float -> Float
+
+	OnValueChanged(method) : Void -> Void
+
+	public add_ValueChanged(method) : value : cs.system.EventHandler -> Void
+
+	public remove_ValueChanged(method) : value : cs.system.EventHandler -> Void
+
+	OnChanged(method) : Void -> Void
+
+	public add_Changed(method) : value : cs.system.EventHandler -> Void
+
+	public remove_Changed(method) : value : cs.system.EventHandler -> Void
+
+	public ChangeValue(method) : Void -> Void
+
+	public Change(method) : Void -> Void
+
+	public ClampPage(method) : lower : Float -> upper : Float -> Void
+
+	public SetBounds(method) : lower : Float -> upper : Float -> step_increment : Float -> page_increment : Float -> page_size : Float -> Void
+
+	static public GType((get,never)) : GLib.GType
+
+	static get_GType(method) : Void -> GLib.GType
+
+}

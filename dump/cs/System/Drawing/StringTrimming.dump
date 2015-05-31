@@ -1,0 +1,8 @@
+extern enum System.Drawing.StringTrimming {
+	None : System.Drawing.StringTrimming;
+	Character : System.Drawing.StringTrimming;
+	Word : System.Drawing.StringTrimming;
+	EllipsisCharacter : System.Drawing.StringTrimming;
+	EllipsisWord : System.Drawing.StringTrimming;
+	EllipsisPath : System.Drawing.StringTrimming;
+}

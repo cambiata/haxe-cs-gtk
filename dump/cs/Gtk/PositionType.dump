@@ -1,0 +1,6 @@
+extern enum Gtk.PositionType {
+	Left : Gtk.PositionType;
+	Right : Gtk.PositionType;
+	Top : Gtk.PositionType;
+	Bottom : Gtk.PositionType;
+}

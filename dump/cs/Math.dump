@@ -1,0 +1,71 @@
+class Math{
+	static rand(var) : System.Random
+
+	static public PI((default,null)) : Float
+
+	static public NaN((default,null)) : Float
+
+	static public NEGATIVE_INFINITY((default,null)) : Float
+
+	static public POSITIVE_INFINITY((default,null)) : Float
+
+
+
+	__init__ = [Block:System.Random]
+		[Binop:Float]
+			[Field:Float]
+				[TypeExpr Math:Class<Math>]
+				[FStatic:Float]
+					Math
+					PI
+			=
+			[Field:Float]
+				[TypeExpr System.Math:Class<cs.system.Math>]
+				[FStatic:Float]
+					System.Math
+					PI
+		[Binop:Float]
+			[Field:Float]
+				[TypeExpr Math:Class<Math>]
+				[FStatic:Float]
+					Math
+					NaN
+			=
+			[Field:Float]
+				[TypeExpr System.Double:Class<cs.system.Double>]
+				[FStatic:Float]
+					System.Double
+					NaN
+		[Binop:Float]
+			[Field:Float]
+				[TypeExpr Math:Class<Math>]
+				[FStatic:Float]
+					Math
+					NEGATIVE_INFINITY
+			=
+			[Field:Float]
+				[TypeExpr System.Double:Class<cs.system.Double>]
+				[FStatic:Float]
+					System.Double
+					NegativeInfinity
+		[Binop:Float]
+			[Field:Float]
+				[TypeExpr Math:Class<Math>]
+				[FStatic:Float]
+					Math
+					POSITIVE_INFINITY
+			=
+			[Field:Float]
+				[TypeExpr System.Double:Class<cs.system.Double>]
+				[FStatic:Float]
+					System.Double
+					PositiveInfinity
+		[Binop:System.Random]
+			[Field:System.Random]
+				[TypeExpr Math:Class<Math>]
+				[FStatic:System.Random]
+					Math
+					rand
+			=
+			[New:System.Random] System.Random}
+}

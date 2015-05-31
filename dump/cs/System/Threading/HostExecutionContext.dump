@@ -1,0 +1,14 @@
+extern class System.Threading.HostExecutionContext{
+	public new(method) : Void -> Void
+
+	public new(method) : state : Dynamic -> Void
+
+	State((null,null)) : Dynamic
+
+	public CreateCopy(method) : Void -> System.Threading.HostExecutionContext
+
+	get_State(method) : Void -> Dynamic
+
+	set_State(method) : value : Dynamic -> Dynamic
+
+}

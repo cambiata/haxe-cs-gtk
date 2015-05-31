@@ -1,12 +1,12 @@
 package ;
 
+import cs.Lib;
 import cs.NativeArray;
 import cs.Out;
 import gtk.Application;
 import gtk.Window;
 import gtk.Button;
-import gtk.DrawingArea;
-import cairo.Context;
+
 /**
  * ...
  * @author 
@@ -53,11 +53,7 @@ import cairo.Context;
 		columnA.AddAttribute(cellA, "text", 0);
 		columnB.AddAttribute(cellB, "text", 0);
 		
-		//var store:gtk.ListStore = new gtk.ListStore( untyped __cs__( 'typeof (string), typeof (string)' ));
-		var store:gtk.ListStore = untyped __cs__( 'new Gtk.ListStore( typeof (string), typeof (string) ) ' );
-		
-		
-		var values:cs.system.Array = NativeArray.make('Item1', 'ItemA');
+		var store:gtk.ListStore = new gtk.ListStore(NativeArray.make(Lib.toNativeType(String), Lib.toNativeType(String)));
 		
 		store.AppendValues(NativeArray.make('Item1', 'ItemA'));
 		
@@ -101,25 +97,17 @@ import cairo.Context;
 		var btnMessageDialog = new gtk.Button();
 		btnMessageDialog.Label = 'Message dialog';		
 		btnMessageDialog.add_Clicked(new cs.system.EventHandler(function(obj:Dynamic, e:cs.system.EventArgs) {
-			var dialog:gtk.MessageDialog = untyped __cs__(' new Gtk.MessageDialog(null, Gtk.DialogFlags.Modal, Gtk.MessageType.Error, Gtk.ButtonsType.Close, "Hello dialog!")');
-			
-			//var dialog:gtk.MessageDialog = new gtk.MessageDialog(  // gtype: glib.Gtype
-			
+			var dialog:gtk.MessageDialog = new gtk.MessageDialog(win, gtk.DialogFlags.Modal, gtk.MessageType.Error, gtk.ButtonsType.Close, "Hey", new NativeArray(0));
 			dialog.Title = 'Hello Message!';
-			
 			var response:gtk.ResponseType = cast dialog.Run();
 			if (response == gtk.ResponseType.Close || response == gtk.ResponseType.DeleteEvent) dialog.Destroy();
-			
 		}));
+		
 		vbox.PackStart(btnMessageDialog, false, false, 2);
-
 		hbox.Add(vbox);
-		
 		win.Add(hbox);
-		
 		win.ShowAll();
 		
 		Application.Run();
 	}	
 }
-

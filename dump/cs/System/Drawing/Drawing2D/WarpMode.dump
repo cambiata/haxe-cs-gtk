@@ -1,0 +1,4 @@
+extern enum System.Drawing.Drawing2D.WarpMode {
+	Perspective : System.Drawing.Drawing2D.WarpMode;
+	Bilinear : System.Drawing.Drawing2D.WarpMode;
+}

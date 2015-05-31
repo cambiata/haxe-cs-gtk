@@ -1,0 +1,14 @@
+extern class Gtk.Widget.ActivateDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : widget : System.IntPtr -> Void
+
+	public BeginInvoke(method) : widget : System.IntPtr -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Void
+
+	static public op_Addition(method) : arg1 : gtk.Widget_ActivateDelegate -> arg2 : gtk.Widget_ActivateDelegate -> gtk.Widget_ActivateDelegate
+
+	static public op_Subtraction(method) : arg1 : gtk.Widget_ActivateDelegate -> arg2 : gtk.Widget_ActivateDelegate -> gtk.Widget_ActivateDelegate
+
+}

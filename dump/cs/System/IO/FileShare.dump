@@ -1,0 +1,8 @@
+extern enum System.IO.FileShare {
+	None : System.IO.FileShare;
+	Read : System.IO.FileShare;
+	Write : System.IO.FileShare;
+	ReadWrite : System.IO.FileShare;
+	Delete : System.IO.FileShare;
+	Inheritable : System.IO.FileShare;
+}

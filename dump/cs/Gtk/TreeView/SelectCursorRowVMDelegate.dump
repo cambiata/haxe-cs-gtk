@@ -1,0 +1,14 @@
+extern class Gtk.TreeView.SelectCursorRowVMDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : tree_view : System.IntPtr -> start_editing : Bool -> Bool
+
+	public BeginInvoke(method) : tree_view : System.IntPtr -> start_editing : Bool -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Bool
+
+	static public op_Addition(method) : arg1 : gtk.TreeView_SelectCursorRowVMDelegate -> arg2 : gtk.TreeView_SelectCursorRowVMDelegate -> gtk.TreeView_SelectCursorRowVMDelegate
+
+	static public op_Subtraction(method) : arg1 : gtk.TreeView_SelectCursorRowVMDelegate -> arg2 : gtk.TreeView_SelectCursorRowVMDelegate -> gtk.TreeView_SelectCursorRowVMDelegate
+
+}

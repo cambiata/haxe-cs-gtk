@@ -1,0 +1,16 @@
+extern class Gtk.TagAppliedArgs extends GLib.SignalArgs{
+	public new(method) : Void -> Void
+
+	public EndChar((get,never)) : Gtk.TextIter
+
+	public StartChar((get,never)) : Gtk.TextIter
+
+	public Tag((get,never)) : Gtk.TextTag
+
+	get_Tag(method) : Void -> Gtk.TextTag
+
+	get_StartChar(method) : Void -> Gtk.TextIter
+
+	get_EndChar(method) : Void -> Gtk.TextIter
+
+}

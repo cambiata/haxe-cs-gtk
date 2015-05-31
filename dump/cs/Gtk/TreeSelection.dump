@@ -1,0 +1,72 @@
+extern class Gtk.TreeSelection extends GLib.Object{
+	new(method) : gtype : GLib.GType -> Void
+
+	new(method) : Void -> Void
+
+	public new(method) : raw : System.IntPtr -> Void
+
+	Changed(var) : cs.system.EventHandler
+
+	public SelectFunction((never,set)) : gtk.TreeSelectionFunc
+
+	public Mode((get,set)) : Gtk.SelectionMode
+
+	public UserData((get,never)) : System.IntPtr
+
+	public TreeView((get,never)) : Gtk.TreeView
+
+	get_TreeView(method) : Void -> Gtk.TreeView
+
+	get_UserData(method) : Void -> System.IntPtr
+
+	OnChanged(method) : Void -> Void
+
+	public add_Changed(method) : value : cs.system.EventHandler -> Void
+
+	public remove_Changed(method) : value : cs.system.EventHandler -> Void
+
+	get_Mode(method) : Void -> Gtk.SelectionMode
+
+	set_Mode(method) : value : Gtk.SelectionMode -> Gtk.SelectionMode
+
+	public UnselectPath(method) : path : Gtk.TreePath -> Void
+
+	public SelectPath(method) : path : Gtk.TreePath -> Void
+
+	public GetSelected(method) : model : cs.Out<Gtk.TreeModel> -> iter : cs.Out<Gtk.TreeIter> -> Bool
+
+	public GetSelected(method) : iter : cs.Out<Gtk.TreeIter> -> Bool
+
+	set_SelectFunction(method) : value : gtk.TreeSelectionFunc -> gtk.TreeSelectionFunc
+
+	public SelectRange(method) : start_path : Gtk.TreePath -> end_path : Gtk.TreePath -> Void
+
+	public SelectedForeach(method) : func : gtk.TreeSelectionForeachFunc -> Void
+
+	public SelectIter(method) : iter : Gtk.TreeIter -> Void
+
+	public CountSelectedRows(method) : Void -> Int
+
+	public PathIsSelected(method) : path : Gtk.TreePath -> Bool
+
+	public UnselectRange(method) : start_path : Gtk.TreePath -> end_path : Gtk.TreePath -> Void
+
+	public GetSelectedRows(method) : model : cs.Out<Gtk.TreeModel> -> cs.NativeArray<Gtk.TreePath>
+
+	public GetSelectedRows(method) : Void -> cs.NativeArray<Gtk.TreePath>
+
+	public SelectAll(method) : Void -> Void
+
+	public UnselectIter(method) : iter : Gtk.TreeIter -> Void
+
+	public IterIsSelected(method) : iter : Gtk.TreeIter -> Bool
+
+	public UnselectAll(method) : Void -> Void
+
+	public SetSelectFunction(method) : func : gtk.TreeSelectionFunc -> data : System.IntPtr -> destroy : gtk.DestroyNotify -> Void
+
+	static public GType((get,never)) : GLib.GType
+
+	static get_GType(method) : Void -> GLib.GType
+
+}

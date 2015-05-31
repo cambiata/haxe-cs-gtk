@@ -1,0 +1,192 @@
+extern class Gtk.CellRendererText extends Gtk.CellRenderer{
+	new(method) : gtype : GLib.GType -> Void
+
+	public new(method) : Void -> Void
+
+	public new(method) : raw : System.IntPtr -> Void
+
+	Edited(var) : gtk.EditedHandler
+
+	public FixedHeightFromFont((never,set)) : Int
+
+	public ForegroundGdk((get,set)) : Gdk.Color
+
+	public Variant((get,set)) : Pango.Variant
+
+	public Text((get,set)) : String
+
+	public Alignment((get,set)) : Pango.Alignment
+
+	public WrapMode((get,set)) : Pango.WrapMode
+
+	public Ellipsize((get,set)) : Pango.EllipsizeMode
+
+	public Background((never,set)) : String
+
+	public Foreground((never,set)) : String
+
+	public Attributes((get,set)) : Pango.AttrList
+
+	public Family((get,set)) : String
+
+	public Markup((never,set)) : String
+
+	public Size((get,set)) : Int
+
+	public Weight((get,set)) : Int
+
+	public Strikethrough((get,set)) : Bool
+
+	public Style((get,set)) : Pango.Style
+
+	public WrapWidth((get,set)) : Int
+
+	public Underline((get,set)) : Pango.Underline
+
+	public SizePoints((get,set)) : Float
+
+	public Scale((get,set)) : Float
+
+	public BackgroundGdk((get,set)) : Gdk.Color
+
+	public Stretch((get,set)) : Pango.Stretch
+
+	public Editable((get,set)) : Bool
+
+	public WidthChars((get,set)) : Int
+
+	public Rise((get,set)) : Int
+
+	public FontDesc((get,set)) : Pango.FontDescription
+
+	public SingleParagraphMode((get,set)) : Bool
+
+	public Language((get,set)) : String
+
+	public Font((get,set)) : String
+
+	get_Font(method) : Void -> String
+
+	set_Font(method) : value : String -> String
+
+	get_Language(method) : Void -> String
+
+	set_Language(method) : value : String -> String
+
+	get_SingleParagraphMode(method) : Void -> Bool
+
+	set_SingleParagraphMode(method) : value : Bool -> Bool
+
+	get_FontDesc(method) : Void -> Pango.FontDescription
+
+	set_FontDesc(method) : value : Pango.FontDescription -> Pango.FontDescription
+
+	get_Rise(method) : Void -> Int
+
+	set_Rise(method) : value : Int -> Int
+
+	get_WidthChars(method) : Void -> Int
+
+	set_WidthChars(method) : value : Int -> Int
+
+	get_Editable(method) : Void -> Bool
+
+	set_Editable(method) : value : Bool -> Bool
+
+	get_Stretch(method) : Void -> Pango.Stretch
+
+	set_Stretch(method) : value : Pango.Stretch -> Pango.Stretch
+
+	get_BackgroundGdk(method) : Void -> Gdk.Color
+
+	set_BackgroundGdk(method) : value : Gdk.Color -> Gdk.Color
+
+	get_Scale(method) : Void -> Float
+
+	set_Scale(method) : value : Float -> Float
+
+	get_SizePoints(method) : Void -> Float
+
+	set_SizePoints(method) : value : Float -> Float
+
+	get_Underline(method) : Void -> Pango.Underline
+
+	set_Underline(method) : value : Pango.Underline -> Pango.Underline
+
+	get_WrapWidth(method) : Void -> Int
+
+	set_WrapWidth(method) : value : Int -> Int
+
+	get_Style(method) : Void -> Pango.Style
+
+	set_Style(method) : value : Pango.Style -> Pango.Style
+
+	get_Strikethrough(method) : Void -> Bool
+
+	set_Strikethrough(method) : value : Bool -> Bool
+
+	get_Weight(method) : Void -> Int
+
+	set_Weight(method) : value : Int -> Int
+
+	get_Size(method) : Void -> Int
+
+	set_Size(method) : value : Int -> Int
+
+	set_Markup(method) : value : String -> String
+
+	get_Family(method) : Void -> String
+
+	set_Family(method) : value : String -> String
+
+	get_Attributes(method) : Void -> Pango.AttrList
+
+	set_Attributes(method) : value : Pango.AttrList -> Pango.AttrList
+
+	set_Foreground(method) : value : String -> String
+
+	set_Background(method) : value : String -> String
+
+	get_Ellipsize(method) : Void -> Pango.EllipsizeMode
+
+	set_Ellipsize(method) : value : Pango.EllipsizeMode -> Pango.EllipsizeMode
+
+	get_WrapMode(method) : Void -> Pango.WrapMode
+
+	set_WrapMode(method) : value : Pango.WrapMode -> Pango.WrapMode
+
+	get_Alignment(method) : Void -> Pango.Alignment
+
+	set_Alignment(method) : value : Pango.Alignment -> Pango.Alignment
+
+	get_Text(method) : Void -> String
+
+	set_Text(method) : value : String -> String
+
+	get_Variant(method) : Void -> Pango.Variant
+
+	set_Variant(method) : value : Pango.Variant -> Pango.Variant
+
+	get_ForegroundGdk(method) : Void -> Gdk.Color
+
+	set_ForegroundGdk(method) : value : Gdk.Color -> Gdk.Color
+
+	OnEdited(method) : path : String -> new_text : String -> Void
+
+	public add_Edited(method) : value : gtk.EditedHandler -> Void
+
+	public remove_Edited(method) : value : gtk.EditedHandler -> Void
+
+	set_FixedHeightFromFont(method) : value : Int -> Int
+
+	public GetSize(method) : widget : Gtk.Widget -> cell_area : cs.Ref<Gdk.Rectangle> -> x_offset : cs.Out<Int> -> y_offset : cs.Out<Int> -> width : cs.Out<Int> -> height : cs.Out<Int> -> Void
+
+	Render(method) : window : Gdk.Drawable -> widget : Gtk.Widget -> background_area : Gdk.Rectangle -> cell_area : Gdk.Rectangle -> expose_area : Gdk.Rectangle -> flags : Gtk.CellRendererState -> Void
+
+	public StartEditing(method) : evnt : Gdk.Event -> widget : Gtk.Widget -> path : String -> background_area : Gdk.Rectangle -> cell_area : Gdk.Rectangle -> flags : Gtk.CellRendererState -> Gtk.CellEditable
+
+	static public GType((get,never)) : GLib.GType
+
+	static get_GType(method) : Void -> GLib.GType
+
+}

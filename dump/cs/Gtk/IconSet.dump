@@ -1,0 +1,32 @@
+extern class Gtk.IconSet extends GLib.Opaque{
+	public new(method) : raw : System.IntPtr -> Void
+
+	public new(method) : pixbuf : Gdk.Pixbuf -> Void
+
+	public new(method) : Void -> Void
+
+	public Sizes((get,never)) : cs.NativeArray<Gtk.IconSize>
+
+	public Copy(method) : Void -> Gtk.IconSet
+
+	public AddSource(method) : source : Gtk.IconSource -> Void
+
+	public RenderIcon(method) : style : Gtk.Style -> direction : Gtk.TextDirection -> state : Gtk.StateType -> size : Gtk.IconSize -> widget : Gtk.Widget -> detail : String -> Gdk.Pixbuf
+
+	Ref(method) : raw : System.IntPtr -> Void
+
+	public Ref(method) : Void -> Gtk.IconSet
+
+	Unref(method) : raw : System.IntPtr -> Void
+
+	public Unref(method) : Void -> Void
+
+	Finalize(method) : Void -> Void
+
+	get_Sizes(method) : Void -> cs.NativeArray<Gtk.IconSize>
+
+	static public GType((get,never)) : GLib.GType
+
+	static get_GType(method) : Void -> GLib.GType
+
+}

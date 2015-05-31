@@ -1,0 +1,2 @@
+extern class System.Collections.Hashtable.Slot extends System.ValueType{
+}

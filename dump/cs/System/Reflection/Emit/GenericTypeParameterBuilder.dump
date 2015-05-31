@@ -1,0 +1,174 @@
+extern class System.Reflection.Emit.GenericTypeParameterBuilder extends System.Type{
+	public DeclaringMethod((get,never)) : System.Reflection.MethodBase
+
+	public GenericParameterPosition((get,never)) : Int
+
+	public GenericParameterAttributes((get,never)) : System.Reflection.GenericParameterAttributes
+
+	public IsGenericTypeDefinition((get,never)) : Bool
+
+	public IsGenericType((get,never)) : Bool
+
+	public IsGenericParameter((get,never)) : Bool
+
+	public ContainsGenericParameters((get,never)) : Bool
+
+	public TypeHandle((get,never)) : System.RuntimeTypeHandle
+
+	public ReflectedType((get,never)) : System.Type
+
+	public DeclaringType((get,never)) : System.Type
+
+	public Module((get,never)) : System.Reflection.Module
+
+	public Namespace((get,never)) : String
+
+	public Name((get,never)) : String
+
+	public GUID((get,never)) : System.Guid
+
+	public FullName((get,never)) : String
+
+	public BaseType((get,never)) : System.Type
+
+	public AssemblyQualifiedName((get,never)) : String
+
+	public Assembly((get,never)) : System.Reflection.Assembly
+
+	public UnderlyingSystemType((get,never)) : System.Type
+
+	public SetBaseTypeConstraint(method) : baseTypeConstraint : System.Type -> Void
+
+	public SetInterfaceConstraints(method) : interfaceConstraints : cs.NativeArray<System.Type> -> Void
+
+	public SetGenericParameterAttributes(method) : genericParameterAttributes : System.Reflection.GenericParameterAttributes -> Void
+
+	public IsSubclassOf(method) : c : System.Type -> Bool
+
+	GetAttributeFlagsImpl(method) : Void -> System.Reflection.TypeAttributes
+
+	GetConstructorImpl(method) : bindingAttr : System.Reflection.BindingFlags -> binder : System.Reflection.Binder -> callConvention : System.Reflection.CallingConventions -> types : cs.NativeArray<System.Type> -> modifiers : cs.NativeArray<System.Reflection.ParameterModifier> -> System.Reflection.ConstructorInfo
+
+	public GetConstructors(method) : bindingAttr : System.Reflection.BindingFlags -> cs.NativeArray<System.Reflection.ConstructorInfo>
+
+	public GetEvent(method) : name : String -> bindingAttr : System.Reflection.BindingFlags -> System.Reflection.EventInfo
+
+	public GetEvents(method) : Void -> cs.NativeArray<System.Reflection.EventInfo>
+
+	public GetEvents(method) : bindingAttr : System.Reflection.BindingFlags -> cs.NativeArray<System.Reflection.EventInfo>
+
+	public GetField(method) : name : String -> bindingAttr : System.Reflection.BindingFlags -> System.Reflection.FieldInfo
+
+	public GetFields(method) : bindingAttr : System.Reflection.BindingFlags -> cs.NativeArray<System.Reflection.FieldInfo>
+
+	public GetInterface(method) : name : String -> ignoreCase : Bool -> System.Type
+
+	public GetInterfaces(method) : Void -> cs.NativeArray<System.Type>
+
+	public GetMembers(method) : bindingAttr : System.Reflection.BindingFlags -> cs.NativeArray<System.Reflection.MemberInfo>
+
+	public GetMember(method) : name : String -> type : System.Reflection.MemberTypes -> bindingAttr : System.Reflection.BindingFlags -> cs.NativeArray<System.Reflection.MemberInfo>
+
+	public GetMethods(method) : bindingAttr : System.Reflection.BindingFlags -> cs.NativeArray<System.Reflection.MethodInfo>
+
+	GetMethodImpl(method) : name : String -> bindingAttr : System.Reflection.BindingFlags -> binder : System.Reflection.Binder -> callConvention : System.Reflection.CallingConventions -> types : cs.NativeArray<System.Type> -> modifiers : cs.NativeArray<System.Reflection.ParameterModifier> -> System.Reflection.MethodInfo
+
+	public GetNestedType(method) : name : String -> bindingAttr : System.Reflection.BindingFlags -> System.Type
+
+	public GetNestedTypes(method) : bindingAttr : System.Reflection.BindingFlags -> cs.NativeArray<System.Type>
+
+	public GetProperties(method) : bindingAttr : System.Reflection.BindingFlags -> cs.NativeArray<System.Reflection.PropertyInfo>
+
+	GetPropertyImpl(method) : name : String -> bindingAttr : System.Reflection.BindingFlags -> binder : System.Reflection.Binder -> returnType : System.Type -> types : cs.NativeArray<System.Type> -> modifiers : cs.NativeArray<System.Reflection.ParameterModifier> -> System.Reflection.PropertyInfo
+
+	HasElementTypeImpl(method) : Void -> Bool
+
+	public IsAssignableFrom(method) : c : System.Type -> Bool
+
+	public IsInstanceOfType(method) : o : Dynamic -> Bool
+
+	IsArrayImpl(method) : Void -> Bool
+
+	IsByRefImpl(method) : Void -> Bool
+
+	IsCOMObjectImpl(method) : Void -> Bool
+
+	IsPointerImpl(method) : Void -> Bool
+
+	IsPrimitiveImpl(method) : Void -> Bool
+
+	IsValueTypeImpl(method) : Void -> Bool
+
+	public InvokeMember(method) : name : String -> invokeAttr : System.Reflection.BindingFlags -> binder : System.Reflection.Binder -> target : Dynamic -> args : cs.NativeArray<Dynamic> -> modifiers : cs.NativeArray<System.Reflection.ParameterModifier> -> culture : System.Globalization.CultureInfo -> namedParameters : cs.NativeArray<String> -> Dynamic
+
+	public GetElementType(method) : Void -> System.Type
+
+	get_UnderlyingSystemType(method) : Void -> System.Type
+
+	get_Assembly(method) : Void -> System.Reflection.Assembly
+
+	get_AssemblyQualifiedName(method) : Void -> String
+
+	get_BaseType(method) : Void -> System.Type
+
+	get_FullName(method) : Void -> String
+
+	get_GUID(method) : Void -> System.Guid
+
+	public IsDefined(method) : attributeType : System.Type -> inherit : Bool -> Bool
+
+	public GetCustomAttributes(method) : inherit : Bool -> cs.NativeArray<Dynamic>
+
+	public GetCustomAttributes(method) : attributeType : System.Type -> inherit : Bool -> cs.NativeArray<Dynamic>
+
+	public GetInterfaceMap(method) : interfaceType : System.Type -> System.Reflection.InterfaceMapping
+
+	get_Name(method) : Void -> String
+
+	get_Namespace(method) : Void -> String
+
+	get_Module(method) : Void -> System.Reflection.Module
+
+	get_DeclaringType(method) : Void -> System.Type
+
+	get_ReflectedType(method) : Void -> System.Type
+
+	get_TypeHandle(method) : Void -> System.RuntimeTypeHandle
+
+	public GetGenericArguments(method) : Void -> cs.NativeArray<System.Type>
+
+	public GetGenericTypeDefinition(method) : Void -> System.Type
+
+	get_ContainsGenericParameters(method) : Void -> Bool
+
+	get_IsGenericParameter(method) : Void -> Bool
+
+	get_IsGenericType(method) : Void -> Bool
+
+	get_IsGenericTypeDefinition(method) : Void -> Bool
+
+	get_GenericParameterAttributes(method) : Void -> System.Reflection.GenericParameterAttributes
+
+	get_GenericParameterPosition(method) : Void -> Int
+
+	public GetGenericParameterConstraints(method) : Void -> cs.NativeArray<System.Type>
+
+	get_DeclaringMethod(method) : Void -> System.Reflection.MethodBase
+
+	public SetCustomAttribute(method) : customBuilder : System.Reflection.Emit.CustomAttributeBuilder -> Void
+
+	public SetCustomAttribute(method) : con : System.Reflection.ConstructorInfo -> binaryAttribute : cs.NativeArray<cs.types.UInt8> -> Void
+
+	public ToString(method) : Void -> String
+
+	public MakeArrayType(method) : Void -> System.Type
+
+	public MakeArrayType(method) : rank : Int -> System.Type
+
+	public MakeByRefType(method) : Void -> System.Type
+
+	public MakeGenericType(method) : typeArguments : cs.NativeArray<System.Type> -> System.Type
+
+	public MakePointerType(method) : Void -> System.Type
+
+}

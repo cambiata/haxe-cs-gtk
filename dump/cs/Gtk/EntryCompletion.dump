@@ -1,0 +1,134 @@
+extern class Gtk.EntryCompletion extends GLib.Object implements Gtk.CellLayout implements GLib.IWrapper{
+	new(method) : gtype : GLib.GType -> Void
+
+	public new(method) : Void -> Void
+
+	public new(method) : raw : System.IntPtr -> Void
+
+	CursorOnMatch(var) : gtk.CursorOnMatchHandler
+
+	ActionActivated(var) : gtk.ActionActivatedHandler
+
+	MatchSelected(var) : gtk.MatchSelectedHandler
+
+	PrefixInserted(var) : gtk.PrefixInsertedHandler
+
+	public Cells((get,never)) : cs.NativeArray<Gtk.CellRenderer>
+
+	public Entry((get,never)) : Gtk.Widget
+
+	public CompletionPrefix((get,never)) : String
+
+	public MatchFunc((never,set)) : gtk.EntryCompletionMatchFunc
+
+	public Model((get,set)) : Gtk.TreeModel
+
+	public InlineCompletion((get,set)) : Bool
+
+	public InlineSelection((get,set)) : Bool
+
+	public PopupSetWidth((get,set)) : Bool
+
+	public MinimumKeyLength((get,set)) : Int
+
+	public TextColumn((get,set)) : Int
+
+	public PopupCompletion((get,set)) : Bool
+
+	public PopupSingleMatch((get,set)) : Bool
+
+	get_PopupSingleMatch(method) : Void -> Bool
+
+	set_PopupSingleMatch(method) : value : Bool -> Bool
+
+	get_PopupCompletion(method) : Void -> Bool
+
+	set_PopupCompletion(method) : value : Bool -> Bool
+
+	get_TextColumn(method) : Void -> Int
+
+	set_TextColumn(method) : value : Int -> Int
+
+	get_MinimumKeyLength(method) : Void -> Int
+
+	set_MinimumKeyLength(method) : value : Int -> Int
+
+	get_PopupSetWidth(method) : Void -> Bool
+
+	set_PopupSetWidth(method) : value : Bool -> Bool
+
+	get_InlineSelection(method) : Void -> Bool
+
+	set_InlineSelection(method) : value : Bool -> Bool
+
+	get_InlineCompletion(method) : Void -> Bool
+
+	set_InlineCompletion(method) : value : Bool -> Bool
+
+	get_Model(method) : Void -> Gtk.TreeModel
+
+	set_Model(method) : value : Gtk.TreeModel -> Gtk.TreeModel
+
+	OnPrefixInserted(method) : prefix : String -> Bool
+
+	public add_PrefixInserted(method) : value : gtk.PrefixInsertedHandler -> Void
+
+	public remove_PrefixInserted(method) : value : gtk.PrefixInsertedHandler -> Void
+
+	OnMatchSelected(method) : model : Gtk.TreeModel -> iter : Gtk.TreeIter -> Bool
+
+	public add_MatchSelected(method) : value : gtk.MatchSelectedHandler -> Void
+
+	public remove_MatchSelected(method) : value : gtk.MatchSelectedHandler -> Void
+
+	OnActionActivated(method) : index_ : Int -> Void
+
+	public add_ActionActivated(method) : value : gtk.ActionActivatedHandler -> Void
+
+	public remove_ActionActivated(method) : value : gtk.ActionActivatedHandler -> Void
+
+	OnCursorOnMatch(method) : model : Gtk.TreeModel -> iter : Gtk.TreeIter -> Bool
+
+	public add_CursorOnMatch(method) : value : gtk.CursorOnMatchHandler -> Void
+
+	public remove_CursorOnMatch(method) : value : gtk.CursorOnMatchHandler -> Void
+
+	public InsertActionMarkup(method) : index_ : Int -> markup : String -> Void
+
+	public DeleteAction(method) : index_ : Int -> Void
+
+	set_MatchFunc(method) : value : gtk.EntryCompletionMatchFunc -> gtk.EntryCompletionMatchFunc
+
+	get_CompletionPrefix(method) : Void -> String
+
+	public Complete(method) : Void -> Void
+
+	get_Entry(method) : Void -> Gtk.Widget
+
+	public InsertPrefix(method) : Void -> Void
+
+	public InsertActionText(method) : index_ : Int -> text : String -> Void
+
+	public PackEnd(method) : cell : Gtk.CellRenderer -> expand : Bool -> Void
+
+	public ClearAttributes(method) : cell : Gtk.CellRenderer -> Void
+
+	public Reorder(method) : cell : Gtk.CellRenderer -> position : Int -> Void
+
+	public PackStart(method) : cell : Gtk.CellRenderer -> expand : Bool -> Void
+
+	public SetCellDataFunc(method) : cell : Gtk.CellRenderer -> func : gtk.CellLayoutDataFunc -> Void
+
+	get_Cells(method) : Void -> cs.NativeArray<Gtk.CellRenderer>
+
+	public Clear(method) : Void -> Void
+
+	public AddAttribute(method) : cell : Gtk.CellRenderer -> attribute : String -> column : Int -> Void
+
+	public SetAttributes(method) : cell : Gtk.CellRenderer -> attrs : cs.NativeArray<Dynamic> -> Void
+
+	static public GType((get,never)) : GLib.GType
+
+	static get_GType(method) : Void -> GLib.GType
+
+}

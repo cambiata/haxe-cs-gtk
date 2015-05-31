@@ -1,0 +1,8 @@
+extern enum System.Reflection.Emit.OpCodeType {
+	Annotation : System.Reflection.Emit.OpCodeType;
+	Macro : System.Reflection.Emit.OpCodeType;
+	Nternal : System.Reflection.Emit.OpCodeType;
+	Objmodel : System.Reflection.Emit.OpCodeType;
+	Prefix : System.Reflection.Emit.OpCodeType;
+	Primitive : System.Reflection.Emit.OpCodeType;
+}

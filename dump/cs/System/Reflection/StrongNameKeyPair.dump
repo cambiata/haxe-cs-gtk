@@ -1,0 +1,14 @@
+extern class System.Reflection.StrongNameKeyPair implements System.Runtime.Serialization.IDeserializationCallback implements System.Runtime.Serialization.ISerializable{
+	public new(method) : keyPairArray : cs.NativeArray<cs.types.UInt8> -> Void
+
+	new(method) : info : System.Runtime.Serialization.SerializationInfo -> context : System.Runtime.Serialization.StreamingContext -> Void
+
+	public new(method) : keyPairContainer : String -> Void
+
+	public new(method) : keyPairFile : System.IO.FileStream -> Void
+
+	public PublicKey((get,never)) : cs.NativeArray<cs.types.UInt8>
+
+	get_PublicKey(method) : Void -> cs.NativeArray<cs.types.UInt8>
+
+}

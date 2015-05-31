@@ -1,0 +1,4 @@
+extern interface System.Collections.IComparer{
+	public Compare(method) : x : Dynamic -> y : Dynamic -> Int
+
+}

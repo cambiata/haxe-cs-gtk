@@ -1,0 +1,8 @@
+extern class System.Runtime.Remoting.ObjectHandle extends System.MarshalByRefObject implements System.Runtime.Remoting.IObjectHandle{
+	public new(method) : o : Dynamic -> Void
+
+	public InitializeLifetimeService(method) : Void -> Dynamic
+
+	public Unwrap(method) : Void -> Dynamic
+
+}

@@ -1,0 +1,8 @@
+extern class Gtk.KeyReleaseEventArgs extends GLib.SignalArgs{
+	public new(method) : Void -> Void
+
+	public Event((get,never)) : Gdk.EventKey
+
+	get_Event(method) : Void -> Gdk.EventKey
+
+}

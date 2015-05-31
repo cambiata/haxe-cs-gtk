@@ -1,0 +1,11 @@
+extern enum System.Globalization.CompareOptions {
+	None : System.Globalization.CompareOptions;
+	IgnoreCase : System.Globalization.CompareOptions;
+	IgnoreNonSpace : System.Globalization.CompareOptions;
+	IgnoreSymbols : System.Globalization.CompareOptions;
+	IgnoreKanaType : System.Globalization.CompareOptions;
+	IgnoreWidth : System.Globalization.CompareOptions;
+	OrdinalIgnoreCase : System.Globalization.CompareOptions;
+	StringSort : System.Globalization.CompareOptions;
+	Ordinal : System.Globalization.CompareOptions;
+}

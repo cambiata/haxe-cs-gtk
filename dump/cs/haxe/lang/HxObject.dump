@@ -1,0 +1,2 @@
+class haxe.lang.HxObject implements haxe.lang.IHxObject{
+}

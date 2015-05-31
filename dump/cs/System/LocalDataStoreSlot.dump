@@ -1,0 +1,4 @@
+extern class System.LocalDataStoreSlot{
+	Finalize(method) : Void -> Void
+
+}

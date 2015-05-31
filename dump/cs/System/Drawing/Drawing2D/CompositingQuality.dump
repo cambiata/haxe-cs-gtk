@@ -1,0 +1,8 @@
+extern enum System.Drawing.Drawing2D.CompositingQuality {
+	Invalid : System.Drawing.Drawing2D.CompositingQuality;
+	Default : System.Drawing.Drawing2D.CompositingQuality;
+	HighSpeed : System.Drawing.Drawing2D.CompositingQuality;
+	HighQuality : System.Drawing.Drawing2D.CompositingQuality;
+	GammaCorrected : System.Drawing.Drawing2D.CompositingQuality;
+	AssumeLinear : System.Drawing.Drawing2D.CompositingQuality;
+}

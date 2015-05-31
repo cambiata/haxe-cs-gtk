@@ -1,0 +1,16 @@
+extern class System.Collections.ArrayList.ReadOnlyListWrapper extends System.Collections.ArrayList.FixedSizeListWrapper implements ArrayAccess<Dynamic>{
+	public new(method) : innerList : System.Collections.IList -> Void
+
+	public IsReadOnly((get,never)) : Bool
+
+	ErrorMessage((null,never)) : String
+
+	get_ErrorMessage(method) : Void -> String
+
+	get_IsReadOnly(method) : Void -> Bool
+
+	get_Item(method) : index : Int -> Dynamic
+
+	set_Item(method) : index : Int -> value : Dynamic -> Void
+
+}

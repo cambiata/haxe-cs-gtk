@@ -1,0 +1,14 @@
+extern class Gdk.Screen.SizeChangedVMDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : screen : System.IntPtr -> Void
+
+	public BeginInvoke(method) : screen : System.IntPtr -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Void
+
+	static public op_Addition(method) : arg1 : gdk.Screen_SizeChangedVMDelegate -> arg2 : gdk.Screen_SizeChangedVMDelegate -> gdk.Screen_SizeChangedVMDelegate
+
+	static public op_Subtraction(method) : arg1 : gdk.Screen_SizeChangedVMDelegate -> arg2 : gdk.Screen_SizeChangedVMDelegate -> gdk.Screen_SizeChangedVMDelegate
+
+}

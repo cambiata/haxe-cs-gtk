@@ -1,0 +1,8 @@
+extern interface System.Security.Policy.IBuiltInEvidence{
+	public GetRequiredSize(method) : verbose : Bool -> Int
+
+	public InitFromBuffer(method) : buffer : cs.NativeArray<cs.types.Char16> -> position : Int -> Int
+
+	public OutputToBuffer(method) : buffer : cs.NativeArray<cs.types.Char16> -> position : Int -> verbose : Bool -> Int
+
+}

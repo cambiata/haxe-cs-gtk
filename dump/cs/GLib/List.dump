@@ -1,0 +1,16 @@
+extern class GLib.List extends GLib.ListBase{
+	public new(method) : raw : System.IntPtr -> Void
+
+	public new(method) : elements : System.Array -> element_type : System.Type -> owned : Bool -> elements_owned : Bool -> Void
+
+	public new(method) : elements : cs.NativeArray<Dynamic> -> element_type : System.Type -> owned : Bool -> elements_owned : Bool -> Void
+
+	public new(method) : raw : System.IntPtr -> element_type : System.Type -> owned : Bool -> elements_owned : Bool -> Void
+
+	public new(method) : raw : System.IntPtr -> element_type : System.Type -> Void
+
+	public new(method) : element_type : System.Type -> Void
+
+	public Clone(method) : Void -> Dynamic
+
+}

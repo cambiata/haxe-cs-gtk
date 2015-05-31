@@ -1,0 +1,20 @@
+extern class System.MulticastDelegate extends System.Delegate{
+	new(method) : target : Dynamic -> method : String -> Void
+
+	new(method) : target : System.Type -> method : String -> Void
+
+	public GetObjectData(method) : info : System.Runtime.Serialization.SerializationInfo -> context : System.Runtime.Serialization.StreamingContext -> Void
+
+	DynamicInvokeImpl(method) : args : cs.NativeArray<Dynamic> -> Dynamic
+
+	public GetInvocationList(method) : Void -> cs.NativeArray<System.Delegate>
+
+	CombineImpl(method) : follow : System.Delegate -> System.Delegate
+
+	RemoveImpl(method) : value : System.Delegate -> System.Delegate
+
+	static public op_Equality(method) : d1 : System.MulticastDelegate -> d2 : System.MulticastDelegate -> Bool
+
+	static public op_Inequality(method) : d1 : System.MulticastDelegate -> d2 : System.MulticastDelegate -> Bool
+
+}

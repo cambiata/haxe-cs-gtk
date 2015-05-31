@@ -1,0 +1,14 @@
+extern class Gtk.TreeViewColumn.ClickedVMDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : tree_column : System.IntPtr -> Void
+
+	public BeginInvoke(method) : tree_column : System.IntPtr -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Void
+
+	static public op_Addition(method) : arg1 : gtk.TreeViewColumn_ClickedVMDelegate -> arg2 : gtk.TreeViewColumn_ClickedVMDelegate -> gtk.TreeViewColumn_ClickedVMDelegate
+
+	static public op_Subtraction(method) : arg1 : gtk.TreeViewColumn_ClickedVMDelegate -> arg2 : gtk.TreeViewColumn_ClickedVMDelegate -> gtk.TreeViewColumn_ClickedVMDelegate
+
+}

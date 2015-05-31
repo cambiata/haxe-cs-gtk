@@ -1,0 +1,214 @@
+extern class System.DateTime extends System.ValueType implements System.IComparable implements System.IConvertible implements System.IFormattable implements System.IComparable`1<System.DateTime> implements System.IEquatable`1<System.DateTime> implements System.Runtime.Serialization.ISerializable{
+	public new(method) : ticks : haxe.Int64 -> Void
+
+	public new(method) : year : Int -> month : Int -> day : Int -> hour : Int -> minute : Int -> second : Int -> millisecond : Int -> calendar : System.Globalization.Calendar -> kind : System.DateTimeKind -> Void
+
+	public new(method) : year : Int -> month : Int -> day : Int -> hour : Int -> minute : Int -> second : Int -> millisecond : Int -> kind : System.DateTimeKind -> Void
+
+	public new(method) : year : Int -> month : Int -> day : Int -> hour : Int -> minute : Int -> second : Int -> kind : System.DateTimeKind -> Void
+
+	public new(method) : ticks : haxe.Int64 -> kind : System.DateTimeKind -> Void
+
+	public new(method) : year : Int -> month : Int -> day : Int -> hour : Int -> minute : Int -> second : Int -> millisecond : Int -> calendar : System.Globalization.Calendar -> Void
+
+	public new(method) : year : Int -> month : Int -> day : Int -> hour : Int -> minute : Int -> second : Int -> calendar : System.Globalization.Calendar -> Void
+
+	public new(method) : year : Int -> month : Int -> day : Int -> calendar : System.Globalization.Calendar -> Void
+
+	public new(method) : year : Int -> month : Int -> day : Int -> hour : Int -> minute : Int -> second : Int -> millisecond : Int -> Void
+
+	public new(method) : year : Int -> month : Int -> day : Int -> hour : Int -> minute : Int -> second : Int -> Void
+
+	public new(method) : year : Int -> month : Int -> day : Int -> Void
+
+	public Kind((get,never)) : System.DateTimeKind
+
+	public Year((get,never)) : Int
+
+	public Ticks((get,never)) : haxe.Int64
+
+	public Millisecond((get,never)) : Int
+
+	public Second((get,never)) : Int
+
+	public Minute((get,never)) : Int
+
+	public Hour((get,never)) : Int
+
+	public TimeOfDay((get,never)) : System.TimeSpan
+
+	public DayOfYear((get,never)) : Int
+
+	public DayOfWeek((get,never)) : System.DayOfWeek
+
+	public Day((get,never)) : Int
+
+	public Month((get,never)) : Int
+
+	public Date((get,never)) : System.DateTime
+
+	get_Date(method) : Void -> System.DateTime
+
+	get_Month(method) : Void -> Int
+
+	get_Day(method) : Void -> Int
+
+	get_DayOfWeek(method) : Void -> System.DayOfWeek
+
+	get_DayOfYear(method) : Void -> Int
+
+	get_TimeOfDay(method) : Void -> System.TimeSpan
+
+	get_Hour(method) : Void -> Int
+
+	get_Minute(method) : Void -> Int
+
+	get_Second(method) : Void -> Int
+
+	get_Millisecond(method) : Void -> Int
+
+	get_Ticks(method) : Void -> haxe.Int64
+
+	get_Year(method) : Void -> Int
+
+	get_Kind(method) : Void -> System.DateTimeKind
+
+	public Add(method) : value : System.TimeSpan -> System.DateTime
+
+	public AddDays(method) : value : Float -> System.DateTime
+
+	public AddTicks(method) : value : haxe.Int64 -> System.DateTime
+
+	public AddHours(method) : value : Float -> System.DateTime
+
+	public AddMilliseconds(method) : value : Float -> System.DateTime
+
+	public AddMinutes(method) : value : Float -> System.DateTime
+
+	public AddMonths(method) : months : Int -> System.DateTime
+
+	public AddSeconds(method) : value : Float -> System.DateTime
+
+	public AddYears(method) : value : Int -> System.DateTime
+
+	public CompareTo(method) : value : Dynamic -> Int
+
+	public CompareTo(method) : value : System.DateTime -> Int
+
+	public IsDaylightSavingTime(method) : Void -> Bool
+
+	public ToBinary(method) : Void -> haxe.Int64
+
+	public GetDateTimeFormats(method) : Void -> cs.NativeArray<String>
+
+	public GetDateTimeFormats(method) : format : cs.types.Char16 -> provider : System.IFormatProvider -> cs.NativeArray<String>
+
+	public GetDateTimeFormats(method) : provider : System.IFormatProvider -> cs.NativeArray<String>
+
+	public GetDateTimeFormats(method) : format : cs.types.Char16 -> cs.NativeArray<String>
+
+	public GetTypeCode(method) : Void -> System.TypeCode
+
+	public Subtract(method) : value : System.DateTime -> System.TimeSpan
+
+	public Subtract(method) : value : System.TimeSpan -> System.DateTime
+
+	public ToFileTime(method) : Void -> haxe.Int64
+
+	public ToFileTimeUtc(method) : Void -> haxe.Int64
+
+	public ToLongDateString(method) : Void -> String
+
+	public ToLongTimeString(method) : Void -> String
+
+	public ToOADate(method) : Void -> Float
+
+	public ToShortDateString(method) : Void -> String
+
+	public ToShortTimeString(method) : Void -> String
+
+	public ToString(method) : Void -> String
+
+	public ToString(method) : format : String -> provider : System.IFormatProvider -> String
+
+	public ToString(method) : format : String -> String
+
+	public ToString(method) : provider : System.IFormatProvider -> String
+
+	public ToLocalTime(method) : Void -> System.DateTime
+
+	public ToUniversalTime(method) : Void -> System.DateTime
+
+	static public UtcNow((get,never)) : System.DateTime
+
+	static public Today((get,never)) : System.DateTime
+
+	static public Now((get,never)) : System.DateTime
+
+	static public MinValue((default,never)) : System.DateTime
+
+	static public MaxValue((default,never)) : System.DateTime
+
+	static get_Now(method) : Void -> System.DateTime
+
+	static get_Today(method) : Void -> System.DateTime
+
+	static get_UtcNow(method) : Void -> System.DateTime
+
+	static public Compare(method) : t1 : System.DateTime -> t2 : System.DateTime -> Int
+
+	static public FromBinary(method) : dateData : haxe.Int64 -> System.DateTime
+
+	static public SpecifyKind(method) : value : System.DateTime -> kind : System.DateTimeKind -> System.DateTime
+
+	static public DaysInMonth(method) : year : Int -> month : Int -> Int
+
+	static public Equals(method) : t1 : System.DateTime -> t2 : System.DateTime -> Bool
+
+	static public FromFileTime(method) : fileTime : haxe.Int64 -> System.DateTime
+
+	static public FromFileTimeUtc(method) : fileTime : haxe.Int64 -> System.DateTime
+
+	static public FromOADate(method) : d : Float -> System.DateTime
+
+	static public IsLeapYear(method) : year : Int -> Bool
+
+	static public Parse(method) : s : String -> System.DateTime
+
+	static public Parse(method) : s : String -> provider : System.IFormatProvider -> styles : System.Globalization.DateTimeStyles -> System.DateTime
+
+	static public Parse(method) : s : String -> provider : System.IFormatProvider -> System.DateTime
+
+	static public ParseExact(method) : s : String -> format : String -> provider : System.IFormatProvider -> System.DateTime
+
+	static public ParseExact(method) : s : String -> formats : cs.NativeArray<String> -> provider : System.IFormatProvider -> style : System.Globalization.DateTimeStyles -> System.DateTime
+
+	static public ParseExact(method) : s : String -> format : String -> provider : System.IFormatProvider -> style : System.Globalization.DateTimeStyles -> System.DateTime
+
+	static public TryParse(method) : s : String -> result : cs.Out<System.DateTime> -> Bool
+
+	static public TryParse(method) : s : String -> provider : System.IFormatProvider -> styles : System.Globalization.DateTimeStyles -> result : cs.Out<System.DateTime> -> Bool
+
+	static public TryParseExact(method) : s : String -> format : String -> provider : System.IFormatProvider -> style : System.Globalization.DateTimeStyles -> result : cs.Out<System.DateTime> -> Bool
+
+	static public TryParseExact(method) : s : String -> formats : cs.NativeArray<String> -> provider : System.IFormatProvider -> style : System.Globalization.DateTimeStyles -> result : cs.Out<System.DateTime> -> Bool
+
+	static public op_Addition(method) : d : System.DateTime -> t : System.TimeSpan -> System.DateTime
+
+	static public op_Equality(method) : d1 : System.DateTime -> d2 : System.DateTime -> Bool
+
+	static public op_GreaterThan(method) : t1 : System.DateTime -> t2 : System.DateTime -> Bool
+
+	static public op_GreaterThanOrEqual(method) : t1 : System.DateTime -> t2 : System.DateTime -> Bool
+
+	static public op_Inequality(method) : d1 : System.DateTime -> d2 : System.DateTime -> Bool
+
+	static public op_LessThan(method) : t1 : System.DateTime -> t2 : System.DateTime -> Bool
+
+	static public op_LessThanOrEqual(method) : t1 : System.DateTime -> t2 : System.DateTime -> Bool
+
+	static public op_Subtraction(method) : d1 : System.DateTime -> d2 : System.DateTime -> System.TimeSpan
+
+	static public op_Subtraction(method) : d : System.DateTime -> t : System.TimeSpan -> System.DateTime
+
+}

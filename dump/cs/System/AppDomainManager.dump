@@ -1,0 +1,34 @@
+extern class System.AppDomainManager extends System.MarshalByRefObject{
+	public new(method) : Void -> Void
+
+	public InitializationFlags((get,set)) : System.AppDomainManagerInitializationOptions
+
+	public HostSecurityManager((get,never)) : System.Security.HostSecurityManager
+
+	public HostExecutionContextManager((get,never)) : System.Threading.HostExecutionContextManager
+
+	public EntryAssembly((get,never)) : System.Reflection.Assembly
+
+	public ApplicationActivator((get,never)) : System.Runtime.Hosting.ApplicationActivator
+
+	get_ApplicationActivator(method) : Void -> System.Runtime.Hosting.ApplicationActivator
+
+	get_EntryAssembly(method) : Void -> System.Reflection.Assembly
+
+	get_HostExecutionContextManager(method) : Void -> System.Threading.HostExecutionContextManager
+
+	get_HostSecurityManager(method) : Void -> System.Security.HostSecurityManager
+
+	get_InitializationFlags(method) : Void -> System.AppDomainManagerInitializationOptions
+
+	set_InitializationFlags(method) : value : System.AppDomainManagerInitializationOptions -> System.AppDomainManagerInitializationOptions
+
+	public CreateDomain(method) : friendlyName : String -> securityInfo : System.Security.Policy.Evidence -> appDomainInfo : System.AppDomainSetup -> System.AppDomain
+
+	public InitializeNewDomain(method) : appDomainInfo : System.AppDomainSetup -> Void
+
+	public CheckSecuritySettings(method) : state : System.Security.SecurityState -> Bool
+
+	static CreateDomainHelper(method) : friendlyName : String -> securityInfo : System.Security.Policy.Evidence -> appDomainInfo : System.AppDomainSetup -> System.AppDomain
+
+}

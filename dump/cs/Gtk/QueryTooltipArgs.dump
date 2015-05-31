@@ -1,0 +1,20 @@
+extern class Gtk.QueryTooltipArgs extends GLib.SignalArgs{
+	public new(method) : Void -> Void
+
+	public Tooltip((get,never)) : Gtk.Tooltip
+
+	public KeyboardTooltip((get,never)) : Bool
+
+	public Y((get,never)) : Int
+
+	public X((get,never)) : Int
+
+	get_X(method) : Void -> Int
+
+	get_Y(method) : Void -> Int
+
+	get_KeyboardTooltip(method) : Void -> Bool
+
+	get_Tooltip(method) : Void -> Gtk.Tooltip
+
+}

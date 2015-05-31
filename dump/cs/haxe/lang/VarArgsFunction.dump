@@ -1,0 +1,36 @@
+class haxe.lang.VarArgsFunction extends haxe.lang.VarArgsBase{
+	public new(method) : fun : (Array<Dynamic> -> Dynamic) -> Void
+
+	 = [Function:fun : (Array<Dynamic> -> Dynamic) -> Void]
+		[Arg:Array<Dynamic> -> Dynamic] [Local fun(1233):Array<Dynamic> -> Dynamic]
+		[Block:Array<Dynamic> -> Dynamic]
+			[Call:Void]
+				[Const super:haxe.lang.VarArgsBase]
+				[Const -1:Int]
+				[Const -1:Int]
+			[Binop:Array<Dynamic> -> Dynamic]
+				[Field:Array<Dynamic> -> Dynamic]
+					[Const this:haxe.lang.VarArgsFunction]
+					[FInstance:Array<Dynamic> -> Dynamic]
+						haxe.lang.VarArgsFunction
+						fun
+				=
+				[Local fun(1233):Array<Dynamic> -> Dynamic]
+
+	fun(var) : Array<Dynamic> -> Dynamic
+
+	public __hx_invokeDynamic(method) : dynArgs : Array<Dynamic> -> Dynamic
+
+	 = [Function:dynArgs : Array<Dynamic> -> Dynamic]
+		[Arg:Array<Dynamic>] [Local dynArgs(1234):Array<Dynamic>]
+		[Block:Dynamic]
+			[Return:Dynamic]
+				[Call:Dynamic]
+					[Field:Array<Dynamic> -> Dynamic]
+						[Const this:haxe.lang.VarArgsFunction]
+						[FInstance:Array<Dynamic> -> Dynamic]
+							haxe.lang.VarArgsFunction
+							fun
+					[Local dynArgs(1234):Array<Dynamic>]
+
+}

@@ -1,0 +1,16 @@
+extern interface System.Security.IPermission implements System.Security.ISecurityEncodable{
+	public ToXml(method) : Void -> System.Security.SecurityElement
+
+	public FromXml(method) : e : System.Security.SecurityElement -> Void
+
+	public Copy(method) : Void -> System.Security.IPermission
+
+	public Demand(method) : Void -> Void
+
+	public Intersect(method) : target : System.Security.IPermission -> System.Security.IPermission
+
+	public IsSubsetOf(method) : target : System.Security.IPermission -> Bool
+
+	public Union(method) : target : System.Security.IPermission -> System.Security.IPermission
+
+}

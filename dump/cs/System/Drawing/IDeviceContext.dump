@@ -1,0 +1,8 @@
+extern interface System.Drawing.IDeviceContext implements System.IDisposable{
+	public Dispose(method) : Void -> Void
+
+	public GetHdc(method) : Void -> System.IntPtr
+
+	public ReleaseHdc(method) : Void -> Void
+
+}

@@ -1,0 +1,6 @@
+extern enum Gtk.WrapMode {
+	None : Gtk.WrapMode;
+	Char : Gtk.WrapMode;
+	Word : Gtk.WrapMode;
+	WordChar : Gtk.WrapMode;
+}

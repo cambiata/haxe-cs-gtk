@@ -1,0 +1,14 @@
+extern class Atk.Object.FocusEventVMDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : accessible : System.IntPtr -> focus_in : Bool -> Void
+
+	public BeginInvoke(method) : accessible : System.IntPtr -> focus_in : Bool -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Void
+
+	static public op_Addition(method) : arg1 : atk.Object_FocusEventVMDelegate -> arg2 : atk.Object_FocusEventVMDelegate -> atk.Object_FocusEventVMDelegate
+
+	static public op_Subtraction(method) : arg1 : atk.Object_FocusEventVMDelegate -> arg2 : atk.Object_FocusEventVMDelegate -> atk.Object_FocusEventVMDelegate
+
+}

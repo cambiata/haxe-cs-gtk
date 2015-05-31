@@ -1,0 +1,4 @@
+extern enum System.ConsoleSpecialKey {
+	ControlC : System.ConsoleSpecialKey;
+	ControlBreak : System.ConsoleSpecialKey;
+}

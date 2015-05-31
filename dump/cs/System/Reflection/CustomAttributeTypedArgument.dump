@@ -1,0 +1,20 @@
+extern class System.Reflection.CustomAttributeTypedArgument extends System.ValueType{
+	public new(method) : argumentType : System.Type -> value : Dynamic -> Void
+
+	public new(method) : value : Dynamic -> Void
+
+	public Value((get,never)) : Dynamic
+
+	public ArgumentType((get,never)) : System.Type
+
+	get_ArgumentType(method) : Void -> System.Type
+
+	get_Value(method) : Void -> Dynamic
+
+	public ToString(method) : Void -> String
+
+	static public op_Equality(method) : left : System.Reflection.CustomAttributeTypedArgument -> right : System.Reflection.CustomAttributeTypedArgument -> Bool
+
+	static public op_Inequality(method) : left : System.Reflection.CustomAttributeTypedArgument -> right : System.Reflection.CustomAttributeTypedArgument -> Bool
+
+}

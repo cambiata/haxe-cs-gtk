@@ -1,0 +1,12 @@
+extern class System.Reflection.Emit.ParameterToken extends System.ValueType{
+	public Token((get,never)) : Int
+
+	get_Token(method) : Void -> Int
+
+	static public Empty((default,never)) : System.Reflection.Emit.ParameterToken
+
+	static public op_Equality(method) : a : System.Reflection.Emit.ParameterToken -> b : System.Reflection.Emit.ParameterToken -> Bool
+
+	static public op_Inequality(method) : a : System.Reflection.Emit.ParameterToken -> b : System.Reflection.Emit.ParameterToken -> Bool
+
+}

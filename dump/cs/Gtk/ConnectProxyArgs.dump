@@ -1,0 +1,12 @@
+extern class Gtk.ConnectProxyArgs extends GLib.SignalArgs{
+	public new(method) : Void -> Void
+
+	public Proxy((get,never)) : Gtk.Widget
+
+	public Action((get,never)) : Gtk.Action
+
+	get_Action(method) : Void -> Gtk.Action
+
+	get_Proxy(method) : Void -> Gtk.Widget
+
+}

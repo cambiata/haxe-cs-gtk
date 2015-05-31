@@ -1,0 +1,14 @@
+extern class Gtk.MenuShell.DeactivatedVMDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : menu_shell : System.IntPtr -> Void
+
+	public BeginInvoke(method) : menu_shell : System.IntPtr -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Void
+
+	static public op_Addition(method) : arg1 : gtk.MenuShell_DeactivatedVMDelegate -> arg2 : gtk.MenuShell_DeactivatedVMDelegate -> gtk.MenuShell_DeactivatedVMDelegate
+
+	static public op_Subtraction(method) : arg1 : gtk.MenuShell_DeactivatedVMDelegate -> arg2 : gtk.MenuShell_DeactivatedVMDelegate -> gtk.MenuShell_DeactivatedVMDelegate
+
+}

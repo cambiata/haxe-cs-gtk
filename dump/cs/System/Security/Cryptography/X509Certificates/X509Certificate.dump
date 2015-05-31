@@ -1,0 +1,102 @@
+extern class System.Security.Cryptography.X509Certificates.X509Certificate implements System.Runtime.Serialization.IDeserializationCallback implements System.Runtime.Serialization.ISerializable{
+	public new(method) : data : cs.NativeArray<cs.types.UInt8> -> Void
+
+	public new(method) : info : System.Runtime.Serialization.SerializationInfo -> context : System.Runtime.Serialization.StreamingContext -> Void
+
+	public new(method) : fileName : String -> password : System.Security.SecureString -> keyStorageFlags : System.Security.Cryptography.X509Certificates.X509KeyStorageFlags -> Void
+
+	public new(method) : fileName : String -> password : String -> keyStorageFlags : System.Security.Cryptography.X509Certificates.X509KeyStorageFlags -> Void
+
+	public new(method) : fileName : String -> password : System.Security.SecureString -> Void
+
+	public new(method) : fileName : String -> password : String -> Void
+
+	public new(method) : fileName : String -> Void
+
+	public new(method) : rawData : cs.NativeArray<cs.types.UInt8> -> password : System.Security.SecureString -> keyStorageFlags : System.Security.Cryptography.X509Certificates.X509KeyStorageFlags -> Void
+
+	public new(method) : rawData : cs.NativeArray<cs.types.UInt8> -> password : String -> keyStorageFlags : System.Security.Cryptography.X509Certificates.X509KeyStorageFlags -> Void
+
+	public new(method) : rawData : cs.NativeArray<cs.types.UInt8> -> password : System.Security.SecureString -> Void
+
+	public new(method) : rawData : cs.NativeArray<cs.types.UInt8> -> password : String -> Void
+
+	public new(method) : Void -> Void
+
+	public new(method) : cert : System.Security.Cryptography.X509Certificates.X509Certificate -> Void
+
+	public new(method) : handle : System.IntPtr -> Void
+
+	public Handle((get,never)) : System.IntPtr
+
+	public Subject((get,never)) : String
+
+	public Issuer((get,never)) : String
+
+	public GetCertHash(method) : Void -> cs.NativeArray<cs.types.UInt8>
+
+	public GetCertHashString(method) : Void -> String
+
+	public GetEffectiveDateString(method) : Void -> String
+
+	public GetExpirationDateString(method) : Void -> String
+
+	public GetFormat(method) : Void -> String
+
+	public GetIssuerName(method) : Void -> String
+
+	public GetKeyAlgorithm(method) : Void -> String
+
+	public GetKeyAlgorithmParameters(method) : Void -> cs.NativeArray<cs.types.UInt8>
+
+	public GetKeyAlgorithmParametersString(method) : Void -> String
+
+	public GetName(method) : Void -> String
+
+	public GetPublicKey(method) : Void -> cs.NativeArray<cs.types.UInt8>
+
+	public GetPublicKeyString(method) : Void -> String
+
+	public GetRawCertData(method) : Void -> cs.NativeArray<cs.types.UInt8>
+
+	public GetRawCertDataString(method) : Void -> String
+
+	public GetSerialNumber(method) : Void -> cs.NativeArray<cs.types.UInt8>
+
+	public GetSerialNumberString(method) : Void -> String
+
+	public ToString(method) : Void -> String
+
+	public ToString(method) : fVerbose : Bool -> String
+
+	get_Issuer(method) : Void -> String
+
+	get_Subject(method) : Void -> String
+
+	get_Handle(method) : Void -> System.IntPtr
+
+	public Export(method) : contentType : System.Security.Cryptography.X509Certificates.X509ContentType -> cs.NativeArray<cs.types.UInt8>
+
+	public Export(method) : contentType : System.Security.Cryptography.X509Certificates.X509ContentType -> password : System.Security.SecureString -> cs.NativeArray<cs.types.UInt8>
+
+	public Export(method) : contentType : System.Security.Cryptography.X509Certificates.X509ContentType -> password : String -> cs.NativeArray<cs.types.UInt8>
+
+	public Import(method) : rawData : cs.NativeArray<cs.types.UInt8> -> Void
+
+	public Import(method) : fileName : String -> password : System.Security.SecureString -> keyStorageFlags : System.Security.Cryptography.X509Certificates.X509KeyStorageFlags -> Void
+
+	public Import(method) : fileName : String -> password : String -> keyStorageFlags : System.Security.Cryptography.X509Certificates.X509KeyStorageFlags -> Void
+
+	public Import(method) : fileName : String -> Void
+
+	public Import(method) : rawData : cs.NativeArray<cs.types.UInt8> -> password : System.Security.SecureString -> keyStorageFlags : System.Security.Cryptography.X509Certificates.X509KeyStorageFlags -> Void
+
+	public Import(method) : rawData : cs.NativeArray<cs.types.UInt8> -> password : String -> keyStorageFlags : System.Security.Cryptography.X509Certificates.X509KeyStorageFlags -> Void
+
+	public Reset(method) : Void -> Void
+
+	static public CreateFromCertFile(method) : filename : String -> System.Security.Cryptography.X509Certificates.X509Certificate
+
+	static public CreateFromSignedFile(method) : filename : String -> System.Security.Cryptography.X509Certificates.X509Certificate
+
+}

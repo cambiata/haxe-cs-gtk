@@ -1,0 +1,14 @@
+extern class Gtk.Container.RemovedVMDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : container : System.IntPtr -> widget : System.IntPtr -> Void
+
+	public BeginInvoke(method) : container : System.IntPtr -> widget : System.IntPtr -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Void
+
+	static public op_Addition(method) : arg1 : gtk.Container_RemovedVMDelegate -> arg2 : gtk.Container_RemovedVMDelegate -> gtk.Container_RemovedVMDelegate
+
+	static public op_Subtraction(method) : arg1 : gtk.Container_RemovedVMDelegate -> arg2 : gtk.Container_RemovedVMDelegate -> gtk.Container_RemovedVMDelegate
+
+}

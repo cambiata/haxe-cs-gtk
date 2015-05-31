@@ -1,0 +1,80 @@
+extern class System.Reflection.Emit.ConstructorBuilder extends System.Reflection.ConstructorInfo implements System.Runtime.InteropServices._ConstructorBuilder{
+	public Module((get,never)) : System.Reflection.Module
+
+	public Signature((get,never)) : String
+
+	public Name((get,never)) : String
+
+	public ReturnType((get,never)) : System.Type
+
+	public DeclaringType((get,never)) : System.Type
+
+	public ReflectedType((get,never)) : System.Type
+
+	public Attributes((get,never)) : System.Reflection.MethodAttributes
+
+	public MethodHandle((get,never)) : System.RuntimeMethodHandle
+
+	public InitLocals((get,set)) : Bool
+
+	public CallingConvention((get,never)) : System.Reflection.CallingConventions
+
+	get_CallingConvention(method) : Void -> System.Reflection.CallingConventions
+
+	get_InitLocals(method) : Void -> Bool
+
+	set_InitLocals(method) : value : Bool -> Bool
+
+	public GetMethodImplementationFlags(method) : Void -> System.Reflection.MethodImplAttributes
+
+	public GetParameters(method) : Void -> cs.NativeArray<System.Reflection.ParameterInfo>
+
+	public Invoke(method) : obj : Dynamic -> invokeAttr : System.Reflection.BindingFlags -> binder : System.Reflection.Binder -> parameters : cs.NativeArray<Dynamic> -> culture : System.Globalization.CultureInfo -> Dynamic
+
+	public Invoke(method) : invokeAttr : System.Reflection.BindingFlags -> binder : System.Reflection.Binder -> parameters : cs.NativeArray<Dynamic> -> culture : System.Globalization.CultureInfo -> Dynamic
+
+	get_MethodHandle(method) : Void -> System.RuntimeMethodHandle
+
+	get_Attributes(method) : Void -> System.Reflection.MethodAttributes
+
+	get_ReflectedType(method) : Void -> System.Type
+
+	get_DeclaringType(method) : Void -> System.Type
+
+	get_ReturnType(method) : Void -> System.Type
+
+	get_Name(method) : Void -> String
+
+	get_Signature(method) : Void -> String
+
+	public AddDeclarativeSecurity(method) : action : System.Security.Permissions.SecurityAction -> pset : System.Security.PermissionSet -> Void
+
+	public DefineParameter(method) : iSequence : Int -> attributes : System.Reflection.ParameterAttributes -> strParamName : String -> System.Reflection.Emit.ParameterBuilder
+
+	public IsDefined(method) : attributeType : System.Type -> inherit : Bool -> Bool
+
+	public GetCustomAttributes(method) : inherit : Bool -> cs.NativeArray<Dynamic>
+
+	public GetCustomAttributes(method) : attributeType : System.Type -> inherit : Bool -> cs.NativeArray<Dynamic>
+
+	public GetILGenerator(method) : Void -> System.Reflection.Emit.ILGenerator
+
+	public GetILGenerator(method) : streamSize : Int -> System.Reflection.Emit.ILGenerator
+
+	public SetCustomAttribute(method) : customBuilder : System.Reflection.Emit.CustomAttributeBuilder -> Void
+
+	public SetCustomAttribute(method) : con : System.Reflection.ConstructorInfo -> binaryAttribute : cs.NativeArray<cs.types.UInt8> -> Void
+
+	public SetImplementationFlags(method) : attributes : System.Reflection.MethodImplAttributes -> Void
+
+	public GetModule(method) : Void -> System.Reflection.Module
+
+	public GetToken(method) : Void -> System.Reflection.Emit.MethodToken
+
+	public SetSymCustomAttribute(method) : name : String -> data : cs.NativeArray<cs.types.UInt8> -> Void
+
+	get_Module(method) : Void -> System.Reflection.Module
+
+	public ToString(method) : Void -> String
+
+}

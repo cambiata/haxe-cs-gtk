@@ -1,0 +1,5 @@
+extern enum System.Drawing.Text.HotkeyPrefix {
+	None : System.Drawing.Text.HotkeyPrefix;
+	Show : System.Drawing.Text.HotkeyPrefix;
+	Hide : System.Drawing.Text.HotkeyPrefix;
+}

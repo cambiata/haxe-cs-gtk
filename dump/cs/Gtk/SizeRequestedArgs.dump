@@ -1,0 +1,10 @@
+extern class Gtk.SizeRequestedArgs extends GLib.SignalArgs{
+	public new(method) : Void -> Void
+
+	public Requisition((get,set)) : Gtk.Requisition
+
+	get_Requisition(method) : Void -> Gtk.Requisition
+
+	set_Requisition(method) : value : Gtk.Requisition -> Gtk.Requisition
+
+}

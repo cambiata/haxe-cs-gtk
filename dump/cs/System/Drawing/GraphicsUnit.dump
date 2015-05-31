@@ -1,0 +1,9 @@
+extern enum System.Drawing.GraphicsUnit {
+	World : System.Drawing.GraphicsUnit;
+	Display : System.Drawing.GraphicsUnit;
+	Pixel : System.Drawing.GraphicsUnit;
+	Point : System.Drawing.GraphicsUnit;
+	Inch : System.Drawing.GraphicsUnit;
+	Document : System.Drawing.GraphicsUnit;
+	Millimeter : System.Drawing.GraphicsUnit;
+}

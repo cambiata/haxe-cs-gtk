@@ -1,0 +1,10 @@
+extern interface System.Runtime.Remoting.IRemotingTypeInfo{
+	public TypeName((get,set)) : String
+
+	get_TypeName(method) : Void -> String
+
+	set_TypeName(method) : value : String -> String
+
+	public CanCastTo(method) : fromType : System.Type -> o : Dynamic -> Bool
+
+}

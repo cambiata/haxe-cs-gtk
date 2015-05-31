@@ -1,0 +1,24 @@
+extern class Pango.AttrIterator extends GLib.Opaque{
+	public new(method) : raw : System.IntPtr -> Void
+
+	public Attrs((get,never)) : cs.NativeArray<Pango.Attribute>
+
+	public Copy(method) : Void -> Pango.AttrIterator
+
+	public Range(method) : start : cs.Out<Int> -> end : cs.Out<Int> -> Void
+
+	public Next(method) : Void -> Bool
+
+	public Get(method) : type : Pango.AttrType -> Pango.Attribute
+
+	Free(method) : raw : System.IntPtr -> Void
+
+	public Destroy(method) : Void -> Void
+
+	Finalize(method) : Void -> Void
+
+	public GetFont(method) : desc : cs.Out<Pango.FontDescription> -> language : cs.Out<Pango.Language> -> extra_attrs : cs.Out<cs.NativeArray<Pango.Attribute>> -> Void
+
+	get_Attrs(method) : Void -> cs.NativeArray<Pango.Attribute>
+
+}

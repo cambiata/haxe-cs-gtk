@@ -1,0 +1,1484 @@
+class Type{
+	static public getClass<T : getClass.T>(method) : o : getClass.T -> Class<getClass.T>
+
+	 = [Function:o : getClass.T -> Class<getClass.T>]
+		[Arg:getClass.T] [Local o(1856):getClass.T]
+		[Block:Unknown<31>]
+			[If:Void]
+				[Parenthesis:Bool]
+					[Binop:Bool]
+						[Binop:Bool]
+							[Call:Bool]
+								[Field:objA : Dynamic -> objB : Dynamic -> Bool]
+									[TypeExpr System.Object:Class<cs.system.Object>]
+									[FStatic:objA : Dynamic -> objB : Dynamic -> Bool]
+										System.Object
+										ReferenceEquals
+								[Local o(1856):getClass.T]
+								[Const null:Unknown<29>]
+							||
+							[Call:Bool]
+								[Field:v : Dynamic -> t : Dynamic -> Bool]
+									[TypeExpr Std:Class<Std>]
+									[FStatic:v : Dynamic -> t : Dynamic -> Bool]
+										Std
+										is
+								[Local o(1856):getClass.T]
+								[TypeExpr haxe.lang.DynamicObject:Class<cs.internal.DynamicObject>]
+						||
+						[Call:Bool]
+							[Field:v : Dynamic -> t : Dynamic -> Bool]
+								[TypeExpr Std:Class<Std>]
+								[FStatic:v : Dynamic -> t : Dynamic -> Bool]
+									Std
+									is
+							[Local o(1856):getClass.T]
+							[TypeExpr System.Type:Class<cs.system.Type>]
+				[Then:Dynamic] [Return:Dynamic] [Const null:Class<getClass.T>]
+			[Return:Dynamic]
+				[Call:Class<getClass.T>]
+					[Field:Void -> Unknown<30>]
+						[Local o(1856):getClass.T]
+						[FDynamic:Void -> Unknown<30>] GetType
+
+	static public getEnum(method) : o : EnumValue -> Enum<Dynamic>
+
+	 = [Function:o : EnumValue -> Enum<Dynamic>]
+		[Arg:EnumValue] [Local o(1857):EnumValue]
+		[Block:Unknown<33>]
+			[If:Void]
+				[Parenthesis:Bool]
+					[Binop:Bool]
+						[Call:Bool]
+							[Field:v : Dynamic -> t : Dynamic -> Bool]
+								[TypeExpr Std:Class<Std>]
+								[FStatic:v : Dynamic -> t : Dynamic -> Bool]
+									Std
+									is
+							[Local o(1857):EnumValue]
+							[TypeExpr System.Enum:Class<cs.system.Enum>]
+						||
+						[Call:Bool]
+							[Field:v : Dynamic -> t : Dynamic -> Bool]
+								[TypeExpr Std:Class<Std>]
+								[FStatic:v : Dynamic -> t : Dynamic -> Bool]
+									Std
+									is
+							[Local o(1857):EnumValue]
+							[TypeExpr haxe.lang.Enum:Class<cs.internal.HxEnum>]
+				[Then:Dynamic] [Return:Dynamic]
+					[Call:Enum<Dynamic>]
+						[Field:Void -> Unknown<32>]
+							[Local o(1857):EnumValue]
+							[FDynamic:Void -> Unknown<32>] GetType
+			[Return:Dynamic] [Const null:Enum<Dynamic>]
+
+	static public getSuperClass(method) : c : Class<Dynamic> -> Class<Dynamic>
+
+	 = [Function:c : Class<Dynamic> -> Class<Dynamic>]
+		[Arg:Class<Dynamic>] [Local c(1858):Class<Dynamic>]
+		[Block:Dynamic]
+			[Var t(1862):System.Type] [Cast:System.Type] [Local c(1858):Class<Dynamic>]
+			[Var base(1863):System.Type]
+				[Call:System.Type]
+					[Field:Void -> System.Type]
+						[Local t(1862):System.Type]
+						[FInstance:Void -> System.Type]
+							System.Type
+							get_BaseType
+			[If:Void]
+				[Parenthesis:Bool]
+					[Binop:Bool]
+						[Binop:Bool]
+							[Binop:Bool]
+								[Local base(1863):System.Type]
+								==
+								[Const null:System.Type]
+							||
+							[Binop:Bool]
+								[Call:String]
+									[Field:Void -> String]
+										[Local base(1863):System.Type]
+										[FInstance:Void -> String]
+											System.Type
+											ToString
+								==
+								[Const "haxe.lang.HxObject":String]
+						||
+						[Binop:Bool]
+							[Call:String]
+								[Field:Void -> String]
+									[Local base(1863):System.Type]
+									[FInstance:Void -> String]
+										System.Type
+										ToString
+							==
+							[Const "System.Object":String]
+				[Then:Dynamic] [Return:Dynamic] [Const null:Class<Dynamic>]
+			[Return:Dynamic] [Cast:Class<Dynamic>] [Local base(1863):System.Type]
+
+	static public getClassName(method) : c : Class<Dynamic> -> String
+
+	 = [Function:c : Class<Dynamic> -> String]
+		[Arg:Class<Dynamic>] [Local c(1867):Class<Dynamic>]
+		[Block:Dynamic]
+			[Var ret(1871):String] [Cast:String] [Cast:System.Type] [Local c(1867):Class<Dynamic>]
+			[Switch:String]
+				[Parenthesis:String] [Local ret(1871):String]
+				[Case:Dynamic]
+					[Const "System.Int32":String]
+					[Return:Dynamic] [Const "Int":String]
+				[Case:Dynamic]
+					[Const "System.Double":String]
+					[Return:Dynamic] [Const "Float":String]
+				[Case:Dynamic]
+					[Const "System.String":String]
+					[Return:Dynamic] [Const "String":String]
+				[Case:Dynamic]
+					[Const "System.Object":String]
+					[Return:Dynamic] [Const "Dynamic":String]
+				[Case:Dynamic]
+					[Const "System.Type":String]
+					[Return:Dynamic] [Const "Class":String]
+				[Default:Dynamic]
+					[Return:Dynamic]
+						[Array:String]
+							[Call:Array<String>]
+								[Field:delimiter : String -> Array<String>]
+									[Local ret(1871):String]
+									[FInstance:delimiter : String -> Array<String>]
+										String
+										split
+								[Const "`":String]
+							[Const 0:Int]
+
+	static public getEnumName(method) : e : Enum<Dynamic> -> String
+
+	 = [Function:e : Enum<Dynamic> -> String]
+		[Arg:Enum<Dynamic>] [Local e(705):Enum<Dynamic>]
+		[Block:Dynamic]
+			[Var ret(710):String] [Cast:String] [Cast:System.Type] [Local e(705):Enum<Dynamic>]
+			[If:Void]
+				[Parenthesis:Bool]
+					[Binop:Bool]
+						[Binop:Bool]
+							[Field:Int]
+								[Local ret(710):String]
+								[FInstance:Int]
+									String
+									length
+							==
+							[Const 14:Int]
+						&&
+						[Binop:Bool]
+							[Local ret(710):String]
+							==
+							[Const "System.Boolean":String]
+				[Then:Dynamic] [Return:Dynamic] [Const "Bool":String]
+			[Return:Dynamic] [Local ret(710):String]
+
+	static public resolveClass(method) : name : String -> Class<Dynamic>
+
+	 = [Function:name : String -> Class<Dynamic>]
+		[Arg:String] [Local name(1872):String]
+		[Block:Void]
+			[Var t(1873):System.Type]
+				[Call:System.Type]
+					[Field:typeName : String -> System.Type]
+						[TypeExpr System.Type:Class<cs.system.Type>]
+						[FStatic:typeName : String -> System.Type]
+							System.Type
+							GetType
+					[Local name(1872):String]
+			[If:Void]
+				[Parenthesis:Bool]
+					[Binop:Bool]
+						[Local t(1873):System.Type]
+						==
+						[Const null:System.Type]
+				[Then:Void] [Block:Void]
+					[Var all(1874):System.Collections.IEnumerator]
+						[Call:System.Collections.IEnumerator]
+							[Field:Void -> System.Collections.IEnumerator]
+								[Call:cs.NativeArray<System.Reflection.Assembly>]
+									[Field:Void -> cs.NativeArray<System.Reflection.Assembly>]
+										[Call:System.AppDomain]
+											[Field:Void -> System.AppDomain]
+												[TypeExpr System.AppDomain:Class<cs.system.AppDomain>]
+												[FStatic:Void -> System.AppDomain]
+													System.AppDomain
+													get_CurrentDomain
+										[FInstance:Void -> cs.NativeArray<System.Reflection.Assembly>]
+											System.AppDomain
+											GetAssemblies
+								[FInstance:Void -> System.Collections.IEnumerator]
+									System.Array
+									GetEnumerator
+					[While:Void]
+						[Parenthesis:Bool]
+							[Call:Bool]
+								[Field:Void -> Bool]
+									[Local all(1874):System.Collections.IEnumerator]
+									[FInstance:Void -> Bool]
+										System.Collections.IEnumerator
+										MoveNext
+						[Block:Void]
+							[Var t2(1875):System.Reflection.Assembly]
+								[Call:Dynamic]
+									[Field:Void -> Dynamic]
+										[Local all(1874):System.Collections.IEnumerator]
+										[FInstance:Void -> Dynamic]
+											System.Collections.IEnumerator
+											get_Current
+							[Binop:System.Type]
+								[Local t(1873):System.Type]
+								=
+								[Call:System.Type]
+									[Field:name : String -> System.Type]
+										[Local t2(1875):System.Reflection.Assembly]
+										[FInstance:name : String -> System.Type]
+											System.Reflection.Assembly
+											GetType
+									[Local name(1872):String]
+							[If:Void]
+								[Parenthesis:Bool]
+									[Binop:Bool]
+										[Local t(1873):System.Type]
+										!=
+										[Const null:System.Type]
+								[Then:Dynamic] [Break:Dynamic]
+			[If:Void]
+				[Parenthesis:Bool]
+					[Binop:Bool]
+						[Local t(1873):System.Type]
+						==
+						[Const null:System.Type]
+				[Then:Unknown<37>] [Switch:Unknown<37>]
+					[Parenthesis:String] [Local name(1872):String]
+					[Case:Dynamic]
+						[Const "Int":String]
+						[Return:Dynamic] [Cast:Class<Dynamic>] [TypeExpr Int:Abstract<Int>]
+					[Case:Dynamic]
+						[Const "Float":String]
+						[Return:Dynamic] [Cast:Class<Dynamic>] [TypeExpr Float:Abstract<Float>]
+					[Case:Dynamic]
+						[Const "Class":String]
+						[Return:Dynamic] [Cast:Class<Dynamic>] [TypeExpr Class:Abstract<Class>]
+					[Case:Dynamic]
+						[Const "Dynamic":String]
+						[Return:Dynamic] [Cast:Class<Dynamic>] [TypeExpr Dynamic:Abstract<Dynamic>]
+					[Case:Dynamic]
+						[Const "String":String]
+						[Return:Dynamic] [Cast:Class<Dynamic>] [TypeExpr String:Class<String>]
+					[Default:Dynamic] [Return:Dynamic] [Const null:Class<Dynamic>]
+				[Else:Void] [If:Void]
+					[Parenthesis:Bool]
+						[Binop:Bool]
+							[Call:Bool]
+								[Field:Void -> Bool]
+									[Local t(1873):System.Type]
+									[FInstance:Void -> Bool]
+										System.Type
+										get_IsInterface
+							&&
+							[Call:Bool]
+								[Field:c : System.Type -> Bool]
+									[Parenthesis:System.Type]
+										[Cast:System.Type]
+											[Call:Unknown<36>]
+												[Local __typeof__(1876):Class<cs.internal.IGenericObject> -> Unknown<35>]
+												[TypeExpr haxe.lang.IGenericObject:Class<cs.internal.IGenericObject>]
+											[TypeExpr System.Type:System.Type]
+									[FInstance:c : System.Type -> Bool]
+										System.Type
+										IsAssignableFrom
+								[Local t(1873):System.Type]
+					[Then:Dynamic] [Block:Dynamic]
+						[Block:Void]
+							[Var _this(1879):cs.NativeArray<Dynamic>]
+								[Call:cs.NativeArray<Dynamic>]
+									[Field:inherit : Bool -> cs.NativeArray<Dynamic>]
+										[Local t(1873):System.Type]
+										[FInstance:inherit : Bool -> cs.NativeArray<Dynamic>]
+											System.Reflection.MemberInfo
+											GetCustomAttributes
+									[Const true:Bool]
+							[Var _g_arr(9189):cs.NativeArray<Dynamic>] [Local _this(1879):cs.NativeArray<Dynamic>]
+							[Var _g_idx(9190):UInt] [Const 0:Int]
+							[While:Void]
+								[Parenthesis:Bool]
+									[Cast:Bool]
+										[Binop:Bool]
+											[Local _g_idx(9190):UInt]
+											<
+											[Call:Int]
+												[Field:Void -> Int]
+													[Local _g_arr(9189):cs.NativeArray<Dynamic>]
+													[FInstance:Void -> Int]
+														System.Array
+														get_Length
+								[Block:Void]
+									[Var attr(1877):Unknown<34>]
+										[Cast:Unknown<34>]
+											[Array:Dynamic]
+												[Local _g_arr(9189):cs.NativeArray<Dynamic>]
+												[Unop:UInt]
+													++
+													Postfix
+													[Local _g_idx(9190):UInt]
+									[Var g(1885):haxe.lang.GenericInterface]
+										[Cast:haxe.lang.GenericInterface]
+											[Call:haxe.lang.GenericInterface]
+												[Local __as__(1884):Dynamic -> Unknown<5>]
+												[Local attr(1877):Unknown<34>]
+									[If:Void]
+										[Parenthesis:Bool]
+											[Binop:Bool]
+												[Local g(1885):haxe.lang.GenericInterface]
+												!=
+												[Const null:haxe.lang.GenericInterface]
+										[Then:Dynamic] [Return:Dynamic]
+											[Cast:Class<Dynamic>]
+												[Field:System.Type]
+													[Local g(1885):haxe.lang.GenericInterface]
+													[FInstance:System.Type]
+														haxe.lang.GenericInterface
+														generic
+						[Return:Dynamic] [Cast:Class<Dynamic>] [Local t(1873):System.Type]
+					[Else:Dynamic] [Return:Dynamic] [Cast:Class<Dynamic>] [Local t(1873):System.Type]
+
+	static public resolveEnum(method) : name : String -> Enum<Dynamic>
+
+	 = [Function:name : String -> Enum<Dynamic>]
+		[Arg:String] [Local name(1900):String]
+		[Block:Unknown<38>]
+			[If:Void]
+				[Parenthesis:Bool]
+					[Binop:Bool]
+						[Local name(1900):String]
+						==
+						[Const "Bool":String]
+				[Then:Dynamic] [Return:Dynamic] [TypeExpr Bool:Abstract<Bool>]
+			[Var t(1904):System.Type]
+			[Block:System.Type]
+				[Var cl(1903):Class<Dynamic>]
+					[Call:Class<Dynamic>]
+						[Field:name : String -> Class<Dynamic>]
+							[TypeExpr Type:Class<Type>]
+							[FStatic:name : String -> Class<Dynamic>]
+								Type
+								resolveClass
+						[Local name(1900):String]
+				[Binop:System.Type]
+					[Local t(1904):System.Type]
+					=
+					[Local cl(1903):Class<Dynamic>]
+			[If:Void]
+				[Parenthesis:Bool]
+					[Binop:Bool]
+						[Binop:Bool]
+							[Binop:Bool]
+								[Local t(1904):System.Type]
+								!=
+								[Const null:System.Type]
+							&&
+							[Call:Bool]
+								[Field:System.Type -> Bool]
+									[Call:System.Type]
+										[Field:Void -> System.Type]
+											[Local t(1904):System.Type]
+											[FInstance:Void -> System.Type]
+												System.Type
+												get_BaseType
+									[FDynamic:System.Type -> Bool] Equals
+								[Cast:System.Type] [TypeExpr System.Enum:Class<cs.system.Enum>]
+						||
+						[Call:Bool]
+							[Field:c : System.Type -> Bool]
+								[Cast:System.Type] [TypeExpr haxe.lang.Enum:Class<cs.internal.HxEnum>]
+								[FInstance:c : System.Type -> Bool]
+									System.Type
+									IsAssignableFrom
+							[Local t(1904):System.Type]
+				[Then:Dynamic] [Return:Dynamic] [Local t(1904):System.Type]
+			[Return:Dynamic] [Const null:Enum<Dynamic>]
+
+	static public createInstance<T : createInstance.T>(method) : cl : Class<createInstance.T> -> args : Array<Dynamic> -> createInstance.T
+
+	 = [Function:cl : Class<createInstance.T> -> args : Array<Dynamic> -> createInstance.T]
+		[Arg:Class<createInstance.T>] [Local cl(1911):Class<createInstance.T>]
+		[Arg:Array<Dynamic>] [Local args(1912):Array<Dynamic>]
+		[Block:Dynamic]
+			[If:Void]
+				[Parenthesis:Bool]
+					[Binop:Bool]
+						[Local cl(1911):Class<createInstance.T>]
+						==
+						[TypeExpr String:Class<String>]
+				[Then:Dynamic] [Return:Dynamic]
+					[Array:Dynamic]
+						[Local args(1912):Array<Dynamic>]
+						[Const 0:Int]
+			[Var t(1916):System.Type] [Cast:System.Type] [Local cl(1911):Class<createInstance.T>]
+			[If:Void]
+				[Parenthesis:Bool]
+					[Call:Bool]
+						[Field:Void -> Bool]
+							[Local t(1916):System.Type]
+							[FInstance:Void -> Bool]
+								System.Type
+								get_IsInterface
+				[Then:System.Type] [Block:System.Type]
+					[Var cl1(1919):Class<Dynamic>]
+						[Call:Class<Dynamic>]
+							[Field:name : String -> Class<Dynamic>]
+								[TypeExpr Type:Class<Type>]
+								[FStatic:name : String -> Class<Dynamic>]
+									Type
+									resolveClass
+							[Call:String]
+								[Field:c : Class<Dynamic> -> String]
+									[TypeExpr Type:Class<Type>]
+									[FStatic:c : Class<Dynamic> -> String]
+										Type
+										getClassName
+								[Local cl(1911):Class<createInstance.T>]
+					[Binop:System.Type]
+						[Local t(1916):System.Type]
+						=
+						[Local cl1(1919):Class<Dynamic>]
+			[Var ctors(1920):cs.NativeArray<System.Reflection.ConstructorInfo>]
+				[Call:cs.NativeArray<System.Reflection.ConstructorInfo>]
+					[Field:Void -> cs.NativeArray<System.Reflection.ConstructorInfo>]
+						[Local t(1916):System.Type]
+						[FInstance:Void -> cs.NativeArray<System.Reflection.ConstructorInfo>]
+							System.Type
+							GetConstructors
+			[Return:Dynamic]
+				[Call:Dynamic]
+					[Field:obj : Dynamic -> methods : cs.NativeArray<System.Reflection.MethodBase> -> methodLength : Int -> args : Array<Dynamic> -> Dynamic]
+						[TypeExpr haxe.lang.Runtime:Class<cs.internal.Runtime>]
+						[FStatic:obj : Dynamic -> methods : cs.NativeArray<System.Reflection.MethodBase> -> methodLength : Int -> args : Array<Dynamic> -> Dynamic]
+							haxe.lang.Runtime
+							callMethod
+					[Const null:Unknown<39>]
+					[Cast:cs.NativeArray<System.Reflection.MethodBase>] [Local ctors(1920):cs.NativeArray<System.Reflection.ConstructorInfo>]
+					[Call:Int]
+						[Field:Void -> Int]
+							[Local ctors(1920):cs.NativeArray<System.Reflection.ConstructorInfo>]
+							[FInstance:Void -> Int]
+								System.Array
+								get_Length
+					[Local args(1912):Array<Dynamic>]
+
+	static public createEmptyInstance<T : createEmptyInstance.T>(method) : cl : Class<createEmptyInstance.T> -> createEmptyInstance.T
+
+	 = [Function:cl : Class<createEmptyInstance.T> -> createEmptyInstance.T]
+		[Arg:Class<createEmptyInstance.T>] [Local cl(1921):Class<createEmptyInstance.T>]
+		[Block:Dynamic]
+			[Var t(1925):System.Type] [Cast:System.Type] [Local cl(1921):Class<createEmptyInstance.T>]
+			[If:Void]
+				[Parenthesis:Bool]
+					[Call:Bool]
+						[Field:Void -> Bool]
+							[Local t(1925):System.Type]
+							[FInstance:Void -> Bool]
+								System.Type
+								get_IsInterface
+				[Then:System.Type] [Block:System.Type]
+					[Var cl1(1928):Class<Dynamic>]
+						[Call:Class<Dynamic>]
+							[Field:name : String -> Class<Dynamic>]
+								[TypeExpr Type:Class<Type>]
+								[FStatic:name : String -> Class<Dynamic>]
+									Type
+									resolveClass
+							[Call:String]
+								[Field:c : Class<Dynamic> -> String]
+									[TypeExpr Type:Class<Type>]
+									[FStatic:c : Class<Dynamic> -> String]
+										Type
+										getClassName
+								[Local cl(1921):Class<createEmptyInstance.T>]
+					[Binop:System.Type]
+						[Local t(1925):System.Type]
+						=
+						[Local cl1(1928):Class<Dynamic>]
+			[If:Void]
+				[Parenthesis:Bool]
+					[Call:Bool]
+						[Field:o : Dynamic -> field : String -> Bool]
+							[TypeExpr Reflect:Class<Reflect>]
+							[FStatic:o : Dynamic -> field : String -> Bool]
+								Reflect
+								hasField
+						[Local cl(1921):Class<createEmptyInstance.T>]
+						[Const "__hx_createEmpty":String]
+				[Then:Dynamic] [Return:Dynamic]
+					[Call:createEmptyInstance.T]
+						[Field:Void -> Unknown<40>]
+							[Local cl(1921):Class<createEmptyInstance.T>]
+							[FDynamic:Void -> Unknown<40>] __hx_createEmpty
+			[If:Void]
+				[Parenthesis:Bool]
+					[Binop:Bool]
+						[Local cl(1921):Class<createEmptyInstance.T>]
+						==
+						[TypeExpr String:Class<String>]
+				[Then:Dynamic] [Return:Dynamic] [Cast:createEmptyInstance.T] [Const "":String]
+			[Var t1(1932):System.Type] [Cast:System.Type] [Local cl(1921):Class<createEmptyInstance.T>]
+			[Var ctors(1933):cs.NativeArray<System.Reflection.ConstructorInfo>]
+				[Call:cs.NativeArray<System.Reflection.ConstructorInfo>]
+					[Field:Void -> cs.NativeArray<System.Reflection.ConstructorInfo>]
+						[Local t1(1932):System.Type]
+						[FInstance:Void -> cs.NativeArray<System.Reflection.ConstructorInfo>]
+							System.Type
+							GetConstructors
+			[Block:Void]
+				[Var _g1(1935):Int] [Const 0:Int]
+				[Var _g(1934):Int]
+					[Call:Int]
+						[Field:Void -> Int]
+							[Local ctors(1933):cs.NativeArray<System.Reflection.ConstructorInfo>]
+							[FInstance:Void -> Int]
+								System.Array
+								get_Length
+				[While:Void]
+					[Parenthesis:Bool]
+						[Binop:Bool]
+							[Local _g1(1935):Int]
+							<
+							[Local _g(1934):Int]
+					[Block:Void]
+						[Var c(1936):Int]
+							[Unop:Int]
+								++
+								Postfix
+								[Local _g1(1935):Int]
+						[If:Void]
+							[Parenthesis:Bool]
+								[Binop:Bool]
+									[Call:Int]
+										[Field:Void -> Int]
+											[Call:cs.NativeArray<System.Reflection.ParameterInfo>]
+												[Field:Void -> cs.NativeArray<System.Reflection.ParameterInfo>]
+													[Array:System.Reflection.ConstructorInfo]
+														[Local ctors(1933):cs.NativeArray<System.Reflection.ConstructorInfo>]
+														[Local c(1936):Int]
+													[FInstance:Void -> cs.NativeArray<System.Reflection.ParameterInfo>]
+														System.Reflection.MethodBase
+														GetParameters
+											[FInstance:Void -> Int]
+												System.Array
+												get_Length
+									==
+									[Const 0:Int]
+							[Then:Dynamic] [Block:Dynamic]
+								[Var arr(1937):cs.NativeArray<System.Reflection.ConstructorInfo>]
+									[New:cs.NativeArray<System.Reflection.ConstructorInfo>]
+										cs.NativeArray<System.Reflection.ConstructorInfo>
+										[Const 1:Int]
+								[Binop:System.Reflection.ConstructorInfo]
+									[Array:System.Reflection.ConstructorInfo]
+										[Local arr(1937):cs.NativeArray<System.Reflection.ConstructorInfo>]
+										[Const 0:Int]
+									=
+									[Array:System.Reflection.ConstructorInfo]
+										[Local ctors(1933):cs.NativeArray<System.Reflection.ConstructorInfo>]
+										[Local c(1936):Int]
+								[Return:Dynamic]
+									[Call:Dynamic]
+										[Field:obj : Dynamic -> methods : cs.NativeArray<System.Reflection.MethodBase> -> methodLength : Int -> args : Array<Dynamic> -> Dynamic]
+											[TypeExpr haxe.lang.Runtime:Class<cs.internal.Runtime>]
+											[FStatic:obj : Dynamic -> methods : cs.NativeArray<System.Reflection.MethodBase> -> methodLength : Int -> args : Array<Dynamic> -> Dynamic]
+												haxe.lang.Runtime
+												callMethod
+										[Const null:Unknown<41>]
+										[Cast:cs.NativeArray<System.Reflection.MethodBase>] [Local arr(1937):cs.NativeArray<System.Reflection.ConstructorInfo>]
+										[Call:Int]
+											[Field:Void -> Int]
+												[Local arr(1937):cs.NativeArray<System.Reflection.ConstructorInfo>]
+												[FInstance:Void -> Int]
+													System.Array
+													get_Length
+										[ArrayDecl:Array<Dynamic>]
+			[Return:Dynamic]
+				[Call:Dynamic]
+					[Field:type : System.Type -> Dynamic]
+						[TypeExpr System.Activator:Class<cs.system.Activator>]
+						[FStatic:type : System.Type -> Dynamic]
+							System.Activator
+							CreateInstance
+					[Local t1(1932):System.Type]
+
+	static public createEnum<T : createEnum.T>(method) : e : Enum<createEnum.T> -> constr : String -> ?params : Null<Array<Dynamic>> -> createEnum.T
+
+	 = [Function:e : Enum<createEnum.T> -> constr : String -> ?params : Null<Array<Dynamic>> -> createEnum.T]
+		[Arg:Enum<createEnum.T>] [Local e(714):Enum<createEnum.T>]
+		[Arg:String] [Local constr(715):String]
+		[Arg:Null<Array<Dynamic>>]
+			[Local params(716):Null<Array<Dynamic>>]
+			[Const null:e : Enum<createEnum.T> -> constr : String -> ?params : Null<Array<Dynamic>> -> createEnum.T]
+		[Block:Void]
+			[If:Void]
+				[Parenthesis:Bool]
+					[Binop:Bool]
+						[Binop:Bool]
+							[Local params(716):Null<Array<Dynamic>>]
+							==
+							[Const null:Null<Array<Dynamic>>]
+						||
+						[Binop:Bool]
+							[Array:Dynamic]
+								[Local params(716):Null<Array<Dynamic>>]
+								[Const 0:Int]
+							==
+							[Const null:Unknown<43>]
+				[Then:Dynamic] [Block:Dynamic]
+					[Var ret(785):createEnum.T]
+						[Call:Dynamic]
+							[Field:obj : Dynamic -> field : String -> throwErrors : Bool -> Dynamic]
+								[TypeExpr haxe.lang.Runtime:Class<cs.internal.Runtime>]
+								[FStatic:obj : Dynamic -> field : String -> throwErrors : Bool -> Dynamic]
+									haxe.lang.Runtime
+									slowGetField
+							[Local e(714):Enum<createEnum.T>]
+							[Local constr(715):String]
+							[Const true:Bool]
+					[If:Void]
+						[Parenthesis:Bool]
+							[Call:Bool]
+								[Field:v : Dynamic -> t : Dynamic -> Bool]
+									[TypeExpr Std:Class<Std>]
+									[FStatic:v : Dynamic -> t : Dynamic -> Bool]
+										Std
+										is
+								[Local ret(785):createEnum.T]
+								[TypeExpr haxe.lang.Function:Class<cs.internal.Function>]
+						[Then:Unknown<42>] [Throw:Unknown<42>]
+							[Binop:String]
+								[Binop:String]
+									[Const "Constructor ":String]
+									+
+									[Local constr(715):String]
+								+
+								[Const " needs parameters":String]
+					[Return:Dynamic] [Local ret(785):createEnum.T]
+				[Else:Dynamic] [Return:Dynamic]
+					[Call:Dynamic]
+						[Field:obj : Dynamic -> field : String -> args : Array<Dynamic> -> Dynamic]
+							[TypeExpr haxe.lang.Runtime:Class<cs.internal.Runtime>]
+							[FStatic:obj : Dynamic -> field : String -> args : Array<Dynamic> -> Dynamic]
+								haxe.lang.Runtime
+								slowCallField
+						[Local e(714):Enum<createEnum.T>]
+						[Local constr(715):String]
+						[Local params(716):Null<Array<Dynamic>>]
+
+	static public createEnumIndex<T : createEnumIndex.T>(method) : e : Enum<createEnumIndex.T> -> index : Int -> ?params : Null<Array<Dynamic>> -> createEnumIndex.T
+
+	 = [Function:e : Enum<createEnumIndex.T> -> index : Int -> ?params : Null<Array<Dynamic>> -> createEnumIndex.T]
+		[Arg:Enum<createEnumIndex.T>] [Local e(945):Enum<createEnumIndex.T>]
+		[Arg:Int] [Local index(946):Int]
+		[Arg:Null<Array<Dynamic>>]
+			[Local params(947):Null<Array<Dynamic>>]
+			[Const null:e : Enum<createEnumIndex.T> -> index : Int -> ?params : Null<Array<Dynamic>> -> createEnumIndex.T]
+		[Block:Dynamic]
+			[Var constr(1101):Array<String>]
+				[Call:Array<String>]
+					[Field:e : Enum<Dynamic> -> Array<String>]
+						[TypeExpr Type:Class<Type>]
+						[FStatic:e : Enum<Dynamic> -> Array<String>]
+							Type
+							getEnumConstructs
+					[Local e(945):Enum<createEnumIndex.T>]
+			[Return:Dynamic]
+				[Call:createEnumIndex.T]
+					[Field:e : Enum<createEnumIndex.T> -> constr : String -> ?params : Null<Array<Dynamic>> -> createEnumIndex.T]
+						[TypeExpr Type:Class<Type>]
+						[FStatic:e : Enum<createEnumIndex.T> -> constr : String -> ?params : Null<Array<Dynamic>> -> createEnumIndex.T]
+							Type
+							createEnum
+					[Local e(945):Enum<createEnumIndex.T>]
+					[Array:String]
+						[Local constr(1101):Array<String>]
+						[Local index(946):Int]
+					[Local params(947):Null<Array<Dynamic>>]
+
+	static public getInstanceFields(method) : c : Class<Dynamic> -> Array<String>
+
+	 = [Function:c : Class<Dynamic> -> Array<String>]
+		[Arg:Class<Dynamic>] [Local c(1938):Class<Dynamic>]
+		[Block:Dynamic]
+			[If:Void]
+				[Parenthesis:Bool]
+					[Binop:Bool]
+						[Local c(1938):Class<Dynamic>]
+						==
+						[TypeExpr String:Class<String>]
+				[Then:Dynamic] [Return:Dynamic]
+					[Field:Array<String>]
+						[TypeExpr haxe.lang.StringRefl:Class<cs.internal.StringRefl>]
+						[FStatic:Array<String>]
+							haxe.lang.StringRefl
+							fields
+			[Var c1(1942):System.Type] [Cast:System.Type] [Local c(1938):Class<Dynamic>]
+			[Var ret(1943):Array<String>] [ArrayDecl:Array<String>]
+			[Var mis(1955):cs.NativeArray<System.Reflection.MemberInfo>]
+				[Call:cs.NativeArray<System.Reflection.MemberInfo>]
+					[Field:bindingAttr : System.Reflection.BindingFlags -> cs.NativeArray<System.Reflection.MemberInfo>]
+						[Local c1(1942):System.Type]
+						[FInstance:bindingAttr : System.Reflection.BindingFlags -> cs.NativeArray<System.Reflection.MemberInfo>]
+							System.Type
+							GetMembers
+					[Cast:cs.Flags<System.Reflection.BindingFlags>]
+						[Cast:System.Reflection.BindingFlags]
+							[Cast:System.Reflection.BindingFlags]
+								[Binop:System.Reflection.BindingFlags]
+									[Cast:cs._Flags.EnumUnderlying<System.Reflection.BindingFlags>]
+										[Cast:System.Reflection.BindingFlags]
+											[Cast:System.Reflection.BindingFlags]
+												[Cast:cs.Flags<System.Reflection.BindingFlags>]
+													[Cast:System.Reflection.BindingFlags]
+														[Cast:System.Reflection.BindingFlags]
+															[Binop:System.Reflection.BindingFlags]
+																[Cast:cs._Flags.EnumUnderlying<System.Reflection.BindingFlags>]
+																	[Cast:System.Reflection.BindingFlags]
+																		[Cast:System.Reflection.BindingFlags]
+																			[Cast:cs.Flags<System.Reflection.BindingFlags>]
+																				[Cast:System.Reflection.BindingFlags]
+																					[Field:System.Reflection.BindingFlags]
+																						[TypeExpr System.Reflection.BindingFlags:Enum<cs.system.reflection.BindingFlags>]
+																						[FEnum:System.Reflection.BindingFlags]
+																							System.Reflection.BindingFlags
+																							Public
+																|
+																[Cast:cs._Flags.EnumUnderlying<System.Reflection.BindingFlags>]
+																	[Cast:System.Reflection.BindingFlags]
+																		[Field:System.Reflection.BindingFlags]
+																			[TypeExpr System.Reflection.BindingFlags:Enum<cs.system.reflection.BindingFlags>]
+																			[FEnum:System.Reflection.BindingFlags]
+																				System.Reflection.BindingFlags
+																				Instance
+									|
+									[Cast:cs._Flags.EnumUnderlying<System.Reflection.BindingFlags>]
+										[Cast:System.Reflection.BindingFlags]
+											[Field:System.Reflection.BindingFlags]
+												[TypeExpr System.Reflection.BindingFlags:Enum<cs.system.reflection.BindingFlags>]
+												[FEnum:System.Reflection.BindingFlags]
+													System.Reflection.BindingFlags
+													FlattenHierarchy
+			[Block:Void]
+				[Var _g1(1957):Int] [Const 0:Int]
+				[Var _g(1956):Int]
+					[Call:Int]
+						[Field:Void -> Int]
+							[Local mis(1955):cs.NativeArray<System.Reflection.MemberInfo>]
+							[FInstance:Void -> Int]
+								System.Array
+								get_Length
+				[While:Void]
+					[Parenthesis:Bool]
+						[Binop:Bool]
+							[Local _g1(1957):Int]
+							<
+							[Local _g(1956):Int]
+					[Block:Void]
+						[Var i(1958):Int]
+							[Unop:Int]
+								++
+								Postfix
+								[Local _g1(1957):Int]
+						[Var i1(1959):System.Reflection.MemberInfo]
+							[Array:System.Reflection.MemberInfo]
+								[Local mis(1955):cs.NativeArray<System.Reflection.MemberInfo>]
+								[Local i(1958):Int]
+						[If:Void]
+							[Parenthesis:Bool]
+								[Call:Bool]
+									[Field:v : Dynamic -> t : Dynamic -> Bool]
+										[TypeExpr Std:Class<Std>]
+										[FStatic:v : Dynamic -> t : Dynamic -> Bool]
+											Std
+											is
+									[Local i1(1959):System.Reflection.MemberInfo]
+									[TypeExpr System.Reflection.PropertyInfo:Class<cs.system.reflection.PropertyInfo>]
+							[Then:Dynamic] [Continue:Dynamic]
+						[Var n(1960):String]
+							[Call:String]
+								[Field:Void -> String]
+									[Local i1(1959):System.Reflection.MemberInfo]
+									[FInstance:Void -> String]
+										System.Reflection.MemberInfo
+										get_Name
+						[If:Void]
+							[Parenthesis:Bool]
+								[Binop:Bool]
+									[Unop:Bool]
+										!
+										Prefix
+										[Call:Bool]
+											[Field:value : String -> Bool]
+												[Local n(1960):String]
+												[FInstance:value : String -> Bool]
+													String
+													StartsWith
+											[Const "__hx_":String]
+									&&
+									[Binop:Bool]
+										[Parenthesis:Int]
+											[If:Int]
+												[Parenthesis:Bool]
+													[Cast:Bool]
+														[Binop:Bool]
+															[Cast:UInt]
+																[Const 0:Int]
+																[TypeExpr UInt:UInt]
+															<
+															[Field:Int]
+																[Local n(1960):String]
+																[FInstance:Int]
+																	String
+																	length
+												[Then:Int] [Cast:Int]
+													[Array:cs.Char16]
+														[Local n(1960):String]
+														[Const 0:Int]
+													[TypeExpr Int:Int]
+												[Else:Int] [Const -1:Int]
+										!=
+										[Const 46:Int]
+							[Then:Unknown<44>] [Switch:Unknown<44>]
+								[Parenthesis:String] [Local n(1960):String]
+								[Case:Void]
+									[Const "Equals":String]
+									[Const "ToString":String]
+									[Const "GetHashCode":String]
+									[Const "GetType":String]
+									[Block:Void]
+								[Default:Int]
+									[Call:Int]
+										[Field:x : String -> Int]
+											[Local ret(1943):Array<String>]
+											[FInstance:x : String -> Int]
+												Array<String>
+												push
+										[Local n(1960):String]
+			[Return:Dynamic] [Local ret(1943):Array<String>]
+
+	static public getClassFields(method) : c : Class<Dynamic> -> Array<String>
+
+	 = [Function:c : Class<Dynamic> -> Array<String>]
+		[Arg:Class<Dynamic>] [Local c(1969):Class<Dynamic>]
+		[Block:Dynamic]
+			[If:Void]
+				[Parenthesis:Bool]
+					[Call:Bool]
+						[Field:objA : Dynamic -> objB : Dynamic -> Bool]
+							[TypeExpr System.Object:Class<cs.system.Object>]
+							[FStatic:objA : Dynamic -> objB : Dynamic -> Bool]
+								System.Object
+								ReferenceEquals
+						[Local c(1969):Class<Dynamic>]
+						[TypeExpr String:Class<String>]
+				[Then:Dynamic] [Return:Dynamic] [ArrayDecl:Array<String>] [Const "fromCharCode":String]
+			[Var ret(1970):Array<String>] [ArrayDecl:Array<String>]
+			[Var infos(1981):cs.NativeArray<System.Reflection.MemberInfo>]
+				[Call:cs.NativeArray<System.Reflection.MemberInfo>]
+					[Field:bindingAttr : System.Reflection.BindingFlags -> cs.NativeArray<System.Reflection.MemberInfo>]
+						[Cast:System.Type] [Local c(1969):Class<Dynamic>]
+						[FInstance:bindingAttr : System.Reflection.BindingFlags -> cs.NativeArray<System.Reflection.MemberInfo>]
+							System.Type
+							GetMembers
+					[Cast:cs.Flags<System.Reflection.BindingFlags>]
+						[Cast:System.Reflection.BindingFlags]
+							[Cast:System.Reflection.BindingFlags]
+								[Binop:System.Reflection.BindingFlags]
+									[Cast:cs._Flags.EnumUnderlying<System.Reflection.BindingFlags>]
+										[Cast:System.Reflection.BindingFlags]
+											[Cast:System.Reflection.BindingFlags]
+												[Cast:cs.Flags<System.Reflection.BindingFlags>]
+													[Cast:System.Reflection.BindingFlags]
+														[Field:System.Reflection.BindingFlags]
+															[TypeExpr System.Reflection.BindingFlags:Enum<cs.system.reflection.BindingFlags>]
+															[FEnum:System.Reflection.BindingFlags]
+																System.Reflection.BindingFlags
+																Public
+									|
+									[Cast:cs._Flags.EnumUnderlying<System.Reflection.BindingFlags>]
+										[Cast:System.Reflection.BindingFlags]
+											[Field:System.Reflection.BindingFlags]
+												[TypeExpr System.Reflection.BindingFlags:Enum<cs.system.reflection.BindingFlags>]
+												[FEnum:System.Reflection.BindingFlags]
+													System.Reflection.BindingFlags
+													Static
+			[Block:Void]
+				[Var _g1(1983):Int] [Const 0:Int]
+				[Var _g(1982):Int]
+					[Call:Int]
+						[Field:Void -> Int]
+							[Local infos(1981):cs.NativeArray<System.Reflection.MemberInfo>]
+							[FInstance:Void -> Int]
+								System.Array
+								get_Length
+				[While:Void]
+					[Parenthesis:Bool]
+						[Binop:Bool]
+							[Local _g1(1983):Int]
+							<
+							[Local _g(1982):Int]
+					[Block:Void]
+						[Var i(1984):Int]
+							[Unop:Int]
+								++
+								Postfix
+								[Local _g1(1983):Int]
+						[Var name(1985):String]
+							[Call:String]
+								[Field:Void -> String]
+									[Array:System.Reflection.MemberInfo]
+										[Local infos(1981):cs.NativeArray<System.Reflection.MemberInfo>]
+										[Local i(1984):Int]
+									[FInstance:Void -> String]
+										System.Reflection.MemberInfo
+										get_Name
+						[If:Void]
+							[Parenthesis:Bool]
+								[Unop:Bool]
+									!
+									Prefix
+									[Call:Bool]
+										[Field:value : String -> Bool]
+											[Local name(1985):String]
+											[FInstance:value : String -> Bool]
+												String
+												StartsWith
+										[Const "__hx_":String]
+							[Then:Int] [Call:Int]
+								[Field:x : String -> Int]
+									[Local ret(1970):Array<String>]
+									[FInstance:x : String -> Int]
+										Array<String>
+										push
+								[Local name(1985):String]
+			[Return:Dynamic] [Local ret(1970):Array<String>]
+
+	static public getEnumConstructs(method) : e : Enum<Dynamic> -> Array<String>
+
+	 = [Function:e : Enum<Dynamic> -> Array<String>]
+		[Arg:Enum<Dynamic>] [Local e(948):Enum<Dynamic>]
+		[Block:Dynamic]
+			[If:Void]
+				[Parenthesis:Bool]
+					[Call:Bool]
+						[Field:o : Dynamic -> field : String -> Bool]
+							[TypeExpr Reflect:Class<Reflect>]
+							[FStatic:o : Dynamic -> field : String -> Bool]
+								Reflect
+								hasField
+						[Local e(948):Enum<Dynamic>]
+						[Const "__hx_constructs":String]
+				[Then:Dynamic] [Block:Dynamic]
+					[Var ret(1097):Array<String>]
+						[New:Array<String>]
+							Array<String>
+							[Field:cs.NativeArray<String>]
+								[Local e(948):Enum<Dynamic>]
+								[FDynamic:cs.NativeArray<String>] __hx_constructs
+					[Return:Dynamic]
+						[Call:Array<String>]
+							[Field:Void -> Array<String>]
+								[Local ret(1097):Array<String>]
+								[FInstance:Void -> Array<String>]
+									Array<String>
+									copy
+			[Block:Array<String>]
+				[Var native(1100):cs.NativeArray<String>]
+					[Call:cs.NativeArray<String>]
+						[Field:enumType : System.Type -> cs.NativeArray<String>]
+							[TypeExpr System.Enum:Class<cs.system.Enum>]
+							[FStatic:enumType : System.Type -> cs.NativeArray<String>]
+								System.Enum
+								GetNames
+						[Local e(948):Enum<Dynamic>]
+				[Return:Dynamic]
+					[New:Array<String>]
+						Array<String>
+						[Local native(1100):cs.NativeArray<String>]
+
+	static public typeof(method) : v : Dynamic -> ValueType
+
+	 = [Function:v : Dynamic -> ValueType]
+		[Arg:Dynamic] [Local v(1990):Dynamic]
+		[Block:Void]
+			[If:Void]
+				[Parenthesis:Bool]
+					[Binop:Bool]
+						[Local v(1990):Dynamic]
+						==
+						[Const null:Unknown<45>]
+				[Then:Dynamic] [Return:Dynamic]
+					[Field:ValueType]
+						[TypeExpr ValueType:Enum<ValueType>]
+						[FEnum:ValueType]
+							ValueType
+							TNull
+			[Var t(1996):System.Type]
+				[Cast:System.Type]
+					[Call:System.Type]
+						[Local __as__(1995):Dynamic -> Unknown<5>]
+						[Local v(1990):Dynamic]
+			[If:Void]
+				[Parenthesis:Bool]
+					[Binop:Bool]
+						[Local t(1996):System.Type]
+						!=
+						[Const null:System.Type]
+				[Then:Dynamic] [Return:Dynamic]
+					[Field:ValueType]
+						[TypeExpr ValueType:Enum<ValueType>]
+						[FEnum:ValueType]
+							ValueType
+							TObject
+			[Binop:System.Type]
+				[Local t(1996):System.Type]
+				=
+				[Call:Dynamic]
+					[Field:Dynamic]
+						[Local v(1990):Dynamic]
+						[FDynamic:Dynamic] GetType
+			[If:Void]
+				[Parenthesis:Bool]
+					[Binop:Bool]
+						[Call:Bool]
+							[Field:Void -> Bool]
+								[Local t(1996):System.Type]
+								[FInstance:Void -> Bool]
+									System.Type
+									get_IsEnum
+						||
+						[Call:Bool]
+							[Field:v : Dynamic -> t : Dynamic -> Bool]
+								[TypeExpr Std:Class<Std>]
+								[FStatic:v : Dynamic -> t : Dynamic -> Bool]
+									Std
+									is
+							[Local v(1990):Dynamic]
+							[TypeExpr haxe.lang.Enum:Class<cs.internal.HxEnum>]
+				[Then:Dynamic] [Return:Dynamic]
+					[Call:ValueType]
+						[Field:e : Enum<Dynamic> -> ValueType]
+							[TypeExpr ValueType:Enum<ValueType>]
+							[FEnum:e : Enum<Dynamic> -> ValueType]
+								ValueType
+								TEnum
+						[Cast:Enum<Dynamic>] [Local t(1996):System.Type]
+			[If:Void]
+				[Parenthesis:Bool]
+					[Call:Bool]
+						[Field:Void -> Bool]
+							[Local t(1996):System.Type]
+							[FInstance:Void -> Bool]
+								System.Type
+								get_IsValueType
+				[Then:Void] [Block:Void]
+					[Var vc(1997):System.IConvertible] [Cast:System.IConvertible] [Local v(1990):Dynamic]
+					[If:Void]
+						[Parenthesis:Bool]
+							[Binop:Bool]
+								[Local vc(1997):System.IConvertible]
+								!=
+								[Const null:System.IConvertible]
+						[Then:Unknown<46>] [Block:Unknown<46>]
+							[Var _g(1998):System.TypeCode]
+								[Call:System.TypeCode]
+									[Field:Void -> System.TypeCode]
+										[Local vc(1997):System.IConvertible]
+										[FInstance:Void -> System.TypeCode]
+											System.IConvertible
+											GetTypeCode
+							[Switch:Unknown<46>]
+								[Parenthesis:Int]
+									[Meta:Int]
+										:exhaustive
+										[Call:Int]
+											[Field:System.TypeCode -> Int]
+												[TypeExpr Type:Class<Type>]
+												[FStatic:System.TypeCode -> Int]
+													Type
+													enumIndex
+											[Local _g(1998):System.TypeCode]
+								[Case:Dynamic]
+									[Const 3:Int]
+									[Return:Dynamic]
+										[Field:ValueType]
+											[TypeExpr ValueType:Enum<ValueType>]
+											[FEnum:ValueType]
+												ValueType
+												TBool
+								[Case:Void]
+									[Const 14:Int]
+									[Block:Void]
+										[Var d(2000):Float]
+											[Call:Float]
+												[Field:provider : System.IFormatProvider -> Float]
+													[Local vc(1997):System.IConvertible]
+													[FInstance:provider : System.IFormatProvider -> Float]
+														System.IConvertible
+														ToDouble
+												[Const null:System.IFormatProvider]
+										[If:Void]
+											[Parenthesis:Bool]
+												[Binop:Bool]
+													[Binop:Bool]
+														[Binop:Bool]
+															[Local d(2000):Float]
+															>=
+															[Field:Int]
+																[TypeExpr System.Int32:Class<cs.system.Int32>]
+																[FStatic:Int]
+																	System.Int32
+																	MinValue
+														&&
+														[Binop:Bool]
+															[Local d(2000):Float]
+															<=
+															[Field:Int]
+																[TypeExpr System.Int32:Class<cs.system.Int32>]
+																[FStatic:Int]
+																	System.Int32
+																	MaxValue
+													&&
+													[Binop:Bool]
+														[Local d(2000):Float]
+														==
+														[Call:Int]
+															[Field:provider : System.IFormatProvider -> Int]
+																[Local vc(1997):System.IConvertible]
+																[FInstance:provider : System.IFormatProvider -> Int]
+																	System.IConvertible
+																	ToInt32
+															[Const null:System.IFormatProvider]
+											[Then:Dynamic] [Return:Dynamic]
+												[Field:ValueType]
+													[TypeExpr ValueType:Enum<ValueType>]
+													[FEnum:ValueType]
+														ValueType
+														TInt
+											[Else:Dynamic] [Return:Dynamic]
+												[Field:ValueType]
+													[TypeExpr ValueType:Enum<ValueType>]
+													[FEnum:ValueType]
+														ValueType
+														TFloat
+								[Case:Dynamic]
+									[Const 9:Int]
+									[Return:Dynamic]
+										[Field:ValueType]
+											[TypeExpr ValueType:Enum<ValueType>]
+											[FEnum:ValueType]
+												ValueType
+												TInt
+								[Default:Dynamic]
+									[Return:Dynamic]
+										[Call:ValueType]
+											[Field:c : Class<Dynamic> -> ValueType]
+												[TypeExpr ValueType:Enum<ValueType>]
+												[FEnum:c : Class<Dynamic> -> ValueType]
+													ValueType
+													TClass
+											[Cast:Class<Dynamic>] [Local t(1996):System.Type]
+						[Else:Dynamic] [Return:Dynamic]
+							[Call:ValueType]
+								[Field:c : Class<Dynamic> -> ValueType]
+									[TypeExpr ValueType:Enum<ValueType>]
+									[FEnum:c : Class<Dynamic> -> ValueType]
+										ValueType
+										TClass
+								[Cast:Class<Dynamic>] [Local t(1996):System.Type]
+			[If:Void]
+				[Parenthesis:Bool]
+					[Call:Bool]
+						[Field:v : Dynamic -> t : Dynamic -> Bool]
+							[TypeExpr Std:Class<Std>]
+							[FStatic:v : Dynamic -> t : Dynamic -> Bool]
+								Std
+								is
+						[Local v(1990):Dynamic]
+						[TypeExpr haxe.lang.IHxObject:Class<cs.internal.IHxObject>]
+				[Then:Dynamic] [Block:Dynamic]
+					[If:Void]
+						[Parenthesis:Bool]
+							[Call:Bool]
+								[Field:v : Dynamic -> t : Dynamic -> Bool]
+									[TypeExpr Std:Class<Std>]
+									[FStatic:v : Dynamic -> t : Dynamic -> Bool]
+										Std
+										is
+								[Local v(1990):Dynamic]
+								[TypeExpr haxe.lang.DynamicObject:Class<cs.internal.DynamicObject>]
+						[Then:Dynamic] [Return:Dynamic]
+							[Field:ValueType]
+								[TypeExpr ValueType:Enum<ValueType>]
+								[FEnum:ValueType]
+									ValueType
+									TObject
+						[Else:Void] [If:Void]
+							[Parenthesis:Bool]
+								[Call:Bool]
+									[Field:v : Dynamic -> t : Dynamic -> Bool]
+										[TypeExpr Std:Class<Std>]
+										[FStatic:v : Dynamic -> t : Dynamic -> Bool]
+											Std
+											is
+									[Local v(1990):Dynamic]
+									[TypeExpr haxe.lang.Enum:Class<cs.internal.HxEnum>]
+							[Then:Dynamic] [Return:Dynamic]
+								[Call:ValueType]
+									[Field:e : Enum<Dynamic> -> ValueType]
+										[TypeExpr ValueType:Enum<ValueType>]
+										[FEnum:e : Enum<Dynamic> -> ValueType]
+											ValueType
+											TEnum
+									[Cast:Enum<Dynamic>] [Local t(1996):System.Type]
+					[Return:Dynamic]
+						[Call:ValueType]
+							[Field:c : Class<Dynamic> -> ValueType]
+								[TypeExpr ValueType:Enum<ValueType>]
+								[FEnum:c : Class<Dynamic> -> ValueType]
+									ValueType
+									TClass
+							[Cast:Class<Dynamic>] [Local t(1996):System.Type]
+				[Else:Void] [If:Void]
+					[Parenthesis:Bool]
+						[Call:Bool]
+							[Field:v : Dynamic -> t : Dynamic -> Bool]
+								[TypeExpr Std:Class<Std>]
+								[FStatic:v : Dynamic -> t : Dynamic -> Bool]
+									Std
+									is
+							[Local v(1990):Dynamic]
+							[TypeExpr haxe.lang.Function:Class<cs.internal.Function>]
+					[Then:Dynamic] [Return:Dynamic]
+						[Field:ValueType]
+							[TypeExpr ValueType:Enum<ValueType>]
+							[FEnum:ValueType]
+								ValueType
+								TFunction
+					[Else:Dynamic] [Return:Dynamic]
+						[Call:ValueType]
+							[Field:c : Class<Dynamic> -> ValueType]
+								[TypeExpr ValueType:Enum<ValueType>]
+								[FEnum:c : Class<Dynamic> -> ValueType]
+									ValueType
+									TClass
+							[Cast:Class<Dynamic>] [Local t(1996):System.Type]
+
+	static public enumEq<T : enumEq.T>(method) : a : enumEq.T -> b : enumEq.T -> Bool
+
+	 = [Function:a : enumEq.T -> b : enumEq.T -> Bool]
+		[Arg:enumEq.T] [Local a(1120):enumEq.T]
+		[Arg:enumEq.T] [Local b(1121):enumEq.T]
+		[Block:Void]
+			[If:Void]
+				[Parenthesis:Bool]
+					[Binop:Bool]
+						[Local a(1120):enumEq.T]
+						==
+						[Const null:enumEq.T]
+				[Then:Dynamic] [Return:Dynamic]
+					[Binop:Bool]
+						[Local b(1121):enumEq.T]
+						==
+						[Const null:enumEq.T]
+				[Else:Void] [If:Void]
+					[Parenthesis:Bool]
+						[Binop:Bool]
+							[Local b(1121):enumEq.T]
+							==
+							[Const null:enumEq.T]
+					[Then:Dynamic] [Return:Dynamic] [Const false:Bool]
+					[Else:Dynamic] [Return:Dynamic]
+						[Call:Bool]
+							[Field:enumEq.T -> Unknown<47>]
+								[Local a(1120):enumEq.T]
+								[FDynamic:enumEq.T -> Unknown<47>] Equals
+							[Local b(1121):enumEq.T]
+
+	static public enumConstructor(method) : e : EnumValue -> String
+
+	 = [Function:e : EnumValue -> String]
+		[Arg:EnumValue] [Local e(1123):EnumValue]
+		[Block:Dynamic]
+			[If:String]
+				[Parenthesis:Bool]
+					[Call:Bool]
+						[Field:v : Dynamic -> t : Dynamic -> Bool]
+							[TypeExpr Std:Class<Std>]
+							[FStatic:v : Dynamic -> t : Dynamic -> Bool]
+								Std
+								is
+						[Local e(1123):EnumValue]
+						[TypeExpr System.Enum:Class<cs.system.Enum>]
+				[Then:Dynamic] [Return:Dynamic]
+					[Binop:String]
+						[Call:String]
+							[Field:s : Dynamic -> String]
+								[TypeExpr Std:Class<Std>]
+								[FStatic:s : Dynamic -> String]
+									Std
+									string
+							[Local e(1123):EnumValue]
+						+
+						[Const "":String]
+				[Else:Dynamic] [Return:Dynamic]
+					[Call:String]
+						[Field:Void -> String]
+							[Parenthesis:haxe.lang.Enum]
+								[Cast:haxe.lang.Enum]
+									[Local e(1123):EnumValue]
+									[TypeExpr haxe.lang.Enum:haxe.lang.Enum]
+							[FInstance:Void -> String]
+								haxe.lang.Enum
+								getTag
+
+	static public enumParameters(method) : e : EnumValue -> Array<Dynamic>
+
+	 = [Function:e : EnumValue -> Array<Dynamic>]
+		[Arg:EnumValue] [Local e(1125):EnumValue]
+		[Block:Dynamic]
+			[If:Array<Dynamic>]
+				[Parenthesis:Bool]
+					[Call:Bool]
+						[Field:v : Dynamic -> t : Dynamic -> Bool]
+							[TypeExpr Std:Class<Std>]
+							[FStatic:v : Dynamic -> t : Dynamic -> Bool]
+								Std
+								is
+						[Local e(1125):EnumValue]
+						[TypeExpr System.Enum:Class<cs.system.Enum>]
+				[Then:Dynamic] [Return:Dynamic] [ArrayDecl:Array<Dynamic>]
+				[Else:Dynamic] [Return:Dynamic]
+					[Call:Array<{ }>]
+						[Field:Void -> Array<{ }>]
+							[Parenthesis:haxe.lang.Enum]
+								[Cast:haxe.lang.Enum]
+									[Local e(1125):EnumValue]
+									[TypeExpr haxe.lang.Enum:haxe.lang.Enum]
+							[FInstance:Void -> Array<{ }>]
+								haxe.lang.Enum
+								getParams
+
+	static public enumIndex(method) : e : EnumValue -> Int
+
+	 = [Function:e : EnumValue -> Int]
+		[Arg:EnumValue] [Local e(1127):EnumValue]
+		[Block:Void]
+			[If:Void]
+				[Parenthesis:Bool]
+					[Call:Bool]
+						[Field:v : Dynamic -> t : Dynamic -> Bool]
+							[TypeExpr Std:Class<Std>]
+							[FStatic:v : Dynamic -> t : Dynamic -> Bool]
+								Std
+								is
+						[Local e(1127):EnumValue]
+						[TypeExpr System.Enum:Class<cs.system.Enum>]
+				[Then:Dynamic] [Block:Dynamic]
+					[Var values(1128):System.Array]
+						[Call:System.Array]
+							[Field:enumType : System.Type -> System.Array]
+								[TypeExpr System.Enum:Class<cs.system.Enum>]
+								[FStatic:enumType : System.Type -> System.Array]
+									System.Enum
+									GetValues
+							[Call:System.Type]
+								[Field:obj : Dynamic -> System.Type]
+									[TypeExpr cs.Lib:Class<cs.Lib>]
+									[FStatic:obj : Dynamic -> System.Type]
+										cs.Lib
+										getNativeType
+								[Local e(1127):EnumValue]
+					[Return:Dynamic]
+						[Call:Int]
+							[Field:array : System.Array -> value : Dynamic -> Int]
+								[TypeExpr System.Array:Class<cs.system.Array>]
+								[FStatic:array : System.Array -> value : Dynamic -> Int]
+									System.Array
+									IndexOf
+							[Local values(1128):System.Array]
+							[Local e(1127):EnumValue]
+				[Else:Dynamic] [Return:Dynamic]
+					[Field:Int]
+						[Parenthesis:haxe.lang.Enum]
+							[Cast:haxe.lang.Enum]
+								[Local e(1127):EnumValue]
+								[TypeExpr haxe.lang.Enum:haxe.lang.Enum]
+						[FInstance:Int]
+							haxe.lang.Enum
+							index
+
+	static public allEnums<T : allEnums.T>(method) : e : Enum<allEnums.T> -> Array<allEnums.T>
+
+	 = [Function:e : Enum<allEnums.T> -> Array<allEnums.T>]
+		[Arg:Enum<allEnums.T>] [Local e(1103):Enum<allEnums.T>]
+		[Block:Dynamic]
+			[Var ctors(1104):Array<String>]
+				[Call:Array<String>]
+					[Field:e : Enum<Dynamic> -> Array<String>]
+						[TypeExpr Type:Class<Type>]
+						[FStatic:e : Enum<Dynamic> -> Array<String>]
+							Type
+							getEnumConstructs
+					[Local e(1103):Enum<allEnums.T>]
+			[Var ret(1105):Array<allEnums.T>] [ArrayDecl:Array<allEnums.T>]
+			[Block:Void]
+				[Var _g(1107):Int] [Const 0:Int]
+				[While:Void]
+					[Parenthesis:Bool]
+						[Binop:Bool]
+							[Local _g(1107):Int]
+							<
+							[Field:Int]
+								[Local ctors(1104):Array<String>]
+								[FInstance:Int]
+									Array<String>
+									length
+					[Block:Void]
+						[Var ctor(1106):String]
+							[Array:String]
+								[Local ctors(1104):Array<String>]
+								[Local _g(1107):Int]
+						[Unop:Int]
+							++
+							Prefix
+							[Local _g(1107):Int]
+						[Var v(1116):allEnums.T]
+							[Call:Dynamic]
+								[Field:o : Dynamic -> field : String -> Dynamic]
+									[TypeExpr Reflect:Class<Reflect>]
+									[FStatic:o : Dynamic -> field : String -> Dynamic]
+										Reflect
+										field
+								[Local e(1103):Enum<allEnums.T>]
+								[Local ctor(1106):String]
+						[If:Void]
+							[Parenthesis:Bool]
+								[Call:Bool]
+									[Field:v : Dynamic -> t : Dynamic -> Bool]
+										[TypeExpr Std:Class<Std>]
+										[FStatic:v : Dynamic -> t : Dynamic -> Bool]
+											Std
+											is
+									[Local v(1116):allEnums.T]
+									[Local e(1103):Enum<allEnums.T>]
+							[Then:Int] [Call:Int]
+								[Field:x : allEnums.T -> Int]
+									[Local ret(1105):Array<allEnums.T>]
+									[FInstance:x : allEnums.T -> Int]
+										Array<allEnums.T>
+										push
+								[Local v(1116):allEnums.T]
+			[Return:Dynamic] [Local ret(1105):Array<allEnums.T>]
+
+}

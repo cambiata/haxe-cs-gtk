@@ -1,0 +1,128 @@
+extern class System.AppDomainSetup implements System.IAppDomainSetup{
+	public new(method) : Void -> Void
+
+	public new(method) : activationContext : System.ActivationContext -> Void
+
+	public new(method) : activationArguments : System.Runtime.Hosting.ActivationArguments -> Void
+
+	public DisallowApplicationBaseProbing((get,set)) : Bool
+
+	public ApplicationTrust((get,set)) : System.Security.Policy.ApplicationTrust
+
+	public AppDomainInitializerArguments((get,set)) : cs.NativeArray<String>
+
+	public AppDomainInitializer((get,set)) : cs.system.AppDomainInitializer
+
+	public ActivationArguments((get,set)) : System.Runtime.Hosting.ActivationArguments
+
+	public DisallowCodeDownload((get,set)) : Bool
+
+	public DisallowBindingRedirects((get,set)) : Bool
+
+	public ShadowCopyFiles((get,set)) : String
+
+	public ShadowCopyDirectories((get,set)) : String
+
+	public PrivateBinPathProbe((get,set)) : String
+
+	public PrivateBinPath((get,set)) : String
+
+	public LoaderOptimization((get,set)) : System.LoaderOptimization
+
+	public LicenseFile((get,set)) : String
+
+	public DynamicBase((get,set)) : String
+
+	public DisallowPublisherPolicy((get,set)) : Bool
+
+	public ConfigurationFile((get,set)) : String
+
+	public CachePath((get,set)) : String
+
+	public ApplicationName((get,set)) : String
+
+	public ApplicationBase((get,set)) : String
+
+	get_ApplicationBase(method) : Void -> String
+
+	set_ApplicationBase(method) : value : String -> String
+
+	get_ApplicationName(method) : Void -> String
+
+	set_ApplicationName(method) : value : String -> String
+
+	get_CachePath(method) : Void -> String
+
+	set_CachePath(method) : value : String -> String
+
+	get_ConfigurationFile(method) : Void -> String
+
+	set_ConfigurationFile(method) : value : String -> String
+
+	get_DisallowPublisherPolicy(method) : Void -> Bool
+
+	set_DisallowPublisherPolicy(method) : value : Bool -> Bool
+
+	get_DynamicBase(method) : Void -> String
+
+	set_DynamicBase(method) : value : String -> String
+
+	get_LicenseFile(method) : Void -> String
+
+	set_LicenseFile(method) : value : String -> String
+
+	get_LoaderOptimization(method) : Void -> System.LoaderOptimization
+
+	set_LoaderOptimization(method) : value : System.LoaderOptimization -> System.LoaderOptimization
+
+	get_PrivateBinPath(method) : Void -> String
+
+	set_PrivateBinPath(method) : value : String -> String
+
+	get_PrivateBinPathProbe(method) : Void -> String
+
+	set_PrivateBinPathProbe(method) : value : String -> String
+
+	get_ShadowCopyDirectories(method) : Void -> String
+
+	set_ShadowCopyDirectories(method) : value : String -> String
+
+	get_ShadowCopyFiles(method) : Void -> String
+
+	set_ShadowCopyFiles(method) : value : String -> String
+
+	get_DisallowBindingRedirects(method) : Void -> Bool
+
+	set_DisallowBindingRedirects(method) : value : Bool -> Bool
+
+	get_DisallowCodeDownload(method) : Void -> Bool
+
+	set_DisallowCodeDownload(method) : value : Bool -> Bool
+
+	get_ActivationArguments(method) : Void -> System.Runtime.Hosting.ActivationArguments
+
+	set_ActivationArguments(method) : value : System.Runtime.Hosting.ActivationArguments -> System.Runtime.Hosting.ActivationArguments
+
+	get_AppDomainInitializer(method) : Void -> cs.system.AppDomainInitializer
+
+	set_AppDomainInitializer(method) : value : cs.system.AppDomainInitializer -> cs.system.AppDomainInitializer
+
+	get_AppDomainInitializerArguments(method) : Void -> cs.NativeArray<String>
+
+	set_AppDomainInitializerArguments(method) : value : cs.NativeArray<String> -> cs.NativeArray<String>
+
+	get_ApplicationTrust(method) : Void -> System.Security.Policy.ApplicationTrust
+
+	set_ApplicationTrust(method) : value : System.Security.Policy.ApplicationTrust -> System.Security.Policy.ApplicationTrust
+
+	get_DisallowApplicationBaseProbing(method) : Void -> Bool
+
+	set_DisallowApplicationBaseProbing(method) : value : Bool -> Bool
+
+	public GetConfigurationBytes(method) : Void -> cs.NativeArray<cs.types.UInt8>
+
+	public SetConfigurationBytes(method) : value : cs.NativeArray<cs.types.UInt8> -> Void
+
+	public SetCompatibilitySwitches(method) : switches : System.Collections.Generic.IEnumerable`1<String> -> Void
+
+}

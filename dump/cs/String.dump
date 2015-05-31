@@ -1,0 +1,52 @@
+extern class String implements ArrayAccess<cs.Char16>{
+	public new(method) : string : String -> Void
+
+	public length((default,null)) : Int
+
+	public toUpperCase(method) : Void -> String
+
+	public toLowerCase(method) : Void -> String
+
+	public charAt(method) : index : Int -> String
+
+	public charCodeAt(method) : index : Int -> Null<Int>
+
+	public indexOf(method) : str : String -> ?startIndex : Null<Int> -> Int
+
+	public lastIndexOf(method) : str : String -> ?startIndex : Null<Int> -> Int
+
+	public split(method) : delimiter : String -> Array<String>
+
+	public substr(method) : pos : Int -> ?len : Null<Int> -> String
+
+	public substring(method) : startIndex : Int -> ?endIndex : Null<Int> -> String
+
+	public toString(method) : Void -> String
+
+	IndexOf(method) : value : String -> startIndex : Int -> comparisonType : System.StringComparison -> Int
+
+	Replace(method) : oldValue : String -> newValue : String -> String
+
+	StartsWith(method) : value : String -> Bool
+
+	EndsWith(method) : value : String -> Bool
+
+	TrimStart(method) : Void -> String
+
+	TrimEnd(method) : Void -> String
+
+	Trim(method) : Void -> String
+
+	CompareTo(method) : obj : Dynamic -> Int
+
+	Substring(method) : startIndex : Int -> length : Int -> String
+
+	Substring(method) : startIndex : Int -> String
+
+	static Compare(method) : s1 : String -> s2 : String -> Int
+
+	static Compare(method) : s1 : String -> s2 : String -> kind : System.StringComparison -> Int
+
+	static public fromCharCode(method) : code : Int -> String
+
+}

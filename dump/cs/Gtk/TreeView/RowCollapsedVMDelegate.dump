@@ -1,0 +1,14 @@
+extern class Gtk.TreeView.RowCollapsedVMDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : tree_view : System.IntPtr -> iter : System.IntPtr -> path : System.IntPtr -> Void
+
+	public BeginInvoke(method) : tree_view : System.IntPtr -> iter : System.IntPtr -> path : System.IntPtr -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Void
+
+	static public op_Addition(method) : arg1 : gtk.TreeView_RowCollapsedVMDelegate -> arg2 : gtk.TreeView_RowCollapsedVMDelegate -> gtk.TreeView_RowCollapsedVMDelegate
+
+	static public op_Subtraction(method) : arg1 : gtk.TreeView_RowCollapsedVMDelegate -> arg2 : gtk.TreeView_RowCollapsedVMDelegate -> gtk.TreeView_RowCollapsedVMDelegate
+
+}

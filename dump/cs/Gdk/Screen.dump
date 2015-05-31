@@ -1,0 +1,136 @@
+extern class Gdk.Screen extends GLib.Object{
+	new(method) : gtype : GLib.GType -> Void
+
+	new(method) : Void -> Void
+
+	public new(method) : raw : System.IntPtr -> Void
+
+	CompositedChanged(var) : cs.system.EventHandler
+
+	SizeChanged(var) : cs.system.EventHandler
+
+	public FontOptions((get,set)) : Cairo.FontOptions
+
+	public ToplevelWindows((get,never)) : cs.NativeArray<Gdk.Window>
+
+	public IsComposited((get,never)) : Bool
+
+	public DefaultColormap((get,set)) : Gdk.Colormap
+
+	public NMonitors((get,never)) : Int
+
+	public ActiveWindow((get,never)) : Gdk.Window
+
+	public RgbVisual((get,never)) : Gdk.Visual
+
+	public RootWindow((get,never)) : Gdk.Window
+
+	public WidthMm((get,never)) : Int
+
+	public RgbColormap((get,never)) : Gdk.Colormap
+
+	public RgbaVisual((get,never)) : Gdk.Visual
+
+	public RgbaColormap((get,never)) : Gdk.Colormap
+
+	public Display((get,never)) : Gdk.Display
+
+	public HeightMm((get,never)) : Int
+
+	public WindowStack((get,never)) : cs.NativeArray<Gdk.Window>
+
+	public SystemVisual((get,never)) : Gdk.Visual
+
+	public Height((get,never)) : Int
+
+	public SystemColormap((get,never)) : Gdk.Colormap
+
+	public Width((get,never)) : Int
+
+	public Number((get,never)) : Int
+
+	public Resolution((get,set)) : Float
+
+	get_Resolution(method) : Void -> Float
+
+	set_Resolution(method) : value : Float -> Float
+
+	OnSizeChanged(method) : Void -> Void
+
+	public add_SizeChanged(method) : value : cs.system.EventHandler -> Void
+
+	public remove_SizeChanged(method) : value : cs.system.EventHandler -> Void
+
+	OnCompositedChanged(method) : Void -> Void
+
+	public add_CompositedChanged(method) : value : cs.system.EventHandler -> Void
+
+	public remove_CompositedChanged(method) : value : cs.system.EventHandler -> Void
+
+	get_Number(method) : Void -> Int
+
+	get_Width(method) : Void -> Int
+
+	get_SystemColormap(method) : Void -> Gdk.Colormap
+
+	public MakeDisplayName(method) : Void -> String
+
+	public GetMonitorAtPoint(method) : x : Int -> y : Int -> Int
+
+	public GetMonitorAtWindow(method) : window : Gdk.Window -> Int
+
+	public GetSetting(method) : name : String -> value : GLib.Value -> Bool
+
+	get_Height(method) : Void -> Int
+
+	get_SystemVisual(method) : Void -> Gdk.Visual
+
+	public GetMonitorGeometry(method) : monitor_num : Int -> Gdk.Rectangle
+
+	get_WindowStack(method) : Void -> cs.NativeArray<Gdk.Window>
+
+	get_HeightMm(method) : Void -> Int
+
+	get_Display(method) : Void -> Gdk.Display
+
+	get_RgbaColormap(method) : Void -> Gdk.Colormap
+
+	get_RgbaVisual(method) : Void -> Gdk.Visual
+
+	get_RgbColormap(method) : Void -> Gdk.Colormap
+
+	get_WidthMm(method) : Void -> Int
+
+	get_RootWindow(method) : Void -> Gdk.Window
+
+	get_RgbVisual(method) : Void -> Gdk.Visual
+
+	get_ActiveWindow(method) : Void -> Gdk.Window
+
+	get_NMonitors(method) : Void -> Int
+
+	get_DefaultColormap(method) : Void -> Gdk.Colormap
+
+	set_DefaultColormap(method) : value : Gdk.Colormap -> Gdk.Colormap
+
+	public BroadcastClientMessage(method) : evnt : Gdk.Event -> Void
+
+	get_IsComposited(method) : Void -> Bool
+
+	get_ToplevelWindows(method) : Void -> cs.NativeArray<Gdk.Window>
+
+	public ListVisuals(method) : Void -> cs.NativeArray<Gdk.Visual>
+
+	get_FontOptions(method) : Void -> Cairo.FontOptions
+
+	set_FontOptions(method) : value : Cairo.FontOptions -> Cairo.FontOptions
+
+	static public GType((get,never)) : GLib.GType
+
+	static public Default((get,never)) : Gdk.Screen
+
+	static get_Default(method) : Void -> Gdk.Screen
+
+	static get_GType(method) : Void -> GLib.GType
+
+}

@@ -1,0 +1,9 @@
+extern enum Gdk.DragProtocol {
+	Motif : Gdk.DragProtocol;
+	Xdnd : Gdk.DragProtocol;
+	Rootwin : Gdk.DragProtocol;
+	None : Gdk.DragProtocol;
+	Win32Dropfiles : Gdk.DragProtocol;
+	Ole2 : Gdk.DragProtocol;
+	Local : Gdk.DragProtocol;
+}

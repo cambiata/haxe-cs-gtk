@@ -1,0 +1,12 @@
+extern class Gtk.TestCollapseRowArgs extends GLib.SignalArgs{
+	public new(method) : Void -> Void
+
+	public Path((get,never)) : Gtk.TreePath
+
+	public Iter((get,never)) : Gtk.TreeIter
+
+	get_Iter(method) : Void -> Gtk.TreeIter
+
+	get_Path(method) : Void -> Gtk.TreePath
+
+}

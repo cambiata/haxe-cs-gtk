@@ -1,0 +1,14 @@
+extern class Gtk.CellRenderer.EditingCanceledVMDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : cell : System.IntPtr -> Void
+
+	public BeginInvoke(method) : cell : System.IntPtr -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Void
+
+	static public op_Addition(method) : arg1 : gtk.CellRenderer_EditingCanceledVMDelegate -> arg2 : gtk.CellRenderer_EditingCanceledVMDelegate -> gtk.CellRenderer_EditingCanceledVMDelegate
+
+	static public op_Subtraction(method) : arg1 : gtk.CellRenderer_EditingCanceledVMDelegate -> arg2 : gtk.CellRenderer_EditingCanceledVMDelegate -> gtk.CellRenderer_EditingCanceledVMDelegate
+
+}

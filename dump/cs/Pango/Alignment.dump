@@ -1,0 +1,5 @@
+extern enum Pango.Alignment {
+	Left : Pango.Alignment;
+	Center : Pango.Alignment;
+	Right : Pango.Alignment;
+}

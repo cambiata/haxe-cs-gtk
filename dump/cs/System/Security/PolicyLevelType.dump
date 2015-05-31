@@ -1,0 +1,6 @@
+extern enum System.Security.PolicyLevelType {
+	User : System.Security.PolicyLevelType;
+	Machine : System.Security.PolicyLevelType;
+	Enterprise : System.Security.PolicyLevelType;
+	AppDomain : System.Security.PolicyLevelType;
+}

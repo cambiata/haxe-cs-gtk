@@ -1,0 +1,16 @@
+extern class System.ComponentModel.EventHandlerList implements System.IDisposable implements ArrayAccess<System.Delegate>{
+	public new(method) : Void -> Void
+
+	get_Item(method) : key : Dynamic -> System.Delegate
+
+	set_Item(method) : key : Dynamic -> value : System.Delegate -> Void
+
+	public AddHandler(method) : key : Dynamic -> value : System.Delegate -> Void
+
+	public AddHandlers(method) : listToAddFrom : System.ComponentModel.EventHandlerList -> Void
+
+	public RemoveHandler(method) : key : Dynamic -> value : System.Delegate -> Void
+
+	public Dispose(method) : Void -> Void
+
+}

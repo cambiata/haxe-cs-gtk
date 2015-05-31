@@ -1,0 +1,8 @@
+extern enum Gtk.ButtonBoxStyle {
+	DefaultStyle : Gtk.ButtonBoxStyle;
+	Spread : Gtk.ButtonBoxStyle;
+	Edge : Gtk.ButtonBoxStyle;
+	Start : Gtk.ButtonBoxStyle;
+	End : Gtk.ButtonBoxStyle;
+	Center : Gtk.ButtonBoxStyle;
+}

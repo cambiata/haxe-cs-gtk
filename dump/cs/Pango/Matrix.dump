@@ -1,0 +1,50 @@
+extern class Pango.Matrix extends System.ValueType{
+	public FontScaleFactor((get,never)) : Float
+
+	public Y0(var) : Float
+
+	public X0(var) : Float
+
+	public Yy(var) : Float
+
+	public Yx(var) : Float
+
+	public Xy(var) : Float
+
+	public Xx(var) : Float
+
+	public TransformPixelRectangle(method) : rect : cs.Ref<Pango.Rectangle> -> Void
+
+	public TransformPoint(method) : x : cs.Ref<Float> -> y : cs.Ref<Float> -> Void
+
+	public Scale(method) : scale_x : Float -> scale_y : Float -> Void
+
+	public Rotate(method) : degrees : Float -> Void
+
+	public Concat(method) : new_matrix : Pango.Matrix -> Void
+
+	public Translate(method) : tx : Float -> ty : Float -> Void
+
+	public TransformRectangle(method) : rect : cs.Ref<Pango.Rectangle> -> Void
+
+	get_FontScaleFactor(method) : Void -> Float
+
+	public TransformDistance(method) : dx : cs.Ref<Float> -> dy : cs.Ref<Float> -> Void
+
+	public Copy(method) : Void -> Pango.Matrix
+
+	static public GType((get,never)) : GLib.GType
+
+	static public Identity(var) : Pango.Matrix
+
+	static public Zero(var) : Pango.Matrix
+
+	static public New(method) : raw : System.IntPtr -> Pango.Matrix
+
+	static get_GType(method) : Void -> GLib.GType
+
+	static public op_Explicit(method) : boxed : Pango.Matrix -> GLib.Value
+
+	static public op_Explicit(method) : val : GLib.Value -> Pango.Matrix
+
+}

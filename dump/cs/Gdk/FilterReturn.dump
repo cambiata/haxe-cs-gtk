@@ -1,0 +1,5 @@
+extern enum Gdk.FilterReturn {
+	Continue : Gdk.FilterReturn;
+	Translate : Gdk.FilterReturn;
+	Remove : Gdk.FilterReturn;
+}

@@ -1,0 +1,2 @@
+extern interface System.Collections.IEqualityComparer{
+}

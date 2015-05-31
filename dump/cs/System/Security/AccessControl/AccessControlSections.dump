@@ -1,0 +1,8 @@
+extern enum System.Security.AccessControl.AccessControlSections {
+	None : System.Security.AccessControl.AccessControlSections;
+	Audit : System.Security.AccessControl.AccessControlSections;
+	Access : System.Security.AccessControl.AccessControlSections;
+	Owner : System.Security.AccessControl.AccessControlSections;
+	Group : System.Security.AccessControl.AccessControlSections;
+	All : System.Security.AccessControl.AccessControlSections;
+}

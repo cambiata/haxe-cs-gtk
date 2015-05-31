@@ -1,0 +1,12 @@
+extern class System.TypedReference extends System.ValueType{
+	static public GetTargetType(method) : value : System.TypedReference -> System.Type
+
+	static public MakeTypedReference(method) : target : Dynamic -> flds : cs.NativeArray<System.Reflection.FieldInfo> -> System.TypedReference
+
+	static public SetTypedReference(method) : target : System.TypedReference -> value : Dynamic -> Void
+
+	static public TargetTypeToken(method) : value : System.TypedReference -> System.RuntimeTypeHandle
+
+	static public ToObject(method) : value : System.TypedReference -> Dynamic
+
+}

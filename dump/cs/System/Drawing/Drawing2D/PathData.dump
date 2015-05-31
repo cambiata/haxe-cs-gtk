@@ -1,0 +1,16 @@
+extern class System.Drawing.Drawing2D.PathData{
+	public new(method) : Void -> Void
+
+	public Types((get,set)) : cs.NativeArray<cs.types.UInt8>
+
+	public Points((get,set)) : cs.NativeArray<System.Drawing.PointF>
+
+	get_Points(method) : Void -> cs.NativeArray<System.Drawing.PointF>
+
+	set_Points(method) : value : cs.NativeArray<System.Drawing.PointF> -> cs.NativeArray<System.Drawing.PointF>
+
+	get_Types(method) : Void -> cs.NativeArray<cs.types.UInt8>
+
+	set_Types(method) : value : cs.NativeArray<cs.types.UInt8> -> cs.NativeArray<cs.types.UInt8>
+
+}

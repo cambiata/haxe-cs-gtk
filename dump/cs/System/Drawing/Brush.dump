@@ -1,0 +1,14 @@
+extern class System.Drawing.Brush extends System.MarshalByRefObject implements System.ICloneable implements System.IDisposable{
+	new(method) : Void -> Void
+
+	public Clone(method) : Void -> Dynamic
+
+	SetNativeBrush(method) : brush : System.IntPtr -> Void
+
+	public Dispose(method) : Void -> Void
+
+	Dispose(method) : disposing : Bool -> Void
+
+	Finalize(method) : Void -> Void
+
+}

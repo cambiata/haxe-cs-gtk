@@ -1,0 +1,8 @@
+extern class Gtk.PropertyNotifyEventArgs extends GLib.SignalArgs{
+	public new(method) : Void -> Void
+
+	public Event((get,never)) : Gdk.EventProperty
+
+	get_Event(method) : Void -> Gdk.EventProperty
+
+}

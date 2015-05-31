@@ -1,0 +1,14 @@
+extern class System.EventHandler`1<T0 : cs.system.Delegate_EventHandler_1.T0> extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : sender : Dynamic -> e : cs.system.Delegate_EventHandler_1.T0 -> Void
+
+	public BeginInvoke(method) : sender : Dynamic -> e : cs.system.Delegate_EventHandler_1.T0 -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Void
+
+	static public op_Addition<T0 : op_Addition.T0>(method) : arg1 : cs.system.EventHandler_1<op_Addition.T0> -> arg2 : cs.system.EventHandler_1<op_Addition.T0> -> cs.system.EventHandler_1<op_Addition.T0>
+
+	static public op_Subtraction<T0 : op_Subtraction.T0>(method) : arg1 : cs.system.EventHandler_1<op_Subtraction.T0> -> arg2 : cs.system.EventHandler_1<op_Subtraction.T0> -> cs.system.EventHandler_1<op_Subtraction.T0>
+
+}

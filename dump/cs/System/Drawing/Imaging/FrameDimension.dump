@@ -1,0 +1,22 @@
+extern class System.Drawing.Imaging.FrameDimension{
+	public new(method) : guid : System.Guid -> Void
+
+	public Guid((get,never)) : System.Guid
+
+	get_Guid(method) : Void -> System.Guid
+
+	public ToString(method) : Void -> String
+
+	static public Page((get,never)) : System.Drawing.Imaging.FrameDimension
+
+	static public Resolution((get,never)) : System.Drawing.Imaging.FrameDimension
+
+	static public Time((get,never)) : System.Drawing.Imaging.FrameDimension
+
+	static get_Time(method) : Void -> System.Drawing.Imaging.FrameDimension
+
+	static get_Resolution(method) : Void -> System.Drawing.Imaging.FrameDimension
+
+	static get_Page(method) : Void -> System.Drawing.Imaging.FrameDimension
+
+}

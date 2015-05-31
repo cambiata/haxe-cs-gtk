@@ -1,0 +1,8 @@
+extern enum System.Drawing.Imaging.MetafileType {
+	Invalid : System.Drawing.Imaging.MetafileType;
+	Wmf : System.Drawing.Imaging.MetafileType;
+	WmfPlaceable : System.Drawing.Imaging.MetafileType;
+	Emf : System.Drawing.Imaging.MetafileType;
+	EmfPlusOnly : System.Drawing.Imaging.MetafileType;
+	EmfPlusDual : System.Drawing.Imaging.MetafileType;
+}

@@ -1,0 +1,10 @@
+extern class Atk.Attribute extends System.ValueType{
+	public Value(var) : String
+
+	public Name(var) : String
+
+	static public Zero(var) : Atk.Attribute
+
+	static public New(method) : raw : System.IntPtr -> Atk.Attribute
+
+}

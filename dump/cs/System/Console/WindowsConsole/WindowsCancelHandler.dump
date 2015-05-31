@@ -1,0 +1,14 @@
+extern class System.Console.WindowsConsole.WindowsCancelHandler extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : keyCode : Int -> Bool
+
+	public BeginInvoke(method) : keyCode : Int -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Bool
+
+	static public op_Addition(method) : arg1 : cs.system.Console_WindowsConsole_WindowsCancelHandler -> arg2 : cs.system.Console_WindowsConsole_WindowsCancelHandler -> cs.system.Console_WindowsConsole_WindowsCancelHandler
+
+	static public op_Subtraction(method) : arg1 : cs.system.Console_WindowsConsole_WindowsCancelHandler -> arg2 : cs.system.Console_WindowsConsole_WindowsCancelHandler -> cs.system.Console_WindowsConsole_WindowsCancelHandler
+
+}

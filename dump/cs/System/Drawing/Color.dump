@@ -1,0 +1,632 @@
+extern class System.Drawing.Color extends System.ValueType{
+	public Name((get,never)) : String
+
+	public IsSystemColor((get,never)) : Bool
+
+	public IsNamedColor((get,never)) : Bool
+
+	public IsEmpty((get,never)) : Bool
+
+	public IsKnownColor((get,never)) : Bool
+
+	public A((get,never)) : cs.types.UInt8
+
+	public B((get,never)) : cs.types.UInt8
+
+	public G((get,never)) : cs.types.UInt8
+
+	public R((get,never)) : cs.types.UInt8
+
+	get_R(method) : Void -> cs.types.UInt8
+
+	get_G(method) : Void -> cs.types.UInt8
+
+	get_B(method) : Void -> cs.types.UInt8
+
+	get_A(method) : Void -> cs.types.UInt8
+
+	get_IsKnownColor(method) : Void -> Bool
+
+	get_IsEmpty(method) : Void -> Bool
+
+	get_IsNamedColor(method) : Void -> Bool
+
+	get_IsSystemColor(method) : Void -> Bool
+
+	get_Name(method) : Void -> String
+
+	public GetBrightness(method) : Void -> Single
+
+	public GetHue(method) : Void -> Single
+
+	public GetSaturation(method) : Void -> Single
+
+	public ToArgb(method) : Void -> Int
+
+	public ToKnownColor(method) : Void -> System.Drawing.KnownColor
+
+	public ToString(method) : Void -> String
+
+	static public YellowGreen((get,never)) : System.Drawing.Color
+
+	static public Yellow((get,never)) : System.Drawing.Color
+
+	static public WhiteSmoke((get,never)) : System.Drawing.Color
+
+	static public White((get,never)) : System.Drawing.Color
+
+	static public Wheat((get,never)) : System.Drawing.Color
+
+	static public Violet((get,never)) : System.Drawing.Color
+
+	static public Turquoise((get,never)) : System.Drawing.Color
+
+	static public Tomato((get,never)) : System.Drawing.Color
+
+	static public Thistle((get,never)) : System.Drawing.Color
+
+	static public Teal((get,never)) : System.Drawing.Color
+
+	static public Tan((get,never)) : System.Drawing.Color
+
+	static public SteelBlue((get,never)) : System.Drawing.Color
+
+	static public SpringGreen((get,never)) : System.Drawing.Color
+
+	static public Snow((get,never)) : System.Drawing.Color
+
+	static public SlateGray((get,never)) : System.Drawing.Color
+
+	static public SlateBlue((get,never)) : System.Drawing.Color
+
+	static public SkyBlue((get,never)) : System.Drawing.Color
+
+	static public Silver((get,never)) : System.Drawing.Color
+
+	static public Sienna((get,never)) : System.Drawing.Color
+
+	static public SeaShell((get,never)) : System.Drawing.Color
+
+	static public SeaGreen((get,never)) : System.Drawing.Color
+
+	static public SandyBrown((get,never)) : System.Drawing.Color
+
+	static public Salmon((get,never)) : System.Drawing.Color
+
+	static public SaddleBrown((get,never)) : System.Drawing.Color
+
+	static public RoyalBlue((get,never)) : System.Drawing.Color
+
+	static public RosyBrown((get,never)) : System.Drawing.Color
+
+	static public Red((get,never)) : System.Drawing.Color
+
+	static public Purple((get,never)) : System.Drawing.Color
+
+	static public PowderBlue((get,never)) : System.Drawing.Color
+
+	static public Plum((get,never)) : System.Drawing.Color
+
+	static public Pink((get,never)) : System.Drawing.Color
+
+	static public Peru((get,never)) : System.Drawing.Color
+
+	static public PeachPuff((get,never)) : System.Drawing.Color
+
+	static public PapayaWhip((get,never)) : System.Drawing.Color
+
+	static public PaleVioletRed((get,never)) : System.Drawing.Color
+
+	static public PaleTurquoise((get,never)) : System.Drawing.Color
+
+	static public PaleGreen((get,never)) : System.Drawing.Color
+
+	static public PaleGoldenrod((get,never)) : System.Drawing.Color
+
+	static public Orchid((get,never)) : System.Drawing.Color
+
+	static public OrangeRed((get,never)) : System.Drawing.Color
+
+	static public Orange((get,never)) : System.Drawing.Color
+
+	static public OliveDrab((get,never)) : System.Drawing.Color
+
+	static public Olive((get,never)) : System.Drawing.Color
+
+	static public OldLace((get,never)) : System.Drawing.Color
+
+	static public Navy((get,never)) : System.Drawing.Color
+
+	static public NavajoWhite((get,never)) : System.Drawing.Color
+
+	static public Moccasin((get,never)) : System.Drawing.Color
+
+	static public MistyRose((get,never)) : System.Drawing.Color
+
+	static public MintCream((get,never)) : System.Drawing.Color
+
+	static public MidnightBlue((get,never)) : System.Drawing.Color
+
+	static public MediumVioletRed((get,never)) : System.Drawing.Color
+
+	static public MediumTurquoise((get,never)) : System.Drawing.Color
+
+	static public MediumSpringGreen((get,never)) : System.Drawing.Color
+
+	static public MediumSlateBlue((get,never)) : System.Drawing.Color
+
+	static public MediumSeaGreen((get,never)) : System.Drawing.Color
+
+	static public MediumPurple((get,never)) : System.Drawing.Color
+
+	static public MediumOrchid((get,never)) : System.Drawing.Color
+
+	static public MediumBlue((get,never)) : System.Drawing.Color
+
+	static public MediumAquamarine((get,never)) : System.Drawing.Color
+
+	static public Maroon((get,never)) : System.Drawing.Color
+
+	static public Magenta((get,never)) : System.Drawing.Color
+
+	static public Linen((get,never)) : System.Drawing.Color
+
+	static public LimeGreen((get,never)) : System.Drawing.Color
+
+	static public Lime((get,never)) : System.Drawing.Color
+
+	static public LightYellow((get,never)) : System.Drawing.Color
+
+	static public LightSteelBlue((get,never)) : System.Drawing.Color
+
+	static public LightSlateGray((get,never)) : System.Drawing.Color
+
+	static public LightSkyBlue((get,never)) : System.Drawing.Color
+
+	static public LightSeaGreen((get,never)) : System.Drawing.Color
+
+	static public LightSalmon((get,never)) : System.Drawing.Color
+
+	static public LightPink((get,never)) : System.Drawing.Color
+
+	static public LightGray((get,never)) : System.Drawing.Color
+
+	static public LightGreen((get,never)) : System.Drawing.Color
+
+	static public LightGoldenrodYellow((get,never)) : System.Drawing.Color
+
+	static public LightCyan((get,never)) : System.Drawing.Color
+
+	static public LightCoral((get,never)) : System.Drawing.Color
+
+	static public LightBlue((get,never)) : System.Drawing.Color
+
+	static public LemonChiffon((get,never)) : System.Drawing.Color
+
+	static public LawnGreen((get,never)) : System.Drawing.Color
+
+	static public LavenderBlush((get,never)) : System.Drawing.Color
+
+	static public Lavender((get,never)) : System.Drawing.Color
+
+	static public Khaki((get,never)) : System.Drawing.Color
+
+	static public Ivory((get,never)) : System.Drawing.Color
+
+	static public Indigo((get,never)) : System.Drawing.Color
+
+	static public IndianRed((get,never)) : System.Drawing.Color
+
+	static public HotPink((get,never)) : System.Drawing.Color
+
+	static public Honeydew((get,never)) : System.Drawing.Color
+
+	static public GreenYellow((get,never)) : System.Drawing.Color
+
+	static public Green((get,never)) : System.Drawing.Color
+
+	static public Gray((get,never)) : System.Drawing.Color
+
+	static public Goldenrod((get,never)) : System.Drawing.Color
+
+	static public Gold((get,never)) : System.Drawing.Color
+
+	static public GhostWhite((get,never)) : System.Drawing.Color
+
+	static public Gainsboro((get,never)) : System.Drawing.Color
+
+	static public Fuchsia((get,never)) : System.Drawing.Color
+
+	static public ForestGreen((get,never)) : System.Drawing.Color
+
+	static public FloralWhite((get,never)) : System.Drawing.Color
+
+	static public Firebrick((get,never)) : System.Drawing.Color
+
+	static public DodgerBlue((get,never)) : System.Drawing.Color
+
+	static public DimGray((get,never)) : System.Drawing.Color
+
+	static public DeepSkyBlue((get,never)) : System.Drawing.Color
+
+	static public DeepPink((get,never)) : System.Drawing.Color
+
+	static public DarkViolet((get,never)) : System.Drawing.Color
+
+	static public DarkTurquoise((get,never)) : System.Drawing.Color
+
+	static public DarkSlateGray((get,never)) : System.Drawing.Color
+
+	static public DarkSlateBlue((get,never)) : System.Drawing.Color
+
+	static public DarkSeaGreen((get,never)) : System.Drawing.Color
+
+	static public DarkSalmon((get,never)) : System.Drawing.Color
+
+	static public DarkRed((get,never)) : System.Drawing.Color
+
+	static public DarkOrchid((get,never)) : System.Drawing.Color
+
+	static public DarkOrange((get,never)) : System.Drawing.Color
+
+	static public DarkOliveGreen((get,never)) : System.Drawing.Color
+
+	static public DarkMagenta((get,never)) : System.Drawing.Color
+
+	static public DarkKhaki((get,never)) : System.Drawing.Color
+
+	static public DarkGreen((get,never)) : System.Drawing.Color
+
+	static public DarkGray((get,never)) : System.Drawing.Color
+
+	static public DarkGoldenrod((get,never)) : System.Drawing.Color
+
+	static public DarkCyan((get,never)) : System.Drawing.Color
+
+	static public DarkBlue((get,never)) : System.Drawing.Color
+
+	static public Cyan((get,never)) : System.Drawing.Color
+
+	static public Crimson((get,never)) : System.Drawing.Color
+
+	static public Cornsilk((get,never)) : System.Drawing.Color
+
+	static public CornflowerBlue((get,never)) : System.Drawing.Color
+
+	static public Coral((get,never)) : System.Drawing.Color
+
+	static public Chocolate((get,never)) : System.Drawing.Color
+
+	static public Chartreuse((get,never)) : System.Drawing.Color
+
+	static public CadetBlue((get,never)) : System.Drawing.Color
+
+	static public BurlyWood((get,never)) : System.Drawing.Color
+
+	static public Brown((get,never)) : System.Drawing.Color
+
+	static public BlueViolet((get,never)) : System.Drawing.Color
+
+	static public Blue((get,never)) : System.Drawing.Color
+
+	static public BlanchedAlmond((get,never)) : System.Drawing.Color
+
+	static public Black((get,never)) : System.Drawing.Color
+
+	static public Bisque((get,never)) : System.Drawing.Color
+
+	static public Beige((get,never)) : System.Drawing.Color
+
+	static public Azure((get,never)) : System.Drawing.Color
+
+	static public Aquamarine((get,never)) : System.Drawing.Color
+
+	static public Aqua((get,never)) : System.Drawing.Color
+
+	static public AntiqueWhite((get,never)) : System.Drawing.Color
+
+	static public AliceBlue((get,never)) : System.Drawing.Color
+
+	static public Transparent((get,never)) : System.Drawing.Color
+
+	static public Empty((default,never)) : System.Drawing.Color
+
+	static get_Transparent(method) : Void -> System.Drawing.Color
+
+	static get_AliceBlue(method) : Void -> System.Drawing.Color
+
+	static get_AntiqueWhite(method) : Void -> System.Drawing.Color
+
+	static get_Aqua(method) : Void -> System.Drawing.Color
+
+	static get_Aquamarine(method) : Void -> System.Drawing.Color
+
+	static get_Azure(method) : Void -> System.Drawing.Color
+
+	static get_Beige(method) : Void -> System.Drawing.Color
+
+	static get_Bisque(method) : Void -> System.Drawing.Color
+
+	static get_Black(method) : Void -> System.Drawing.Color
+
+	static get_BlanchedAlmond(method) : Void -> System.Drawing.Color
+
+	static get_Blue(method) : Void -> System.Drawing.Color
+
+	static get_BlueViolet(method) : Void -> System.Drawing.Color
+
+	static get_Brown(method) : Void -> System.Drawing.Color
+
+	static get_BurlyWood(method) : Void -> System.Drawing.Color
+
+	static get_CadetBlue(method) : Void -> System.Drawing.Color
+
+	static get_Chartreuse(method) : Void -> System.Drawing.Color
+
+	static get_Chocolate(method) : Void -> System.Drawing.Color
+
+	static get_Coral(method) : Void -> System.Drawing.Color
+
+	static get_CornflowerBlue(method) : Void -> System.Drawing.Color
+
+	static get_Cornsilk(method) : Void -> System.Drawing.Color
+
+	static get_Crimson(method) : Void -> System.Drawing.Color
+
+	static get_Cyan(method) : Void -> System.Drawing.Color
+
+	static get_DarkBlue(method) : Void -> System.Drawing.Color
+
+	static get_DarkCyan(method) : Void -> System.Drawing.Color
+
+	static get_DarkGoldenrod(method) : Void -> System.Drawing.Color
+
+	static get_DarkGray(method) : Void -> System.Drawing.Color
+
+	static get_DarkGreen(method) : Void -> System.Drawing.Color
+
+	static get_DarkKhaki(method) : Void -> System.Drawing.Color
+
+	static get_DarkMagenta(method) : Void -> System.Drawing.Color
+
+	static get_DarkOliveGreen(method) : Void -> System.Drawing.Color
+
+	static get_DarkOrange(method) : Void -> System.Drawing.Color
+
+	static get_DarkOrchid(method) : Void -> System.Drawing.Color
+
+	static get_DarkRed(method) : Void -> System.Drawing.Color
+
+	static get_DarkSalmon(method) : Void -> System.Drawing.Color
+
+	static get_DarkSeaGreen(method) : Void -> System.Drawing.Color
+
+	static get_DarkSlateBlue(method) : Void -> System.Drawing.Color
+
+	static get_DarkSlateGray(method) : Void -> System.Drawing.Color
+
+	static get_DarkTurquoise(method) : Void -> System.Drawing.Color
+
+	static get_DarkViolet(method) : Void -> System.Drawing.Color
+
+	static get_DeepPink(method) : Void -> System.Drawing.Color
+
+	static get_DeepSkyBlue(method) : Void -> System.Drawing.Color
+
+	static get_DimGray(method) : Void -> System.Drawing.Color
+
+	static get_DodgerBlue(method) : Void -> System.Drawing.Color
+
+	static get_Firebrick(method) : Void -> System.Drawing.Color
+
+	static get_FloralWhite(method) : Void -> System.Drawing.Color
+
+	static get_ForestGreen(method) : Void -> System.Drawing.Color
+
+	static get_Fuchsia(method) : Void -> System.Drawing.Color
+
+	static get_Gainsboro(method) : Void -> System.Drawing.Color
+
+	static get_GhostWhite(method) : Void -> System.Drawing.Color
+
+	static get_Gold(method) : Void -> System.Drawing.Color
+
+	static get_Goldenrod(method) : Void -> System.Drawing.Color
+
+	static get_Gray(method) : Void -> System.Drawing.Color
+
+	static get_Green(method) : Void -> System.Drawing.Color
+
+	static get_GreenYellow(method) : Void -> System.Drawing.Color
+
+	static get_Honeydew(method) : Void -> System.Drawing.Color
+
+	static get_HotPink(method) : Void -> System.Drawing.Color
+
+	static get_IndianRed(method) : Void -> System.Drawing.Color
+
+	static get_Indigo(method) : Void -> System.Drawing.Color
+
+	static get_Ivory(method) : Void -> System.Drawing.Color
+
+	static get_Khaki(method) : Void -> System.Drawing.Color
+
+	static get_Lavender(method) : Void -> System.Drawing.Color
+
+	static get_LavenderBlush(method) : Void -> System.Drawing.Color
+
+	static get_LawnGreen(method) : Void -> System.Drawing.Color
+
+	static get_LemonChiffon(method) : Void -> System.Drawing.Color
+
+	static get_LightBlue(method) : Void -> System.Drawing.Color
+
+	static get_LightCoral(method) : Void -> System.Drawing.Color
+
+	static get_LightCyan(method) : Void -> System.Drawing.Color
+
+	static get_LightGoldenrodYellow(method) : Void -> System.Drawing.Color
+
+	static get_LightGreen(method) : Void -> System.Drawing.Color
+
+	static get_LightGray(method) : Void -> System.Drawing.Color
+
+	static get_LightPink(method) : Void -> System.Drawing.Color
+
+	static get_LightSalmon(method) : Void -> System.Drawing.Color
+
+	static get_LightSeaGreen(method) : Void -> System.Drawing.Color
+
+	static get_LightSkyBlue(method) : Void -> System.Drawing.Color
+
+	static get_LightSlateGray(method) : Void -> System.Drawing.Color
+
+	static get_LightSteelBlue(method) : Void -> System.Drawing.Color
+
+	static get_LightYellow(method) : Void -> System.Drawing.Color
+
+	static get_Lime(method) : Void -> System.Drawing.Color
+
+	static get_LimeGreen(method) : Void -> System.Drawing.Color
+
+	static get_Linen(method) : Void -> System.Drawing.Color
+
+	static get_Magenta(method) : Void -> System.Drawing.Color
+
+	static get_Maroon(method) : Void -> System.Drawing.Color
+
+	static get_MediumAquamarine(method) : Void -> System.Drawing.Color
+
+	static get_MediumBlue(method) : Void -> System.Drawing.Color
+
+	static get_MediumOrchid(method) : Void -> System.Drawing.Color
+
+	static get_MediumPurple(method) : Void -> System.Drawing.Color
+
+	static get_MediumSeaGreen(method) : Void -> System.Drawing.Color
+
+	static get_MediumSlateBlue(method) : Void -> System.Drawing.Color
+
+	static get_MediumSpringGreen(method) : Void -> System.Drawing.Color
+
+	static get_MediumTurquoise(method) : Void -> System.Drawing.Color
+
+	static get_MediumVioletRed(method) : Void -> System.Drawing.Color
+
+	static get_MidnightBlue(method) : Void -> System.Drawing.Color
+
+	static get_MintCream(method) : Void -> System.Drawing.Color
+
+	static get_MistyRose(method) : Void -> System.Drawing.Color
+
+	static get_Moccasin(method) : Void -> System.Drawing.Color
+
+	static get_NavajoWhite(method) : Void -> System.Drawing.Color
+
+	static get_Navy(method) : Void -> System.Drawing.Color
+
+	static get_OldLace(method) : Void -> System.Drawing.Color
+
+	static get_Olive(method) : Void -> System.Drawing.Color
+
+	static get_OliveDrab(method) : Void -> System.Drawing.Color
+
+	static get_Orange(method) : Void -> System.Drawing.Color
+
+	static get_OrangeRed(method) : Void -> System.Drawing.Color
+
+	static get_Orchid(method) : Void -> System.Drawing.Color
+
+	static get_PaleGoldenrod(method) : Void -> System.Drawing.Color
+
+	static get_PaleGreen(method) : Void -> System.Drawing.Color
+
+	static get_PaleTurquoise(method) : Void -> System.Drawing.Color
+
+	static get_PaleVioletRed(method) : Void -> System.Drawing.Color
+
+	static get_PapayaWhip(method) : Void -> System.Drawing.Color
+
+	static get_PeachPuff(method) : Void -> System.Drawing.Color
+
+	static get_Peru(method) : Void -> System.Drawing.Color
+
+	static get_Pink(method) : Void -> System.Drawing.Color
+
+	static get_Plum(method) : Void -> System.Drawing.Color
+
+	static get_PowderBlue(method) : Void -> System.Drawing.Color
+
+	static get_Purple(method) : Void -> System.Drawing.Color
+
+	static get_Red(method) : Void -> System.Drawing.Color
+
+	static get_RosyBrown(method) : Void -> System.Drawing.Color
+
+	static get_RoyalBlue(method) : Void -> System.Drawing.Color
+
+	static get_SaddleBrown(method) : Void -> System.Drawing.Color
+
+	static get_Salmon(method) : Void -> System.Drawing.Color
+
+	static get_SandyBrown(method) : Void -> System.Drawing.Color
+
+	static get_SeaGreen(method) : Void -> System.Drawing.Color
+
+	static get_SeaShell(method) : Void -> System.Drawing.Color
+
+	static get_Sienna(method) : Void -> System.Drawing.Color
+
+	static get_Silver(method) : Void -> System.Drawing.Color
+
+	static get_SkyBlue(method) : Void -> System.Drawing.Color
+
+	static get_SlateBlue(method) : Void -> System.Drawing.Color
+
+	static get_SlateGray(method) : Void -> System.Drawing.Color
+
+	static get_Snow(method) : Void -> System.Drawing.Color
+
+	static get_SpringGreen(method) : Void -> System.Drawing.Color
+
+	static get_SteelBlue(method) : Void -> System.Drawing.Color
+
+	static get_Tan(method) : Void -> System.Drawing.Color
+
+	static get_Teal(method) : Void -> System.Drawing.Color
+
+	static get_Thistle(method) : Void -> System.Drawing.Color
+
+	static get_Tomato(method) : Void -> System.Drawing.Color
+
+	static get_Turquoise(method) : Void -> System.Drawing.Color
+
+	static get_Violet(method) : Void -> System.Drawing.Color
+
+	static get_Wheat(method) : Void -> System.Drawing.Color
+
+	static get_White(method) : Void -> System.Drawing.Color
+
+	static get_WhiteSmoke(method) : Void -> System.Drawing.Color
+
+	static get_Yellow(method) : Void -> System.Drawing.Color
+
+	static get_YellowGreen(method) : Void -> System.Drawing.Color
+
+	static public FromArgb(method) : argb : Int -> System.Drawing.Color
+
+	static public FromArgb(method) : red : Int -> green : Int -> blue : Int -> System.Drawing.Color
+
+	static public FromArgb(method) : alpha : Int -> baseColor : System.Drawing.Color -> System.Drawing.Color
+
+	static public FromArgb(method) : alpha : Int -> red : Int -> green : Int -> blue : Int -> System.Drawing.Color
+
+	static public FromKnownColor(method) : color : System.Drawing.KnownColor -> System.Drawing.Color
+
+	static public FromName(method) : name : String -> System.Drawing.Color
+
+	static public op_Equality(method) : left : System.Drawing.Color -> right : System.Drawing.Color -> Bool
+
+	static public op_Inequality(method) : left : System.Drawing.Color -> right : System.Drawing.Color -> Bool
+
+}

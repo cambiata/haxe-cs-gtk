@@ -1,0 +1,44 @@
+extern interface System.Collections.IList implements System.Collections.ICollection implements System.Collections.IEnumerable implements ArrayAccess<Dynamic>{
+	public Count((get,never)) : Int
+
+	public IsSynchronized((get,never)) : Bool
+
+	public SyncRoot((get,never)) : Dynamic
+
+	public IsReadOnly((get,never)) : Bool
+
+	public IsFixedSize((get,never)) : Bool
+
+	public CopyTo(method) : array : System.Array -> index : Int -> Void
+
+	get_SyncRoot(method) : Void -> Dynamic
+
+	get_IsSynchronized(method) : Void -> Bool
+
+	get_Count(method) : Void -> Int
+
+	public GetEnumerator(method) : Void -> System.Collections.IEnumerator
+
+	get_IsFixedSize(method) : Void -> Bool
+
+	get_IsReadOnly(method) : Void -> Bool
+
+	get_Item(method) : index : Int -> Dynamic
+
+	set_Item(method) : index : Int -> value : Dynamic -> Void
+
+	public Add(method) : value : Dynamic -> Int
+
+	public Clear(method) : Void -> Void
+
+	public Contains(method) : value : Dynamic -> Bool
+
+	public IndexOf(method) : value : Dynamic -> Int
+
+	public Insert(method) : index : Int -> value : Dynamic -> Void
+
+	public Remove(method) : value : Dynamic -> Void
+
+	public RemoveAt(method) : index : Int -> Void
+
+}

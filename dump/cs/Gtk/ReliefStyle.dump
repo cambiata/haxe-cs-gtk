@@ -1,0 +1,5 @@
+extern enum Gtk.ReliefStyle {
+	Normal : Gtk.ReliefStyle;
+	Half : Gtk.ReliefStyle;
+	None : Gtk.ReliefStyle;
+}

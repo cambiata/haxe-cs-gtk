@@ -1,0 +1,4 @@
+extern enum System.ActivationContext.ContextForm {
+	Loose : System.ActivationContext.ContextForm;
+	StoreBounded : System.ActivationContext.ContextForm;
+}

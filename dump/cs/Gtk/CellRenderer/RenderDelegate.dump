@@ -1,0 +1,14 @@
+extern class Gtk.CellRenderer.RenderDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : item : System.IntPtr -> window : System.IntPtr -> widget : System.IntPtr -> background_area : cs.Ref<Gdk.Rectangle> -> cell_area : cs.Ref<Gdk.Rectangle> -> expose_area : cs.Ref<Gdk.Rectangle> -> flags : Gtk.CellRendererState -> Void
+
+	public BeginInvoke(method) : item : System.IntPtr -> window : System.IntPtr -> widget : System.IntPtr -> background_area : cs.Ref<Gdk.Rectangle> -> cell_area : cs.Ref<Gdk.Rectangle> -> expose_area : cs.Ref<Gdk.Rectangle> -> flags : Gtk.CellRendererState -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : background_area : cs.Ref<Gdk.Rectangle> -> cell_area : cs.Ref<Gdk.Rectangle> -> expose_area : cs.Ref<Gdk.Rectangle> -> result : System.IAsyncResult -> Void
+
+	static public op_Addition(method) : arg1 : gtk.CellRenderer_RenderDelegate -> arg2 : gtk.CellRenderer_RenderDelegate -> gtk.CellRenderer_RenderDelegate
+
+	static public op_Subtraction(method) : arg1 : gtk.CellRenderer_RenderDelegate -> arg2 : gtk.CellRenderer_RenderDelegate -> gtk.CellRenderer_RenderDelegate
+
+}

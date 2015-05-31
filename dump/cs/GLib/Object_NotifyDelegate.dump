@@ -1,0 +1,1 @@
+abstract glib.Object_NotifyDelegate {}

@@ -1,0 +1,1 @@
+abstract gdk.Display_ClosedVMDelegate {}

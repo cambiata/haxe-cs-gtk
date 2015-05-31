@@ -1,0 +1,72 @@
+extern class System.Drawing.Imaging.ImageCodecInfo{
+	public SignatureMasks((get,set)) : cs.NativeArray<cs.NativeArray<cs.types.UInt8>>
+
+	public SignaturePatterns((get,set)) : cs.NativeArray<cs.NativeArray<cs.types.UInt8>>
+
+	public Version((get,set)) : Int
+
+	public Flags((get,set)) : System.Drawing.Imaging.ImageCodecFlags
+
+	public MimeType((get,set)) : String
+
+	public FilenameExtension((get,set)) : String
+
+	public FormatDescription((get,set)) : String
+
+	public DllName((get,set)) : String
+
+	public CodecName((get,set)) : String
+
+	public FormatID((get,set)) : System.Guid
+
+	public Clsid((get,set)) : System.Guid
+
+	get_Clsid(method) : Void -> System.Guid
+
+	set_Clsid(method) : value : System.Guid -> System.Guid
+
+	get_FormatID(method) : Void -> System.Guid
+
+	set_FormatID(method) : value : System.Guid -> System.Guid
+
+	get_CodecName(method) : Void -> String
+
+	set_CodecName(method) : value : String -> String
+
+	get_DllName(method) : Void -> String
+
+	set_DllName(method) : value : String -> String
+
+	get_FormatDescription(method) : Void -> String
+
+	set_FormatDescription(method) : value : String -> String
+
+	get_FilenameExtension(method) : Void -> String
+
+	set_FilenameExtension(method) : value : String -> String
+
+	get_MimeType(method) : Void -> String
+
+	set_MimeType(method) : value : String -> String
+
+	get_Flags(method) : Void -> System.Drawing.Imaging.ImageCodecFlags
+
+	set_Flags(method) : value : System.Drawing.Imaging.ImageCodecFlags -> System.Drawing.Imaging.ImageCodecFlags
+
+	get_Version(method) : Void -> Int
+
+	set_Version(method) : value : Int -> Int
+
+	get_SignaturePatterns(method) : Void -> cs.NativeArray<cs.NativeArray<cs.types.UInt8>>
+
+	set_SignaturePatterns(method) : value : cs.NativeArray<cs.NativeArray<cs.types.UInt8>> -> cs.NativeArray<cs.NativeArray<cs.types.UInt8>>
+
+	get_SignatureMasks(method) : Void -> cs.NativeArray<cs.NativeArray<cs.types.UInt8>>
+
+	set_SignatureMasks(method) : value : cs.NativeArray<cs.NativeArray<cs.types.UInt8>> -> cs.NativeArray<cs.NativeArray<cs.types.UInt8>>
+
+	static public GetImageDecoders(method) : Void -> cs.NativeArray<System.Drawing.Imaging.ImageCodecInfo>
+
+	static public GetImageEncoders(method) : Void -> cs.NativeArray<System.Drawing.Imaging.ImageCodecInfo>
+
+}

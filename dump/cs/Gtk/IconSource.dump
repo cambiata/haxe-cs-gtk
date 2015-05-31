@@ -1,0 +1,72 @@
+extern class Gtk.IconSource extends GLib.Opaque{
+	public new(method) : raw : System.IntPtr -> Void
+
+	public new(method) : Void -> Void
+
+	public StateWildcarded((get,set)) : Bool
+
+	public State((get,set)) : Gtk.StateType
+
+	public SizeWildcarded((get,set)) : Bool
+
+	public DirectionWildcarded((get,set)) : Bool
+
+	public Direction((get,set)) : Gtk.TextDirection
+
+	public IconName((get,set)) : String
+
+	public Size((get,set)) : Gtk.IconSize
+
+	public Filename((get,set)) : String
+
+	public Pixbuf((get,set)) : Gdk.Pixbuf
+
+	get_Pixbuf(method) : Void -> Gdk.Pixbuf
+
+	set_Pixbuf(method) : value : Gdk.Pixbuf -> Gdk.Pixbuf
+
+	get_Filename(method) : Void -> String
+
+	set_Filename(method) : value : String -> String
+
+	get_Size(method) : Void -> Gtk.IconSize
+
+	set_Size(method) : value : Gtk.IconSize -> Gtk.IconSize
+
+	get_IconName(method) : Void -> String
+
+	set_IconName(method) : value : String -> String
+
+	get_Direction(method) : Void -> Gtk.TextDirection
+
+	set_Direction(method) : value : Gtk.TextDirection -> Gtk.TextDirection
+
+	get_DirectionWildcarded(method) : Void -> Bool
+
+	set_DirectionWildcarded(method) : value : Bool -> Bool
+
+	get_SizeWildcarded(method) : Void -> Bool
+
+	set_SizeWildcarded(method) : value : Bool -> Bool
+
+	get_State(method) : Void -> Gtk.StateType
+
+	set_State(method) : value : Gtk.StateType -> Gtk.StateType
+
+	public Copy(method) : Void -> Gtk.IconSource
+
+	get_StateWildcarded(method) : Void -> Bool
+
+	set_StateWildcarded(method) : value : Bool -> Bool
+
+	Free(method) : raw : System.IntPtr -> Void
+
+	public Free(method) : Void -> Void
+
+	Finalize(method) : Void -> Void
+
+	static public GType((get,never)) : GLib.GType
+
+	static get_GType(method) : Void -> GLib.GType
+
+}

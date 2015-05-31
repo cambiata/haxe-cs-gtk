@@ -1,0 +1,36 @@
+extern class Gtk.TextMark extends GLib.Object{
+	new(method) : gtype : GLib.GType -> Void
+
+	new(method) : Void -> Void
+
+	public new(method) : name : String -> left_gravity : Bool -> Void
+
+	public new(method) : raw : System.IntPtr -> Void
+
+	public Buffer((get,never)) : Gtk.TextBuffer
+
+	public Visible((get,set)) : Bool
+
+	public Deleted((get,never)) : Bool
+
+	public Name((get,never)) : String
+
+	public LeftGravity((get,never)) : Bool
+
+	get_LeftGravity(method) : Void -> Bool
+
+	get_Name(method) : Void -> String
+
+	get_Deleted(method) : Void -> Bool
+
+	get_Visible(method) : Void -> Bool
+
+	set_Visible(method) : value : Bool -> Bool
+
+	get_Buffer(method) : Void -> Gtk.TextBuffer
+
+	static public GType((get,never)) : GLib.GType
+
+	static get_GType(method) : Void -> GLib.GType
+
+}

@@ -1,0 +1,8 @@
+extern class Gtk.ResponseArgs extends GLib.SignalArgs{
+	public new(method) : Void -> Void
+
+	public ResponseId((get,never)) : Gtk.ResponseType
+
+	get_ResponseId(method) : Void -> Gtk.ResponseType
+
+}

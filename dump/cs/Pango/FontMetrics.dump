@@ -1,0 +1,50 @@
+extern class Pango.FontMetrics extends GLib.Opaque{
+	public new(method) : raw : System.IntPtr -> Void
+
+	public ApproximateDigitWidth((get,never)) : Int
+
+	public ApproximateCharWidth((get,never)) : Int
+
+	public StrikethroughThickness((get,never)) : Int
+
+	public StrikethroughPosition((get,never)) : Int
+
+	public Descent((get,never)) : Int
+
+	public Ascent((get,never)) : Int
+
+	public UnderlinePosition((get,never)) : Int
+
+	public UnderlineThickness((get,never)) : Int
+
+	get_UnderlineThickness(method) : Void -> Int
+
+	get_UnderlinePosition(method) : Void -> Int
+
+	get_Ascent(method) : Void -> Int
+
+	get_Descent(method) : Void -> Int
+
+	get_StrikethroughPosition(method) : Void -> Int
+
+	get_StrikethroughThickness(method) : Void -> Int
+
+	get_ApproximateCharWidth(method) : Void -> Int
+
+	get_ApproximateDigitWidth(method) : Void -> Int
+
+	Ref(method) : raw : System.IntPtr -> Void
+
+	public Ref(method) : Void -> Pango.FontMetrics
+
+	Unref(method) : raw : System.IntPtr -> Void
+
+	public Unref(method) : Void -> Void
+
+	Finalize(method) : Void -> Void
+
+	static public GType((get,never)) : GLib.GType
+
+	static get_GType(method) : Void -> GLib.GType
+
+}

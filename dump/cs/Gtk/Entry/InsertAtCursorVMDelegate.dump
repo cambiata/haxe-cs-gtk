@@ -1,0 +1,14 @@
+extern class Gtk.Entry.InsertAtCursorVMDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : entry : System.IntPtr -> str : System.IntPtr -> Void
+
+	public BeginInvoke(method) : entry : System.IntPtr -> str : System.IntPtr -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Void
+
+	static public op_Addition(method) : arg1 : gtk.Entry_InsertAtCursorVMDelegate -> arg2 : gtk.Entry_InsertAtCursorVMDelegate -> gtk.Entry_InsertAtCursorVMDelegate
+
+	static public op_Subtraction(method) : arg1 : gtk.Entry_InsertAtCursorVMDelegate -> arg2 : gtk.Entry_InsertAtCursorVMDelegate -> gtk.Entry_InsertAtCursorVMDelegate
+
+}

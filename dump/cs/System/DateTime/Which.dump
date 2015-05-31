@@ -1,0 +1,6 @@
+extern enum System.DateTime.Which {
+	Day : System.DateTime.Which;
+	DayYear : System.DateTime.Which;
+	Month : System.DateTime.Which;
+	Year : System.DateTime.Which;
+}

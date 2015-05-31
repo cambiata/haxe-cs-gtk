@@ -1,0 +1,22 @@
+extern class Pango.FontMap extends GLib.Object{
+	new(method) : gtype : GLib.GType -> Void
+
+	new(method) : Void -> Void
+
+	public new(method) : raw : System.IntPtr -> Void
+
+	public Families((get,never)) : cs.NativeArray<Pango.FontFamily>
+
+	public LoadFontset(method) : context : Pango.Context -> desc : Pango.FontDescription -> language : Pango.Language -> Pango.Fontset
+
+	public LoadFont(method) : context : Pango.Context -> desc : Pango.FontDescription -> Pango.Font
+
+	get_Families(method) : Void -> cs.NativeArray<Pango.FontFamily>
+
+	public ListFamilies(method) : families : Pango.FontFamily -> Int
+
+	static public GType((get,never)) : GLib.GType
+
+	static get_GType(method) : Void -> GLib.GType
+
+}

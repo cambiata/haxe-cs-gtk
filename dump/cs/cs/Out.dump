@@ -1,0 +1,1 @@
+type cs.Out<T : cs.Out.T> = cs.Out.T

@@ -1,0 +1,12 @@
+extern class Gtk.MarkSetArgs extends GLib.SignalArgs{
+	public new(method) : Void -> Void
+
+	public Mark((get,never)) : Gtk.TextMark
+
+	public Location((get,never)) : Gtk.TextIter
+
+	get_Location(method) : Void -> Gtk.TextIter
+
+	get_Mark(method) : Void -> Gtk.TextMark
+
+}

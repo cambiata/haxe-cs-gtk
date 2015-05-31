@@ -1,0 +1,8 @@
+extern class Gtk.ProximityInEventArgs extends GLib.SignalArgs{
+	public new(method) : Void -> Void
+
+	public Event((get,never)) : Gdk.EventProximity
+
+	get_Event(method) : Void -> Gdk.EventProximity
+
+}

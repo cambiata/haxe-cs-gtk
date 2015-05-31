@@ -1,0 +1,100 @@
+extern class System.Runtime.Serialization.SerializationInfo{
+	public new(method) : type : System.Type -> converter : System.Runtime.Serialization.IFormatterConverter -> Void
+
+	public ObjectType((get,never)) : System.Type
+
+	public IsFullTypeNameSetExplicit((get,never)) : Bool
+
+	public IsAssemblyNameSetExplicit((get,never)) : Bool
+
+	public MemberCount((get,never)) : Int
+
+	public FullTypeName((get,set)) : String
+
+	public AssemblyName((get,set)) : String
+
+	get_AssemblyName(method) : Void -> String
+
+	set_AssemblyName(method) : value : String -> String
+
+	get_FullTypeName(method) : Void -> String
+
+	set_FullTypeName(method) : value : String -> String
+
+	get_MemberCount(method) : Void -> Int
+
+	get_IsAssemblyNameSetExplicit(method) : Void -> Bool
+
+	get_IsFullTypeNameSetExplicit(method) : Void -> Bool
+
+	get_ObjectType(method) : Void -> System.Type
+
+	public AddValue(method) : name : String -> value : Dynamic -> type : System.Type -> Void
+
+	public AddValue(method) : name : String -> value : Dynamic -> Void
+
+	public AddValue(method) : name : String -> value : cs.types.UInt64 -> Void
+
+	public AddValue(method) : name : String -> value : haxe.Int64 -> Void
+
+	public AddValue(method) : name : String -> value : UInt -> Void
+
+	public AddValue(method) : name : String -> value : Single -> Void
+
+	public AddValue(method) : name : String -> value : System.DateTime -> Void
+
+	public AddValue(method) : name : String -> value : System.Decimal -> Void
+
+	public AddValue(method) : name : String -> value : Float -> Void
+
+	public AddValue(method) : name : String -> value : cs.types.Int8 -> Void
+
+	public AddValue(method) : name : String -> value : cs.types.Char16 -> Void
+
+	public AddValue(method) : name : String -> value : Bool -> Void
+
+	public AddValue(method) : name : String -> value : cs.types.UInt8 -> Void
+
+	public AddValue(method) : name : String -> value : Int -> Void
+
+	public AddValue(method) : name : String -> value : cs.types.UInt16 -> Void
+
+	public AddValue(method) : name : String -> value : cs.types.Int16 -> Void
+
+	public GetValue(method) : name : String -> type : System.Type -> Dynamic
+
+	public SetType(method) : type : System.Type -> Void
+
+	public GetEnumerator(method) : Void -> System.Runtime.Serialization.SerializationInfoEnumerator
+
+	public GetBoolean(method) : name : String -> Bool
+
+	public GetByte(method) : name : String -> cs.types.UInt8
+
+	public GetChar(method) : name : String -> cs.types.Char16
+
+	public GetDateTime(method) : name : String -> System.DateTime
+
+	public GetDecimal(method) : name : String -> System.Decimal
+
+	public GetDouble(method) : name : String -> Float
+
+	public GetInt16(method) : name : String -> cs.types.Int16
+
+	public GetInt32(method) : name : String -> Int
+
+	public GetInt64(method) : name : String -> haxe.Int64
+
+	public GetSByte(method) : name : String -> cs.types.Int8
+
+	public GetSingle(method) : name : String -> Single
+
+	public GetString(method) : name : String -> String
+
+	public GetUInt16(method) : name : String -> cs.types.UInt16
+
+	public GetUInt32(method) : name : String -> UInt
+
+	public GetUInt64(method) : name : String -> cs.types.UInt64
+
+}

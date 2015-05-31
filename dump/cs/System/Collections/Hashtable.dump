@@ -1,0 +1,110 @@
+extern class System.Collections.Hashtable implements System.ICloneable implements System.Collections.ICollection implements System.Collections.IDictionary implements System.Collections.IEnumerable implements System.Runtime.Serialization.IDeserializationCallback implements System.Runtime.Serialization.ISerializable implements ArrayAccess<Dynamic>{
+	public new(method) : Void -> Void
+
+	public new(method) : capacity : Int -> loadFactor : Single -> equalityComparer : System.Collections.IEqualityComparer -> Void
+
+	public new(method) : capacity : Int -> equalityComparer : System.Collections.IEqualityComparer -> Void
+
+	public new(method) : equalityComparer : System.Collections.IEqualityComparer -> Void
+
+	public new(method) : d : System.Collections.IDictionary -> loadFactor : Single -> equalityComparer : System.Collections.IEqualityComparer -> Void
+
+	public new(method) : d : System.Collections.IDictionary -> equalityComparer : System.Collections.IEqualityComparer -> Void
+
+	new(method) : info : System.Runtime.Serialization.SerializationInfo -> context : System.Runtime.Serialization.StreamingContext -> Void
+
+	public new(method) : hcp : System.Collections.IHashCodeProvider -> comparer : System.Collections.IComparer -> Void
+
+	public new(method) : d : System.Collections.IDictionary -> hcp : System.Collections.IHashCodeProvider -> comparer : System.Collections.IComparer -> Void
+
+	public new(method) : d : System.Collections.IDictionary -> Void
+
+	public new(method) : d : System.Collections.IDictionary -> loadFactor : Single -> Void
+
+	public new(method) : d : System.Collections.IDictionary -> loadFactor : Single -> hcp : System.Collections.IHashCodeProvider -> comparer : System.Collections.IComparer -> Void
+
+	public new(method) : capacity : Int -> hcp : System.Collections.IHashCodeProvider -> comparer : System.Collections.IComparer -> Void
+
+	public new(method) : capacity : Int -> Void
+
+	public new(method) : capacity : Int -> loadFactor : Single -> Void
+
+	public new(method) : capacity : Int -> loadFactor : Single -> hcp : System.Collections.IHashCodeProvider -> comparer : System.Collections.IComparer -> Void
+
+	public Values((get,never)) : System.Collections.ICollection
+
+	public Keys((get,never)) : System.Collections.ICollection
+
+	public IsReadOnly((get,never)) : Bool
+
+	public IsFixedSize((get,never)) : Bool
+
+	public SyncRoot((get,never)) : Dynamic
+
+	public IsSynchronized((get,never)) : Bool
+
+	public Count((get,never)) : Int
+
+	EqualityComparer((null,never)) : System.Collections.IEqualityComparer
+
+	hcp((null,null)) : System.Collections.IHashCodeProvider
+
+	comparer((null,null)) : System.Collections.IComparer
+
+	set_comparer(method) : value : System.Collections.IComparer -> System.Collections.IComparer
+
+	get_comparer(method) : Void -> System.Collections.IComparer
+
+	set_hcp(method) : value : System.Collections.IHashCodeProvider -> System.Collections.IHashCodeProvider
+
+	get_hcp(method) : Void -> System.Collections.IHashCodeProvider
+
+	get_EqualityComparer(method) : Void -> System.Collections.IEqualityComparer
+
+	get_Count(method) : Void -> Int
+
+	get_IsSynchronized(method) : Void -> Bool
+
+	get_SyncRoot(method) : Void -> Dynamic
+
+	get_IsFixedSize(method) : Void -> Bool
+
+	get_IsReadOnly(method) : Void -> Bool
+
+	get_Keys(method) : Void -> System.Collections.ICollection
+
+	get_Values(method) : Void -> System.Collections.ICollection
+
+	get_Item(method) : key : Dynamic -> Dynamic
+
+	set_Item(method) : key : Dynamic -> value : Dynamic -> Void
+
+	public CopyTo(method) : array : System.Array -> arrayIndex : Int -> Void
+
+	public Add(method) : key : Dynamic -> value : Dynamic -> Void
+
+	public Clear(method) : Void -> Void
+
+	public Contains(method) : key : Dynamic -> Bool
+
+	public GetEnumerator(method) : Void -> System.Collections.IDictionaryEnumerator
+
+	public Remove(method) : key : Dynamic -> Void
+
+	public ContainsKey(method) : key : Dynamic -> Bool
+
+	public ContainsValue(method) : value : Dynamic -> Bool
+
+	public Clone(method) : Void -> Dynamic
+
+	public GetObjectData(method) : info : System.Runtime.Serialization.SerializationInfo -> context : System.Runtime.Serialization.StreamingContext -> Void
+
+	public OnDeserialization(method) : sender : Dynamic -> Void
+
+	GetHash(method) : key : Dynamic -> Int
+
+	KeyEquals(method) : item : Dynamic -> key : Dynamic -> Bool
+
+	static public Synchronized(method) : table : System.Collections.Hashtable -> System.Collections.Hashtable
+
+}

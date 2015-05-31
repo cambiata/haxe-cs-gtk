@@ -1,0 +1,7 @@
+extern enum Gtk.SelectionMode {
+	None : Gtk.SelectionMode;
+	Single : Gtk.SelectionMode;
+	Browse : Gtk.SelectionMode;
+	Multiple : Gtk.SelectionMode;
+	Extended : Gtk.SelectionMode;
+}

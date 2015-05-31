@@ -1,0 +1,12 @@
+extern class Gtk.RowChangedArgs extends GLib.SignalArgs{
+	public new(method) : Void -> Void
+
+	public Iter((get,never)) : Gtk.TreeIter
+
+	public Path((get,never)) : Gtk.TreePath
+
+	get_Path(method) : Void -> Gtk.TreePath
+
+	get_Iter(method) : Void -> Gtk.TreeIter
+
+}

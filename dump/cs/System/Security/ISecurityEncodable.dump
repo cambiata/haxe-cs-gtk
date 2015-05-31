@@ -1,0 +1,6 @@
+extern interface System.Security.ISecurityEncodable{
+	public FromXml(method) : e : System.Security.SecurityElement -> Void
+
+	public ToXml(method) : Void -> System.Security.SecurityElement
+
+}

@@ -1,0 +1,6 @@
+extern enum Gtk.TreeViewDropPosition {
+	Before : Gtk.TreeViewDropPosition;
+	After : Gtk.TreeViewDropPosition;
+	IntoOrBefore : Gtk.TreeViewDropPosition;
+	IntoOrAfter : Gtk.TreeViewDropPosition;
+}

@@ -1,0 +1,44 @@
+extern class System.Drawing.Drawing2D.CustomLineCap extends System.MarshalByRefObject implements System.ICloneable implements System.IDisposable{
+	public new(method) : fillPath : System.Drawing.Drawing2D.GraphicsPath -> strokePath : System.Drawing.Drawing2D.GraphicsPath -> Void
+
+	public new(method) : fillPath : System.Drawing.Drawing2D.GraphicsPath -> strokePath : System.Drawing.Drawing2D.GraphicsPath -> baseCap : System.Drawing.Drawing2D.LineCap -> baseInset : Single -> Void
+
+	public new(method) : fillPath : System.Drawing.Drawing2D.GraphicsPath -> strokePath : System.Drawing.Drawing2D.GraphicsPath -> baseCap : System.Drawing.Drawing2D.LineCap -> Void
+
+	public WidthScale((get,set)) : Single
+
+	public BaseInset((get,set)) : Single
+
+	public BaseCap((get,set)) : System.Drawing.Drawing2D.LineCap
+
+	public StrokeJoin((get,set)) : System.Drawing.Drawing2D.LineJoin
+
+	public Dispose(method) : Void -> Void
+
+	Dispose(method) : disposing : Bool -> Void
+
+	Finalize(method) : Void -> Void
+
+	public Clone(method) : Void -> Dynamic
+
+	public SetStrokeCaps(method) : startCap : System.Drawing.Drawing2D.LineCap -> endCap : System.Drawing.Drawing2D.LineCap -> Void
+
+	public GetStrokeCaps(method) : startCap : cs.Out<System.Drawing.Drawing2D.LineCap> -> endCap : cs.Out<System.Drawing.Drawing2D.LineCap> -> Void
+
+	get_StrokeJoin(method) : Void -> System.Drawing.Drawing2D.LineJoin
+
+	set_StrokeJoin(method) : value : System.Drawing.Drawing2D.LineJoin -> System.Drawing.Drawing2D.LineJoin
+
+	get_BaseCap(method) : Void -> System.Drawing.Drawing2D.LineCap
+
+	set_BaseCap(method) : value : System.Drawing.Drawing2D.LineCap -> System.Drawing.Drawing2D.LineCap
+
+	get_BaseInset(method) : Void -> Single
+
+	set_BaseInset(method) : value : Single -> Single
+
+	get_WidthScale(method) : Void -> Single
+
+	set_WidthScale(method) : value : Single -> Single
+
+}

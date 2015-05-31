@@ -1,0 +1,8 @@
+extern class Gtk.SelectCursorRowArgs extends GLib.SignalArgs{
+	public new(method) : Void -> Void
+
+	public StartEditing((get,never)) : Bool
+
+	get_StartEditing(method) : Void -> Bool
+
+}

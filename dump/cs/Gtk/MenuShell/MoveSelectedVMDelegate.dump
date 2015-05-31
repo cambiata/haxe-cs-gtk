@@ -1,0 +1,14 @@
+extern class Gtk.MenuShell.MoveSelectedVMDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : menu_shell : System.IntPtr -> distance : Int -> Bool
+
+	public BeginInvoke(method) : menu_shell : System.IntPtr -> distance : Int -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Bool
+
+	static public op_Addition(method) : arg1 : gtk.MenuShell_MoveSelectedVMDelegate -> arg2 : gtk.MenuShell_MoveSelectedVMDelegate -> gtk.MenuShell_MoveSelectedVMDelegate
+
+	static public op_Subtraction(method) : arg1 : gtk.MenuShell_MoveSelectedVMDelegate -> arg2 : gtk.MenuShell_MoveSelectedVMDelegate -> gtk.MenuShell_MoveSelectedVMDelegate
+
+}

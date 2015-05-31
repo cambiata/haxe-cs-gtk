@@ -1,0 +1,102 @@
+extern class System.Reflection.MethodBase extends System.Reflection.MemberInfo implements System.Runtime.InteropServices._MethodBase{
+	new(method) : Void -> Void
+
+	public IsGenericMethod((get,never)) : Bool
+
+	public IsGenericMethodDefinition((get,never)) : Bool
+
+	public ContainsGenericParameters((get,never)) : Bool
+
+	public IsConstructor((get,never)) : Bool
+
+	public IsSpecialName((get,never)) : Bool
+
+	public IsAbstract((get,never)) : Bool
+
+	public IsHideBySig((get,never)) : Bool
+
+	public IsVirtual((get,never)) : Bool
+
+	public IsFinal((get,never)) : Bool
+
+	public IsStatic((get,never)) : Bool
+
+	public IsFamilyOrAssembly((get,never)) : Bool
+
+	public IsFamilyAndAssembly((get,never)) : Bool
+
+	public IsAssembly((get,never)) : Bool
+
+	public IsFamily((get,never)) : Bool
+
+	public IsPrivate((get,never)) : Bool
+
+	public IsPublic((get,never)) : Bool
+
+	public CallingConvention((get,never)) : System.Reflection.CallingConventions
+
+	public Attributes((get,never)) : System.Reflection.MethodAttributes
+
+	public MethodHandle((get,never)) : System.RuntimeMethodHandle
+
+	public GetMethodImplementationFlags(method) : Void -> System.Reflection.MethodImplAttributes
+
+	public GetParameters(method) : Void -> cs.NativeArray<System.Reflection.ParameterInfo>
+
+	public Invoke(method) : obj : Dynamic -> parameters : cs.NativeArray<Dynamic> -> Dynamic
+
+	public Invoke(method) : obj : Dynamic -> invokeAttr : System.Reflection.BindingFlags -> binder : System.Reflection.Binder -> parameters : cs.NativeArray<Dynamic> -> culture : System.Globalization.CultureInfo -> Dynamic
+
+	get_MethodHandle(method) : Void -> System.RuntimeMethodHandle
+
+	get_Attributes(method) : Void -> System.Reflection.MethodAttributes
+
+	get_CallingConvention(method) : Void -> System.Reflection.CallingConventions
+
+	get_IsPublic(method) : Void -> Bool
+
+	get_IsPrivate(method) : Void -> Bool
+
+	get_IsFamily(method) : Void -> Bool
+
+	get_IsAssembly(method) : Void -> Bool
+
+	get_IsFamilyAndAssembly(method) : Void -> Bool
+
+	get_IsFamilyOrAssembly(method) : Void -> Bool
+
+	get_IsStatic(method) : Void -> Bool
+
+	get_IsFinal(method) : Void -> Bool
+
+	get_IsVirtual(method) : Void -> Bool
+
+	get_IsHideBySig(method) : Void -> Bool
+
+	get_IsAbstract(method) : Void -> Bool
+
+	get_IsSpecialName(method) : Void -> Bool
+
+	get_IsConstructor(method) : Void -> Bool
+
+	public GetGenericArguments(method) : Void -> cs.NativeArray<System.Type>
+
+	get_ContainsGenericParameters(method) : Void -> Bool
+
+	get_IsGenericMethodDefinition(method) : Void -> Bool
+
+	get_IsGenericMethod(method) : Void -> Bool
+
+	public GetMethodBody(method) : Void -> System.Reflection.MethodBody
+
+	static public GetCurrentMethod(method) : Void -> System.Reflection.MethodBase
+
+	static public GetMethodFromHandle(method) : handle : System.RuntimeMethodHandle -> System.Reflection.MethodBase
+
+	static public GetMethodFromHandle(method) : handle : System.RuntimeMethodHandle -> declaringType : System.RuntimeTypeHandle -> System.Reflection.MethodBase
+
+	static public op_Equality(method) : left : System.Reflection.MethodBase -> right : System.Reflection.MethodBase -> Bool
+
+	static public op_Inequality(method) : left : System.Reflection.MethodBase -> right : System.Reflection.MethodBase -> Bool
+
+}

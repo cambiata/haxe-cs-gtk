@@ -1,0 +1,14 @@
+extern class Gtk.Dialog.ResponseVMDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : dialog : System.IntPtr -> response_id : Int -> Void
+
+	public BeginInvoke(method) : dialog : System.IntPtr -> response_id : Int -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Void
+
+	static public op_Addition(method) : arg1 : gtk.Dialog_ResponseVMDelegate -> arg2 : gtk.Dialog_ResponseVMDelegate -> gtk.Dialog_ResponseVMDelegate
+
+	static public op_Subtraction(method) : arg1 : gtk.Dialog_ResponseVMDelegate -> arg2 : gtk.Dialog_ResponseVMDelegate -> gtk.Dialog_ResponseVMDelegate
+
+}

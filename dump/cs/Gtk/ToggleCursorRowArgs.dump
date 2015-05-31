@@ -1,0 +1,4 @@
+extern class Gtk.ToggleCursorRowArgs extends GLib.SignalArgs{
+	public new(method) : Void -> Void
+
+}

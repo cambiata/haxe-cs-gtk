@@ -1,0 +1,7 @@
+extern enum System.Guid.Format {
+	N : System.Guid.Format;
+	D : System.Guid.Format;
+	B : System.Guid.Format;
+	P : System.Guid.Format;
+	X : System.Guid.Format;
+}

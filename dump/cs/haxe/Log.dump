@@ -1,0 +1,79 @@
+class haxe.Log{
+	static public trace(dynamic method) : v : Dynamic -> ?infos : Null<haxe.PosInfos> -> Void
+
+	 = [Function:v : Dynamic -> ?infos : Null<haxe.PosInfos> -> Void]
+		[Arg:Dynamic] [Local v(6017):Dynamic]
+		[Arg:Null<haxe.PosInfos>]
+			[Local infos(6018):Null<haxe.PosInfos>]
+			[Const null:v : Dynamic -> ?infos : Null<haxe.PosInfos> -> Void]
+		[Block:Void]
+			[Var str(6019):String] [Const null:String]
+			[If:Void]
+				[Parenthesis:Bool]
+					[Binop:Bool]
+						[Local infos(6018):Null<haxe.PosInfos>]
+						!=
+						[Const null:Null<haxe.PosInfos>]
+				[Then:Void] [Block:Void]
+					[Binop:String]
+						[Local str(6019):String]
+						=
+						[Binop:String]
+							[Binop:String]
+								[Binop:String]
+									[Binop:String]
+										[Field:String]
+											[Local infos(6018):Null<haxe.PosInfos>]
+											[FAnon:String] fileName
+										+
+										[Const ":":String]
+									+
+									[Field:Int]
+										[Local infos(6018):Null<haxe.PosInfos>]
+										[FAnon:Int] lineNumber
+								+
+								[Const ": ":String]
+							+
+							[Call:String]
+								[Field:s : Dynamic -> String]
+									[TypeExpr Std:Class<Std>]
+									[FStatic:s : Dynamic -> String]
+										Std
+										string
+								[Local v(6017):Dynamic]
+					[If:Void]
+						[Parenthesis:Bool]
+							[Binop:Bool]
+								[Field:Null<Array<Dynamic>>]
+									[Local infos(6018):Null<haxe.PosInfos>]
+									[FAnon:Null<Array<Dynamic>>] customParams
+								!=
+								[Const null:Null<Array<Dynamic>>]
+						[Then:String] [Binop:String]
+							[Local str(6019):String]
+							+=
+							[Binop:String]
+								[Const ",":String]
+								+
+								[Call:String]
+									[Field:sep : String -> String]
+										[Field:Null<Array<Dynamic>>]
+											[Local infos(6018):Null<haxe.PosInfos>]
+											[FAnon:Null<Array<Dynamic>>] customParams
+										[FInstance:sep : String -> String]
+											Array<Dynamic>
+											join
+									[Const ",":String]
+				[Else:String] [Binop:String]
+					[Local str(6019):String]
+					=
+					[Local v(6017):Dynamic]
+			[Call:Void]
+				[Field:value : String -> Void]
+					[TypeExpr System.Console:Class<cs.system.Console>]
+					[FStatic:value : String -> Void]
+						System.Console
+						WriteLine
+				[Local str(6019):String]
+
+}

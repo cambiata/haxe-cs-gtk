@@ -1,0 +1,38 @@
+extern class Gtk.RadioAction extends Gtk.ToggleAction{
+	new(method) : gtype : GLib.GType -> Void
+
+	public new(method) : name : String -> label : String -> tooltip : String -> stock_id : String -> value : Int -> Void
+
+	public new(method) : raw : System.IntPtr -> Void
+
+	Changed(var) : gtk.ChangedHandler
+
+	public Value((get,set)) : Int
+
+	public Group((get,set)) : GLib.SList
+
+	public CurrentValue((get,set)) : Int
+
+	get_CurrentValue(method) : Void -> Int
+
+	set_CurrentValue(method) : value : Int -> Int
+
+	get_Group(method) : Void -> GLib.SList
+
+	set_Group(method) : value : GLib.SList -> GLib.SList
+
+	get_Value(method) : Void -> Int
+
+	set_Value(method) : value : Int -> Int
+
+	OnChanged(method) : current : Gtk.RadioAction -> Void
+
+	public add_Changed(method) : value : gtk.ChangedHandler -> Void
+
+	public remove_Changed(method) : value : gtk.ChangedHandler -> Void
+
+	static public GType((get,never)) : GLib.GType
+
+	static get_GType(method) : Void -> GLib.GType
+
+}

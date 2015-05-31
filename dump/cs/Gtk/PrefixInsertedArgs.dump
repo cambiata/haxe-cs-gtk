@@ -1,0 +1,8 @@
+extern class Gtk.PrefixInsertedArgs extends GLib.SignalArgs{
+	public new(method) : Void -> Void
+
+	public Prefix((get,never)) : String
+
+	get_Prefix(method) : Void -> String
+
+}

@@ -1,0 +1,10 @@
+extern class Gdk.TimeCoord extends System.ValueType{
+	public Axes(var) : cs.NativeArray<Float>
+
+	public Time(var) : UInt
+
+	static public Zero(var) : Gdk.TimeCoord
+
+	static public New(method) : raw : System.IntPtr -> Gdk.TimeCoord
+
+}

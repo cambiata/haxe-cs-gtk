@@ -1,0 +1,172 @@
+extern class Gtk.TreeViewColumn extends Gtk.Object implements Gtk.CellLayout implements GLib.IWrapper{
+	new(method) : gtype : GLib.GType -> Void
+
+	public new(method) : title : String -> cell : Gtk.CellRenderer -> attrs : cs.NativeArray<Dynamic> -> Void
+
+	public new(method) : title : String -> cell : Gtk.CellRenderer -> attrs : System.Array -> Void
+
+	public new(method) : Void -> Void
+
+	public new(method) : raw : System.IntPtr -> Void
+
+	Clicked(var) : cs.system.EventHandler
+
+	public CellRenderers((get,never)) : cs.NativeArray<Gtk.CellRenderer>
+
+	public Cells((get,never)) : cs.NativeArray<Gtk.CellRenderer>
+
+	public TreeView((get,never)) : Gtk.Widget
+
+	public SortColumnId((get,set)) : Int
+
+	public FixedWidth((get,set)) : Int
+
+	public Clickable((get,set)) : Bool
+
+	public Sizing((get,set)) : Gtk.TreeViewColumnSizing
+
+	public Resizable((get,set)) : Bool
+
+	public Title((get,set)) : String
+
+	public MaxWidth((get,set)) : Int
+
+	public SortOrder((get,set)) : Gtk.SortType
+
+	public SortIndicator((get,set)) : Bool
+
+	public MinWidth((get,set)) : Int
+
+	public Widget((get,set)) : Gtk.Widget
+
+	public Visible((get,set)) : Bool
+
+	public Expand((get,set)) : Bool
+
+	public Reorderable((get,set)) : Bool
+
+	public Spacing((get,set)) : Int
+
+	public Width((get,never)) : Int
+
+	public Alignment((get,set)) : Single
+
+	get_Alignment(method) : Void -> Single
+
+	set_Alignment(method) : value : Single -> Single
+
+	get_Width(method) : Void -> Int
+
+	get_Spacing(method) : Void -> Int
+
+	set_Spacing(method) : value : Int -> Int
+
+	get_Reorderable(method) : Void -> Bool
+
+	set_Reorderable(method) : value : Bool -> Bool
+
+	get_Expand(method) : Void -> Bool
+
+	set_Expand(method) : value : Bool -> Bool
+
+	get_Visible(method) : Void -> Bool
+
+	set_Visible(method) : value : Bool -> Bool
+
+	get_Widget(method) : Void -> Gtk.Widget
+
+	set_Widget(method) : value : Gtk.Widget -> Gtk.Widget
+
+	get_MinWidth(method) : Void -> Int
+
+	set_MinWidth(method) : value : Int -> Int
+
+	get_SortIndicator(method) : Void -> Bool
+
+	set_SortIndicator(method) : value : Bool -> Bool
+
+	get_SortOrder(method) : Void -> Gtk.SortType
+
+	set_SortOrder(method) : value : Gtk.SortType -> Gtk.SortType
+
+	get_MaxWidth(method) : Void -> Int
+
+	set_MaxWidth(method) : value : Int -> Int
+
+	get_Title(method) : Void -> String
+
+	set_Title(method) : value : String -> String
+
+	get_Resizable(method) : Void -> Bool
+
+	set_Resizable(method) : value : Bool -> Bool
+
+	get_Sizing(method) : Void -> Gtk.TreeViewColumnSizing
+
+	set_Sizing(method) : value : Gtk.TreeViewColumnSizing -> Gtk.TreeViewColumnSizing
+
+	get_Clickable(method) : Void -> Bool
+
+	set_Clickable(method) : value : Bool -> Bool
+
+	get_FixedWidth(method) : Void -> Int
+
+	set_FixedWidth(method) : value : Int -> Int
+
+	get_SortColumnId(method) : Void -> Int
+
+	set_SortColumnId(method) : value : Int -> Int
+
+	get_TreeView(method) : Void -> Gtk.Widget
+
+	OnClicked(method) : Void -> Void
+
+	public add_Clicked(method) : value : cs.system.EventHandler -> Void
+
+	public remove_Clicked(method) : value : cs.system.EventHandler -> Void
+
+	public SetCellDataFunc(method) : cell_renderer : Gtk.CellRenderer -> func : gtk.TreeCellDataFunc -> Void
+
+	public SetCellDataFunc(method) : cell_renderer : Gtk.CellRenderer -> func : gtk.TreeCellDataFunc -> func_data : System.IntPtr -> destroy : gtk.DestroyNotify -> Void
+
+	public SetCellDataFunc(method) : cell_renderer : Gtk.CellRenderer -> func : gtk.NodeCellDataFunc -> Void
+
+	public SetCellDataFunc(method) : cell : Gtk.CellRenderer -> func : gtk.CellLayoutDataFunc -> Void
+
+	public CellIsVisible(method) : Void -> Bool
+
+	public CellSetCellData(method) : tree_model : Gtk.TreeModel -> iter : Gtk.TreeIter -> is_expander : Bool -> is_expanded : Bool -> Void
+
+	public CellGetPosition(method) : cell_renderer : Gtk.CellRenderer -> start_pos : cs.Out<Int> -> width : cs.Out<Int> -> Bool
+
+	public CellGetSize(method) : cell_area : Gdk.Rectangle -> x_offset : cs.Out<Int> -> y_offset : cs.Out<Int> -> width : cs.Out<Int> -> height : cs.Out<Int> -> Void
+
+	public Click(method) : Void -> Void
+
+	public QueueResize(method) : Void -> Void
+
+	public FocusCell(method) : cell : Gtk.CellRenderer -> Void
+
+	public PackEnd(method) : cell : Gtk.CellRenderer -> expand : Bool -> Void
+
+	public ClearAttributes(method) : cell : Gtk.CellRenderer -> Void
+
+	public Reorder(method) : cell : Gtk.CellRenderer -> position : Int -> Void
+
+	public PackStart(method) : cell : Gtk.CellRenderer -> expand : Bool -> Void
+
+	get_Cells(method) : Void -> cs.NativeArray<Gtk.CellRenderer>
+
+	public Clear(method) : Void -> Void
+
+	public AddAttribute(method) : cell : Gtk.CellRenderer -> attribute : String -> column : Int -> Void
+
+	public SetAttributes(method) : cell : Gtk.CellRenderer -> attrs : cs.NativeArray<Dynamic> -> Void
+
+	get_CellRenderers(method) : Void -> cs.NativeArray<Gtk.CellRenderer>
+
+	static public GType((get,never)) : GLib.GType
+
+	static get_GType(method) : Void -> GLib.GType
+
+}

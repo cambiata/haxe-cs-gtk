@@ -1,0 +1,7 @@
+extern enum System.Reflection.Emit.AssemblyBuilderAccess {
+	Run : System.Reflection.Emit.AssemblyBuilderAccess;
+	Save : System.Reflection.Emit.AssemblyBuilderAccess;
+	RunAndSave : System.Reflection.Emit.AssemblyBuilderAccess;
+	ReflectionOnly : System.Reflection.Emit.AssemblyBuilderAccess;
+	RunAndCollect : System.Reflection.Emit.AssemblyBuilderAccess;
+}

@@ -1,0 +1,9 @@
+class haxe.lang.Function{
+	new(method) : arity : Int -> type : Int -> Void
+
+	 = [Function:arity : Int -> type : Int -> Void]
+		[Arg:Int] [Local arity(741):Int]
+		[Arg:Int] [Local type(742):Int]
+		[Block:Void]
+
+}

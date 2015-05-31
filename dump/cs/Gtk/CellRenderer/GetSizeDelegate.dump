@@ -1,0 +1,14 @@
+extern class Gtk.CellRenderer.GetSizeDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : item : System.IntPtr -> widget : System.IntPtr -> cell_area_ptr : System.IntPtr -> x_offset : System.IntPtr -> y_offset : System.IntPtr -> width : System.IntPtr -> height : System.IntPtr -> Void
+
+	public BeginInvoke(method) : item : System.IntPtr -> widget : System.IntPtr -> cell_area_ptr : System.IntPtr -> x_offset : System.IntPtr -> y_offset : System.IntPtr -> width : System.IntPtr -> height : System.IntPtr -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Void
+
+	static public op_Addition(method) : arg1 : gtk.CellRenderer_GetSizeDelegate -> arg2 : gtk.CellRenderer_GetSizeDelegate -> gtk.CellRenderer_GetSizeDelegate
+
+	static public op_Subtraction(method) : arg1 : gtk.CellRenderer_GetSizeDelegate -> arg2 : gtk.CellRenderer_GetSizeDelegate -> gtk.CellRenderer_GetSizeDelegate
+
+}

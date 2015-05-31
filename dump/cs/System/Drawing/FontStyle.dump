@@ -1,0 +1,7 @@
+extern enum System.Drawing.FontStyle {
+	Regular : System.Drawing.FontStyle;
+	Bold : System.Drawing.FontStyle;
+	Italic : System.Drawing.FontStyle;
+	Underline : System.Drawing.FontStyle;
+	Strikeout : System.Drawing.FontStyle;
+}

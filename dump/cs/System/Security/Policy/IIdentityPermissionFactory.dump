@@ -1,0 +1,4 @@
+extern interface System.Security.Policy.IIdentityPermissionFactory{
+	public CreateIdentityPermission(method) : evidence : System.Security.Policy.Evidence -> System.Security.IPermission
+
+}

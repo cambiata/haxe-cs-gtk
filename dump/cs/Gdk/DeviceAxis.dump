@@ -1,0 +1,14 @@
+extern class Gdk.DeviceAxis extends System.ValueType{
+	public Max(var) : Float
+
+	public Min(var) : Float
+
+	public Use(var) : Gdk.AxisUse
+
+	public ToString(method) : Void -> String
+
+	static public Zero(var) : Gdk.DeviceAxis
+
+	static public New(method) : raw : System.IntPtr -> Gdk.DeviceAxis
+
+}

@@ -1,0 +1,12 @@
+extern class Gtk.EditedArgs extends GLib.SignalArgs{
+	public new(method) : Void -> Void
+
+	public NewText((get,never)) : String
+
+	public Path((get,never)) : String
+
+	get_Path(method) : Void -> String
+
+	get_NewText(method) : Void -> String
+
+}

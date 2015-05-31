@@ -1,0 +1,16 @@
+extern class Gdk.EventExpose extends Gdk.Event{
+	public new(method) : raw : System.IntPtr -> Void
+
+	public Region((get,never)) : Gdk.Region
+
+	public Count((get,never)) : Int
+
+	public Area((get,never)) : Gdk.Rectangle
+
+	get_Area(method) : Void -> Gdk.Rectangle
+
+	get_Count(method) : Void -> Int
+
+	get_Region(method) : Void -> Gdk.Region
+
+}

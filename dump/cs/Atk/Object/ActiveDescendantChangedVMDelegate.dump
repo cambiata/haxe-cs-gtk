@@ -1,0 +1,14 @@
+extern class Atk.Object.ActiveDescendantChangedVMDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : accessible : System.IntPtr -> child : System.IntPtr -> Void
+
+	public BeginInvoke(method) : accessible : System.IntPtr -> child : System.IntPtr -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Void
+
+	static public op_Addition(method) : arg1 : atk.Object_ActiveDescendantChangedVMDelegate -> arg2 : atk.Object_ActiveDescendantChangedVMDelegate -> atk.Object_ActiveDescendantChangedVMDelegate
+
+	static public op_Subtraction(method) : arg1 : atk.Object_ActiveDescendantChangedVMDelegate -> arg2 : atk.Object_ActiveDescendantChangedVMDelegate -> atk.Object_ActiveDescendantChangedVMDelegate
+
+}

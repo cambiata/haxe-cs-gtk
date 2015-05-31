@@ -1,0 +1,40 @@
+extern class Gdk.PixbufFormat extends GLib.Opaque{
+	public new(method) : raw : System.IntPtr -> Void
+
+	public License((get,never)) : String
+
+	public Extensions((get,never)) : cs.NativeArray<String>
+
+	public IsWritable((get,never)) : Bool
+
+	public IsScalable((get,never)) : Bool
+
+	public Description((get,never)) : String
+
+	public IsDisabled((get,never)) : Bool
+
+	public Disabled((never,set)) : Bool
+
+	public Name((get,never)) : String
+
+	public MimeTypes((get,never)) : cs.NativeArray<String>
+
+	get_MimeTypes(method) : Void -> cs.NativeArray<String>
+
+	get_Name(method) : Void -> String
+
+	set_Disabled(method) : value : Bool -> Bool
+
+	get_IsDisabled(method) : Void -> Bool
+
+	get_Description(method) : Void -> String
+
+	get_IsScalable(method) : Void -> Bool
+
+	get_IsWritable(method) : Void -> Bool
+
+	get_Extensions(method) : Void -> cs.NativeArray<String>
+
+	get_License(method) : Void -> String
+
+}

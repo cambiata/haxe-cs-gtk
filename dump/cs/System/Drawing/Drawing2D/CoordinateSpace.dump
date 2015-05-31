@@ -1,0 +1,5 @@
+extern enum System.Drawing.Drawing2D.CoordinateSpace {
+	World : System.Drawing.Drawing2D.CoordinateSpace;
+	Page : System.Drawing.Drawing2D.CoordinateSpace;
+	Device : System.Drawing.Drawing2D.CoordinateSpace;
+}

@@ -1,0 +1,14 @@
+extern class System.Security.AccessControl.NativeObjectSecurity.ExceptionFromErrorCode extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : errorCode : Int -> name : String -> handle : System.Runtime.InteropServices.SafeHandle -> context : Dynamic -> System.Exception
+
+	public BeginInvoke(method) : errorCode : Int -> name : String -> handle : System.Runtime.InteropServices.SafeHandle -> context : Dynamic -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> System.Exception
+
+	static public op_Addition(method) : arg1 : cs.system.security.accesscontrol.NativeObjectSecurity_ExceptionFromErrorCode -> arg2 : cs.system.security.accesscontrol.NativeObjectSecurity_ExceptionFromErrorCode -> cs.system.security.accesscontrol.NativeObjectSecurity_ExceptionFromErrorCode
+
+	static public op_Subtraction(method) : arg1 : cs.system.security.accesscontrol.NativeObjectSecurity_ExceptionFromErrorCode -> arg2 : cs.system.security.accesscontrol.NativeObjectSecurity_ExceptionFromErrorCode -> cs.system.security.accesscontrol.NativeObjectSecurity_ExceptionFromErrorCode
+
+}

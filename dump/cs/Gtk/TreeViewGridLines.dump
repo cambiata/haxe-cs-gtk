@@ -1,0 +1,6 @@
+extern enum Gtk.TreeViewGridLines {
+	None : Gtk.TreeViewGridLines;
+	Horizontal : Gtk.TreeViewGridLines;
+	Vertical : Gtk.TreeViewGridLines;
+	Both : Gtk.TreeViewGridLines;
+}

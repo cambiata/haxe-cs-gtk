@@ -1,0 +1,122 @@
+extern class System.Reflection.Emit.ModuleBuilder extends System.Reflection.Module implements System.Runtime.InteropServices._ModuleBuilder{
+	public ModuleVersionId((get,never)) : System.Guid
+
+	public ScopeName((get,never)) : String
+
+	public Name((get,never)) : String
+
+	public Assembly((get,never)) : System.Reflection.Assembly
+
+	public FullyQualifiedName((get,never)) : String
+
+	get_FullyQualifiedName(method) : Void -> String
+
+	public IsTransient(method) : Void -> Bool
+
+	public CreateGlobalFunctions(method) : Void -> Void
+
+	public DefineInitializedData(method) : name : String -> data : cs.NativeArray<cs.types.UInt8> -> attributes : System.Reflection.FieldAttributes -> System.Reflection.Emit.FieldBuilder
+
+	public DefineUninitializedData(method) : name : String -> size : Int -> attributes : System.Reflection.FieldAttributes -> System.Reflection.Emit.FieldBuilder
+
+	public DefineGlobalMethod(method) : name : String -> attributes : System.Reflection.MethodAttributes -> returnType : System.Type -> parameterTypes : cs.NativeArray<System.Type> -> System.Reflection.Emit.MethodBuilder
+
+	public DefineGlobalMethod(method) : name : String -> attributes : System.Reflection.MethodAttributes -> callingConvention : System.Reflection.CallingConventions -> returnType : System.Type -> requiredReturnTypeCustomModifiers : cs.NativeArray<System.Type> -> optionalReturnTypeCustomModifiers : cs.NativeArray<System.Type> -> parameterTypes : cs.NativeArray<System.Type> -> requiredParameterTypeCustomModifiers : cs.NativeArray<cs.NativeArray<System.Type>> -> optionalParameterTypeCustomModifiers : cs.NativeArray<cs.NativeArray<System.Type>> -> System.Reflection.Emit.MethodBuilder
+
+	public DefineGlobalMethod(method) : name : String -> attributes : System.Reflection.MethodAttributes -> callingConvention : System.Reflection.CallingConventions -> returnType : System.Type -> parameterTypes : cs.NativeArray<System.Type> -> System.Reflection.Emit.MethodBuilder
+
+	public DefinePInvokeMethod(method) : name : String -> dllName : String -> attributes : System.Reflection.MethodAttributes -> callingConvention : System.Reflection.CallingConventions -> returnType : System.Type -> parameterTypes : cs.NativeArray<System.Type> -> nativeCallConv : System.Runtime.InteropServices.CallingConvention -> nativeCharSet : System.Runtime.InteropServices.CharSet -> System.Reflection.Emit.MethodBuilder
+
+	public DefinePInvokeMethod(method) : name : String -> dllName : String -> entryName : String -> attributes : System.Reflection.MethodAttributes -> callingConvention : System.Reflection.CallingConventions -> returnType : System.Type -> parameterTypes : cs.NativeArray<System.Type> -> nativeCallConv : System.Runtime.InteropServices.CallingConvention -> nativeCharSet : System.Runtime.InteropServices.CharSet -> System.Reflection.Emit.MethodBuilder
+
+	public DefineType(method) : name : String -> System.Reflection.Emit.TypeBuilder
+
+	public DefineType(method) : name : String -> attr : System.Reflection.TypeAttributes -> parent : System.Type -> packingSize : System.Reflection.Emit.PackingSize -> typesize : Int -> System.Reflection.Emit.TypeBuilder
+
+	public DefineType(method) : name : String -> attr : System.Reflection.TypeAttributes -> parent : System.Type -> packsize : System.Reflection.Emit.PackingSize -> System.Reflection.Emit.TypeBuilder
+
+	public DefineType(method) : name : String -> attr : System.Reflection.TypeAttributes -> parent : System.Type -> typesize : Int -> System.Reflection.Emit.TypeBuilder
+
+	public DefineType(method) : name : String -> attr : System.Reflection.TypeAttributes -> parent : System.Type -> interfaces : cs.NativeArray<System.Type> -> System.Reflection.Emit.TypeBuilder
+
+	public DefineType(method) : name : String -> attr : System.Reflection.TypeAttributes -> parent : System.Type -> System.Reflection.Emit.TypeBuilder
+
+	public DefineType(method) : name : String -> attr : System.Reflection.TypeAttributes -> System.Reflection.Emit.TypeBuilder
+
+	public GetArrayMethod(method) : arrayClass : System.Type -> methodName : String -> callingConvention : System.Reflection.CallingConventions -> returnType : System.Type -> parameterTypes : cs.NativeArray<System.Type> -> System.Reflection.MethodInfo
+
+	public DefineEnum(method) : name : String -> visibility : System.Reflection.TypeAttributes -> underlyingType : System.Type -> System.Reflection.Emit.EnumBuilder
+
+	public GetType(method) : className : String -> System.Type
+
+	public GetType(method) : className : String -> throwOnError : Bool -> ignoreCase : Bool -> System.Type
+
+	public GetType(method) : className : String -> ignoreCase : Bool -> System.Type
+
+	public SetCustomAttribute(method) : customBuilder : System.Reflection.Emit.CustomAttributeBuilder -> Void
+
+	public SetCustomAttribute(method) : con : System.Reflection.ConstructorInfo -> binaryAttribute : cs.NativeArray<cs.types.UInt8> -> Void
+
+	public GetSymWriter(method) : Void -> System.Diagnostics.SymbolStore.ISymbolWriter
+
+	public DefineDocument(method) : url : String -> language : System.Guid -> languageVendor : System.Guid -> documentType : System.Guid -> System.Diagnostics.SymbolStore.ISymbolDocumentWriter
+
+	public GetTypes(method) : Void -> cs.NativeArray<System.Type>
+
+	public DefineResource(method) : name : String -> description : String -> attribute : System.Reflection.ResourceAttributes -> System.Resources.IResourceWriter
+
+	public DefineResource(method) : name : String -> description : String -> System.Resources.IResourceWriter
+
+	public DefineUnmanagedResource(method) : resource : cs.NativeArray<cs.types.UInt8> -> Void
+
+	public DefineUnmanagedResource(method) : resourceFileName : String -> Void
+
+	public DefineManifestResource(method) : name : String -> stream : System.IO.Stream -> attribute : System.Reflection.ResourceAttributes -> Void
+
+	public SetSymCustomAttribute(method) : name : String -> data : cs.NativeArray<cs.types.UInt8> -> Void
+
+	public SetUserEntryPoint(method) : entryPoint : System.Reflection.MethodInfo -> Void
+
+	public GetMethodToken(method) : method : System.Reflection.MethodInfo -> System.Reflection.Emit.MethodToken
+
+	public GetArrayMethodToken(method) : arrayClass : System.Type -> methodName : String -> callingConvention : System.Reflection.CallingConventions -> returnType : System.Type -> parameterTypes : cs.NativeArray<System.Type> -> System.Reflection.Emit.MethodToken
+
+	public GetConstructorToken(method) : con : System.Reflection.ConstructorInfo -> System.Reflection.Emit.MethodToken
+
+	public GetFieldToken(method) : field : System.Reflection.FieldInfo -> System.Reflection.Emit.FieldToken
+
+	public GetSignatureToken(method) : sigBytes : cs.NativeArray<cs.types.UInt8> -> sigLength : Int -> System.Reflection.Emit.SignatureToken
+
+	public GetSignatureToken(method) : sigHelper : System.Reflection.Emit.SignatureHelper -> System.Reflection.Emit.SignatureToken
+
+	public GetStringConstant(method) : str : String -> System.Reflection.Emit.StringToken
+
+	public GetTypeToken(method) : type : System.Type -> System.Reflection.Emit.TypeToken
+
+	public GetTypeToken(method) : name : String -> System.Reflection.Emit.TypeToken
+
+	get_Assembly(method) : Void -> System.Reflection.Assembly
+
+	get_Name(method) : Void -> String
+
+	get_ScopeName(method) : Void -> String
+
+	get_ModuleVersionId(method) : Void -> System.Guid
+
+	public IsResource(method) : Void -> Bool
+
+	GetMethodImpl(method) : name : String -> bindingAttr : System.Reflection.BindingFlags -> binder : System.Reflection.Binder -> callConvention : System.Reflection.CallingConventions -> types : cs.NativeArray<System.Type> -> modifiers : cs.NativeArray<System.Reflection.ParameterModifier> -> System.Reflection.MethodInfo
+
+	public ResolveField(method) : metadataToken : Int -> genericTypeArguments : cs.NativeArray<System.Type> -> genericMethodArguments : cs.NativeArray<System.Type> -> System.Reflection.FieldInfo
+
+	public ResolveMember(method) : metadataToken : Int -> genericTypeArguments : cs.NativeArray<System.Type> -> genericMethodArguments : cs.NativeArray<System.Type> -> System.Reflection.MemberInfo
+
+	public ResolveMethod(method) : metadataToken : Int -> genericTypeArguments : cs.NativeArray<System.Type> -> genericMethodArguments : cs.NativeArray<System.Type> -> System.Reflection.MethodBase
+
+	public ResolveString(method) : metadataToken : Int -> String
+
+	public ResolveSignature(method) : metadataToken : Int -> cs.NativeArray<cs.types.UInt8>
+
+	public ResolveType(method) : metadataToken : Int -> genericTypeArguments : cs.NativeArray<System.Type> -> genericMethodArguments : cs.NativeArray<System.Type> -> System.Type
+
+}

@@ -1,0 +1,152 @@
+extern class Gtk.TextAttributes extends GLib.Opaque{
+	public new(method) : raw : System.IntPtr -> Void
+
+	public new(method) : Void -> Void
+
+	public language((get,set)) : Pango.Language
+
+	public tabs((get,set)) : Pango.TabArray
+
+	public font((get,set)) : Pango.FontDescription
+
+	public Realized((get,set)) : Bool
+
+	public PixelsAboveLines((get,set)) : Int
+
+	public PixelsInsideWrap((get,set)) : Int
+
+	public Direction((get,set)) : Gtk.TextDirection
+
+	public BgFullHeight((get,set)) : Bool
+
+	public FontScale((get,set)) : Float
+
+	public Font((get,set)) : Pango.FontDescription
+
+	public Editable((get,set)) : Bool
+
+	public Justification((get,set)) : Gtk.Justification
+
+	public WrapMode((get,set)) : Gtk.WrapMode
+
+	public Invisible((get,set)) : Bool
+
+	public RightMargin((get,set)) : Int
+
+	public Tabs((get,set)) : Pango.TabArray
+
+	public Appearance((get,set)) : Gtk.TextAppearance
+
+	public LeftMargin((get,set)) : Int
+
+	public Language((get,set)) : Pango.Language
+
+	public PixelsBelowLines((get,set)) : Int
+
+	public Indent((get,set)) : Int
+
+	get_Indent(method) : Void -> Int
+
+	set_Indent(method) : value : Int -> Int
+
+	get_PixelsBelowLines(method) : Void -> Int
+
+	set_PixelsBelowLines(method) : value : Int -> Int
+
+	get_Language(method) : Void -> Pango.Language
+
+	set_Language(method) : value : Pango.Language -> Pango.Language
+
+	get_LeftMargin(method) : Void -> Int
+
+	set_LeftMargin(method) : value : Int -> Int
+
+	get_Appearance(method) : Void -> Gtk.TextAppearance
+
+	set_Appearance(method) : value : Gtk.TextAppearance -> Gtk.TextAppearance
+
+	get_Tabs(method) : Void -> Pango.TabArray
+
+	set_Tabs(method) : value : Pango.TabArray -> Pango.TabArray
+
+	get_RightMargin(method) : Void -> Int
+
+	set_RightMargin(method) : value : Int -> Int
+
+	get_Invisible(method) : Void -> Bool
+
+	set_Invisible(method) : value : Bool -> Bool
+
+	get_WrapMode(method) : Void -> Gtk.WrapMode
+
+	set_WrapMode(method) : value : Gtk.WrapMode -> Gtk.WrapMode
+
+	get_Justification(method) : Void -> Gtk.Justification
+
+	set_Justification(method) : value : Gtk.Justification -> Gtk.Justification
+
+	get_Editable(method) : Void -> Bool
+
+	set_Editable(method) : value : Bool -> Bool
+
+	get_Font(method) : Void -> Pango.FontDescription
+
+	set_Font(method) : value : Pango.FontDescription -> Pango.FontDescription
+
+	get_FontScale(method) : Void -> Float
+
+	set_FontScale(method) : value : Float -> Float
+
+	get_BgFullHeight(method) : Void -> Bool
+
+	set_BgFullHeight(method) : value : Bool -> Bool
+
+	get_Direction(method) : Void -> Gtk.TextDirection
+
+	set_Direction(method) : value : Gtk.TextDirection -> Gtk.TextDirection
+
+	get_PixelsInsideWrap(method) : Void -> Int
+
+	set_PixelsInsideWrap(method) : value : Int -> Int
+
+	get_PixelsAboveLines(method) : Void -> Int
+
+	set_PixelsAboveLines(method) : value : Int -> Int
+
+	get_Realized(method) : Void -> Bool
+
+	set_Realized(method) : value : Bool -> Bool
+
+	public Copy(method) : Void -> Gtk.TextAttributes
+
+	public CopyValues(method) : dest : Gtk.TextAttributes -> Void
+
+	Ref(method) : raw : System.IntPtr -> Void
+
+	Unref(method) : raw : System.IntPtr -> Void
+
+	Finalize(method) : Void -> Void
+
+	get_font(method) : Void -> Pango.FontDescription
+
+	set_font(method) : value : Pango.FontDescription -> Pango.FontDescription
+
+	get_tabs(method) : Void -> Pango.TabArray
+
+	set_tabs(method) : value : Pango.TabArray -> Pango.TabArray
+
+	get_language(method) : Void -> Pango.Language
+
+	set_language(method) : value : Pango.Language -> Pango.Language
+
+	static public GType((get,never)) : GLib.GType
+
+	static public Zero(var) : Gtk.TextAttributes
+
+	static get_GType(method) : Void -> GLib.GType
+
+	static public New(method) : raw : System.IntPtr -> Gtk.TextAttributes
+
+	static public New(method) : Void -> Gtk.TextAttributes
+
+}

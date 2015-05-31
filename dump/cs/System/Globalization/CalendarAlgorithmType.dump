@@ -1,0 +1,6 @@
+extern enum System.Globalization.CalendarAlgorithmType {
+	Unknown : System.Globalization.CalendarAlgorithmType;
+	SolarCalendar : System.Globalization.CalendarAlgorithmType;
+	LunarCalendar : System.Globalization.CalendarAlgorithmType;
+	LunisolarCalendar : System.Globalization.CalendarAlgorithmType;
+}

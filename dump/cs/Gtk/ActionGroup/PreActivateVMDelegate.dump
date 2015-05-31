@@ -1,0 +1,14 @@
+extern class Gtk.ActionGroup.PreActivateVMDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : action_group : System.IntPtr -> action : System.IntPtr -> Void
+
+	public BeginInvoke(method) : action_group : System.IntPtr -> action : System.IntPtr -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Void
+
+	static public op_Addition(method) : arg1 : gtk.ActionGroup_PreActivateVMDelegate -> arg2 : gtk.ActionGroup_PreActivateVMDelegate -> gtk.ActionGroup_PreActivateVMDelegate
+
+	static public op_Subtraction(method) : arg1 : gtk.ActionGroup_PreActivateVMDelegate -> arg2 : gtk.ActionGroup_PreActivateVMDelegate -> gtk.ActionGroup_PreActivateVMDelegate
+
+}

@@ -1,0 +1,14 @@
+extern class Gtk.Entry.TextDeletedVMDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : editable : System.IntPtr -> start_pos : Int -> end_pos : Int -> Void
+
+	public BeginInvoke(method) : editable : System.IntPtr -> start_pos : Int -> end_pos : Int -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Void
+
+	static public op_Addition(method) : arg1 : gtk.Entry_TextDeletedVMDelegate -> arg2 : gtk.Entry_TextDeletedVMDelegate -> gtk.Entry_TextDeletedVMDelegate
+
+	static public op_Subtraction(method) : arg1 : gtk.Entry_TextDeletedVMDelegate -> arg2 : gtk.Entry_TextDeletedVMDelegate -> gtk.Entry_TextDeletedVMDelegate
+
+}

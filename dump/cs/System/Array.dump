@@ -1,0 +1,212 @@
+extern class System.Array implements System.ICloneable implements System.Collections.ICollection implements System.Collections.IEnumerable implements System.Collections.IList implements System.Collections.IStructuralComparable implements System.Collections.IStructuralEquatable implements ArrayAccess<Dynamic>{
+	public IsReadOnly((get,never)) : Bool
+
+	public IsFixedSize((get,never)) : Bool
+
+	public SyncRoot((get,never)) : Dynamic
+
+	public IsSynchronized((get,never)) : Bool
+
+	public Rank((get,never)) : Int
+
+	public LongLength((get,never)) : haxe.Int64
+
+	public Length((get,never)) : Int
+
+	get_Length(method) : Void -> Int
+
+	get_LongLength(method) : Void -> haxe.Int64
+
+	get_Rank(method) : Void -> Int
+
+	public GetLength(method) : dimension : Int -> Int
+
+	public GetLongLength(method) : dimension : Int -> haxe.Int64
+
+	public GetLowerBound(method) : dimension : Int -> Int
+
+	public GetValue(method) : indices : cs.NativeArray<Int> -> Dynamic
+
+	public GetValue(method) : indices : cs.NativeArray<haxe.Int64> -> Dynamic
+
+	public GetValue(method) : index1 : haxe.Int64 -> index2 : haxe.Int64 -> index3 : haxe.Int64 -> Dynamic
+
+	public GetValue(method) : index1 : haxe.Int64 -> index2 : haxe.Int64 -> Dynamic
+
+	public GetValue(method) : index : haxe.Int64 -> Dynamic
+
+	public GetValue(method) : index1 : Int -> index2 : Int -> index3 : Int -> Dynamic
+
+	public GetValue(method) : index1 : Int -> index2 : Int -> Dynamic
+
+	public GetValue(method) : index : Int -> Dynamic
+
+	public SetValue(method) : value : Dynamic -> indices : cs.NativeArray<Int> -> Void
+
+	public SetValue(method) : value : Dynamic -> indices : cs.NativeArray<haxe.Int64> -> Void
+
+	public SetValue(method) : value : Dynamic -> index1 : Int -> index2 : Int -> index3 : Int -> Void
+
+	public SetValue(method) : value : Dynamic -> index1 : Int -> index2 : Int -> Void
+
+	public SetValue(method) : value : Dynamic -> index : Int -> Void
+
+	public SetValue(method) : value : Dynamic -> index1 : haxe.Int64 -> index2 : haxe.Int64 -> index3 : haxe.Int64 -> Void
+
+	public SetValue(method) : value : Dynamic -> index1 : haxe.Int64 -> index2 : haxe.Int64 -> Void
+
+	public SetValue(method) : value : Dynamic -> index : haxe.Int64 -> Void
+
+	get_IsSynchronized(method) : Void -> Bool
+
+	get_SyncRoot(method) : Void -> Dynamic
+
+	get_IsFixedSize(method) : Void -> Bool
+
+	get_IsReadOnly(method) : Void -> Bool
+
+	public GetEnumerator(method) : Void -> System.Collections.IEnumerator
+
+	public GetUpperBound(method) : dimension : Int -> Int
+
+	public Clone(method) : Void -> Dynamic
+
+	public Initialize(method) : Void -> Void
+
+	public CopyTo(method) : array : System.Array -> index : Int -> Void
+
+	public CopyTo(method) : array : System.Array -> index : haxe.Int64 -> Void
+
+	static public CreateInstance(method) : elementType : System.Type -> length : Int -> System.Array
+
+	static public CreateInstance(method) : elementType : System.Type -> lengths : cs.NativeArray<haxe.Int64> -> System.Array
+
+	static public CreateInstance(method) : elementType : System.Type -> lengths : cs.NativeArray<Int> -> lowerBounds : cs.NativeArray<Int> -> System.Array
+
+	static public CreateInstance(method) : elementType : System.Type -> lengths : cs.NativeArray<Int> -> System.Array
+
+	static public CreateInstance(method) : elementType : System.Type -> length1 : Int -> length2 : Int -> length3 : Int -> System.Array
+
+	static public CreateInstance(method) : elementType : System.Type -> length1 : Int -> length2 : Int -> System.Array
+
+	static public BinarySearch(method) : array : System.Array -> value : Dynamic -> Int
+
+	static public BinarySearch<M0 : BinarySearch.M0>(method) : array : cs.NativeArray<BinarySearch.M0> -> index : Int -> length : Int -> value : BinarySearch.M0 -> comparer : System.Collections.Generic.IComparer`1<BinarySearch.M0> -> Int
+
+	static public BinarySearch<M0 : BinarySearch.M0>(method) : array : cs.NativeArray<BinarySearch.M0> -> index : Int -> length : Int -> value : BinarySearch.M0 -> Int
+
+	static public BinarySearch<M0 : BinarySearch.M0>(method) : array : cs.NativeArray<BinarySearch.M0> -> value : BinarySearch.M0 -> comparer : System.Collections.Generic.IComparer`1<BinarySearch.M0> -> Int
+
+	static public BinarySearch<M0 : BinarySearch.M0>(method) : array : cs.NativeArray<BinarySearch.M0> -> value : BinarySearch.M0 -> Int
+
+	static public BinarySearch(method) : array : System.Array -> index : Int -> length : Int -> value : Dynamic -> comparer : System.Collections.IComparer -> Int
+
+	static public BinarySearch(method) : array : System.Array -> index : Int -> length : Int -> value : Dynamic -> Int
+
+	static public BinarySearch(method) : array : System.Array -> value : Dynamic -> comparer : System.Collections.IComparer -> Int
+
+	static public Clear(method) : array : System.Array -> index : Int -> length : Int -> Void
+
+	static public Copy(method) : sourceArray : System.Array -> destinationArray : System.Array -> length : Int -> Void
+
+	static public Copy(method) : sourceArray : System.Array -> destinationArray : System.Array -> length : haxe.Int64 -> Void
+
+	static public Copy(method) : sourceArray : System.Array -> sourceIndex : haxe.Int64 -> destinationArray : System.Array -> destinationIndex : haxe.Int64 -> length : haxe.Int64 -> Void
+
+	static public Copy(method) : sourceArray : System.Array -> sourceIndex : Int -> destinationArray : System.Array -> destinationIndex : Int -> length : Int -> Void
+
+	static public IndexOf(method) : array : System.Array -> value : Dynamic -> Int
+
+	static public IndexOf<M0 : IndexOf.M0>(method) : array : cs.NativeArray<IndexOf.M0> -> value : IndexOf.M0 -> startIndex : Int -> count : Int -> Int
+
+	static public IndexOf<M0 : IndexOf.M0>(method) : array : cs.NativeArray<IndexOf.M0> -> value : IndexOf.M0 -> startIndex : Int -> Int
+
+	static public IndexOf<M0 : IndexOf.M0>(method) : array : cs.NativeArray<IndexOf.M0> -> value : IndexOf.M0 -> Int
+
+	static public IndexOf(method) : array : System.Array -> value : Dynamic -> startIndex : Int -> count : Int -> Int
+
+	static public IndexOf(method) : array : System.Array -> value : Dynamic -> startIndex : Int -> Int
+
+	static public LastIndexOf(method) : array : System.Array -> value : Dynamic -> Int
+
+	static public LastIndexOf<M0 : LastIndexOf.M0>(method) : array : cs.NativeArray<LastIndexOf.M0> -> value : LastIndexOf.M0 -> startIndex : Int -> count : Int -> Int
+
+	static public LastIndexOf<M0 : LastIndexOf.M0>(method) : array : cs.NativeArray<LastIndexOf.M0> -> value : LastIndexOf.M0 -> startIndex : Int -> Int
+
+	static public LastIndexOf<M0 : LastIndexOf.M0>(method) : array : cs.NativeArray<LastIndexOf.M0> -> value : LastIndexOf.M0 -> Int
+
+	static public LastIndexOf(method) : array : System.Array -> value : Dynamic -> startIndex : Int -> count : Int -> Int
+
+	static public LastIndexOf(method) : array : System.Array -> value : Dynamic -> startIndex : Int -> Int
+
+	static public Reverse(method) : array : System.Array -> Void
+
+	static public Reverse(method) : array : System.Array -> index : Int -> length : Int -> Void
+
+	static public Sort(method) : array : System.Array -> Void
+
+	static public Sort<M0 : Sort.M0>(method) : array : cs.NativeArray<Sort.M0> -> comparison : cs.system.Comparison_1<Sort.M0> -> Void
+
+	static public Sort<M0 : Sort.M0,M1 : Sort.M1>(method) : keys : cs.NativeArray<Sort.M0> -> items : cs.NativeArray<Sort.M1> -> index : Int -> length : Int -> comparer : System.Collections.Generic.IComparer`1<Sort.M0> -> Void
+
+	static public Sort<M0 : Sort.M0>(method) : array : cs.NativeArray<Sort.M0> -> index : Int -> length : Int -> comparer : System.Collections.Generic.IComparer`1<Sort.M0> -> Void
+
+	static public Sort<M0 : Sort.M0,M1 : Sort.M1>(method) : keys : cs.NativeArray<Sort.M0> -> items : cs.NativeArray<Sort.M1> -> index : Int -> length : Int -> Void
+
+	static public Sort<M0 : Sort.M0>(method) : array : cs.NativeArray<Sort.M0> -> index : Int -> length : Int -> Void
+
+	static public Sort<M0 : Sort.M0,M1 : Sort.M1>(method) : keys : cs.NativeArray<Sort.M0> -> items : cs.NativeArray<Sort.M1> -> comparer : System.Collections.Generic.IComparer`1<Sort.M0> -> Void
+
+	static public Sort<M0 : Sort.M0>(method) : array : cs.NativeArray<Sort.M0> -> comparer : System.Collections.Generic.IComparer`1<Sort.M0> -> Void
+
+	static public Sort<M0 : Sort.M0,M1 : Sort.M1>(method) : keys : cs.NativeArray<Sort.M0> -> items : cs.NativeArray<Sort.M1> -> Void
+
+	static public Sort<M0 : Sort.M0>(method) : array : cs.NativeArray<Sort.M0> -> Void
+
+	static public Sort(method) : keys : System.Array -> items : System.Array -> index : Int -> length : Int -> comparer : System.Collections.IComparer -> Void
+
+	static public Sort(method) : array : System.Array -> index : Int -> length : Int -> comparer : System.Collections.IComparer -> Void
+
+	static public Sort(method) : keys : System.Array -> items : System.Array -> index : Int -> length : Int -> Void
+
+	static public Sort(method) : keys : System.Array -> items : System.Array -> comparer : System.Collections.IComparer -> Void
+
+	static public Sort(method) : array : System.Array -> index : Int -> length : Int -> Void
+
+	static public Sort(method) : array : System.Array -> comparer : System.Collections.IComparer -> Void
+
+	static public Sort(method) : keys : System.Array -> items : System.Array -> Void
+
+	static public Resize<M0 : Resize.M0>(method) : array : cs.Ref<cs.NativeArray<Resize.M0>> -> newSize : Int -> Void
+
+	static public TrueForAll<M0 : TrueForAll.M0>(method) : array : cs.NativeArray<TrueForAll.M0> -> match : cs.system.Predicate_1<TrueForAll.M0> -> Bool
+
+	static public ForEach<M0 : ForEach.M0>(method) : array : cs.NativeArray<ForEach.M0> -> action : cs.system.Action_1<ForEach.M0> -> Void
+
+	static public ConvertAll<M0 : ConvertAll.M0,M1 : ConvertAll.M1>(method) : array : cs.NativeArray<ConvertAll.M0> -> converter : cs.system.Converter_2<ConvertAll.M0, ConvertAll.M1> -> cs.NativeArray<ConvertAll.M1>
+
+	static public FindLastIndex<M0 : FindLastIndex.M0>(method) : array : cs.NativeArray<FindLastIndex.M0> -> match : cs.system.Predicate_1<FindLastIndex.M0> -> Int
+
+	static public FindLastIndex<M0 : FindLastIndex.M0>(method) : array : cs.NativeArray<FindLastIndex.M0> -> startIndex : Int -> count : Int -> match : cs.system.Predicate_1<FindLastIndex.M0> -> Int
+
+	static public FindLastIndex<M0 : FindLastIndex.M0>(method) : array : cs.NativeArray<FindLastIndex.M0> -> startIndex : Int -> match : cs.system.Predicate_1<FindLastIndex.M0> -> Int
+
+	static public FindIndex<M0 : FindIndex.M0>(method) : array : cs.NativeArray<FindIndex.M0> -> match : cs.system.Predicate_1<FindIndex.M0> -> Int
+
+	static public FindIndex<M0 : FindIndex.M0>(method) : array : cs.NativeArray<FindIndex.M0> -> startIndex : Int -> count : Int -> match : cs.system.Predicate_1<FindIndex.M0> -> Int
+
+	static public FindIndex<M0 : FindIndex.M0>(method) : array : cs.NativeArray<FindIndex.M0> -> startIndex : Int -> match : cs.system.Predicate_1<FindIndex.M0> -> Int
+
+	static public FindAll<M0 : FindAll.M0>(method) : array : cs.NativeArray<FindAll.M0> -> match : cs.system.Predicate_1<FindAll.M0> -> cs.NativeArray<FindAll.M0>
+
+	static public Exists<M0 : Exists.M0>(method) : array : cs.NativeArray<Exists.M0> -> match : cs.system.Predicate_1<Exists.M0> -> Bool
+
+	static public AsReadOnly<M0 : AsReadOnly.M0>(method) : array : cs.NativeArray<AsReadOnly.M0> -> System.Collections.ObjectModel.ReadOnlyCollection`1<AsReadOnly.M0>
+
+	static public Find<M0 : Find.M0>(method) : array : cs.NativeArray<Find.M0> -> match : cs.system.Predicate_1<Find.M0> -> Find.M0
+
+	static public FindLast<M0 : FindLast.M0>(method) : array : cs.NativeArray<FindLast.M0> -> match : cs.system.Predicate_1<FindLast.M0> -> FindLast.M0
+
+	static public ConstrainedCopy(method) : sourceArray : System.Array -> sourceIndex : Int -> destinationArray : System.Array -> destinationIndex : Int -> length : Int -> Void
+
+}

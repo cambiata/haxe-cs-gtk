@@ -1,0 +1,14 @@
+extern class Gtk.Widget.DragBeginVMDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : widget : System.IntPtr -> context : System.IntPtr -> Void
+
+	public BeginInvoke(method) : widget : System.IntPtr -> context : System.IntPtr -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Void
+
+	static public op_Addition(method) : arg1 : gtk.Widget_DragBeginVMDelegate -> arg2 : gtk.Widget_DragBeginVMDelegate -> gtk.Widget_DragBeginVMDelegate
+
+	static public op_Subtraction(method) : arg1 : gtk.Widget_DragBeginVMDelegate -> arg2 : gtk.Widget_DragBeginVMDelegate -> gtk.Widget_DragBeginVMDelegate
+
+}

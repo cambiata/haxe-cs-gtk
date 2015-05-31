@@ -1,0 +1,14 @@
+extern class System.ResolveEventHandler extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : sender : Dynamic -> args : System.ResolveEventArgs -> System.Reflection.Assembly
+
+	public BeginInvoke(method) : sender : Dynamic -> args : System.ResolveEventArgs -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> System.Reflection.Assembly
+
+	static public op_Addition(method) : arg1 : cs.system.ResolveEventHandler -> arg2 : cs.system.ResolveEventHandler -> cs.system.ResolveEventHandler
+
+	static public op_Subtraction(method) : arg1 : cs.system.ResolveEventHandler -> arg2 : cs.system.ResolveEventHandler -> cs.system.ResolveEventHandler
+
+}

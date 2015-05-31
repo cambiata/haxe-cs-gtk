@@ -1,0 +1,6 @@
+extern enum System.Drawing.Drawing2D.LineJoin {
+	Miter : System.Drawing.Drawing2D.LineJoin;
+	Bevel : System.Drawing.Drawing2D.LineJoin;
+	Round : System.Drawing.Drawing2D.LineJoin;
+	MiterClipped : System.Drawing.Drawing2D.LineJoin;
+}

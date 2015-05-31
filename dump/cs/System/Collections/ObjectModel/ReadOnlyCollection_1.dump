@@ -1,0 +1,22 @@
+extern class System.Collections.ObjectModel.ReadOnlyCollection`1<T0 : cs.system.collections.objectmodel.ReadOnlyCollection_1.T0> implements System.Collections.Generic.ICollection`1<cs.system.collections.objectmodel.ReadOnlyCollection_1.T0> implements System.Collections.Generic.IList`1<cs.system.collections.objectmodel.ReadOnlyCollection_1.T0> implements System.Collections.Generic.IEnumerable`1<cs.system.collections.objectmodel.ReadOnlyCollection_1.T0> implements System.Collections.ICollection implements System.Collections.IEnumerable implements System.Collections.IList implements ArrayAccess<cs.system.collections.objectmodel.ReadOnlyCollection_1.T0>{
+	public new(method) : list : System.Collections.Generic.IList`1<cs.system.collections.objectmodel.ReadOnlyCollection_1.T0> -> Void
+
+	Items((null,never)) : System.Collections.Generic.IList`1<cs.system.collections.objectmodel.ReadOnlyCollection_1.T0>
+
+	public Count((get,never)) : Int
+
+	public Contains(method) : value : cs.system.collections.objectmodel.ReadOnlyCollection_1.T0 -> Bool
+
+	public CopyTo(method) : array : cs.NativeArray<cs.system.collections.objectmodel.ReadOnlyCollection_1.T0> -> index : Int -> Void
+
+	public GetEnumerator(method) : Void -> System.Collections.Generic.IEnumerator`1<cs.system.collections.objectmodel.ReadOnlyCollection_1.T0>
+
+	public IndexOf(method) : value : cs.system.collections.objectmodel.ReadOnlyCollection_1.T0 -> Int
+
+	get_Count(method) : Void -> Int
+
+	get_Items(method) : Void -> System.Collections.Generic.IList`1<cs.system.collections.objectmodel.ReadOnlyCollection_1.T0>
+
+	get_Item(method) : index : Int -> cs.system.collections.objectmodel.ReadOnlyCollection_1.T0
+
+}

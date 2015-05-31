@@ -1,0 +1,8 @@
+extern class Gtk.WidgetEventAfterArgs extends GLib.SignalArgs{
+	public new(method) : Void -> Void
+
+	public Event((get,never)) : Gdk.Event
+
+	get_Event(method) : Void -> Gdk.Event
+
+}

@@ -1,0 +1,10 @@
+extern interface System.Security.IStackWalk{
+	public Assert(method) : Void -> Void
+
+	public Demand(method) : Void -> Void
+
+	public Deny(method) : Void -> Void
+
+	public PermitOnly(method) : Void -> Void
+
+}

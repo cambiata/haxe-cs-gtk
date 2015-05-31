@@ -1,0 +1,8 @@
+extern class System.Reflection.Emit.ILGenerator.LabelData extends System.ValueType{
+	public new(method) : addr : Int -> maxStack : Int -> Void
+
+	public maxStack(var) : Int
+
+	public addr(var) : Int
+
+}

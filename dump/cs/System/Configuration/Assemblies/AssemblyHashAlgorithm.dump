@@ -1,0 +1,5 @@
+extern enum System.Configuration.Assemblies.AssemblyHashAlgorithm {
+	None : System.Configuration.Assemblies.AssemblyHashAlgorithm;
+	MD5 : System.Configuration.Assemblies.AssemblyHashAlgorithm;
+	SHA1 : System.Configuration.Assemblies.AssemblyHashAlgorithm;
+}

@@ -1,0 +1,8 @@
+extern enum System.Security.AccessControl.AccessControlModification {
+	Add : System.Security.AccessControl.AccessControlModification;
+	Set : System.Security.AccessControl.AccessControlModification;
+	Reset : System.Security.AccessControl.AccessControlModification;
+	Remove : System.Security.AccessControl.AccessControlModification;
+	RemoveAll : System.Security.AccessControl.AccessControlModification;
+	RemoveSpecific : System.Security.AccessControl.AccessControlModification;
+}

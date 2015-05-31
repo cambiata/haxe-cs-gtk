@@ -1,0 +1,40 @@
+extern class System.Reflection.Emit.OpCode extends System.ValueType{
+	public Value((get,never)) : cs.types.Int16
+
+	public StackBehaviourPush((get,never)) : System.Reflection.Emit.StackBehaviour
+
+	public StackBehaviourPop((get,never)) : System.Reflection.Emit.StackBehaviour
+
+	public FlowControl((get,never)) : System.Reflection.Emit.FlowControl
+
+	public OperandType((get,never)) : System.Reflection.Emit.OperandType
+
+	public OpCodeType((get,never)) : System.Reflection.Emit.OpCodeType
+
+	public Size((get,never)) : Int
+
+	public Name((get,never)) : String
+
+	public ToString(method) : Void -> String
+
+	get_Name(method) : Void -> String
+
+	get_Size(method) : Void -> Int
+
+	get_OpCodeType(method) : Void -> System.Reflection.Emit.OpCodeType
+
+	get_OperandType(method) : Void -> System.Reflection.Emit.OperandType
+
+	get_FlowControl(method) : Void -> System.Reflection.Emit.FlowControl
+
+	get_StackBehaviourPop(method) : Void -> System.Reflection.Emit.StackBehaviour
+
+	get_StackBehaviourPush(method) : Void -> System.Reflection.Emit.StackBehaviour
+
+	get_Value(method) : Void -> cs.types.Int16
+
+	static public op_Equality(method) : a : System.Reflection.Emit.OpCode -> b : System.Reflection.Emit.OpCode -> Bool
+
+	static public op_Inequality(method) : a : System.Reflection.Emit.OpCode -> b : System.Reflection.Emit.OpCode -> Bool
+
+}

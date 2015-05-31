@@ -1,0 +1,14 @@
+extern class Gtk.NodeStore.GetValueDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : node_idx : Int -> col : Int -> val : cs.Ref<GLib.Value> -> Void
+
+	public BeginInvoke(method) : node_idx : Int -> col : Int -> val : cs.Ref<GLib.Value> -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : val : cs.Ref<GLib.Value> -> result : System.IAsyncResult -> Void
+
+	static public op_Addition(method) : arg1 : gtk.NodeStore_GetValueDelegate -> arg2 : gtk.NodeStore_GetValueDelegate -> gtk.NodeStore_GetValueDelegate
+
+	static public op_Subtraction(method) : arg1 : gtk.NodeStore_GetValueDelegate -> arg2 : gtk.NodeStore_GetValueDelegate -> gtk.NodeStore_GetValueDelegate
+
+}

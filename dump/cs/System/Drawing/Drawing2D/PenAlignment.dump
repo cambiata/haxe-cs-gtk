@@ -1,0 +1,7 @@
+extern enum System.Drawing.Drawing2D.PenAlignment {
+	Center : System.Drawing.Drawing2D.PenAlignment;
+	Inset : System.Drawing.Drawing2D.PenAlignment;
+	Outset : System.Drawing.Drawing2D.PenAlignment;
+	Left : System.Drawing.Drawing2D.PenAlignment;
+	Right : System.Drawing.Drawing2D.PenAlignment;
+}

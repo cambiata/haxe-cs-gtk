@@ -1,0 +1,5 @@
+extern enum Gtk.AccelFlags {
+	Visible : Gtk.AccelFlags;
+	Locked : Gtk.AccelFlags;
+	Mask : Gtk.AccelFlags;
+}

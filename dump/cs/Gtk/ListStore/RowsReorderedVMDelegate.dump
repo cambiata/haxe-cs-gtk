@@ -1,0 +1,14 @@
+extern class Gtk.ListStore.RowsReorderedVMDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : tree_model : System.IntPtr -> path : System.IntPtr -> iter : System.IntPtr -> new_order : System.IntPtr -> Void
+
+	public BeginInvoke(method) : tree_model : System.IntPtr -> path : System.IntPtr -> iter : System.IntPtr -> new_order : System.IntPtr -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Void
+
+	static public op_Addition(method) : arg1 : gtk.ListStore_RowsReorderedVMDelegate -> arg2 : gtk.ListStore_RowsReorderedVMDelegate -> gtk.ListStore_RowsReorderedVMDelegate
+
+	static public op_Subtraction(method) : arg1 : gtk.ListStore_RowsReorderedVMDelegate -> arg2 : gtk.ListStore_RowsReorderedVMDelegate -> gtk.ListStore_RowsReorderedVMDelegate
+
+}

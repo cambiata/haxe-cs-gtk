@@ -1,0 +1,5 @@
+extern enum Gdk.ExtensionMode {
+	None : Gdk.ExtensionMode;
+	All : Gdk.ExtensionMode;
+	Cursor : Gdk.ExtensionMode;
+}

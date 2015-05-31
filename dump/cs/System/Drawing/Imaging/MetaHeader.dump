@@ -1,0 +1,46 @@
+extern class System.Drawing.Imaging.MetaHeader{
+	public new(method) : Void -> Void
+
+	public NoParameters((get,set)) : cs.types.Int16
+
+	public MaxRecord((get,set)) : Int
+
+	public NoObjects((get,set)) : cs.types.Int16
+
+	public Size((get,set)) : Int
+
+	public Version((get,set)) : cs.types.Int16
+
+	public HeaderSize((get,set)) : cs.types.Int16
+
+	public Type((get,set)) : cs.types.Int16
+
+	get_Type(method) : Void -> cs.types.Int16
+
+	set_Type(method) : value : cs.types.Int16 -> cs.types.Int16
+
+	get_HeaderSize(method) : Void -> cs.types.Int16
+
+	set_HeaderSize(method) : value : cs.types.Int16 -> cs.types.Int16
+
+	get_Version(method) : Void -> cs.types.Int16
+
+	set_Version(method) : value : cs.types.Int16 -> cs.types.Int16
+
+	get_Size(method) : Void -> Int
+
+	set_Size(method) : value : Int -> Int
+
+	get_NoObjects(method) : Void -> cs.types.Int16
+
+	set_NoObjects(method) : value : cs.types.Int16 -> cs.types.Int16
+
+	get_MaxRecord(method) : Void -> Int
+
+	set_MaxRecord(method) : value : Int -> Int
+
+	get_NoParameters(method) : Void -> cs.types.Int16
+
+	set_NoParameters(method) : value : cs.types.Int16 -> cs.types.Int16
+
+}

@@ -1,0 +1,14 @@
+extern class Gtk.TreeView.TestExpandRowVMDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : tree_view : System.IntPtr -> iter : System.IntPtr -> path : System.IntPtr -> Bool
+
+	public BeginInvoke(method) : tree_view : System.IntPtr -> iter : System.IntPtr -> path : System.IntPtr -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Bool
+
+	static public op_Addition(method) : arg1 : gtk.TreeView_TestExpandRowVMDelegate -> arg2 : gtk.TreeView_TestExpandRowVMDelegate -> gtk.TreeView_TestExpandRowVMDelegate
+
+	static public op_Subtraction(method) : arg1 : gtk.TreeView_TestExpandRowVMDelegate -> arg2 : gtk.TreeView_TestExpandRowVMDelegate -> gtk.TreeView_TestExpandRowVMDelegate
+
+}

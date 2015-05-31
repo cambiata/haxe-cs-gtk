@@ -1,0 +1,12 @@
+extern class Gtk.DragFailedArgs extends GLib.SignalArgs{
+	public new(method) : Void -> Void
+
+	public DragResult((get,never)) : Gtk.DragResult
+
+	public DragContext((get,never)) : Gdk.DragContext
+
+	get_DragContext(method) : Void -> Gdk.DragContext
+
+	get_DragResult(method) : Void -> Gtk.DragResult
+
+}

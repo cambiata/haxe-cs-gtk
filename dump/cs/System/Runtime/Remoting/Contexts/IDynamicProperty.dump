@@ -1,0 +1,6 @@
+extern interface System.Runtime.Remoting.Contexts.IDynamicProperty{
+	public Name((get,never)) : String
+
+	get_Name(method) : Void -> String
+
+}

@@ -1,0 +1,52 @@
+extern class System.Reflection.Emit.FieldBuilder extends System.Reflection.FieldInfo implements System.Runtime.InteropServices._FieldBuilder{
+	public Module((get,never)) : System.Reflection.Module
+
+	public ReflectedType((get,never)) : System.Type
+
+	public Name((get,never)) : String
+
+	public FieldType((get,never)) : System.Type
+
+	public FieldHandle((get,never)) : System.RuntimeFieldHandle
+
+	public DeclaringType((get,never)) : System.Type
+
+	public Attributes((get,never)) : System.Reflection.FieldAttributes
+
+	get_Attributes(method) : Void -> System.Reflection.FieldAttributes
+
+	get_DeclaringType(method) : Void -> System.Type
+
+	get_FieldHandle(method) : Void -> System.RuntimeFieldHandle
+
+	get_FieldType(method) : Void -> System.Type
+
+	get_Name(method) : Void -> String
+
+	get_ReflectedType(method) : Void -> System.Type
+
+	public GetCustomAttributes(method) : inherit : Bool -> cs.NativeArray<Dynamic>
+
+	public GetCustomAttributes(method) : attributeType : System.Type -> inherit : Bool -> cs.NativeArray<Dynamic>
+
+	public GetToken(method) : Void -> System.Reflection.Emit.FieldToken
+
+	public GetValue(method) : obj : Dynamic -> Dynamic
+
+	public IsDefined(method) : attributeType : System.Type -> inherit : Bool -> Bool
+
+	public SetConstant(method) : defaultValue : Dynamic -> Void
+
+	public SetCustomAttribute(method) : customBuilder : System.Reflection.Emit.CustomAttributeBuilder -> Void
+
+	public SetCustomAttribute(method) : con : System.Reflection.ConstructorInfo -> binaryAttribute : cs.NativeArray<cs.types.UInt8> -> Void
+
+	public SetMarshal(method) : unmanagedMarshal : System.Reflection.Emit.UnmanagedMarshal -> Void
+
+	public SetOffset(method) : iOffset : Int -> Void
+
+	public SetValue(method) : obj : Dynamic -> val : Dynamic -> invokeAttr : System.Reflection.BindingFlags -> binder : System.Reflection.Binder -> culture : System.Globalization.CultureInfo -> Void
+
+	get_Module(method) : Void -> System.Reflection.Module
+
+}

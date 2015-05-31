@@ -1,0 +1,14 @@
+extern class Gtk.TextTag.TextEventVMDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : tag : System.IntPtr -> event_object : System.IntPtr -> evnt : System.IntPtr -> iter : System.IntPtr -> Bool
+
+	public BeginInvoke(method) : tag : System.IntPtr -> event_object : System.IntPtr -> evnt : System.IntPtr -> iter : System.IntPtr -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Bool
+
+	static public op_Addition(method) : arg1 : gtk.TextTag_TextEventVMDelegate -> arg2 : gtk.TextTag_TextEventVMDelegate -> gtk.TextTag_TextEventVMDelegate
+
+	static public op_Subtraction(method) : arg1 : gtk.TextTag_TextEventVMDelegate -> arg2 : gtk.TextTag_TextEventVMDelegate -> gtk.TextTag_TextEventVMDelegate
+
+}

@@ -1,0 +1,12 @@
+extern class Gtk.CursorOnMatchArgs extends GLib.SignalArgs{
+	public new(method) : Void -> Void
+
+	public Iter((get,never)) : Gtk.TreeIter
+
+	public Model((get,never)) : Gtk.TreeModel
+
+	get_Model(method) : Void -> Gtk.TreeModel
+
+	get_Iter(method) : Void -> Gtk.TreeIter
+
+}

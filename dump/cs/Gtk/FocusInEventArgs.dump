@@ -1,0 +1,8 @@
+extern class Gtk.FocusInEventArgs extends GLib.SignalArgs{
+	public new(method) : Void -> Void
+
+	public Event((get,never)) : Gdk.EventFocus
+
+	get_Event(method) : Void -> Gdk.EventFocus
+
+}

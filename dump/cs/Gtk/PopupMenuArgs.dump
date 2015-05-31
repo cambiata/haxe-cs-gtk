@@ -1,0 +1,4 @@
+extern class Gtk.PopupMenuArgs extends GLib.SignalArgs{
+	public new(method) : Void -> Void
+
+}

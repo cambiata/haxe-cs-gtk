@@ -1,0 +1,8 @@
+extern enum Gtk.ButtonsType {
+	None : Gtk.ButtonsType;
+	Ok : Gtk.ButtonsType;
+	Close : Gtk.ButtonsType;
+	Cancel : Gtk.ButtonsType;
+	YesNo : Gtk.ButtonsType;
+	OkCancel : Gtk.ButtonsType;
+}

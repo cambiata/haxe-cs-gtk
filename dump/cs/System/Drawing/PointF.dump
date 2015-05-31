@@ -1,0 +1,44 @@
+extern class System.Drawing.PointF extends System.ValueType{
+	public new(method) : x : Single -> y : Single -> Void
+
+	public Y((get,set)) : Single
+
+	public X((get,set)) : Single
+
+	public IsEmpty((get,never)) : Bool
+
+	get_IsEmpty(method) : Void -> Bool
+
+	get_X(method) : Void -> Single
+
+	set_X(method) : value : Single -> Single
+
+	get_Y(method) : Void -> Single
+
+	set_Y(method) : value : Single -> Single
+
+	public ToString(method) : Void -> String
+
+	static public Empty((default,never)) : System.Drawing.PointF
+
+	static public op_Addition(method) : pt : System.Drawing.PointF -> sz : System.Drawing.Size -> System.Drawing.PointF
+
+	static public op_Addition(method) : pt : System.Drawing.PointF -> sz : System.Drawing.SizeF -> System.Drawing.PointF
+
+	static public op_Subtraction(method) : pt : System.Drawing.PointF -> sz : System.Drawing.Size -> System.Drawing.PointF
+
+	static public op_Subtraction(method) : pt : System.Drawing.PointF -> sz : System.Drawing.SizeF -> System.Drawing.PointF
+
+	static public op_Equality(method) : left : System.Drawing.PointF -> right : System.Drawing.PointF -> Bool
+
+	static public op_Inequality(method) : left : System.Drawing.PointF -> right : System.Drawing.PointF -> Bool
+
+	static public Add(method) : pt : System.Drawing.PointF -> sz : System.Drawing.Size -> System.Drawing.PointF
+
+	static public Add(method) : pt : System.Drawing.PointF -> sz : System.Drawing.SizeF -> System.Drawing.PointF
+
+	static public Subtract(method) : pt : System.Drawing.PointF -> sz : System.Drawing.Size -> System.Drawing.PointF
+
+	static public Subtract(method) : pt : System.Drawing.PointF -> sz : System.Drawing.SizeF -> System.Drawing.PointF
+
+}

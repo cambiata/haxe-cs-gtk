@@ -1,0 +1,12 @@
+extern class Atk.PropertyValues extends System.ValueType{
+	public NewValue(var) : GLib.Value
+
+	public OldValue(var) : GLib.Value
+
+	public PropertyName(var) : String
+
+	static public Zero(var) : Atk.PropertyValues
+
+	static public New(method) : raw : System.IntPtr -> Atk.PropertyValues
+
+}

@@ -1,0 +1,6 @@
+extern enum Gdk.CapStyle {
+	NotLast : Gdk.CapStyle;
+	Butt : Gdk.CapStyle;
+	Round : Gdk.CapStyle;
+	Projecting : Gdk.CapStyle;
+}

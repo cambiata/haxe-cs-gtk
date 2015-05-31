@@ -1,0 +1,6 @@
+extern class Gdk.DisplayPointerHooks extends System.ValueType{
+	static public Zero(var) : Gdk.DisplayPointerHooks
+
+	static public New(method) : raw : System.IntPtr -> Gdk.DisplayPointerHooks
+
+}

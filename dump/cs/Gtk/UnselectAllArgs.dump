@@ -1,0 +1,4 @@
+extern class Gtk.UnselectAllArgs extends GLib.SignalArgs{
+	public new(method) : Void -> Void
+
+}

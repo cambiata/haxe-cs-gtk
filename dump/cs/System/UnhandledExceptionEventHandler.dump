@@ -1,0 +1,14 @@
+extern class System.UnhandledExceptionEventHandler extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : sender : Dynamic -> e : System.UnhandledExceptionEventArgs -> Void
+
+	public BeginInvoke(method) : sender : Dynamic -> e : System.UnhandledExceptionEventArgs -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Void
+
+	static public op_Addition(method) : arg1 : cs.system.UnhandledExceptionEventHandler -> arg2 : cs.system.UnhandledExceptionEventHandler -> cs.system.UnhandledExceptionEventHandler
+
+	static public op_Subtraction(method) : arg1 : cs.system.UnhandledExceptionEventHandler -> arg2 : cs.system.UnhandledExceptionEventHandler -> cs.system.UnhandledExceptionEventHandler
+
+}

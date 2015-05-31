@@ -1,0 +1,5 @@
+extern enum System.Drawing.Imaging.EmfType {
+	EmfOnly : System.Drawing.Imaging.EmfType;
+	EmfPlusOnly : System.Drawing.Imaging.EmfType;
+	EmfPlusDual : System.Drawing.Imaging.EmfType;
+}

@@ -1,0 +1,7 @@
+extern enum Pango.Gravity {
+	South : Pango.Gravity;
+	East : Pango.Gravity;
+	North : Pango.Gravity;
+	West : Pango.Gravity;
+	Auto : Pango.Gravity;
+}

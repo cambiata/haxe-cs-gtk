@@ -1,0 +1,10 @@
+extern class System.TimeSpan.FormatParser{
+	public new(method) : format : String -> Void
+
+	public AtEnd((get,never)) : Bool
+
+	get_AtEnd(method) : Void -> Bool
+
+	public GetNextElement(method) : Void -> System.TimeSpan.FormatElement
+
+}

@@ -1,0 +1,22 @@
+extern class System.Runtime.Serialization.SerializationInfoEnumerator implements System.Collections.IEnumerator{
+	public Value((get,never)) : Dynamic
+
+	public ObjectType((get,never)) : System.Type
+
+	public Name((get,never)) : String
+
+	public Current((get,never)) : System.Runtime.Serialization.SerializationEntry
+
+	get_Current(method) : Void -> System.Runtime.Serialization.SerializationEntry
+
+	get_Name(method) : Void -> String
+
+	get_ObjectType(method) : Void -> System.Type
+
+	get_Value(method) : Void -> Dynamic
+
+	public MoveNext(method) : Void -> Bool
+
+	public Reset(method) : Void -> Void
+
+}

@@ -1,0 +1,14 @@
+extern class Gtk.NodeStore.HasChildDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : node_idx : Int -> Bool
+
+	public BeginInvoke(method) : node_idx : Int -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Bool
+
+	static public op_Addition(method) : arg1 : gtk.NodeStore_HasChildDelegate -> arg2 : gtk.NodeStore_HasChildDelegate -> gtk.NodeStore_HasChildDelegate
+
+	static public op_Subtraction(method) : arg1 : gtk.NodeStore_HasChildDelegate -> arg2 : gtk.NodeStore_HasChildDelegate -> gtk.NodeStore_HasChildDelegate
+
+}

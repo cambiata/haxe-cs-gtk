@@ -1,0 +1,36 @@
+extern class Pango.AttrList extends GLib.Opaque{
+	public new(method) : raw : System.IntPtr -> Void
+
+	public new(method) : Void -> Void
+
+	public Iterator((get,never)) : Pango.AttrIterator
+
+	public Copy(method) : Void -> Pango.AttrList
+
+	get_Iterator(method) : Void -> Pango.AttrIterator
+
+	public Splice(method) : other : Pango.AttrList -> pos : Int -> len : Int -> Void
+
+	public Change(method) : attr : Pango.Attribute -> Void
+
+	public Filter(method) : func : pango.AttrFilterFunc -> Pango.AttrList
+
+	Ref(method) : raw : System.IntPtr -> Void
+
+	public Ref(method) : Void -> Pango.AttrList
+
+	Unref(method) : raw : System.IntPtr -> Void
+
+	public Unref(method) : Void -> Void
+
+	Finalize(method) : Void -> Void
+
+	public Insert(method) : attr : Pango.Attribute -> Void
+
+	public InsertBefore(method) : attr : Pango.Attribute -> Void
+
+	static public GType((get,never)) : GLib.GType
+
+	static get_GType(method) : Void -> GLib.GType
+
+}

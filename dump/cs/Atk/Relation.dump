@@ -1,0 +1,30 @@
+extern class Atk.Relation extends GLib.Object{
+	new(method) : gtype : GLib.GType -> Void
+
+	public new(method) : targets : cs.NativeArray<Atk.Object> -> relationship : Atk.RelationType -> Void
+
+	public new(method) : raw : System.IntPtr -> Void
+
+	public Target((get,never)) : cs.NativeArray<Atk.Object>
+
+	public RelationType((get,set)) : Atk.RelationType
+
+	get_RelationType(method) : Void -> Atk.RelationType
+
+	set_RelationType(method) : value : Atk.RelationType -> Atk.RelationType
+
+	get_Target(method) : Void -> cs.NativeArray<Atk.Object>
+
+	public AddTarget(method) : target : Atk.Object -> Void
+
+	static public GType((get,never)) : GLib.GType
+
+	static public TypeRegister(method) : name : String -> Atk.RelationType
+
+	static public TypeForName(method) : name : String -> Atk.RelationType
+
+	static get_GType(method) : Void -> GLib.GType
+
+	static public TypeGetName(method) : type : Atk.RelationType -> String
+
+}

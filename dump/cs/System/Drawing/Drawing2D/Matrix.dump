@@ -1,0 +1,74 @@
+extern class System.Drawing.Drawing2D.Matrix extends System.MarshalByRefObject implements System.IDisposable{
+	public new(method) : Void -> Void
+
+	public new(method) : rect : System.Drawing.Rectangle -> plgpts : cs.NativeArray<System.Drawing.Point> -> Void
+
+	public new(method) : rect : System.Drawing.RectangleF -> plgpts : cs.NativeArray<System.Drawing.PointF> -> Void
+
+	public new(method) : m11 : Single -> m12 : Single -> m21 : Single -> m22 : Single -> dx : Single -> dy : Single -> Void
+
+	public IsIdentity((get,never)) : Bool
+
+	public IsInvertible((get,never)) : Bool
+
+	public OffsetY((get,never)) : Single
+
+	public OffsetX((get,never)) : Single
+
+	public Elements((get,never)) : cs.NativeArray<Single>
+
+	public Dispose(method) : Void -> Void
+
+	Finalize(method) : Void -> Void
+
+	public Clone(method) : Void -> System.Drawing.Drawing2D.Matrix
+
+	get_Elements(method) : Void -> cs.NativeArray<Single>
+
+	get_OffsetX(method) : Void -> Single
+
+	get_OffsetY(method) : Void -> Single
+
+	public Reset(method) : Void -> Void
+
+	public Multiply(method) : matrix : System.Drawing.Drawing2D.Matrix -> Void
+
+	public Multiply(method) : matrix : System.Drawing.Drawing2D.Matrix -> order : System.Drawing.Drawing2D.MatrixOrder -> Void
+
+	public Translate(method) : offsetX : Single -> offsetY : Single -> Void
+
+	public Translate(method) : offsetX : Single -> offsetY : Single -> order : System.Drawing.Drawing2D.MatrixOrder -> Void
+
+	public Scale(method) : scaleX : Single -> scaleY : Single -> Void
+
+	public Scale(method) : scaleX : Single -> scaleY : Single -> order : System.Drawing.Drawing2D.MatrixOrder -> Void
+
+	public Rotate(method) : angle : Single -> Void
+
+	public Rotate(method) : angle : Single -> order : System.Drawing.Drawing2D.MatrixOrder -> Void
+
+	public RotateAt(method) : angle : Single -> point : System.Drawing.PointF -> Void
+
+	public RotateAt(method) : angle : Single -> point : System.Drawing.PointF -> order : System.Drawing.Drawing2D.MatrixOrder -> Void
+
+	public Shear(method) : shearX : Single -> shearY : Single -> Void
+
+	public Shear(method) : shearX : Single -> shearY : Single -> order : System.Drawing.Drawing2D.MatrixOrder -> Void
+
+	public Invert(method) : Void -> Void
+
+	public TransformPoints(method) : pts : cs.NativeArray<System.Drawing.PointF> -> Void
+
+	public TransformPoints(method) : pts : cs.NativeArray<System.Drawing.Point> -> Void
+
+	public TransformVectors(method) : pts : cs.NativeArray<System.Drawing.PointF> -> Void
+
+	public TransformVectors(method) : pts : cs.NativeArray<System.Drawing.Point> -> Void
+
+	public VectorTransformPoints(method) : pts : cs.NativeArray<System.Drawing.Point> -> Void
+
+	get_IsInvertible(method) : Void -> Bool
+
+	get_IsIdentity(method) : Void -> Bool
+
+}

@@ -1,0 +1,14 @@
+extern class Gtk.Container.ChildTypeDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : raw : System.IntPtr -> System.IntPtr
+
+	public BeginInvoke(method) : raw : System.IntPtr -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> System.IntPtr
+
+	static public op_Addition(method) : arg1 : gtk.Container_ChildTypeDelegate -> arg2 : gtk.Container_ChildTypeDelegate -> gtk.Container_ChildTypeDelegate
+
+	static public op_Subtraction(method) : arg1 : gtk.Container_ChildTypeDelegate -> arg2 : gtk.Container_ChildTypeDelegate -> gtk.Container_ChildTypeDelegate
+
+}

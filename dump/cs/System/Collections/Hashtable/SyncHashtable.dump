@@ -1,0 +1,56 @@
+extern class System.Collections.Hashtable.SyncHashtable extends System.Collections.Hashtable implements System.Collections.IEnumerable implements ArrayAccess<Dynamic>{
+	public new(method) : host : System.Collections.Hashtable -> Void
+
+	public Values((get,never)) : System.Collections.ICollection
+
+	public Keys((get,never)) : System.Collections.ICollection
+
+	public IsReadOnly((get,never)) : Bool
+
+	public IsFixedSize((get,never)) : Bool
+
+	public SyncRoot((get,never)) : Dynamic
+
+	public IsSynchronized((get,never)) : Bool
+
+	public Count((get,never)) : Int
+
+	public GetObjectData(method) : info : System.Runtime.Serialization.SerializationInfo -> context : System.Runtime.Serialization.StreamingContext -> Void
+
+	get_Count(method) : Void -> Int
+
+	get_IsSynchronized(method) : Void -> Bool
+
+	get_SyncRoot(method) : Void -> Dynamic
+
+	get_IsFixedSize(method) : Void -> Bool
+
+	get_IsReadOnly(method) : Void -> Bool
+
+	get_Keys(method) : Void -> System.Collections.ICollection
+
+	get_Values(method) : Void -> System.Collections.ICollection
+
+	get_Item(method) : key : Dynamic -> Dynamic
+
+	set_Item(method) : key : Dynamic -> value : Dynamic -> Void
+
+	public CopyTo(method) : array : System.Array -> arrayIndex : Int -> Void
+
+	public Add(method) : key : Dynamic -> value : Dynamic -> Void
+
+	public Clear(method) : Void -> Void
+
+	public Contains(method) : key : Dynamic -> Bool
+
+	public GetEnumerator(method) : Void -> System.Collections.IDictionaryEnumerator
+
+	public Remove(method) : key : Dynamic -> Void
+
+	public ContainsKey(method) : key : Dynamic -> Bool
+
+	public ContainsValue(method) : value : Dynamic -> Bool
+
+	public Clone(method) : Void -> Dynamic
+
+}

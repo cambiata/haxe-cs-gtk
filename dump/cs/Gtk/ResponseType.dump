@@ -1,0 +1,13 @@
+extern enum Gtk.ResponseType {
+	Help : Gtk.ResponseType;
+	Apply : Gtk.ResponseType;
+	No : Gtk.ResponseType;
+	Yes : Gtk.ResponseType;
+	Close : Gtk.ResponseType;
+	Cancel : Gtk.ResponseType;
+	Ok : Gtk.ResponseType;
+	DeleteEvent : Gtk.ResponseType;
+	Accept : Gtk.ResponseType;
+	Reject : Gtk.ResponseType;
+	None : Gtk.ResponseType;
+}

@@ -1,0 +1,5 @@
+extern enum System.Collections.Hashtable.EnumeratorMode {
+	KEY_MODE : System.Collections.Hashtable.EnumeratorMode;
+	VALUE_MODE : System.Collections.Hashtable.EnumeratorMode;
+	ENTRY_MODE : System.Collections.Hashtable.EnumeratorMode;
+}

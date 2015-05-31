@@ -1,0 +1,12 @@
+extern class Gtk.RowActivatedArgs extends GLib.SignalArgs{
+	public new(method) : Void -> Void
+
+	public Column((get,never)) : Gtk.TreeViewColumn
+
+	public Path((get,never)) : Gtk.TreePath
+
+	get_Path(method) : Void -> Gtk.TreePath
+
+	get_Column(method) : Void -> Gtk.TreeViewColumn
+
+}

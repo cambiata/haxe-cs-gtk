@@ -1,0 +1,22 @@
+extern interface System.Collections.Generic.ICollection`1<T0 : cs.system.collections.generic.ICollection_1.T0> implements System.Collections.IEnumerable implements System.Collections.Generic.IEnumerable`1<cs.system.collections.generic.ICollection_1.T0>{
+	public IsReadOnly((get,never)) : Bool
+
+	public Count((get,never)) : Int
+
+	public GetEnumerator(method) : Void -> System.Collections.IEnumerator
+
+	get_Count(method) : Void -> Int
+
+	get_IsReadOnly(method) : Void -> Bool
+
+	public Add(method) : item : cs.system.collections.generic.ICollection_1.T0 -> Void
+
+	public Clear(method) : Void -> Void
+
+	public Contains(method) : item : cs.system.collections.generic.ICollection_1.T0 -> Bool
+
+	public CopyTo(method) : array : cs.NativeArray<cs.system.collections.generic.ICollection_1.T0> -> arrayIndex : Int -> Void
+
+	public Remove(method) : item : cs.system.collections.generic.ICollection_1.T0 -> Bool
+
+}

@@ -1,0 +1,14 @@
+extern class System.Reflection.ModuleResolveEventHandler extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : sender : Dynamic -> e : System.ResolveEventArgs -> System.Reflection.Module
+
+	public BeginInvoke(method) : sender : Dynamic -> e : System.ResolveEventArgs -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> System.Reflection.Module
+
+	static public op_Addition(method) : arg1 : cs.system.reflection.ModuleResolveEventHandler -> arg2 : cs.system.reflection.ModuleResolveEventHandler -> cs.system.reflection.ModuleResolveEventHandler
+
+	static public op_Subtraction(method) : arg1 : cs.system.reflection.ModuleResolveEventHandler -> arg2 : cs.system.reflection.ModuleResolveEventHandler -> cs.system.reflection.ModuleResolveEventHandler
+
+}

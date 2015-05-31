@@ -1,0 +1,8 @@
+extern enum System.Drawing.Imaging.MetafileFrameUnit {
+	Pixel : System.Drawing.Imaging.MetafileFrameUnit;
+	Point : System.Drawing.Imaging.MetafileFrameUnit;
+	Inch : System.Drawing.Imaging.MetafileFrameUnit;
+	Document : System.Drawing.Imaging.MetafileFrameUnit;
+	Millimeter : System.Drawing.Imaging.MetafileFrameUnit;
+	GdiCompatible : System.Drawing.Imaging.MetafileFrameUnit;
+}

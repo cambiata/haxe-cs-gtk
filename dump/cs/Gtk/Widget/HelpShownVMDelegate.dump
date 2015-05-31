@@ -1,0 +1,14 @@
+extern class Gtk.Widget.HelpShownVMDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : widget : System.IntPtr -> help_type : Int -> Bool
+
+	public BeginInvoke(method) : widget : System.IntPtr -> help_type : Int -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Bool
+
+	static public op_Addition(method) : arg1 : gtk.Widget_HelpShownVMDelegate -> arg2 : gtk.Widget_HelpShownVMDelegate -> gtk.Widget_HelpShownVMDelegate
+
+	static public op_Subtraction(method) : arg1 : gtk.Widget_HelpShownVMDelegate -> arg2 : gtk.Widget_HelpShownVMDelegate -> gtk.Widget_HelpShownVMDelegate
+
+}

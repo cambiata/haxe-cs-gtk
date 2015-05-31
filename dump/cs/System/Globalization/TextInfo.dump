@@ -1,0 +1,56 @@
+extern class System.Globalization.TextInfo implements System.ICloneable implements System.Runtime.Serialization.IDeserializationCallback{
+	public IsRightToLeft((get,never)) : Bool
+
+	public IsReadOnly((get,never)) : Bool
+
+	public CultureName((get,never)) : String
+
+	public OEMCodePage((get,never)) : Int
+
+	public MacCodePage((get,never)) : Int
+
+	public ListSeparator((get,set)) : String
+
+	public LCID((get,never)) : Int
+
+	public EBCDICCodePage((get,never)) : Int
+
+	public ANSICodePage((get,never)) : Int
+
+	get_ANSICodePage(method) : Void -> Int
+
+	get_EBCDICCodePage(method) : Void -> Int
+
+	get_LCID(method) : Void -> Int
+
+	get_ListSeparator(method) : Void -> String
+
+	set_ListSeparator(method) : value : String -> String
+
+	get_MacCodePage(method) : Void -> Int
+
+	get_OEMCodePage(method) : Void -> Int
+
+	get_CultureName(method) : Void -> String
+
+	get_IsReadOnly(method) : Void -> Bool
+
+	get_IsRightToLeft(method) : Void -> Bool
+
+	public ToString(method) : Void -> String
+
+	public ToTitleCase(method) : str : String -> String
+
+	public ToLower(method) : c : cs.types.Char16 -> cs.types.Char16
+
+	public ToLower(method) : str : String -> String
+
+	public ToUpper(method) : c : cs.types.Char16 -> cs.types.Char16
+
+	public ToUpper(method) : str : String -> String
+
+	public Clone(method) : Void -> Dynamic
+
+	static public ReadOnly(method) : textInfo : System.Globalization.TextInfo -> System.Globalization.TextInfo
+
+}

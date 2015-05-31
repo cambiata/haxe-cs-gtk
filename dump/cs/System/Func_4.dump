@@ -1,0 +1,14 @@
+extern class System.Func`4<T0 : cs.system.Delegate_Func_4.T0,T1 : cs.system.Delegate_Func_4.T1,T2 : cs.system.Delegate_Func_4.T2,T3 : cs.system.Delegate_Func_4.T3> extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : arg1 : cs.system.Delegate_Func_4.T0 -> arg2 : cs.system.Delegate_Func_4.T1 -> arg3 : cs.system.Delegate_Func_4.T2 -> cs.system.Delegate_Func_4.T3
+
+	public BeginInvoke(method) : arg1 : cs.system.Delegate_Func_4.T0 -> arg2 : cs.system.Delegate_Func_4.T1 -> arg3 : cs.system.Delegate_Func_4.T2 -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> cs.system.Delegate_Func_4.T3
+
+	static public op_Addition<T0 : op_Addition.T0,T1 : op_Addition.T1,T2 : op_Addition.T2,T3 : op_Addition.T3>(method) : arg1 : cs.system.Func_4<op_Addition.T0, op_Addition.T1, op_Addition.T2, op_Addition.T3> -> arg2 : cs.system.Func_4<op_Addition.T0, op_Addition.T1, op_Addition.T2, op_Addition.T3> -> cs.system.Func_4<op_Addition.T0, op_Addition.T1, op_Addition.T2, op_Addition.T3>
+
+	static public op_Subtraction<T0 : op_Subtraction.T0,T1 : op_Subtraction.T1,T2 : op_Subtraction.T2,T3 : op_Subtraction.T3>(method) : arg1 : cs.system.Func_4<op_Subtraction.T0, op_Subtraction.T1, op_Subtraction.T2, op_Subtraction.T3> -> arg2 : cs.system.Func_4<op_Subtraction.T0, op_Subtraction.T1, op_Subtraction.T2, op_Subtraction.T3> -> cs.system.Func_4<op_Subtraction.T0, op_Subtraction.T1, op_Subtraction.T2, op_Subtraction.T3>
+
+}

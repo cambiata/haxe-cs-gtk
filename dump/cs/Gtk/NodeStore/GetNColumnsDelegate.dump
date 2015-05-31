@@ -1,0 +1,14 @@
+extern class Gtk.NodeStore.GetNColumnsDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : Void -> Int
+
+	public BeginInvoke(method) : callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Int
+
+	static public op_Addition(method) : arg1 : gtk.NodeStore_GetNColumnsDelegate -> arg2 : gtk.NodeStore_GetNColumnsDelegate -> gtk.NodeStore_GetNColumnsDelegate
+
+	static public op_Subtraction(method) : arg1 : gtk.NodeStore_GetNColumnsDelegate -> arg2 : gtk.NodeStore_GetNColumnsDelegate -> gtk.NodeStore_GetNColumnsDelegate
+
+}

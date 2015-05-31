@@ -1,0 +1,14 @@
+extern class Gtk.MenuShell.ActivateCurrentVMDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : menu_shell : System.IntPtr -> force_hide : Bool -> Void
+
+	public BeginInvoke(method) : menu_shell : System.IntPtr -> force_hide : Bool -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Void
+
+	static public op_Addition(method) : arg1 : gtk.MenuShell_ActivateCurrentVMDelegate -> arg2 : gtk.MenuShell_ActivateCurrentVMDelegate -> gtk.MenuShell_ActivateCurrentVMDelegate
+
+	static public op_Subtraction(method) : arg1 : gtk.MenuShell_ActivateCurrentVMDelegate -> arg2 : gtk.MenuShell_ActivateCurrentVMDelegate -> gtk.MenuShell_ActivateCurrentVMDelegate
+
+}

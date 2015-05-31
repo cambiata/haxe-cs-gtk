@@ -1,0 +1,4 @@
+extern enum Gtk.PackType {
+	Start : Gtk.PackType;
+	End : Gtk.PackType;
+}

@@ -1,0 +1,14 @@
+extern class Gtk.Style.RealizeVMDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : style : System.IntPtr -> Void
+
+	public BeginInvoke(method) : style : System.IntPtr -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Void
+
+	static public op_Addition(method) : arg1 : gtk.Style_RealizeVMDelegate -> arg2 : gtk.Style_RealizeVMDelegate -> gtk.Style_RealizeVMDelegate
+
+	static public op_Subtraction(method) : arg1 : gtk.Style_RealizeVMDelegate -> arg2 : gtk.Style_RealizeVMDelegate -> gtk.Style_RealizeVMDelegate
+
+}

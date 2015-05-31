@@ -1,0 +1,66 @@
+extern class Pango.Analysis extends System.ValueType{
+	public language((get,set)) : Pango.Language
+
+	public font((get,set)) : Pango.Font
+
+	public lang_engine((get,set)) : Pango.EngineLang
+
+	public shape_engine((get,set)) : Pango.EngineShape
+
+	public ExtraAttrs((get,never)) : cs.NativeArray<Pango.Attribute>
+
+	public Language((get,set)) : Pango.Language
+
+	public Font((get,set)) : Pango.Font
+
+	public LangEngine((get,set)) : Pango.EngineLang
+
+	public ShapeEngine((get,set)) : Pango.EngineShape
+
+	public Script(var) : cs.types.UInt8
+
+	public Flags(var) : cs.types.UInt8
+
+	public Gravity(var) : cs.types.UInt8
+
+	public Level(var) : cs.types.UInt8
+
+	get_ShapeEngine(method) : Void -> Pango.EngineShape
+
+	set_ShapeEngine(method) : value : Pango.EngineShape -> Pango.EngineShape
+
+	get_LangEngine(method) : Void -> Pango.EngineLang
+
+	set_LangEngine(method) : value : Pango.EngineLang -> Pango.EngineLang
+
+	get_Font(method) : Void -> Pango.Font
+
+	set_Font(method) : value : Pango.Font -> Pango.Font
+
+	get_Language(method) : Void -> Pango.Language
+
+	set_Language(method) : value : Pango.Language -> Pango.Language
+
+	get_ExtraAttrs(method) : Void -> cs.NativeArray<Pango.Attribute>
+
+	get_shape_engine(method) : Void -> Pango.EngineShape
+
+	set_shape_engine(method) : value : Pango.EngineShape -> Pango.EngineShape
+
+	get_lang_engine(method) : Void -> Pango.EngineLang
+
+	set_lang_engine(method) : value : Pango.EngineLang -> Pango.EngineLang
+
+	get_font(method) : Void -> Pango.Font
+
+	set_font(method) : value : Pango.Font -> Pango.Font
+
+	get_language(method) : Void -> Pango.Language
+
+	set_language(method) : value : Pango.Language -> Pango.Language
+
+	static public Zero(var) : Pango.Analysis
+
+	static public New(method) : raw : System.IntPtr -> Pango.Analysis
+
+}

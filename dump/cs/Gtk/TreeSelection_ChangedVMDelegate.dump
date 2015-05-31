@@ -1,0 +1,1 @@
+abstract gtk.TreeSelection_ChangedVMDelegate {}

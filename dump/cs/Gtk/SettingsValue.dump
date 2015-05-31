@@ -1,0 +1,10 @@
+extern class Gtk.SettingsValue extends System.ValueType{
+	public Value(var) : GLib.Value
+
+	public Origin(var) : String
+
+	static public Zero(var) : Gtk.SettingsValue
+
+	static public New(method) : raw : System.IntPtr -> Gtk.SettingsValue
+
+}

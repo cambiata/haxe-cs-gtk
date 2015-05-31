@@ -1,0 +1,12 @@
+extern class Gtk.DragLeaveArgs extends GLib.SignalArgs{
+	public new(method) : Void -> Void
+
+	public Time((get,never)) : UInt
+
+	public Context((get,never)) : Gdk.DragContext
+
+	get_Context(method) : Void -> Gdk.DragContext
+
+	get_Time(method) : Void -> UInt
+
+}

@@ -1,0 +1,22 @@
+extern class Pango.Language extends GLib.Opaque{
+	public new(method) : raw : System.IntPtr -> Void
+
+	public SampleString((get,never)) : String
+
+	public Matches(method) : range_list : String -> Bool
+
+	public IncludesScript(method) : script : Pango.Script -> Bool
+
+	get_SampleString(method) : Void -> String
+
+	static public GType((get,never)) : GLib.GType
+
+	static public Default((get,never)) : Pango.Language
+
+	static get_Default(method) : Void -> Pango.Language
+
+	static public FromString(method) : language : String -> Pango.Language
+
+	static get_GType(method) : Void -> GLib.GType
+
+}

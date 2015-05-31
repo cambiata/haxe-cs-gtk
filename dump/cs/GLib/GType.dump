@@ -1,0 +1,68 @@
+extern class GLib.GType extends System.ValueType{
+	public new(method) : val : System.IntPtr -> Void
+
+	public Val((get,never)) : System.IntPtr
+
+	get_Val(method) : Void -> System.IntPtr
+
+	public ToString(method) : Void -> String
+
+	static public Object((default,never)) : GLib.GType
+
+	static public Param((default,never)) : GLib.GType
+
+	static public Boxed((default,never)) : GLib.GType
+
+	static public Pointer((default,never)) : GLib.GType
+
+	static public String((default,never)) : GLib.GType
+
+	static public Double((default,never)) : GLib.GType
+
+	static public Float((default,never)) : GLib.GType
+
+	static public Flags((default,never)) : GLib.GType
+
+	static public Enum((default,never)) : GLib.GType
+
+	static public UInt64((default,never)) : GLib.GType
+
+	static public Int64((default,never)) : GLib.GType
+
+	static public ULong((default,never)) : GLib.GType
+
+	static public Long((default,never)) : GLib.GType
+
+	static public UInt((default,never)) : GLib.GType
+
+	static public Int((default,never)) : GLib.GType
+
+	static public Boolean((default,never)) : GLib.GType
+
+	static public UChar((default,never)) : GLib.GType
+
+	static public Char((default,never)) : GLib.GType
+
+	static public Interface((default,never)) : GLib.GType
+
+	static public None((default,never)) : GLib.GType
+
+	static public Invalid((default,never)) : GLib.GType
+
+	static public FromName(method) : native_name : String -> GLib.GType
+
+	static public Register(method) : native_type : GLib.GType -> type : System.Type -> Void
+
+	static public op_Explicit(method) : type : System.Type -> GLib.GType
+
+	static public op_Explicit(method) : gtype : GLib.GType -> System.Type
+
+	static public Init(method) : Void -> Void
+
+	static public LookupType(method) : typeid : System.IntPtr -> System.Type
+
+	static public op_Equality(method) : a : GLib.GType -> b : GLib.GType -> Bool
+
+	static public op_Inequality(method) : a : GLib.GType -> b : GLib.GType -> Bool
+
+}

@@ -1,0 +1,10 @@
+extern class System.Diagnostics.SymbolStore.SymbolToken extends System.ValueType{
+	public new(method) : val : Int -> Void
+
+	public GetToken(method) : Void -> Int
+
+	static public op_Equality(method) : a : System.Diagnostics.SymbolStore.SymbolToken -> b : System.Diagnostics.SymbolStore.SymbolToken -> Bool
+
+	static public op_Inequality(method) : a : System.Diagnostics.SymbolStore.SymbolToken -> b : System.Diagnostics.SymbolStore.SymbolToken -> Bool
+
+}

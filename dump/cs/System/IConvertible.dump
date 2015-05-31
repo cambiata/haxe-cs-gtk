@@ -1,0 +1,36 @@
+extern interface System.IConvertible{
+	public GetTypeCode(method) : Void -> System.TypeCode
+
+	public ToBoolean(method) : provider : System.IFormatProvider -> Bool
+
+	public ToByte(method) : provider : System.IFormatProvider -> cs.types.UInt8
+
+	public ToChar(method) : provider : System.IFormatProvider -> cs.types.Char16
+
+	public ToDateTime(method) : provider : System.IFormatProvider -> System.DateTime
+
+	public ToDecimal(method) : provider : System.IFormatProvider -> System.Decimal
+
+	public ToDouble(method) : provider : System.IFormatProvider -> Float
+
+	public ToInt16(method) : provider : System.IFormatProvider -> cs.types.Int16
+
+	public ToInt32(method) : provider : System.IFormatProvider -> Int
+
+	public ToInt64(method) : provider : System.IFormatProvider -> haxe.Int64
+
+	public ToSByte(method) : provider : System.IFormatProvider -> cs.types.Int8
+
+	public ToSingle(method) : provider : System.IFormatProvider -> Single
+
+	public ToString(method) : provider : System.IFormatProvider -> String
+
+	public ToType(method) : conversionType : System.Type -> provider : System.IFormatProvider -> Dynamic
+
+	public ToUInt16(method) : provider : System.IFormatProvider -> cs.types.UInt16
+
+	public ToUInt32(method) : provider : System.IFormatProvider -> UInt
+
+	public ToUInt64(method) : provider : System.IFormatProvider -> cs.types.UInt64
+
+}

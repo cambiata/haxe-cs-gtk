@@ -1,0 +1,8 @@
+extern class System.IO.TextReader.NullTextReader extends System.IO.TextReader{
+	public new(method) : Void -> Void
+
+	public ReadLine(method) : Void -> String
+
+	public ReadToEnd(method) : Void -> String
+
+}

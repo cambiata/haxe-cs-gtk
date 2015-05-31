@@ -1,0 +1,12 @@
+extern class System.Security.Cryptography.X509Certificates.X509Certificate.CertificateContext extends System.ValueType{
+	public hCertStore(var) : System.IntPtr
+
+	public pCertInfo(var) : System.IntPtr
+
+	public cbCertEncoded(var) : UInt
+
+	public pbCertEncoded(var) : System.IntPtr
+
+	public dwCertEncodingType(var) : UInt
+
+}

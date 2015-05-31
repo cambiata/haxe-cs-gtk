@@ -1,0 +1,104 @@
+extern class System.IO.TextWriter extends System.MarshalByRefObject implements System.IDisposable{
+	new(method) : Void -> Void
+
+	new(method) : formatProvider : System.IFormatProvider -> Void
+
+	public NewLine((get,set)) : String
+
+	public FormatProvider((get,never)) : System.IFormatProvider
+
+	public Encoding((get,never)) : System.Text.Encoding
+
+	CoreNewLine(var) : cs.NativeArray<cs.types.Char16>
+
+	get_Encoding(method) : Void -> System.Text.Encoding
+
+	get_FormatProvider(method) : Void -> System.IFormatProvider
+
+	get_NewLine(method) : Void -> String
+
+	set_NewLine(method) : value : String -> String
+
+	public Close(method) : Void -> Void
+
+	Dispose(method) : disposing : Bool -> Void
+
+	public Dispose(method) : Void -> Void
+
+	public Flush(method) : Void -> Void
+
+	public Write(method) : value : Bool -> Void
+
+	public Write(method) : format : String -> arg0 : Dynamic -> arg1 : Dynamic -> arg2 : Dynamic -> Void
+
+	public Write(method) : format : String -> arg0 : Dynamic -> arg1 : Dynamic -> Void
+
+	public Write(method) : buffer : cs.NativeArray<cs.types.Char16> -> index : Int -> count : Int -> Void
+
+	public Write(method) : format : String -> arg : cs.NativeArray<Dynamic> -> Void
+
+	public Write(method) : format : String -> arg0 : Dynamic -> Void
+
+	public Write(method) : value : cs.types.UInt64 -> Void
+
+	public Write(method) : value : UInt -> Void
+
+	public Write(method) : value : String -> Void
+
+	public Write(method) : value : Single -> Void
+
+	public Write(method) : value : Dynamic -> Void
+
+	public Write(method) : value : haxe.Int64 -> Void
+
+	public Write(method) : value : Int -> Void
+
+	public Write(method) : value : Float -> Void
+
+	public Write(method) : value : System.Decimal -> Void
+
+	public Write(method) : buffer : cs.NativeArray<cs.types.Char16> -> Void
+
+	public Write(method) : value : cs.types.Char16 -> Void
+
+	public WriteLine(method) : Void -> Void
+
+	public WriteLine(method) : format : String -> arg0 : Dynamic -> arg1 : Dynamic -> arg2 : Dynamic -> Void
+
+	public WriteLine(method) : format : String -> arg0 : Dynamic -> arg1 : Dynamic -> Void
+
+	public WriteLine(method) : buffer : cs.NativeArray<cs.types.Char16> -> index : Int -> count : Int -> Void
+
+	public WriteLine(method) : format : String -> arg : cs.NativeArray<Dynamic> -> Void
+
+	public WriteLine(method) : format : String -> arg0 : Dynamic -> Void
+
+	public WriteLine(method) : value : cs.types.UInt64 -> Void
+
+	public WriteLine(method) : value : UInt -> Void
+
+	public WriteLine(method) : value : String -> Void
+
+	public WriteLine(method) : value : Single -> Void
+
+	public WriteLine(method) : value : Dynamic -> Void
+
+	public WriteLine(method) : value : haxe.Int64 -> Void
+
+	public WriteLine(method) : value : Int -> Void
+
+	public WriteLine(method) : value : Float -> Void
+
+	public WriteLine(method) : value : System.Decimal -> Void
+
+	public WriteLine(method) : buffer : cs.NativeArray<cs.types.Char16> -> Void
+
+	public WriteLine(method) : value : cs.types.Char16 -> Void
+
+	public WriteLine(method) : value : Bool -> Void
+
+	static public Null((default,never)) : System.IO.TextWriter
+
+	static public Synchronized(method) : writer : System.IO.TextWriter -> System.IO.TextWriter
+
+}

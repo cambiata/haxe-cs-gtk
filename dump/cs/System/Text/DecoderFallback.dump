@@ -1,0 +1,18 @@
+extern class System.Text.DecoderFallback{
+	new(method) : Void -> Void
+
+	public MaxCharCount((get,never)) : Int
+
+	get_MaxCharCount(method) : Void -> Int
+
+	public CreateFallbackBuffer(method) : Void -> System.Text.DecoderFallbackBuffer
+
+	static public ReplacementFallback((get,never)) : System.Text.DecoderFallback
+
+	static public ExceptionFallback((get,never)) : System.Text.DecoderFallback
+
+	static get_ExceptionFallback(method) : Void -> System.Text.DecoderFallback
+
+	static get_ReplacementFallback(method) : Void -> System.Text.DecoderFallback
+
+}

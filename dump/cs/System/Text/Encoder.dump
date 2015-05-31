@@ -1,0 +1,22 @@
+extern class System.Text.Encoder{
+	new(method) : Void -> Void
+
+	public FallbackBuffer((get,never)) : System.Text.EncoderFallbackBuffer
+
+	public Fallback((get,set)) : System.Text.EncoderFallback
+
+	get_Fallback(method) : Void -> System.Text.EncoderFallback
+
+	set_Fallback(method) : value : System.Text.EncoderFallback -> System.Text.EncoderFallback
+
+	get_FallbackBuffer(method) : Void -> System.Text.EncoderFallbackBuffer
+
+	public GetByteCount(method) : chars : cs.NativeArray<cs.types.Char16> -> index : Int -> count : Int -> flush : Bool -> Int
+
+	public GetBytes(method) : chars : cs.NativeArray<cs.types.Char16> -> charIndex : Int -> charCount : Int -> bytes : cs.NativeArray<cs.types.UInt8> -> byteIndex : Int -> flush : Bool -> Int
+
+	public Reset(method) : Void -> Void
+
+	public Convert(method) : chars : cs.NativeArray<cs.types.Char16> -> charIndex : Int -> charCount : Int -> bytes : cs.NativeArray<cs.types.UInt8> -> byteIndex : Int -> byteCount : Int -> flush : Bool -> charsUsed : cs.Out<Int> -> bytesUsed : cs.Out<Int> -> completed : cs.Out<Bool> -> Void
+
+}

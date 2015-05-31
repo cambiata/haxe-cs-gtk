@@ -1,0 +1,424 @@
+extern class Gtk.TreeView extends Gtk.Container{
+	new(method) : gtype : GLib.GType -> Void
+
+	public new(method) : store : Gtk.NodeStore -> Void
+
+	public new(method) : model : Gtk.TreeModel -> Void
+
+	public new(method) : Void -> Void
+
+	public new(method) : raw : System.IntPtr -> Void
+
+	UnselectAll(var) : gtk.UnselectAllHandler
+
+	MoveCursor(var) : gtk.MoveCursorHandler
+
+	ScrollAdjustmentsSet(var) : gtk.ScrollAdjustmentsSetHandler
+
+	TestExpandRow(var) : gtk.TestExpandRowHandler
+
+	SelectCursorRow(var) : gtk.SelectCursorRowHandler
+
+	SelectAll(var) : gtk.SelectAllHandler
+
+	ExpandCollapseCursorRow(var) : gtk.ExpandCollapseCursorRowHandler
+
+	SelectCursorParent(var) : gtk.SelectCursorParentHandler
+
+	TestCollapseRow(var) : gtk.TestCollapseRowHandler
+
+	CursorChanged(var) : cs.system.EventHandler
+
+	StartInteractiveSearch(var) : gtk.StartInteractiveSearchHandler
+
+	RowExpanded(var) : gtk.RowExpandedHandler
+
+	ToggleCursorRow(var) : gtk.ToggleCursorRowHandler
+
+	RowCollapsed(var) : gtk.RowCollapsedHandler
+
+	RowActivated(var) : gtk.RowActivatedHandler
+
+	ColumnsChanged(var) : cs.system.EventHandler
+
+	public EvenRowColor((get,never)) : Gdk.Color
+
+	public OddRowColor((get,never)) : Gdk.Color
+
+	public SearchPositionFunc((get,set)) : gtk.TreeViewSearchPositionFunc
+
+	public SearchEqualFunc((get,set)) : gtk.TreeViewSearchEqualFunc
+
+	public VisibleRect((get,never)) : Gdk.Rectangle
+
+	public BinWindow((get,never)) : Gdk.Window
+
+	public ColumnDragFunction((never,set)) : gtk.TreeViewColumnDropFunc
+
+	public SearchEntry((get,set)) : Gtk.Entry
+
+	public RowSeparatorFunc((get,set)) : gtk.TreeViewRowSeparatorFunc
+
+	public DestroyCountFunc((never,set)) : gtk.TreeDestroyCountFunc
+
+	public Columns((get,never)) : cs.NativeArray<Gtk.TreeViewColumn>
+
+	public Selection((get,never)) : Gtk.TreeSelection
+
+	public IsRubberBandingActive((get,never)) : Bool
+
+	public SearchColumn((get,set)) : Int
+
+	public TooltipColumn((get,set)) : Int
+
+	public EnableSearch((get,set)) : Bool
+
+	public HeadersVisible((get,set)) : Bool
+
+	public HoverSelection((get,set)) : Bool
+
+	public Model((get,set)) : Gtk.TreeModel
+
+	public RubberBanding((get,set)) : Bool
+
+	public HeadersClickable((get,set)) : Bool
+
+	public RulesHint((get,set)) : Bool
+
+	public ShowExpanders((get,set)) : Bool
+
+	public HoverExpand((get,set)) : Bool
+
+	public EnableGridLines((get,set)) : Gtk.TreeViewGridLines
+
+	public Reorderable((get,set)) : Bool
+
+	public EnableTreeLines((get,set)) : Bool
+
+	public LevelIndentation((get,set)) : Int
+
+	public Hadjustment((get,set)) : Gtk.Adjustment
+
+	public Vadjustment((get,set)) : Gtk.Adjustment
+
+	public ExpanderColumn((get,set)) : Gtk.TreeViewColumn
+
+	public FixedHeightMode((get,set)) : Bool
+
+	get_FixedHeightMode(method) : Void -> Bool
+
+	set_FixedHeightMode(method) : value : Bool -> Bool
+
+	get_ExpanderColumn(method) : Void -> Gtk.TreeViewColumn
+
+	set_ExpanderColumn(method) : value : Gtk.TreeViewColumn -> Gtk.TreeViewColumn
+
+	get_Vadjustment(method) : Void -> Gtk.Adjustment
+
+	set_Vadjustment(method) : value : Gtk.Adjustment -> Gtk.Adjustment
+
+	get_Hadjustment(method) : Void -> Gtk.Adjustment
+
+	set_Hadjustment(method) : value : Gtk.Adjustment -> Gtk.Adjustment
+
+	get_LevelIndentation(method) : Void -> Int
+
+	set_LevelIndentation(method) : value : Int -> Int
+
+	get_EnableTreeLines(method) : Void -> Bool
+
+	set_EnableTreeLines(method) : value : Bool -> Bool
+
+	get_Reorderable(method) : Void -> Bool
+
+	set_Reorderable(method) : value : Bool -> Bool
+
+	get_EnableGridLines(method) : Void -> Gtk.TreeViewGridLines
+
+	set_EnableGridLines(method) : value : Gtk.TreeViewGridLines -> Gtk.TreeViewGridLines
+
+	get_HoverExpand(method) : Void -> Bool
+
+	set_HoverExpand(method) : value : Bool -> Bool
+
+	get_ShowExpanders(method) : Void -> Bool
+
+	set_ShowExpanders(method) : value : Bool -> Bool
+
+	get_RulesHint(method) : Void -> Bool
+
+	set_RulesHint(method) : value : Bool -> Bool
+
+	get_HeadersClickable(method) : Void -> Bool
+
+	set_HeadersClickable(method) : value : Bool -> Bool
+
+	get_RubberBanding(method) : Void -> Bool
+
+	set_RubberBanding(method) : value : Bool -> Bool
+
+	get_Model(method) : Void -> Gtk.TreeModel
+
+	set_Model(method) : value : Gtk.TreeModel -> Gtk.TreeModel
+
+	get_HoverSelection(method) : Void -> Bool
+
+	set_HoverSelection(method) : value : Bool -> Bool
+
+	get_HeadersVisible(method) : Void -> Bool
+
+	set_HeadersVisible(method) : value : Bool -> Bool
+
+	get_EnableSearch(method) : Void -> Bool
+
+	set_EnableSearch(method) : value : Bool -> Bool
+
+	get_TooltipColumn(method) : Void -> Int
+
+	set_TooltipColumn(method) : value : Int -> Int
+
+	get_SearchColumn(method) : Void -> Int
+
+	set_SearchColumn(method) : value : Int -> Int
+
+	OnColumnsChanged(method) : Void -> Void
+
+	public add_ColumnsChanged(method) : value : cs.system.EventHandler -> Void
+
+	public remove_ColumnsChanged(method) : value : cs.system.EventHandler -> Void
+
+	OnRowActivated(method) : path : Gtk.TreePath -> column : Gtk.TreeViewColumn -> Void
+
+	public add_RowActivated(method) : value : gtk.RowActivatedHandler -> Void
+
+	public remove_RowActivated(method) : value : gtk.RowActivatedHandler -> Void
+
+	OnRowCollapsed(method) : iter : Gtk.TreeIter -> path : Gtk.TreePath -> Void
+
+	public add_RowCollapsed(method) : value : gtk.RowCollapsedHandler -> Void
+
+	public remove_RowCollapsed(method) : value : gtk.RowCollapsedHandler -> Void
+
+	OnToggleCursorRow(method) : Void -> Bool
+
+	public add_ToggleCursorRow(method) : value : gtk.ToggleCursorRowHandler -> Void
+
+	public remove_ToggleCursorRow(method) : value : gtk.ToggleCursorRowHandler -> Void
+
+	OnRowExpanded(method) : iter : Gtk.TreeIter -> path : Gtk.TreePath -> Void
+
+	public add_RowExpanded(method) : value : gtk.RowExpandedHandler -> Void
+
+	public remove_RowExpanded(method) : value : gtk.RowExpandedHandler -> Void
+
+	OnStartInteractiveSearch(method) : Void -> Bool
+
+	public add_StartInteractiveSearch(method) : value : gtk.StartInteractiveSearchHandler -> Void
+
+	public remove_StartInteractiveSearch(method) : value : gtk.StartInteractiveSearchHandler -> Void
+
+	OnCursorChanged(method) : Void -> Void
+
+	public add_CursorChanged(method) : value : cs.system.EventHandler -> Void
+
+	public remove_CursorChanged(method) : value : cs.system.EventHandler -> Void
+
+	OnTestCollapseRow(method) : iter : Gtk.TreeIter -> path : Gtk.TreePath -> Bool
+
+	public add_TestCollapseRow(method) : value : gtk.TestCollapseRowHandler -> Void
+
+	public remove_TestCollapseRow(method) : value : gtk.TestCollapseRowHandler -> Void
+
+	OnSelectCursorParent(method) : Void -> Bool
+
+	public add_SelectCursorParent(method) : value : gtk.SelectCursorParentHandler -> Void
+
+	public remove_SelectCursorParent(method) : value : gtk.SelectCursorParentHandler -> Void
+
+	OnExpandCollapseCursorRow(method) : logical : Bool -> expand : Bool -> open_all : Bool -> Bool
+
+	public add_ExpandCollapseCursorRow(method) : value : gtk.ExpandCollapseCursorRowHandler -> Void
+
+	public remove_ExpandCollapseCursorRow(method) : value : gtk.ExpandCollapseCursorRowHandler -> Void
+
+	OnSelectAll(method) : Void -> Bool
+
+	public add_SelectAll(method) : value : gtk.SelectAllHandler -> Void
+
+	public remove_SelectAll(method) : value : gtk.SelectAllHandler -> Void
+
+	OnSelectCursorRow(method) : start_editing : Bool -> Bool
+
+	public add_SelectCursorRow(method) : value : gtk.SelectCursorRowHandler -> Void
+
+	public remove_SelectCursorRow(method) : value : gtk.SelectCursorRowHandler -> Void
+
+	OnTestExpandRow(method) : iter : Gtk.TreeIter -> path : Gtk.TreePath -> Bool
+
+	public add_TestExpandRow(method) : value : gtk.TestExpandRowHandler -> Void
+
+	public remove_TestExpandRow(method) : value : gtk.TestExpandRowHandler -> Void
+
+	OnScrollAdjustmentsSet(method) : hadjustment : Gtk.Adjustment -> vadjustment : Gtk.Adjustment -> Void
+
+	public add_ScrollAdjustmentsSet(method) : value : gtk.ScrollAdjustmentsSetHandler -> Void
+
+	public remove_ScrollAdjustmentsSet(method) : value : gtk.ScrollAdjustmentsSetHandler -> Void
+
+	OnMoveCursor(method) : step : Gtk.MovementStep -> count : Int -> Bool
+
+	public add_MoveCursor(method) : value : gtk.MoveCursorHandler -> Void
+
+	public remove_MoveCursor(method) : value : gtk.MoveCursorHandler -> Void
+
+	OnUnselectAll(method) : Void -> Bool
+
+	public add_UnselectAll(method) : value : gtk.UnselectAllHandler -> Void
+
+	public remove_UnselectAll(method) : value : gtk.UnselectAllHandler -> Void
+
+	public SetCursorOnCell(method) : path : Gtk.TreePath -> focus_column : Gtk.TreeViewColumn -> focus_cell : Gtk.CellRenderer -> start_editing : Bool -> Void
+
+	public CollapseRow(method) : path : Gtk.TreePath -> Bool
+
+	public TreeToWidgetCoords(method) : tx : Int -> ty : Int -> wx : cs.Out<Int> -> wy : cs.Out<Int> -> Void
+
+	public SetTooltipCell(method) : tooltip : Gtk.Tooltip -> path : Gtk.TreePath -> column : Gtk.TreeViewColumn -> cell : Gtk.CellRenderer -> Void
+
+	public GetCellArea(method) : path : Gtk.TreePath -> column : Gtk.TreeViewColumn -> Gdk.Rectangle
+
+	get_IsRubberBandingActive(method) : Void -> Bool
+
+	public CollapseAll(method) : Void -> Void
+
+	get_Selection(method) : Void -> Gtk.TreeSelection
+
+	public RemoveColumn(method) : column : Gtk.TreeViewColumn -> Int
+
+	public WidgetToTreeCoords(method) : wx : Int -> wy : Int -> tx : cs.Out<Int> -> ty : cs.Out<Int> -> Void
+
+	public GetTooltipContext(method) : x : cs.Out<Int> -> y : cs.Out<Int> -> keyboard_tip : Bool -> model : cs.Out<Gtk.TreeModel> -> path : cs.Out<Gtk.TreePath> -> iter : cs.Out<Gtk.TreeIter> -> Bool
+
+	public InsertColumn(method) : column : Gtk.TreeViewColumn -> position : Int -> Int
+
+	public InsertColumn(method) : pos : Int -> title : String -> cell : Gtk.CellRenderer -> attrs : cs.NativeArray<Dynamic> -> Int
+
+	public InsertColumn(method) : pos : Int -> title : String -> cell : Gtk.CellRenderer -> cell_data : gtk.CellLayoutDataFunc -> Int
+
+	get_Columns(method) : Void -> cs.NativeArray<Gtk.TreeViewColumn>
+
+	public MoveColumnAfter(method) : column : Gtk.TreeViewColumn -> base_column : Gtk.TreeViewColumn -> Void
+
+	public ExpandToPath(method) : path : Gtk.TreePath -> Void
+
+	public ConvertBinWindowToWidgetCoords(method) : bx : Int -> by : Int -> wx : cs.Out<Int> -> wy : cs.Out<Int> -> Void
+
+	set_DestroyCountFunc(method) : value : gtk.TreeDestroyCountFunc -> gtk.TreeDestroyCountFunc
+
+	public GetDragDestRow(method) : path : cs.Out<Gtk.TreePath> -> pos : cs.Out<Gtk.TreeViewDropPosition> -> Void
+
+	public AppendColumn(method) : column : Gtk.TreeViewColumn -> Int
+
+	public AppendColumn(method) : title : String -> cell : Gtk.CellRenderer -> attrs : cs.NativeArray<Dynamic> -> Gtk.TreeViewColumn
+
+	public AppendColumn(method) : title : String -> cell : Gtk.CellRenderer -> cell_data : gtk.CellLayoutDataFunc -> Gtk.TreeViewColumn
+
+	public AppendColumn(method) : title : String -> cell : Gtk.CellRenderer -> cell_data : gtk.TreeCellDataFunc -> Gtk.TreeViewColumn
+
+	get_RowSeparatorFunc(method) : Void -> gtk.TreeViewRowSeparatorFunc
+
+	set_RowSeparatorFunc(method) : value : gtk.TreeViewRowSeparatorFunc -> gtk.TreeViewRowSeparatorFunc
+
+	public ConvertTreeToWidgetCoords(method) : tx : Int -> ty : Int -> wx : cs.Out<Int> -> wy : cs.Out<Int> -> Void
+
+	public GetColumn(method) : n : Int -> Gtk.TreeViewColumn
+
+	public ScrollToPoint(method) : tree_x : Int -> tree_y : Int -> Void
+
+	public GetBackgroundArea(method) : path : Gtk.TreePath -> column : Gtk.TreeViewColumn -> Gdk.Rectangle
+
+	public EnableModelDragDest(method) : targets : cs.NativeArray<Gtk.TargetEntry> -> actions : Gdk.DragAction -> Void
+
+	public GetCursor(method) : path : cs.Out<Gtk.TreePath> -> focus_column : cs.Out<Gtk.TreeViewColumn> -> Void
+
+	get_SearchEntry(method) : Void -> Gtk.Entry
+
+	set_SearchEntry(method) : value : Gtk.Entry -> Gtk.Entry
+
+	public GetDestRowAtPos(method) : drag_x : Int -> drag_y : Int -> path : cs.Out<Gtk.TreePath> -> pos : cs.Out<Gtk.TreeViewDropPosition> -> Bool
+
+	public ConvertTreeToBinWindowCoords(method) : tx : Int -> ty : Int -> bx : cs.Out<Int> -> by : cs.Out<Int> -> Void
+
+	public ScrollToCell(method) : path : Gtk.TreePath -> column : Gtk.TreeViewColumn -> use_align : Bool -> row_align : Single -> col_align : Single -> Void
+
+	public ExpandAll(method) : Void -> Void
+
+	set_ColumnDragFunction(method) : value : gtk.TreeViewColumnDropFunc -> gtk.TreeViewColumnDropFunc
+
+	public UnsetRowsDragSource(method) : Void -> Void
+
+	public UnsetRowsDragDest(method) : Void -> Void
+
+	public ConvertBinWindowToTreeCoords(method) : bx : Int -> by : Int -> tx : cs.Out<Int> -> ty : cs.Out<Int> -> Void
+
+	get_BinWindow(method) : Void -> Gdk.Window
+
+	public ConvertWidgetToBinWindowCoords(method) : wx : Int -> wy : Int -> bx : cs.Out<Int> -> by : cs.Out<Int> -> Void
+
+	public GetRowExpanded(method) : path : Gtk.TreePath -> Bool
+
+	public SetTooltipRow(method) : tooltip : Gtk.Tooltip -> path : Gtk.TreePath -> Void
+
+	public SetDragDestRow(method) : path : Gtk.TreePath -> pos : Gtk.TreeViewDropPosition -> Void
+
+	public CreateRowDragIcon(method) : path : Gtk.TreePath -> Gdk.Pixmap
+
+	public ColumnsAutosize(method) : Void -> Void
+
+	public ConvertWidgetToTreeCoords(method) : wx : Int -> wy : Int -> tx : cs.Out<Int> -> ty : cs.Out<Int> -> Void
+
+	get_VisibleRect(method) : Void -> Gdk.Rectangle
+
+	public GetVisibleRange(method) : start_path : cs.Out<Gtk.TreePath> -> end_path : cs.Out<Gtk.TreePath> -> Bool
+
+	public EnableModelDragSource(method) : start_button_mask : Gdk.ModifierType -> targets : cs.NativeArray<Gtk.TargetEntry> -> actions : Gdk.DragAction -> Void
+
+	public ExpandRow(method) : path : Gtk.TreePath -> open_all : Bool -> Bool
+
+	public SetCursor(method) : path : Gtk.TreePath -> focus_column : Gtk.TreeViewColumn -> start_editing : Bool -> Void
+
+	get_SearchEqualFunc(method) : Void -> gtk.TreeViewSearchEqualFunc
+
+	set_SearchEqualFunc(method) : value : gtk.TreeViewSearchEqualFunc -> gtk.TreeViewSearchEqualFunc
+
+	public MapExpandedRows(method) : func : gtk.TreeViewMappingFunc -> Void
+
+	public ActivateRow(method) : path : Gtk.TreePath -> column : Gtk.TreeViewColumn -> Void
+
+	get_SearchPositionFunc(method) : Void -> gtk.TreeViewSearchPositionFunc
+
+	set_SearchPositionFunc(method) : value : gtk.TreeViewSearchPositionFunc -> gtk.TreeViewSearchPositionFunc
+
+	get_OddRowColor(method) : Void -> Gdk.Color
+
+	get_EvenRowColor(method) : Void -> Gdk.Color
+
+	public GetPathAtPos(method) : x : Int -> y : Int -> path : cs.Out<Gtk.TreePath> -> column : cs.Out<Gtk.TreeViewColumn> -> cell_x : cs.Out<Int> -> cell_y : cs.Out<Int> -> Bool
+
+	public GetPathAtPos(method) : x : Int -> y : Int -> path : cs.Out<Gtk.TreePath> -> column : cs.Out<Gtk.TreeViewColumn> -> Bool
+
+	public GetPathAtPos(method) : x : Int -> y : Int -> path : cs.Out<Gtk.TreePath> -> Bool
+
+	public SetSearchEqualFunc(method) : search_equal_func : gtk.TreeViewSearchEqualFunc -> search_user_data : System.IntPtr -> search_destroy : gtk.DestroyNotify -> Void
+
+	public SetDestroyCountFunc(method) : func : gtk.TreeDestroyCountFunc -> data : System.IntPtr -> destroy : gtk.DestroyNotify -> Void
+
+	public SetColumnDragFunction(method) : func : gtk.TreeViewColumnDropFunc -> user_data : System.IntPtr -> destroy : gtk.DestroyNotify -> Void
+
+	public GetVisibleRect(method) : visible_rect : Gdk.Rectangle -> Void
+
+	static public GType((get,never)) : GLib.GType
+
+	static get_GType(method) : Void -> GLib.GType
+
+}

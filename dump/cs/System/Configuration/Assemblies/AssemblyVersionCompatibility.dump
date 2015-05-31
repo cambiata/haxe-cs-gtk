@@ -1,0 +1,5 @@
+extern enum System.Configuration.Assemblies.AssemblyVersionCompatibility {
+	SameMachine : System.Configuration.Assemblies.AssemblyVersionCompatibility;
+	SameProcess : System.Configuration.Assemblies.AssemblyVersionCompatibility;
+	SameDomain : System.Configuration.Assemblies.AssemblyVersionCompatibility;
+}

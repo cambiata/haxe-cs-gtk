@@ -1,0 +1,90 @@
+extern class System.Collections.ArrayList.RangedArrayList extends System.Collections.ArrayList.ArrayListWrapper implements ArrayAccess<Dynamic>{
+	public new(method) : innerList : System.Collections.ArrayList -> index : Int -> count : Int -> Void
+
+	public Capacity((get,set)) : Int
+
+	public Count((get,never)) : Int
+
+	public IsSynchronized((get,never)) : Bool
+
+	get_IsSynchronized(method) : Void -> Bool
+
+	get_Item(method) : index : Int -> Dynamic
+
+	set_Item(method) : index : Int -> value : Dynamic -> Void
+
+	get_Count(method) : Void -> Int
+
+	get_Capacity(method) : Void -> Int
+
+	set_Capacity(method) : value : Int -> Int
+
+	public Add(method) : value : Dynamic -> Int
+
+	public Clear(method) : Void -> Void
+
+	public Contains(method) : value : Dynamic -> Bool
+
+	public IndexOf(method) : value : Dynamic -> Int
+
+	public IndexOf(method) : value : Dynamic -> startIndex : Int -> count : Int -> Int
+
+	public IndexOf(method) : value : Dynamic -> startIndex : Int -> Int
+
+	public LastIndexOf(method) : value : Dynamic -> Int
+
+	public LastIndexOf(method) : value : Dynamic -> startIndex : Int -> count : Int -> Int
+
+	public LastIndexOf(method) : value : Dynamic -> startIndex : Int -> Int
+
+	public Insert(method) : index : Int -> value : Dynamic -> Void
+
+	public InsertRange(method) : index : Int -> c : System.Collections.ICollection -> Void
+
+	public Remove(method) : value : Dynamic -> Void
+
+	public RemoveAt(method) : index : Int -> Void
+
+	public RemoveRange(method) : index : Int -> count : Int -> Void
+
+	public Reverse(method) : Void -> Void
+
+	public Reverse(method) : index : Int -> count : Int -> Void
+
+	public SetRange(method) : index : Int -> c : System.Collections.ICollection -> Void
+
+	public CopyTo(method) : array : System.Array -> Void
+
+	public CopyTo(method) : index : Int -> array : System.Array -> arrayIndex : Int -> count : Int -> Void
+
+	public CopyTo(method) : array : System.Array -> index : Int -> Void
+
+	public GetEnumerator(method) : Void -> System.Collections.IEnumerator
+
+	public GetEnumerator(method) : index : Int -> count : Int -> System.Collections.IEnumerator
+
+	public AddRange(method) : c : System.Collections.ICollection -> Void
+
+	public BinarySearch(method) : value : Dynamic -> Int
+
+	public BinarySearch(method) : index : Int -> count : Int -> value : Dynamic -> comparer : System.Collections.IComparer -> Int
+
+	public BinarySearch(method) : value : Dynamic -> comparer : System.Collections.IComparer -> Int
+
+	public Clone(method) : Void -> Dynamic
+
+	public GetRange(method) : index : Int -> count : Int -> System.Collections.ArrayList
+
+	public TrimToSize(method) : Void -> Void
+
+	public Sort(method) : Void -> Void
+
+	public Sort(method) : index : Int -> count : Int -> comparer : System.Collections.IComparer -> Void
+
+	public Sort(method) : comparer : System.Collections.IComparer -> Void
+
+	public ToArray(method) : Void -> cs.NativeArray<Dynamic>
+
+	public ToArray(method) : elementType : System.Type -> System.Array
+
+}

@@ -1,0 +1,12 @@
+extern class System.RuntimeFieldHandle extends System.ValueType implements System.Runtime.Serialization.ISerializable{
+	public Value((get,never)) : System.IntPtr
+
+	get_Value(method) : Void -> System.IntPtr
+
+	public GetObjectData(method) : info : System.Runtime.Serialization.SerializationInfo -> context : System.Runtime.Serialization.StreamingContext -> Void
+
+	static public op_Equality(method) : left : System.RuntimeFieldHandle -> right : System.RuntimeFieldHandle -> Bool
+
+	static public op_Inequality(method) : left : System.RuntimeFieldHandle -> right : System.RuntimeFieldHandle -> Bool
+
+}

@@ -1,0 +1,14 @@
+extern class Atk.Object.ChildrenChangedSignalDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : arg0 : System.IntPtr -> arg1 : UInt -> arg2 : System.IntPtr -> gch : System.IntPtr -> Void
+
+	public BeginInvoke(method) : arg0 : System.IntPtr -> arg1 : UInt -> arg2 : System.IntPtr -> gch : System.IntPtr -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Void
+
+	static public op_Addition(method) : arg1 : atk.Object_ChildrenChangedSignalDelegate -> arg2 : atk.Object_ChildrenChangedSignalDelegate -> atk.Object_ChildrenChangedSignalDelegate
+
+	static public op_Subtraction(method) : arg1 : atk.Object_ChildrenChangedSignalDelegate -> arg2 : atk.Object_ChildrenChangedSignalDelegate -> atk.Object_ChildrenChangedSignalDelegate
+
+}

@@ -1,0 +1,48 @@
+extern class Pango.LayoutLine extends GLib.Opaque{
+	public new(method) : raw : System.IntPtr -> Void
+
+	public ResolvedDir((get,never)) : UInt
+
+	public IsParagraphStart((get,never)) : Bool
+
+	public StartIndex((get,never)) : Int
+
+	public Length((get,never)) : Int
+
+	public Layout((get,never)) : Pango.Layout
+
+	get_Layout(method) : Void -> Pango.Layout
+
+	get_Length(method) : Void -> Int
+
+	get_StartIndex(method) : Void -> Int
+
+	get_IsParagraphStart(method) : Void -> Bool
+
+	get_ResolvedDir(method) : Void -> UInt
+
+	public IndexToX(method) : index_ : Int -> trailing : Bool -> Int
+
+	public XToIndex(method) : x_pos : Int -> index_ : cs.Out<Int> -> trailing : cs.Out<Int> -> Bool
+
+	public GetExtents(method) : ink_rect : cs.Ref<Pango.Rectangle> -> logical_rect : cs.Ref<Pango.Rectangle> -> Void
+
+	public GetPixelExtents(method) : ink_rect : cs.Ref<Pango.Rectangle> -> logical_rect : cs.Ref<Pango.Rectangle> -> Void
+
+	Ref(method) : raw : System.IntPtr -> Void
+
+	public Ref(method) : Void -> Pango.LayoutLine
+
+	Unref(method) : raw : System.IntPtr -> Void
+
+	public Unref(method) : Void -> Void
+
+	Finalize(method) : Void -> Void
+
+	public GetXRanges(method) : start_index : Int -> end_index : Int -> ranges : cs.Out<cs.NativeArray<cs.NativeArray<Int>>> -> Void
+
+	static public GType((get,never)) : GLib.GType
+
+	static get_GType(method) : Void -> GLib.GType
+
+}

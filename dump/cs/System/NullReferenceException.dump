@@ -1,0 +1,10 @@
+extern class System.NullReferenceException extends System.SystemException{
+	public new(method) : Void -> Void
+
+	new(method) : info : System.Runtime.Serialization.SerializationInfo -> context : System.Runtime.Serialization.StreamingContext -> Void
+
+	public new(method) : message : String -> innerException : System.Exception -> Void
+
+	public new(method) : message : String -> Void
+
+}

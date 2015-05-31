@@ -1,0 +1,14 @@
+extern class System.Collections.ArrayList.SimpleEnumerator implements System.ICloneable implements System.Collections.IEnumerator{
+	public new(method) : list : System.Collections.ArrayList -> Void
+
+	public Current((get,never)) : Dynamic
+
+	public Clone(method) : Void -> Dynamic
+
+	public MoveNext(method) : Void -> Bool
+
+	get_Current(method) : Void -> Dynamic
+
+	public Reset(method) : Void -> Void
+
+}

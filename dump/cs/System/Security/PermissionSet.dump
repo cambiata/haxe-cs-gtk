@@ -1,0 +1,66 @@
+extern class System.Security.PermissionSet implements System.Collections.ICollection implements System.Collections.IEnumerable implements System.Runtime.Serialization.IDeserializationCallback implements System.Security.ISecurityEncodable implements System.Security.IStackWalk{
+	public new(method) : state : System.Security.Permissions.PermissionState -> Void
+
+	public new(method) : permSet : System.Security.PermissionSet -> Void
+
+	public SyncRoot((get,never)) : Dynamic
+
+	public IsReadOnly((get,never)) : Bool
+
+	public IsSynchronized((get,never)) : Bool
+
+	public Count((get,never)) : Int
+
+	public AddPermission(method) : perm : System.Security.IPermission -> System.Security.IPermission
+
+	public Assert(method) : Void -> Void
+
+	public Copy(method) : Void -> System.Security.PermissionSet
+
+	public CopyTo(method) : array : System.Array -> index : Int -> Void
+
+	public Demand(method) : Void -> Void
+
+	public Deny(method) : Void -> Void
+
+	public FromXml(method) : et : System.Security.SecurityElement -> Void
+
+	public GetEnumerator(method) : Void -> System.Collections.IEnumerator
+
+	public IsSubsetOf(method) : target : System.Security.PermissionSet -> Bool
+
+	public PermitOnly(method) : Void -> Void
+
+	public ContainsNonCodeAccessPermissions(method) : Void -> Bool
+
+	public GetPermission(method) : permClass : System.Type -> System.Security.IPermission
+
+	public Intersect(method) : other : System.Security.PermissionSet -> System.Security.PermissionSet
+
+	public IsEmpty(method) : Void -> Bool
+
+	public IsUnrestricted(method) : Void -> Bool
+
+	public RemovePermission(method) : permClass : System.Type -> System.Security.IPermission
+
+	public SetPermission(method) : perm : System.Security.IPermission -> System.Security.IPermission
+
+	public ToString(method) : Void -> String
+
+	public ToXml(method) : Void -> System.Security.SecurityElement
+
+	public Union(method) : other : System.Security.PermissionSet -> System.Security.PermissionSet
+
+	get_Count(method) : Void -> Int
+
+	get_IsSynchronized(method) : Void -> Bool
+
+	get_IsReadOnly(method) : Void -> Bool
+
+	get_SyncRoot(method) : Void -> Dynamic
+
+	static public ConvertPermissionSet(method) : inFormat : String -> inData : cs.NativeArray<cs.types.UInt8> -> outFormat : String -> cs.NativeArray<cs.types.UInt8>
+
+	static public RevertAssert(method) : Void -> Void
+
+}

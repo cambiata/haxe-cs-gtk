@@ -49,8 +49,7 @@ public class Main {
 			list.AppendColumn(((global::Gtk.TreeViewColumn) (columnB) ));
 			columnA.AddAttribute(((global::Gtk.CellRenderer) (cellA) ), ((string) ("text") ), ((int) (0) ));
 			columnB.AddAttribute(((global::Gtk.CellRenderer) (cellB) ), ((string) ("text") ), ((int) (0) ));
-			global::Gtk.ListStore store = new Gtk.ListStore( typeof (string), typeof (string) ) ;
-			global::System.Array values = new string[]{"Item1", "ItemA"};
+			global::Gtk.ListStore store = new global::Gtk.ListStore(((global::System.Type[]) (new global::System.Type[]{((global::System.Type) (typeof(string)) ), ((global::System.Type) (typeof(string)) )}) ));
 			store.AppendValues(((object[]) (new string[]{"Item1", "ItemA"}) ));
 			list.Model = ((global::Gtk.TreeModel) (store) );
 			global::Gtk.HBox hbox = new global::Gtk.HBox(true, 0);
@@ -62,7 +61,7 @@ public class Main {
 			global::System.EventHandler __temp_stmt3 = null;
 			{
 				global::System.EventHandler this3 = null;
-				this3 = ((global::System.EventHandler) (new global::Main_main_74__Fun(textEntry).Delegate) );
+				this3 = ((global::System.EventHandler) (new global::Main_main_70__Fun(textEntry).Delegate) );
 				__temp_stmt3 = ((global::System.EventHandler) (this3) );
 			}
 			
@@ -73,7 +72,7 @@ public class Main {
 			global::System.EventHandler __temp_stmt4 = null;
 			{
 				global::System.EventHandler this4 = null;
-				this4 = ((global::System.EventHandler) (new global::Main_main_81__Fun(textEntry, store).Delegate) );
+				this4 = ((global::System.EventHandler) (new global::Main_main_77__Fun(store, textEntry).Delegate) );
 				__temp_stmt4 = ((global::System.EventHandler) (this4) );
 			}
 			
@@ -84,7 +83,7 @@ public class Main {
 			global::System.EventHandler __temp_stmt5 = null;
 			{
 				global::System.EventHandler this5 = null;
-				this5 = ((global::System.EventHandler) (new global::Main_main_89__Fun(store, list).Delegate) );
+				this5 = ((global::System.EventHandler) (new global::Main_main_85__Fun(store, list).Delegate) );
 				__temp_stmt5 = ((global::System.EventHandler) (this5) );
 			}
 			
@@ -95,7 +94,7 @@ public class Main {
 			global::System.EventHandler __temp_stmt6 = null;
 			{
 				global::System.EventHandler this6 = null;
-				this6 = ((global::System.EventHandler) (( (( global::Main_main_103__Fun.__hx_current != null )) ? (global::Main_main_103__Fun.__hx_current) : (global::Main_main_103__Fun.__hx_current = ((global::Main_main_103__Fun) (new global::Main_main_103__Fun()) )) ).Delegate) );
+				this6 = ((global::System.EventHandler) (new global::Main_main_99__Fun(win).Delegate) );
 				__temp_stmt6 = ((global::System.EventHandler) (this6) );
 			}
 			
@@ -173,9 +172,9 @@ public class Main_main_31__Fun : global::haxe.lang.Function {
 
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
-public class Main_main_74__Fun : global::haxe.lang.Function {
+public class Main_main_70__Fun : global::haxe.lang.Function {
 	
-	public Main_main_74__Fun(global::Gtk.Entry textEntry) : base(2, 0) {
+	public Main_main_70__Fun(global::Gtk.Entry textEntry) : base(2, 0) {
 		this.textEntry = textEntry;
 	}
 	
@@ -190,7 +189,7 @@ public class Main_main_74__Fun : global::haxe.lang.Function {
 	
 	public void Delegate(object obj1, global::System.EventArgs e2) {
 		unchecked {
-			global::haxe.Log.trace.__hx_invoke2_o(default(double), this.textEntry.Text, default(double), new global::haxe.lang.DynamicObject(new int[]{302979532, 1547539107, 1648581351}, new object[]{"main", "Main", "Main.hx"}, new int[]{1981972957}, new double[]{((double) (75) )}));
+			global::haxe.Log.trace.__hx_invoke2_o(default(double), this.textEntry.Text, default(double), new global::haxe.lang.DynamicObject(new int[]{302979532, 1547539107, 1648581351}, new object[]{"main", "Main", "Main.hx"}, new int[]{1981972957}, new double[]{((double) (71) )}));
 		}
 	}
 	
@@ -202,11 +201,11 @@ public class Main_main_74__Fun : global::haxe.lang.Function {
 
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
-public class Main_main_81__Fun : global::haxe.lang.Function {
+public class Main_main_77__Fun : global::haxe.lang.Function {
 	
-	public Main_main_81__Fun(global::Gtk.Entry textEntry, global::Gtk.ListStore store) : base(2, 0) {
-		this.textEntry = textEntry;
+	public Main_main_77__Fun(global::Gtk.ListStore store, global::Gtk.Entry textEntry) : base(2, 0) {
 		this.store = store;
+		this.textEntry = textEntry;
 	}
 	
 	
@@ -227,18 +226,18 @@ public class Main_main_81__Fun : global::haxe.lang.Function {
 	}
 	
 	
-	public global::Gtk.Entry textEntry;
-	
 	public global::Gtk.ListStore store;
+	
+	public global::Gtk.Entry textEntry;
 	
 }
 
 
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
-public class Main_main_89__Fun : global::haxe.lang.Function {
+public class Main_main_85__Fun : global::haxe.lang.Function {
 	
-	public Main_main_89__Fun(global::Gtk.ListStore store, global::Gtk.TreeView list) : base(2, 0) {
+	public Main_main_85__Fun(global::Gtk.ListStore store, global::Gtk.TreeView list) : base(2, 0) {
 		this.store = store;
 		this.list = list;
 	}
@@ -280,13 +279,12 @@ public class Main_main_89__Fun : global::haxe.lang.Function {
 
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
-public class Main_main_103__Fun : global::haxe.lang.Function {
+public class Main_main_99__Fun : global::haxe.lang.Function {
 	
-	public Main_main_103__Fun() : base(2, 0) {
+	public Main_main_99__Fun(global::Gtk.Window win) : base(2, 0) {
+		this.win = win;
 	}
 	
-	
-	public static global::Main_main_103__Fun __hx_current;
 	
 	public override object __hx_invoke2_o(double __fn_float1, object __fn_dyn1, double __fn_float2, object __fn_dyn2) {
 		global::System.EventArgs e5 = ( (( __fn_dyn2 == global::haxe.lang.Runtime.undefined )) ? (((global::System.EventArgs) (((object) (__fn_float2) )) )) : (((global::System.EventArgs) (__fn_dyn2) )) );
@@ -297,7 +295,7 @@ public class Main_main_103__Fun : global::haxe.lang.Function {
 	
 	
 	public void Delegate(object obj4, global::System.EventArgs e5) {
-		global::Gtk.MessageDialog dialog =  new Gtk.MessageDialog(null, Gtk.DialogFlags.Modal, Gtk.MessageType.Error, Gtk.ButtonsType.Close, "Hello dialog!");
+		global::Gtk.MessageDialog dialog = new global::Gtk.MessageDialog(this.win, global::Gtk.DialogFlags.Modal, global::Gtk.MessageType.Error, global::Gtk.ButtonsType.Close, "Hey", new object[0]);
 		( dialog as global::Gtk.Window ).Title = ((string) ("Hello Message!") );
 		global::Gtk.ResponseType response = ((global::Gtk.ResponseType) (((object) (( dialog as global::Gtk.Dialog ).Run()) )) );
 		if (( ( response == global::Gtk.ResponseType.Close ) || ( response == global::Gtk.ResponseType.DeleteEvent ) )) {
@@ -306,6 +304,8 @@ public class Main_main_103__Fun : global::haxe.lang.Function {
 		
 	}
 	
+	
+	public global::Gtk.Window win;
 	
 }
 

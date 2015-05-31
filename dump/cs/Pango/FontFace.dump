@@ -1,0 +1,24 @@
+extern class Pango.FontFace extends GLib.Object{
+	new(method) : gtype : GLib.GType -> Void
+
+	new(method) : Void -> Void
+
+	public new(method) : raw : System.IntPtr -> Void
+
+	public IsSynthesized((get,never)) : Bool
+
+	public FaceName((get,never)) : String
+
+	public Describe(method) : Void -> Pango.FontDescription
+
+	get_FaceName(method) : Void -> String
+
+	get_IsSynthesized(method) : Void -> Bool
+
+	public ListSizes(method) : sizes : cs.Out<Int> -> n_sizes : cs.Out<Int> -> Void
+
+	static public GType((get,never)) : GLib.GType
+
+	static get_GType(method) : Void -> GLib.GType
+
+}

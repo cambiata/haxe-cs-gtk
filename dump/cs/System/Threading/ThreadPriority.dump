@@ -1,0 +1,7 @@
+extern enum System.Threading.ThreadPriority {
+	Lowest : System.Threading.ThreadPriority;
+	BelowNormal : System.Threading.ThreadPriority;
+	Normal : System.Threading.ThreadPriority;
+	AboveNormal : System.Threading.ThreadPriority;
+	Highest : System.Threading.ThreadPriority;
+}

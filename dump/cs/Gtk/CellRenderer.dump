@@ -1,0 +1,122 @@
+extern class Gtk.CellRenderer extends Gtk.Object{
+	new(method) : gtype : GLib.GType -> Void
+
+	new(method) : Void -> Void
+
+	public new(method) : raw : System.IntPtr -> Void
+
+	EditingStarted(var) : gtk.EditingStartedHandler
+
+	EditingCanceled(var) : cs.system.EventHandler
+
+	public Xalign((get,set)) : Single
+
+	public IsExpander((get,set)) : Bool
+
+	public CellBackground((never,set)) : String
+
+	public Height((get,set)) : Int
+
+	public IsExpanded((get,set)) : Bool
+
+	public Sensitive((get,set)) : Bool
+
+	public Visible((get,set)) : Bool
+
+	public CellBackgroundGdk((get,set)) : Gdk.Color
+
+	public Ypad((get,set)) : UInt
+
+	public Xpad((get,set)) : UInt
+
+	public Mode((get,set)) : Gtk.CellRendererMode
+
+	public Width((get,set)) : Int
+
+	public Yalign((get,set)) : Single
+
+	get_Yalign(method) : Void -> Single
+
+	set_Yalign(method) : value : Single -> Single
+
+	get_Width(method) : Void -> Int
+
+	set_Width(method) : value : Int -> Int
+
+	get_Mode(method) : Void -> Gtk.CellRendererMode
+
+	set_Mode(method) : value : Gtk.CellRendererMode -> Gtk.CellRendererMode
+
+	get_Xpad(method) : Void -> UInt
+
+	set_Xpad(method) : value : UInt -> UInt
+
+	get_Ypad(method) : Void -> UInt
+
+	set_Ypad(method) : value : UInt -> UInt
+
+	get_CellBackgroundGdk(method) : Void -> Gdk.Color
+
+	set_CellBackgroundGdk(method) : value : Gdk.Color -> Gdk.Color
+
+	get_Visible(method) : Void -> Bool
+
+	set_Visible(method) : value : Bool -> Bool
+
+	get_Sensitive(method) : Void -> Bool
+
+	set_Sensitive(method) : value : Bool -> Bool
+
+	get_IsExpanded(method) : Void -> Bool
+
+	set_IsExpanded(method) : value : Bool -> Bool
+
+	get_Height(method) : Void -> Int
+
+	set_Height(method) : value : Int -> Int
+
+	set_CellBackground(method) : value : String -> String
+
+	get_IsExpander(method) : Void -> Bool
+
+	set_IsExpander(method) : value : Bool -> Bool
+
+	get_Xalign(method) : Void -> Single
+
+	set_Xalign(method) : value : Single -> Single
+
+	OnEditingCanceled(method) : Void -> Void
+
+	public add_EditingCanceled(method) : value : cs.system.EventHandler -> Void
+
+	public remove_EditingCanceled(method) : value : cs.system.EventHandler -> Void
+
+	OnEditingStarted(method) : editable : Gtk.CellEditable -> path : String -> Void
+
+	public add_EditingStarted(method) : value : gtk.EditingStartedHandler -> Void
+
+	public remove_EditingStarted(method) : value : gtk.EditingStartedHandler -> Void
+
+	public Render(method) : window : Gdk.Window -> widget : Gtk.Widget -> background_area : Gdk.Rectangle -> cell_area : Gdk.Rectangle -> expose_area : Gdk.Rectangle -> flags : Gtk.CellRendererState -> Void
+
+	Render(method) : window : Gdk.Drawable -> widget : Gtk.Widget -> background_area : Gdk.Rectangle -> cell_area : Gdk.Rectangle -> expose_area : Gdk.Rectangle -> flags : Gtk.CellRendererState -> Void
+
+	public CancelEditing(method) : Void -> Void
+
+	public GetFixedSize(method) : width : cs.Out<Int> -> height : cs.Out<Int> -> Void
+
+	public Activate(method) : evnt : Gdk.Event -> widget : Gtk.Widget -> path : String -> background_area : Gdk.Rectangle -> cell_area : Gdk.Rectangle -> flags : Gtk.CellRendererState -> Bool
+
+	public StopEditing(method) : canceled : Bool -> Void
+
+	public SetFixedSize(method) : width : Int -> height : Int -> Void
+
+	public GetSize(method) : widget : Gtk.Widget -> cell_area : cs.Ref<Gdk.Rectangle> -> x_offset : cs.Out<Int> -> y_offset : cs.Out<Int> -> width : cs.Out<Int> -> height : cs.Out<Int> -> Void
+
+	public StartEditing(method) : evnt : Gdk.Event -> widget : Gtk.Widget -> path : String -> background_area : Gdk.Rectangle -> cell_area : Gdk.Rectangle -> flags : Gtk.CellRendererState -> Gtk.CellEditable
+
+	static public GType((get,never)) : GLib.GType
+
+	static get_GType(method) : Void -> GLib.GType
+
+}

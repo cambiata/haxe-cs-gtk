@@ -1,0 +1,16 @@
+extern class System.Threading.ExecutionContext implements System.Runtime.Serialization.ISerializable{
+	public CreateCopy(method) : Void -> System.Threading.ExecutionContext
+
+	public GetObjectData(method) : info : System.Runtime.Serialization.SerializationInfo -> context : System.Runtime.Serialization.StreamingContext -> Void
+
+	static public Capture(method) : Void -> System.Threading.ExecutionContext
+
+	static public IsFlowSuppressed(method) : Void -> Bool
+
+	static public RestoreFlow(method) : Void -> Void
+
+	static public Run(method) : executionContext : System.Threading.ExecutionContext -> callback : cs.system.threading.ContextCallback -> state : Dynamic -> Void
+
+	static public SuppressFlow(method) : Void -> System.Threading.AsyncFlowControl
+
+}

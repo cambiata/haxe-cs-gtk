@@ -1,0 +1,64 @@
+extern class Gdk.Image extends GLib.Object{
+	new(method) : gtype : GLib.GType -> Void
+
+	public new(method) : type : Gdk.ImageType -> visual : Gdk.Visual -> width : Int -> height : Int -> Void
+
+	public new(method) : raw : System.IntPtr -> Void
+
+	public Width((get,never)) : Int
+
+	public Height((get,never)) : Int
+
+	public Bpp((get,never)) : cs.types.UInt16
+
+	public Type((get,never)) : Gdk.ImageType
+
+	public ByteOrder((get,never)) : Gdk.ByteOrder
+
+	public Visual((get,never)) : Gdk.Visual
+
+	public Depth((get,never)) : cs.types.UInt16
+
+	public Colormap((get,set)) : Gdk.Colormap
+
+	public Bpl((get,never)) : cs.types.UInt16
+
+	public BitsPerPixel((get,never)) : cs.types.UInt16
+
+	get_BitsPerPixel(method) : Void -> cs.types.UInt16
+
+	get_Bpl(method) : Void -> cs.types.UInt16
+
+	get_Colormap(method) : Void -> Gdk.Colormap
+
+	set_Colormap(method) : value : Gdk.Colormap -> Gdk.Colormap
+
+	get_Depth(method) : Void -> cs.types.UInt16
+
+	get_Visual(method) : Void -> Gdk.Visual
+
+	get_ByteOrder(method) : Void -> Gdk.ByteOrder
+
+	get_Type(method) : Void -> Gdk.ImageType
+
+	get_Bpp(method) : Void -> cs.types.UInt16
+
+	get_Height(method) : Void -> Int
+
+	get_Width(method) : Void -> Int
+
+	public GetPixel(method) : x : Int -> y : Int -> UInt
+
+	public PutPixel(method) : x : Int -> y : Int -> pixel : UInt -> Void
+
+	public Ref(method) : Void -> Gdk.Image
+
+	public Unref(method) : Void -> Void
+
+	static public GType((get,never)) : GLib.GType
+
+	static get_GType(method) : Void -> GLib.GType
+
+	static public Get(method) : drawable : Gdk.Drawable -> x : Int -> y : Int -> width : Int -> height : Int -> Gdk.Image
+
+}

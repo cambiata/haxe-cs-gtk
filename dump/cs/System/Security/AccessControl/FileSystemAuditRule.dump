@@ -1,0 +1,14 @@
+extern class System.Security.AccessControl.FileSystemAuditRule extends System.Security.AccessControl.AuditRule{
+	public new(method) : identity : System.Security.Principal.IdentityReference -> fileSystemRights : System.Security.AccessControl.FileSystemRights -> flags : System.Security.AccessControl.AuditFlags -> Void
+
+	public new(method) : identity : String -> fileSystemRights : System.Security.AccessControl.FileSystemRights -> inheritanceFlags : System.Security.AccessControl.InheritanceFlags -> propagationFlags : System.Security.AccessControl.PropagationFlags -> flags : System.Security.AccessControl.AuditFlags -> Void
+
+	public new(method) : identity : System.Security.Principal.IdentityReference -> fileSystemRights : System.Security.AccessControl.FileSystemRights -> inheritanceFlags : System.Security.AccessControl.InheritanceFlags -> propagationFlags : System.Security.AccessControl.PropagationFlags -> flags : System.Security.AccessControl.AuditFlags -> Void
+
+	public new(method) : identity : String -> fileSystemRights : System.Security.AccessControl.FileSystemRights -> flags : System.Security.AccessControl.AuditFlags -> Void
+
+	public FileSystemRights((get,never)) : System.Security.AccessControl.FileSystemRights
+
+	get_FileSystemRights(method) : Void -> System.Security.AccessControl.FileSystemRights
+
+}

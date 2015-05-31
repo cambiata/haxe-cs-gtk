@@ -1,0 +1,38 @@
+extern class Gdk.Visual extends GLib.Object{
+	new(method) : gtype : GLib.GType -> Void
+
+	new(method) : Void -> Void
+
+	public new(method) : raw : System.IntPtr -> Void
+
+	public Screen((get,never)) : Gdk.Screen
+
+	get_Screen(method) : Void -> Gdk.Screen
+
+	static public BestType((get,never)) : Gdk.VisualType
+
+	static public GType((get,never)) : GLib.GType
+
+	static public BestDepth((get,never)) : Int
+
+	static public Best((get,never)) : Gdk.Visual
+
+	static public System((get,never)) : Gdk.Visual
+
+	static get_System(method) : Void -> Gdk.Visual
+
+	static get_Best(method) : Void -> Gdk.Visual
+
+	static public GetBestWithType(method) : visual_type : Gdk.VisualType -> Gdk.Visual
+
+	static public GetBestWithDepth(method) : depth : Int -> Gdk.Visual
+
+	static get_BestDepth(method) : Void -> Int
+
+	static get_GType(method) : Void -> GLib.GType
+
+	static get_BestType(method) : Void -> Gdk.VisualType
+
+	static public GetBestWithBoth(method) : depth : Int -> visual_type : Gdk.VisualType -> Gdk.Visual
+
+}

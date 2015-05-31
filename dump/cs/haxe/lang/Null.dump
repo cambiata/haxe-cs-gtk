@@ -1,0 +1,39 @@
+private class haxe.lang.Null<T : cs.internal._Null.Nullable.T>{
+	public new(method) : v : cs.internal._Null.Nullable.T -> hasValue : Bool -> Void
+
+	 = [Function:v : cs.internal._Null.Nullable.T -> hasValue : Bool -> Void]
+		[Arg:cs.internal._Null.Nullable.T] [Local v(2148):cs.internal._Null.Nullable.T]
+		[Arg:Bool] [Local hasValue(2149):Bool]
+		[Block:Unknown<63>]
+			[Binop:Unknown<62>]
+				[Field:cs.internal._Null.Nullable.T]
+					[Const this:haxe.lang.Null<cs.internal._Null.Nullable.T>]
+					[FInstance:cs.internal._Null.Nullable.T]
+						haxe.lang.Null<cs.internal._Null.Nullable.T>
+						value
+				=
+				[Local v(2148):cs.internal._Null.Nullable.T]
+			[Binop:Unknown<63>]
+				[Field:Bool]
+					[Const this:haxe.lang.Null<cs.internal._Null.Nullable.T>]
+					[FInstance:Bool]
+						haxe.lang.Null<cs.internal._Null.Nullable.T>
+						hasValue
+				=
+				[Local hasValue(2149):Bool]
+
+	public value((default,never)) : cs.internal._Null.Nullable.T
+
+	public hasValue((default,never)) : Bool
+
+	public toDynamic(method) : Void -> Dynamic
+
+	 = [Function:Void -> Dynamic] [Block:Dynamic] [Return:Dynamic] [Const null:Unknown<64>]
+
+	static public ofDynamic<D : ofDynamic.D>(method) : obj : Dynamic -> haxe.lang.Null<ofDynamic.D>
+
+	 = [Function:obj : Dynamic -> haxe.lang.Null<ofDynamic.D>]
+		[Arg:Dynamic] [Local obj(2150):Dynamic]
+		[Block:Dynamic] [Return:Dynamic] [Const null:haxe.lang.Null<ofDynamic.D>]
+
+}

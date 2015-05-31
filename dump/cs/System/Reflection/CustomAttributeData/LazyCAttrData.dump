@@ -1,0 +1,4 @@
+extern class System.Reflection.CustomAttributeData.LazyCAttrData{
+	public new(method) : Void -> Void
+
+}

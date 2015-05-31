@@ -1,0 +1,6 @@
+extern enum Gtk.Justification {
+	Left : Gtk.Justification;
+	Right : Gtk.Justification;
+	Center : Gtk.Justification;
+	Fill : Gtk.Justification;
+}

@@ -1,0 +1,12 @@
+extern class Gtk.PixbufInsertedArgs extends GLib.SignalArgs{
+	public new(method) : Void -> Void
+
+	public Pixbuf((get,never)) : Gdk.Pixbuf
+
+	public Pos((get,never)) : Gtk.TextIter
+
+	get_Pos(method) : Void -> Gtk.TextIter
+
+	get_Pixbuf(method) : Void -> Gdk.Pixbuf
+
+}

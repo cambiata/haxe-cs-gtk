@@ -1,0 +1,14 @@
+extern class Gtk.HBox extends Gtk.Box{
+	new(method) : gtype : GLib.GType -> Void
+
+	public new(method) : Void -> Void
+
+	public new(method) : homogeneous : Bool -> spacing : Int -> Void
+
+	public new(method) : raw : System.IntPtr -> Void
+
+	static public GType((get,never)) : GLib.GType
+
+	static get_GType(method) : Void -> GLib.GType
+
+}

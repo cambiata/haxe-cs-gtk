@@ -1,0 +1,12 @@
+extern enum System.Threading.ThreadState {
+	Running : System.Threading.ThreadState;
+	StopRequested : System.Threading.ThreadState;
+	SuspendRequested : System.Threading.ThreadState;
+	Background : System.Threading.ThreadState;
+	Unstarted : System.Threading.ThreadState;
+	Stopped : System.Threading.ThreadState;
+	WaitSleepJoin : System.Threading.ThreadState;
+	Suspended : System.Threading.ThreadState;
+	AbortRequested : System.Threading.ThreadState;
+	Aborted : System.Threading.ThreadState;
+}

@@ -1,0 +1,12 @@
+extern class System.Security.SecurityElement.SecurityAttribute{
+	public new(method) : name : String -> value : String -> Void
+
+	public Value((get,never)) : String
+
+	public Name((get,never)) : String
+
+	get_Name(method) : Void -> String
+
+	get_Value(method) : Void -> String
+
+}

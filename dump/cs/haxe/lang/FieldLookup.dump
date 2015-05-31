@@ -1,0 +1,969 @@
+class haxe.lang.FieldLookup{
+	static fieldIds(var) : cs.NativeArray<Int>
+
+	static fields(var) : cs.NativeArray<String>
+
+	static length(var) : Int
+
+	static addFields(method) : nids : cs.NativeArray<Int> -> nfields : cs.NativeArray<String> -> Void
+
+	 = [Function:nids : cs.NativeArray<Int> -> nfields : cs.NativeArray<String> -> Void]
+		[Arg:cs.NativeArray<Int>] [Local nids(1145):cs.NativeArray<Int>]
+		[Arg:cs.NativeArray<String>] [Local nfields(1146):cs.NativeArray<String>]
+		[Block:Void]
+			[Var cids(1147):cs.NativeArray<Int>]
+				[Field:cs.NativeArray<Int>]
+					[TypeExpr haxe.lang.FieldLookup:Class<cs.internal.FieldLookup>]
+					[FStatic:cs.NativeArray<Int>]
+						haxe.lang.FieldLookup
+						fieldIds
+			[Var cfields(1148):cs.NativeArray<String>]
+				[Field:cs.NativeArray<String>]
+					[TypeExpr haxe.lang.FieldLookup:Class<cs.internal.FieldLookup>]
+					[FStatic:cs.NativeArray<String>]
+						haxe.lang.FieldLookup
+						fields
+			[Var nlen(1149):Int]
+				[Call:Int]
+					[Field:Void -> Int]
+						[Local nids(1145):cs.NativeArray<Int>]
+						[FInstance:Void -> Int]
+							System.Array
+							get_Length
+			[Var clen(1150):Int]
+				[Field:Int]
+					[TypeExpr haxe.lang.FieldLookup:Class<cs.internal.FieldLookup>]
+					[FStatic:Int]
+						haxe.lang.FieldLookup
+						length
+			[If:Void]
+				[Parenthesis:Bool]
+					[Binop:Bool]
+						[Call:Int]
+							[Field:Void -> Int]
+								[Local nfields(1146):cs.NativeArray<String>]
+								[FInstance:Void -> Int]
+									System.Array
+									get_Length
+						!=
+						[Local nlen(1149):Int]
+				[Then:Unknown<48>] [Throw:Unknown<48>]
+					[Binop:String]
+						[Binop:String]
+							[Binop:String]
+								[Const "Different fields length: ":String]
+								+
+								[Local nlen(1149):Int]
+							+
+							[Const " and ":String]
+						+
+						[Call:Int]
+							[Field:Void -> Int]
+								[Local nfields(1146):cs.NativeArray<String>]
+								[FInstance:Void -> Int]
+									System.Array
+									get_Length
+			[Var needsChange(1151):Bool] [Const false:Bool]
+			[Block:Void]
+				[Var _g_arr(9293):cs.NativeArray<Int>] [Local nids(1145):cs.NativeArray<Int>]
+				[Var _g_idx(9294):UInt] [Const 0:Int]
+				[While:Void]
+					[Parenthesis:Bool]
+						[Cast:Bool]
+							[Binop:Bool]
+								[Local _g_idx(9294):UInt]
+								<
+								[Call:Int]
+									[Field:Void -> Int]
+										[Local _g_arr(9293):cs.NativeArray<Int>]
+										[FInstance:Void -> Int]
+											System.Array
+											get_Length
+					[Block:Void]
+						[Var i(1152):Int]
+							[Cast:Int]
+								[Array:Int]
+									[Local _g_arr(9293):cs.NativeArray<Int>]
+									[Unop:UInt]
+										++
+										Postfix
+										[Local _g_idx(9294):UInt]
+						[If:Void]
+							[Parenthesis:Bool]
+								[Binop:Bool]
+									[Call:Int]
+										[Field:hash : Int -> hashs : cs.NativeArray<Int> -> length : Int -> Int]
+											[TypeExpr haxe.lang.FieldLookup:Class<cs.internal.FieldLookup>]
+											[FStatic:hash : Int -> hashs : cs.NativeArray<Int> -> length : Int -> Int]
+												haxe.lang.FieldLookup
+												findHash
+										[Local i(1152):Int]
+										[Local cids(1147):cs.NativeArray<Int>]
+										[Local clen(1150):Int]
+									<
+									[Const 0:Int]
+							[Then:Dynamic] [Block:Dynamic]
+								[Binop:Bool]
+									[Local needsChange(1151):Bool]
+									=
+									[Const true:Bool]
+								[Break:Dynamic]
+			[If:Void]
+				[Parenthesis:Bool] [Local needsChange(1151):Bool]
+				[Then:Dynamic] [Call:Dynamic]
+					[Local __lock__(1211):Dynamic]
+					[TypeExpr haxe.lang.FieldLookup:Class<cs.internal.FieldLookup>]
+					[Block:Int]
+						[Var ansIds(1170):cs.NativeArray<Int>]
+							[New:cs.NativeArray<Int>]
+								cs.NativeArray<Int>
+								[Binop:Int]
+									[Local clen(1150):Int]
+									+
+									[Local nlen(1149):Int]
+						[Var ansFields(1171):cs.NativeArray<String>]
+							[New:cs.NativeArray<String>]
+								cs.NativeArray<String>
+								[Binop:Int]
+									[Local clen(1150):Int]
+									+
+									[Local nlen(1149):Int]
+						[Var ci(1172):Int] [Const 0:Int]
+						[Var ni(1173):Int] [Const 0:Int]
+						[Var ansi(1174):Int] [Const 0:Int]
+						[While:Void]
+							[Parenthesis:Bool]
+								[Binop:Bool]
+									[Binop:Bool]
+										[Local ci(1172):Int]
+										<
+										[Local clen(1150):Int]
+									&&
+									[Binop:Bool]
+										[Local ni(1173):Int]
+										<
+										[Local nlen(1149):Int]
+							[Block:Int]
+								[If:Void]
+									[Parenthesis:Bool]
+										[Binop:Bool]
+											[Array:Int]
+												[Local cids(1147):cs.NativeArray<Int>]
+												[Local ci(1172):Int]
+											<
+											[Array:Int]
+												[Local nids(1145):cs.NativeArray<Int>]
+												[Local ni(1173):Int]
+									[Then:Int] [Block:Int]
+										[Binop:Int]
+											[Array:Int]
+												[Local ansIds(1170):cs.NativeArray<Int>]
+												[Local ansi(1174):Int]
+											=
+											[Array:Int]
+												[Local cids(1147):cs.NativeArray<Int>]
+												[Local ci(1172):Int]
+										[Binop:String]
+											[Array:String]
+												[Local ansFields(1171):cs.NativeArray<String>]
+												[Local ansi(1174):Int]
+											=
+											[Array:String]
+												[Local cfields(1148):cs.NativeArray<String>]
+												[Local ci(1172):Int]
+										[Unop:Int]
+											++
+											Prefix
+											[Local ci(1172):Int]
+									[Else:Int] [Block:Int]
+										[Binop:Int]
+											[Array:Int]
+												[Local ansIds(1170):cs.NativeArray<Int>]
+												[Local ansi(1174):Int]
+											=
+											[Array:Int]
+												[Local nids(1145):cs.NativeArray<Int>]
+												[Local ni(1173):Int]
+										[Binop:String]
+											[Array:String]
+												[Local ansFields(1171):cs.NativeArray<String>]
+												[Local ansi(1174):Int]
+											=
+											[Array:String]
+												[Local nfields(1146):cs.NativeArray<String>]
+												[Local ni(1173):Int]
+										[Unop:Int]
+											++
+											Prefix
+											[Local ni(1173):Int]
+								[Unop:Int]
+									++
+									Prefix
+									[Local ansi(1174):Int]
+						[If:Void]
+							[Parenthesis:Bool]
+								[Binop:Bool]
+									[Local ci(1172):Int]
+									<
+									[Local clen(1150):Int]
+							[Then:Int] [Block:Int]
+								[Call:Void]
+									[Field:sourceArray : System.Array -> sourceIndex : Int -> destinationArray : System.Array -> destinationIndex : Int -> length : Int -> Void]
+										[TypeExpr System.Array:Class<cs.system.Array>]
+										[FStatic:sourceArray : System.Array -> sourceIndex : Int -> destinationArray : System.Array -> destinationIndex : Int -> length : Int -> Void]
+											System.Array
+											Copy
+									[Local cids(1147):cs.NativeArray<Int>]
+									[Local ci(1172):Int]
+									[Local ansIds(1170):cs.NativeArray<Int>]
+									[Local ansi(1174):Int]
+									[Binop:Int]
+										[Local clen(1150):Int]
+										-
+										[Local ci(1172):Int]
+								[Call:Void]
+									[Field:sourceArray : System.Array -> sourceIndex : Int -> destinationArray : System.Array -> destinationIndex : Int -> length : Int -> Void]
+										[TypeExpr System.Array:Class<cs.system.Array>]
+										[FStatic:sourceArray : System.Array -> sourceIndex : Int -> destinationArray : System.Array -> destinationIndex : Int -> length : Int -> Void]
+											System.Array
+											Copy
+									[Local cfields(1148):cs.NativeArray<String>]
+									[Local ci(1172):Int]
+									[Local ansFields(1171):cs.NativeArray<String>]
+									[Local ansi(1174):Int]
+									[Binop:Int]
+										[Local clen(1150):Int]
+										-
+										[Local ci(1172):Int]
+								[Binop:Int]
+									[Local ansi(1174):Int]
+									+=
+									[Binop:Int]
+										[Local clen(1150):Int]
+										-
+										[Local ci(1172):Int]
+						[If:Void]
+							[Parenthesis:Bool]
+								[Binop:Bool]
+									[Local ni(1173):Int]
+									<
+									[Local nlen(1149):Int]
+							[Then:Int] [Block:Int]
+								[Call:Void]
+									[Field:sourceArray : System.Array -> sourceIndex : Int -> destinationArray : System.Array -> destinationIndex : Int -> length : Int -> Void]
+										[TypeExpr System.Array:Class<cs.system.Array>]
+										[FStatic:sourceArray : System.Array -> sourceIndex : Int -> destinationArray : System.Array -> destinationIndex : Int -> length : Int -> Void]
+											System.Array
+											Copy
+									[Local nids(1145):cs.NativeArray<Int>]
+									[Local ni(1173):Int]
+									[Local ansIds(1170):cs.NativeArray<Int>]
+									[Local ansi(1174):Int]
+									[Binop:Int]
+										[Local nlen(1149):Int]
+										-
+										[Local ni(1173):Int]
+								[Call:Void]
+									[Field:sourceArray : System.Array -> sourceIndex : Int -> destinationArray : System.Array -> destinationIndex : Int -> length : Int -> Void]
+										[TypeExpr System.Array:Class<cs.system.Array>]
+										[FStatic:sourceArray : System.Array -> sourceIndex : Int -> destinationArray : System.Array -> destinationIndex : Int -> length : Int -> Void]
+											System.Array
+											Copy
+									[Local nfields(1146):cs.NativeArray<String>]
+									[Local ni(1173):Int]
+									[Local ansFields(1171):cs.NativeArray<String>]
+									[Local ansi(1174):Int]
+									[Binop:Int]
+										[Local nlen(1149):Int]
+										-
+										[Local ni(1173):Int]
+								[Binop:Int]
+									[Local ansi(1174):Int]
+									+=
+									[Binop:Int]
+										[Local nlen(1149):Int]
+										-
+										[Local ni(1173):Int]
+						[Binop:cs.NativeArray<Int>]
+							[Field:cs.NativeArray<Int>]
+								[TypeExpr haxe.lang.FieldLookup:Class<cs.internal.FieldLookup>]
+								[FStatic:cs.NativeArray<Int>]
+									haxe.lang.FieldLookup
+									fieldIds
+							=
+							[Local ansIds(1170):cs.NativeArray<Int>]
+						[Binop:cs.NativeArray<String>]
+							[Field:cs.NativeArray<String>]
+								[TypeExpr haxe.lang.FieldLookup:Class<cs.internal.FieldLookup>]
+								[FStatic:cs.NativeArray<String>]
+									haxe.lang.FieldLookup
+									fields
+							=
+							[Local ansFields(1171):cs.NativeArray<String>]
+						[Binop:Int]
+							[Field:Int]
+								[TypeExpr haxe.lang.FieldLookup:Class<cs.internal.FieldLookup>]
+								[FStatic:Int]
+									haxe.lang.FieldLookup
+									length
+							=
+							[Local ansi(1174):Int]
+
+	static doHash(inline method) : s : String -> Int
+
+	 = [Function:s : String -> Int]
+		[Arg:String] [Local s(958):String]
+		[Block:Dynamic]
+			[Var acc(959):Int] [Const 0:Int]
+			[Block:Void]
+				[Var _g1(961):Int] [Const 0:Int]
+				[Var _g(960):Int]
+					[Field:Int]
+						[Local s(958):String]
+						[FInstance:Int]
+							String
+							length
+				[While:Void]
+					[Parenthesis:Bool]
+						[Binop:Bool]
+							[Local _g1(961):Int]
+							<
+							[Local _g(960):Int]
+					[Block:Void]
+						[Var i(962):Int]
+							[Unop:Int]
+								++
+								Postfix
+								[Local _g1(961):Int]
+						[Binop:Int]
+							[Local acc(959):Int]
+							=
+							[Binop:Int]
+								[Binop:Int]
+									[Binop:Int]
+										[Const 223:Int]
+										*
+										[Parenthesis:Int]
+											[Binop:Int]
+												[Local acc(959):Int]
+												>>
+												[Const 1:Int]
+									+
+									[Cast:Int]
+										[Array:cs.Char16]
+											[Local s(958):String]
+											[Local i(962):Int]
+										[TypeExpr Int:Int]
+								<<
+								[Const 1:Int]
+			[Return:Dynamic]
+				[Binop:Int]
+					[Local acc(959):Int]
+					>>>
+					[Const 1:Int]
+
+	static public lookupHash(method) : key : Int -> String
+
+	 = [Function:key : Int -> String]
+		[Arg:Int] [Local key(1212):Int]
+		[Block:Unknown<49>]
+			[Var ids(1213):cs.NativeArray<Int>]
+				[Field:cs.NativeArray<Int>]
+					[TypeExpr haxe.lang.FieldLookup:Class<cs.internal.FieldLookup>]
+					[FStatic:cs.NativeArray<Int>]
+						haxe.lang.FieldLookup
+						fieldIds
+			[Var min(1214):Int] [Const 0:Int]
+			[Var max(1215):Int]
+				[Field:Int]
+					[TypeExpr haxe.lang.FieldLookup:Class<cs.internal.FieldLookup>]
+					[FStatic:Int]
+						haxe.lang.FieldLookup
+						length
+			[While:Void]
+				[Parenthesis:Bool]
+					[Binop:Bool]
+						[Local min(1214):Int]
+						<
+						[Local max(1215):Int]
+				[Block:Void]
+					[Var mid(1219):Int]
+						[Binop:Int]
+							[Local min(1214):Int]
+							+
+							[Cast:Int]
+								[Binop:Float]
+									[Parenthesis:Int]
+										[Binop:Int]
+											[Local max(1215):Int]
+											-
+											[Local min(1214):Int]
+									/
+									[Const 2:Int]
+					[Var imid(1220):Int]
+						[Array:Int]
+							[Local ids(1213):cs.NativeArray<Int>]
+							[Local mid(1219):Int]
+					[If:Void]
+						[Parenthesis:Bool]
+							[Binop:Bool]
+								[Local key(1212):Int]
+								<
+								[Local imid(1220):Int]
+						[Then:Int] [Binop:Int]
+							[Local max(1215):Int]
+							=
+							[Local mid(1219):Int]
+						[Else:Void] [If:Void]
+							[Parenthesis:Bool]
+								[Binop:Bool]
+									[Local key(1212):Int]
+									>
+									[Local imid(1220):Int]
+							[Then:Int] [Binop:Int]
+								[Local min(1214):Int]
+								=
+								[Binop:Int]
+									[Local mid(1219):Int]
+									+
+									[Const 1:Int]
+							[Else:Dynamic] [Return:Dynamic]
+								[Array:String]
+									[Field:cs.NativeArray<String>]
+										[TypeExpr haxe.lang.FieldLookup:Class<cs.internal.FieldLookup>]
+										[FStatic:cs.NativeArray<String>]
+											haxe.lang.FieldLookup
+											fields
+									[Local mid(1219):Int]
+			[Throw:Unknown<49>]
+				[Binop:String]
+					[Const "Field not found for hash ":String]
+					+
+					[Local key(1212):Int]
+
+	static public hash(method) : s : String -> Int
+
+	 = [Function:s : String -> Int]
+		[Arg:String] [Local s(957):String]
+		[Block:Dynamic]
+			[If:Void]
+				[Parenthesis:Bool]
+					[Binop:Bool]
+						[Local s(957):String]
+						==
+						[Const null:String]
+				[Then:Dynamic] [Return:Dynamic] [Const 0:Int]
+			[Var key(970):Int]
+			[Block:Int]
+				[Var acc(966):Int] [Const 0:Int]
+				[Block:Void]
+					[Var _g1(967):Int] [Const 0:Int]
+					[Var _g(968):Int]
+						[Field:Int]
+							[Local s(957):String]
+							[FInstance:Int]
+								String
+								length
+					[While:Void]
+						[Parenthesis:Bool]
+							[Binop:Bool]
+								[Local _g1(967):Int]
+								<
+								[Local _g(968):Int]
+						[Block:Void]
+							[Var i(969):Int]
+								[Unop:Int]
+									++
+									Postfix
+									[Local _g1(967):Int]
+							[Binop:Int]
+								[Local acc(966):Int]
+								=
+								[Binop:Int]
+									[Binop:Int]
+										[Binop:Int]
+											[Const 223:Int]
+											*
+											[Parenthesis:Int]
+												[Binop:Int]
+													[Local acc(966):Int]
+													>>
+													[Const 1:Int]
+										+
+										[Cast:Int]
+											[Array:cs.Char16]
+												[Local s(957):String]
+												[Local i(969):Int]
+											[TypeExpr Int:Int]
+									<<
+									[Const 1:Int]
+				[Binop:Int]
+					[Local key(970):Int]
+					=
+					[Binop:Int]
+						[Local acc(966):Int]
+						>>>
+						[Const 1:Int]
+			[Var ids(971):cs.NativeArray<Int>]
+				[Field:cs.NativeArray<Int>]
+					[TypeExpr haxe.lang.FieldLookup:Class<cs.internal.FieldLookup>]
+					[FStatic:cs.NativeArray<Int>]
+						haxe.lang.FieldLookup
+						fieldIds
+			[Var fld(972):cs.NativeArray<String>]
+				[Field:cs.NativeArray<String>]
+					[TypeExpr haxe.lang.FieldLookup:Class<cs.internal.FieldLookup>]
+					[FStatic:cs.NativeArray<String>]
+						haxe.lang.FieldLookup
+						fields
+			[Var min(973):Int] [Const 0:Int]
+			[Var max(974):Int]
+				[Field:Int]
+					[TypeExpr haxe.lang.FieldLookup:Class<cs.internal.FieldLookup>]
+					[FStatic:Int]
+						haxe.lang.FieldLookup
+						length
+			[Var len(975):Int]
+				[Field:Int]
+					[TypeExpr haxe.lang.FieldLookup:Class<cs.internal.FieldLookup>]
+					[FStatic:Int]
+						haxe.lang.FieldLookup
+						length
+			[While:Void]
+				[Parenthesis:Bool]
+					[Binop:Bool]
+						[Local min(973):Int]
+						<
+						[Local max(974):Int]
+				[Block:Void]
+					[Var mid(979):Int]
+						[Cast:Int]
+							[Binop:Float]
+								[Local min(973):Int]
+								+
+								[Binop:Float]
+									[Parenthesis:Int]
+										[Binop:Int]
+											[Local max(974):Int]
+											-
+											[Local min(973):Int]
+									/
+									[Const 2:Int]
+					[Var imid(980):Int]
+						[Array:Int]
+							[Local ids(971):cs.NativeArray<Int>]
+							[Local mid(979):Int]
+					[If:Void]
+						[Parenthesis:Bool]
+							[Binop:Bool]
+								[Local key(970):Int]
+								<
+								[Local imid(980):Int]
+						[Then:Int] [Binop:Int]
+							[Local max(974):Int]
+							=
+							[Local mid(979):Int]
+						[Else:Void] [If:Void]
+							[Parenthesis:Bool]
+								[Binop:Bool]
+									[Local key(970):Int]
+									>
+									[Local imid(980):Int]
+							[Then:Int] [Binop:Int]
+								[Local min(973):Int]
+								=
+								[Binop:Int]
+									[Local mid(979):Int]
+									+
+									[Const 1:Int]
+							[Else:Dynamic] [Block:Dynamic]
+								[Var field(981):String]
+									[Array:String]
+										[Local fld(972):cs.NativeArray<String>]
+										[Local mid(979):Int]
+								[If:Void]
+									[Parenthesis:Bool]
+										[Binop:Bool]
+											[Local field(981):String]
+											!=
+											[Local s(957):String]
+									[Then:Dynamic] [Return:Dynamic]
+										[Unop:Int]
+											~
+											Prefix
+											[Local key(970):Int]
+								[Return:Dynamic] [Local key(970):Int]
+			[Call:Dynamic]
+				[Local __lock__(1050):Dynamic]
+				[TypeExpr haxe.lang.FieldLookup:Class<cs.internal.FieldLookup>]
+				[Block:Int]
+					[If:Void]
+						[Parenthesis:Bool]
+							[Binop:Bool]
+								[Local len(975):Int]
+								!=
+								[Field:Int]
+									[TypeExpr haxe.lang.FieldLookup:Class<cs.internal.FieldLookup>]
+									[FStatic:Int]
+										haxe.lang.FieldLookup
+										length
+						[Then:Dynamic] [Return:Dynamic]
+							[Call:Int]
+								[Field:s : String -> Int]
+									[TypeExpr haxe.lang.FieldLookup:Class<cs.internal.FieldLookup>]
+									[FStatic:s : String -> Int]
+										haxe.lang.FieldLookup
+										hash
+								[Local s(957):String]
+					[Call:Void]
+						[Field:a : cs.Ref<cs.NativeArray<Int>> -> length : Int -> pos : Int -> x : Int -> Void]
+							[TypeExpr haxe.lang.FieldLookup:Class<cs.internal.FieldLookup>]
+							[FStatic:a : cs.Ref<cs.NativeArray<Int>> -> length : Int -> pos : Int -> x : Int -> Void]
+								haxe.lang.FieldLookup
+								insert
+						[Field:cs.NativeArray<Int>]
+							[TypeExpr haxe.lang.FieldLookup:Class<cs.internal.FieldLookup>]
+							[FStatic:cs.NativeArray<Int>]
+								haxe.lang.FieldLookup
+								fieldIds
+						[Field:Int]
+							[TypeExpr haxe.lang.FieldLookup:Class<cs.internal.FieldLookup>]
+							[FStatic:Int]
+								haxe.lang.FieldLookup
+								length
+						[Local min(973):Int]
+						[Local key(970):Int]
+					[Call:Void]
+						[Field:a : cs.Ref<cs.NativeArray<String>> -> length : Int -> pos : Int -> x : String -> Void]
+							[TypeExpr haxe.lang.FieldLookup:Class<cs.internal.FieldLookup>]
+							[FStatic:a : cs.Ref<cs.NativeArray<String>> -> length : Int -> pos : Int -> x : String -> Void]
+								haxe.lang.FieldLookup
+								insert
+						[Field:cs.NativeArray<String>]
+							[TypeExpr haxe.lang.FieldLookup:Class<cs.internal.FieldLookup>]
+							[FStatic:cs.NativeArray<String>]
+								haxe.lang.FieldLookup
+								fields
+						[Field:Int]
+							[TypeExpr haxe.lang.FieldLookup:Class<cs.internal.FieldLookup>]
+							[FStatic:Int]
+								haxe.lang.FieldLookup
+								length
+						[Local min(973):Int]
+						[Local s(957):String]
+					[Unop:Int]
+						++
+						Prefix
+						[Field:Int]
+							[TypeExpr haxe.lang.FieldLookup:Class<cs.internal.FieldLookup>]
+							[FStatic:Int]
+								haxe.lang.FieldLookup
+								length
+			[Return:Dynamic] [Local key(970):Int]
+
+	static public findHash(method) : hash : Int -> hashs : cs.NativeArray<Int> -> length : Int -> Int
+
+	 = [Function:hash : Int -> hashs : cs.NativeArray<Int> -> length : Int -> Int]
+		[Arg:Int] [Local hash(1155):Int]
+		[Arg:cs.NativeArray<Int>] [Local hashs(1156):cs.NativeArray<Int>]
+		[Arg:Int] [Local length(1157):Int]
+		[Block:Dynamic]
+			[Var min(1158):Int] [Const 0:Int]
+			[Var max(1159):Int] [Local length(1157):Int]
+			[While:Void]
+				[Parenthesis:Bool]
+					[Binop:Bool]
+						[Local min(1158):Int]
+						<
+						[Local max(1159):Int]
+				[Block:Void]
+					[Var mid(1163):Int]
+						[Cast:Int]
+							[Binop:Float]
+								[Parenthesis:Int]
+									[Binop:Int]
+										[Local max(1159):Int]
+										+
+										[Local min(1158):Int]
+								/
+								[Const 2:Int]
+					[Var imid(1164):Int]
+						[Array:Int]
+							[Local hashs(1156):cs.NativeArray<Int>]
+							[Local mid(1163):Int]
+					[If:Void]
+						[Parenthesis:Bool]
+							[Binop:Bool]
+								[Local hash(1155):Int]
+								<
+								[Local imid(1164):Int]
+						[Then:Int] [Binop:Int]
+							[Local max(1159):Int]
+							=
+							[Local mid(1163):Int]
+						[Else:Void] [If:Void]
+							[Parenthesis:Bool]
+								[Binop:Bool]
+									[Local hash(1155):Int]
+									>
+									[Local imid(1164):Int]
+							[Then:Int] [Binop:Int]
+								[Local min(1158):Int]
+								=
+								[Binop:Int]
+									[Local mid(1163):Int]
+									+
+									[Const 1:Int]
+							[Else:Dynamic] [Return:Dynamic] [Local mid(1163):Int]
+			[Return:Dynamic]
+				[Unop:Int]
+					~
+					Prefix
+					[Local min(1158):Int]
+
+	static remove<T : remove.T>(method) : a : cs.NativeArray<remove.T> -> length : Int -> pos : Int -> Void
+
+	 = [Function:a : cs.NativeArray<remove.T> -> length : Int -> pos : Int -> Void]
+		[Arg:cs.NativeArray<remove.T>] [Local a(1221):cs.NativeArray<remove.T>]
+		[Arg:Int] [Local length(1222):Int]
+		[Arg:Int] [Local pos(1223):Int]
+		[Block:remove.T]
+			[Call:Void]
+				[Field:sourceArray : System.Array -> sourceIndex : Int -> destinationArray : System.Array -> destinationIndex : Int -> length : Int -> Void]
+					[TypeExpr System.Array:Class<cs.system.Array>]
+					[FStatic:sourceArray : System.Array -> sourceIndex : Int -> destinationArray : System.Array -> destinationIndex : Int -> length : Int -> Void]
+						System.Array
+						Copy
+				[Local a(1221):cs.NativeArray<remove.T>]
+				[Binop:Int]
+					[Local pos(1223):Int]
+					+
+					[Const 1:Int]
+				[Local a(1221):cs.NativeArray<remove.T>]
+				[Local pos(1223):Int]
+				[Binop:Int]
+					[Binop:Int]
+						[Local length(1222):Int]
+						-
+						[Local pos(1223):Int]
+					-
+					[Const 1:Int]
+			[Binop:remove.T]
+				[Array:remove.T]
+					[Local a(1221):cs.NativeArray<remove.T>]
+					[Binop:Int]
+						[Local length(1222):Int]
+						-
+						[Const 1:Int]
+				=
+				[Const null:remove.T]
+
+	static insert<T : insert.T>(method) : a : cs.Ref<cs.NativeArray<insert.T>> -> length : Int -> pos : Int -> x : insert.T -> Void
+
+	 = [Function:a : cs.Ref<cs.NativeArray<insert.T>> -> length : Int -> pos : Int -> x : insert.T -> Void]
+		[Arg:cs.Ref<cs.NativeArray<insert.T>>] [Local a(985):cs.Ref<cs.NativeArray<insert.T>>]
+		[Arg:Int] [Local length(986):Int]
+		[Arg:Int] [Local pos(987):Int]
+		[Arg:insert.T] [Local x(988):insert.T]
+		[Block:insert.T]
+			[Var capacity(989):Int]
+				[Call:Int]
+					[Field:Void -> Int]
+						[Local a(985):cs.Ref<cs.NativeArray<insert.T>>]
+						[FInstance:Void -> Int]
+							System.Array
+							get_Length
+			[If:Void]
+				[Parenthesis:Bool]
+					[Binop:Bool]
+						[Local pos(987):Int]
+						==
+						[Local length(986):Int]
+				[Then:Void] [Block:Void]
+					[If:Void]
+						[Parenthesis:Bool]
+							[Binop:Bool]
+								[Local capacity(989):Int]
+								==
+								[Local length(986):Int]
+						[Then:cs.Ref<cs.NativeArray<insert.T>>] [Block:cs.Ref<cs.NativeArray<insert.T>>]
+							[Var newarr(990):cs.NativeArray<insert.T>]
+								[New:cs.NativeArray<insert.T>]
+									cs.NativeArray<insert.T>
+									[Binop:Int]
+										[Parenthesis:Int]
+											[Binop:Int]
+												[Local length(986):Int]
+												<<
+												[Const 1:Int]
+										+
+										[Const 1:Int]
+							[Call:Void]
+								[Field:array : System.Array -> index : Int -> Void]
+									[Local a(985):cs.Ref<cs.NativeArray<insert.T>>]
+									[FInstance:array : System.Array -> index : Int -> Void]
+										System.Array
+										CopyTo
+								[Local newarr(990):cs.NativeArray<insert.T>]
+								[Const 0:Int]
+							[Binop:cs.Ref<cs.NativeArray<insert.T>>]
+								[Local a(985):cs.Ref<cs.NativeArray<insert.T>>]
+								=
+								[Local newarr(990):cs.NativeArray<insert.T>]
+				[Else:Void] [If:Void]
+					[Parenthesis:Bool]
+						[Binop:Bool]
+							[Local pos(987):Int]
+							==
+							[Const 0:Int]
+					[Then:Void] [Block:Void]
+						[If:Void]
+							[Parenthesis:Bool]
+								[Binop:Bool]
+									[Local capacity(989):Int]
+									==
+									[Local length(986):Int]
+							[Then:cs.Ref<cs.NativeArray<insert.T>>] [Block:cs.Ref<cs.NativeArray<insert.T>>]
+								[Var newarr1(994):cs.NativeArray<insert.T>]
+									[New:cs.NativeArray<insert.T>]
+										cs.NativeArray<insert.T>
+										[Binop:Int]
+											[Parenthesis:Int]
+												[Binop:Int]
+													[Local length(986):Int]
+													<<
+													[Const 1:Int]
+											+
+											[Const 1:Int]
+								[Call:Void]
+									[Field:sourceArray : System.Array -> sourceIndex : Int -> destinationArray : System.Array -> destinationIndex : Int -> length : Int -> Void]
+										[TypeExpr System.Array:Class<cs.system.Array>]
+										[FStatic:sourceArray : System.Array -> sourceIndex : Int -> destinationArray : System.Array -> destinationIndex : Int -> length : Int -> Void]
+											System.Array
+											Copy
+									[Local a(985):cs.Ref<cs.NativeArray<insert.T>>]
+									[Const 0:Int]
+									[Local newarr1(994):cs.NativeArray<insert.T>]
+									[Const 1:Int]
+									[Local length(986):Int]
+								[Binop:cs.Ref<cs.NativeArray<insert.T>>]
+									[Local a(985):cs.Ref<cs.NativeArray<insert.T>>]
+									=
+									[Local newarr1(994):cs.NativeArray<insert.T>]
+							[Else:Void] [Call:Void]
+								[Field:sourceArray : System.Array -> sourceIndex : Int -> destinationArray : System.Array -> destinationIndex : Int -> length : Int -> Void]
+									[TypeExpr System.Array:Class<cs.system.Array>]
+									[FStatic:sourceArray : System.Array -> sourceIndex : Int -> destinationArray : System.Array -> destinationIndex : Int -> length : Int -> Void]
+										System.Array
+										Copy
+								[Local a(985):cs.Ref<cs.NativeArray<insert.T>>]
+								[Const 0:Int]
+								[Local a(985):cs.Ref<cs.NativeArray<insert.T>>]
+								[Const 1:Int]
+								[Local length(986):Int]
+					[Else:Void] [If:Void]
+						[Parenthesis:Bool]
+							[Binop:Bool]
+								[Local capacity(989):Int]
+								==
+								[Local length(986):Int]
+						[Then:cs.Ref<cs.NativeArray<insert.T>>] [Block:cs.Ref<cs.NativeArray<insert.T>>]
+							[Var newarr2(1013):cs.NativeArray<insert.T>]
+								[New:cs.NativeArray<insert.T>]
+									cs.NativeArray<insert.T>
+									[Binop:Int]
+										[Parenthesis:Int]
+											[Binop:Int]
+												[Local length(986):Int]
+												<<
+												[Const 1:Int]
+										+
+										[Const 1:Int]
+							[Call:Void]
+								[Field:sourceArray : System.Array -> sourceIndex : Int -> destinationArray : System.Array -> destinationIndex : Int -> length : Int -> Void]
+									[TypeExpr System.Array:Class<cs.system.Array>]
+									[FStatic:sourceArray : System.Array -> sourceIndex : Int -> destinationArray : System.Array -> destinationIndex : Int -> length : Int -> Void]
+										System.Array
+										Copy
+								[Local a(985):cs.Ref<cs.NativeArray<insert.T>>]
+								[Const 0:Int]
+								[Local newarr2(1013):cs.NativeArray<insert.T>]
+								[Const 0:Int]
+								[Local pos(987):Int]
+							[Call:Void]
+								[Field:sourceArray : System.Array -> sourceIndex : Int -> destinationArray : System.Array -> destinationIndex : Int -> length : Int -> Void]
+									[TypeExpr System.Array:Class<cs.system.Array>]
+									[FStatic:sourceArray : System.Array -> sourceIndex : Int -> destinationArray : System.Array -> destinationIndex : Int -> length : Int -> Void]
+										System.Array
+										Copy
+								[Local a(985):cs.Ref<cs.NativeArray<insert.T>>]
+								[Local pos(987):Int]
+								[Local newarr2(1013):cs.NativeArray<insert.T>]
+								[Binop:Int]
+									[Local pos(987):Int]
+									+
+									[Const 1:Int]
+								[Binop:Int]
+									[Local length(986):Int]
+									-
+									[Local pos(987):Int]
+							[Binop:cs.Ref<cs.NativeArray<insert.T>>]
+								[Local a(985):cs.Ref<cs.NativeArray<insert.T>>]
+								=
+								[Local newarr2(1013):cs.NativeArray<insert.T>]
+						[Else:Void] [Block:Void]
+							[Call:Void]
+								[Field:sourceArray : System.Array -> sourceIndex : Int -> destinationArray : System.Array -> destinationIndex : Int -> length : Int -> Void]
+									[TypeExpr System.Array:Class<cs.system.Array>]
+									[FStatic:sourceArray : System.Array -> sourceIndex : Int -> destinationArray : System.Array -> destinationIndex : Int -> length : Int -> Void]
+										System.Array
+										Copy
+								[Local a(985):cs.Ref<cs.NativeArray<insert.T>>]
+								[Local pos(987):Int]
+								[Local a(985):cs.Ref<cs.NativeArray<insert.T>>]
+								[Binop:Int]
+									[Local pos(987):Int]
+									+
+									[Const 1:Int]
+								[Binop:Int]
+									[Local length(986):Int]
+									-
+									[Local pos(987):Int]
+							[Call:Void]
+								[Field:sourceArray : System.Array -> sourceIndex : Int -> destinationArray : System.Array -> destinationIndex : Int -> length : Int -> Void]
+									[TypeExpr System.Array:Class<cs.system.Array>]
+									[FStatic:sourceArray : System.Array -> sourceIndex : Int -> destinationArray : System.Array -> destinationIndex : Int -> length : Int -> Void]
+										System.Array
+										Copy
+								[Local a(985):cs.Ref<cs.NativeArray<insert.T>>]
+								[Const 0:Int]
+								[Local a(985):cs.Ref<cs.NativeArray<insert.T>>]
+								[Const 0:Int]
+								[Local pos(987):Int]
+			[Binop:insert.T]
+				[Array:insert.T]
+					[Local a(985):cs.Ref<cs.NativeArray<insert.T>>]
+					[Local pos(987):Int]
+				=
+				[Local x(988):insert.T]
+
+
+
+	__init__ = [Binop:Int]
+		[Field:Int]
+			[TypeExpr haxe.lang.FieldLookup:Class<cs.internal.FieldLookup>]
+			[FStatic:Int]
+				haxe.lang.FieldLookup
+				length
+		=
+		[Call:Int]
+			[Field:Void -> Int]
+				[Field:cs.NativeArray<Int>]
+					[TypeExpr haxe.lang.FieldLookup:Class<cs.internal.FieldLookup>]
+					[FStatic:cs.NativeArray<Int>]
+						haxe.lang.FieldLookup
+						fieldIds
+				[FInstance:Void -> Int]
+					System.Array
+					get_Length}
+}

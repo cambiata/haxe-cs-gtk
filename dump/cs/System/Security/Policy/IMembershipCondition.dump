@@ -1,0 +1,16 @@
+extern interface System.Security.Policy.IMembershipCondition implements System.Security.ISecurityEncodable implements System.Security.ISecurityPolicyEncodable{
+	public ToXml(method) : Void -> System.Security.SecurityElement
+
+	public ToXml(method) : level : System.Security.Policy.PolicyLevel -> System.Security.SecurityElement
+
+	public FromXml(method) : e : System.Security.SecurityElement -> Void
+
+	public FromXml(method) : e : System.Security.SecurityElement -> level : System.Security.Policy.PolicyLevel -> Void
+
+	public Check(method) : evidence : System.Security.Policy.Evidence -> Bool
+
+	public Copy(method) : Void -> System.Security.Policy.IMembershipCondition
+
+	public ToString(method) : Void -> String
+
+}

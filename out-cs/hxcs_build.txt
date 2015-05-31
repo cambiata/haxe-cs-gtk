@@ -7,6 +7,7 @@ NET_35
 NET_40
 cs
 dce
+dump
 haxe3
 haxe_ver
 hxcpp_api_level
@@ -27,6 +28,7 @@ NET_35=1
 NET_40=1
 cs=1
 dce=std
+dump=1
 haxe3=1
 haxe_ver=3.2
 hxcpp_api_level=321
@@ -48,7 +50,6 @@ M gdk.Region
 M Std
 C Std
 M System.Collections.IDictionaryEnumerator
-M cairo.LineJoin
 M Gdk.DeviceAxis
 M atk.Role
 M System.Runtime.InteropServices._EventBuilder
@@ -60,7 +61,6 @@ M gdk.Cursor
 M gtk.WidgetFlags
 M pango.Alignment
 M GLib.SList
-M Cairo.FontFace
 M System.Runtime.InteropServices._Exception
 M haxe.extern.Rest
 M System.Collections.Generic.IEnumerable`1
@@ -95,7 +95,6 @@ M gtk.DisconnectProxyHandler
 M gtk.DragMotionHandler
 M gdk.WindowAttributesType
 M gtk.FocusedHandler
-M cairo.PatternType
 M cs.Ref
 M System.Runtime.InteropServices.SafeHandle
 M System.Reflection.Emit.PropertyBuilder
@@ -103,7 +102,6 @@ M System.Drawing.Imaging.ImageCodecInfo
 M cs.system.globalization.DateTimeStyles
 M gdk.GCValuesMask
 M gtk.RowHasChildToggledHandler
-M cairo.FontType
 M cs.system.threading.ContextCallback
 M System.Threading.HostExecutionContext
 M System.Security.Policy.TrustManagerContext
@@ -196,8 +194,6 @@ M System.UIntPtr
 M gtk.LeaveNotifyEventHandler
 M gdk.WMDecoration
 M gtk.NodeCellDataFunc
-M Cairo.Matrix
-M Cairo.Path
 M Gtk.RcStyle
 M Gtk.SelectAllArgs
 M System.Reflection.CustomAttributeNamedArgument
@@ -213,7 +209,6 @@ M cs.types.Int8
 M System.Reflection.Emit.GenericTypeParameterBuilder
 M System.Collections.Generic.IEnumerator`1
 M cs.types.UInt8
-M Cairo.ScaledFont
 M cs.system.io.TextReader
 M System.Int32
 M System.Reflection.StrongNameKeyPair
@@ -229,7 +224,6 @@ M System.ConsoleCancelEventArgs
 M gtk.ExposeEventHandler
 M System.Runtime.InteropServices._ParameterInfo
 M System.Security.Policy.IIdentityPermissionFactory
-M Cairo.PointD
 M Gtk.Object
 M cs.system.AppDomain
 M System.Drawing.Imaging.EncoderParameter
@@ -306,10 +300,10 @@ M Main
 C Main
 C Main_main_24__Fun
 C Main_main_31__Fun
-C Main_main_74__Fun
-C Main_main_81__Fun
-C Main_main_89__Fun
-C Main_main_103__Fun
+C Main_main_70__Fun
+C Main_main_77__Fun
+C Main_main_85__Fun
+C Main_main_99__Fun
 M pango.Direction
 M cs.system.CrossAppDomainDelegate
 M System.Globalization.CultureInfo
@@ -378,7 +372,6 @@ C _Array.ArrayIterator
 M Gdk.Rectangle
 M GLib.EnumWrapper
 M gtk.ConnectProxyHandler
-M Cairo.TextExtents
 M Gtk.ButtonReleaseEventArgs
 M gtk.StyleSetHandler
 M gdk.WindowEdge
@@ -444,7 +437,6 @@ M gdk.OverlapType
 M gtk.EditingStartedHandler
 M gtk.FrameEventHandler
 M Gdk.Pixdata
-M Cairo.Glyph
 M gtk.ClientEventHandler
 M gtk.ExpandCollapseCursorRowHandler
 M gtk.SelectCursorRowHandler
@@ -466,7 +458,6 @@ M cs.system.drawing.drawing2d.CoordinateSpace
 M gtk.TextBufferSerializeFunc
 M Gtk.MotionNotifyEventArgs
 M gtk.TreeViewRowSeparatorFunc
-M cairo.FontSlant
 M cs.system.collections.ArrayList
 M cs.system.security.accesscontrol.NativeObjectSecurity
 M haxe.Int64
@@ -498,7 +489,6 @@ M haxe.Constraints
 M gtk.GrabBrokenEventHandler
 M System.Drawing.StringFormat
 M System.Drawing.Imaging.PropertyItem
-M cairo.FillRule
 M Gtk.AccelKey
 M Gtk.ClientEventArgs
 M cs.system.StringSplitOptions
@@ -545,14 +535,11 @@ M cs.Lib
 C cs.Lib
 M gtk.TextTagTable
 M cs.system.Array
-M cairo.Content
 M System.Security.ISecurityEncodable
 M System.Security.Policy.StrongNameMembershipCondition
 M GLib.InitiallyUnowned
 M gdk.Key
 M System.Math
-M Cairo.Color
-M Gtk.DrawingArea
 M gtk.GrabNotifyHandler
 M Gtk.KeyPressEventArgs
 M Gtk.LeaveNotifyEventArgs
@@ -561,12 +548,10 @@ M pango.Coverage
 M System.Security.AccessControl.ObjectSecurity
 M gtk.PopupMenuHandler
 M cs.system.security.SecurityContextSource
-M cairo.FontWeight
 M glib.GInterfaceInitHandler
 M gtk.AccelChangedHandler
 M Math
 C Math
-M cairo.Context
 M cs.system.reflection.emit.StackBehaviour
 M Gtk.KeyReleaseEventArgs
 M cs.system.drawing.drawing2d.SmoothingMode
@@ -778,7 +763,6 @@ M System.TypedReference
 M System.Globalization.NumberFormatInfo
 M System.CharEnumerator
 M gtk.EditedHandler
-M Cairo.Point
 M gtk.NoExposeEventHandler
 M cs.system.drawing.text.HotkeyPrefix
 M System.Runtime.Remoting.ObjRef
@@ -797,7 +781,6 @@ M cs.system.threading.ThreadState
 M System.Reflection.PropertyInfo
 M gtk.Callback
 M System.Security.Policy.IBuiltInEvidence
-M Cairo.Rectangle
 M cs.internal.StringExt
 C haxe.lang.StringExt
 C haxe.lang.StringRefl
@@ -842,7 +825,6 @@ M pango.AttrFilterFunc
 M System.Security.SecurityState
 M cs.system.DateTimeKind
 M Gtk.MoveFocusArgs
-M cairo.Format
 M gtk.DeleteEventHandler
 M System.Runtime.InteropServices._Activator
 M gdk.RgbCmap
@@ -858,7 +840,6 @@ M Atk.Implementor
 M Gdk.Device
 M System.IntPtr
 M Gtk.PrefixInsertedArgs
-M cairo.SurfaceType
 M cairo.HintMetrics
 M System.Reflection.Emit.LocalBuilder
 M gdk.Fill
@@ -892,7 +873,6 @@ M System.Runtime.Remoting.IChannelInfo
 M gtk.Orientation
 M System.Runtime.Remoting.Contexts.IContextProperty
 M System.Runtime.Serialization.SerializationInfo
-M cairo.LineCap
 M Gtk.CellLayout
 M System.Runtime.InteropServices._AssemblyName
 M cs.internal.Null
@@ -923,7 +903,6 @@ M System.Security.IEvidenceFactory
 M Gtk.EnterNotifyEventArgs
 M gtk.TreePath
 M Pango.FontFamily
-M Cairo.Surface
 M Gdk.DeviceKey
 M cs.system.drawing.imaging.ColorAdjustType
 M gdk.WindowTypeHint
@@ -1060,7 +1039,6 @@ M gtk.TreeSelection
 M gtk.DragBeginHandler
 M gdk.ScrollDirection
 M gtk.DirectionChangedHandler
-M cairo.Operator
 M gtk.StateChangedHandler
 M System.Security.PermissionSet
 M gdk.ImageType
@@ -1080,10 +1058,8 @@ M gtk.ClipboardGetFunc
 M Gtk.ExposeEventArgs
 M System.Drawing.Imaging.EncoderParameters
 M gdk.ClosedHandler
-M Cairo.Distance
 M System.String
 M System.Reflection.MethodInfo
-M cairo.Extend
 M gdk.Screen
 M haxe.EnumTools
 M Gdk.Atom
@@ -1160,7 +1136,6 @@ M cs.system.runtime.interopservices.LayoutKind
 M System.Drawing.Imaging.ColorMatrix
 M gtk.SelectAllHandler
 M cs.system.runtime.serialization.StreamingContextStates
-M Cairo.Pattern
 M System.ApplicationIdentity
 M System.Runtime.InteropServices._Thread
 M Pango.Layout
@@ -1168,7 +1143,6 @@ M System.Drawing.Point
 M Gdk.Pixmap
 M Gtk.TreeDragSource
 M gtk.Window
-M Cairo.FontExtents
 M System.Int64
 M gdk.EventMask
 end modules

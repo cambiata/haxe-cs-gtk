@@ -1,0 +1,124 @@
+extern class System.Drawing.Image extends System.MarshalByRefObject implements System.Runtime.Serialization.ISerializable implements System.ICloneable implements System.IDisposable{
+	public PropertyItems((get,never)) : cs.NativeArray<System.Drawing.Imaging.PropertyItem>
+
+	public PropertyIdList((get,never)) : cs.NativeArray<Int>
+
+	public FrameDimensionsList((get,never)) : cs.NativeArray<System.Guid>
+
+	public Palette((get,set)) : System.Drawing.Imaging.ColorPalette
+
+	public PixelFormat((get,never)) : System.Drawing.Imaging.PixelFormat
+
+	public RawFormat((get,never)) : System.Drawing.Imaging.ImageFormat
+
+	public Flags((get,never)) : Int
+
+	public VerticalResolution((get,never)) : Single
+
+	public HorizontalResolution((get,never)) : Single
+
+	public Height((get,never)) : Int
+
+	public Width((get,never)) : Int
+
+	public Size((get,never)) : System.Drawing.Size
+
+	public PhysicalDimension((get,never)) : System.Drawing.SizeF
+
+	public Tag((get,set)) : Dynamic
+
+	get_Tag(method) : Void -> Dynamic
+
+	set_Tag(method) : value : Dynamic -> Dynamic
+
+	public Clone(method) : Void -> Dynamic
+
+	public Dispose(method) : Void -> Void
+
+	Dispose(method) : disposing : Bool -> Void
+
+	Finalize(method) : Void -> Void
+
+	public GetEncoderParameterList(method) : encoder : System.Guid -> System.Drawing.Imaging.EncoderParameters
+
+	public Save(method) : filename : String -> Void
+
+	public Save(method) : stream : System.IO.Stream -> encoder : System.Drawing.Imaging.ImageCodecInfo -> encoderParams : System.Drawing.Imaging.EncoderParameters -> Void
+
+	public Save(method) : stream : System.IO.Stream -> format : System.Drawing.Imaging.ImageFormat -> Void
+
+	public Save(method) : filename : String -> encoder : System.Drawing.Imaging.ImageCodecInfo -> encoderParams : System.Drawing.Imaging.EncoderParameters -> Void
+
+	public Save(method) : filename : String -> format : System.Drawing.Imaging.ImageFormat -> Void
+
+	public SaveAdd(method) : encoderParams : System.Drawing.Imaging.EncoderParameters -> Void
+
+	public SaveAdd(method) : image : System.Drawing.Image -> encoderParams : System.Drawing.Imaging.EncoderParameters -> Void
+
+	get_PhysicalDimension(method) : Void -> System.Drawing.SizeF
+
+	get_Size(method) : Void -> System.Drawing.Size
+
+	get_Width(method) : Void -> Int
+
+	get_Height(method) : Void -> Int
+
+	get_HorizontalResolution(method) : Void -> Single
+
+	get_VerticalResolution(method) : Void -> Single
+
+	get_Flags(method) : Void -> Int
+
+	get_RawFormat(method) : Void -> System.Drawing.Imaging.ImageFormat
+
+	get_PixelFormat(method) : Void -> System.Drawing.Imaging.PixelFormat
+
+	public GetBounds(method) : pageUnit : cs.Ref<System.Drawing.GraphicsUnit> -> System.Drawing.RectangleF
+
+	get_Palette(method) : Void -> System.Drawing.Imaging.ColorPalette
+
+	set_Palette(method) : value : System.Drawing.Imaging.ColorPalette -> System.Drawing.Imaging.ColorPalette
+
+	public GetThumbnailImage(method) : thumbWidth : Int -> thumbHeight : Int -> callback : cs.system.drawing.Image_GetThumbnailImageAbort -> callbackData : System.IntPtr -> System.Drawing.Image
+
+	get_FrameDimensionsList(method) : Void -> cs.NativeArray<System.Guid>
+
+	public GetFrameCount(method) : dimension : System.Drawing.Imaging.FrameDimension -> Int
+
+	public SelectActiveFrame(method) : dimension : System.Drawing.Imaging.FrameDimension -> frameIndex : Int -> Int
+
+	public RotateFlip(method) : rotateFlipType : System.Drawing.RotateFlipType -> Void
+
+	get_PropertyIdList(method) : Void -> cs.NativeArray<Int>
+
+	public GetPropertyItem(method) : propid : Int -> System.Drawing.Imaging.PropertyItem
+
+	public RemovePropertyItem(method) : propid : Int -> Void
+
+	public SetPropertyItem(method) : propitem : System.Drawing.Imaging.PropertyItem -> Void
+
+	get_PropertyItems(method) : Void -> cs.NativeArray<System.Drawing.Imaging.PropertyItem>
+
+	static public FromFile(method) : filename : String -> System.Drawing.Image
+
+	static public FromFile(method) : filename : String -> useEmbeddedColorManagement : Bool -> System.Drawing.Image
+
+	static public FromStream(method) : stream : System.IO.Stream -> System.Drawing.Image
+
+	static public FromStream(method) : stream : System.IO.Stream -> useEmbeddedColorManagement : Bool -> validateImageData : Bool -> System.Drawing.Image
+
+	static public FromStream(method) : stream : System.IO.Stream -> useEmbeddedColorManagement : Bool -> System.Drawing.Image
+
+	static public FromHbitmap(method) : hbitmap : System.IntPtr -> System.Drawing.Bitmap
+
+	static public FromHbitmap(method) : hbitmap : System.IntPtr -> hpalette : System.IntPtr -> System.Drawing.Bitmap
+
+	static public GetPixelFormatSize(method) : pixfmt : System.Drawing.Imaging.PixelFormat -> Int
+
+	static public IsAlphaPixelFormat(method) : pixfmt : System.Drawing.Imaging.PixelFormat -> Bool
+
+	static public IsExtendedPixelFormat(method) : pixfmt : System.Drawing.Imaging.PixelFormat -> Bool
+
+	static public IsCanonicalPixelFormat(method) : pixfmt : System.Drawing.Imaging.PixelFormat -> Bool
+
+}

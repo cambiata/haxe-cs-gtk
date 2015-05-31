@@ -1,0 +1,6 @@
+extern enum Gdk.InterpType {
+	Nearest : Gdk.InterpType;
+	Tiles : Gdk.InterpType;
+	Bilinear : Gdk.InterpType;
+	Hyper : Gdk.InterpType;
+}

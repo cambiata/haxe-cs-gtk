@@ -1,0 +1,6 @@
+extern interface GLib.IWrapper{
+	public Handle((get,never)) : System.IntPtr
+
+	get_Handle(method) : Void -> System.IntPtr
+
+}

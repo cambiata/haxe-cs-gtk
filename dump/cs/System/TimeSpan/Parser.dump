@@ -1,0 +1,22 @@
+extern class System.TimeSpan.Parser{
+	public new(method) : src : String -> Void
+
+	public new(method) : src : String -> formatProvider : System.IFormatProvider -> Void
+
+	public AtEnd((get,never)) : Bool
+
+	public UseColonAsDaySeparator(var) : Bool
+
+	public CultureSensitive(var) : Bool
+
+	public AllMembersRequired(var) : Bool
+
+	public Exact(var) : Bool
+
+	get_AtEnd(method) : Void -> Bool
+
+	public Execute(method) : tryParse : Bool -> result : cs.Out<System.TimeSpan> -> Bool
+
+	public ExecuteWithFormat(method) : format : String -> style : System.Globalization.TimeSpanStyles -> tryParse : Bool -> result : cs.Out<System.TimeSpan> -> Bool
+
+}

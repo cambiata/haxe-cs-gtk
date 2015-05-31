@@ -1,0 +1,62 @@
+extern class haxe.EnumValueTools{
+	static public equals<T : equals.T>(inline method) : a : equals.T -> b : equals.T -> Bool
+
+	 = [Function:a : equals.T -> b : equals.T -> Bool]
+		[Arg:equals.T] [Local a(1118):equals.T]
+		[Arg:equals.T] [Local b(1119):equals.T]
+		[Block:Dynamic]
+			[Return:Dynamic]
+				[Call:Bool]
+					[Field:a : equals.T -> b : equals.T -> Bool]
+						[TypeExpr Type:Class<Type>]
+						[FStatic:a : equals.T -> b : equals.T -> Bool]
+							Type
+							enumEq
+					[Local a(1118):equals.T]
+					[Local b(1119):equals.T]
+
+	static public getName(inline method) : e : EnumValue -> String
+
+	 = [Function:e : EnumValue -> String]
+		[Arg:EnumValue] [Local e(1122):EnumValue]
+		[Block:Dynamic]
+			[Return:Dynamic]
+				[Call:String]
+					[Field:e : EnumValue -> String]
+						[TypeExpr Type:Class<Type>]
+						[FStatic:e : EnumValue -> String]
+							Type
+							enumConstructor
+					[Local e(1122):EnumValue]
+
+	static public getParameters(inline method) : e : EnumValue -> Array<Dynamic>
+
+	 = [Function:e : EnumValue -> Array<Dynamic>]
+		[Arg:EnumValue] [Local e(1124):EnumValue]
+		[Block:Dynamic]
+			[Return:Dynamic]
+				[Call:Array<Dynamic>]
+					[Field:e : EnumValue -> Array<Dynamic>]
+						[TypeExpr Type:Class<Type>]
+						[FStatic:e : EnumValue -> Array<Dynamic>]
+							Type
+							enumParameters
+					[Local e(1124):EnumValue]
+
+	static public getIndex(inline method) : e : EnumValue -> Int
+
+	 = [Function:e : EnumValue -> Int]
+		[Arg:EnumValue] [Local e(1126):EnumValue]
+		[Block:Dynamic]
+			[Return:Dynamic]
+				[Call:Int]
+					[Field:e : EnumValue -> Int]
+						[TypeExpr Type:Class<Type>]
+						[FStatic:e : EnumValue -> Int]
+							Type
+							enumIndex
+					[Local e(1126):EnumValue]
+
+	static public match(method) : e : EnumValue -> pattern : Dynamic -> Bool
+
+}

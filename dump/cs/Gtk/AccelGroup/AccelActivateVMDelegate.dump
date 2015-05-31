@@ -1,0 +1,14 @@
+extern class Gtk.AccelGroup.AccelActivateVMDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : accel_group : System.IntPtr -> acceleratable : System.IntPtr -> keyval : UInt -> modifier : Int -> Bool
+
+	public BeginInvoke(method) : accel_group : System.IntPtr -> acceleratable : System.IntPtr -> keyval : UInt -> modifier : Int -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Bool
+
+	static public op_Addition(method) : arg1 : gtk.AccelGroup_AccelActivateVMDelegate -> arg2 : gtk.AccelGroup_AccelActivateVMDelegate -> gtk.AccelGroup_AccelActivateVMDelegate
+
+	static public op_Subtraction(method) : arg1 : gtk.AccelGroup_AccelActivateVMDelegate -> arg2 : gtk.AccelGroup_AccelActivateVMDelegate -> gtk.AccelGroup_AccelActivateVMDelegate
+
+}

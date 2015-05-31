@@ -1,0 +1,5 @@
+extern enum Gdk.OwnerChange {
+	NewOwner : Gdk.OwnerChange;
+	Destroy : Gdk.OwnerChange;
+	Close : Gdk.OwnerChange;
+}

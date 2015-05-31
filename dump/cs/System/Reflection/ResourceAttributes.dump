@@ -1,0 +1,4 @@
+extern enum System.Reflection.ResourceAttributes {
+	Public : System.Reflection.ResourceAttributes;
+	Private : System.Reflection.ResourceAttributes;
+}

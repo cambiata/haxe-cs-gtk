@@ -1,0 +1,5 @@
+extern enum System.UriKind {
+	RelativeOrAbsolute : System.UriKind;
+	Absolute : System.UriKind;
+	Relative : System.UriKind;
+}

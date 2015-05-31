@@ -1,0 +1,12 @@
+extern class System.MarshalByRefObject{
+	new(method) : Void -> Void
+
+	public CreateObjRef(method) : requestedType : System.Type -> System.Runtime.Remoting.ObjRef
+
+	public GetLifetimeService(method) : Void -> Dynamic
+
+	public InitializeLifetimeService(method) : Void -> Dynamic
+
+	MemberwiseClone(method) : cloneIdentity : Bool -> System.MarshalByRefObject
+
+}

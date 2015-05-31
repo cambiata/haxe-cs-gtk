@@ -1,0 +1,14 @@
+extern class System.IO.FileStream.WriteDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : buffer : cs.NativeArray<cs.types.UInt8> -> offset : Int -> count : Int -> Void
+
+	public BeginInvoke(method) : buffer : cs.NativeArray<cs.types.UInt8> -> offset : Int -> count : Int -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Void
+
+	static public op_Addition(method) : arg1 : cs.system.io.FileStream_WriteDelegate -> arg2 : cs.system.io.FileStream_WriteDelegate -> cs.system.io.FileStream_WriteDelegate
+
+	static public op_Subtraction(method) : arg1 : cs.system.io.FileStream_WriteDelegate -> arg2 : cs.system.io.FileStream_WriteDelegate -> cs.system.io.FileStream_WriteDelegate
+
+}

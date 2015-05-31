@@ -1,0 +1,9 @@
+extern enum Gdk.WMDecoration {
+	All : Gdk.WMDecoration;
+	Border : Gdk.WMDecoration;
+	Resizeh : Gdk.WMDecoration;
+	Title : Gdk.WMDecoration;
+	Menu : Gdk.WMDecoration;
+	Minimize : Gdk.WMDecoration;
+	Maximize : Gdk.WMDecoration;
+}

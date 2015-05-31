@@ -1,0 +1,6 @@
+extern class Microsoft.Win32.SafeHandles.SafeFileHandle extends Microsoft.Win32.SafeHandles.SafeHandleZeroOrMinusOneIsInvalid{
+	public new(method) : preexistingHandle : System.IntPtr -> ownsHandle : Bool -> Void
+
+	ReleaseHandle(method) : Void -> Bool
+
+}

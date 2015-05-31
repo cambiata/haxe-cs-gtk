@@ -1,0 +1,72 @@
+extern class Gtk.Dialog extends Gtk.Window{
+	new(method) : gtype : GLib.GType -> Void
+
+	public new(method) : title : String -> parent : Gtk.Window -> flags : Gtk.DialogFlags -> button_data : cs.NativeArray<Dynamic> -> Void
+
+	public new(method) : Void -> Void
+
+	public new(method) : raw : System.IntPtr -> Void
+
+	Response(var) : gtk.ResponseHandler
+
+	Close(var) : cs.system.EventHandler
+
+	public DefaultResponse((never,set)) : Gtk.ResponseType
+
+	public AlternativeButtonOrder((never,set)) : cs.NativeArray<Int>
+
+	public VBox((get,never)) : Gtk.VBox
+
+	public ActionArea((get,never)) : Gtk.HButtonBox
+
+	public HasSeparator((get,set)) : Bool
+
+	get_HasSeparator(method) : Void -> Bool
+
+	set_HasSeparator(method) : value : Bool -> Bool
+
+	get_ActionArea(method) : Void -> Gtk.HButtonBox
+
+	get_VBox(method) : Void -> Gtk.VBox
+
+	OnClose(method) : Void -> Void
+
+	public add_Close(method) : value : cs.system.EventHandler -> Void
+
+	public remove_Close(method) : value : cs.system.EventHandler -> Void
+
+	OnResponse(method) : response_id : Gtk.ResponseType -> Void
+
+	public add_Response(method) : value : gtk.ResponseHandler -> Void
+
+	public remove_Response(method) : value : gtk.ResponseHandler -> Void
+
+	public Run(method) : Void -> Int
+
+	public Respond(method) : response_id : Int -> Void
+
+	public Respond(method) : response : Gtk.ResponseType -> Void
+
+	public SetResponseSensitive(method) : response_id : Gtk.ResponseType -> setting : Bool -> Void
+
+	set_AlternativeButtonOrder(method) : value : cs.NativeArray<Int> -> cs.NativeArray<Int>
+
+	set_DefaultResponse(method) : value : Gtk.ResponseType -> Gtk.ResponseType
+
+	public AddButton(method) : button_text : String -> response_id : Int -> Gtk.Widget
+
+	public AddButton(method) : button_text : String -> response : Gtk.ResponseType -> Gtk.Widget
+
+	public AddActionWidget(method) : child : Gtk.Widget -> response_id : Int -> Void
+
+	public AddActionWidget(method) : child : Gtk.Widget -> response : Gtk.ResponseType -> Void
+
+	public GetResponseForWidget(method) : widget : Gtk.Widget -> Int
+
+	public SetAlternativeButtonOrderFromArray(method) : n_params : Int -> Int
+
+	static public GType((get,never)) : GLib.GType
+
+	static get_GType(method) : Void -> GLib.GType
+
+}

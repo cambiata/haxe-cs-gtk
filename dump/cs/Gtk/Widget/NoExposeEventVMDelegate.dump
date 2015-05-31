@@ -1,0 +1,14 @@
+extern class Gtk.Widget.NoExposeEventVMDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : widget : System.IntPtr -> evnt : System.IntPtr -> Bool
+
+	public BeginInvoke(method) : widget : System.IntPtr -> evnt : System.IntPtr -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Bool
+
+	static public op_Addition(method) : arg1 : gtk.Widget_NoExposeEventVMDelegate -> arg2 : gtk.Widget_NoExposeEventVMDelegate -> gtk.Widget_NoExposeEventVMDelegate
+
+	static public op_Subtraction(method) : arg1 : gtk.Widget_NoExposeEventVMDelegate -> arg2 : gtk.Widget_NoExposeEventVMDelegate -> gtk.Widget_NoExposeEventVMDelegate
+
+}

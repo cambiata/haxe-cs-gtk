@@ -1,0 +1,14 @@
+extern class Gtk.TextTagTable.TagRemovedVMDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : table : System.IntPtr -> tag : System.IntPtr -> Void
+
+	public BeginInvoke(method) : table : System.IntPtr -> tag : System.IntPtr -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Void
+
+	static public op_Addition(method) : arg1 : gtk.TextTagTable_TagRemovedVMDelegate -> arg2 : gtk.TextTagTable_TagRemovedVMDelegate -> gtk.TextTagTable_TagRemovedVMDelegate
+
+	static public op_Subtraction(method) : arg1 : gtk.TextTagTable_TagRemovedVMDelegate -> arg2 : gtk.TextTagTable_TagRemovedVMDelegate -> gtk.TextTagTable_TagRemovedVMDelegate
+
+}

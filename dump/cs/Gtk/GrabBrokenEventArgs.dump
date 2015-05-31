@@ -1,0 +1,8 @@
+extern class Gtk.GrabBrokenEventArgs extends GLib.SignalArgs{
+	public new(method) : Void -> Void
+
+	public Event((get,never)) : Gdk.EventGrabBroken
+
+	get_Event(method) : Void -> Gdk.EventGrabBroken
+
+}

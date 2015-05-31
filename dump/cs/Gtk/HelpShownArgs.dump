@@ -1,0 +1,8 @@
+extern class Gtk.HelpShownArgs extends GLib.SignalArgs{
+	public new(method) : Void -> Void
+
+	public HelpType((get,never)) : Gtk.WidgetHelpType
+
+	get_HelpType(method) : Void -> Gtk.WidgetHelpType
+
+}

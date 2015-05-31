@@ -1,0 +1,4 @@
+extern enum Gtk.WindowType {
+	Toplevel : Gtk.WindowType;
+	Popup : Gtk.WindowType;
+}

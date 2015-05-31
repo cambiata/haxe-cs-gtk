@@ -1,0 +1,20 @@
+extern class System.Security.HostSecurityManager{
+	public new(method) : Void -> Void
+
+	public Flags((get,never)) : System.Security.HostSecurityManagerOptions
+
+	public DomainPolicy((get,never)) : System.Security.Policy.PolicyLevel
+
+	get_DomainPolicy(method) : Void -> System.Security.Policy.PolicyLevel
+
+	get_Flags(method) : Void -> System.Security.HostSecurityManagerOptions
+
+	public DetermineApplicationTrust(method) : applicationEvidence : System.Security.Policy.Evidence -> activatorEvidence : System.Security.Policy.Evidence -> context : System.Security.Policy.TrustManagerContext -> System.Security.Policy.ApplicationTrust
+
+	public ProvideAppDomainEvidence(method) : inputEvidence : System.Security.Policy.Evidence -> System.Security.Policy.Evidence
+
+	public ProvideAssemblyEvidence(method) : loadedAssembly : System.Reflection.Assembly -> inputEvidence : System.Security.Policy.Evidence -> System.Security.Policy.Evidence
+
+	public ResolvePolicy(method) : evidence : System.Security.Policy.Evidence -> System.Security.PermissionSet
+
+}

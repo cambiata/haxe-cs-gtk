@@ -1,0 +1,8 @@
+extern class Gtk.PopulatePopupArgs extends GLib.SignalArgs{
+	public new(method) : Void -> Void
+
+	public Menu((get,never)) : Gtk.Menu
+
+	get_Menu(method) : Void -> Gtk.Menu
+
+}

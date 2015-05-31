@@ -1,0 +1,14 @@
+extern class System.Globalization.SortKey{
+	public KeyData((get,never)) : cs.NativeArray<cs.types.UInt8>
+
+	public OriginalString((get,never)) : String
+
+	get_OriginalString(method) : Void -> String
+
+	get_KeyData(method) : Void -> cs.NativeArray<cs.types.UInt8>
+
+	public ToString(method) : Void -> String
+
+	static public Compare(method) : sortkey1 : System.Globalization.SortKey -> sortkey2 : System.Globalization.SortKey -> Int
+
+}

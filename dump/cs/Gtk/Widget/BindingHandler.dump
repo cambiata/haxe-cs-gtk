@@ -1,0 +1,14 @@
+extern class Gtk.Widget.BindingHandler extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : handle : System.IntPtr -> user_data : System.IntPtr -> Void
+
+	public BeginInvoke(method) : handle : System.IntPtr -> user_data : System.IntPtr -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Void
+
+	static public op_Addition(method) : arg1 : gtk.Widget_BindingHandler -> arg2 : gtk.Widget_BindingHandler -> gtk.Widget_BindingHandler
+
+	static public op_Subtraction(method) : arg1 : gtk.Widget_BindingHandler -> arg2 : gtk.Widget_BindingHandler -> gtk.Widget_BindingHandler
+
+}

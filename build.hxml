@@ -1,9 +1,15 @@
--lib hxcs 
+
+-cs out
+
 -cp src 
 -cp lib 
--cs out
+
 -D net-ver=40 
+-D verbose
+-D dump
+
 -main Main 
+
 -net-lib pango-sharp.dll
 -net-lib atk-sharp.dll
 -net-lib gdk-sharp.dll
@@ -11,6 +17,5 @@
 -net-lib glib-sharp.dll
 -net-lib gtk-dotnet.dll
 -net-lib Mono.Cairo.dll
--net-lib Svg.dll
 -net-lib System.Drawing.dll@std
--net-lib System.Xml.dll@std
+

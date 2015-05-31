@@ -1,0 +1,20 @@
+extern class Gtk.NodeStore extends GLib.Object implements System.Collections.IEnumerable{
+	public new(method) : node_type : System.Type -> Void
+
+	public AddNode(method) : node : Gtk.ITreeNode -> Void
+
+	public AddNode(method) : node : Gtk.ITreeNode -> position : Int -> Void
+
+	public RemoveNode(method) : node : Gtk.ITreeNode -> Void
+
+	public Clear(method) : Void -> Void
+
+	public GetNode(method) : path : Gtk.TreePath -> Gtk.ITreeNode
+
+	public GetEnumerator(method) : Void -> System.Collections.IEnumerator
+
+	static public GType((get,never)) : GLib.GType
+
+	static get_GType(method) : Void -> GLib.GType
+
+}

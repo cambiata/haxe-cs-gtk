@@ -1,0 +1,11 @@
+extern enum System.Drawing.StringFormatFlags {
+	DirectionRightToLeft : System.Drawing.StringFormatFlags;
+	DirectionVertical : System.Drawing.StringFormatFlags;
+	FitBlackBox : System.Drawing.StringFormatFlags;
+	DisplayFormatControl : System.Drawing.StringFormatFlags;
+	NoFontFallback : System.Drawing.StringFormatFlags;
+	MeasureTrailingSpaces : System.Drawing.StringFormatFlags;
+	NoWrap : System.Drawing.StringFormatFlags;
+	LineLimit : System.Drawing.StringFormatFlags;
+	NoClip : System.Drawing.StringFormatFlags;
+}

@@ -1,0 +1,8 @@
+extern class Gtk.TagAddedArgs extends GLib.SignalArgs{
+	public new(method) : Void -> Void
+
+	public Tag((get,never)) : Gtk.TextTag
+
+	get_Tag(method) : Void -> Gtk.TextTag
+
+}

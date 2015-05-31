@@ -1,0 +1,4 @@
+extern interface System.Collections.Generic.IEnumerable`1<T0 : cs.system.collections.generic.IEnumerable_1.T0> implements System.Collections.IEnumerable{
+	public GetEnumerator(method) : Void -> System.Collections.Generic.IEnumerator`1<cs.system.collections.generic.IEnumerable_1.T0>
+
+}

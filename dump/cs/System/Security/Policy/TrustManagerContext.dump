@@ -1,0 +1,42 @@
+extern class System.Security.Policy.TrustManagerContext{
+	public new(method) : Void -> Void
+
+	public new(method) : uiContext : System.Security.Policy.TrustManagerUIContext -> Void
+
+	public UIContext((get,set)) : System.Security.Policy.TrustManagerUIContext
+
+	public PreviousApplicationIdentity((get,set)) : System.ApplicationIdentity
+
+	public Persist((get,set)) : Bool
+
+	public NoPrompt((get,set)) : Bool
+
+	public KeepAlive((get,set)) : Bool
+
+	public IgnorePersistedDecision((get,set)) : Bool
+
+	get_IgnorePersistedDecision(method) : Void -> Bool
+
+	set_IgnorePersistedDecision(method) : value : Bool -> Bool
+
+	get_KeepAlive(method) : Void -> Bool
+
+	set_KeepAlive(method) : value : Bool -> Bool
+
+	get_NoPrompt(method) : Void -> Bool
+
+	set_NoPrompt(method) : value : Bool -> Bool
+
+	get_Persist(method) : Void -> Bool
+
+	set_Persist(method) : value : Bool -> Bool
+
+	get_PreviousApplicationIdentity(method) : Void -> System.ApplicationIdentity
+
+	set_PreviousApplicationIdentity(method) : value : System.ApplicationIdentity -> System.ApplicationIdentity
+
+	get_UIContext(method) : Void -> System.Security.Policy.TrustManagerUIContext
+
+	set_UIContext(method) : value : System.Security.Policy.TrustManagerUIContext -> System.Security.Policy.TrustManagerUIContext
+
+}

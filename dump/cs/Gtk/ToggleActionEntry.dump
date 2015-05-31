@@ -1,0 +1,24 @@
+extern class Gtk.ToggleActionEntry extends System.ValueType{
+	public new(method) : name : String -> stock_id : String -> Void
+
+	public new(method) : name : String -> stock_id : String -> label : String -> accelerator : String -> tooltip : String -> activated : cs.system.EventHandler -> active : Bool -> Void
+
+	public new(method) : name : String -> stock_id : String -> activated : cs.system.EventHandler -> active : Bool -> Void
+
+	public new(method) : name : String -> stock_id : String -> activated : cs.system.EventHandler -> Void
+
+	public active(var) : Bool
+
+	public activated(var) : cs.system.EventHandler
+
+	public accelerator(var) : String
+
+	public tooltip(var) : String
+
+	public label(var) : String
+
+	public stock_id(var) : String
+
+	public name(var) : String
+
+}

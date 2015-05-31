@@ -1,0 +1,56 @@
+extern class Gtk.MessageDialog extends Gtk.Dialog{
+	new(method) : gtype : GLib.GType -> Void
+
+	public new(method) : parent_window : Gtk.Window -> flags : Gtk.DialogFlags -> type : Gtk.MessageType -> bt : Gtk.ButtonsType -> format : String -> args : cs.NativeArray<Dynamic> -> Void
+
+	public new(method) : parent_window : Gtk.Window -> flags : Gtk.DialogFlags -> type : Gtk.MessageType -> bt : Gtk.ButtonsType -> use_markup : Bool -> format : String -> args : cs.NativeArray<Dynamic> -> Void
+
+	new(method) : Void -> Void
+
+	public new(method) : raw : System.IntPtr -> Void
+
+	public Markup((never,set)) : String
+
+	public SecondaryText((get,set)) : String
+
+	public Text((get,set)) : String
+
+	public SecondaryUseMarkup((get,set)) : Bool
+
+	public UseMarkup((get,set)) : Bool
+
+	public MessageType((get,set)) : Gtk.MessageType
+
+	public Image((get,set)) : Gtk.Widget
+
+	get_Image(method) : Void -> Gtk.Widget
+
+	set_Image(method) : value : Gtk.Widget -> Gtk.Widget
+
+	get_MessageType(method) : Void -> Gtk.MessageType
+
+	set_MessageType(method) : value : Gtk.MessageType -> Gtk.MessageType
+
+	get_UseMarkup(method) : Void -> Bool
+
+	set_UseMarkup(method) : value : Bool -> Bool
+
+	get_SecondaryUseMarkup(method) : Void -> Bool
+
+	set_SecondaryUseMarkup(method) : value : Bool -> Bool
+
+	get_Text(method) : Void -> String
+
+	set_Text(method) : value : String -> String
+
+	get_SecondaryText(method) : Void -> String
+
+	set_SecondaryText(method) : value : String -> String
+
+	set_Markup(method) : value : String -> String
+
+	static public GType((get,never)) : GLib.GType
+
+	static get_GType(method) : Void -> GLib.GType
+
+}

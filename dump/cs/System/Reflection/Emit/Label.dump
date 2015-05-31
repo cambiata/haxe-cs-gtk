@@ -1,0 +1,6 @@
+extern class System.Reflection.Emit.Label extends System.ValueType{
+	static public op_Equality(method) : a : System.Reflection.Emit.Label -> b : System.Reflection.Emit.Label -> Bool
+
+	static public op_Inequality(method) : a : System.Reflection.Emit.Label -> b : System.Reflection.Emit.Label -> Bool
+
+}

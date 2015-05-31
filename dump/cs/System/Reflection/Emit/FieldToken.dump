@@ -1,0 +1,12 @@
+extern class System.Reflection.Emit.FieldToken extends System.ValueType{
+	public Token((get,never)) : Int
+
+	get_Token(method) : Void -> Int
+
+	static public Empty((default,never)) : System.Reflection.Emit.FieldToken
+
+	static public op_Equality(method) : a : System.Reflection.Emit.FieldToken -> b : System.Reflection.Emit.FieldToken -> Bool
+
+	static public op_Inequality(method) : a : System.Reflection.Emit.FieldToken -> b : System.Reflection.Emit.FieldToken -> Bool
+
+}

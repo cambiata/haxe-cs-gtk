@@ -1,0 +1,38 @@
+extern class Gtk.RcStyle extends GLib.Object{
+	new(method) : gtype : GLib.GType -> Void
+
+	public new(method) : Void -> Void
+
+	public new(method) : raw : System.IntPtr -> Void
+
+	public Ythickness((get,set)) : Int
+
+	public FontDesc((get,set)) : Pango.FontDescription
+
+	public Xthickness((get,set)) : Int
+
+	public Name((get,set)) : String
+
+	get_Name(method) : Void -> String
+
+	set_Name(method) : value : String -> String
+
+	get_Xthickness(method) : Void -> Int
+
+	set_Xthickness(method) : value : Int -> Int
+
+	get_FontDesc(method) : Void -> Pango.FontDescription
+
+	set_FontDesc(method) : value : Pango.FontDescription -> Pango.FontDescription
+
+	get_Ythickness(method) : Void -> Int
+
+	set_Ythickness(method) : value : Int -> Int
+
+	public Copy(method) : Void -> Gtk.RcStyle
+
+	static public GType((get,never)) : GLib.GType
+
+	static get_GType(method) : Void -> GLib.GType
+
+}

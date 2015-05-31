@@ -1,0 +1,32 @@
+extern class System.Int32 extends System.ValueType implements System.IComparable implements System.IConvertible implements System.IFormattable implements System.IComparable`1<Int> implements System.IEquatable`1<Int>{
+	public CompareTo(method) : value : Dynamic -> Int
+
+	public CompareTo(method) : value : Int -> Int
+
+	public ToString(method) : Void -> String
+
+	public ToString(method) : format : String -> provider : System.IFormatProvider -> String
+
+	public ToString(method) : format : String -> String
+
+	public ToString(method) : provider : System.IFormatProvider -> String
+
+	public GetTypeCode(method) : Void -> System.TypeCode
+
+	static public MinValue((default,never)) : Int
+
+	static public MaxValue((default,never)) : Int
+
+	static public Parse(method) : s : String -> provider : System.IFormatProvider -> Int
+
+	static public Parse(method) : s : String -> style : System.Globalization.NumberStyles -> provider : System.IFormatProvider -> Int
+
+	static public Parse(method) : s : String -> Int
+
+	static public Parse(method) : s : String -> style : System.Globalization.NumberStyles -> Int
+
+	static public TryParse(method) : s : String -> result : cs.Out<Int> -> Bool
+
+	static public TryParse(method) : s : String -> style : System.Globalization.NumberStyles -> provider : System.IFormatProvider -> result : cs.Out<Int> -> Bool
+
+}

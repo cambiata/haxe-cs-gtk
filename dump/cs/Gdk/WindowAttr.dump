@@ -1,0 +1,72 @@
+extern class Gdk.WindowAttr extends System.ValueType{
+	public cursor((get,set)) : Gdk.Cursor
+
+	public colormap((get,set)) : Gdk.Colormap
+
+	public visual((get,set)) : Gdk.Visual
+
+	public Mask((get,set)) : Gdk.EventMask
+
+	public Cursor((get,set)) : Gdk.Cursor
+
+	public Colormap((get,set)) : Gdk.Colormap
+
+	public Visual((get,set)) : Gdk.Visual
+
+	public TypeHint(var) : Gdk.WindowTypeHint
+
+	public OverrideRedirect(var) : Bool
+
+	public WmclassClass(var) : String
+
+	public WmclassName(var) : String
+
+	public WindowType(var) : Gdk.WindowType
+
+	public Wclass(var) : Gdk.WindowClass
+
+	public Height(var) : Int
+
+	public Width(var) : Int
+
+	public Y(var) : Int
+
+	public X(var) : Int
+
+	public EventMask(var) : Int
+
+	public Title(var) : String
+
+	get_Visual(method) : Void -> Gdk.Visual
+
+	set_Visual(method) : value : Gdk.Visual -> Gdk.Visual
+
+	get_Colormap(method) : Void -> Gdk.Colormap
+
+	set_Colormap(method) : value : Gdk.Colormap -> Gdk.Colormap
+
+	get_Cursor(method) : Void -> Gdk.Cursor
+
+	set_Cursor(method) : value : Gdk.Cursor -> Gdk.Cursor
+
+	get_Mask(method) : Void -> Gdk.EventMask
+
+	set_Mask(method) : value : Gdk.EventMask -> Gdk.EventMask
+
+	get_visual(method) : Void -> Gdk.Visual
+
+	set_visual(method) : value : Gdk.Visual -> Gdk.Visual
+
+	get_colormap(method) : Void -> Gdk.Colormap
+
+	set_colormap(method) : value : Gdk.Colormap -> Gdk.Colormap
+
+	get_cursor(method) : Void -> Gdk.Cursor
+
+	set_cursor(method) : value : Gdk.Cursor -> Gdk.Cursor
+
+	static public Zero(var) : Gdk.WindowAttr
+
+	static public New(method) : raw : System.IntPtr -> Gdk.WindowAttr
+
+}

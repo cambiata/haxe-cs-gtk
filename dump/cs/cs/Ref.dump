@@ -1,0 +1,1 @@
+type cs.Ref<T : cs.Ref.T> = cs.Ref.T

@@ -1,0 +1,11 @@
+extern enum Pango.Stretch {
+	UltraCondensed : Pango.Stretch;
+	ExtraCondensed : Pango.Stretch;
+	Condensed : Pango.Stretch;
+	SemiCondensed : Pango.Stretch;
+	Normal : Pango.Stretch;
+	SemiExpanded : Pango.Stretch;
+	Expanded : Pango.Stretch;
+	ExtraExpanded : Pango.Stretch;
+	UltraExpanded : Pango.Stretch;
+}

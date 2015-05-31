@@ -1,0 +1,36 @@
+extern class Gdk.EventScroll extends Gdk.Event{
+	public new(method) : raw : System.IntPtr -> Void
+
+	public Device((get,never)) : Gdk.Device
+
+	public Direction((get,never)) : Gdk.ScrollDirection
+
+	public YRoot((get,never)) : Float
+
+	public XRoot((get,never)) : Float
+
+	public Y((get,never)) : Float
+
+	public X((get,never)) : Float
+
+	public State((get,never)) : Gdk.ModifierType
+
+	public Time((get,never)) : UInt
+
+	get_Time(method) : Void -> UInt
+
+	get_State(method) : Void -> Gdk.ModifierType
+
+	get_X(method) : Void -> Float
+
+	get_Y(method) : Void -> Float
+
+	get_XRoot(method) : Void -> Float
+
+	get_YRoot(method) : Void -> Float
+
+	get_Direction(method) : Void -> Gdk.ScrollDirection
+
+	get_Device(method) : Void -> Gdk.Device
+
+}

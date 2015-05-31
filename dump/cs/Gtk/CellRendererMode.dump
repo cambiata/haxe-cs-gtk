@@ -1,0 +1,5 @@
+extern enum Gtk.CellRendererMode {
+	Inert : Gtk.CellRendererMode;
+	Activatable : Gtk.CellRendererMode;
+	Editable : Gtk.CellRendererMode;
+}

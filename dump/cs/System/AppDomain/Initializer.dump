@@ -1,0 +1,6 @@
+extern class System.AppDomain.Initializer{
+	public new(method) : initializer : cs.system.AppDomainInitializer -> arguments : cs.NativeArray<String> -> Void
+
+	public Initialize(method) : Void -> Void
+
+}

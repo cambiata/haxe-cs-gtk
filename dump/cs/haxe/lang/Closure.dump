@@ -1,0 +1,138 @@
+class haxe.lang.Closure extends haxe.lang.VarArgsBase{
+	public new(method) : obj : Dynamic -> field : String -> hash : Int -> Void
+
+	 = [Function:obj : Dynamic -> field : String -> hash : Int -> Void]
+		[Arg:Dynamic] [Local obj(738):Dynamic]
+		[Arg:String] [Local field(739):String]
+		[Arg:Int] [Local hash(740):Int]
+		[Block:Int]
+			[Call:Void]
+				[Const super:haxe.lang.VarArgsBase]
+				[Const -1:Int]
+				[Const -1:Int]
+			[Binop:Dynamic]
+				[Field:Dynamic]
+					[Const this:haxe.lang.Closure]
+					[FInstance:Dynamic]
+						haxe.lang.Closure
+						obj
+				=
+				[Local obj(738):Dynamic]
+			[Binop:String]
+				[Field:String]
+					[Const this:haxe.lang.Closure]
+					[FInstance:String]
+						haxe.lang.Closure
+						field
+				=
+				[Local field(739):String]
+			[Binop:Int]
+				[Field:Int]
+					[Const this:haxe.lang.Closure]
+					[FInstance:Int]
+						haxe.lang.Closure
+						hash
+				=
+				[Local hash(740):Int]
+
+	obj(var) : Dynamic
+
+	field(var) : String
+
+	hash(var) : Int
+
+	public __hx_invokeDynamic(method) : dynArgs : Array<Dynamic> -> Dynamic
+
+	 = [Function:dynArgs : Array<Dynamic> -> Dynamic]
+		[Arg:Array<Dynamic>] [Local dynArgs(1235):Array<Dynamic>]
+		[Block:Dynamic]
+			[Return:Dynamic]
+				[Call:Dynamic]
+					[Field:obj : Dynamic -> field : String -> fieldHash : Int -> args : Array<Dynamic> -> Dynamic]
+						[TypeExpr haxe.lang.Runtime:Class<cs.internal.Runtime>]
+						[FStatic:obj : Dynamic -> field : String -> fieldHash : Int -> args : Array<Dynamic> -> Dynamic]
+							haxe.lang.Runtime
+							callField
+					[Field:Dynamic]
+						[Const this:haxe.lang.Closure]
+						[FInstance:Dynamic]
+							haxe.lang.Closure
+							obj
+					[Field:String]
+						[Const this:haxe.lang.Closure]
+						[FInstance:String]
+							haxe.lang.Closure
+							field
+					[Field:Int]
+						[Const this:haxe.lang.Closure]
+						[FInstance:Int]
+							haxe.lang.Closure
+							hash
+					[Local dynArgs(1235):Array<Dynamic>]
+
+	public Equals(method) : obj : Dynamic -> Bool
+
+	 = [Function:obj : Dynamic -> Bool]
+		[Arg:Dynamic] [Local obj(1246):Dynamic]
+		[Block:Dynamic]
+			[If:Void]
+				[Parenthesis:Bool]
+					[Binop:Bool]
+						[Local obj(1246):Dynamic]
+						==
+						[Const null:Unknown<51>]
+				[Then:Dynamic] [Return:Dynamic] [Const false:Bool]
+			[Var c(1247):haxe.lang.Closure] [Cast:haxe.lang.Closure] [Local obj(1246):Dynamic]
+			[Return:Dynamic]
+				[Binop:Bool]
+					[Binop:Bool]
+						[Field:Dynamic]
+							[Local c(1247):haxe.lang.Closure]
+							[FInstance:Dynamic]
+								haxe.lang.Closure
+								obj
+						==
+						[Field:Dynamic]
+							[Const this:haxe.lang.Closure]
+							[FInstance:Dynamic]
+								haxe.lang.Closure
+								obj
+					&&
+					[Binop:Bool]
+						[Field:String]
+							[Local c(1247):haxe.lang.Closure]
+							[FInstance:String]
+								haxe.lang.Closure
+								field
+						==
+						[Field:String]
+							[Const this:haxe.lang.Closure]
+							[FInstance:String]
+								haxe.lang.Closure
+								field
+
+	public GetHashCode(method) : Void -> Int
+
+	 = [Function:Void -> Int]
+		[Block:Dynamic]
+			[Return:Dynamic]
+				[Binop:Int]
+					[Call:Dynamic]
+						[Field:Dynamic]
+							[Field:Dynamic]
+								[Const this:haxe.lang.Closure]
+								[FInstance:Dynamic]
+									haxe.lang.Closure
+									obj
+							[FDynamic:Dynamic] GetHashCode
+					^
+					[Call:Int]
+						[Field:Void -> Unknown<52>]
+							[Field:String]
+								[Const this:haxe.lang.Closure]
+								[FInstance:String]
+									haxe.lang.Closure
+									field
+							[FDynamic:Void -> Unknown<52>] GetHashCode
+
+}

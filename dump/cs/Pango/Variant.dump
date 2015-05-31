@@ -1,0 +1,4 @@
+extern enum Pango.Variant {
+	Normal : Pango.Variant;
+	SmallCaps : Pango.Variant;
+}

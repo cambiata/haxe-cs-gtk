@@ -1,0 +1,5 @@
+extern enum System.Runtime.InteropServices.LayoutKind {
+	Sequential : System.Runtime.InteropServices.LayoutKind;
+	Explicit : System.Runtime.InteropServices.LayoutKind;
+	Auto : System.Runtime.InteropServices.LayoutKind;
+}

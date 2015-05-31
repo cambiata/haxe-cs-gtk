@@ -1,0 +1,10 @@
+extern enum System.Reflection.GenericParameterAttributes {
+	None : System.Reflection.GenericParameterAttributes;
+	Covariant : System.Reflection.GenericParameterAttributes;
+	Contravariant : System.Reflection.GenericParameterAttributes;
+	VarianceMask : System.Reflection.GenericParameterAttributes;
+	ReferenceTypeConstraint : System.Reflection.GenericParameterAttributes;
+	NotNullableValueTypeConstraint : System.Reflection.GenericParameterAttributes;
+	DefaultConstructorConstraint : System.Reflection.GenericParameterAttributes;
+	SpecialConstraintMask : System.Reflection.GenericParameterAttributes;
+}

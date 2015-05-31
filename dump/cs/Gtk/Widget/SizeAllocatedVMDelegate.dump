@@ -1,0 +1,14 @@
+extern class Gtk.Widget.SizeAllocatedVMDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : widget : System.IntPtr -> allocation : System.IntPtr -> Void
+
+	public BeginInvoke(method) : widget : System.IntPtr -> allocation : System.IntPtr -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Void
+
+	static public op_Addition(method) : arg1 : gtk.Widget_SizeAllocatedVMDelegate -> arg2 : gtk.Widget_SizeAllocatedVMDelegate -> gtk.Widget_SizeAllocatedVMDelegate
+
+	static public op_Subtraction(method) : arg1 : gtk.Widget_SizeAllocatedVMDelegate -> arg2 : gtk.Widget_SizeAllocatedVMDelegate -> gtk.Widget_SizeAllocatedVMDelegate
+
+}

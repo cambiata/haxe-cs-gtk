@@ -1,0 +1,4 @@
+extern enum Gdk.FontType {
+	Font : Gdk.FontType;
+	Fontset : Gdk.FontType;
+}

@@ -1,0 +1,12 @@
+extern class Gtk.MoveCursorArgs extends GLib.SignalArgs{
+	public new(method) : Void -> Void
+
+	public Count((get,never)) : Int
+
+	public Step((get,never)) : Gtk.MovementStep
+
+	get_Step(method) : Void -> Gtk.MovementStep
+
+	get_Count(method) : Void -> Int
+
+}

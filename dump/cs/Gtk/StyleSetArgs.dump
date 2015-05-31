@@ -1,0 +1,8 @@
+extern class Gtk.StyleSetArgs extends GLib.SignalArgs{
+	public new(method) : Void -> Void
+
+	public PreviousStyle((get,never)) : Gtk.Style
+
+	get_PreviousStyle(method) : Void -> Gtk.Style
+
+}

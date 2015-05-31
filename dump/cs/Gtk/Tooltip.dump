@@ -1,0 +1,34 @@
+extern class Gtk.Tooltip extends GLib.Object{
+	public new(method) : raw : System.IntPtr -> Void
+
+	new(method) : Void -> Void
+
+	public Icon((never,set)) : Gdk.Pixbuf
+
+	public Custom((never,set)) : Gtk.Widget
+
+	public Markup((never,set)) : String
+
+	public TipArea((never,set)) : Gdk.Rectangle
+
+	public Text((never,set)) : String
+
+	set_Text(method) : value : String -> String
+
+	public SetIconFromStock(method) : stock_id : String -> size : Gtk.IconSize -> Void
+
+	set_TipArea(method) : value : Gdk.Rectangle -> Gdk.Rectangle
+
+	set_Markup(method) : value : String -> String
+
+	set_Custom(method) : value : Gtk.Widget -> Gtk.Widget
+
+	set_Icon(method) : value : Gdk.Pixbuf -> Gdk.Pixbuf
+
+	static public GType((get,never)) : GLib.GType
+
+	static public TriggerTooltipQuery(method) : display : Gdk.Display -> Void
+
+	static get_GType(method) : Void -> GLib.GType
+
+}

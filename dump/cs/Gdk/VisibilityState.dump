@@ -1,0 +1,5 @@
+extern enum Gdk.VisibilityState {
+	Unobscured : Gdk.VisibilityState;
+	Partial : Gdk.VisibilityState;
+	FullyObscured : Gdk.VisibilityState;
+}

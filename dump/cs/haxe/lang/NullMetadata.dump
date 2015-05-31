@@ -1,0 +1,2 @@
+private class haxe.lang.NullMetadata<T : cs.internal._Null.NullMetadata.T>{
+}

@@ -1,0 +1,10 @@
+extern class System.Threading.HostExecutionContextManager{
+	public new(method) : Void -> Void
+
+	public Capture(method) : Void -> System.Threading.HostExecutionContext
+
+	public Revert(method) : previousState : Dynamic -> Void
+
+	public SetHostExecutionContext(method) : hostExecutionContext : System.Threading.HostExecutionContext -> Dynamic
+
+}

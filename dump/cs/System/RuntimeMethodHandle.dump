@@ -1,0 +1,14 @@
+extern class System.RuntimeMethodHandle extends System.ValueType implements System.Runtime.Serialization.ISerializable{
+	public Value((get,never)) : System.IntPtr
+
+	get_Value(method) : Void -> System.IntPtr
+
+	public GetObjectData(method) : info : System.Runtime.Serialization.SerializationInfo -> context : System.Runtime.Serialization.StreamingContext -> Void
+
+	public GetFunctionPointer(method) : Void -> System.IntPtr
+
+	static public op_Equality(method) : left : System.RuntimeMethodHandle -> right : System.RuntimeMethodHandle -> Bool
+
+	static public op_Inequality(method) : left : System.RuntimeMethodHandle -> right : System.RuntimeMethodHandle -> Bool
+
+}

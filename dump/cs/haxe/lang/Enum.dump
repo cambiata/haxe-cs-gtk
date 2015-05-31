@@ -1,0 +1,38 @@
+class haxe.lang.Enum{
+	public new(method) : index : Int -> Void
+
+	 = [Function:index : Int -> Void]
+		[Arg:Int] [Local index(2066):Int]
+		[Block:Unknown<55>]
+			[Binop:Unknown<55>]
+				[Field:Int]
+					[Const this:haxe.lang.Enum]
+					[FInstance:Int]
+						haxe.lang.Enum
+						index
+				=
+				[Local index(2066):Int]
+
+	index((default,never)) : Int
+
+	public getTag(method) : Void -> String
+
+	 = [Function:Void -> String] [Block:Dynamic] [Throw:String] [Const "Not Implemented":String]
+
+	public getParams(method) : Void -> Array<{ }>
+
+	 = [Function:Void -> Array<{ }>] [Block:Dynamic] [Return:Dynamic] [ArrayDecl:Array<{ }>]
+
+	public toString(method) : Void -> String
+
+	 = [Function:Void -> String]
+		[Block:Dynamic]
+			[Return:Dynamic]
+				[Call:String]
+					[Field:Void -> String]
+						[Const this:haxe.lang.Enum]
+						[FInstance:Void -> String]
+							haxe.lang.Enum
+							getTag
+
+}

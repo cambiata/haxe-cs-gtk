@@ -1,0 +1,14 @@
+extern class Atk.Object.RefChildDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : raw : System.IntPtr -> i : Int -> System.IntPtr
+
+	public BeginInvoke(method) : raw : System.IntPtr -> i : Int -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> System.IntPtr
+
+	static public op_Addition(method) : arg1 : atk.Object_RefChildDelegate -> arg2 : atk.Object_RefChildDelegate -> atk.Object_RefChildDelegate
+
+	static public op_Subtraction(method) : arg1 : atk.Object_RefChildDelegate -> arg2 : atk.Object_RefChildDelegate -> atk.Object_RefChildDelegate
+
+}

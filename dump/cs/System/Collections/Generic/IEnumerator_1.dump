@@ -1,0 +1,12 @@
+extern interface System.Collections.Generic.IEnumerator`1<T0 : cs.system.collections.generic.IEnumerator_1.T0> implements System.IDisposable implements System.Collections.IEnumerator{
+	public Current((get,never)) : cs.system.collections.generic.IEnumerator_1.T0
+
+	public Dispose(method) : Void -> Void
+
+	public Reset(method) : Void -> Void
+
+	public MoveNext(method) : Void -> Bool
+
+	get_Current(method) : Void -> cs.system.collections.generic.IEnumerator_1.T0
+
+}

@@ -1,0 +1,14 @@
+extern class Gtk.Entry.ClipboardCopiedVMDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : entry : System.IntPtr -> Void
+
+	public BeginInvoke(method) : entry : System.IntPtr -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Void
+
+	static public op_Addition(method) : arg1 : gtk.Entry_ClipboardCopiedVMDelegate -> arg2 : gtk.Entry_ClipboardCopiedVMDelegate -> gtk.Entry_ClipboardCopiedVMDelegate
+
+	static public op_Subtraction(method) : arg1 : gtk.Entry_ClipboardCopiedVMDelegate -> arg2 : gtk.Entry_ClipboardCopiedVMDelegate -> gtk.Entry_ClipboardCopiedVMDelegate
+
+}

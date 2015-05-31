@@ -1,0 +1,98 @@
+extern class Pango.FontDescription extends GLib.Opaque{
+	public new(method) : raw : System.IntPtr -> Void
+
+	public new(method) : Void -> Void
+
+	public SizeIsAbsolute((get,never)) : Bool
+
+	public Gravity((get,set)) : Pango.Gravity
+
+	public SetFields((get,never)) : Pango.FontMask
+
+	public Hash((get,never)) : UInt
+
+	public FamilyStatic((never,set)) : String
+
+	public Size((get,set)) : Int
+
+	public Weight((get,set)) : Pango.Weight
+
+	public Stretch((get,set)) : Pango.Stretch
+
+	public Variant((get,set)) : Pango.Variant
+
+	public Style((get,set)) : Pango.Style
+
+	public Family((get,set)) : String
+
+	public AbsoluteSize((never,set)) : Float
+
+	public Merge(method) : desc_to_merge : Pango.FontDescription -> replace_existing : Bool -> Void
+
+	public Equal(method) : desc2 : Pango.FontDescription -> Bool
+
+	set_AbsoluteSize(method) : value : Float -> Float
+
+	get_Family(method) : Void -> String
+
+	set_Family(method) : value : String -> String
+
+	get_Style(method) : Void -> Pango.Style
+
+	set_Style(method) : value : Pango.Style -> Pango.Style
+
+	get_Variant(method) : Void -> Pango.Variant
+
+	set_Variant(method) : value : Pango.Variant -> Pango.Variant
+
+	public CopyStatic(method) : Void -> Pango.FontDescription
+
+	public Copy(method) : Void -> Pango.FontDescription
+
+	get_Stretch(method) : Void -> Pango.Stretch
+
+	set_Stretch(method) : value : Pango.Stretch -> Pango.Stretch
+
+	get_Weight(method) : Void -> Pango.Weight
+
+	set_Weight(method) : value : Pango.Weight -> Pango.Weight
+
+	public MergeStatic(method) : desc_to_merge : Pango.FontDescription -> replace_existing : Bool -> Void
+
+	public ToFilename(method) : Void -> String
+
+	get_Size(method) : Void -> Int
+
+	set_Size(method) : value : Int -> Int
+
+	public BetterMatch(method) : old_match : Pango.FontDescription -> new_match : Pango.FontDescription -> Bool
+
+	set_FamilyStatic(method) : value : String -> String
+
+	get_Hash(method) : Void -> UInt
+
+	get_SetFields(method) : Void -> Pango.FontMask
+
+	public ToString(method) : Void -> String
+
+	get_Gravity(method) : Void -> Pango.Gravity
+
+	set_Gravity(method) : value : Pango.Gravity -> Pango.Gravity
+
+	get_SizeIsAbsolute(method) : Void -> Bool
+
+	public UnsetFields(method) : to_unset : Pango.FontMask -> Void
+
+	Free(method) : raw : System.IntPtr -> Void
+
+	public Free(method) : Void -> Void
+
+	Finalize(method) : Void -> Void
+
+	static public GType((get,never)) : GLib.GType
+
+	static public FromString(method) : str : String -> Pango.FontDescription
+
+	static get_GType(method) : Void -> GLib.GType
+
+}

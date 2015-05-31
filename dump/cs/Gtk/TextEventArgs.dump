@@ -1,0 +1,16 @@
+extern class Gtk.TextEventArgs extends GLib.SignalArgs{
+	public new(method) : Void -> Void
+
+	public Iter((get,never)) : Gtk.TextIter
+
+	public Event((get,never)) : Gdk.Event
+
+	public EventObject((get,never)) : GLib.Object
+
+	get_EventObject(method) : Void -> GLib.Object
+
+	get_Event(method) : Void -> Gdk.Event
+
+	get_Iter(method) : Void -> Gtk.TextIter
+
+}

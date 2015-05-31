@@ -1,0 +1,11 @@
+extern enum System.Security.Permissions.SecurityAction {
+	Demand : System.Security.Permissions.SecurityAction;
+	Assert : System.Security.Permissions.SecurityAction;
+	Deny : System.Security.Permissions.SecurityAction;
+	PermitOnly : System.Security.Permissions.SecurityAction;
+	LinkDemand : System.Security.Permissions.SecurityAction;
+	InheritanceDemand : System.Security.Permissions.SecurityAction;
+	RequestMinimum : System.Security.Permissions.SecurityAction;
+	RequestOptional : System.Security.Permissions.SecurityAction;
+	RequestRefuse : System.Security.Permissions.SecurityAction;
+}

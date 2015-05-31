@@ -1,0 +1,298 @@
+extern class System.AppDomain extends System.MarshalByRefObject implements System._AppDomain implements System.Security.IEvidenceFactory{
+	ReflectionOnlyAssemblyResolve(var) : cs.system.ResolveEventHandler
+
+	UnhandledException(var) : cs.system.UnhandledExceptionEventHandler
+
+	TypeResolve(var) : cs.system.ResolveEventHandler
+
+	ResourceResolve(var) : cs.system.ResolveEventHandler
+
+	ProcessExit(var) : cs.system.EventHandler
+
+	DomainUnload(var) : cs.system.EventHandler
+
+	AssemblyResolve(var) : cs.system.ResolveEventHandler
+
+	AssemblyLoad(var) : cs.system.AssemblyLoadEventHandler
+
+	public MonitoringTotalProcessorTime((get,never)) : System.TimeSpan
+
+	public MonitoringTotalAllocatedMemorySize((get,never)) : haxe.Int64
+
+	public MonitoringSurvivedMemorySize((get,never)) : haxe.Int64
+
+	public Id((get,never)) : Int
+
+	public ApplicationIdentity((get,never)) : System.ApplicationIdentity
+
+	public ActivationContext((get,never)) : System.ActivationContext
+
+	public DomainManager((get,never)) : System.AppDomainManager
+
+	public IsFullyTrusted((get,never)) : Bool
+
+	public IsHomogenous((get,never)) : Bool
+
+	public PermissionSet((get,never)) : System.Security.PermissionSet
+
+	public Evidence((get,never)) : System.Security.Policy.Evidence
+
+	public FriendlyName((get,never)) : String
+
+	public ShadowCopyFiles((get,never)) : Bool
+
+	public DynamicDirectory((get,never)) : String
+
+	public RelativeSearchPath((get,never)) : String
+
+	public BaseDirectory((get,never)) : String
+
+	public ApplicationTrust((get,never)) : System.Security.Policy.ApplicationTrust
+
+	public SetupInformation((get,never)) : System.AppDomainSetup
+
+	public add_AssemblyLoad(method) : value : cs.system.AssemblyLoadEventHandler -> Void
+
+	public remove_AssemblyLoad(method) : value : cs.system.AssemblyLoadEventHandler -> Void
+
+	public add_AssemblyResolve(method) : value : cs.system.ResolveEventHandler -> Void
+
+	public remove_AssemblyResolve(method) : value : cs.system.ResolveEventHandler -> Void
+
+	public add_DomainUnload(method) : value : cs.system.EventHandler -> Void
+
+	public remove_DomainUnload(method) : value : cs.system.EventHandler -> Void
+
+	public add_ProcessExit(method) : value : cs.system.EventHandler -> Void
+
+	public remove_ProcessExit(method) : value : cs.system.EventHandler -> Void
+
+	public add_ResourceResolve(method) : value : cs.system.ResolveEventHandler -> Void
+
+	public remove_ResourceResolve(method) : value : cs.system.ResolveEventHandler -> Void
+
+	public add_TypeResolve(method) : value : cs.system.ResolveEventHandler -> Void
+
+	public remove_TypeResolve(method) : value : cs.system.ResolveEventHandler -> Void
+
+	public add_UnhandledException(method) : value : cs.system.UnhandledExceptionEventHandler -> Void
+
+	public remove_UnhandledException(method) : value : cs.system.UnhandledExceptionEventHandler -> Void
+
+	public add_ReflectionOnlyAssemblyResolve(method) : value : cs.system.ResolveEventHandler -> Void
+
+	public remove_ReflectionOnlyAssemblyResolve(method) : value : cs.system.ResolveEventHandler -> Void
+
+	get_SetupInformation(method) : Void -> System.AppDomainSetup
+
+	get_ApplicationTrust(method) : Void -> System.Security.Policy.ApplicationTrust
+
+	get_BaseDirectory(method) : Void -> String
+
+	get_RelativeSearchPath(method) : Void -> String
+
+	get_DynamicDirectory(method) : Void -> String
+
+	get_ShadowCopyFiles(method) : Void -> Bool
+
+	get_FriendlyName(method) : Void -> String
+
+	get_Evidence(method) : Void -> System.Security.Policy.Evidence
+
+	get_PermissionSet(method) : Void -> System.Security.PermissionSet
+
+	public AppendPrivatePath(method) : path : String -> Void
+
+	public ClearPrivatePath(method) : Void -> Void
+
+	public ClearShadowCopyPath(method) : Void -> Void
+
+	public CreateComInstanceFrom(method) : assemblyName : String -> typeName : String -> System.Runtime.Remoting.ObjectHandle
+
+	public CreateComInstanceFrom(method) : assemblyFile : String -> typeName : String -> hashValue : cs.NativeArray<cs.types.UInt8> -> hashAlgorithm : System.Configuration.Assemblies.AssemblyHashAlgorithm -> System.Runtime.Remoting.ObjectHandle
+
+	public CreateInstance(method) : assemblyName : String -> typeName : String -> System.Runtime.Remoting.ObjectHandle
+
+	public CreateInstance(method) : assemblyName : String -> typeName : String -> ignoreCase : Bool -> bindingAttr : System.Reflection.BindingFlags -> binder : System.Reflection.Binder -> args : cs.NativeArray<Dynamic> -> culture : System.Globalization.CultureInfo -> activationAttributes : cs.NativeArray<Dynamic> -> System.Runtime.Remoting.ObjectHandle
+
+	public CreateInstance(method) : assemblyName : String -> typeName : String -> ignoreCase : Bool -> bindingAttr : System.Reflection.BindingFlags -> binder : System.Reflection.Binder -> args : cs.NativeArray<Dynamic> -> culture : System.Globalization.CultureInfo -> activationAttributes : cs.NativeArray<Dynamic> -> securityAttributes : System.Security.Policy.Evidence -> System.Runtime.Remoting.ObjectHandle
+
+	public CreateInstance(method) : assemblyName : String -> typeName : String -> activationAttributes : cs.NativeArray<Dynamic> -> System.Runtime.Remoting.ObjectHandle
+
+	public CreateInstanceAndUnwrap(method) : assemblyName : String -> typeName : String -> Dynamic
+
+	public CreateInstanceAndUnwrap(method) : assemblyName : String -> typeName : String -> ignoreCase : Bool -> bindingAttr : System.Reflection.BindingFlags -> binder : System.Reflection.Binder -> args : cs.NativeArray<Dynamic> -> culture : System.Globalization.CultureInfo -> activationAttributes : cs.NativeArray<Dynamic> -> Dynamic
+
+	public CreateInstanceAndUnwrap(method) : assemblyName : String -> typeName : String -> ignoreCase : Bool -> bindingAttr : System.Reflection.BindingFlags -> binder : System.Reflection.Binder -> args : cs.NativeArray<Dynamic> -> culture : System.Globalization.CultureInfo -> activationAttributes : cs.NativeArray<Dynamic> -> securityAttributes : System.Security.Policy.Evidence -> Dynamic
+
+	public CreateInstanceAndUnwrap(method) : assemblyName : String -> typeName : String -> activationAttributes : cs.NativeArray<Dynamic> -> Dynamic
+
+	public CreateInstanceFrom(method) : assemblyFile : String -> typeName : String -> ignoreCase : Bool -> bindingAttr : System.Reflection.BindingFlags -> binder : System.Reflection.Binder -> args : cs.NativeArray<Dynamic> -> culture : System.Globalization.CultureInfo -> activationAttributes : cs.NativeArray<Dynamic> -> System.Runtime.Remoting.ObjectHandle
+
+	public CreateInstanceFrom(method) : assemblyFile : String -> typeName : String -> ignoreCase : Bool -> bindingAttr : System.Reflection.BindingFlags -> binder : System.Reflection.Binder -> args : cs.NativeArray<Dynamic> -> culture : System.Globalization.CultureInfo -> activationAttributes : cs.NativeArray<Dynamic> -> securityAttributes : System.Security.Policy.Evidence -> System.Runtime.Remoting.ObjectHandle
+
+	public CreateInstanceFrom(method) : assemblyFile : String -> typeName : String -> activationAttributes : cs.NativeArray<Dynamic> -> System.Runtime.Remoting.ObjectHandle
+
+	public CreateInstanceFrom(method) : assemblyFile : String -> typeName : String -> System.Runtime.Remoting.ObjectHandle
+
+	public CreateInstanceFromAndUnwrap(method) : assemblyFile : String -> typeName : String -> ignoreCase : Bool -> bindingAttr : System.Reflection.BindingFlags -> binder : System.Reflection.Binder -> args : cs.NativeArray<Dynamic> -> culture : System.Globalization.CultureInfo -> activationAttributes : cs.NativeArray<Dynamic> -> Dynamic
+
+	public CreateInstanceFromAndUnwrap(method) : assemblyName : String -> typeName : String -> ignoreCase : Bool -> bindingAttr : System.Reflection.BindingFlags -> binder : System.Reflection.Binder -> args : cs.NativeArray<Dynamic> -> culture : System.Globalization.CultureInfo -> activationAttributes : cs.NativeArray<Dynamic> -> securityAttributes : System.Security.Policy.Evidence -> Dynamic
+
+	public CreateInstanceFromAndUnwrap(method) : assemblyName : String -> typeName : String -> activationAttributes : cs.NativeArray<Dynamic> -> Dynamic
+
+	public CreateInstanceFromAndUnwrap(method) : assemblyName : String -> typeName : String -> Dynamic
+
+	public DefineDynamicAssembly(method) : name : System.Reflection.AssemblyName -> access : System.Reflection.Emit.AssemblyBuilderAccess -> System.Reflection.Emit.AssemblyBuilder
+
+	public DefineDynamicAssembly(method) : name : System.Reflection.AssemblyName -> access : System.Reflection.Emit.AssemblyBuilderAccess -> assemblyAttributes : System.Collections.Generic.IEnumerable`1<System.Reflection.Emit.CustomAttributeBuilder> -> securityContextSource : System.Security.SecurityContextSource -> System.Reflection.Emit.AssemblyBuilder
+
+	public DefineDynamicAssembly(method) : name : System.Reflection.AssemblyName -> access : System.Reflection.Emit.AssemblyBuilderAccess -> dir : String -> isSynchronized : Bool -> assemblyAttributes : System.Collections.Generic.IEnumerable`1<System.Reflection.Emit.CustomAttributeBuilder> -> System.Reflection.Emit.AssemblyBuilder
+
+	public DefineDynamicAssembly(method) : name : System.Reflection.AssemblyName -> access : System.Reflection.Emit.AssemblyBuilderAccess -> assemblyAttributes : System.Collections.Generic.IEnumerable`1<System.Reflection.Emit.CustomAttributeBuilder> -> System.Reflection.Emit.AssemblyBuilder
+
+	public DefineDynamicAssembly(method) : name : System.Reflection.AssemblyName -> access : System.Reflection.Emit.AssemblyBuilderAccess -> dir : String -> evidence : System.Security.Policy.Evidence -> requiredPermissions : System.Security.PermissionSet -> optionalPermissions : System.Security.PermissionSet -> refusedPermissions : System.Security.PermissionSet -> isSynchronized : Bool -> assemblyAttributes : System.Collections.Generic.IEnumerable`1<System.Reflection.Emit.CustomAttributeBuilder> -> System.Reflection.Emit.AssemblyBuilder
+
+	public DefineDynamicAssembly(method) : name : System.Reflection.AssemblyName -> access : System.Reflection.Emit.AssemblyBuilderAccess -> dir : String -> evidence : System.Security.Policy.Evidence -> requiredPermissions : System.Security.PermissionSet -> optionalPermissions : System.Security.PermissionSet -> refusedPermissions : System.Security.PermissionSet -> isSynchronized : Bool -> System.Reflection.Emit.AssemblyBuilder
+
+	public DefineDynamicAssembly(method) : name : System.Reflection.AssemblyName -> access : System.Reflection.Emit.AssemblyBuilderAccess -> dir : String -> evidence : System.Security.Policy.Evidence -> requiredPermissions : System.Security.PermissionSet -> optionalPermissions : System.Security.PermissionSet -> refusedPermissions : System.Security.PermissionSet -> System.Reflection.Emit.AssemblyBuilder
+
+	public DefineDynamicAssembly(method) : name : System.Reflection.AssemblyName -> access : System.Reflection.Emit.AssemblyBuilderAccess -> dir : String -> requiredPermissions : System.Security.PermissionSet -> optionalPermissions : System.Security.PermissionSet -> refusedPermissions : System.Security.PermissionSet -> System.Reflection.Emit.AssemblyBuilder
+
+	public DefineDynamicAssembly(method) : name : System.Reflection.AssemblyName -> access : System.Reflection.Emit.AssemblyBuilderAccess -> evidence : System.Security.Policy.Evidence -> requiredPermissions : System.Security.PermissionSet -> optionalPermissions : System.Security.PermissionSet -> refusedPermissions : System.Security.PermissionSet -> System.Reflection.Emit.AssemblyBuilder
+
+	public DefineDynamicAssembly(method) : name : System.Reflection.AssemblyName -> access : System.Reflection.Emit.AssemblyBuilderAccess -> requiredPermissions : System.Security.PermissionSet -> optionalPermissions : System.Security.PermissionSet -> refusedPermissions : System.Security.PermissionSet -> System.Reflection.Emit.AssemblyBuilder
+
+	public DefineDynamicAssembly(method) : name : System.Reflection.AssemblyName -> access : System.Reflection.Emit.AssemblyBuilderAccess -> dir : String -> evidence : System.Security.Policy.Evidence -> System.Reflection.Emit.AssemblyBuilder
+
+	public DefineDynamicAssembly(method) : name : System.Reflection.AssemblyName -> access : System.Reflection.Emit.AssemblyBuilderAccess -> dir : String -> System.Reflection.Emit.AssemblyBuilder
+
+	public DefineDynamicAssembly(method) : name : System.Reflection.AssemblyName -> access : System.Reflection.Emit.AssemblyBuilderAccess -> evidence : System.Security.Policy.Evidence -> System.Reflection.Emit.AssemblyBuilder
+
+	public DoCallBack(method) : callBackDelegate : cs.system.CrossAppDomainDelegate -> Void
+
+	public ExecuteAssembly(method) : assemblyFile : String -> Int
+
+	public ExecuteAssembly(method) : assemblyFile : String -> args : cs.NativeArray<String> -> hashValue : cs.NativeArray<cs.types.UInt8> -> hashAlgorithm : System.Configuration.Assemblies.AssemblyHashAlgorithm -> Int
+
+	public ExecuteAssembly(method) : assemblyFile : String -> args : cs.NativeArray<String> -> Int
+
+	public ExecuteAssembly(method) : assemblyFile : String -> assemblySecurity : System.Security.Policy.Evidence -> args : cs.NativeArray<String> -> hashValue : cs.NativeArray<cs.types.UInt8> -> hashAlgorithm : System.Configuration.Assemblies.AssemblyHashAlgorithm -> Int
+
+	public ExecuteAssembly(method) : assemblyFile : String -> assemblySecurity : System.Security.Policy.Evidence -> args : cs.NativeArray<String> -> Int
+
+	public ExecuteAssembly(method) : assemblyFile : String -> assemblySecurity : System.Security.Policy.Evidence -> Int
+
+	public GetAssemblies(method) : Void -> cs.NativeArray<System.Reflection.Assembly>
+
+	public GetData(method) : name : String -> Dynamic
+
+	public GetType(method) : Void -> System.Type
+
+	public InitializeLifetimeService(method) : Void -> Dynamic
+
+	public Load(method) : assemblyRef : System.Reflection.AssemblyName -> System.Reflection.Assembly
+
+	public Load(method) : rawAssembly : cs.NativeArray<cs.types.UInt8> -> rawSymbolStore : cs.NativeArray<cs.types.UInt8> -> securityEvidence : System.Security.Policy.Evidence -> System.Reflection.Assembly
+
+	public Load(method) : rawAssembly : cs.NativeArray<cs.types.UInt8> -> rawSymbolStore : cs.NativeArray<cs.types.UInt8> -> System.Reflection.Assembly
+
+	public Load(method) : rawAssembly : cs.NativeArray<cs.types.UInt8> -> System.Reflection.Assembly
+
+	public Load(method) : assemblyString : String -> assemblySecurity : System.Security.Policy.Evidence -> System.Reflection.Assembly
+
+	public Load(method) : assemblyString : String -> System.Reflection.Assembly
+
+	public Load(method) : assemblyRef : System.Reflection.AssemblyName -> assemblySecurity : System.Security.Policy.Evidence -> System.Reflection.Assembly
+
+	public SetAppDomainPolicy(method) : domainPolicy : System.Security.Policy.PolicyLevel -> Void
+
+	public SetCachePath(method) : path : String -> Void
+
+	public SetPrincipalPolicy(method) : policy : System.Security.Principal.PrincipalPolicy -> Void
+
+	public SetShadowCopyFiles(method) : Void -> Void
+
+	public SetShadowCopyPath(method) : path : String -> Void
+
+	public SetThreadPrincipal(method) : principal : System.Security.Principal.IPrincipal -> Void
+
+	public IsFinalizingForUnload(method) : Void -> Bool
+
+	public SetData(method) : name : String -> data : Dynamic -> Void
+
+	public SetData(method) : name : String -> data : Dynamic -> permission : System.Security.IPermission -> Void
+
+	public SetDynamicBase(method) : path : String -> Void
+
+	public ToString(method) : Void -> String
+
+	get_IsHomogenous(method) : Void -> Bool
+
+	get_IsFullyTrusted(method) : Void -> Bool
+
+	get_DomainManager(method) : Void -> System.AppDomainManager
+
+	get_ActivationContext(method) : Void -> System.ActivationContext
+
+	get_ApplicationIdentity(method) : Void -> System.ApplicationIdentity
+
+	get_Id(method) : Void -> Int
+
+	public ApplyPolicy(method) : assemblyName : String -> String
+
+	public ExecuteAssemblyByName(method) : assemblyName : String -> Int
+
+	public ExecuteAssemblyByName(method) : assemblyName : System.Reflection.AssemblyName -> args : cs.NativeArray<String> -> Int
+
+	public ExecuteAssemblyByName(method) : assemblyName : String -> args : cs.NativeArray<String> -> Int
+
+	public ExecuteAssemblyByName(method) : assemblyName : System.Reflection.AssemblyName -> assemblySecurity : System.Security.Policy.Evidence -> args : cs.NativeArray<String> -> Int
+
+	public ExecuteAssemblyByName(method) : assemblyName : String -> assemblySecurity : System.Security.Policy.Evidence -> args : cs.NativeArray<String> -> Int
+
+	public ExecuteAssemblyByName(method) : assemblyName : String -> assemblySecurity : System.Security.Policy.Evidence -> Int
+
+	public IsDefaultAppDomain(method) : Void -> Bool
+
+	public ReflectionOnlyGetAssemblies(method) : Void -> cs.NativeArray<System.Reflection.Assembly>
+
+	public IsCompatibilitySwitchSet(method) : value : String -> System.Nullable`1<Bool>
+
+	get_MonitoringSurvivedMemorySize(method) : Void -> haxe.Int64
+
+	get_MonitoringTotalAllocatedMemorySize(method) : Void -> haxe.Int64
+
+	get_MonitoringTotalProcessorTime(method) : Void -> System.TimeSpan
+
+	static public MonitoringSurvivedProcessMemorySize((get,never)) : haxe.Int64
+
+	static public MonitoringIsEnabled((get,set)) : Bool
+
+	static public CurrentDomain((get,never)) : System.AppDomain
+
+	static get_CurrentDomain(method) : Void -> System.AppDomain
+
+	static public CreateDomain(method) : friendlyName : String -> System.AppDomain
+
+	static public CreateDomain(method) : friendlyName : String -> securityInfo : System.Security.Policy.Evidence -> appBasePath : String -> appRelativeSearchPath : String -> shadowCopyFiles : Bool -> adInit : cs.system.AppDomainInitializer -> adInitArgs : cs.NativeArray<String> -> System.AppDomain
+
+	static public CreateDomain(method) : friendlyName : String -> securityInfo : System.Security.Policy.Evidence -> info : System.AppDomainSetup -> grantSet : System.Security.PermissionSet -> fullTrustAssemblies : cs.NativeArray<System.Security.Policy.StrongName> -> System.AppDomain
+
+	static public CreateDomain(method) : friendlyName : String -> securityInfo : System.Security.Policy.Evidence -> appBasePath : String -> appRelativeSearchPath : String -> shadowCopyFiles : Bool -> System.AppDomain
+
+	static public CreateDomain(method) : friendlyName : String -> securityInfo : System.Security.Policy.Evidence -> info : System.AppDomainSetup -> System.AppDomain
+
+	static public CreateDomain(method) : friendlyName : String -> securityInfo : System.Security.Policy.Evidence -> System.AppDomain
+
+	static public Unload(method) : domain : System.AppDomain -> Void
+
+	static public GetCurrentThreadId(method) : Void -> Int
+
+	static get_MonitoringIsEnabled(method) : Void -> Bool
+
+	static set_MonitoringIsEnabled(method) : value : Bool -> Bool
+
+	static get_MonitoringSurvivedProcessMemorySize(method) : Void -> haxe.Int64
+
+}

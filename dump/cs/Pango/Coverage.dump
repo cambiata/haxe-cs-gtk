@@ -1,0 +1,28 @@
+extern class Pango.Coverage extends GLib.Opaque{
+	public new(method) : raw : System.IntPtr -> Void
+
+	public new(method) : Void -> Void
+
+	public Max(method) : other : Pango.Coverage -> Void
+
+	public Copy(method) : Void -> Pango.Coverage
+
+	public Get(method) : index_ : Int -> Pango.CoverageLevel
+
+	public Set(method) : index_ : Int -> level : Pango.CoverageLevel -> Void
+
+	Ref(method) : raw : System.IntPtr -> Void
+
+	public Ref(method) : Void -> Pango.Coverage
+
+	Unref(method) : raw : System.IntPtr -> Void
+
+	public Unref(method) : Void -> Void
+
+	Finalize(method) : Void -> Void
+
+	public ToBytes(method) : bytes : cs.Out<cs.NativeArray<cs.types.UInt8>> -> Void
+
+	static public FromBytes(method) : bytes : cs.Out<cs.types.UInt8> -> n_bytes : Int -> Pango.Coverage
+
+}

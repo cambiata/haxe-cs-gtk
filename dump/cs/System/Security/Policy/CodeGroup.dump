@@ -1,0 +1,68 @@
+extern class System.Security.Policy.CodeGroup{
+	new(method) : membershipCondition : System.Security.Policy.IMembershipCondition -> policy : System.Security.Policy.PolicyStatement -> Void
+
+	public PermissionSetName((get,never)) : String
+
+	public AttributeString((get,never)) : String
+
+	public Children((get,set)) : System.Collections.IList
+
+	public Name((get,set)) : String
+
+	public MembershipCondition((get,set)) : System.Security.Policy.IMembershipCondition
+
+	public Description((get,set)) : String
+
+	public PolicyStatement((get,set)) : System.Security.Policy.PolicyStatement
+
+	public MergeLogic((get,never)) : String
+
+	public Copy(method) : Void -> System.Security.Policy.CodeGroup
+
+	get_MergeLogic(method) : Void -> String
+
+	public Resolve(method) : evidence : System.Security.Policy.Evidence -> System.Security.Policy.PolicyStatement
+
+	public ResolveMatchingCodeGroups(method) : evidence : System.Security.Policy.Evidence -> System.Security.Policy.CodeGroup
+
+	get_PolicyStatement(method) : Void -> System.Security.Policy.PolicyStatement
+
+	set_PolicyStatement(method) : value : System.Security.Policy.PolicyStatement -> System.Security.Policy.PolicyStatement
+
+	get_Description(method) : Void -> String
+
+	set_Description(method) : value : String -> String
+
+	get_MembershipCondition(method) : Void -> System.Security.Policy.IMembershipCondition
+
+	set_MembershipCondition(method) : value : System.Security.Policy.IMembershipCondition -> System.Security.Policy.IMembershipCondition
+
+	get_Name(method) : Void -> String
+
+	set_Name(method) : value : String -> String
+
+	get_Children(method) : Void -> System.Collections.IList
+
+	set_Children(method) : value : System.Collections.IList -> System.Collections.IList
+
+	get_AttributeString(method) : Void -> String
+
+	get_PermissionSetName(method) : Void -> String
+
+	public AddChild(method) : group : System.Security.Policy.CodeGroup -> Void
+
+	public RemoveChild(method) : group : System.Security.Policy.CodeGroup -> Void
+
+	public FromXml(method) : e : System.Security.SecurityElement -> Void
+
+	public FromXml(method) : e : System.Security.SecurityElement -> level : System.Security.Policy.PolicyLevel -> Void
+
+	ParseXml(method) : e : System.Security.SecurityElement -> level : System.Security.Policy.PolicyLevel -> Void
+
+	public ToXml(method) : Void -> System.Security.SecurityElement
+
+	public ToXml(method) : level : System.Security.Policy.PolicyLevel -> System.Security.SecurityElement
+
+	CreateXml(method) : element : System.Security.SecurityElement -> level : System.Security.Policy.PolicyLevel -> Void
+
+}

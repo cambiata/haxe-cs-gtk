@@ -1,0 +1,8 @@
+extern class Gtk.DragBeginArgs extends GLib.SignalArgs{
+	public new(method) : Void -> Void
+
+	public Context((get,never)) : Gdk.DragContext
+
+	get_Context(method) : Void -> Gdk.DragContext
+
+}

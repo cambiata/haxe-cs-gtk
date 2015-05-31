@@ -1,0 +1,8 @@
+extern class Gtk.SetFocusArgs extends GLib.SignalArgs{
+	public new(method) : Void -> Void
+
+	public Focus((get,never)) : Gtk.Widget
+
+	get_Focus(method) : Void -> Gtk.Widget
+
+}

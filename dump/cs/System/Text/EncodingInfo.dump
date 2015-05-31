@@ -1,0 +1,16 @@
+extern class System.Text.EncodingInfo{
+	public Name((get,never)) : String
+
+	public DisplayName((get,never)) : String
+
+	public CodePage((get,never)) : Int
+
+	get_CodePage(method) : Void -> Int
+
+	get_DisplayName(method) : Void -> String
+
+	get_Name(method) : Void -> String
+
+	public GetEncoding(method) : Void -> System.Text.Encoding
+
+}

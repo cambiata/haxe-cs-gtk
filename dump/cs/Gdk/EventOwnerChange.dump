@@ -1,0 +1,34 @@
+extern class Gdk.EventOwnerChange extends Gdk.Event{
+	public new(method) : handle : System.IntPtr -> Void
+
+	public SelectionTime((get,set)) : UInt
+
+	public Time((get,set)) : UInt
+
+	public Selection((get,set)) : Gdk.Atom
+
+	public Reason((get,set)) : Gdk.OwnerChange
+
+	public Owner((get,set)) : UInt
+
+	get_Owner(method) : Void -> UInt
+
+	set_Owner(method) : value : UInt -> UInt
+
+	get_Reason(method) : Void -> Gdk.OwnerChange
+
+	set_Reason(method) : value : Gdk.OwnerChange -> Gdk.OwnerChange
+
+	get_Selection(method) : Void -> Gdk.Atom
+
+	set_Selection(method) : value : Gdk.Atom -> Gdk.Atom
+
+	get_Time(method) : Void -> UInt
+
+	set_Time(method) : value : UInt -> UInt
+
+	get_SelectionTime(method) : Void -> UInt
+
+	set_SelectionTime(method) : value : UInt -> UInt
+
+}

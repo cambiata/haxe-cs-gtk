@@ -1,0 +1,632 @@
+class haxe.lang.StringExt{
+	static empty((default,never)) : System.String
+
+	 = [New:System.String]
+		System.String
+		[Cast:cs.types.Char16] [Const 0:Int]
+		[Const 0:Int]
+
+	static public charAt(method) : me : cs.internal._StringExt.NativeString -> index : Int -> cs.internal._StringExt.NativeString
+
+	 = [Function:me : cs.internal._StringExt.NativeString -> index : Int -> cs.internal._StringExt.NativeString]
+		[Arg:cs.internal._StringExt.NativeString] [Local me(2151):cs.internal._StringExt.NativeString]
+		[Arg:Int] [Local index(2152):Int]
+		[Block:Void]
+			[If:Void]
+				[Parenthesis:Bool]
+					[Cast:Bool]
+						[Binop:Bool]
+							[Cast:UInt]
+								[Local index(2152):Int]
+								[TypeExpr UInt:UInt]
+							>=
+							[Call:Int]
+								[Field:Void -> Int]
+									[Local me(2151):cs.internal._StringExt.NativeString]
+									[FInstance:Void -> Int]
+										System.String
+										get_Length
+				[Then:Dynamic] [Return:Dynamic]
+					[Field:System.String]
+						[TypeExpr haxe.lang.StringExt:Class<cs.internal.StringExt>]
+						[FStatic:System.String]
+							haxe.lang.StringExt
+							empty
+				[Else:Dynamic] [Return:Dynamic]
+					[New:System.String]
+						System.String
+						[Array:cs.types.Char16]
+							[Local me(2151):cs.internal._StringExt.NativeString]
+							[Local index(2152):Int]
+						[Const 1:Int]
+
+	static public charCodeAt(method) : me : cs.internal._StringExt.NativeString -> index : Int -> Null<Int>
+
+	 = [Function:me : cs.internal._StringExt.NativeString -> index : Int -> Null<Int>]
+		[Arg:cs.internal._StringExt.NativeString] [Local me(2153):cs.internal._StringExt.NativeString]
+		[Arg:Int] [Local index(2154):Int]
+		[Block:Void]
+			[If:Void]
+				[Parenthesis:Bool]
+					[Cast:Bool]
+						[Binop:Bool]
+							[Cast:UInt]
+								[Local index(2154):Int]
+								[TypeExpr UInt:UInt]
+							>=
+							[Call:Int]
+								[Field:Void -> Int]
+									[Local me(2153):cs.internal._StringExt.NativeString]
+									[FInstance:Void -> Int]
+										System.String
+										get_Length
+				[Then:Dynamic] [Return:Dynamic] [Const null:Null<Int>]
+				[Else:Dynamic] [Return:Dynamic]
+					[Cast:Int]
+						[Array:cs.types.Char16]
+							[Local me(2153):cs.internal._StringExt.NativeString]
+							[Local index(2154):Int]
+						[TypeExpr Int:Int]
+
+	static public indexOf(method) : me : cs.internal._StringExt.NativeString -> str : String -> ?startIndex : Null<Int> -> Int
+
+	 = [Function:me : cs.internal._StringExt.NativeString -> str : String -> ?startIndex : Null<Int> -> Int]
+		[Arg:cs.internal._StringExt.NativeString] [Local me(2155):cs.internal._StringExt.NativeString]
+		[Arg:String] [Local str(2156):String]
+		[Arg:Null<Int>]
+			[Local startIndex(2157):Null<Int>]
+			[Const null:me : cs.internal._StringExt.NativeString -> str : String -> ?startIndex : Null<Int> -> Int]
+		[Block:Dynamic]
+			[Var sIndex(2158):Int]
+			[If:Int]
+				[Parenthesis:Bool]
+					[Binop:Bool]
+						[Local startIndex(2157):Null<Int>]
+						!=
+						[Const null:Null<Int>]
+				[Then:Int] [Binop:Int]
+					[Local sIndex(2158):Int]
+					=
+					[Local startIndex(2157):Null<Int>]
+				[Else:Int] [Binop:Int]
+					[Local sIndex(2158):Int]
+					=
+					[Const 0:Int]
+			[If:Void]
+				[Parenthesis:Bool]
+					[Binop:Bool]
+						[Local sIndex(2158):Int]
+						>=
+						[Call:Int]
+							[Field:Void -> Int]
+								[Local me(2155):cs.internal._StringExt.NativeString]
+								[FInstance:Void -> Int]
+									System.String
+									get_Length
+				[Then:Dynamic] [Return:Dynamic] [Const -1:Int]
+			[Return:Dynamic]
+				[Call:Int]
+					[Field:value : String -> startIndex : Int -> comparisonType : System.StringComparison -> Int]
+						[Local me(2155):cs.internal._StringExt.NativeString]
+						[FInstance:value : String -> startIndex : Int -> comparisonType : System.StringComparison -> Int]
+							System.String
+							IndexOf
+					[Local str(2156):String]
+					[Local sIndex(2158):Int]
+					[Field:System.StringComparison]
+						[TypeExpr System.StringComparison:Enum<cs.system.StringComparison>]
+						[FEnum:System.StringComparison]
+							System.StringComparison
+							Ordinal
+
+	static public lastIndexOf(method) : me : cs.internal._StringExt.NativeString -> str : cs.internal._StringExt.NativeString -> ?startIndex : Null<Int> -> Int
+
+	 = [Function:me : cs.internal._StringExt.NativeString -> str : cs.internal._StringExt.NativeString -> ?startIndex : Null<Int> -> Int]
+		[Arg:cs.internal._StringExt.NativeString] [Local me(2159):cs.internal._StringExt.NativeString]
+		[Arg:cs.internal._StringExt.NativeString] [Local str(2160):cs.internal._StringExt.NativeString]
+		[Arg:Null<Int>]
+			[Local startIndex(2161):Null<Int>]
+			[Const null:me : cs.internal._StringExt.NativeString -> str : cs.internal._StringExt.NativeString -> ?startIndex : Null<Int> -> Int]
+		[Block:Dynamic]
+			[Var sIndex(2162):Int]
+			[If:Int]
+				[Parenthesis:Bool]
+					[Binop:Bool]
+						[Local startIndex(2161):Null<Int>]
+						==
+						[Const null:Null<Int>]
+				[Then:Int] [Binop:Int]
+					[Local sIndex(2162):Int]
+					=
+					[Binop:Int]
+						[Call:Int]
+							[Field:Void -> Int]
+								[Local me(2159):cs.internal._StringExt.NativeString]
+								[FInstance:Void -> Int]
+									System.String
+									get_Length
+						-
+						[Const 1:Int]
+				[Else:Int] [Binop:Int]
+					[Local sIndex(2162):Int]
+					=
+					[Local startIndex(2161):Null<Int>]
+			[If:Void]
+				[Parenthesis:Bool]
+					[Binop:Bool]
+						[Local sIndex(2162):Int]
+						>=
+						[Call:Int]
+							[Field:Void -> Int]
+								[Local me(2159):cs.internal._StringExt.NativeString]
+								[FInstance:Void -> Int]
+									System.String
+									get_Length
+				[Then:Int] [Binop:Int]
+					[Local sIndex(2162):Int]
+					=
+					[Binop:Int]
+						[Call:Int]
+							[Field:Void -> Int]
+								[Local me(2159):cs.internal._StringExt.NativeString]
+								[FInstance:Void -> Int]
+									System.String
+									get_Length
+						-
+						[Const 1:Int]
+				[Else:Void] [If:Void]
+					[Parenthesis:Bool]
+						[Binop:Bool]
+							[Local sIndex(2162):Int]
+							<
+							[Const 0:Int]
+					[Then:Dynamic] [Return:Dynamic] [Const -1:Int]
+			[If:Void]
+				[Parenthesis:Bool]
+					[Binop:Bool]
+						[Local startIndex(2161):Null<Int>]
+						!=
+						[Const null:Null<Int>]
+				[Then:Dynamic] [Block:Dynamic]
+					[Var i(2163):Int]
+						[Binop:Int]
+							[Local sIndex(2162):Int]
+							+
+							[Const 1:Int]
+					[While:Void]
+						[Parenthesis:Bool]
+							[Binop:Bool]
+								[Unop:Int]
+									--
+									Postfix
+									[Local i(2163):Int]
+								>
+								[Const 0:Int]
+						[Block:Void]
+							[Var found(2164):Bool] [Const true:Bool]
+							[Block:Void]
+								[Var _g1(2166):Int] [Const 0:Int]
+								[Var _g(2165):Int]
+									[Call:Int]
+										[Field:Void -> Int]
+											[Local str(2160):cs.internal._StringExt.NativeString]
+											[FInstance:Void -> Int]
+												System.String
+												get_Length
+								[While:Void]
+									[Parenthesis:Bool]
+										[Binop:Bool]
+											[Local _g1(2166):Int]
+											<
+											[Local _g(2165):Int]
+									[Block:Void]
+										[Var j(2167):Int]
+											[Unop:Int]
+												++
+												Postfix
+												[Local _g1(2166):Int]
+										[If:Void]
+											[Parenthesis:Bool]
+												[Binop:Bool]
+													[Array:cs.types.Char16]
+														[Local me(2159):cs.internal._StringExt.NativeString]
+														[Binop:Int]
+															[Local i(2163):Int]
+															+
+															[Local j(2167):Int]
+													!=
+													[Array:cs.types.Char16]
+														[Local str(2160):cs.internal._StringExt.NativeString]
+														[Local j(2167):Int]
+											[Then:Dynamic] [Block:Dynamic]
+												[Binop:Bool]
+													[Local found(2164):Bool]
+													=
+													[Const false:Bool]
+												[Break:Dynamic]
+							[If:Void]
+								[Parenthesis:Bool] [Local found(2164):Bool]
+								[Then:Dynamic] [Return:Dynamic] [Local i(2163):Int]
+					[Return:Dynamic] [Const -1:Int]
+				[Else:Dynamic] [Return:Dynamic]
+					[Call:Int]
+						[Field:value : String -> startIndex : Int -> comparisonType : System.StringComparison -> Int]
+							[Local me(2159):cs.internal._StringExt.NativeString]
+							[FInstance:value : String -> startIndex : Int -> comparisonType : System.StringComparison -> Int]
+								System.String
+								LastIndexOf
+						[Local str(2160):cs.internal._StringExt.NativeString]
+						[Local sIndex(2162):Int]
+						[Field:System.StringComparison]
+							[TypeExpr System.StringComparison:Enum<cs.system.StringComparison>]
+							[FEnum:System.StringComparison]
+								System.StringComparison
+								Ordinal
+			[Return:Dynamic] [Const -1:Int]
+
+	static public split(method) : me : cs.internal._StringExt.NativeString -> delimiter : cs.internal._StringExt.NativeString -> Array<String>
+
+	 = [Function:me : cs.internal._StringExt.NativeString -> delimiter : cs.internal._StringExt.NativeString -> Array<String>]
+		[Arg:cs.internal._StringExt.NativeString] [Local me(2168):cs.internal._StringExt.NativeString]
+		[Arg:cs.internal._StringExt.NativeString] [Local delimiter(2169):cs.internal._StringExt.NativeString]
+		[Block:Dynamic]
+			[Var native(2170):cs.NativeArray<String>]
+			[If:Void]
+				[Parenthesis:Bool]
+					[Binop:Bool]
+						[Call:Int]
+							[Field:Void -> Int]
+								[Local delimiter(2169):cs.internal._StringExt.NativeString]
+								[FInstance:Void -> Int]
+									System.String
+									get_Length
+						==
+						[Const 0:Int]
+				[Then:Void] [Block:Void]
+					[Var len(2171):Int]
+						[Call:Int]
+							[Field:Void -> Int]
+								[Local me(2168):cs.internal._StringExt.NativeString]
+								[FInstance:Void -> Int]
+									System.String
+									get_Length
+					[Binop:cs.NativeArray<String>]
+						[Local native(2170):cs.NativeArray<String>]
+						=
+						[New:cs.NativeArray<String>]
+							cs.NativeArray<String>
+							[Local len(2171):Int]
+					[Block:Void]
+						[Var _g(2172):Int] [Const 0:Int]
+						[While:Void]
+							[Parenthesis:Bool]
+								[Binop:Bool]
+									[Local _g(2172):Int]
+									<
+									[Local len(2171):Int]
+							[Block:Void]
+								[Var i(2173):Int]
+									[Unop:Int]
+										++
+										Postfix
+										[Local _g(2172):Int]
+								[Binop:String]
+									[Array:String]
+										[Local native(2170):cs.NativeArray<String>]
+										[Local i(2173):Int]
+									=
+									[New:String]
+										System.String
+										[Array:cs.types.Char16]
+											[Local me(2168):cs.internal._StringExt.NativeString]
+											[Local i(2173):Int]
+										[Const 1:Int]
+				[Else:cs.NativeArray<String>] [Block:cs.NativeArray<String>]
+					[Var str(2174):cs.NativeArray<String>]
+						[New:cs.NativeArray<String>]
+							cs.NativeArray<String>
+							[Const 1:Int]
+					[Binop:String]
+						[Array:String]
+							[Local str(2174):cs.NativeArray<String>]
+							[Const 0:Int]
+						=
+						[Cast:String] [Local delimiter(2169):cs.internal._StringExt.NativeString]
+					[Binop:cs.NativeArray<String>]
+						[Local native(2170):cs.NativeArray<String>]
+						=
+						[Call:cs.NativeArray<String>]
+							[Field:separator : cs.NativeArray<String> -> options : System.StringSplitOptions -> cs.NativeArray<String>]
+								[Local me(2168):cs.internal._StringExt.NativeString]
+								[FInstance:separator : cs.NativeArray<String> -> options : System.StringSplitOptions -> cs.NativeArray<String>]
+									System.String
+									Split
+							[Local str(2174):cs.NativeArray<String>]
+							[Field:System.StringSplitOptions]
+								[TypeExpr System.StringSplitOptions:Enum<cs.system.StringSplitOptions>]
+								[FEnum:System.StringSplitOptions]
+									System.StringSplitOptions
+									None
+			[Return:Dynamic]
+				[New:Array<String>]
+					Array<String>
+					[Local native(2170):cs.NativeArray<String>]
+
+	static public substr(method) : me : cs.internal._StringExt.NativeString -> pos : Int -> ?len : Null<Int> -> String
+
+	 = [Function:me : cs.internal._StringExt.NativeString -> pos : Int -> ?len : Null<Int> -> String]
+		[Arg:cs.internal._StringExt.NativeString] [Local me(2178):cs.internal._StringExt.NativeString]
+		[Arg:Int] [Local pos(2179):Int]
+		[Arg:Null<Int>]
+			[Local len(2180):Null<Int>]
+			[Const null:me : cs.internal._StringExt.NativeString -> pos : Int -> ?len : Null<Int> -> String]
+		[Block:Dynamic]
+			[Var meLen(2181):Int]
+				[Call:Int]
+					[Field:Void -> Int]
+						[Local me(2178):cs.internal._StringExt.NativeString]
+						[FInstance:Void -> Int]
+							System.String
+							get_Length
+			[Var targetLen(2182):Int] [Local meLen(2181):Int]
+			[If:Void]
+				[Parenthesis:Bool]
+					[Binop:Bool]
+						[Local len(2180):Null<Int>]
+						!=
+						[Const null:Null<Int>]
+				[Then:Void] [Block:Void]
+					[Binop:Int]
+						[Local targetLen(2182):Int]
+						=
+						[Local len(2180):Null<Int>]
+					[If:Void]
+						[Parenthesis:Bool]
+							[Binop:Bool]
+								[Binop:Bool]
+									[Local targetLen(2182):Int]
+									==
+									[Const 0:Int]
+								||
+								[Binop:Bool]
+									[Binop:Bool]
+										[Local pos(2179):Int]
+										!=
+										[Const 0:Int]
+									&&
+									[Binop:Bool]
+										[Local targetLen(2182):Int]
+										<
+										[Const 0:Int]
+						[Then:Dynamic] [Return:Dynamic] [Const "":String]
+			[If:Void]
+				[Parenthesis:Bool]
+					[Binop:Bool]
+						[Local pos(2179):Int]
+						<
+						[Const 0:Int]
+				[Then:Void] [Block:Void]
+					[Binop:Int]
+						[Local pos(2179):Int]
+						=
+						[Binop:Int]
+							[Local meLen(2181):Int]
+							+
+							[Local pos(2179):Int]
+					[If:Void]
+						[Parenthesis:Bool]
+							[Binop:Bool]
+								[Local pos(2179):Int]
+								<
+								[Const 0:Int]
+						[Then:Int] [Binop:Int]
+							[Local pos(2179):Int]
+							=
+							[Const 0:Int]
+				[Else:Void] [If:Void]
+					[Parenthesis:Bool]
+						[Binop:Bool]
+							[Local targetLen(2182):Int]
+							<
+							[Const 0:Int]
+					[Then:Int] [Binop:Int]
+						[Local targetLen(2182):Int]
+						=
+						[Binop:Int]
+							[Binop:Int]
+								[Local meLen(2181):Int]
+								+
+								[Local targetLen(2182):Int]
+							-
+							[Local pos(2179):Int]
+			[If:Void]
+				[Parenthesis:Bool]
+					[Binop:Bool]
+						[Binop:Int]
+							[Local pos(2179):Int]
+							+
+							[Local targetLen(2182):Int]
+						>
+						[Local meLen(2181):Int]
+				[Then:Int] [Binop:Int]
+					[Local targetLen(2182):Int]
+					=
+					[Binop:Int]
+						[Local meLen(2181):Int]
+						-
+						[Local pos(2179):Int]
+			[If:Void]
+				[Parenthesis:Bool]
+					[Binop:Bool]
+						[Binop:Bool]
+							[Local pos(2179):Int]
+							<
+							[Const 0:Int]
+						||
+						[Binop:Bool]
+							[Local targetLen(2182):Int]
+							<=
+							[Const 0:Int]
+				[Then:Dynamic] [Return:Dynamic] [Const "":String]
+			[Return:Dynamic]
+				[Call:String]
+					[Field:startIndex : Int -> length : Int -> String]
+						[Local me(2178):cs.internal._StringExt.NativeString]
+						[FInstance:startIndex : Int -> length : Int -> String]
+							System.String
+							Substring
+					[Local pos(2179):Int]
+					[Local targetLen(2182):Int]
+
+	static public substring(method) : me : cs.internal._StringExt.NativeString -> startIndex : Int -> ?endIndex : Null<Int> -> String
+
+	 = [Function:me : cs.internal._StringExt.NativeString -> startIndex : Int -> ?endIndex : Null<Int> -> String]
+		[Arg:cs.internal._StringExt.NativeString] [Local me(2183):cs.internal._StringExt.NativeString]
+		[Arg:Int] [Local startIndex(2184):Int]
+		[Arg:Null<Int>]
+			[Local endIndex(2185):Null<Int>]
+			[Const null:me : cs.internal._StringExt.NativeString -> startIndex : Int -> ?endIndex : Null<Int> -> String]
+		[Block:Dynamic]
+			[Var len(2186):Int]
+				[Call:Int]
+					[Field:Void -> Int]
+						[Local me(2183):cs.internal._StringExt.NativeString]
+						[FInstance:Void -> Int]
+							System.String
+							get_Length
+			[Var endIdx(2187):Int]
+			[If:Void]
+				[Parenthesis:Bool]
+					[Binop:Bool]
+						[Local endIndex(2185):Null<Int>]
+						==
+						[Const null:Null<Int>]
+				[Then:Int] [Binop:Int]
+					[Local endIdx(2187):Int]
+					=
+					[Local len(2186):Int]
+				[Else:Void] [If:Void]
+					[Parenthesis:Bool]
+						[Binop:Bool]
+							[Parenthesis:Int]
+								[Binop:Int]
+									[Local endIdx(2187):Int]
+									=
+									[Local endIndex(2185):Null<Int>]
+							<
+							[Const 0:Int]
+					[Then:Int] [Binop:Int]
+						[Local endIdx(2187):Int]
+						=
+						[Const 0:Int]
+					[Else:Void] [If:Void]
+						[Parenthesis:Bool]
+							[Binop:Bool]
+								[Local endIdx(2187):Int]
+								>
+								[Local len(2186):Int]
+						[Then:Int] [Binop:Int]
+							[Local endIdx(2187):Int]
+							=
+							[Local len(2186):Int]
+			[If:Void]
+				[Parenthesis:Bool]
+					[Binop:Bool]
+						[Local startIndex(2184):Int]
+						<
+						[Const 0:Int]
+				[Then:Int] [Binop:Int]
+					[Local startIndex(2184):Int]
+					=
+					[Const 0:Int]
+				[Else:Void] [If:Void]
+					[Parenthesis:Bool]
+						[Binop:Bool]
+							[Local startIndex(2184):Int]
+							>
+							[Local len(2186):Int]
+					[Then:Int] [Binop:Int]
+						[Local startIndex(2184):Int]
+						=
+						[Local len(2186):Int]
+			[If:Void]
+				[Parenthesis:Bool]
+					[Binop:Bool]
+						[Local startIndex(2184):Int]
+						>
+						[Local endIdx(2187):Int]
+				[Then:Int] [Block:Int]
+					[Var tmp(2188):Int] [Local startIndex(2184):Int]
+					[Binop:Int]
+						[Local startIndex(2184):Int]
+						=
+						[Local endIdx(2187):Int]
+					[Binop:Int]
+						[Local endIdx(2187):Int]
+						=
+						[Local tmp(2188):Int]
+			[Return:Dynamic]
+				[Call:String]
+					[Field:startIndex : Int -> length : Int -> String]
+						[Local me(2183):cs.internal._StringExt.NativeString]
+						[FInstance:startIndex : Int -> length : Int -> String]
+							System.String
+							Substring
+					[Local startIndex(2184):Int]
+					[Binop:Int]
+						[Local endIdx(2187):Int]
+						-
+						[Local startIndex(2184):Int]
+
+	static public toString(method) : me : cs.internal._StringExt.NativeString -> cs.internal._StringExt.NativeString
+
+	 = [Function:me : cs.internal._StringExt.NativeString -> cs.internal._StringExt.NativeString]
+		[Arg:cs.internal._StringExt.NativeString] [Local me(2189):cs.internal._StringExt.NativeString]
+		[Block:Dynamic] [Return:Dynamic] [Local me(2189):cs.internal._StringExt.NativeString]
+
+	static public toLowerCase(method) : me : cs.internal._StringExt.NativeString -> String
+
+	 = [Function:me : cs.internal._StringExt.NativeString -> String]
+		[Arg:cs.internal._StringExt.NativeString] [Local me(2190):cs.internal._StringExt.NativeString]
+		[Block:Dynamic]
+			[Return:Dynamic]
+				[Call:String]
+					[Field:Void -> String]
+						[Local me(2190):cs.internal._StringExt.NativeString]
+						[FInstance:Void -> String]
+							System.String
+							ToLowerInvariant
+
+	static public toUpperCase(method) : me : cs.internal._StringExt.NativeString -> String
+
+	 = [Function:me : cs.internal._StringExt.NativeString -> String]
+		[Arg:cs.internal._StringExt.NativeString] [Local me(2191):cs.internal._StringExt.NativeString]
+		[Block:Dynamic]
+			[Return:Dynamic]
+				[Call:String]
+					[Field:Void -> String]
+						[Local me(2191):cs.internal._StringExt.NativeString]
+						[FInstance:Void -> String]
+							System.String
+							ToUpperInvariant
+
+	static public toNativeString(method) : me : cs.internal._StringExt.NativeString -> cs.internal._StringExt.NativeString
+
+	 = [Function:me : cs.internal._StringExt.NativeString -> cs.internal._StringExt.NativeString]
+		[Arg:cs.internal._StringExt.NativeString] [Local me(2192):cs.internal._StringExt.NativeString]
+		[Block:Dynamic] [Return:Dynamic] [Local me(2192):cs.internal._StringExt.NativeString]
+
+	static public fromCharCode(method) : code : Int -> cs.internal._StringExt.NativeString
+
+	 = [Function:code : Int -> cs.internal._StringExt.NativeString]
+		[Arg:Int] [Local code(824):Int]
+		[Block:Dynamic]
+			[Return:Dynamic]
+				[New:System.String]
+					System.String
+					[Cast:cs.Char16]
+						[Local code(824):Int]
+						[TypeExpr cs.Char16:cs.Char16]
+					[Const 1:Int]
+
+}

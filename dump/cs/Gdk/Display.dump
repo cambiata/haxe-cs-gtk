@@ -1,0 +1,128 @@
+extern class Gdk.Display extends GLib.Object{
+	new(method) : gtype : GLib.GType -> Void
+
+	new(method) : Void -> Void
+
+	public new(method) : raw : System.IntPtr -> Void
+
+	Closed(var) : gdk.ClosedHandler
+
+	public Name((get,never)) : String
+
+	public DefaultScreen((get,never)) : Gdk.Screen
+
+	public DefaultGroup((get,never)) : Gdk.Window
+
+	public NScreens((get,never)) : Int
+
+	public Event((get,never)) : Gdk.Event
+
+	public SupportsInputShapes((get,never)) : Bool
+
+	public SupportsComposite((get,never)) : Bool
+
+	public DefaultCursorSize((get,never)) : UInt
+
+	public SupportsShapes((get,never)) : Bool
+
+	public DoubleClickDistance((never,set)) : UInt
+
+	public CorePointer((get,never)) : Gdk.Device
+
+	public DoubleClickTime((never,set)) : UInt
+
+	set_DoubleClickTime(method) : value : UInt -> UInt
+
+	get_CorePointer(method) : Void -> Gdk.Device
+
+	set_DoubleClickDistance(method) : value : UInt -> UInt
+
+	OnClosed(method) : is_error : Bool -> Void
+
+	public add_Closed(method) : value : gdk.ClosedHandler -> Void
+
+	public remove_Closed(method) : value : gdk.ClosedHandler -> Void
+
+	public SupportsClipboardPersistence(method) : Void -> Bool
+
+	public KeyboardUngrab(method) : time_ : UInt -> Void
+
+	public PointerIsGrabbed(method) : Void -> Bool
+
+	public Sync(method) : Void -> Void
+
+	public Beep(method) : Void -> Void
+
+	get_SupportsShapes(method) : Void -> Bool
+
+	get_DefaultCursorSize(method) : Void -> UInt
+
+	get_SupportsComposite(method) : Void -> Bool
+
+	get_SupportsInputShapes(method) : Void -> Bool
+
+	public Flush(method) : Void -> Void
+
+	public GetMaximalCursorSize(method) : width : cs.Out<UInt> -> height : cs.Out<UInt> -> Void
+
+	public SetPointerHooks(method) : new_hooks : Gdk.DisplayPointerHooks -> Gdk.DisplayPointerHooks
+
+	public GetWindowAtPointer(method) : win_x : cs.Out<Int> -> win_y : cs.Out<Int> -> Gdk.Window
+
+	public PeekEvent(method) : Void -> Gdk.Event
+
+	get_Event(method) : Void -> Gdk.Event
+
+	public RequestSelectionNotification(method) : selection : Gdk.Atom -> Bool
+
+	public SupportsSelectionNotification(method) : Void -> Bool
+
+	public SupportsCursorColor(method) : Void -> Bool
+
+	get_NScreens(method) : Void -> Int
+
+	get_DefaultGroup(method) : Void -> Gdk.Window
+
+	public GetScreen(method) : screen_num : Int -> Gdk.Screen
+
+	public WarpPointer(method) : screen : Gdk.Screen -> x : Int -> y : Int -> Void
+
+	public SupportsCursorAlpha(method) : Void -> Bool
+
+	get_DefaultScreen(method) : Void -> Gdk.Screen
+
+	public StoreClipboard(method) : clipboard_window : Gdk.Window -> time_ : UInt -> targets : Gdk.Atom -> n_targets : Int -> Void
+
+	public PutEvent(method) : evnt : Gdk.Event -> Void
+
+	public PointerUngrab(method) : time_ : UInt -> Void
+
+	public Close(method) : Void -> Void
+
+	get_Name(method) : Void -> String
+
+	public GetPointer(method) : screen : cs.Out<Gdk.Screen> -> x : cs.Out<Int> -> y : cs.Out<Int> -> mask : cs.Out<Gdk.ModifierType> -> Void
+
+	public GetPointer(method) : screen : cs.Out<Gdk.Screen> -> x : cs.Out<Int> -> y : cs.Out<Int> -> Void
+
+	public GetPointer(method) : x : cs.Out<Int> -> y : cs.Out<Int> -> mod : cs.Out<Gdk.ModifierType> -> Void
+
+	public GetPointer(method) : x : cs.Out<Int> -> y : cs.Out<Int> -> Void
+
+	public ListDevices(method) : Void -> cs.NativeArray<Gdk.Device>
+
+	public AddClientMessageFilter(method) : message_type : Gdk.Atom -> func : gdk.FilterFunc -> Void
+
+	static public GType((get,never)) : GLib.GType
+
+	static public Default((get,never)) : Gdk.Display
+
+	static get_Default(method) : Void -> Gdk.Display
+
+	static get_GType(method) : Void -> GLib.GType
+
+	static public Open(method) : display_name : String -> Gdk.Display
+
+	static public OpenDefaultLibgtkOnly(method) : Void -> Gdk.Display
+
+}

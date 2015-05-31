@@ -1,0 +1,8 @@
+extern class System.Reflection.ParameterModifier extends System.ValueType implements ArrayAccess<Bool>{
+	public new(method) : parameterCount : Int -> Void
+
+	get_Item(method) : index : Int -> Bool
+
+	set_Item(method) : index : Int -> value : Bool -> Void
+
+}

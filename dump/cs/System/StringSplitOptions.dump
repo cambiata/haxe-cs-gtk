@@ -1,0 +1,4 @@
+extern enum System.StringSplitOptions {
+	None : System.StringSplitOptions;
+	RemoveEmptyEntries : System.StringSplitOptions;
+}

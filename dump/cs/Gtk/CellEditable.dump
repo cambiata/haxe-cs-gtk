@@ -1,0 +1,24 @@
+extern interface Gtk.CellEditable implements GLib.IWrapper{
+	EditingDone(var) : cs.system.EventHandler
+
+	WidgetRemoved(var) : cs.system.EventHandler
+
+	public Handle((get,never)) : System.IntPtr
+
+	get_Handle(method) : Void -> System.IntPtr
+
+	public add_WidgetRemoved(method) : value : cs.system.EventHandler -> Void
+
+	public remove_WidgetRemoved(method) : value : cs.system.EventHandler -> Void
+
+	public add_EditingDone(method) : value : cs.system.EventHandler -> Void
+
+	public remove_EditingDone(method) : value : cs.system.EventHandler -> Void
+
+	public FinishEditing(method) : Void -> Void
+
+	public RemoveWidget(method) : Void -> Void
+
+	public StartEditing(method) : evnt : Gdk.Event -> Void
+
+}

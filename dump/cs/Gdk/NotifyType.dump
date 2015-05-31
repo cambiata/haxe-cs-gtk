@@ -1,0 +1,8 @@
+extern enum Gdk.NotifyType {
+	Ancestor : Gdk.NotifyType;
+	Virtual : Gdk.NotifyType;
+	Inferior : Gdk.NotifyType;
+	Nonlinear : Gdk.NotifyType;
+	NonlinearVirtual : Gdk.NotifyType;
+	Unknown : Gdk.NotifyType;
+}

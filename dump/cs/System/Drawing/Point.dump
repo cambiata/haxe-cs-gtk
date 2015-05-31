@@ -1,0 +1,54 @@
+extern class System.Drawing.Point extends System.ValueType{
+	public new(method) : x : Int -> y : Int -> Void
+
+	public new(method) : dw : Int -> Void
+
+	public new(method) : sz : System.Drawing.Size -> Void
+
+	public Y((get,set)) : Int
+
+	public X((get,set)) : Int
+
+	public IsEmpty((get,never)) : Bool
+
+	get_IsEmpty(method) : Void -> Bool
+
+	get_X(method) : Void -> Int
+
+	set_X(method) : value : Int -> Int
+
+	get_Y(method) : Void -> Int
+
+	set_Y(method) : value : Int -> Int
+
+	public Offset(method) : dx : Int -> dy : Int -> Void
+
+	public Offset(method) : p : System.Drawing.Point -> Void
+
+	public ToString(method) : Void -> String
+
+	static public Empty((default,never)) : System.Drawing.Point
+
+	static public op_Implicit(method) : p : System.Drawing.Point -> System.Drawing.PointF
+
+	static public op_Explicit(method) : p : System.Drawing.Point -> System.Drawing.Size
+
+	static public op_Addition(method) : pt : System.Drawing.Point -> sz : System.Drawing.Size -> System.Drawing.Point
+
+	static public op_Subtraction(method) : pt : System.Drawing.Point -> sz : System.Drawing.Size -> System.Drawing.Point
+
+	static public op_Equality(method) : left : System.Drawing.Point -> right : System.Drawing.Point -> Bool
+
+	static public op_Inequality(method) : left : System.Drawing.Point -> right : System.Drawing.Point -> Bool
+
+	static public Add(method) : pt : System.Drawing.Point -> sz : System.Drawing.Size -> System.Drawing.Point
+
+	static public Subtract(method) : pt : System.Drawing.Point -> sz : System.Drawing.Size -> System.Drawing.Point
+
+	static public Ceiling(method) : value : System.Drawing.PointF -> System.Drawing.Point
+
+	static public Truncate(method) : value : System.Drawing.PointF -> System.Drawing.Point
+
+	static public Round(method) : value : System.Drawing.PointF -> System.Drawing.Point
+
+}

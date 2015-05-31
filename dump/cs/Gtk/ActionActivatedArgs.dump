@@ -1,0 +1,8 @@
+extern class Gtk.ActionActivatedArgs extends GLib.SignalArgs{
+	public new(method) : Void -> Void
+
+	public Index((get,never)) : Int
+
+	get_Index(method) : Void -> Int
+
+}

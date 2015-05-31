@@ -1,0 +1,68 @@
+extern class Pango.Context extends GLib.Object{
+	new(method) : gtype : GLib.GType -> Void
+
+	new(method) : Void -> Void
+
+	public new(method) : raw : System.IntPtr -> Void
+
+	public Families((get,never)) : cs.NativeArray<Pango.FontFamily>
+
+	public Language((get,set)) : Pango.Language
+
+	public GravityHint((get,set)) : Pango.GravityHint
+
+	public BaseDir((get,set)) : Pango.Direction
+
+	public FontMap((get,never)) : Pango.FontMap
+
+	public FontDescription((get,set)) : Pango.FontDescription
+
+	public BaseGravity((get,set)) : Pango.Gravity
+
+	public Gravity((get,never)) : Pango.Gravity
+
+	public Matrix((get,set)) : Pango.Matrix
+
+	get_Matrix(method) : Void -> Pango.Matrix
+
+	set_Matrix(method) : value : Pango.Matrix -> Pango.Matrix
+
+	get_Gravity(method) : Void -> Pango.Gravity
+
+	get_BaseGravity(method) : Void -> Pango.Gravity
+
+	set_BaseGravity(method) : value : Pango.Gravity -> Pango.Gravity
+
+	public LoadFontset(method) : desc : Pango.FontDescription -> language : Pango.Language -> Pango.Fontset
+
+	get_FontDescription(method) : Void -> Pango.FontDescription
+
+	set_FontDescription(method) : value : Pango.FontDescription -> Pango.FontDescription
+
+	get_FontMap(method) : Void -> Pango.FontMap
+
+	public GetMetrics(method) : desc : Pango.FontDescription -> language : Pango.Language -> Pango.FontMetrics
+
+	get_BaseDir(method) : Void -> Pango.Direction
+
+	set_BaseDir(method) : value : Pango.Direction -> Pango.Direction
+
+	get_GravityHint(method) : Void -> Pango.GravityHint
+
+	set_GravityHint(method) : value : Pango.GravityHint -> Pango.GravityHint
+
+	get_Language(method) : Void -> Pango.Language
+
+	set_Language(method) : value : Pango.Language -> Pango.Language
+
+	public LoadFont(method) : desc : Pango.FontDescription -> Pango.Font
+
+	get_Families(method) : Void -> cs.NativeArray<Pango.FontFamily>
+
+	public ListFamilies(method) : families : Pango.FontFamily -> Int
+
+	static public GType((get,never)) : GLib.GType
+
+	static get_GType(method) : Void -> GLib.GType
+
+}

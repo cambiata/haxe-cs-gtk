@@ -1,0 +1,14 @@
+extern class Gtk.TextBuffer.PixbufInsertedVMDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : buffer : System.IntPtr -> pos : System.IntPtr -> pixbuf : System.IntPtr -> Void
+
+	public BeginInvoke(method) : buffer : System.IntPtr -> pos : System.IntPtr -> pixbuf : System.IntPtr -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Void
+
+	static public op_Addition(method) : arg1 : gtk.TextBuffer_PixbufInsertedVMDelegate -> arg2 : gtk.TextBuffer_PixbufInsertedVMDelegate -> gtk.TextBuffer_PixbufInsertedVMDelegate
+
+	static public op_Subtraction(method) : arg1 : gtk.TextBuffer_PixbufInsertedVMDelegate -> arg2 : gtk.TextBuffer_PixbufInsertedVMDelegate -> gtk.TextBuffer_PixbufInsertedVMDelegate
+
+}

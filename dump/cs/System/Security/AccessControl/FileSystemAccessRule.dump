@@ -1,0 +1,14 @@
+extern class System.Security.AccessControl.FileSystemAccessRule extends System.Security.AccessControl.AccessRule{
+	public new(method) : identity : System.Security.Principal.IdentityReference -> fileSystemRights : System.Security.AccessControl.FileSystemRights -> type : System.Security.AccessControl.AccessControlType -> Void
+
+	public new(method) : identity : String -> fileSystemRights : System.Security.AccessControl.FileSystemRights -> inheritanceFlags : System.Security.AccessControl.InheritanceFlags -> propagationFlags : System.Security.AccessControl.PropagationFlags -> type : System.Security.AccessControl.AccessControlType -> Void
+
+	public new(method) : identity : System.Security.Principal.IdentityReference -> fileSystemRights : System.Security.AccessControl.FileSystemRights -> inheritanceFlags : System.Security.AccessControl.InheritanceFlags -> propagationFlags : System.Security.AccessControl.PropagationFlags -> type : System.Security.AccessControl.AccessControlType -> Void
+
+	public new(method) : identity : String -> fileSystemRights : System.Security.AccessControl.FileSystemRights -> type : System.Security.AccessControl.AccessControlType -> Void
+
+	public FileSystemRights((get,never)) : System.Security.AccessControl.FileSystemRights
+
+	get_FileSystemRights(method) : Void -> System.Security.AccessControl.FileSystemRights
+
+}

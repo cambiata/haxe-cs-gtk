@@ -1,0 +1,102 @@
+extern class System.Drawing.Imaging.Metafile extends System.Drawing.Image{
+	public new(method) : hmetafile : System.IntPtr -> wmfHeader : System.Drawing.Imaging.WmfPlaceableFileHeader -> Void
+
+	public new(method) : stream : System.IO.Stream -> referenceHdc : System.IntPtr -> frameRect : System.Drawing.Rectangle -> frameUnit : System.Drawing.Imaging.MetafileFrameUnit -> type : System.Drawing.Imaging.EmfType -> description : String -> Void
+
+	public new(method) : stream : System.IO.Stream -> referenceHdc : System.IntPtr -> frameRect : System.Drawing.Rectangle -> frameUnit : System.Drawing.Imaging.MetafileFrameUnit -> type : System.Drawing.Imaging.EmfType -> Void
+
+	public new(method) : stream : System.IO.Stream -> referenceHdc : System.IntPtr -> frameRect : System.Drawing.Rectangle -> frameUnit : System.Drawing.Imaging.MetafileFrameUnit -> Void
+
+	public new(method) : stream : System.IO.Stream -> referenceHdc : System.IntPtr -> frameRect : System.Drawing.Rectangle -> Void
+
+	public new(method) : stream : System.IO.Stream -> referenceHdc : System.IntPtr -> frameRect : System.Drawing.RectangleF -> frameUnit : System.Drawing.Imaging.MetafileFrameUnit -> type : System.Drawing.Imaging.EmfType -> description : String -> Void
+
+	public new(method) : stream : System.IO.Stream -> referenceHdc : System.IntPtr -> frameRect : System.Drawing.RectangleF -> frameUnit : System.Drawing.Imaging.MetafileFrameUnit -> type : System.Drawing.Imaging.EmfType -> Void
+
+	public new(method) : stream : System.IO.Stream -> referenceHdc : System.IntPtr -> frameRect : System.Drawing.RectangleF -> frameUnit : System.Drawing.Imaging.MetafileFrameUnit -> Void
+
+	public new(method) : stream : System.IO.Stream -> referenceHdc : System.IntPtr -> frameRect : System.Drawing.RectangleF -> Void
+
+	public new(method) : stream : System.IO.Stream -> referenceHdc : System.IntPtr -> type : System.Drawing.Imaging.EmfType -> description : String -> Void
+
+	public new(method) : stream : System.IO.Stream -> referenceHdc : System.IntPtr -> type : System.Drawing.Imaging.EmfType -> Void
+
+	public new(method) : stream : System.IO.Stream -> referenceHdc : System.IntPtr -> Void
+
+	public new(method) : fileName : String -> referenceHdc : System.IntPtr -> frameRect : System.Drawing.Rectangle -> frameUnit : System.Drawing.Imaging.MetafileFrameUnit -> type : System.Drawing.Imaging.EmfType -> description : String -> Void
+
+	public new(method) : fileName : String -> referenceHdc : System.IntPtr -> frameRect : System.Drawing.Rectangle -> frameUnit : System.Drawing.Imaging.MetafileFrameUnit -> description : String -> Void
+
+	public new(method) : fileName : String -> referenceHdc : System.IntPtr -> frameRect : System.Drawing.Rectangle -> frameUnit : System.Drawing.Imaging.MetafileFrameUnit -> type : System.Drawing.Imaging.EmfType -> Void
+
+	public new(method) : fileName : String -> referenceHdc : System.IntPtr -> frameRect : System.Drawing.Rectangle -> frameUnit : System.Drawing.Imaging.MetafileFrameUnit -> Void
+
+	public new(method) : fileName : String -> referenceHdc : System.IntPtr -> frameRect : System.Drawing.Rectangle -> Void
+
+	public new(method) : fileName : String -> referenceHdc : System.IntPtr -> frameRect : System.Drawing.RectangleF -> frameUnit : System.Drawing.Imaging.MetafileFrameUnit -> type : System.Drawing.Imaging.EmfType -> description : String -> Void
+
+	public new(method) : fileName : String -> referenceHdc : System.IntPtr -> frameRect : System.Drawing.RectangleF -> frameUnit : System.Drawing.Imaging.MetafileFrameUnit -> desc : String -> Void
+
+	public new(method) : fileName : String -> referenceHdc : System.IntPtr -> frameRect : System.Drawing.RectangleF -> frameUnit : System.Drawing.Imaging.MetafileFrameUnit -> type : System.Drawing.Imaging.EmfType -> Void
+
+	public new(method) : fileName : String -> referenceHdc : System.IntPtr -> frameRect : System.Drawing.RectangleF -> frameUnit : System.Drawing.Imaging.MetafileFrameUnit -> Void
+
+	public new(method) : fileName : String -> referenceHdc : System.IntPtr -> frameRect : System.Drawing.RectangleF -> Void
+
+	public new(method) : fileName : String -> referenceHdc : System.IntPtr -> type : System.Drawing.Imaging.EmfType -> description : String -> Void
+
+	public new(method) : fileName : String -> referenceHdc : System.IntPtr -> type : System.Drawing.Imaging.EmfType -> Void
+
+	public new(method) : fileName : String -> referenceHdc : System.IntPtr -> Void
+
+	public new(method) : referenceHdc : System.IntPtr -> frameRect : System.Drawing.Rectangle -> frameUnit : System.Drawing.Imaging.MetafileFrameUnit -> type : System.Drawing.Imaging.EmfType -> desc : String -> Void
+
+	public new(method) : referenceHdc : System.IntPtr -> frameRect : System.Drawing.Rectangle -> frameUnit : System.Drawing.Imaging.MetafileFrameUnit -> type : System.Drawing.Imaging.EmfType -> Void
+
+	public new(method) : referenceHdc : System.IntPtr -> frameRect : System.Drawing.Rectangle -> frameUnit : System.Drawing.Imaging.MetafileFrameUnit -> Void
+
+	public new(method) : referenceHdc : System.IntPtr -> frameRect : System.Drawing.Rectangle -> Void
+
+	public new(method) : referenceHdc : System.IntPtr -> frameRect : System.Drawing.RectangleF -> frameUnit : System.Drawing.Imaging.MetafileFrameUnit -> type : System.Drawing.Imaging.EmfType -> description : String -> Void
+
+	public new(method) : referenceHdc : System.IntPtr -> frameRect : System.Drawing.RectangleF -> frameUnit : System.Drawing.Imaging.MetafileFrameUnit -> type : System.Drawing.Imaging.EmfType -> Void
+
+	public new(method) : referenceHdc : System.IntPtr -> frameRect : System.Drawing.RectangleF -> frameUnit : System.Drawing.Imaging.MetafileFrameUnit -> Void
+
+	public new(method) : referenceHdc : System.IntPtr -> frameRect : System.Drawing.RectangleF -> Void
+
+	public new(method) : referenceHdc : System.IntPtr -> emfType : System.Drawing.Imaging.EmfType -> description : String -> Void
+
+	public new(method) : referenceHdc : System.IntPtr -> emfType : System.Drawing.Imaging.EmfType -> Void
+
+	public new(method) : stream : System.IO.Stream -> Void
+
+	public new(method) : filename : String -> Void
+
+	public new(method) : henhmetafile : System.IntPtr -> deleteEmf : Bool -> Void
+
+	public new(method) : hmetafile : System.IntPtr -> wmfHeader : System.Drawing.Imaging.WmfPlaceableFileHeader -> deleteWmf : Bool -> Void
+
+	public GetMetafileHeader(method) : Void -> System.Drawing.Imaging.MetafileHeader
+
+	public GetHenhmetafile(method) : Void -> System.IntPtr
+
+	public PlayRecord(method) : recordType : System.Drawing.Imaging.EmfPlusRecordType -> flags : Int -> dataSize : Int -> data : cs.NativeArray<cs.types.UInt8> -> Void
+
+	static public GetMetafileHeader(method) : hmetafile : System.IntPtr -> wmfHeader : System.Drawing.Imaging.WmfPlaceableFileHeader -> System.Drawing.Imaging.MetafileHeader
+
+	static public GetMetafileHeader(method) : stream : System.IO.Stream -> System.Drawing.Imaging.MetafileHeader
+
+	static public GetMetafileHeader(method) : fileName : String -> System.Drawing.Imaging.MetafileHeader
+
+	static public GetMetafileHeader(method) : henhmetafile : System.IntPtr -> System.Drawing.Imaging.MetafileHeader
+
+	static public GetMetafileHeader(method) : hmetafile : System.IntPtr -> wmfHeader : System.Drawing.Imaging.WmfPlaceableFileHeader -> System.Drawing.Imaging.MetafileHeader
+
+	static public GetMetafileHeader(method) : stream : System.IO.Stream -> System.Drawing.Imaging.MetafileHeader
+
+	static public GetMetafileHeader(method) : fileName : String -> System.Drawing.Imaging.MetafileHeader
+
+	static public GetMetafileHeader(method) : henhmetafile : System.IntPtr -> System.Drawing.Imaging.MetafileHeader
+
+}

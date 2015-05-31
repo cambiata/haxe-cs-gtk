@@ -1,0 +1,12 @@
+extern class System.Security.Policy.Evidence.EvidenceEnumerator implements System.Collections.IEnumerator{
+	public new(method) : hostenum : System.Collections.IEnumerator -> assemblyenum : System.Collections.IEnumerator -> Void
+
+	public Current((get,never)) : Dynamic
+
+	public MoveNext(method) : Void -> Bool
+
+	public Reset(method) : Void -> Void
+
+	get_Current(method) : Void -> Dynamic
+
+}

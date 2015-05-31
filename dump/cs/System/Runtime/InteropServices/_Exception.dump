@@ -1,0 +1,38 @@
+extern interface System.Runtime.InteropServices._Exception{
+	public TargetSite((get,never)) : System.Reflection.MethodBase
+
+	public StackTrace((get,never)) : String
+
+	public Source((get,set)) : String
+
+	public Message((get,never)) : String
+
+	public InnerException((get,never)) : System.Exception
+
+	public HelpLink((get,set)) : String
+
+	get_HelpLink(method) : Void -> String
+
+	set_HelpLink(method) : value : String -> String
+
+	get_InnerException(method) : Void -> System.Exception
+
+	get_Message(method) : Void -> String
+
+	get_Source(method) : Void -> String
+
+	set_Source(method) : value : String -> String
+
+	get_StackTrace(method) : Void -> String
+
+	get_TargetSite(method) : Void -> System.Reflection.MethodBase
+
+	public GetBaseException(method) : Void -> System.Exception
+
+	public GetObjectData(method) : info : System.Runtime.Serialization.SerializationInfo -> context : System.Runtime.Serialization.StreamingContext -> Void
+
+	public GetType(method) : Void -> System.Type
+
+	public ToString(method) : Void -> String
+
+}

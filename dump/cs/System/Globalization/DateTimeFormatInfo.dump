@@ -1,0 +1,188 @@
+extern class System.Globalization.DateTimeFormatInfo implements System.ICloneable implements System.IFormatProvider{
+	public new(method) : Void -> Void
+
+	public ShortestDayNames((get,set)) : cs.NativeArray<String>
+
+	public NativeCalendarName((get,never)) : String
+
+	public MonthGenitiveNames((get,set)) : cs.NativeArray<String>
+
+	public AbbreviatedMonthGenitiveNames((get,set)) : cs.NativeArray<String>
+
+	public UniversalSortableDateTimePattern((get,never)) : String
+
+	public SortableDateTimePattern((get,never)) : String
+
+	public RFC1123Pattern((get,never)) : String
+
+	public CalendarWeekRule((get,set)) : System.Globalization.CalendarWeekRule
+
+	public Calendar((get,set)) : System.Globalization.Calendar
+
+	public FirstDayOfWeek((get,set)) : System.DayOfWeek
+
+	public FullDateTimePattern((get,set)) : String
+
+	public YearMonthPattern((get,set)) : String
+
+	public MonthDayPattern((get,set)) : String
+
+	public LongTimePattern((get,set)) : String
+
+	public ShortTimePattern((get,set)) : String
+
+	public ShortDatePattern((get,set)) : String
+
+	public LongDatePattern((get,set)) : String
+
+	public TimeSeparator((get,set)) : String
+
+	public DateSeparator((get,set)) : String
+
+	public PMDesignator((get,set)) : String
+
+	public AMDesignator((get,set)) : String
+
+	public MonthNames((get,set)) : cs.NativeArray<String>
+
+	public DayNames((get,set)) : cs.NativeArray<String>
+
+	public AbbreviatedMonthNames((get,set)) : cs.NativeArray<String>
+
+	public AbbreviatedDayNames((get,set)) : cs.NativeArray<String>
+
+	public IsReadOnly((get,never)) : Bool
+
+	get_IsReadOnly(method) : Void -> Bool
+
+	public Clone(method) : Void -> Dynamic
+
+	public GetFormat(method) : formatType : System.Type -> Dynamic
+
+	public GetAbbreviatedEraName(method) : era : Int -> String
+
+	public GetAbbreviatedMonthName(method) : month : Int -> String
+
+	public GetEra(method) : eraName : String -> Int
+
+	public GetEraName(method) : era : Int -> String
+
+	public GetMonthName(method) : month : Int -> String
+
+	get_AbbreviatedDayNames(method) : Void -> cs.NativeArray<String>
+
+	set_AbbreviatedDayNames(method) : value : cs.NativeArray<String> -> cs.NativeArray<String>
+
+	get_AbbreviatedMonthNames(method) : Void -> cs.NativeArray<String>
+
+	set_AbbreviatedMonthNames(method) : value : cs.NativeArray<String> -> cs.NativeArray<String>
+
+	get_DayNames(method) : Void -> cs.NativeArray<String>
+
+	set_DayNames(method) : value : cs.NativeArray<String> -> cs.NativeArray<String>
+
+	get_MonthNames(method) : Void -> cs.NativeArray<String>
+
+	set_MonthNames(method) : value : cs.NativeArray<String> -> cs.NativeArray<String>
+
+	get_AMDesignator(method) : Void -> String
+
+	set_AMDesignator(method) : value : String -> String
+
+	get_PMDesignator(method) : Void -> String
+
+	set_PMDesignator(method) : value : String -> String
+
+	get_DateSeparator(method) : Void -> String
+
+	set_DateSeparator(method) : value : String -> String
+
+	get_TimeSeparator(method) : Void -> String
+
+	set_TimeSeparator(method) : value : String -> String
+
+	get_LongDatePattern(method) : Void -> String
+
+	set_LongDatePattern(method) : value : String -> String
+
+	get_ShortDatePattern(method) : Void -> String
+
+	set_ShortDatePattern(method) : value : String -> String
+
+	get_ShortTimePattern(method) : Void -> String
+
+	set_ShortTimePattern(method) : value : String -> String
+
+	get_LongTimePattern(method) : Void -> String
+
+	set_LongTimePattern(method) : value : String -> String
+
+	get_MonthDayPattern(method) : Void -> String
+
+	set_MonthDayPattern(method) : value : String -> String
+
+	get_YearMonthPattern(method) : Void -> String
+
+	set_YearMonthPattern(method) : value : String -> String
+
+	get_FullDateTimePattern(method) : Void -> String
+
+	set_FullDateTimePattern(method) : value : String -> String
+
+	get_FirstDayOfWeek(method) : Void -> System.DayOfWeek
+
+	set_FirstDayOfWeek(method) : value : System.DayOfWeek -> System.DayOfWeek
+
+	get_Calendar(method) : Void -> System.Globalization.Calendar
+
+	set_Calendar(method) : value : System.Globalization.Calendar -> System.Globalization.Calendar
+
+	get_CalendarWeekRule(method) : Void -> System.Globalization.CalendarWeekRule
+
+	set_CalendarWeekRule(method) : value : System.Globalization.CalendarWeekRule -> System.Globalization.CalendarWeekRule
+
+	get_RFC1123Pattern(method) : Void -> String
+
+	get_SortableDateTimePattern(method) : Void -> String
+
+	get_UniversalSortableDateTimePattern(method) : Void -> String
+
+	public GetAllDateTimePatterns(method) : Void -> cs.NativeArray<String>
+
+	public GetAllDateTimePatterns(method) : format : cs.types.Char16 -> cs.NativeArray<String>
+
+	public GetDayName(method) : dayofweek : System.DayOfWeek -> String
+
+	public GetAbbreviatedDayName(method) : dayofweek : System.DayOfWeek -> String
+
+	get_AbbreviatedMonthGenitiveNames(method) : Void -> cs.NativeArray<String>
+
+	set_AbbreviatedMonthGenitiveNames(method) : value : cs.NativeArray<String> -> cs.NativeArray<String>
+
+	get_MonthGenitiveNames(method) : Void -> cs.NativeArray<String>
+
+	set_MonthGenitiveNames(method) : value : cs.NativeArray<String> -> cs.NativeArray<String>
+
+	get_NativeCalendarName(method) : Void -> String
+
+	get_ShortestDayNames(method) : Void -> cs.NativeArray<String>
+
+	set_ShortestDayNames(method) : value : cs.NativeArray<String> -> cs.NativeArray<String>
+
+	public GetShortestDayName(method) : dayOfWeek : System.DayOfWeek -> String
+
+	public SetAllDateTimePatterns(method) : patterns : cs.NativeArray<String> -> format : cs.types.Char16 -> Void
+
+	static public InvariantInfo((get,never)) : System.Globalization.DateTimeFormatInfo
+
+	static public CurrentInfo((get,never)) : System.Globalization.DateTimeFormatInfo
+
+	static public GetInstance(method) : provider : System.IFormatProvider -> System.Globalization.DateTimeFormatInfo
+
+	static public ReadOnly(method) : dtfi : System.Globalization.DateTimeFormatInfo -> System.Globalization.DateTimeFormatInfo
+
+	static get_CurrentInfo(method) : Void -> System.Globalization.DateTimeFormatInfo
+
+	static get_InvariantInfo(method) : Void -> System.Globalization.DateTimeFormatInfo
+
+}

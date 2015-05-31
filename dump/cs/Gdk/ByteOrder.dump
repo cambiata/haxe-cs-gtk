@@ -1,0 +1,4 @@
+extern enum Gdk.ByteOrder {
+	LsbFirst : Gdk.ByteOrder;
+	MsbFirst : Gdk.ByteOrder;
+}

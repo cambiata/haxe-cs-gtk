@@ -1,0 +1,28 @@
+extern class Gdk.Event implements GLib.IWrapper{
+	public new(method) : raw : System.IntPtr -> Void
+
+	public SendEvent((get,never)) : Bool
+
+	public Window((get,never)) : Gdk.Window
+
+	public Type((get,never)) : Gdk.EventType
+
+	public Handle((get,never)) : System.IntPtr
+
+	get_Handle(method) : Void -> System.IntPtr
+
+	get_Type(method) : Void -> Gdk.EventType
+
+	get_Window(method) : Void -> Gdk.Window
+
+	get_SendEvent(method) : Void -> Bool
+
+	static public GType((get,never)) : GLib.GType
+
+	static get_GType(method) : Void -> GLib.GType
+
+	static public New(method) : raw : System.IntPtr -> Gdk.Event
+
+	static public GetEvent(method) : raw : System.IntPtr -> Gdk.Event
+
+}

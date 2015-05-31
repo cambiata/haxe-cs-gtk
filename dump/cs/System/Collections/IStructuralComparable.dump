@@ -1,0 +1,4 @@
+extern interface System.Collections.IStructuralComparable{
+	public CompareTo(method) : other : Dynamic -> comparer : System.Collections.IComparer -> Int
+
+}

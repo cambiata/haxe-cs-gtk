@@ -1,0 +1,32 @@
+extern class System.Reflection.MethodInfo extends System.Reflection.MethodBase implements System.Runtime.InteropServices._MethodInfo{
+	new(method) : Void -> Void
+
+	public ReturnParameter((get,never)) : System.Reflection.ParameterInfo
+
+	public ReturnTypeCustomAttributes((get,never)) : System.Reflection.ICustomAttributeProvider
+
+	public ReturnType((get,never)) : System.Type
+
+	public MemberType((get,never)) : System.Reflection.MemberTypes
+
+	public GetBaseDefinition(method) : Void -> System.Reflection.MethodInfo
+
+	get_MemberType(method) : Void -> System.Reflection.MemberTypes
+
+	get_ReturnType(method) : Void -> System.Type
+
+	get_ReturnTypeCustomAttributes(method) : Void -> System.Reflection.ICustomAttributeProvider
+
+	public GetGenericMethodDefinition(method) : Void -> System.Reflection.MethodInfo
+
+	public MakeGenericMethod(method) : typeArguments : cs.NativeArray<System.Type> -> System.Reflection.MethodInfo
+
+	public GetGenericArguments(method) : Void -> cs.NativeArray<System.Type>
+
+	get_ReturnParameter(method) : Void -> System.Reflection.ParameterInfo
+
+	static public op_Equality(method) : left : System.Reflection.MethodInfo -> right : System.Reflection.MethodInfo -> Bool
+
+	static public op_Inequality(method) : left : System.Reflection.MethodInfo -> right : System.Reflection.MethodInfo -> Bool
+
+}

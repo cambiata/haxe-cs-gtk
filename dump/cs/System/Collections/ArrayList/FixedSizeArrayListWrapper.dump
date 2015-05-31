@@ -1,0 +1,36 @@
+extern class System.Collections.ArrayList.FixedSizeArrayListWrapper extends System.Collections.ArrayList.ArrayListWrapper{
+	public new(method) : innerList : System.Collections.ArrayList -> Void
+
+	public IsFixedSize((get,never)) : Bool
+
+	public Capacity((get,set)) : Int
+
+	ErrorMessage((null,never)) : String
+
+	get_ErrorMessage(method) : Void -> String
+
+	get_Capacity(method) : Void -> Int
+
+	set_Capacity(method) : value : Int -> Int
+
+	get_IsFixedSize(method) : Void -> Bool
+
+	public Add(method) : value : Dynamic -> Int
+
+	public AddRange(method) : c : System.Collections.ICollection -> Void
+
+	public Clear(method) : Void -> Void
+
+	public Insert(method) : index : Int -> value : Dynamic -> Void
+
+	public InsertRange(method) : index : Int -> c : System.Collections.ICollection -> Void
+
+	public Remove(method) : value : Dynamic -> Void
+
+	public RemoveAt(method) : index : Int -> Void
+
+	public RemoveRange(method) : index : Int -> count : Int -> Void
+
+	public TrimToSize(method) : Void -> Void
+
+}

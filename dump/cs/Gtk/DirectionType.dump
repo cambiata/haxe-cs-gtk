@@ -1,0 +1,8 @@
+extern enum Gtk.DirectionType {
+	TabForward : Gtk.DirectionType;
+	TabBackward : Gtk.DirectionType;
+	Up : Gtk.DirectionType;
+	Down : Gtk.DirectionType;
+	Left : Gtk.DirectionType;
+	Right : Gtk.DirectionType;
+}

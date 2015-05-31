@@ -1,0 +1,7 @@
+extern enum System.Reflection.AssemblyNameFlags {
+	None : System.Reflection.AssemblyNameFlags;
+	PublicKey : System.Reflection.AssemblyNameFlags;
+	Retargetable : System.Reflection.AssemblyNameFlags;
+	EnableJITcompileOptimizer : System.Reflection.AssemblyNameFlags;
+	EnableJITcompileTracking : System.Reflection.AssemblyNameFlags;
+}

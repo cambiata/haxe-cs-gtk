@@ -1,0 +1,16 @@
+extern class System.Object{
+	public new(method) : Void -> Void
+
+	Finalize(method) : Void -> Void
+
+	public GetType(method) : Void -> System.Type
+
+	MemberwiseClone(method) : Void -> Dynamic
+
+	public ToString(method) : Void -> String
+
+	static public Equals(method) : objA : Dynamic -> objB : Dynamic -> Bool
+
+	static public ReferenceEquals(method) : objA : Dynamic -> objB : Dynamic -> Bool
+
+}

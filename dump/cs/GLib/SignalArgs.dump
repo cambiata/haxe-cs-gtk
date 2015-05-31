@@ -1,0 +1,20 @@
+extern class GLib.SignalArgs extends System.EventArgs{
+	public new(method) : Void -> Void
+
+	public new(method) : retval : Dynamic -> args : cs.NativeArray<Dynamic> -> Void
+
+	public new(method) : retval : Dynamic -> Void
+
+	public RetVal((get,set)) : Dynamic
+
+	public Args((get,set)) : cs.NativeArray<Dynamic>
+
+	get_Args(method) : Void -> cs.NativeArray<Dynamic>
+
+	set_Args(method) : value : cs.NativeArray<Dynamic> -> cs.NativeArray<Dynamic>
+
+	get_RetVal(method) : Void -> Dynamic
+
+	set_RetVal(method) : value : Dynamic -> Dynamic
+
+}

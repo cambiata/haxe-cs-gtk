@@ -1,0 +1,18 @@
+extern class Gdk.EventOwnerChange.NativeStruct extends System.ValueType{
+	public selection_time(var) : UInt
+
+	public time(var) : UInt
+
+	public selection(var) : System.IntPtr
+
+	public reason(var) : Gdk.OwnerChange
+
+	public owner(var) : UInt
+
+	public send_event(var) : cs.types.Int8
+
+	public window(var) : System.IntPtr
+
+	public type(var) : Gdk.EventType
+
+}

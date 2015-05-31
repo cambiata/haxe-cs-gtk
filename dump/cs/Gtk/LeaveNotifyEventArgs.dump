@@ -1,0 +1,8 @@
+extern class Gtk.LeaveNotifyEventArgs extends GLib.SignalArgs{
+	public new(method) : Void -> Void
+
+	public Event((get,never)) : Gdk.EventCrossing
+
+	get_Event(method) : Void -> Gdk.EventCrossing
+
+}

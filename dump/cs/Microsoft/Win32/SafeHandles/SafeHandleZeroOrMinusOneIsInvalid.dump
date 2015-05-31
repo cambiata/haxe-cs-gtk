@@ -1,0 +1,8 @@
+extern class Microsoft.Win32.SafeHandles.SafeHandleZeroOrMinusOneIsInvalid extends System.Runtime.InteropServices.SafeHandle implements System.IDisposable{
+	new(method) : ownsHandle : Bool -> Void
+
+	public IsInvalid((get,never)) : Bool
+
+	get_IsInvalid(method) : Void -> Bool
+
+}

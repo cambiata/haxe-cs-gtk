@@ -1,0 +1,94 @@
+extern class System.Drawing.Imaging.ImageAttributes implements System.ICloneable implements System.IDisposable{
+	public new(method) : Void -> Void
+
+	public Dispose(method) : Void -> Void
+
+	Finalize(method) : Void -> Void
+
+	public Clone(method) : Void -> Dynamic
+
+	public SetColorMatrix(method) : newColorMatrix : System.Drawing.Imaging.ColorMatrix -> Void
+
+	public SetColorMatrix(method) : newColorMatrix : System.Drawing.Imaging.ColorMatrix -> mode : System.Drawing.Imaging.ColorMatrixFlag -> type : System.Drawing.Imaging.ColorAdjustType -> Void
+
+	public SetColorMatrix(method) : newColorMatrix : System.Drawing.Imaging.ColorMatrix -> flags : System.Drawing.Imaging.ColorMatrixFlag -> Void
+
+	public ClearColorMatrix(method) : Void -> Void
+
+	public ClearColorMatrix(method) : type : System.Drawing.Imaging.ColorAdjustType -> Void
+
+	public SetColorMatrices(method) : newColorMatrix : System.Drawing.Imaging.ColorMatrix -> grayMatrix : System.Drawing.Imaging.ColorMatrix -> Void
+
+	public SetColorMatrices(method) : newColorMatrix : System.Drawing.Imaging.ColorMatrix -> grayMatrix : System.Drawing.Imaging.ColorMatrix -> mode : System.Drawing.Imaging.ColorMatrixFlag -> type : System.Drawing.Imaging.ColorAdjustType -> Void
+
+	public SetColorMatrices(method) : newColorMatrix : System.Drawing.Imaging.ColorMatrix -> grayMatrix : System.Drawing.Imaging.ColorMatrix -> flags : System.Drawing.Imaging.ColorMatrixFlag -> Void
+
+	public SetThreshold(method) : threshold : Single -> Void
+
+	public SetThreshold(method) : threshold : Single -> type : System.Drawing.Imaging.ColorAdjustType -> Void
+
+	public ClearThreshold(method) : Void -> Void
+
+	public ClearThreshold(method) : type : System.Drawing.Imaging.ColorAdjustType -> Void
+
+	public SetGamma(method) : gamma : Single -> Void
+
+	public SetGamma(method) : gamma : Single -> type : System.Drawing.Imaging.ColorAdjustType -> Void
+
+	public ClearGamma(method) : Void -> Void
+
+	public ClearGamma(method) : type : System.Drawing.Imaging.ColorAdjustType -> Void
+
+	public SetNoOp(method) : Void -> Void
+
+	public SetNoOp(method) : type : System.Drawing.Imaging.ColorAdjustType -> Void
+
+	public ClearNoOp(method) : Void -> Void
+
+	public ClearNoOp(method) : type : System.Drawing.Imaging.ColorAdjustType -> Void
+
+	public SetColorKey(method) : colorLow : System.Drawing.Color -> colorHigh : System.Drawing.Color -> Void
+
+	public SetColorKey(method) : colorLow : System.Drawing.Color -> colorHigh : System.Drawing.Color -> type : System.Drawing.Imaging.ColorAdjustType -> Void
+
+	public ClearColorKey(method) : Void -> Void
+
+	public ClearColorKey(method) : type : System.Drawing.Imaging.ColorAdjustType -> Void
+
+	public SetOutputChannel(method) : flags : System.Drawing.Imaging.ColorChannelFlag -> Void
+
+	public SetOutputChannel(method) : flags : System.Drawing.Imaging.ColorChannelFlag -> type : System.Drawing.Imaging.ColorAdjustType -> Void
+
+	public ClearOutputChannel(method) : Void -> Void
+
+	public ClearOutputChannel(method) : type : System.Drawing.Imaging.ColorAdjustType -> Void
+
+	public SetOutputChannelColorProfile(method) : colorProfileFilename : String -> Void
+
+	public SetOutputChannelColorProfile(method) : colorProfileFilename : String -> type : System.Drawing.Imaging.ColorAdjustType -> Void
+
+	public ClearOutputChannelColorProfile(method) : Void -> Void
+
+	public ClearOutputChannelColorProfile(method) : type : System.Drawing.Imaging.ColorAdjustType -> Void
+
+	public SetRemapTable(method) : map : cs.NativeArray<System.Drawing.Imaging.ColorMap> -> Void
+
+	public SetRemapTable(method) : map : cs.NativeArray<System.Drawing.Imaging.ColorMap> -> type : System.Drawing.Imaging.ColorAdjustType -> Void
+
+	public ClearRemapTable(method) : Void -> Void
+
+	public ClearRemapTable(method) : type : System.Drawing.Imaging.ColorAdjustType -> Void
+
+	public SetBrushRemapTable(method) : map : cs.NativeArray<System.Drawing.Imaging.ColorMap> -> Void
+
+	public ClearBrushRemapTable(method) : Void -> Void
+
+	public SetWrapMode(method) : mode : System.Drawing.Drawing2D.WrapMode -> Void
+
+	public SetWrapMode(method) : mode : System.Drawing.Drawing2D.WrapMode -> color : System.Drawing.Color -> clamp : Bool -> Void
+
+	public SetWrapMode(method) : mode : System.Drawing.Drawing2D.WrapMode -> color : System.Drawing.Color -> Void
+
+	public GetAdjustedPalette(method) : palette : System.Drawing.Imaging.ColorPalette -> type : System.Drawing.Imaging.ColorAdjustType -> Void
+
+}

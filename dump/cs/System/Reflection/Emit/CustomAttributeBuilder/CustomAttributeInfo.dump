@@ -1,0 +1,10 @@
+extern class System.Reflection.Emit.CustomAttributeBuilder.CustomAttributeInfo extends System.ValueType{
+	public namedParamValues(var) : cs.NativeArray<Dynamic>
+
+	public namedParamNames(var) : cs.NativeArray<String>
+
+	public ctorArgs(var) : cs.NativeArray<Dynamic>
+
+	public ctor(var) : System.Reflection.ConstructorInfo
+
+}

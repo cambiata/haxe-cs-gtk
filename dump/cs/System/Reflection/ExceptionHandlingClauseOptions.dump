@@ -1,0 +1,6 @@
+extern enum System.Reflection.ExceptionHandlingClauseOptions {
+	Clause : System.Reflection.ExceptionHandlingClauseOptions;
+	Filter : System.Reflection.ExceptionHandlingClauseOptions;
+	Finally : System.Reflection.ExceptionHandlingClauseOptions;
+	Fault : System.Reflection.ExceptionHandlingClauseOptions;
+}

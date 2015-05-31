@@ -1,0 +1,36 @@
+extern interface System.Runtime.Serialization.IFormatterConverter{
+	public Convert(method) : value : Dynamic -> type : System.Type -> Dynamic
+
+	public Convert(method) : value : Dynamic -> typeCode : System.TypeCode -> Dynamic
+
+	public ToBoolean(method) : value : Dynamic -> Bool
+
+	public ToByte(method) : value : Dynamic -> cs.types.UInt8
+
+	public ToChar(method) : value : Dynamic -> cs.types.Char16
+
+	public ToDateTime(method) : value : Dynamic -> System.DateTime
+
+	public ToDecimal(method) : value : Dynamic -> System.Decimal
+
+	public ToDouble(method) : value : Dynamic -> Float
+
+	public ToInt16(method) : value : Dynamic -> cs.types.Int16
+
+	public ToInt32(method) : value : Dynamic -> Int
+
+	public ToInt64(method) : value : Dynamic -> haxe.Int64
+
+	public ToSByte(method) : value : Dynamic -> cs.types.Int8
+
+	public ToSingle(method) : value : Dynamic -> Single
+
+	public ToString(method) : value : Dynamic -> String
+
+	public ToUInt16(method) : value : Dynamic -> cs.types.UInt16
+
+	public ToUInt32(method) : value : Dynamic -> UInt
+
+	public ToUInt64(method) : value : Dynamic -> cs.types.UInt64
+
+}

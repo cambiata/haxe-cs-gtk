@@ -1,0 +1,404 @@
+extern class Gtk.TextTag extends GLib.Object{
+	new(method) : gtype : GLib.GType -> Void
+
+	public new(method) : name : String -> Void
+
+	public new(method) : raw : System.IntPtr -> Void
+
+	TextEvent(var) : gtk.TextEventHandler
+
+	public Weight((get,set)) : Pango.Weight
+
+	public Priority((get,set)) : Int
+
+	public ForegroundGdk((get,set)) : Gdk.Color
+
+	public Variant((get,set)) : Pango.Variant
+
+	public InvisibleSet((get,set)) : Bool
+
+	public BackgroundStipple((get,set)) : Gdk.Pixmap
+
+	public WrapMode((get,set)) : Gtk.WrapMode
+
+	public StrikethroughSet((get,set)) : Bool
+
+	public Scale((get,set)) : Float
+
+	public PixelsBelowLines((get,set)) : Int
+
+	public Background((never,set)) : String
+
+	public Foreground((never,set)) : String
+
+	public ForegroundSet((get,set)) : Bool
+
+	public Family((get,set)) : String
+
+	public PixelsBelowLinesSet((get,set)) : Bool
+
+	public RiseSet((get,set)) : Bool
+
+	public ScaleSet((get,set)) : Bool
+
+	public Invisible((get,set)) : Bool
+
+	public StretchSet((get,set)) : Bool
+
+	public TabsSet((get,set)) : Bool
+
+	public Size((get,set)) : Int
+
+	public Justification((get,set)) : Gtk.Justification
+
+	public Stretch((get,set)) : Pango.Stretch
+
+	public Name((get,never)) : String
+
+	public WeightSet((get,set)) : Bool
+
+	public Tabs((get,set)) : Pango.TabArray
+
+	public VariantSet((get,set)) : Bool
+
+	public EditableSet((get,set)) : Bool
+
+	public LanguageSet((get,set)) : Bool
+
+	public Strikethrough((get,set)) : Bool
+
+	public PixelsAboveLines((get,set)) : Int
+
+	public Rise((get,set)) : Int
+
+	public ForegroundStippleSet((get,set)) : Bool
+
+	public LeftMargin((get,set)) : Int
+
+	public IndentSet((get,set)) : Bool
+
+	public Underline((get,set)) : Pango.Underline
+
+	public ForegroundStipple((get,set)) : Gdk.Pixmap
+
+	public FamilySet((get,set)) : Bool
+
+	public Indent((get,set)) : Int
+
+	public SizePoints((get,set)) : Float
+
+	public BackgroundStippleSet((get,set)) : Bool
+
+	public PixelsAboveLinesSet((get,set)) : Bool
+
+	public PixelsInsideWrapSet((get,set)) : Bool
+
+	public RightMarginSet((get,set)) : Bool
+
+	public Direction((get,set)) : Gtk.TextDirection
+
+	public BackgroundGdk((get,set)) : Gdk.Color
+
+	public ParagraphBackgroundGdk((get,set)) : Gdk.Color
+
+	public RightMargin((get,set)) : Int
+
+	public PixelsInsideWrap((get,set)) : Int
+
+	public BackgroundFullHeightSet((get,set)) : Bool
+
+	public StyleSet((get,set)) : Bool
+
+	public BackgroundSet((get,set)) : Bool
+
+	public Editable((get,set)) : Bool
+
+	public BackgroundFullHeight((get,set)) : Bool
+
+	public SizeSet((get,set)) : Bool
+
+	public Style((get,set)) : Pango.Style
+
+	public WrapModeSet((get,set)) : Bool
+
+	public FontDesc((get,set)) : Pango.FontDescription
+
+	public JustificationSet((get,set)) : Bool
+
+	public Language((get,set)) : String
+
+	public AccumulativeMargin((get,set)) : Bool
+
+	public UnderlineSet((get,set)) : Bool
+
+	public LeftMarginSet((get,set)) : Bool
+
+	public Font((get,set)) : String
+
+	public ParagraphBackground((never,set)) : String
+
+	set_ParagraphBackground(method) : value : String -> String
+
+	get_Font(method) : Void -> String
+
+	set_Font(method) : value : String -> String
+
+	get_LeftMarginSet(method) : Void -> Bool
+
+	set_LeftMarginSet(method) : value : Bool -> Bool
+
+	get_UnderlineSet(method) : Void -> Bool
+
+	set_UnderlineSet(method) : value : Bool -> Bool
+
+	get_AccumulativeMargin(method) : Void -> Bool
+
+	set_AccumulativeMargin(method) : value : Bool -> Bool
+
+	get_Language(method) : Void -> String
+
+	set_Language(method) : value : String -> String
+
+	get_JustificationSet(method) : Void -> Bool
+
+	set_JustificationSet(method) : value : Bool -> Bool
+
+	get_FontDesc(method) : Void -> Pango.FontDescription
+
+	set_FontDesc(method) : value : Pango.FontDescription -> Pango.FontDescription
+
+	get_WrapModeSet(method) : Void -> Bool
+
+	set_WrapModeSet(method) : value : Bool -> Bool
+
+	get_Style(method) : Void -> Pango.Style
+
+	set_Style(method) : value : Pango.Style -> Pango.Style
+
+	get_SizeSet(method) : Void -> Bool
+
+	set_SizeSet(method) : value : Bool -> Bool
+
+	get_BackgroundFullHeight(method) : Void -> Bool
+
+	set_BackgroundFullHeight(method) : value : Bool -> Bool
+
+	get_Editable(method) : Void -> Bool
+
+	set_Editable(method) : value : Bool -> Bool
+
+	get_BackgroundSet(method) : Void -> Bool
+
+	set_BackgroundSet(method) : value : Bool -> Bool
+
+	get_StyleSet(method) : Void -> Bool
+
+	set_StyleSet(method) : value : Bool -> Bool
+
+	get_BackgroundFullHeightSet(method) : Void -> Bool
+
+	set_BackgroundFullHeightSet(method) : value : Bool -> Bool
+
+	get_PixelsInsideWrap(method) : Void -> Int
+
+	set_PixelsInsideWrap(method) : value : Int -> Int
+
+	get_RightMargin(method) : Void -> Int
+
+	set_RightMargin(method) : value : Int -> Int
+
+	get_ParagraphBackgroundGdk(method) : Void -> Gdk.Color
+
+	set_ParagraphBackgroundGdk(method) : value : Gdk.Color -> Gdk.Color
+
+	get_BackgroundGdk(method) : Void -> Gdk.Color
+
+	set_BackgroundGdk(method) : value : Gdk.Color -> Gdk.Color
+
+	get_Direction(method) : Void -> Gtk.TextDirection
+
+	set_Direction(method) : value : Gtk.TextDirection -> Gtk.TextDirection
+
+	get_RightMarginSet(method) : Void -> Bool
+
+	set_RightMarginSet(method) : value : Bool -> Bool
+
+	get_PixelsInsideWrapSet(method) : Void -> Bool
+
+	set_PixelsInsideWrapSet(method) : value : Bool -> Bool
+
+	get_PixelsAboveLinesSet(method) : Void -> Bool
+
+	set_PixelsAboveLinesSet(method) : value : Bool -> Bool
+
+	get_BackgroundStippleSet(method) : Void -> Bool
+
+	set_BackgroundStippleSet(method) : value : Bool -> Bool
+
+	get_SizePoints(method) : Void -> Float
+
+	set_SizePoints(method) : value : Float -> Float
+
+	get_Indent(method) : Void -> Int
+
+	set_Indent(method) : value : Int -> Int
+
+	get_FamilySet(method) : Void -> Bool
+
+	set_FamilySet(method) : value : Bool -> Bool
+
+	get_ForegroundStipple(method) : Void -> Gdk.Pixmap
+
+	set_ForegroundStipple(method) : value : Gdk.Pixmap -> Gdk.Pixmap
+
+	get_Underline(method) : Void -> Pango.Underline
+
+	set_Underline(method) : value : Pango.Underline -> Pango.Underline
+
+	get_IndentSet(method) : Void -> Bool
+
+	set_IndentSet(method) : value : Bool -> Bool
+
+	get_LeftMargin(method) : Void -> Int
+
+	set_LeftMargin(method) : value : Int -> Int
+
+	get_ForegroundStippleSet(method) : Void -> Bool
+
+	set_ForegroundStippleSet(method) : value : Bool -> Bool
+
+	get_Rise(method) : Void -> Int
+
+	set_Rise(method) : value : Int -> Int
+
+	get_PixelsAboveLines(method) : Void -> Int
+
+	set_PixelsAboveLines(method) : value : Int -> Int
+
+	get_Strikethrough(method) : Void -> Bool
+
+	set_Strikethrough(method) : value : Bool -> Bool
+
+	get_LanguageSet(method) : Void -> Bool
+
+	set_LanguageSet(method) : value : Bool -> Bool
+
+	get_EditableSet(method) : Void -> Bool
+
+	set_EditableSet(method) : value : Bool -> Bool
+
+	get_VariantSet(method) : Void -> Bool
+
+	set_VariantSet(method) : value : Bool -> Bool
+
+	get_Tabs(method) : Void -> Pango.TabArray
+
+	set_Tabs(method) : value : Pango.TabArray -> Pango.TabArray
+
+	get_WeightSet(method) : Void -> Bool
+
+	set_WeightSet(method) : value : Bool -> Bool
+
+	get_Name(method) : Void -> String
+
+	get_Stretch(method) : Void -> Pango.Stretch
+
+	set_Stretch(method) : value : Pango.Stretch -> Pango.Stretch
+
+	get_Justification(method) : Void -> Gtk.Justification
+
+	set_Justification(method) : value : Gtk.Justification -> Gtk.Justification
+
+	get_Size(method) : Void -> Int
+
+	set_Size(method) : value : Int -> Int
+
+	get_TabsSet(method) : Void -> Bool
+
+	set_TabsSet(method) : value : Bool -> Bool
+
+	get_StretchSet(method) : Void -> Bool
+
+	set_StretchSet(method) : value : Bool -> Bool
+
+	get_Invisible(method) : Void -> Bool
+
+	set_Invisible(method) : value : Bool -> Bool
+
+	get_ScaleSet(method) : Void -> Bool
+
+	set_ScaleSet(method) : value : Bool -> Bool
+
+	get_RiseSet(method) : Void -> Bool
+
+	set_RiseSet(method) : value : Bool -> Bool
+
+	get_PixelsBelowLinesSet(method) : Void -> Bool
+
+	set_PixelsBelowLinesSet(method) : value : Bool -> Bool
+
+	get_Family(method) : Void -> String
+
+	set_Family(method) : value : String -> String
+
+	get_ForegroundSet(method) : Void -> Bool
+
+	set_ForegroundSet(method) : value : Bool -> Bool
+
+	set_Foreground(method) : value : String -> String
+
+	set_Background(method) : value : String -> String
+
+	get_PixelsBelowLines(method) : Void -> Int
+
+	set_PixelsBelowLines(method) : value : Int -> Int
+
+	get_Scale(method) : Void -> Float
+
+	set_Scale(method) : value : Float -> Float
+
+	get_StrikethroughSet(method) : Void -> Bool
+
+	set_StrikethroughSet(method) : value : Bool -> Bool
+
+	get_WrapMode(method) : Void -> Gtk.WrapMode
+
+	set_WrapMode(method) : value : Gtk.WrapMode -> Gtk.WrapMode
+
+	get_BackgroundStipple(method) : Void -> Gdk.Pixmap
+
+	set_BackgroundStipple(method) : value : Gdk.Pixmap -> Gdk.Pixmap
+
+	get_InvisibleSet(method) : Void -> Bool
+
+	set_InvisibleSet(method) : value : Bool -> Bool
+
+	get_Variant(method) : Void -> Pango.Variant
+
+	set_Variant(method) : value : Pango.Variant -> Pango.Variant
+
+	get_ForegroundGdk(method) : Void -> Gdk.Color
+
+	set_ForegroundGdk(method) : value : Gdk.Color -> Gdk.Color
+
+	get_Priority(method) : Void -> Int
+
+	set_Priority(method) : value : Int -> Int
+
+	OnTextEvent(method) : event_object : GLib.Object -> evnt : Gdk.Event -> iter : Gtk.TextIter -> Bool
+
+	public add_TextEvent(method) : value : gtk.TextEventHandler -> Void
+
+	public remove_TextEvent(method) : value : gtk.TextEventHandler -> Void
+
+	public ProcessEvent(method) : event_object : GLib.Object -> evnt : Gdk.Event -> iter : Gtk.TextIter -> Bool
+
+	get_Weight(method) : Void -> Pango.Weight
+
+	set_Weight(method) : value : Pango.Weight -> Pango.Weight
+
+	static public GType((get,never)) : GLib.GType
+
+	static get_GType(method) : Void -> GLib.GType
+
+}

@@ -1,0 +1,5 @@
+extern enum System.IO.FileAccess {
+	Read : System.IO.FileAccess;
+	Write : System.IO.FileAccess;
+	ReadWrite : System.IO.FileAccess;
+}

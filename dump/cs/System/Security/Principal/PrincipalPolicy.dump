@@ -1,0 +1,5 @@
+extern enum System.Security.Principal.PrincipalPolicy {
+	UnauthenticatedPrincipal : System.Security.Principal.PrincipalPolicy;
+	NoPrincipal : System.Security.Principal.PrincipalPolicy;
+	WindowsPrincipal : System.Security.Principal.PrincipalPolicy;
+}

@@ -1,0 +1,24 @@
+extern class System.Security.AccessControl.AuthorizationRule{
+	new(method) : identity : System.Security.Principal.IdentityReference -> accessMask : Int -> isInherited : Bool -> inheritanceFlags : System.Security.AccessControl.InheritanceFlags -> propagationFlags : System.Security.AccessControl.PropagationFlags -> Void
+
+	AccessMask((null,never)) : Int
+
+	public PropagationFlags((get,never)) : System.Security.AccessControl.PropagationFlags
+
+	public IsInherited((get,never)) : Bool
+
+	public InheritanceFlags((get,never)) : System.Security.AccessControl.InheritanceFlags
+
+	public IdentityReference((get,never)) : System.Security.Principal.IdentityReference
+
+	get_IdentityReference(method) : Void -> System.Security.Principal.IdentityReference
+
+	get_InheritanceFlags(method) : Void -> System.Security.AccessControl.InheritanceFlags
+
+	get_IsInherited(method) : Void -> Bool
+
+	get_PropagationFlags(method) : Void -> System.Security.AccessControl.PropagationFlags
+
+	get_AccessMask(method) : Void -> Int
+
+}

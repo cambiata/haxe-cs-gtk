@@ -1,0 +1,12 @@
+extern class Gdk.Atom extends GLib.Opaque{
+	public new(method) : raw : System.IntPtr -> Void
+
+	public Name((get,never)) : String
+
+	get_Name(method) : Void -> String
+
+	static public Intern(method) : atom_name : String -> only_if_exists : Bool -> Gdk.Atom
+
+	static public op_Implicit(method) : atom : Gdk.Atom -> String
+
+}

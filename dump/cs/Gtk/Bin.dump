@@ -1,0 +1,18 @@
+extern class Gtk.Bin extends Gtk.Container{
+	new(method) : gtype : GLib.GType -> Void
+
+	new(method) : Void -> Void
+
+	public new(method) : raw : System.IntPtr -> Void
+
+	public Child((get,set)) : Gtk.Widget
+
+	get_Child(method) : Void -> Gtk.Widget
+
+	set_Child(method) : value : Gtk.Widget -> Gtk.Widget
+
+	static public GType((get,never)) : GLib.GType
+
+	static get_GType(method) : Void -> GLib.GType
+
+}

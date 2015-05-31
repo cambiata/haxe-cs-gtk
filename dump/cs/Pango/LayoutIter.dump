@@ -1,0 +1,62 @@
+extern class Pango.LayoutIter extends GLib.Opaque{
+	public new(method) : raw : System.IntPtr -> Void
+
+	public CharExtents((get,never)) : Pango.Rectangle
+
+	public Line((get,never)) : Pango.LayoutLine
+
+	public Baseline((get,never)) : Int
+
+	public Index((get,never)) : Int
+
+	public Run((get,never)) : Pango.LayoutRun
+
+	public LineReadonly((get,never)) : Pango.LayoutLine
+
+	public RunReadonly((get,never)) : Pango.LayoutRun
+
+	public GetClusterExtents(method) : ink_rect : cs.Out<Pango.Rectangle> -> logical_rect : cs.Out<Pango.Rectangle> -> Void
+
+	public GetLineYrange(method) : y0_ : cs.Out<Int> -> y1_ : cs.Out<Int> -> Void
+
+	get_RunReadonly(method) : Void -> Pango.LayoutRun
+
+	get_LineReadonly(method) : Void -> Pango.LayoutLine
+
+	public GetLayoutExtents(method) : ink_rect : cs.Out<Pango.Rectangle> -> logical_rect : cs.Out<Pango.Rectangle> -> Void
+
+	public NextChar(method) : Void -> Bool
+
+	get_Run(method) : Void -> Pango.LayoutRun
+
+	public GetRunExtents(method) : ink_rect : cs.Out<Pango.Rectangle> -> logical_rect : cs.Out<Pango.Rectangle> -> Void
+
+	public AtLastLine(method) : Void -> Bool
+
+	get_Index(method) : Void -> Int
+
+	public NextRun(method) : Void -> Bool
+
+	get_Baseline(method) : Void -> Int
+
+	public GetLineExtents(method) : ink_rect : cs.Out<Pango.Rectangle> -> logical_rect : cs.Out<Pango.Rectangle> -> Void
+
+	public NextLine(method) : Void -> Bool
+
+	get_Line(method) : Void -> Pango.LayoutLine
+
+	get_CharExtents(method) : Void -> Pango.Rectangle
+
+	public NextCluster(method) : Void -> Bool
+
+	Free(method) : raw : System.IntPtr -> Void
+
+	public Free(method) : Void -> Void
+
+	Finalize(method) : Void -> Void
+
+	static public GType((get,never)) : GLib.GType
+
+	static get_GType(method) : Void -> GLib.GType
+
+}

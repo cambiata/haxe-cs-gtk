@@ -1,0 +1,8 @@
+extern class System.Security.SecurityState{
+	new(method) : Void -> Void
+
+	public EnsureState(method) : Void -> Void
+
+	public IsStateAvailable(method) : Void -> Bool
+
+}

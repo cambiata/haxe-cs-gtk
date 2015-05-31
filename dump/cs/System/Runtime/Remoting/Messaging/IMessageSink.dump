@@ -1,0 +1,10 @@
+extern interface System.Runtime.Remoting.Messaging.IMessageSink{
+	public NextSink((get,never)) : System.Runtime.Remoting.Messaging.IMessageSink
+
+	public SyncProcessMessage(method) : msg : System.Runtime.Remoting.Messaging.IMessage -> System.Runtime.Remoting.Messaging.IMessage
+
+	public AsyncProcessMessage(method) : msg : System.Runtime.Remoting.Messaging.IMessage -> replySink : System.Runtime.Remoting.Messaging.IMessageSink -> System.Runtime.Remoting.Messaging.IMessageCtrl
+
+	get_NextSink(method) : Void -> System.Runtime.Remoting.Messaging.IMessageSink
+
+}

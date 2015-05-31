@@ -1,0 +1,18 @@
+extern interface System.IAsyncResult{
+	public IsCompleted((get,never)) : Bool
+
+	public CompletedSynchronously((get,never)) : Bool
+
+	public AsyncWaitHandle((get,never)) : System.Threading.WaitHandle
+
+	public AsyncState((get,never)) : Dynamic
+
+	get_AsyncState(method) : Void -> Dynamic
+
+	get_AsyncWaitHandle(method) : Void -> System.Threading.WaitHandle
+
+	get_CompletedSynchronously(method) : Void -> Bool
+
+	get_IsCompleted(method) : Void -> Bool
+
+}

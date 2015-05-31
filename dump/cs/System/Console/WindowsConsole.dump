@@ -1,0 +1,14 @@
+extern class System.Console.WindowsConsole{
+	public new(method) : Void -> Void
+
+	static public ctrlHandlerAdded(var) : Bool
+
+	static public GetInputCodePage(method) : Void -> Int
+
+	static public GetOutputCodePage(method) : Void -> Int
+
+	static public AddCtrlHandler(method) : Void -> Void
+
+	static public RemoveCtrlHandler(method) : Void -> Void
+
+}

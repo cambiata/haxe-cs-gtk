@@ -1,0 +1,7 @@
+extern enum System.Reflection.PortableExecutableKinds {
+	NotAPortableExecutableImage : System.Reflection.PortableExecutableKinds;
+	ILOnly : System.Reflection.PortableExecutableKinds;
+	Required32Bit : System.Reflection.PortableExecutableKinds;
+	PE32Plus : System.Reflection.PortableExecutableKinds;
+	Unmanaged32Bit : System.Reflection.PortableExecutableKinds;
+}

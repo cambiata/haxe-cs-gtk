@@ -1,0 +1,4 @@
+extern class Gtk.NodeStore.IDHashtable extends System.Collections.Hashtable{
+	public new(method) : Void -> Void
+
+}

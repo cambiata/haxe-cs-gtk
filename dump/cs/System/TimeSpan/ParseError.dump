@@ -1,0 +1,5 @@
+extern enum System.TimeSpan.ParseError {
+	None : System.TimeSpan.ParseError;
+	Format : System.TimeSpan.ParseError;
+	Overflow : System.TimeSpan.ParseError;
+}

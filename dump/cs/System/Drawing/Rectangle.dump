@@ -1,0 +1,106 @@
+extern class System.Drawing.Rectangle extends System.ValueType{
+	public new(method) : x : Int -> y : Int -> width : Int -> height : Int -> Void
+
+	public new(method) : location : System.Drawing.Point -> size : System.Drawing.Size -> Void
+
+	public IsEmpty((get,never)) : Bool
+
+	public Bottom((get,never)) : Int
+
+	public Right((get,never)) : Int
+
+	public Top((get,never)) : Int
+
+	public Left((get,never)) : Int
+
+	public Height((get,set)) : Int
+
+	public Width((get,set)) : Int
+
+	public Y((get,set)) : Int
+
+	public X((get,set)) : Int
+
+	public Size((get,set)) : System.Drawing.Size
+
+	public Location((get,set)) : System.Drawing.Point
+
+	get_Location(method) : Void -> System.Drawing.Point
+
+	set_Location(method) : value : System.Drawing.Point -> System.Drawing.Point
+
+	get_Size(method) : Void -> System.Drawing.Size
+
+	set_Size(method) : value : System.Drawing.Size -> System.Drawing.Size
+
+	get_X(method) : Void -> Int
+
+	set_X(method) : value : Int -> Int
+
+	get_Y(method) : Void -> Int
+
+	set_Y(method) : value : Int -> Int
+
+	get_Width(method) : Void -> Int
+
+	set_Width(method) : value : Int -> Int
+
+	get_Height(method) : Void -> Int
+
+	set_Height(method) : value : Int -> Int
+
+	get_Left(method) : Void -> Int
+
+	get_Top(method) : Void -> Int
+
+	get_Right(method) : Void -> Int
+
+	get_Bottom(method) : Void -> Int
+
+	get_IsEmpty(method) : Void -> Bool
+
+	public Contains(method) : x : Int -> y : Int -> Bool
+
+	public Contains(method) : rect : System.Drawing.Rectangle -> Bool
+
+	public Contains(method) : pt : System.Drawing.Point -> Bool
+
+	public Inflate(method) : width : Int -> height : Int -> Void
+
+	public Inflate(method) : size : System.Drawing.Size -> Void
+
+	public Intersect(method) : rect : System.Drawing.Rectangle -> Void
+
+	public IntersectsWith(method) : rect : System.Drawing.Rectangle -> Bool
+
+	public Offset(method) : pos : System.Drawing.Point -> Void
+
+	public Offset(method) : x : Int -> y : Int -> Void
+
+	public ToString(method) : Void -> String
+
+	static public Empty((default,never)) : System.Drawing.Rectangle
+
+	static public FromLTRB(method) : left : Int -> top : Int -> right : Int -> bottom : Int -> System.Drawing.Rectangle
+
+	static public op_Equality(method) : left : System.Drawing.Rectangle -> right : System.Drawing.Rectangle -> Bool
+
+	static public op_Inequality(method) : left : System.Drawing.Rectangle -> right : System.Drawing.Rectangle -> Bool
+
+	static public Ceiling(method) : value : System.Drawing.RectangleF -> System.Drawing.Rectangle
+
+	static public Truncate(method) : value : System.Drawing.RectangleF -> System.Drawing.Rectangle
+
+	static public Round(method) : value : System.Drawing.RectangleF -> System.Drawing.Rectangle
+
+	static public Inflate(method) : rect : System.Drawing.Rectangle -> x : Int -> y : Int -> System.Drawing.Rectangle
+
+	static public Inflate(method) : rect : System.Drawing.Rectangle -> x : Int -> y : Int -> System.Drawing.Rectangle
+
+	static public Intersect(method) : a : System.Drawing.Rectangle -> b : System.Drawing.Rectangle -> System.Drawing.Rectangle
+
+	static public Intersect(method) : a : System.Drawing.Rectangle -> b : System.Drawing.Rectangle -> System.Drawing.Rectangle
+
+	static public Union(method) : a : System.Drawing.Rectangle -> b : System.Drawing.Rectangle -> System.Drawing.Rectangle
+
+}

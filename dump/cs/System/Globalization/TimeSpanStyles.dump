@@ -1,0 +1,4 @@
+extern enum System.Globalization.TimeSpanStyles {
+	None : System.Globalization.TimeSpanStyles;
+	AssumeNegative : System.Globalization.TimeSpanStyles;
+}

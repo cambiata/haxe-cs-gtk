@@ -1,0 +1,40 @@
+extern class System.Runtime.Remoting.ObjRef implements System.Runtime.Serialization.IObjectReference implements System.Runtime.Serialization.ISerializable{
+	public new(method) : Void -> Void
+
+	new(method) : info : System.Runtime.Serialization.SerializationInfo -> context : System.Runtime.Serialization.StreamingContext -> Void
+
+	public new(method) : o : System.MarshalByRefObject -> requestedType : System.Type -> Void
+
+	public URI((get,set)) : String
+
+	public TypeInfo((get,set)) : System.Runtime.Remoting.IRemotingTypeInfo
+
+	public EnvoyInfo((get,set)) : System.Runtime.Remoting.IEnvoyInfo
+
+	public ChannelInfo((get,set)) : System.Runtime.Remoting.IChannelInfo
+
+	get_ChannelInfo(method) : Void -> System.Runtime.Remoting.IChannelInfo
+
+	set_ChannelInfo(method) : value : System.Runtime.Remoting.IChannelInfo -> System.Runtime.Remoting.IChannelInfo
+
+	get_EnvoyInfo(method) : Void -> System.Runtime.Remoting.IEnvoyInfo
+
+	set_EnvoyInfo(method) : value : System.Runtime.Remoting.IEnvoyInfo -> System.Runtime.Remoting.IEnvoyInfo
+
+	get_TypeInfo(method) : Void -> System.Runtime.Remoting.IRemotingTypeInfo
+
+	set_TypeInfo(method) : value : System.Runtime.Remoting.IRemotingTypeInfo -> System.Runtime.Remoting.IRemotingTypeInfo
+
+	get_URI(method) : Void -> String
+
+	set_URI(method) : value : String -> String
+
+	public GetObjectData(method) : info : System.Runtime.Serialization.SerializationInfo -> context : System.Runtime.Serialization.StreamingContext -> Void
+
+	public GetRealObject(method) : context : System.Runtime.Serialization.StreamingContext -> Dynamic
+
+	public IsFromThisAppDomain(method) : Void -> Bool
+
+	public IsFromThisProcess(method) : Void -> Bool
+
+}

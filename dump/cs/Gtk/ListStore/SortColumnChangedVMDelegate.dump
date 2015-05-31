@@ -1,0 +1,14 @@
+extern class Gtk.ListStore.SortColumnChangedVMDelegate extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : sortable : System.IntPtr -> Void
+
+	public BeginInvoke(method) : sortable : System.IntPtr -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Void
+
+	static public op_Addition(method) : arg1 : gtk.ListStore_SortColumnChangedVMDelegate -> arg2 : gtk.ListStore_SortColumnChangedVMDelegate -> gtk.ListStore_SortColumnChangedVMDelegate
+
+	static public op_Subtraction(method) : arg1 : gtk.ListStore_SortColumnChangedVMDelegate -> arg2 : gtk.ListStore_SortColumnChangedVMDelegate -> gtk.ListStore_SortColumnChangedVMDelegate
+
+}

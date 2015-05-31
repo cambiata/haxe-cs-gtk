@@ -1,0 +1,28 @@
+extern class System.Drawing.Imaging.Encoder{
+	public new(method) : guid : System.Guid -> Void
+
+	public Guid((get,never)) : System.Guid
+
+	get_Guid(method) : Void -> System.Guid
+
+	static public SaveFlag((default,never)) : System.Drawing.Imaging.Encoder
+
+	static public ChrominanceTable((default,never)) : System.Drawing.Imaging.Encoder
+
+	static public LuminanceTable((default,never)) : System.Drawing.Imaging.Encoder
+
+	static public Transformation((default,never)) : System.Drawing.Imaging.Encoder
+
+	static public Quality((default,never)) : System.Drawing.Imaging.Encoder
+
+	static public RenderMethod((default,never)) : System.Drawing.Imaging.Encoder
+
+	static public Version((default,never)) : System.Drawing.Imaging.Encoder
+
+	static public ScanMethod((default,never)) : System.Drawing.Imaging.Encoder
+
+	static public ColorDepth((default,never)) : System.Drawing.Imaging.Encoder
+
+	static public Compression((default,never)) : System.Drawing.Imaging.Encoder
+
+}

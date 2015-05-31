@@ -1,0 +1,154 @@
+extern class Gdk.Pixbuf extends GLib.Object{
+	new(method) : gtype : GLib.GType -> Void
+
+	public new(method) : data : cs.NativeArray<cs.types.UInt8> -> copy_pixels : Bool -> Void
+
+	public new(method) : data : cs.NativeArray<cs.types.UInt8> -> colorspace : Gdk.Colorspace -> has_alpha : Bool -> bits_per_sample : Int -> width : Int -> height : Int -> rowstride : Int -> Void
+
+	public new(method) : data : cs.NativeArray<cs.types.UInt8> -> has_alpha : Bool -> bits_per_sample : Int -> width : Int -> height : Int -> rowstride : Int -> Void
+
+	public new(method) : data : cs.NativeArray<cs.types.UInt8> -> has_alpha : Bool -> bits_per_sample : Int -> width : Int -> height : Int -> rowstride : Int -> destroy_fn : gdk.PixbufDestroyNotify -> Void
+
+	public new(method) : data : cs.NativeArray<cs.types.UInt8> -> colorspace : Gdk.Colorspace -> has_alpha : Bool -> bits_per_sample : Int -> width : Int -> height : Int -> rowstride : Int -> destroy_fn : gdk.PixbufDestroyNotify -> Void
+
+	public new(method) : buffer : cs.NativeArray<cs.types.UInt8> -> width : Int -> height : Int -> Void
+
+	public new(method) : buffer : cs.NativeArray<cs.types.UInt8> -> Void
+
+	public new(method) : assembly : System.Reflection.Assembly -> resource : String -> width : Int -> height : Int -> Void
+
+	public new(method) : assembly : System.Reflection.Assembly -> resource : String -> Void
+
+	public new(method) : stream : System.IO.Stream -> width : Int -> height : Int -> Void
+
+	public new(method) : stream : System.IO.Stream -> Void
+
+	public new(method) : src_pixbuf : Gdk.Pixbuf -> src_x : Int -> src_y : Int -> width : Int -> height : Int -> Void
+
+	public new(method) : data : cs.NativeArray<String> -> Void
+
+	public new(method) : data_length : Int -> data : cs.NativeArray<cs.types.UInt8> -> copy_pixels : Bool -> Void
+
+	public new(method) : filename : String -> width : Int -> height : Int -> Void
+
+	public new(method) : filename : String -> width : Int -> height : Int -> preserve_aspect_ratio : Bool -> Void
+
+	public new(method) : filename : String -> Void
+
+	public new(method) : colorspace : Gdk.Colorspace -> has_alpha : Bool -> bits_per_sample : Int -> width : Int -> height : Int -> Void
+
+	public new(method) : raw : System.IntPtr -> Void
+
+	public Pixels((get,never)) : System.IntPtr
+
+	public Width((get,never)) : Int
+
+	public Height((get,never)) : Int
+
+	public Colorspace((get,never)) : Gdk.Colorspace
+
+	public BitsPerSample((get,never)) : Int
+
+	public HasAlpha((get,never)) : Bool
+
+	public Rowstride((get,never)) : Int
+
+	public NChannels((get,never)) : Int
+
+	get_NChannels(method) : Void -> Int
+
+	get_Rowstride(method) : Void -> Int
+
+	get_HasAlpha(method) : Void -> Bool
+
+	get_BitsPerSample(method) : Void -> Int
+
+	get_Colorspace(method) : Void -> Gdk.Colorspace
+
+	get_Height(method) : Void -> Int
+
+	get_Width(method) : Void -> Int
+
+	public RotateSimple(method) : angle : Gdk.PixbufRotation -> Gdk.Pixbuf
+
+	public Fill(method) : pixel : UInt -> Void
+
+	public Flip(method) : horizontal : Bool -> Gdk.Pixbuf
+
+	public Composite(method) : dest : Gdk.Pixbuf -> dest_x : Int -> dest_y : Int -> dest_width : Int -> dest_height : Int -> offset_x : Float -> offset_y : Float -> scale_x : Float -> scale_y : Float -> interp_type : Gdk.InterpType -> overall_alpha : Int -> Void
+
+	public SaturateAndPixelate(method) : dest : Gdk.Pixbuf -> saturation : Single -> pixelate : Bool -> Void
+
+	public Ref(method) : Void -> Gdk.Pixbuf
+
+	public CopyArea(method) : src_x : Int -> src_y : Int -> width : Int -> height : Int -> dest_pixbuf : Gdk.Pixbuf -> dest_x : Int -> dest_y : Int -> Void
+
+	public CompositeColor(method) : dest : Gdk.Pixbuf -> dest_x : Int -> dest_y : Int -> dest_width : Int -> dest_height : Int -> offset_x : Float -> offset_y : Float -> scale_x : Float -> scale_y : Float -> interp_type : Gdk.InterpType -> overall_alpha : Int -> check_x : Int -> check_y : Int -> check_size : Int -> color1 : UInt -> color2 : UInt -> Void
+
+	public ApplyEmbeddedOrientation(method) : Void -> Gdk.Pixbuf
+
+	public GetOption(method) : key : String -> String
+
+	public Scale(method) : dest : Gdk.Pixbuf -> dest_x : Int -> dest_y : Int -> dest_width : Int -> dest_height : Int -> offset_x : Float -> offset_y : Float -> scale_x : Float -> scale_y : Float -> interp_type : Gdk.InterpType -> Void
+
+	public Unref(method) : Void -> Void
+
+	public Copy(method) : Void -> Gdk.Pixbuf
+
+	public GetFromDrawable(method) : src : Gdk.Drawable -> cmap : Gdk.Colormap -> src_x : Int -> src_y : Int -> dest_x : Int -> dest_y : Int -> width : Int -> height : Int -> Gdk.Pixbuf
+
+	public GetFromImage(method) : src : Gdk.Image -> cmap : Gdk.Colormap -> src_x : Int -> src_y : Int -> dest_x : Int -> dest_y : Int -> width : Int -> height : Int -> Gdk.Pixbuf
+
+	public RenderPixmapAndMask(method) : pixmap_return : cs.Out<Gdk.Pixmap> -> mask_return : cs.Out<Gdk.Pixmap> -> alpha_threshold : Int -> Void
+
+	public RenderPixmapAndMaskForColormap(method) : colormap : Gdk.Colormap -> pixmap_return : cs.Out<Gdk.Pixmap> -> mask_return : cs.Out<Gdk.Pixmap> -> alpha_threshold : Int -> Void
+
+	public RenderThresholdAlpha(method) : bitmap : Gdk.Pixmap -> src_x : Int -> src_y : Int -> dest_x : Int -> dest_y : Int -> width : Int -> height : Int -> alpha_threshold : Int -> Void
+
+	public RenderToDrawable(method) : drawable : Gdk.Drawable -> gc : Gdk.GC -> src_x : Int -> src_y : Int -> dest_x : Int -> dest_y : Int -> width : Int -> height : Int -> dither : Gdk.RgbDither -> x_dither : Int -> y_dither : Int -> Void
+
+	public RenderToDrawableAlpha(method) : drawable : Gdk.Drawable -> src_x : Int -> src_y : Int -> dest_x : Int -> dest_y : Int -> width : Int -> height : Int -> alpha_mode : Gdk.PixbufAlphaMode -> alpha_threshold : Int -> dither : Gdk.RgbDither -> x_dither : Int -> y_dither : Int -> Void
+
+	public ScaleSimple(method) : dest_width : Int -> dest_height : Int -> interp_type : Gdk.InterpType -> Gdk.Pixbuf
+
+	public CompositeColorSimple(method) : dest_width : Int -> dest_height : Int -> interp_type : Gdk.InterpType -> overall_alpha : Int -> check_size : Int -> color1 : UInt -> color2 : UInt -> Gdk.Pixbuf
+
+	public AddAlpha(method) : substitute_color : Bool -> r : cs.types.UInt8 -> g : cs.types.UInt8 -> b : cs.types.UInt8 -> Gdk.Pixbuf
+
+	public Clone(method) : Void -> Dynamic
+
+	public CreateFromDrawable(method) : src : Gdk.Drawable -> cmap : Gdk.Colormap -> src_x : Int -> src_y : Int -> dest_x : Int -> dest_y : Int -> width : Int -> height : Int -> Gdk.Pixbuf
+
+	get_Pixels(method) : Void -> System.IntPtr
+
+	public Save(method) : filename : String -> type : String -> Bool
+
+	public SaveToBuffer(method) : type : String -> cs.NativeArray<cs.types.UInt8>
+
+	public SaveToBuffer(method) : type : String -> option_keys : cs.NativeArray<String> -> option_values : cs.NativeArray<String> -> cs.NativeArray<cs.types.UInt8>
+
+	public SaveToCallback(method) : save_func : gdk.PixbufSaveFunc -> type : String -> Void
+
+	public SaveToCallback(method) : save_func : gdk.PixbufSaveFunc -> type : String -> option_keys : cs.NativeArray<String> -> option_values : cs.NativeArray<String> -> Void
+
+	public Savev(method) : filename : String -> type : String -> option_keys : cs.NativeArray<String> -> option_values : cs.NativeArray<String> -> Bool
+
+	static public Formats((get,never)) : cs.NativeArray<Gdk.PixbufFormat>
+
+	static public GType((get,never)) : GLib.GType
+
+	static get_GType(method) : Void -> GLib.GType
+
+	static public ErrorQuark(method) : Void -> Int
+
+	static public GetFileInfo(method) : filename : String -> width : cs.Out<Int> -> height : cs.Out<Int> -> Gdk.PixbufFormat
+
+	static public FromPixdata(method) : pixdata : Gdk.Pixdata -> copy_pixels : Bool -> Gdk.Pixbuf
+
+	static public LoadFromResource(method) : resource : String -> Gdk.Pixbuf
+
+	static public FromDrawable(method) : src : Gdk.Drawable -> cmap : Gdk.Colormap -> src_x : Int -> src_y : Int -> dest_x : Int -> dest_y : Int -> width : Int -> height : Int -> Gdk.Pixbuf
+
+	static get_Formats(method) : Void -> cs.NativeArray<Gdk.PixbufFormat>
+
+}

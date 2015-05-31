@@ -1,0 +1,8 @@
+extern class Gtk.MoveSelectedArgs extends GLib.SignalArgs{
+	public new(method) : Void -> Void
+
+	public Distance((get,never)) : Int
+
+	get_Distance(method) : Void -> Int
+
+}

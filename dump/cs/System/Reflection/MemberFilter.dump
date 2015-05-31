@@ -1,0 +1,14 @@
+extern class System.Reflection.MemberFilter extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : m : System.Reflection.MemberInfo -> filterCriteria : Dynamic -> Bool
+
+	public BeginInvoke(method) : m : System.Reflection.MemberInfo -> filterCriteria : Dynamic -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Bool
+
+	static public op_Addition(method) : arg1 : cs.system.reflection.MemberFilter -> arg2 : cs.system.reflection.MemberFilter -> cs.system.reflection.MemberFilter
+
+	static public op_Subtraction(method) : arg1 : cs.system.reflection.MemberFilter -> arg2 : cs.system.reflection.MemberFilter -> cs.system.reflection.MemberFilter
+
+}

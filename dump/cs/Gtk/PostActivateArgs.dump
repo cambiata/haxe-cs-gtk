@@ -1,0 +1,8 @@
+extern class Gtk.PostActivateArgs extends GLib.SignalArgs{
+	public new(method) : Void -> Void
+
+	public Action((get,never)) : Gtk.Action
+
+	get_Action(method) : Void -> Gtk.Action
+
+}

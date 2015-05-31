@@ -1,0 +1,94 @@
+extern class Gtk.Settings extends GLib.Object{
+	new(method) : gtype : GLib.GType -> Void
+
+	new(method) : Void -> Void
+
+	public new(method) : raw : System.IntPtr -> Void
+
+	public ThemeName((get,set)) : String
+
+	public SplitCursor((get,set)) : Bool
+
+	public MenuBarAccel((get,set)) : String
+
+	public KeyThemeName((get,set)) : String
+
+	public IconSizes((get,set)) : String
+
+	public FontName((get,set)) : String
+
+	public DoubleClickTime((get,set)) : Int
+
+	public DndDragThreshold((get,set)) : Int
+
+	public CursorBlinkTime((get,set)) : Int
+
+	public CursorBlink((get,set)) : Bool
+
+	public ColorHash((get,never)) : System.IntPtr
+
+	public SetPropertyValue(method) : name : String -> svalue : Gtk.SettingsValue -> Void
+
+	public SetDoubleProperty(method) : name : String -> v_double : Float -> origin : String -> Void
+
+	public SetStringProperty(method) : name : String -> v_string : String -> origin : String -> Void
+
+	public SetLongProperty(method) : name : String -> v_long : haxe.Int64 -> origin : String -> Void
+
+	get_ColorHash(method) : Void -> System.IntPtr
+
+	get_CursorBlink(method) : Void -> Bool
+
+	set_CursorBlink(method) : value : Bool -> Bool
+
+	get_CursorBlinkTime(method) : Void -> Int
+
+	set_CursorBlinkTime(method) : value : Int -> Int
+
+	get_DndDragThreshold(method) : Void -> Int
+
+	set_DndDragThreshold(method) : value : Int -> Int
+
+	get_DoubleClickTime(method) : Void -> Int
+
+	set_DoubleClickTime(method) : value : Int -> Int
+
+	get_FontName(method) : Void -> String
+
+	set_FontName(method) : value : String -> String
+
+	get_IconSizes(method) : Void -> String
+
+	set_IconSizes(method) : value : String -> String
+
+	get_KeyThemeName(method) : Void -> String
+
+	set_KeyThemeName(method) : value : String -> String
+
+	get_MenuBarAccel(method) : Void -> String
+
+	set_MenuBarAccel(method) : value : String -> String
+
+	get_SplitCursor(method) : Void -> Bool
+
+	set_SplitCursor(method) : value : Bool -> Bool
+
+	get_ThemeName(method) : Void -> String
+
+	set_ThemeName(method) : value : String -> String
+
+	static public GType((get,never)) : GLib.GType
+
+	static public Default((get,never)) : Gtk.Settings
+
+	static public InstallProperty(method) : pspec : System.IntPtr -> Void
+
+	static get_Default(method) : Void -> Gtk.Settings
+
+	static public GetForScreen(method) : screen : Gdk.Screen -> Gtk.Settings
+
+	static get_GType(method) : Void -> GLib.GType
+
+	static public InstallPropertyParser(method) : pspec : System.IntPtr -> parser : gtk.RcPropertyParser -> Void
+
+}

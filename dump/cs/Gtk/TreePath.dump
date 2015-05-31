@@ -1,0 +1,52 @@
+extern class Gtk.TreePath extends GLib.Opaque{
+	public new(method) : raw : System.IntPtr -> Void
+
+	public new(method) : indices : cs.NativeArray<Int> -> Void
+
+	public new(method) : path : String -> Void
+
+	public new(method) : Void -> Void
+
+	public Indices((get,never)) : cs.NativeArray<Int>
+
+	public Depth((get,never)) : Int
+
+	public IsAncestor(method) : descendant : Gtk.TreePath -> Bool
+
+	public Prev(method) : Void -> Bool
+
+	public AppendIndex(method) : index_ : Int -> Void
+
+	public Compare(method) : b : Gtk.TreePath -> Int
+
+	public IsDescendant(method) : ancestor : Gtk.TreePath -> Bool
+
+	get_Depth(method) : Void -> Int
+
+	public Down(method) : Void -> Void
+
+	public Next(method) : Void -> Void
+
+	public PrependIndex(method) : index_ : Int -> Void
+
+	public ToString(method) : Void -> String
+
+	public Up(method) : Void -> Bool
+
+	public Copy(method) : Void -> Gtk.TreePath
+
+	Free(method) : raw : System.IntPtr -> Void
+
+	public Free(method) : Void -> Void
+
+	Finalize(method) : Void -> Void
+
+	get_Indices(method) : Void -> cs.NativeArray<Int>
+
+	static public GType((get,never)) : GLib.GType
+
+	static get_GType(method) : Void -> GLib.GType
+
+	static public NewFirst(method) : Void -> Gtk.TreePath
+
+}

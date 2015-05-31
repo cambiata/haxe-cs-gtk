@@ -1,0 +1,8 @@
+extern enum System.Drawing.Drawing2D.CombineMode {
+	Replace : System.Drawing.Drawing2D.CombineMode;
+	Intersect : System.Drawing.Drawing2D.CombineMode;
+	Union : System.Drawing.Drawing2D.CombineMode;
+	Xor : System.Drawing.Drawing2D.CombineMode;
+	Exclude : System.Drawing.Drawing2D.CombineMode;
+	Complement : System.Drawing.Drawing2D.CombineMode;
+}

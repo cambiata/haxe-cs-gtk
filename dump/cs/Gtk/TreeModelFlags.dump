@@ -1,0 +1,4 @@
+extern enum Gtk.TreeModelFlags {
+	ItersPersist : Gtk.TreeModelFlags;
+	ListOnly : Gtk.TreeModelFlags;
+}

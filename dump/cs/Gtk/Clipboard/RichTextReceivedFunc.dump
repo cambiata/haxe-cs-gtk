@@ -1,0 +1,14 @@
+extern class Gtk.Clipboard.RichTextReceivedFunc extends System.MulticastDelegate{
+	public new(method) : object : Dynamic -> method : System.IntPtr -> Void
+
+	public Invoke(method) : clipboard : Gtk.Clipboard -> format : Gdk.Atom -> text : cs.NativeArray<cs.types.UInt8> -> Void
+
+	public BeginInvoke(method) : clipboard : Gtk.Clipboard -> format : Gdk.Atom -> text : cs.NativeArray<cs.types.UInt8> -> callback : cs.system.AsyncCallback -> object : Dynamic -> System.IAsyncResult
+
+	public EndInvoke(method) : result : System.IAsyncResult -> Void
+
+	static public op_Addition(method) : arg1 : gtk.Clipboard_RichTextReceivedFunc -> arg2 : gtk.Clipboard_RichTextReceivedFunc -> gtk.Clipboard_RichTextReceivedFunc
+
+	static public op_Subtraction(method) : arg1 : gtk.Clipboard_RichTextReceivedFunc -> arg2 : gtk.Clipboard_RichTextReceivedFunc -> gtk.Clipboard_RichTextReceivedFunc
+
+}

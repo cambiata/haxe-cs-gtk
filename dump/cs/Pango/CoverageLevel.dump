@@ -1,0 +1,6 @@
+extern enum Pango.CoverageLevel {
+	None : Pango.CoverageLevel;
+	Fallback : Pango.CoverageLevel;
+	Approximate : Pango.CoverageLevel;
+	Exact : Pango.CoverageLevel;
+}

@@ -1,0 +1,28 @@
+extern class Atk.RelationSet extends GLib.Object{
+	new(method) : gtype : GLib.GType -> Void
+
+	public new(method) : Void -> Void
+
+	public new(method) : raw : System.IntPtr -> Void
+
+	public NRelations((get,never)) : Int
+
+	public GetRelation(method) : i : Int -> Atk.Relation
+
+	public Contains(method) : relationship : Atk.RelationType -> Bool
+
+	public AddRelationByType(method) : relationship : Atk.RelationType -> target : Atk.Object -> Void
+
+	public Add(method) : relation : Atk.Relation -> Void
+
+	public Remove(method) : relation : Atk.Relation -> Void
+
+	get_NRelations(method) : Void -> Int
+
+	public GetRelationByType(method) : relationship : Atk.RelationType -> Atk.Relation
+
+	static public GType((get,never)) : GLib.GType
+
+	static get_GType(method) : Void -> GLib.GType
+
+}

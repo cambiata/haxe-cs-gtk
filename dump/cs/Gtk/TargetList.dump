@@ -1,0 +1,42 @@
+extern class Gtk.TargetList extends GLib.Opaque{
+	public new(method) : raw : System.IntPtr -> Void
+
+	public new(method) : targets : cs.NativeArray<Gtk.TargetEntry> -> Void
+
+	public new(method) : Void -> Void
+
+	public AddTextTargets(method) : info : UInt -> Void
+
+	public Remove(method) : target : Gdk.Atom -> Void
+
+	public Remove(method) : target : String -> Void
+
+	public Add(method) : target : Gdk.Atom -> flags : UInt -> info : UInt -> Void
+
+	public Add(method) : target : String -> flags : UInt -> info : UInt -> Void
+
+	public AddUriTargets(method) : info : UInt -> Void
+
+	public AddRichTextTargets(method) : info : UInt -> deserializable : Bool -> buffer : Gtk.TextBuffer -> Void
+
+	public Find(method) : target : Gdk.Atom -> info : cs.Out<UInt> -> Bool
+
+	public Find(method) : target : String -> info : cs.Out<UInt> -> Bool
+
+	public AddImageTargets(method) : info : UInt -> writable : Bool -> Void
+
+	public AddTable(method) : targets : cs.NativeArray<Gtk.TargetEntry> -> Void
+
+	Ref(method) : raw : System.IntPtr -> Void
+
+	Unref(method) : raw : System.IntPtr -> Void
+
+	Finalize(method) : Void -> Void
+
+	static public GType((get,never)) : GLib.GType
+
+	static get_GType(method) : Void -> GLib.GType
+
+	static public op_Explicit(method) : list : Gtk.TargetList -> cs.NativeArray<Gtk.TargetEntry>
+
+}

@@ -1,0 +1,16 @@
+extern class System.Drawing.Imaging.ColorMap{
+	public new(method) : Void -> Void
+
+	public NewColor((get,set)) : System.Drawing.Color
+
+	public OldColor((get,set)) : System.Drawing.Color
+
+	get_OldColor(method) : Void -> System.Drawing.Color
+
+	set_OldColor(method) : value : System.Drawing.Color -> System.Drawing.Color
+
+	get_NewColor(method) : Void -> System.Drawing.Color
+
+	set_NewColor(method) : value : System.Drawing.Color -> System.Drawing.Color
+
+}

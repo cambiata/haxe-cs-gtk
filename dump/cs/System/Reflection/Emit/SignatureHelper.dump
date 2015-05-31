@@ -1,0 +1,38 @@
+extern class System.Reflection.Emit.SignatureHelper implements System.Runtime.InteropServices._SignatureHelper{
+	public AddArguments(method) : arguments : cs.NativeArray<System.Type> -> requiredCustomModifiers : cs.NativeArray<cs.NativeArray<System.Type>> -> optionalCustomModifiers : cs.NativeArray<cs.NativeArray<System.Type>> -> Void
+
+	public AddArgument(method) : argument : System.Type -> pinned : Bool -> Void
+
+	public AddArgument(method) : clsArgument : System.Type -> Void
+
+	public AddArgument(method) : argument : System.Type -> requiredCustomModifiers : cs.NativeArray<System.Type> -> optionalCustomModifiers : cs.NativeArray<System.Type> -> Void
+
+	public AddSentinel(method) : Void -> Void
+
+	public GetSignature(method) : Void -> cs.NativeArray<cs.types.UInt8>
+
+	public ToString(method) : Void -> String
+
+	static public GetFieldSigHelper(method) : mod : System.Reflection.Module -> System.Reflection.Emit.SignatureHelper
+
+	static public GetLocalVarSigHelper(method) : mod : System.Reflection.Module -> System.Reflection.Emit.SignatureHelper
+
+	static public GetLocalVarSigHelper(method) : Void -> System.Reflection.Emit.SignatureHelper
+
+	static public GetMethodSigHelper(method) : callingConvention : System.Reflection.CallingConventions -> returnType : System.Type -> System.Reflection.Emit.SignatureHelper
+
+	static public GetMethodSigHelper(method) : mod : System.Reflection.Module -> returnType : System.Type -> parameterTypes : cs.NativeArray<System.Type> -> System.Reflection.Emit.SignatureHelper
+
+	static public GetMethodSigHelper(method) : mod : System.Reflection.Module -> unmanagedCallConv : System.Runtime.InteropServices.CallingConvention -> returnType : System.Type -> System.Reflection.Emit.SignatureHelper
+
+	static public GetMethodSigHelper(method) : mod : System.Reflection.Module -> callingConvention : System.Reflection.CallingConventions -> returnType : System.Type -> System.Reflection.Emit.SignatureHelper
+
+	static public GetMethodSigHelper(method) : unmanagedCallingConvention : System.Runtime.InteropServices.CallingConvention -> returnType : System.Type -> System.Reflection.Emit.SignatureHelper
+
+	static public GetPropertySigHelper(method) : mod : System.Reflection.Module -> returnType : System.Type -> parameterTypes : cs.NativeArray<System.Type> -> System.Reflection.Emit.SignatureHelper
+
+	static public GetPropertySigHelper(method) : mod : System.Reflection.Module -> callingConvention : System.Reflection.CallingConventions -> returnType : System.Type -> requiredReturnTypeCustomModifiers : cs.NativeArray<System.Type> -> optionalReturnTypeCustomModifiers : cs.NativeArray<System.Type> -> parameterTypes : cs.NativeArray<System.Type> -> requiredParameterTypeCustomModifiers : cs.NativeArray<cs.NativeArray<System.Type>> -> optionalParameterTypeCustomModifiers : cs.NativeArray<cs.NativeArray<System.Type>> -> System.Reflection.Emit.SignatureHelper
+
+	static public GetPropertySigHelper(method) : mod : System.Reflection.Module -> returnType : System.Type -> requiredReturnTypeCustomModifiers : cs.NativeArray<System.Type> -> optionalReturnTypeCustomModifiers : cs.NativeArray<System.Type> -> parameterTypes : cs.NativeArray<System.Type> -> requiredParameterTypeCustomModifiers : cs.NativeArray<cs.NativeArray<System.Type>> -> optionalParameterTypeCustomModifiers : cs.NativeArray<cs.NativeArray<System.Type>> -> System.Reflection.Emit.SignatureHelper
+
+}

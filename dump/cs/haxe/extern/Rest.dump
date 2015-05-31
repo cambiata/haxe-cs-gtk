@@ -1,0 +1,1 @@
+abstract haxe.extern.Rest<T : haxe.extern.Rest.T> {}

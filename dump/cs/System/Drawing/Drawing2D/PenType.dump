@@ -1,0 +1,7 @@
+extern enum System.Drawing.Drawing2D.PenType {
+	SolidColor : System.Drawing.Drawing2D.PenType;
+	HatchFill : System.Drawing.Drawing2D.PenType;
+	TextureFill : System.Drawing.Drawing2D.PenType;
+	PathGradient : System.Drawing.Drawing2D.PenType;
+	LinearGradient : System.Drawing.Drawing2D.PenType;
+}

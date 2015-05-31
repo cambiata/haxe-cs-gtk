@@ -1,0 +1,74 @@
+extern class Gdk.GCValues extends System.ValueType{
+	public clip_mask((get,set)) : Gdk.Pixmap
+
+	public stipple((get,set)) : Gdk.Pixmap
+
+	public tile((get,set)) : Gdk.Pixmap
+
+	public ClipMask((get,set)) : Gdk.Pixmap
+
+	public Stipple((get,set)) : Gdk.Pixmap
+
+	public Tile((get,set)) : Gdk.Pixmap
+
+	public font((get,never)) : Gdk.Font
+
+	public JoinStyle(var) : Gdk.JoinStyle
+
+	public CapStyle(var) : Gdk.CapStyle
+
+	public LineStyle(var) : Gdk.LineStyle
+
+	public LineWidth(var) : Int
+
+	public GraphicsExposures(var) : Int
+
+	public ClipYOrigin(var) : Int
+
+	public ClipXOrigin(var) : Int
+
+	public TsYOrigin(var) : Int
+
+	public TsXOrigin(var) : Int
+
+	public SubwindowMode(var) : Gdk.SubwindowMode
+
+	public Fill(var) : Gdk.Fill
+
+	public Function(var) : Gdk.Function
+
+	public Background(var) : Gdk.Color
+
+	public Foreground(var) : Gdk.Color
+
+	get_font(method) : Void -> Gdk.Font
+
+	get_Tile(method) : Void -> Gdk.Pixmap
+
+	set_Tile(method) : value : Gdk.Pixmap -> Gdk.Pixmap
+
+	get_Stipple(method) : Void -> Gdk.Pixmap
+
+	set_Stipple(method) : value : Gdk.Pixmap -> Gdk.Pixmap
+
+	get_ClipMask(method) : Void -> Gdk.Pixmap
+
+	set_ClipMask(method) : value : Gdk.Pixmap -> Gdk.Pixmap
+
+	get_tile(method) : Void -> Gdk.Pixmap
+
+	set_tile(method) : value : Gdk.Pixmap -> Gdk.Pixmap
+
+	get_stipple(method) : Void -> Gdk.Pixmap
+
+	set_stipple(method) : value : Gdk.Pixmap -> Gdk.Pixmap
+
+	get_clip_mask(method) : Void -> Gdk.Pixmap
+
+	set_clip_mask(method) : value : Gdk.Pixmap -> Gdk.Pixmap
+
+	static public Zero(var) : Gdk.GCValues
+
+	static public New(method) : raw : System.IntPtr -> Gdk.GCValues
+
+}

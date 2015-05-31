@@ -1,0 +1,114 @@
+extern class System.Drawing.Region extends System.MarshalByRefObject implements System.IDisposable{
+	public new(method) : Void -> Void
+
+	public new(method) : rgnData : System.Drawing.Drawing2D.RegionData -> Void
+
+	public new(method) : path : System.Drawing.Drawing2D.GraphicsPath -> Void
+
+	public new(method) : rect : System.Drawing.Rectangle -> Void
+
+	public new(method) : rect : System.Drawing.RectangleF -> Void
+
+	public Clone(method) : Void -> System.Drawing.Region
+
+	public Dispose(method) : Void -> Void
+
+	Finalize(method) : Void -> Void
+
+	public MakeInfinite(method) : Void -> Void
+
+	public MakeEmpty(method) : Void -> Void
+
+	public Intersect(method) : rect : System.Drawing.RectangleF -> Void
+
+	public Intersect(method) : region : System.Drawing.Region -> Void
+
+	public Intersect(method) : path : System.Drawing.Drawing2D.GraphicsPath -> Void
+
+	public Intersect(method) : rect : System.Drawing.Rectangle -> Void
+
+	public ReleaseHrgn(method) : regionHandle : System.IntPtr -> Void
+
+	public Union(method) : rect : System.Drawing.RectangleF -> Void
+
+	public Union(method) : region : System.Drawing.Region -> Void
+
+	public Union(method) : path : System.Drawing.Drawing2D.GraphicsPath -> Void
+
+	public Union(method) : rect : System.Drawing.Rectangle -> Void
+
+	public Xor(method) : rect : System.Drawing.RectangleF -> Void
+
+	public Xor(method) : region : System.Drawing.Region -> Void
+
+	public Xor(method) : path : System.Drawing.Drawing2D.GraphicsPath -> Void
+
+	public Xor(method) : rect : System.Drawing.Rectangle -> Void
+
+	public Exclude(method) : rect : System.Drawing.RectangleF -> Void
+
+	public Exclude(method) : region : System.Drawing.Region -> Void
+
+	public Exclude(method) : path : System.Drawing.Drawing2D.GraphicsPath -> Void
+
+	public Exclude(method) : rect : System.Drawing.Rectangle -> Void
+
+	public Complement(method) : rect : System.Drawing.RectangleF -> Void
+
+	public Complement(method) : region : System.Drawing.Region -> Void
+
+	public Complement(method) : path : System.Drawing.Drawing2D.GraphicsPath -> Void
+
+	public Complement(method) : rect : System.Drawing.Rectangle -> Void
+
+	public Translate(method) : dx : Single -> dy : Single -> Void
+
+	public Translate(method) : dx : Int -> dy : Int -> Void
+
+	public Transform(method) : matrix : System.Drawing.Drawing2D.Matrix -> Void
+
+	public GetBounds(method) : g : System.Drawing.Graphics -> System.Drawing.RectangleF
+
+	public GetHrgn(method) : g : System.Drawing.Graphics -> System.IntPtr
+
+	public IsEmpty(method) : g : System.Drawing.Graphics -> Bool
+
+	public IsInfinite(method) : g : System.Drawing.Graphics -> Bool
+
+	public GetRegionData(method) : Void -> System.Drawing.Drawing2D.RegionData
+
+	public IsVisible(method) : x : Single -> y : Single -> Bool
+
+	public IsVisible(method) : rect : System.Drawing.Rectangle -> g : System.Drawing.Graphics -> Bool
+
+	public IsVisible(method) : x : Int -> y : Int -> width : Int -> height : Int -> g : System.Drawing.Graphics -> Bool
+
+	public IsVisible(method) : rect : System.Drawing.Rectangle -> Bool
+
+	public IsVisible(method) : x : Int -> y : Int -> width : Int -> height : Int -> Bool
+
+	public IsVisible(method) : point : System.Drawing.Point -> g : System.Drawing.Graphics -> Bool
+
+	public IsVisible(method) : point : System.Drawing.Point -> Bool
+
+	public IsVisible(method) : x : Int -> y : Int -> g : System.Drawing.Graphics -> Bool
+
+	public IsVisible(method) : rect : System.Drawing.RectangleF -> g : System.Drawing.Graphics -> Bool
+
+	public IsVisible(method) : x : Single -> y : Single -> width : Single -> height : Single -> g : System.Drawing.Graphics -> Bool
+
+	public IsVisible(method) : rect : System.Drawing.RectangleF -> Bool
+
+	public IsVisible(method) : x : Single -> y : Single -> width : Single -> height : Single -> Bool
+
+	public IsVisible(method) : point : System.Drawing.PointF -> g : System.Drawing.Graphics -> Bool
+
+	public IsVisible(method) : x : Single -> y : Single -> g : System.Drawing.Graphics -> Bool
+
+	public IsVisible(method) : point : System.Drawing.PointF -> Bool
+
+	public GetRegionScans(method) : matrix : System.Drawing.Drawing2D.Matrix -> cs.NativeArray<System.Drawing.RectangleF>
+
+	static public FromHrgn(method) : hrgn : System.IntPtr -> System.Drawing.Region
+
+}
