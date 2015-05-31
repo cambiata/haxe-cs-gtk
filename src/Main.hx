@@ -19,12 +19,40 @@ import gtk.Button;
 		Application.Init();
 		
 		var win = new Window("Haxe, C# and GTK");
-		win.Resize(300, 400);
-		
+		win.SetDefaultSize(300, 400);
+		win.SetPosition(gtk.WindowPosition.Center);
 		win.add_DeleteEvent(new gtk.DeleteEventHandler(function(t:Dynamic, e:gtk.DeleteEventArgs) { 
 			Application.Quit();
 			e.set_RetVal(true);
 		} ));
+		
+		var vboxOuter:gtk.VBox = new gtk.VBox(false, 2);
+		win.Add(vboxOuter);		
+		
+		var menubar:gtk.MenuBar = new gtk.MenuBar();
+		var filemenu:gtk.Menu = new gtk.Menu();
+		
+		var file:gtk.MenuItem = new gtk.MenuItem("File");
+		file.Submenu = filemenu;
+		var exit:gtk.MenuItem = new gtk.MenuItem('Exit');
+		filemenu.Append(exit);
+		exit.add_Activated(new cs.system.EventHandler(function(obj:Dynamic, e:cs.system.EventArgs) {
+			trace('Exit');
+		}));
+		menubar.Append(file);
+		vboxOuter.PackStart(menubar, false, false, 0);		
+		
+		var upper:gtk.Toolbar = new gtk.Toolbar();
+		upper.ToolbarStyle = gtk.ToolbarStyle.Icons;
+		
+		var newtb = new gtk.ToolButton(gtk.Stock.New);
+		var opentb = new gtk.ToolButton(gtk.Stock.Open);
+		var savetb = new gtk.ToolButton(gtk.Stock.Save);
+		
+		upper.Insert(newtb, 0);
+		upper.Insert(opentb, 1);
+		upper.Insert(savetb, 2);
+		vboxOuter.PackStart(upper, false, false, 0);
 		
 		var btn = new Button();
 		btn.Label = 'Create test.png';
@@ -59,7 +87,6 @@ import gtk.Button;
 		
 		list.Model = store;
 		
-		var hbox:gtk.HBox = new gtk.HBox(true, 0);
 		
 		var vbox:gtk.VBox = new gtk.VBox();
 		vbox.PackStart(btn, false, false, 8);
@@ -104,8 +131,9 @@ import gtk.Button;
 		}));
 		
 		vbox.PackStart(btnMessageDialog, false, false, 2);
-		hbox.Add(vbox);
-		win.Add(hbox);
+		vboxOuter.Add(vbox);
+
+		
 		win.ShowAll();
 		
 		Application.Run();

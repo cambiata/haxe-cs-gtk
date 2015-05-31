@@ -8,6 +8,8 @@
 -D verbose
 -D dump
 
+-c-arg /platform:x86
+
 -main Main 
 
 -net-lib pango-sharp.dll

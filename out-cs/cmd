@@ -1,5 +1,4 @@
 /nologo
-/platform:x86
 /optimize+
 /debug-
 /unsafe-
@@ -16,7 +15,6 @@
 /reference:bin/Mono.Cairo.dll
 src\Std.cs
 src\cs\internal\Function.cs
-src\StringTools.cs
 src\Reflect.cs
 src\cs\internal\Iterator.cs
 src\cs\internal\Runtime.cs
@@ -25,10 +23,10 @@ src\Main.cs
 src\cs\Boot.cs
 src\Array.cs
 src\cs\Lib.cs
-src\Math.cs
 src\Type.cs
 src\cs\internal\StringExt.cs
 src\cs\internal\Null.cs
 src\haxe\Log.cs
 src\cs\internal\HxObject.cs
 src\cs\internal\Exceptions.cs
+/platform:x86

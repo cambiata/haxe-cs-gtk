@@ -73,6 +73,7 @@ M System.Runtime.InteropServices._ModuleBuilder
 M gtk.ActionGroup
 M gtk.WrapMode
 M Gtk.RadioActionEntry
+M Gtk.Tooltips
 M System.ArgumentException
 M gtk.Action
 M cs.internal.Function
@@ -120,6 +121,7 @@ M cs.system.drawing.imaging.MetafileType
 M System.Collections.IList
 M System.Threading.ExecutionContext
 M gtk.DragDropHandler
+M gtk.ToolButton
 M System.Runtime.Serialization.IFormatterConverter
 M System.ValueType
 M gtk.AccelFlags
@@ -147,9 +149,11 @@ M Gtk.TagRemovedArgs
 M System.UInt32
 M cs.system.threading.ThreadPriority
 M gtk.TextInsertedHandler
+M gtk.Toolbar
 M gdk.Function
 M gtk.ClipboardReceivedFunc
 M System.IDisposable
+M gtk.PopupContextMenuHandler
 M Gtk.HButtonBox
 M System.Collections.Generic.IComparer`1
 M gtk.CellRendererText
@@ -160,8 +164,6 @@ M gtk.TreeViewSearchEqualFunc
 M cairo.SubpixelOrder
 M gdk.Display
 M System.Security.Policy.CodeGroup
-M StringTools
-C StringTools
 M System.Text.DecoderFallback
 M cs.system.Func_4
 M Gdk.EventProximity
@@ -169,10 +171,12 @@ M gtk.MoveCurrentHandler
 M Gtk.MoveCursorArgs
 M System.Reflection.ExceptionHandlingClause
 M cs.types.Char16
+M gtk.ToolbarStyle
 M System.Runtime.Hosting.ApplicationActivator
 M System.Security.HostSecurityManager
 M Gtk.ScrollEventArgs
 M glib.ListBase
+M gtk.SignalFunc
 M cs.system.ConsoleModifiers
 M Reflect
 C Reflect
@@ -299,11 +303,12 @@ M atk.ActiveDescendantChangedHandler
 M Main
 C Main
 C Main_main_24__Fun
-C Main_main_31__Fun
-C Main_main_70__Fun
-C Main_main_77__Fun
-C Main_main_85__Fun
-C Main_main_99__Fun
+C Main_main_39__Fun
+C Main_main_59__Fun
+C Main_main_97__Fun
+C Main_main_104__Fun
+C Main_main_112__Fun
+C Main_main_126__Fun
 M pango.Direction
 M cs.system.CrossAppDomainDelegate
 M System.Globalization.CultureInfo
@@ -334,6 +339,7 @@ M System.Reflection.Emit.ParameterBuilder
 M pango.Weight
 M atk.Object
 M cs.system.reflection.EventInfo
+M gtk.PackDirection
 M gtk.CursorOnMatchHandler
 M Gtk.DeleteRangeArgs
 M gtk.AccelCanActivateHandler
@@ -344,7 +350,6 @@ M cs.system.LoaderOptimization
 M System.Drawing.Imaging.ImageFormat
 M cs.NativeArray
 M Gtk.SelectionReceivedArgs
-M Gtk.HBox
 M cs.Boot
 C cs.Boot
 M System.Security.Principal.IdentityReference
@@ -440,12 +445,14 @@ M Gdk.Pixdata
 M gtk.ClientEventHandler
 M gtk.ExpandCollapseCursorRowHandler
 M gtk.SelectCursorRowHandler
+M gtk.ToolbarChildType
 M System.Security.ISecurityPolicyEncodable
 M System.Threading.WaitHandle
 M gdk.InputMode
 M gtk.AccelActivateHandler
 M System.Collections.IHashCodeProvider
 M gtk.PropertyNotifyEventHandler
+M Gtk.PopupContextMenuArgs
 M cs.system.reflection.CustomAttributeData
 M cs.system.reflection.emit.PackingSize
 M Gtk.Requisition
@@ -494,6 +501,7 @@ M Gtk.ClientEventArgs
 M cs.system.StringSplitOptions
 M System.Collections.IStructuralEquatable
 M cs.system.drawing.imaging.EmfPlusRecordType
+M gtk.StyleChangedHandler
 M cs.system.drawing.drawing2d.CompositingMode
 M gtk.CellRenderer
 M Atk.StateSet
@@ -540,6 +548,7 @@ M System.Security.Policy.StrongNameMembershipCondition
 M GLib.InitiallyUnowned
 M gdk.Key
 M System.Math
+M gtk.MenuItem
 M gtk.GrabNotifyHandler
 M Gtk.KeyPressEventArgs
 M Gtk.LeaveNotifyEventArgs
@@ -550,8 +559,6 @@ M gtk.PopupMenuHandler
 M cs.system.security.SecurityContextSource
 M glib.GInterfaceInitHandler
 M gtk.AccelChangedHandler
-M Math
-C Math
 M cs.system.reflection.emit.StackBehaviour
 M Gtk.KeyReleaseEventArgs
 M cs.system.drawing.drawing2d.SmoothingMode
@@ -588,12 +595,14 @@ M Gtk.DragMotionArgs
 M cs.system.Action_1
 M Microsoft.Win32.SafeHandles.SafeHandleZeroOrMinusOneIsInvalid
 M cs.system.UriFormat
+M Gtk.OrientationChangedArgs
 M Gtk.DragBeginArgs
 M cs.system.reflection.ImageFileMachine
 M Gtk.AccelCanActivateArgs
 M gtk.InsertTextHandler
 M System.Nullable`1
 M gtk.AddedHandler
+M gtk.ToggleSizeRequestedHandler
 M Gtk.PreActivateArgs
 M Gtk.TreeSortable
 M System.Runtime.InteropServices._MemberInfo
@@ -720,6 +729,7 @@ M cs.system.io.FileAccess
 M gtk.PostActivateHandler
 M System.Security.AccessControl.FileSystemAccessRule
 M Gtk.AccelActivateArgs
+M gtk.CreateMenuProxyHandler
 M gtk.TextDeletedHandler
 M cs.system.runtime.remoting.contexts.CrossContextDelegate
 M gtk.RowsReorderedHandler
@@ -738,6 +748,7 @@ M gtk.SizeAllocatedHandler
 M Atk.Relation
 M Pango.FontFace
 M System.Reflection.Emit.EventToken
+M Gtk.ToggleSizeAllocatedArgs
 M gtk.TreeDestroyCountFunc
 M gtk.SelectionNotifyEventHandler
 M haxe.PosInfos
@@ -821,11 +832,13 @@ M Gtk.DragFailedArgs
 M System.Runtime.InteropServices._Assembly
 M System.Runtime.InteropServices._EnumBuilder
 M cs.system.security.accesscontrol.InheritanceFlags
+M Gtk.CreateMenuProxyArgs
 M pango.AttrFilterFunc
 M System.Security.SecurityState
 M cs.system.DateTimeKind
 M Gtk.MoveFocusArgs
 M gtk.DeleteEventHandler
+M Gtk.StockItem
 M System.Runtime.InteropServices._Activator
 M gdk.RgbCmap
 M cs.system.reflection.GenericParameterAttributes
@@ -890,6 +903,7 @@ M cs.system.drawing.StringDigitSubstitute
 M Gtk.MapEventArgs
 M cs.system.reflection.ResourceLocation
 M cs.system.threading.ApartmentState
+M gtk.ToggleSizeAllocatedHandler
 M System.Text.EncodingInfo
 M System.Security.Policy.IMembershipCondition
 M gtk.SelectionGetHandler
@@ -904,6 +918,7 @@ M Gtk.EnterNotifyEventArgs
 M gtk.TreePath
 M Pango.FontFamily
 M Gdk.DeviceKey
+M gtk.Stock
 M cs.system.drawing.imaging.ColorAdjustType
 M gdk.WindowTypeHint
 M cs.system.reflection.TypeFilter
@@ -922,6 +937,7 @@ M System.RuntimeMethodHandle
 M gtk.NodeStore
 M cs.system.collections.Hashtable
 M cs.system.text.Encoding
+M gtk.TooltipSetHandler
 M System.Drawing.RectangleF
 M System.Security.SecureString
 M haxe.Int32
@@ -951,6 +967,7 @@ M cs.system.drawing.drawing2d.WarpMode
 M System.LocalDataStoreSlot
 M Gtk.TestCollapseRowArgs
 M gtk.WindowStateEventHandler
+M Gtk.TooltipSetArgs
 M System.NullReferenceException
 M System.AssemblyLoadEventArgs
 M pango.Script
@@ -981,6 +998,7 @@ M cs.system.reflection.Binder
 M Gdk.Size
 M System.Runtime.ConstrainedExecution.CriticalFinalizerObject
 M atk.PropertyChangeEventHandler
+M gtk.OrientationChangedHandler
 M gtk.ClipboardClearFunc
 M System.Security.IPermission
 M gtk.WidgetEventHandler
@@ -1012,6 +1030,7 @@ M cs.system.TimeSpan
 M gtk.SelectionMode
 M System.Runtime.InteropServices._MethodBase
 M System.Runtime.Remoting.ObjectHandle
+M Gtk.ToggleSizeRequestedArgs
 M Gtk.StartInteractiveSearchArgs
 M Gdk.Colormap
 M gtk.CellRendererMode
@@ -1051,6 +1070,7 @@ M System.Drawing.PointF
 M gtk.AccelGroup
 M cairo.Status
 M gtk.ClipboardTextReceivedFunc
+M Gtk.MenuBar
 M gtk.TreeViewMappingFunc
 M cs.system.UnhandledExceptionEventHandler
 M cs.system.text.NormalizationForm
@@ -1099,6 +1119,7 @@ M System.IAppDomainSetup
 M Gtk.TagAddedArgs
 M gtk.TextSearchFlags
 M System.RuntimeTypeHandle
+M gtk.ToolItem
 M cs.system.reflection.MemberFilter
 M System.Random
 M Gdk.PixbufFormat
@@ -1116,6 +1137,7 @@ M gdk.SubwindowMode
 M gdk.WindowState
 M Gtk.SelectionRequestEventArgs
 M System.Collections.IEqualityComparer
+M gtk.Item
 M gtk.TreeViewSearchPositionFunc
 M Gtk.ButtonPressEventArgs
 M gtk.DestroyEventHandler
@@ -1127,6 +1149,7 @@ M gtk.KeyPressEventHandler
 M gtk.MenuDirectionType
 M Enum
 M System.Runtime.Remoting.Messaging.IMessageCtrl
+M Gtk.StyleChangedArgs
 M System.Drawing.Drawing2D.PathData
 M System.Exception
 M Gtk.UnselectAllArgs
@@ -1160,3 +1183,6 @@ glib-sharp.dll
 gtk-dotnet.dll
 Mono.Cairo.dll
 end libs
+begin opts
+/platform:x86
+end opts

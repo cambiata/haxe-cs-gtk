@@ -17,7 +17,7 @@ namespace haxe {
 		}
 		
 		
-		public static void __hx_ctor_haxe_Log(global::haxe.Log __temp_me15) {
+		public static void __hx_ctor_haxe_Log(global::haxe.Log __temp_me14) {
 		}
 		
 		

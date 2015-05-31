@@ -99,8 +99,6 @@
 	
     <Compile Include="src\cs\internal\Function.cs"/>
 	
-    <Compile Include="src\StringTools.cs"/>
-	
     <Compile Include="src\Reflect.cs"/>
 	
     <Compile Include="src\cs\internal\Iterator.cs"/>
@@ -116,8 +114,6 @@
     <Compile Include="src\Array.cs"/>
 	
     <Compile Include="src\cs\Lib.cs"/>
-	
-    <Compile Include="src\Math.cs"/>
 	
     <Compile Include="src\Type.cs"/>
 	
