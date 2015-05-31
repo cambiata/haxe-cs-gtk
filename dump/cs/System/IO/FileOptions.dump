@@ -1,9 +1,0 @@
-extern enum System.IO.FileOptions {
-	WriteThrough : System.IO.FileOptions;
-	None : System.IO.FileOptions;
-	Encrypted : System.IO.FileOptions;
-	DeleteOnClose : System.IO.FileOptions;
-	SequentialScan : System.IO.FileOptions;
-	RandomAccess : System.IO.FileOptions;
-	Asynchronous : System.IO.FileOptions;
-}

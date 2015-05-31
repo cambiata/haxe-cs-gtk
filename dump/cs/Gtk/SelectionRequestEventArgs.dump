@@ -1,8 +1,0 @@
-extern class Gtk.SelectionRequestEventArgs extends GLib.SignalArgs{
-	public new(method) : Void -> Void
-
-	public Event((get,never)) : Gdk.EventSelection
-
-	get_Event(method) : Void -> Gdk.EventSelection
-
-}

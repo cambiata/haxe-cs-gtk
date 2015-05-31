@@ -1,4 +1,0 @@
-extern class Gtk.Container.CallbackInvoker extends System.ValueType{
-	public Invoke(method) : w : Gtk.Widget -> Void
-
-}

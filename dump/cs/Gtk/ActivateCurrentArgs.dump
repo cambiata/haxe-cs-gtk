@@ -1,8 +1,0 @@
-extern class Gtk.ActivateCurrentArgs extends GLib.SignalArgs{
-	public new(method) : Void -> Void
-
-	public ForceHide((get,never)) : Bool
-
-	get_ForceHide(method) : Void -> Bool
-
-}

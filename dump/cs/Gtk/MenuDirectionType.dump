@@ -1,6 +1,0 @@
-extern enum Gtk.MenuDirectionType {
-	Parent : Gtk.MenuDirectionType;
-	Child : Gtk.MenuDirectionType;
-	Next : Gtk.MenuDirectionType;
-	Prev : Gtk.MenuDirectionType;
-}

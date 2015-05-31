@@ -1,6 +1,0 @@
-extern enum System.Drawing.Imaging.ImageLockMode {
-	ReadOnly : System.Drawing.Imaging.ImageLockMode;
-	WriteOnly : System.Drawing.Imaging.ImageLockMode;
-	ReadWrite : System.Drawing.Imaging.ImageLockMode;
-	UserInputBuffer : System.Drawing.Imaging.ImageLockMode;
-}

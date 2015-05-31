@@ -1,8 +1,0 @@
-extern interface Atk.Implementor implements GLib.IWrapper{
-	public Handle((get,never)) : System.IntPtr
-
-	get_Handle(method) : Void -> System.IntPtr
-
-	public RefAccessible(method) : Void -> Atk.Object
-
-}

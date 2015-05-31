@@ -1,5 +1,0 @@
-extern enum Gdk.JoinStyle {
-	Miter : Gdk.JoinStyle;
-	Round : Gdk.JoinStyle;
-	Bevel : Gdk.JoinStyle;
-}

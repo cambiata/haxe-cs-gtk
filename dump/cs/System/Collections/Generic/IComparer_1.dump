@@ -1,4 +1,0 @@
-extern interface System.Collections.Generic.IComparer`1<T0 : cs.system.collections.generic.IComparer_1.T0>{
-	public Compare(method) : x : cs.system.collections.generic.IComparer_1.T0 -> y : cs.system.collections.generic.IComparer_1.T0 -> Int
-
-}

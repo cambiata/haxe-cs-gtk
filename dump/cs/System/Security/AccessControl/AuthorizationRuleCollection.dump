@@ -1,6 +1,0 @@
-extern class System.Security.AccessControl.AuthorizationRuleCollection extends System.Collections.ReadOnlyCollectionBase implements ArrayAccess<System.Security.AccessControl.AuthorizationRule>{
-	get_Item(method) : index : Int -> System.Security.AccessControl.AuthorizationRule
-
-	public CopyTo(method) : rules : cs.NativeArray<System.Security.AccessControl.AuthorizationRule> -> index : Int -> Void
-
-}

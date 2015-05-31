@@ -1,7 +1,0 @@
-extern enum System.Drawing.Imaging.ColorChannelFlag {
-	ColorChannelC : System.Drawing.Imaging.ColorChannelFlag;
-	ColorChannelM : System.Drawing.Imaging.ColorChannelFlag;
-	ColorChannelY : System.Drawing.Imaging.ColorChannelFlag;
-	ColorChannelK : System.Drawing.Imaging.ColorChannelFlag;
-	ColorChannelLast : System.Drawing.Imaging.ColorChannelFlag;
-}

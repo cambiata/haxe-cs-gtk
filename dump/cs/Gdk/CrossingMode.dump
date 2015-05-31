@@ -1,5 +1,0 @@
-extern enum Gdk.CrossingMode {
-	Normal : Gdk.CrossingMode;
-	Grab : Gdk.CrossingMode;
-	Ungrab : Gdk.CrossingMode;
-}

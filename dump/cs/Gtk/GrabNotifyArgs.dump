@@ -1,8 +1,0 @@
-extern class Gtk.GrabNotifyArgs extends GLib.SignalArgs{
-	public new(method) : Void -> Void
-
-	public WasGrabbed((get,never)) : Bool
-
-	get_WasGrabbed(method) : Void -> Bool
-
-}

@@ -1,5 +1,0 @@
-extern enum Gdk.LineStyle {
-	Solid : Gdk.LineStyle;
-	OnOffDash : Gdk.LineStyle;
-	DoubleDash : Gdk.LineStyle;
-}

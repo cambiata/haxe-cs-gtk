@@ -1,4 +1,0 @@
-extern enum Gdk.FillRule {
-	EvenOddRule : Gdk.FillRule;
-	WindingRule : Gdk.FillRule;
-}

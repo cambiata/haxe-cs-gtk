@@ -1,7 +1,0 @@
-extern enum Gtk.StateType {
-	Normal : Gtk.StateType;
-	Active : Gtk.StateType;
-	Prelight : Gtk.StateType;
-	Selected : Gtk.StateType;
-	Insensitive : Gtk.StateType;
-}

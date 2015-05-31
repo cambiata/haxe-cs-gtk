@@ -1,4 +1,0 @@
-extern enum Gtk.Orientation {
-	Horizontal : Gtk.Orientation;
-	Vertical : Gtk.Orientation;
-}

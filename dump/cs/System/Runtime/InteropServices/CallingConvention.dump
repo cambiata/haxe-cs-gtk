@@ -1,7 +1,0 @@
-extern enum System.Runtime.InteropServices.CallingConvention {
-	Winapi : System.Runtime.InteropServices.CallingConvention;
-	Cdecl : System.Runtime.InteropServices.CallingConvention;
-	StdCall : System.Runtime.InteropServices.CallingConvention;
-	ThisCall : System.Runtime.InteropServices.CallingConvention;
-	FastCall : System.Runtime.InteropServices.CallingConvention;
-}

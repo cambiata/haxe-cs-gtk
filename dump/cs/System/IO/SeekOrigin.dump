@@ -1,5 +1,0 @@
-extern enum System.IO.SeekOrigin {
-	Begin : System.IO.SeekOrigin;
-	Current : System.IO.SeekOrigin;
-	End : System.IO.SeekOrigin;
-}

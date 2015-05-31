@@ -1,5 +1,0 @@
-extern enum System.Drawing.Text.GenericFontFamilies {
-	Serif : System.Drawing.Text.GenericFontFamilies;
-	SansSerif : System.Drawing.Text.GenericFontFamilies;
-	Monospace : System.Drawing.Text.GenericFontFamilies;
-}

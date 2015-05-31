@@ -1,6 +1,0 @@
-interface haxe.lang.Iterator<T : cs.internal.Iterator.T>{
-	public hasNext(method) : Void -> Bool
-
-	public next(method) : Void -> cs.internal.Iterator.T
-
-}

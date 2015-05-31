@@ -1,8 +1,0 @@
-extern class Gtk.ChangedArgs extends GLib.SignalArgs{
-	public new(method) : Void -> Void
-
-	public Current((get,never)) : Gtk.RadioAction
-
-	get_Current(method) : Void -> Gtk.RadioAction
-
-}

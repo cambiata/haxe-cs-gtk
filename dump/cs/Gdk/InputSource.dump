@@ -1,6 +1,0 @@
-extern enum Gdk.InputSource {
-	Mouse : Gdk.InputSource;
-	Pen : Gdk.InputSource;
-	Eraser : Gdk.InputSource;
-	Cursor : Gdk.InputSource;
-}

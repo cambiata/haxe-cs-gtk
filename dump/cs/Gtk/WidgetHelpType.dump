@@ -1,4 +1,0 @@
-extern enum Gtk.WidgetHelpType {
-	Tooltip : Gtk.WidgetHelpType;
-	WhatsThis : Gtk.WidgetHelpType;
-}

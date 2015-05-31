@@ -1,4 +1,0 @@
-extern enum System.Drawing.Drawing2D.FlushIntention {
-	Flush : System.Drawing.Drawing2D.FlushIntention;
-	Sync : System.Drawing.Drawing2D.FlushIntention;
-}

@@ -1,4 +1,0 @@
-extern enum System.Drawing.Drawing2D.MatrixOrder {
-	Prepend : System.Drawing.Drawing2D.MatrixOrder;
-	Append : System.Drawing.Drawing2D.MatrixOrder;
-}

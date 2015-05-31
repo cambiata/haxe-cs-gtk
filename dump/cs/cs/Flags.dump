@@ -1,1 +1,0 @@
-abstract cs.Flags<T : cs.Flags.T> {}

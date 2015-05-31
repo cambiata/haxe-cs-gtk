@@ -1,5 +1,0 @@
-extern enum System.Security.AccessControl.InheritanceFlags {
-	None : System.Security.AccessControl.InheritanceFlags;
-	ContainerInherit : System.Security.AccessControl.InheritanceFlags;
-	ObjectInherit : System.Security.AccessControl.InheritanceFlags;
-}

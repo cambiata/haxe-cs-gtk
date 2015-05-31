@@ -1,8 +1,0 @@
-extern interface System.Runtime.Remoting.IEnvoyInfo{
-	public EnvoySinks((get,set)) : System.Runtime.Remoting.Messaging.IMessageSink
-
-	get_EnvoySinks(method) : Void -> System.Runtime.Remoting.Messaging.IMessageSink
-
-	set_EnvoySinks(method) : value : System.Runtime.Remoting.Messaging.IMessageSink -> System.Runtime.Remoting.Messaging.IMessageSink
-
-}

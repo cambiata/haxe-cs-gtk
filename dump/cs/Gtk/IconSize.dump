@@ -1,9 +1,0 @@
-extern enum Gtk.IconSize {
-	Invalid : Gtk.IconSize;
-	Menu : Gtk.IconSize;
-	SmallToolbar : Gtk.IconSize;
-	LargeToolbar : Gtk.IconSize;
-	Button : Gtk.IconSize;
-	Dnd : Gtk.IconSize;
-	Dialog : Gtk.IconSize;
-}

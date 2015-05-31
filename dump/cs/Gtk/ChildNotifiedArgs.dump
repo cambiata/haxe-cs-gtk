@@ -1,8 +1,0 @@
-extern class Gtk.ChildNotifiedArgs extends GLib.SignalArgs{
-	public new(method) : Void -> Void
-
-	public Pspec((get,never)) : System.IntPtr
-
-	get_Pspec(method) : Void -> System.IntPtr
-
-}

@@ -1,1 +1,0 @@
-private abstract cs._Flags.EnumUnderlying<T : cs._Flags.EnumUnderlying.T> {}

@@ -1,6 +1,0 @@
-extern enum System.Reflection.EventAttributes {
-	None : System.Reflection.EventAttributes;
-	SpecialName : System.Reflection.EventAttributes;
-	ReservedMask : System.Reflection.EventAttributes;
-	RTSpecialName : System.Reflection.EventAttributes;
-}

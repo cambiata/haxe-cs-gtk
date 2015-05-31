@@ -1,8 +1,0 @@
-extern enum Gdk.VisualType {
-	StaticGray : Gdk.VisualType;
-	Grayscale : Gdk.VisualType;
-	StaticColor : Gdk.VisualType;
-	PseudoColor : Gdk.VisualType;
-	TrueColor : Gdk.VisualType;
-	DirectColor : Gdk.VisualType;
-}

@@ -1,4 +1,0 @@
-extern enum System.Security.SecurityContextSource {
-	CurrentAppDomain : System.Security.SecurityContextSource;
-	CurrentAssembly : System.Security.SecurityContextSource;
-}

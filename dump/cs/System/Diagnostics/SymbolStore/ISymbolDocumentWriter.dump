@@ -1,6 +1,0 @@
-extern interface System.Diagnostics.SymbolStore.ISymbolDocumentWriter{
-	public SetCheckSum(method) : algorithmId : System.Guid -> checkSum : cs.NativeArray<cs.types.UInt8> -> Void
-
-	public SetSource(method) : source : cs.NativeArray<cs.types.UInt8> -> Void
-
-}

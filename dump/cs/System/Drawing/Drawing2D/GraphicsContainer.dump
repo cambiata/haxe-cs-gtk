@@ -1,2 +1,0 @@
-extern class System.Drawing.Drawing2D.GraphicsContainer extends System.MarshalByRefObject{
-}

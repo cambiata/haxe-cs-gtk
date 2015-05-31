@@ -1,8 +1,0 @@
-extern class System.Collections.Hashtable.KeyMarker implements System.Runtime.Serialization.IObjectReference{
-	public new(method) : Void -> Void
-
-	public GetRealObject(method) : context : System.Runtime.Serialization.StreamingContext -> Dynamic
-
-	static public Removed((default,never)) : System.Collections.Hashtable.KeyMarker
-
-}

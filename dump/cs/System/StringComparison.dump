@@ -1,8 +1,0 @@
-extern enum System.StringComparison {
-	CurrentCulture : System.StringComparison;
-	CurrentCultureIgnoreCase : System.StringComparison;
-	InvariantCulture : System.StringComparison;
-	InvariantCultureIgnoreCase : System.StringComparison;
-	Ordinal : System.StringComparison;
-	OrdinalIgnoreCase : System.StringComparison;
-}

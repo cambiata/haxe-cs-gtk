@@ -1,4 +1,0 @@
-extern class Gtk.SelectCursorParentArgs extends GLib.SignalArgs{
-	public new(method) : Void -> Void
-
-}

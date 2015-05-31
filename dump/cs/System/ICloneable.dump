@@ -1,4 +1,0 @@
-extern interface System.ICloneable{
-	public Clone(method) : Void -> Dynamic
-
-}

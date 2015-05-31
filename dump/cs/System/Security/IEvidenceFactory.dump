@@ -1,6 +1,0 @@
-extern interface System.Security.IEvidenceFactory{
-	public Evidence((get,never)) : System.Security.Policy.Evidence
-
-	get_Evidence(method) : Void -> System.Security.Policy.Evidence
-
-}

@@ -1,8 +1,0 @@
-extern enum System.Drawing.Drawing2D.PixelOffsetMode {
-	Invalid : System.Drawing.Drawing2D.PixelOffsetMode;
-	Default : System.Drawing.Drawing2D.PixelOffsetMode;
-	HighSpeed : System.Drawing.Drawing2D.PixelOffsetMode;
-	HighQuality : System.Drawing.Drawing2D.PixelOffsetMode;
-	None : System.Drawing.Drawing2D.PixelOffsetMode;
-	Half : System.Drawing.Drawing2D.PixelOffsetMode;
-}

@@ -1,8 +1,0 @@
-extern class Atk.PropertyChangeArgs extends GLib.SignalArgs{
-	public new(method) : Void -> Void
-
-	public Values((get,never)) : Atk.PropertyValues
-
-	get_Values(method) : Void -> Atk.PropertyValues
-
-}

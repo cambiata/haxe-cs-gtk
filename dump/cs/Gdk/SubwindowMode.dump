@@ -1,4 +1,0 @@
-extern enum Gdk.SubwindowMode {
-	ClipByChildren : Gdk.SubwindowMode;
-	IncludeInferiors : Gdk.SubwindowMode;
-}

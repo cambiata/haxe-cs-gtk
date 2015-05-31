@@ -1,7 +1,0 @@
-extern enum Gtk.ArrowType {
-	Up : Gtk.ArrowType;
-	Down : Gtk.ArrowType;
-	Left : Gtk.ArrowType;
-	Right : Gtk.ArrowType;
-	None : Gtk.ArrowType;
-}

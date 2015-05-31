@@ -1,5 +1,0 @@
-extern enum Gdk.InputMode {
-	Disabled : Gdk.InputMode;
-	Screen : Gdk.InputMode;
-	Window : Gdk.InputMode;
-}

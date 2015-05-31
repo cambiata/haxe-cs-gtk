@@ -1,5 +1,0 @@
-extern enum Gdk.RgbDither {
-	None : Gdk.RgbDither;
-	Normal : Gdk.RgbDither;
-	Max : Gdk.RgbDither;
-}

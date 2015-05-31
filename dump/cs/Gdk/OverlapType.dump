@@ -1,5 +1,0 @@
-extern enum Gdk.OverlapType {
-	In : Gdk.OverlapType;
-	Out : Gdk.OverlapType;
-	Part : Gdk.OverlapType;
-}

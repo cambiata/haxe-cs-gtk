@@ -1,8 +1,0 @@
-extern class Gtk.ClientEventArgs extends GLib.SignalArgs{
-	public new(method) : Void -> Void
-
-	public Event((get,never)) : Gdk.EventClient
-
-	get_Event(method) : Void -> Gdk.EventClient
-
-}

@@ -1,8 +1,0 @@
-extern class Gtk.HierarchyChangedArgs extends GLib.SignalArgs{
-	public new(method) : Void -> Void
-
-	public PreviousToplevel((get,never)) : Gtk.Widget
-
-	get_PreviousToplevel(method) : Void -> Gtk.Widget
-
-}

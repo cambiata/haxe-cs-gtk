@@ -1,8 +1,0 @@
-extern class Gtk.DirectionChangedArgs extends GLib.SignalArgs{
-	public new(method) : Void -> Void
-
-	public PreviousDirection((get,never)) : Gtk.TextDirection
-
-	get_PreviousDirection(method) : Void -> Gtk.TextDirection
-
-}

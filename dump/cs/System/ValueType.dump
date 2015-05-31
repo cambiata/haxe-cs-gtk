@@ -1,6 +1,0 @@
-extern class System.ValueType{
-	new(method) : Void -> Void
-
-	public ToString(method) : Void -> String
-
-}

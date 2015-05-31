@@ -1,9 +1,0 @@
-extern enum System.Security.HostSecurityManagerOptions {
-	None : System.Security.HostSecurityManagerOptions;
-	HostAppDomainEvidence : System.Security.HostSecurityManagerOptions;
-	HostPolicyLevel : System.Security.HostSecurityManagerOptions;
-	HostAssemblyEvidence : System.Security.HostSecurityManagerOptions;
-	HostDetermineApplicationTrust : System.Security.HostSecurityManagerOptions;
-	HostResolvePolicy : System.Security.HostSecurityManagerOptions;
-	AllFlags : System.Security.HostSecurityManagerOptions;
-}

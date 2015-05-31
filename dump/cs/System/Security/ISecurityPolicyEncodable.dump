@@ -1,6 +1,0 @@
-extern interface System.Security.ISecurityPolicyEncodable{
-	public FromXml(method) : e : System.Security.SecurityElement -> level : System.Security.Policy.PolicyLevel -> Void
-
-	public ToXml(method) : level : System.Security.Policy.PolicyLevel -> System.Security.SecurityElement
-
-}

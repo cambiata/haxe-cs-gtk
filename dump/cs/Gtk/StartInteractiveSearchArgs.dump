@@ -1,4 +1,0 @@
-extern class Gtk.StartInteractiveSearchArgs extends GLib.SignalArgs{
-	public new(method) : Void -> Void
-
-}

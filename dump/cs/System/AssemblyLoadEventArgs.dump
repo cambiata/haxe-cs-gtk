@@ -1,8 +1,0 @@
-extern class System.AssemblyLoadEventArgs extends System.EventArgs{
-	public new(method) : loadedAssembly : System.Reflection.Assembly -> Void
-
-	public LoadedAssembly((get,never)) : System.Reflection.Assembly
-
-	get_LoadedAssembly(method) : Void -> System.Reflection.Assembly
-
-}

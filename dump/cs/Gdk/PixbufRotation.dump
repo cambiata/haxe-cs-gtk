@@ -1,6 +1,0 @@
-extern enum Gdk.PixbufRotation {
-	None : Gdk.PixbufRotation;
-	Counterclockwise : Gdk.PixbufRotation;
-	Upsidedown : Gdk.PixbufRotation;
-	Clockwise : Gdk.PixbufRotation;
-}

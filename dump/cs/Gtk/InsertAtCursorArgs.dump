@@ -1,8 +1,0 @@
-extern class Gtk.InsertAtCursorArgs extends GLib.SignalArgs{
-	public new(method) : Void -> Void
-
-	public Str((get,never)) : String
-
-	get_Str(method) : Void -> String
-
-}

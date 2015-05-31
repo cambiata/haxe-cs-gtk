@@ -1,4 +1,0 @@
-extern enum Gtk.SortType {
-	Ascending : Gtk.SortType;
-	Descending : Gtk.SortType;
-}

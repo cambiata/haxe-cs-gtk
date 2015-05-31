@@ -1,7 +1,0 @@
-extern enum Gtk.CellRendererState {
-	Selected : Gtk.CellRendererState;
-	Prelit : Gtk.CellRendererState;
-	Insensitive : Gtk.CellRendererState;
-	Sorted : Gtk.CellRendererState;
-	Focused : Gtk.CellRendererState;
-}

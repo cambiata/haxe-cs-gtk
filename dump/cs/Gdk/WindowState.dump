@@ -1,9 +1,0 @@
-extern enum Gdk.WindowState {
-	Withdrawn : Gdk.WindowState;
-	Iconified : Gdk.WindowState;
-	Maximized : Gdk.WindowState;
-	Sticky : Gdk.WindowState;
-	Fullscreen : Gdk.WindowState;
-	Above : Gdk.WindowState;
-	Below : Gdk.WindowState;
-}

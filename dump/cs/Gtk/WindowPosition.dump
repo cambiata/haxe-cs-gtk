@@ -1,7 +1,0 @@
-extern enum Gtk.WindowPosition {
-	None : Gtk.WindowPosition;
-	Center : Gtk.WindowPosition;
-	Mouse : Gtk.WindowPosition;
-	CenterAlways : Gtk.WindowPosition;
-	CenterOnParent : Gtk.WindowPosition;
-}

@@ -1,8 +1,0 @@
-extern class System.Drawing.Drawing2D.RegionData{
-	public Data((get,set)) : cs.NativeArray<cs.types.UInt8>
-
-	get_Data(method) : Void -> cs.NativeArray<cs.types.UInt8>
-
-	set_Data(method) : value : cs.NativeArray<cs.types.UInt8> -> cs.NativeArray<cs.types.UInt8>
-
-}

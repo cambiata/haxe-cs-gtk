@@ -1,4 +1,0 @@
-extern class Pango.EngineShape extends GLib.Opaque{
-	public new(method) : raw : System.IntPtr -> Void
-
-}

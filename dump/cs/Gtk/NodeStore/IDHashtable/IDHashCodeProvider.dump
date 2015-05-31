@@ -1,4 +1,0 @@
-extern class Gtk.NodeStore.IDHashtable.IDHashCodeProvider implements System.Collections.IHashCodeProvider{
-	public new(method) : Void -> Void
-
-}

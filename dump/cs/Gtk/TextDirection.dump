@@ -1,5 +1,0 @@
-extern enum Gtk.TextDirection {
-	None : Gtk.TextDirection;
-	Ltr : Gtk.TextDirection;
-	Rtl : Gtk.TextDirection;
-}

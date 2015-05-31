@@ -1,8 +1,0 @@
-extern enum System.Security.Cryptography.X509Certificates.X509KeyStorageFlags {
-	DefaultKeySet : System.Security.Cryptography.X509Certificates.X509KeyStorageFlags;
-	UserKeySet : System.Security.Cryptography.X509Certificates.X509KeyStorageFlags;
-	MachineKeySet : System.Security.Cryptography.X509Certificates.X509KeyStorageFlags;
-	Exportable : System.Security.Cryptography.X509Certificates.X509KeyStorageFlags;
-	UserProtected : System.Security.Cryptography.X509Certificates.X509KeyStorageFlags;
-	PersistKeySet : System.Security.Cryptography.X509Certificates.X509KeyStorageFlags;
-}

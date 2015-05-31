@@ -1,5 +1,0 @@
-extern enum System.DateTimeKind {
-	Unspecified : System.DateTimeKind;
-	Utc : System.DateTimeKind;
-	Local : System.DateTimeKind;
-}

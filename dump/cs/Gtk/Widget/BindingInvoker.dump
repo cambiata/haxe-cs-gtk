@@ -1,6 +1,0 @@
-extern class Gtk.Widget.BindingInvoker{
-	public new(method) : mi : System.Reflection.MethodInfo -> parms : cs.NativeArray<Dynamic> -> Void
-
-	public Invoke(method) : w : Gtk.Widget -> Void
-
-}

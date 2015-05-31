@@ -1,4 +1,0 @@
-extern interface System.IComparable{
-	public CompareTo(method) : obj : Dynamic -> Int
-
-}

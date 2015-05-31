@@ -1,5 +1,0 @@
-extern enum System.Reflection.Emit.PEFileKinds {
-	Dll : System.Reflection.Emit.PEFileKinds;
-	ConsoleApplication : System.Reflection.Emit.PEFileKinds;
-	WindowApplication : System.Reflection.Emit.PEFileKinds;
-}

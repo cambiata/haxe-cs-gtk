@@ -1,6 +1,0 @@
-extern class System.Security.AccessControl.FileSecurity extends System.Security.AccessControl.FileSystemSecurity{
-	public new(method) : Void -> Void
-
-	public new(method) : fileName : String -> includeSections : System.Security.AccessControl.AccessControlSections -> Void
-
-}

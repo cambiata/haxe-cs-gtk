@@ -1,8 +1,0 @@
-extern class Gtk.MarkDeletedArgs extends GLib.SignalArgs{
-	public new(method) : Void -> Void
-
-	public Mark((get,never)) : Gtk.TextMark
-
-	get_Mark(method) : Void -> Gtk.TextMark
-
-}

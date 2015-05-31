@@ -1,8 +1,0 @@
-extern class GLib.EnumWrapper{
-	public new(method) : val : Int -> flags : Bool -> Void
-
-	public flags(var) : Bool
-
-	static public op_Explicit(method) : wrap : GLib.EnumWrapper -> Int
-
-}

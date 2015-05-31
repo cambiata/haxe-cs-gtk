@@ -1,8 +1,0 @@
-extern class Atk.ActiveDescendantChangedArgs extends GLib.SignalArgs{
-	public new(method) : Void -> Void
-
-	public Child((get,never)) : System.IntPtr
-
-	get_Child(method) : Void -> System.IntPtr
-
-}

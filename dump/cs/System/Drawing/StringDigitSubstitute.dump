@@ -1,6 +1,0 @@
-extern enum System.Drawing.StringDigitSubstitute {
-	User : System.Drawing.StringDigitSubstitute;
-	None : System.Drawing.StringDigitSubstitute;
-	National : System.Drawing.StringDigitSubstitute;
-	Traditional : System.Drawing.StringDigitSubstitute;
-}

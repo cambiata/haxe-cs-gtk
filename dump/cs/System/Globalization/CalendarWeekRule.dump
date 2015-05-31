@@ -1,5 +1,0 @@
-extern enum System.Globalization.CalendarWeekRule {
-	FirstDay : System.Globalization.CalendarWeekRule;
-	FirstFullWeek : System.Globalization.CalendarWeekRule;
-	FirstFourDayWeek : System.Globalization.CalendarWeekRule;
-}

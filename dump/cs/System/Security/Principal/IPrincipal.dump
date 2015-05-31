@@ -1,8 +1,0 @@
-extern interface System.Security.Principal.IPrincipal{
-	public Identity((get,never)) : System.Security.Principal.IIdentity
-
-	get_Identity(method) : Void -> System.Security.Principal.IIdentity
-
-	public IsInRole(method) : role : String -> Bool
-
-}

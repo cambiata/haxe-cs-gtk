@@ -1,8 +1,0 @@
-extern class Gtk.ParentSetArgs extends GLib.SignalArgs{
-	public new(method) : Void -> Void
-
-	public PreviousParent((get,never)) : Gtk.Widget
-
-	get_PreviousParent(method) : Void -> Gtk.Widget
-
-}

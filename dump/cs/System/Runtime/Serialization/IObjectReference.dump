@@ -1,4 +1,0 @@
-extern interface System.Runtime.Serialization.IObjectReference{
-	public GetRealObject(method) : context : System.Runtime.Serialization.StreamingContext -> Dynamic
-
-}

@@ -1,4 +1,0 @@
-extern interface System.Collections.IEnumerable{
-	public GetEnumerator(method) : Void -> System.Collections.IEnumerator
-
-}

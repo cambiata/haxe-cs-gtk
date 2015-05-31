@@ -1,5 +1,0 @@
-extern enum Gtk.TreeViewColumnSizing {
-	GrowOnly : Gtk.TreeViewColumnSizing;
-	Autosize : Gtk.TreeViewColumnSizing;
-	Fixed : Gtk.TreeViewColumnSizing;
-}

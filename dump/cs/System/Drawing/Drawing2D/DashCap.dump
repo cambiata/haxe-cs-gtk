@@ -1,5 +1,0 @@
-extern enum System.Drawing.Drawing2D.DashCap {
-	Flat : System.Drawing.Drawing2D.DashCap;
-	Round : System.Drawing.Drawing2D.DashCap;
-	Triangle : System.Drawing.Drawing2D.DashCap;
-}

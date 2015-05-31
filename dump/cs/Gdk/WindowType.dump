@@ -1,8 +1,0 @@
-extern enum Gdk.WindowType {
-	Root : Gdk.WindowType;
-	Toplevel : Gdk.WindowType;
-	Child : Gdk.WindowType;
-	Dialog : Gdk.WindowType;
-	Temp : Gdk.WindowType;
-	Foreign : Gdk.WindowType;
-}

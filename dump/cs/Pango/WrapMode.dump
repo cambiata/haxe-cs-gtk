@@ -1,5 +1,0 @@
-extern enum Pango.WrapMode {
-	Word : Pango.WrapMode;
-	Char : Pango.WrapMode;
-	WordChar : Pango.WrapMode;
-}

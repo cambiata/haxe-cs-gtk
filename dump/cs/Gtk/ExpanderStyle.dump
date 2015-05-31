@@ -1,6 +1,0 @@
-extern enum Gtk.ExpanderStyle {
-	Collapsed : Gtk.ExpanderStyle;
-	SemiCollapsed : Gtk.ExpanderStyle;
-	SemiExpanded : Gtk.ExpanderStyle;
-	Expanded : Gtk.ExpanderStyle;
-}

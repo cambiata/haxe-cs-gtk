@@ -1,5 +1,0 @@
-extern enum System.Security.AccessControl.AuditFlags {
-	None : System.Security.AccessControl.AuditFlags;
-	Success : System.Security.AccessControl.AuditFlags;
-	Failure : System.Security.AccessControl.AuditFlags;
-}

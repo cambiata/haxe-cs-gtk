@@ -1,8 +1,0 @@
-extern class Gdk.EventGrabBroken.NativeEventGrabBroken extends System.ValueType{
-	public GrabWindowHandle(var) : System.IntPtr
-
-	public Implicit(var) : Bool
-
-	public Keyboard(var) : Bool
-
-}

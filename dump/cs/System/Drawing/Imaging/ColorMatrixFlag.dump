@@ -1,5 +1,0 @@
-extern enum System.Drawing.Imaging.ColorMatrixFlag {
-	Default : System.Drawing.Imaging.ColorMatrixFlag;
-	SkipGrays : System.Drawing.Imaging.ColorMatrixFlag;
-	AltGrays : System.Drawing.Imaging.ColorMatrixFlag;
-}

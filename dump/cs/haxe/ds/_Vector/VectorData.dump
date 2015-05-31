@@ -1,1 +1,0 @@
-private type haxe.ds._Vector.VectorData<T : haxe.ds._Vector.VectorData.T> = cs.NativeArray<haxe.ds._Vector.VectorData.T>

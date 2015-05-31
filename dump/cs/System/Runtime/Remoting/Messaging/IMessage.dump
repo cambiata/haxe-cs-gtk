@@ -1,6 +1,0 @@
-extern interface System.Runtime.Remoting.Messaging.IMessage{
-	public Properties((get,never)) : System.Collections.IDictionary
-
-	get_Properties(method) : Void -> System.Collections.IDictionary
-
-}

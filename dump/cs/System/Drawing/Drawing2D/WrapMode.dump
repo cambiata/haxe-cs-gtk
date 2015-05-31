@@ -1,7 +1,0 @@
-extern enum System.Drawing.Drawing2D.WrapMode {
-	Tile : System.Drawing.Drawing2D.WrapMode;
-	TileFlipX : System.Drawing.Drawing2D.WrapMode;
-	TileFlipY : System.Drawing.Drawing2D.WrapMode;
-	TileFlipXY : System.Drawing.Drawing2D.WrapMode;
-	Clamp : System.Drawing.Drawing2D.WrapMode;
-}

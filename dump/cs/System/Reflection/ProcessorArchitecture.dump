@@ -1,7 +1,0 @@
-extern enum System.Reflection.ProcessorArchitecture {
-	None : System.Reflection.ProcessorArchitecture;
-	MSIL : System.Reflection.ProcessorArchitecture;
-	X86 : System.Reflection.ProcessorArchitecture;
-	IA64 : System.Reflection.ProcessorArchitecture;
-	Amd64 : System.Reflection.ProcessorArchitecture;
-}

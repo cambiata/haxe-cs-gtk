@@ -1,6 +1,0 @@
-extern class System.Reflection.Assembly.ResourceCloseHandler{
-	public new(method) : module : System.Reflection.Module -> Void
-
-	public OnClose(method) : sender : Dynamic -> e : System.EventArgs -> Void
-
-}

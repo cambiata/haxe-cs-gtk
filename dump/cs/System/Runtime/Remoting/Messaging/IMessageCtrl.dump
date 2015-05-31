@@ -1,4 +1,0 @@
-extern interface System.Runtime.Remoting.Messaging.IMessageCtrl{
-	public Cancel(method) : msToCancel : Int -> Void
-
-}

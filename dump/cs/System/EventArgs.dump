@@ -1,6 +1,0 @@
-extern class System.EventArgs{
-	public new(method) : Void -> Void
-
-	static public Empty((default,never)) : System.EventArgs
-
-}

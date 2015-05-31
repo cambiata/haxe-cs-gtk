@@ -1,4 +1,0 @@
-extern interface System.Runtime.Serialization.IDeserializationCallback{
-	public OnDeserialization(method) : sender : Dynamic -> Void
-
-}

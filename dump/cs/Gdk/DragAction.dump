@@ -1,8 +1,0 @@
-extern enum Gdk.DragAction {
-	Default : Gdk.DragAction;
-	Copy : Gdk.DragAction;
-	Move : Gdk.DragAction;
-	Link : Gdk.DragAction;
-	Private : Gdk.DragAction;
-	Ask : Gdk.DragAction;
-}

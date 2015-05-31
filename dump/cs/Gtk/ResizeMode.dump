@@ -1,5 +1,0 @@
-extern enum Gtk.ResizeMode {
-	Parent : Gtk.ResizeMode;
-	Queue : Gtk.ResizeMode;
-	Immediate : Gtk.ResizeMode;
-}

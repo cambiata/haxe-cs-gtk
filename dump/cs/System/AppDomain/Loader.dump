@@ -1,6 +1,0 @@
-extern class System.AppDomain.Loader{
-	public new(method) : assembly : String -> Void
-
-	public Load(method) : Void -> Void
-
-}

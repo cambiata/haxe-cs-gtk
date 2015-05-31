@@ -1,4 +1,0 @@
-extern interface System.IDisposable{
-	public Dispose(method) : Void -> Void
-
-}

@@ -1,5 +1,0 @@
-extern enum Pango.Style {
-	Normal : Pango.Style;
-	Oblique : Pango.Style;
-	Italic : Pango.Style;
-}

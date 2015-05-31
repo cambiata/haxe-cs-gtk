@@ -1,4 +1,0 @@
-class haxe.lang.Exceptions{
-	static exception(var) : System.Exception
-
-}

@@ -1,4 +1,0 @@
-extern enum System.AppDomainManagerInitializationOptions {
-	None : System.AppDomainManagerInitializationOptions;
-	RegisterWithHost : System.AppDomainManagerInitializationOptions;
-}

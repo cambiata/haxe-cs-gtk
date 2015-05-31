@@ -1,6 +1,0 @@
-extern enum System.Runtime.InteropServices.CharSet {
-	None : System.Runtime.InteropServices.CharSet;
-	Ansi : System.Runtime.InteropServices.CharSet;
-	Unicode : System.Runtime.InteropServices.CharSet;
-	Auto : System.Runtime.InteropServices.CharSet;
-}

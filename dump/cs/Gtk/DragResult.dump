@@ -1,8 +1,0 @@
-extern enum Gtk.DragResult {
-	Success : Gtk.DragResult;
-	NoTarget : Gtk.DragResult;
-	UserCancelled : Gtk.DragResult;
-	TimeoutExpired : Gtk.DragResult;
-	GrabBroken : Gtk.DragResult;
-	Error : Gtk.DragResult;
-}

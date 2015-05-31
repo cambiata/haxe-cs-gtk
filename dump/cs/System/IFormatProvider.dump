@@ -1,4 +1,0 @@
-extern interface System.IFormatProvider{
-	public GetFormat(method) : formatType : System.Type -> Dynamic
-
-}

@@ -1,5 +1,0 @@
-extern enum System.Drawing.StringAlignment {
-	Near : System.Drawing.StringAlignment;
-	Center : System.Drawing.StringAlignment;
-	Far : System.Drawing.StringAlignment;
-}

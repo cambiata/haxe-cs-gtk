@@ -1,9 +1,0 @@
-extern enum Pango.Direction {
-	Ltr : Pango.Direction;
-	Rtl : Pango.Direction;
-	TtbLtr : Pango.Direction;
-	TtbRtl : Pango.Direction;
-	WeakLtr : Pango.Direction;
-	WeakRtl : Pango.Direction;
-	Neutral : Pango.Direction;
-}

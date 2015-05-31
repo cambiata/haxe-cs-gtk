@@ -1,6 +1,0 @@
-extern enum System.Security.Policy.PolicyStatementAttribute {
-	Nothing : System.Security.Policy.PolicyStatementAttribute;
-	Exclusive : System.Security.Policy.PolicyStatementAttribute;
-	LevelFinal : System.Security.Policy.PolicyStatementAttribute;
-	All : System.Security.Policy.PolicyStatementAttribute;
-}

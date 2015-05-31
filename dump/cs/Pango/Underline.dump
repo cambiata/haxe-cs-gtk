@@ -1,7 +1,0 @@
-extern enum Pango.Underline {
-	None : Pango.Underline;
-	Single : Pango.Underline;
-	Double : Pango.Underline;
-	Low : Pango.Underline;
-	Error : Pango.Underline;
-}

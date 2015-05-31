@@ -1,8 +1,0 @@
-extern class Gtk.AccelCanActivateArgs extends GLib.SignalArgs{
-	public new(method) : Void -> Void
-
-	public SignalId((get,never)) : UInt
-
-	get_SignalId(method) : Void -> UInt
-
-}

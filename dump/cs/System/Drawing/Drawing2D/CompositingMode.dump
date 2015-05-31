@@ -1,4 +1,0 @@
-extern enum System.Drawing.Drawing2D.CompositingMode {
-	SourceOver : System.Drawing.Drawing2D.CompositingMode;
-	SourceCopy : System.Drawing.Drawing2D.CompositingMode;
-}

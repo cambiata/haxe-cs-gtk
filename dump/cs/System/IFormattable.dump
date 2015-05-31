@@ -1,4 +1,0 @@
-extern interface System.IFormattable{
-	public ToString(method) : format : String -> formatProvider : System.IFormatProvider -> String
-
-}

@@ -1,8 +1,0 @@
-extern enum System.LoaderOptimization {
-	NotSpecified : System.LoaderOptimization;
-	SingleDomain : System.LoaderOptimization;
-	MultiDomain : System.LoaderOptimization;
-	MultiDomainHost : System.LoaderOptimization;
-	DomainMask : System.LoaderOptimization;
-	DisallowBindings : System.LoaderOptimization;
-}

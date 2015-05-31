@@ -1,6 +1,0 @@
-extern enum Gdk.Fill {
-	Solid : Gdk.Fill;
-	Tiled : Gdk.Fill;
-	Stippled : Gdk.Fill;
-	OpaqueStippled : Gdk.Fill;
-}

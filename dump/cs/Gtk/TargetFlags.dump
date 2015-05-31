@@ -1,6 +1,0 @@
-extern enum Gtk.TargetFlags {
-	App : Gtk.TargetFlags;
-	Widget : Gtk.TargetFlags;
-	OtherApp : Gtk.TargetFlags;
-	OtherWidget : Gtk.TargetFlags;
-}

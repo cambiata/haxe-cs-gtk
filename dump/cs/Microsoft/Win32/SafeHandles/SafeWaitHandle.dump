@@ -1,6 +1,0 @@
-extern class Microsoft.Win32.SafeHandles.SafeWaitHandle extends Microsoft.Win32.SafeHandles.SafeHandleZeroOrMinusOneIsInvalid{
-	public new(method) : existingHandle : System.IntPtr -> ownsHandle : Bool -> Void
-
-	ReleaseHandle(method) : Void -> Bool
-
-}

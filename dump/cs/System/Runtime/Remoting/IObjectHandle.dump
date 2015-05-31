@@ -1,4 +1,0 @@
-extern interface System.Runtime.Remoting.IObjectHandle{
-	public Unwrap(method) : Void -> Dynamic
-
-}

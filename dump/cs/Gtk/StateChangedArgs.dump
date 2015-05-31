@@ -1,8 +1,0 @@
-extern class Gtk.StateChangedArgs extends GLib.SignalArgs{
-	public new(method) : Void -> Void
-
-	public PreviousState((get,never)) : Gtk.StateType
-
-	get_PreviousState(method) : Void -> Gtk.StateType
-
-}

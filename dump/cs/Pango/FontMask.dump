@@ -1,9 +1,0 @@
-extern enum Pango.FontMask {
-	Family : Pango.FontMask;
-	Style : Pango.FontMask;
-	Variant : Pango.FontMask;
-	Weight : Pango.FontMask;
-	Stretch : Pango.FontMask;
-	Size : Pango.FontMask;
-	Gravity : Pango.FontMask;
-}

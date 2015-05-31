@@ -1,6 +1,0 @@
-extern enum Gdk.ScrollDirection {
-	Up : Gdk.ScrollDirection;
-	Down : Gdk.ScrollDirection;
-	Left : Gdk.ScrollDirection;
-	Right : Gdk.ScrollDirection;
-}

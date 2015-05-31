@@ -1,8 +1,0 @@
-extern class Gdk.EventVisibility extends Gdk.Event{
-	public new(method) : raw : System.IntPtr -> Void
-
-	public State((get,never)) : Gdk.VisibilityState
-
-	get_State(method) : Void -> Gdk.VisibilityState
-
-}

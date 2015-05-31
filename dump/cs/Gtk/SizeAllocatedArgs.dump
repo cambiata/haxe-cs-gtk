@@ -1,8 +1,0 @@
-extern class Gtk.SizeAllocatedArgs extends GLib.SignalArgs{
-	public new(method) : Void -> Void
-
-	public Allocation((get,never)) : Gdk.Rectangle
-
-	get_Allocation(method) : Void -> Gdk.Rectangle
-
-}

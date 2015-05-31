@@ -1,6 +1,0 @@
-extern enum System.Reflection.Emit.SignatureHelper.SignatureHelperType {
-	HELPER_FIELD : System.Reflection.Emit.SignatureHelper.SignatureHelperType;
-	HELPER_LOCAL : System.Reflection.Emit.SignatureHelper.SignatureHelperType;
-	HELPER_METHOD : System.Reflection.Emit.SignatureHelper.SignatureHelperType;
-	HELPER_PROPERTY : System.Reflection.Emit.SignatureHelper.SignatureHelperType;
-}

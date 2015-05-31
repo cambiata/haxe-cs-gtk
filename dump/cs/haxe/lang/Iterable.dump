@@ -1,4 +1,0 @@
-interface haxe.lang.Iterable<T : cs.internal.Iterable.T>{
-	public iterator(method) : Void -> haxe.lang.Iterator<cs.internal.Iterable.T>
-
-}

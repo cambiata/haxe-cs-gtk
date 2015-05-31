@@ -1,5 +1,0 @@
-extern enum System.Globalization.DigitShapes {
-	Context : System.Globalization.DigitShapes;
-	None : System.Globalization.DigitShapes;
-	NativeNational : System.Globalization.DigitShapes;
-}

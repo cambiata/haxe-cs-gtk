@@ -1,8 +1,0 @@
-extern class Gdk.Pixbuf.DestroyHelper{
-	public new(method) : data : cs.NativeArray<cs.types.UInt8> -> notify : gdk.PixbufDestroyNotify -> Void
-
-	public Handler((get,never)) : gdk.Pixbuf_DestroyHelper_NativeDelegate
-
-	get_Handler(method) : Void -> gdk.Pixbuf_DestroyHelper_NativeDelegate
-
-}

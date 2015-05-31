@@ -1,8 +1,0 @@
-extern interface System.Runtime.Remoting.IChannelInfo{
-	public ChannelData((get,set)) : cs.NativeArray<Dynamic>
-
-	get_ChannelData(method) : Void -> cs.NativeArray<Dynamic>
-
-	set_ChannelData(method) : value : cs.NativeArray<Dynamic> -> cs.NativeArray<Dynamic>
-
-}

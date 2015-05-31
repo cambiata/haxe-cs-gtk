@@ -1,8 +1,0 @@
-extern enum System.IO.FileMode {
-	CreateNew : System.IO.FileMode;
-	Create : System.IO.FileMode;
-	Open : System.IO.FileMode;
-	OpenOrCreate : System.IO.FileMode;
-	Truncate : System.IO.FileMode;
-	Append : System.IO.FileMode;
-}

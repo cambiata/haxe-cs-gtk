@@ -1,4 +1,0 @@
-extern enum Gdk.PropertyState {
-	NewValue : Gdk.PropertyState;
-	Delete : Gdk.PropertyState;
-}

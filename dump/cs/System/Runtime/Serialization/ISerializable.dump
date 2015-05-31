@@ -1,4 +1,0 @@
-extern interface System.Runtime.Serialization.ISerializable{
-	public GetObjectData(method) : info : System.Runtime.Serialization.SerializationInfo -> context : System.Runtime.Serialization.StreamingContext -> Void
-
-}

@@ -1,7 +1,0 @@
-extern enum System.UriHostNameType {
-	Unknown : System.UriHostNameType;
-	Basic : System.UriHostNameType;
-	Dns : System.UriHostNameType;
-	IPv4 : System.UriHostNameType;
-	IPv6 : System.UriHostNameType;
-}

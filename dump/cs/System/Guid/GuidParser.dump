@@ -1,8 +1,0 @@
-extern class System.Guid.GuidParser{
-	public new(method) : src : String -> Void
-
-	public Parse(method) : format : System.Guid.Format -> guid : cs.Out<System.Guid> -> Bool
-
-	public Parse(method) : guid : cs.Out<System.Guid> -> Bool
-
-}

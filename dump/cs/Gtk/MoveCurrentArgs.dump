@@ -1,8 +1,0 @@
-extern class Gtk.MoveCurrentArgs extends GLib.SignalArgs{
-	public new(method) : Void -> Void
-
-	public Direction((get,never)) : Gtk.MenuDirectionType
-
-	get_Direction(method) : Void -> Gtk.MenuDirectionType
-
-}

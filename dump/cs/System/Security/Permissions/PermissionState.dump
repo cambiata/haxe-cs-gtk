@@ -1,4 +1,0 @@
-extern enum System.Security.Permissions.PermissionState {
-	None : System.Security.Permissions.PermissionState;
-	Unrestricted : System.Security.Permissions.PermissionState;
-}

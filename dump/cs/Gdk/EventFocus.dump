@@ -1,8 +1,0 @@
-extern class Gdk.EventFocus extends Gdk.Event{
-	public new(method) : raw : System.IntPtr -> Void
-
-	public In((get,never)) : Bool
-
-	get_In(method) : Void -> Bool
-
-}

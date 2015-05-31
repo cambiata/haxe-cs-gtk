@@ -1,3 +1,0 @@
-private enum haxe.lang.EmptyObject {
-	EMPTY : haxe.lang.EmptyObject;
-}

@@ -1,8 +1,0 @@
-extern enum System.Drawing.Text.TextRenderingHint {
-	SystemDefault : System.Drawing.Text.TextRenderingHint;
-	SingleBitPerPixelGridFit : System.Drawing.Text.TextRenderingHint;
-	SingleBitPerPixel : System.Drawing.Text.TextRenderingHint;
-	AntiAliasGridFit : System.Drawing.Text.TextRenderingHint;
-	AntiAlias : System.Drawing.Text.TextRenderingHint;
-	ClearTypeGridFit : System.Drawing.Text.TextRenderingHint;
-}

@@ -1,5 +1,0 @@
-extern enum System.Reflection.ResourceLocation {
-	Embedded : System.Reflection.ResourceLocation;
-	ContainedInAnotherAssembly : System.Reflection.ResourceLocation;
-	ContainedInManifestFile : System.Reflection.ResourceLocation;
-}

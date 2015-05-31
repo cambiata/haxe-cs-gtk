@@ -1,9 +1,0 @@
-extern enum System.Drawing.Imaging.ColorAdjustType {
-	Default : System.Drawing.Imaging.ColorAdjustType;
-	Bitmap : System.Drawing.Imaging.ColorAdjustType;
-	Brush : System.Drawing.Imaging.ColorAdjustType;
-	Pen : System.Drawing.Imaging.ColorAdjustType;
-	Text : System.Drawing.Imaging.ColorAdjustType;
-	Count : System.Drawing.Imaging.ColorAdjustType;
-	Any : System.Drawing.Imaging.ColorAdjustType;
-}

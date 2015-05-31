@@ -1,6 +1,0 @@
-extern class Gdk.Cursor.FinalizerInfo{
-	public new(method) : handle : System.IntPtr -> Void
-
-	public Handler(method) : Void -> Bool
-
-}

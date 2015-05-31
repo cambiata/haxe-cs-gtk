@@ -1,4 +1,0 @@
-extern enum Atk.Object.ChildrenChangedDetail {
-	Add : Atk.Object.ChildrenChangedDetail;
-	Remove : Atk.Object.ChildrenChangedDetail;
-}

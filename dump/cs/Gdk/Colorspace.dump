@@ -1,3 +1,0 @@
-extern enum Gdk.Colorspace {
-	Rgb : Gdk.Colorspace;
-}

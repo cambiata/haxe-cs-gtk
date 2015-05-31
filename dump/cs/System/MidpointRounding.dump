@@ -1,4 +1,0 @@
-extern enum System.MidpointRounding {
-	ToEven : System.MidpointRounding;
-	AwayFromZero : System.MidpointRounding;
-}

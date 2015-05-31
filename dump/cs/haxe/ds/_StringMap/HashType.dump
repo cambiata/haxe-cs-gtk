@@ -1,1 +1,0 @@
-private type haxe.ds._StringMap.HashType = Int

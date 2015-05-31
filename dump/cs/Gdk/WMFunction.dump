@@ -1,8 +1,0 @@
-extern enum Gdk.WMFunction {
-	All : Gdk.WMFunction;
-	Resize : Gdk.WMFunction;
-	Move : Gdk.WMFunction;
-	Minimize : Gdk.WMFunction;
-	Maximize : Gdk.WMFunction;
-	Close : Gdk.WMFunction;
-}

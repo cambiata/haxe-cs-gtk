@@ -1,4 +1,0 @@
-extern enum System.Security.AccessControl.AccessControlType {
-	Allow : System.Security.AccessControl.AccessControlType;
-	Deny : System.Security.AccessControl.AccessControlType;
-}

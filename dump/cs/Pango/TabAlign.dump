@@ -1,3 +1,0 @@
-extern enum Pango.TabAlign {
-	Left : Pango.TabAlign;
-}

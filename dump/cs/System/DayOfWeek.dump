@@ -1,9 +1,0 @@
-extern enum System.DayOfWeek {
-	Sunday : System.DayOfWeek;
-	Monday : System.DayOfWeek;
-	Tuesday : System.DayOfWeek;
-	Wednesday : System.DayOfWeek;
-	Thursday : System.DayOfWeek;
-	Friday : System.DayOfWeek;
-	Saturday : System.DayOfWeek;
-}

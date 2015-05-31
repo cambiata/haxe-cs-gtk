@@ -1,8 +1,0 @@
-extern class Gtk.MnemonicActivatedArgs extends GLib.SignalArgs{
-	public new(method) : Void -> Void
-
-	public GroupCycling((get,never)) : Bool
-
-	get_GroupCycling(method) : Void -> Bool
-
-}

@@ -1,4 +1,0 @@
-extern enum System.Drawing.Drawing2D.FillMode {
-	Alternate : System.Drawing.Drawing2D.FillMode;
-	Winding : System.Drawing.Drawing2D.FillMode;
-}

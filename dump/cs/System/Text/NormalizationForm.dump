@@ -1,6 +1,0 @@
-extern enum System.Text.NormalizationForm {
-	FormC : System.Text.NormalizationForm;
-	FormD : System.Text.NormalizationForm;
-	FormKC : System.Text.NormalizationForm;
-	FormKD : System.Text.NormalizationForm;
-}

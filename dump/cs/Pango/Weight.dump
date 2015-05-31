@@ -1,9 +1,0 @@
-extern enum Pango.Weight {
-	Ultralight : Pango.Weight;
-	Light : Pango.Weight;
-	Normal : Pango.Weight;
-	Semibold : Pango.Weight;
-	Bold : Pango.Weight;
-	Ultrabold : Pango.Weight;
-	Heavy : Pango.Weight;
-}

@@ -1,6 +1,0 @@
-extern class System.Runtime.ConstrainedExecution.CriticalFinalizerObject{
-	new(method) : Void -> Void
-
-	Finalize(method) : Void -> Void
-
-}

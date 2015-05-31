@@ -1,5 +1,0 @@
-extern enum Gtk.DialogFlags {
-	Modal : Gtk.DialogFlags;
-	DestroyWithParent : Gtk.DialogFlags;
-	NoSeparator : Gtk.DialogFlags;
-}

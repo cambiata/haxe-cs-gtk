@@ -1,4 +1,0 @@
-extern interface System.Runtime.Serialization.ISafeSerializationData{
-	public CompleteDeserialization(method) : deserialized : Dynamic -> Void
-
-}

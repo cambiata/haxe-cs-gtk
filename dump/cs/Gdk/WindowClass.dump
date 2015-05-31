@@ -1,4 +1,0 @@
-extern enum Gdk.WindowClass {
-	InputOutput : Gdk.WindowClass;
-	InputOnly : Gdk.WindowClass;
-}

@@ -1,2 +1,0 @@
-extern interface System.IEquatable`1<T0 : cs.system.IEquatable_1.T0>{
-}

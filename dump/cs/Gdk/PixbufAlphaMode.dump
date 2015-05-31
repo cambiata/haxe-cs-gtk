@@ -1,4 +1,0 @@
-extern enum Gdk.PixbufAlphaMode {
-	Bilevel : Gdk.PixbufAlphaMode;
-	Full : Gdk.PixbufAlphaMode;
-}

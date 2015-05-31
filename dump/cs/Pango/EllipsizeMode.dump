@@ -1,6 +1,0 @@
-extern enum Pango.EllipsizeMode {
-	None : Pango.EllipsizeMode;
-	Start : Pango.EllipsizeMode;
-	Middle : Pango.EllipsizeMode;
-	End : Pango.EllipsizeMode;
-}

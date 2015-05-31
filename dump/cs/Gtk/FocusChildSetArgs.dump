@@ -1,8 +1,0 @@
-extern class Gtk.FocusChildSetArgs extends GLib.SignalArgs{
-	public new(method) : Void -> Void
-
-	public Widget((get,never)) : Gtk.Widget
-
-	get_Widget(method) : Void -> Gtk.Widget
-
-}

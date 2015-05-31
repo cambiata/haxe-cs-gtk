@@ -1,6 +1,0 @@
-extern enum Cairo.Antialias {
-	Default : Cairo.Antialias;
-	None : Cairo.Antialias;
-	Gray : Cairo.Antialias;
-	Subpixel : Cairo.Antialias;
-}

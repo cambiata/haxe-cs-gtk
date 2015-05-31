@@ -1,6 +1,0 @@
-extern enum System.UriPartial {
-	Scheme : System.UriPartial;
-	Authority : System.UriPartial;
-	Path : System.UriPartial;
-	Query : System.UriPartial;
-}

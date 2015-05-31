@@ -1,5 +1,0 @@
-extern enum System.Security.Policy.TrustManagerUIContext {
-	Install : System.Security.Policy.TrustManagerUIContext;
-	Upgrade : System.Security.Policy.TrustManagerUIContext;
-	Run : System.Security.Policy.TrustManagerUIContext;
-}

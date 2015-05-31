@@ -1,8 +1,0 @@
-extern class Gtk.Container.ChildAccumulator{
-	public new(method) : Void -> Void
-
-	public Children(var) : System.Collections.ArrayList
-
-	public Add(method) : widget : Gtk.Widget -> Void
-
-}

@@ -1,5 +1,0 @@
-extern enum System.Security.AccessControl.PropagationFlags {
-	None : System.Security.AccessControl.PropagationFlags;
-	NoPropagateInherit : System.Security.AccessControl.PropagationFlags;
-	InheritOnly : System.Security.AccessControl.PropagationFlags;
-}

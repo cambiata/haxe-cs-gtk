@@ -1,7 +1,0 @@
-extern enum Cairo.HintStyle {
-	Default : Cairo.HintStyle;
-	None : Cairo.HintStyle;
-	Slight : Cairo.HintStyle;
-	Medium : Cairo.HintStyle;
-	Full : Cairo.HintStyle;
-}

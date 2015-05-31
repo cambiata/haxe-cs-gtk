@@ -1,5 +1,0 @@
-extern enum Pango.GravityHint {
-	Natural : Pango.GravityHint;
-	Strong : Pango.GravityHint;
-	Line : Pango.GravityHint;
-}
