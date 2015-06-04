@@ -28,7 +28,7 @@ NET_35=1
 NET_40=1
 cs=1
 dce=std
-dump=1
+dump=pretty
 haxe3=1
 haxe_ver=3.2
 hxcpp_api_level=321
@@ -144,6 +144,7 @@ M gdk.LineStyle
 M gdk.VisualType
 M gtk.StartInteractiveSearchHandler
 M StdTypes
+M gtk.ToggleButton
 M pango.Variant
 M Gtk.TagRemovedArgs
 M System.UInt32
@@ -194,6 +195,8 @@ M Gdk.Span
 M Gtk.HierarchyChangedArgs
 M Class
 M cs.system.drawing.imaging.PlayRecordCallback
+M gtk.CornerType
+M Gdk.PixbufAnimationIter
 M System.UIntPtr
 M gtk.LeaveNotifyEventHandler
 M gdk.WMDecoration
@@ -238,6 +241,7 @@ M Gtk.TreeModel
 M Gtk.ToggleActionEntry
 M Gtk.Bin
 M Gtk.TextAppearance
+M gtk.ScrollChildHandler
 M System.Reflection.Emit.ConstructorBuilder
 M gdk.PixbufSaveFunc
 M Pango.Rectangle
@@ -302,13 +306,16 @@ M gtk.SetFocusHandler
 M atk.ActiveDescendantChangedHandler
 M Main
 C Main
-C Main_main_24__Fun
-C Main_main_39__Fun
-C Main_main_59__Fun
-C Main_main_97__Fun
-C Main_main_104__Fun
-C Main_main_112__Fun
-C Main_main_126__Fun
+C Main_main_25__Fun
+C Main_main_40__Fun
+C Main_main_50__Fun
+C Main_main_65__Fun
+C Main_main_73__Fun
+C Main_main_102__Fun
+C Main_main_110__Fun
+C Main_main_118__Fun
+C Main_main_133__Fun
+C Main_main_148__Fun
 M pango.Direction
 M cs.system.CrossAppDomainDelegate
 M System.Globalization.CultureInfo
@@ -329,6 +336,7 @@ M gtk.WindowType
 M gtk.PopulatePopupHandler
 M System.Collections.ObjectModel.ReadOnlyCollection`1
 M System.Diagnostics.SymbolStore.ISymbolWriter
+M gtk.MoveFocusOutHandler
 M gtk.MovementStep
 M gdk.Pixbuf
 M gtk.ScrollAdjustmentsSetHandler
@@ -350,6 +358,7 @@ M cs.system.LoaderOptimization
 M System.Drawing.Imaging.ImageFormat
 M cs.NativeArray
 M Gtk.SelectionReceivedArgs
+M Gtk.HBox
 M cs.Boot
 C cs.Boot
 M System.Security.Principal.IdentityReference
@@ -422,6 +431,7 @@ M pango.FontDescription
 M Gtk.FocusInEventArgs
 M cs.system.configuration.assemblies.AssemblyHashAlgorithm
 M System.Reflection.Emit.OpCode
+M gtk.ScrollType
 M System.Security.Policy.PolicyStatement
 M pango.AttrType
 M cs.system.drawing.imaging.ColorChannelFlag
@@ -528,6 +538,7 @@ M Gtk.DragLeaveArgs
 M cs.system.Converter_2
 M System.Text.Decoder
 M gtk.IconSource
+M Gtk.ScrollChildArgs
 M Atk.PropertyChangeArgs
 M Gtk.TextChildAnchor
 M System.AppDomainManager
@@ -663,6 +674,7 @@ M System.Reflection.Emit.Label
 M gtk.TreeNodeAddedHandler
 M System.Runtime.InteropServices._SignatureHelper
 M cs.system.drawing.drawing2d.PenType
+M cs.system.PlatformID
 M gdk.WMFunction
 M Gtk.DirectionChangedArgs
 M cs.system.runtime.interopservices.CallingConvention
@@ -710,6 +722,7 @@ M cs.system.reflection.Assembly
 M Gtk.RowExpandedArgs
 M gtk.ChildAnchorInsertedHandler
 M System.Reflection.Emit.PropertyToken
+M Gtk.CheckButton
 M pango.GlyphString
 M System.Drawing.Drawing2D.GraphicsState
 M Gdk.EventScroll
@@ -735,6 +748,7 @@ M cs.system.runtime.remoting.contexts.CrossContextDelegate
 M gtk.RowsReorderedHandler
 M haxe.ds.Vector
 M System.Drawing.Drawing2D.GraphicsContainer
+M gtk.ComboBox
 M gtk.RowChangedHandler
 M cs.system.security.cryptography.x509certificates.X509Certificate
 M System.Runtime.Serialization.IDeserializationCallback
@@ -911,11 +925,13 @@ M Gtk.StyleSetArgs
 M glib.Object
 M Atk.RelationSet
 M gtk.WindowPosition
+M cs.system.EnvironmentVariableTarget
 M gtk.TextBufferDeserializeFunc
 M gtk.SortType
 M System.Security.IEvidenceFactory
 M Gtk.EnterNotifyEventArgs
 M gtk.TreePath
+M Gtk.Misc
 M Pango.FontFamily
 M Gdk.DeviceKey
 M gtk.Stock
@@ -926,6 +942,7 @@ M cairo.HintStyle
 M Gtk.DragDataReceivedArgs
 M cairo.Antialias
 M Gtk.ChildNotifiedArgs
+M gtk.ScrolledWindow
 M Gtk.ChildAnchorInsertedArgs
 M Gtk.SettingsValue
 M System.Drawing.Rectangle
@@ -1013,6 +1030,7 @@ M gtk.ToggleAction
 M Atk.ChildrenChangedArgs
 M cs.system.security.PolicyLevelType
 M cs.system.UriKind
+M Gtk.Image
 M gtk.PixbufInsertedHandler
 M System.Activator
 M Gtk.TagAppliedArgs
@@ -1049,6 +1067,7 @@ M cs.system.UriComponents
 M Gtk.MoveCurrentArgs
 M gtk.DirectionType
 M System.IComparable`1
+M gtk.PolicyType
 M gtk.PrefixInsertedHandler
 M System.Security.Policy.StrongName
 M System.ModuleHandle
@@ -1070,6 +1089,7 @@ M System.Drawing.PointF
 M gtk.AccelGroup
 M cairo.Status
 M gtk.ClipboardTextReceivedFunc
+M gtk.ImageType
 M Gtk.MenuBar
 M gtk.TreeViewMappingFunc
 M cs.system.UnhandledExceptionEventHandler
@@ -1086,7 +1106,9 @@ M Gdk.Atom
 M cs.system.reflection.TypeAttributes
 M System.Drawing.Drawing2D.CustomLineCap
 M Gtk.ITreeNode
+M Gtk.MoveFocusOutArgs
 M gtk.TreeViewGridLines
+M Gdk.PixbufAnimation
 M System.Runtime.Serialization.StreamingContext
 M Gtk.MnemonicActivatedArgs
 M cs.system.security.policy.TrustManagerUIContext
@@ -1117,6 +1139,7 @@ M Gtk.PropertyNotifyEventArgs
 M gtk.ButtonBoxStyle
 M System.IAppDomainSetup
 M Gtk.TagAddedArgs
+M cs.system.Environment
 M gtk.TextSearchFlags
 M System.RuntimeTypeHandle
 M gtk.ToolItem
@@ -1167,6 +1190,7 @@ M Gdk.Pixmap
 M Gtk.TreeDragSource
 M gtk.Window
 M System.Int64
+M System.OperatingSystem
 M gdk.EventMask
 end modules
 begin main

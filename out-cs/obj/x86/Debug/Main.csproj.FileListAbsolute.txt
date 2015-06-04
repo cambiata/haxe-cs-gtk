@@ -1,0 +1,5 @@
+F:\haxe-gtk\out-cs\obj\x86\Debug\Main.csprojResolveAssemblyReference.cache
+F:\haxe-gtk\out-cs\bin\Debug\Main.exe
+F:\haxe-gtk\out-cs\bin\Debug\Main.pdb
+F:\haxe-gtk\out-cs\obj\x86\Debug\Main.exe
+F:\haxe-gtk\out-cs\obj\x86\Debug\Main.pdb

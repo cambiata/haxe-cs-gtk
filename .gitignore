@@ -1,0 +1,3 @@
+dump/*
+out/bmp/*.dll
+out-cs/bmp/*.dll
